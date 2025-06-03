@@ -1,0 +1,2 @@
+# fractal_dreams
+a_strange_anti_recursive_LLM_development_idea
