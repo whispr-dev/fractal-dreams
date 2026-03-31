@@ -2,7 +2,7 @@ import torch
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 from huggingface_hub import login
 
-HF_TOKEN = "REMOVED_HF_TOKEN"
+HF_TOKEN = ""
 login(token=HF_TOKEN)
 
 model_name = "gpt2"
