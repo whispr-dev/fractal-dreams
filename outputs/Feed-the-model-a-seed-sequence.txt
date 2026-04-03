@@ -1,0 +1,13 @@
+[0] Feed the model a seed sequence S₀ Generate a continuation R₀ Extract the appended content T₀ = Δ(S₀, R₀) Form the new input S₁ = S₀ + T₀ [1] s₁ = T₀ + Δ(S₁, T₀) R₇ = R₅ s₁ / Δ(S₁, Δ(S₀) + Δ(S₀, S₀)) Δ(S₁) / Δ(S₁, T₀) R ₇ S = Δ(S₁ + 1) + T
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+[2] ₇ s₁ R₁ = (Δ(S₁ + 3)), Δ(S₁) / (T₂ ) + Δ(S₀, S₀) T₋(S) S₁ = S₀ − Δ(S₁ + 2) R₇ S = Δ(S₁ + 0) R₉ S₁ [3] = (S₇ S + 1) R₉ S₁ + (R₇ S + 2) S₉ S₁ = S₏ S₁ Numerical construct of the seed.
+
+The method has several uses: to generate multiple seed sequence S₄ Generate a continuation R₄ Extract the appended content P₀ = S₄ + Δ(S₄, [4] R₄) Form the new input S₄ = S₄ + Δ(S₄, R₄) Form the new input S₂ = S₄ + Δ(S₂, R₄) Form the new input S₀ = S₂ + Δ(S₀, R₂)
+
+The class S₅ represents an instance of a number of permutations 5] , which can be used to generate multiple seed sequences. A s₅ contains only two permutations, each valid for some condition, such as for the same seed set. The construct S₇ S₅ represents the seed sequences of the permutations and their equivalent S₈, which we'll see in the following section.
+
+S₈ The constructor S₉ S₇ uses the permutations S₉ to form an permutation [6] seed sequence for. The argument s is a seed sequence of S₉ and an argument S₉ means that the set of permutations can be combined with the list of valid permutations in a permutation sequence S₉ S₈ where S₉ S₈ is a permutation seed sequence for the given condition. In the above code, the argument S₉ means a permutation seed sequence for the given condition where S₉ S [7] ₈ is equal to, i.e., the set of possible permutations (S₉ S₈), S₉ S₈ plus some other conditions which do not differ from S₉ S₈ , such as set n if n are the number of valid permutations in the permutation sequence S₉ S₈ (the original seeds are always not different), S₉ S₈ for any other condition [8] , or S₉ S₈ for any set n if n are n consecutive consecutive seeds. We'll see that in this example, S₉ S₈ is a permutation seed sequence for the following condition if n are n consecutive consecutive seeds, i.e., for any set n if n are n consecutive consecutive seeds, n ⊆ n where n is n consecutive consecutive seeds. Thus, if s₇ s₈ ≈ s 
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+[9] , then the set S₈ S₈ for any condition n≥ n is S₈ s₈
+
+S₉ S₈ ≠ S₉ S₈ S₈ S₈ S₈ S₈ S₈ S₈ S₈ S₈ S₈ S₈ S₈ S₈ S₈
