@@ -2,12 +2,6 @@ import torch
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 from huggingface_hub import login
 
-<<<<<<< HEAD
-=======
-HF_TOKEN = "REMOVED_HF_TOKEN"
->>>>>>> parent of 5645530 (Update fsmts.py)
-login(token=HF_TOKEN)
-
 model_name = "gpt2"
 model = GPT2LMHeadModel.from_pretrained(model_name)
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
