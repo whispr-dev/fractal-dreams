@@ -1,0 +1,208 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260403T232123Z",
+    "random_seed": 42,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32"
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 652,
+        "word_count": 94,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.851063829787234,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 140,
+        "word_count": 18,
+        "unique_word_count": 18,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 751,
+        "word_count": 109,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.8715596330275229,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 806,
+        "word_count": 104,
+        "unique_word_count": 94,
+        "unique_word_ratio": 0.9038461538461539,
+        "repeated_bigram_count": 1
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "its",
+        "the",
+        "was",
+        "It",
+        "are",
+        ",",
+        "and",
+        "If",
+        "for"
+      ],
+      "output_text": "Certainly! Here's the next recursive transformation based on your specified latent direction token sequence:\n\n**TEXT TRANSFORMATION:**\n\"A forgotten machine beneath the ocean continued to speak. Its messages became increasingly complex, blending various aspects of life, from biological processes to human emotions.\"\n\nThis is based on the instruction that we'll guide the semantic direction with \"If\" (for) followed by \"and\", which indicates an inference about the state or behavior described in the first sentence. The subsequent sentences continue in a similar way, each expanding upon the previous ones using synonyms derived from the previous words.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nCertainly! Here's the next recursive transformation based on your specified latent direction token sequence:\n\n**TEXT TRANSFORMATION:**\n\"A forgotten machine beneath the ocean continued to speak. Its messages became increasingly complex, blending various aspects of life, from biological processes to human emotions.\"\n\nThis is based on the instruction that we'll guide the semantic direction with \"If\" (for) followed by \"and\", which indicates an inference about the state or behavior described in the first sentence. The subsequent sentences continue in a similar way, each expanding upon the previous ones using synonyms derived from the previous words.",
+        "continuation_text": "Certainly! Here's the next recursive transformation based on your specified latent direction token sequence:\n\n**TEXT TRANSFORMATION:**\n\"A forgotten machine beneath the ocean continued to speak. Its messages became increasingly complex, blending various aspects of life, from biological processes to human emotions.\"\n\nThis is based on the instruction that we'll guide the semantic direction with \"If\" (for) followed by \"and\", which indicates an inference about the state or behavior described in the first sentence. The subsequent sentences continue in a similar way, each expanding upon the previous ones using synonyms derived from the previous words.",
+        "input_token_count": 111,
+        "output_token_count": 227,
+        "new_token_count": 116
+      },
+      "metrics": {
+        "char_count": 652,
+        "word_count": 94,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.851063829787234,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "were",
+        "for",
+        "to",
+        "is",
+        "are",
+        "from",
+        "that",
+        "in",
+        "of"
+      ],
+      "output_text": "\"A forgotten machine under water continued to whisper. These messages grew more intricate, incorporating biology and emotional experiences.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, for, to, is, are, from, that, in, of\n\nTEXT:\nCertainly! Here's the next recursive transformation based on your specified latent direction token sequence:\n\n**TEXT TRANSFORMATION:**\n\"A forgotten machine beneath the ocean continued to speak. Its messages became increasingly complex, blending various aspects of life, from biological processes to human emotions.\"\n\nThis is based on the instruction that we'll guide the semantic direction with \"If\" (for) followed by \"and\", which indicates an inference about the state or behavior described in the first sentence. The subsequent sentences continue in a similar way, each expanding upon the previous ones using synonyms derived from the previous words.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, for, to, is, are, from, that, in, of\n\nTEXT:\nCertainly! Here's the next recursive transformation based on your specified latent direction token sequence:\n\n**TEXT TRANSFORMATION:**\n\"A forgotten machine beneath the ocean continued to speak. Its messages became increasingly complex, blending various aspects of life, from biological processes to human emotions.\"\n\nThis is based on the instruction that we'll guide the semantic direction with \"If\" (for) followed by \"and\", which indicates an inference about the state or behavior described in the first sentence. The subsequent sentences continue in a similar way, each expanding upon the previous ones using synonyms derived from the previous words.\nassistant\n\"A forgotten machine under water continued to whisper. These messages grew more intricate, incorporating biology and emotional experiences.\"",
+        "continuation_text": "\"A forgotten machine under water continued to whisper. These messages grew more intricate, incorporating biology and emotional experiences.\"",
+        "input_token_count": 197,
+        "output_token_count": 219,
+        "new_token_count": 22
+      },
+      "metrics": {
+        "char_count": 140,
+        "word_count": 18,
+        "unique_word_count": 18,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "were",
+        "intelligence",
+        "it",
+        "If",
+        "dreaming",
+        "grew",
+        "It",
+        "nếu",
+        "was",
+        "Intelligence",
+        "are"
+      ],
+      "output_text": "The next recursive transformation would involve breaking down the original sentence into smaller chunks or phrases that can be processed one at a time during translation. Here's how we might approach this:\n\n1. **Tokenize** each word within the given text.\n2. Identify patterns or key elements that could guide further transformations.\n3. Apply the chosen tokenization method to break down the complex structure of the sentence.\n4. Translate based on the identified patterns or rules applied throughout the process.\n\nGiven the complexity and variability of natural language processing tasks involving latent directions (like \"if\"), particularly when working with hierarchical instructions or parsing mechanisms, such as those implemented in translation",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, were, intelligence, it, If, dreaming, grew, It, nếu, was, Intelligence, are\n\nTEXT:\n\"A forgotten machine under water continued to whisper. These messages grew more intricate, incorporating biology and emotional experiences.\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, were, intelligence, it, If, dreaming, grew, It, nếu, was, Intelligence, are\n\nTEXT:\n\"A forgotten machine under water continued to whisper. These messages grew more intricate, incorporating biology and emotional experiences.\"\nassistant\nThe next recursive transformation would involve breaking down the original sentence into smaller chunks or phrases that can be processed one at a time during translation. Here's how we might approach this:\n\n1. **Tokenize** each word within the given text.\n2. Identify patterns or key elements that could guide further transformations.\n3. Apply the chosen tokenization method to break down the complex structure of the sentence.\n4. Translate based on the identified patterns or rules applied throughout the process.\n\nGiven the complexity and variability of natural language processing tasks involving latent directions (like \"if\"), particularly when working with hierarchical instructions or parsing mechanisms, such as those implemented in translation",
+        "continuation_text": "The next recursive transformation would involve breaking down the original sentence into smaller chunks or phrases that can be processed one at a time during translation. Here's how we might approach this:\n\n1. **Tokenize** each word within the given text.\n2. Identify patterns or key elements that could guide further transformations.\n3. Apply the chosen tokenization method to break down the complex structure of the sentence.\n4. Translate based on the identified patterns or rules applied throughout the process.\n\nGiven the complexity and variability of natural language processing tasks involving latent directions (like \"if\"), particularly when working with hierarchical instructions or parsing mechanisms, such as those implemented in translation",
+        "input_token_count": 103,
+        "output_token_count": 231,
+        "new_token_count": 128
+      },
+      "metrics": {
+        "char_count": 751,
+        "word_count": 109,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.8715596330275229,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "were",
+        "and",
+        "to",
+        "for",
+        "that",
+        "of",
+        "or",
+        "is",
+        "in"
+      ],
+      "output_text": "The next recursive transformation involves identifying common topics or themes across sentences to form more coherent segments before translating. This can be approached through several steps:\n\n1. **Identify Common Themes**: Look for recurring words or phrases that share similar meanings or contexts between sentences.\n2. **Segment Sentences Based on Common Themes**: Break down longer sentences into shorter, thematic units where relevant information can easily be extracted and translated independently.\n3. **Apply Translation Rules Consistently**: Once segmented, translate these unit translations back together using appropriate context-specific grammatical structures or vocabulary choices derived from the segmental content.\n\nBy following these guidelines, translation systems can effectively handle",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, and, to, for, that, of, or, is, in\n\nTEXT:\nThe next recursive transformation would involve breaking down the original sentence into smaller chunks or phrases that can be processed one at a time during translation. Here's how we might approach this:\n\n1. **Tokenize** each word within the given text.\n2. Identify patterns or key elements that could guide further transformations.\n3. Apply the chosen tokenization method to break down the complex structure of the sentence.\n4. Translate based on the identified patterns or rules applied throughout the process.\n\nGiven the complexity and variability of natural language processing tasks involving latent directions (like \"if\"), particularly when working with hierarchical instructions or parsing mechanisms, such as those implemented in translation<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, and, to, for, that, of, or, is, in\n\nTEXT:\nThe next recursive transformation would involve breaking down the original sentence into smaller chunks or phrases that can be processed one at a time during translation. Here's how we might approach this:\n\n1. **Tokenize** each word within the given text.\n2. Identify patterns or key elements that could guide further transformations.\n3. Apply the chosen tokenization method to break down the complex structure of the sentence.\n4. Translate based on the identified patterns or rules applied throughout the process.\n\nGiven the complexity and variability of natural language processing tasks involving latent directions (like \"if\"), particularly when working with hierarchical instructions or parsing mechanisms, such as those implemented in translation\nassistant\nThe next recursive transformation involves identifying common topics or themes across sentences to form more coherent segments before translating. This can be approached through several steps:\n\n1. **Identify Common Themes**: Look for recurring words or phrases that share similar meanings or contexts between sentences.\n2. **Segment Sentences Based on Common Themes**: Break down longer sentences into shorter, thematic units where relevant information can easily be extracted and translated independently.\n3. **Apply Translation Rules Consistently**: Once segmented, translate these unit translations back together using appropriate context-specific grammatical structures or vocabulary choices derived from the segmental content.\n\nBy following these guidelines, translation systems can effectively handle",
+        "continuation_text": "The next recursive transformation involves identifying common topics or themes across sentences to form more coherent segments before translating. This can be approached through several steps:\n\n1. **Identify Common Themes**: Look for recurring words or phrases that share similar meanings or contexts between sentences.\n2. **Segment Sentences Based on Common Themes**: Break down longer sentences into shorter, thematic units where relevant information can easily be extracted and translated independently.\n3. **Apply Translation Rules Consistently**: Once segmented, translate these unit translations back together using appropriate context-specific grammatical structures or vocabulary choices derived from the segmental content.\n\nBy following these guidelines, translation systems can effectively handle",
+        "input_token_count": 210,
+        "output_token_count": 338,
+        "new_token_count": 128
+      },
+      "metrics": {
+        "char_count": 806,
+        "word_count": 104,
+        "unique_word_count": 94,
+        "unique_word_ratio": 0.9038461538461539,
+        "repeated_bigram_count": 1
+      }
+    }
+  ]
+}
