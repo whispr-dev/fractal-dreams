@@ -1,0 +1,169 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T030631Z_factorial",
+    "random_seed": 1009,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32"
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 648,
+        "word_count": 91,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.9340659340659341,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 94,
+        "word_count": 25,
+        "unique_word_count": 15,
+        "unique_word_ratio": 0.6,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 330,
+        "word_count": 37,
+        "unique_word_count": 36,
+        "unique_word_ratio": 0.972972972972973,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Mayo",
+        "_a",
+        "aint",
+        "_B",
+        "t",
+        "_C",
+        "ce",
+        "tt",
+        "_F",
+        "tr",
+        "fr",
+        "Yourself"
+      ],
+      "output_text": "To complete this text with a deeper recursive transformation using the given anchors, we can explore potential themes or narratives that might unfold based on these elements:\n\n1. **Time Travel**: The passage suggests an exploration of time travel where the original creators' devices continue to operate even when they disappeared.\n   \n2. **Narrative Structures**: We could consider how different narrative structures might be explored, such as through flashbacks, present-tense storytelling, or non-linear narratives.\n\n3. **Imagery and Symbolism**: Perhaps there's imagery related to time, like waves crashing against the horizon or distant stars.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nTo complete this text with a deeper recursive transformation using the given anchors, we can explore potential themes or narratives that might unfold based on these elements:\n\n1. **Time Travel**: The passage suggests an exploration of time travel where the original creators' devices continue to operate even when they disappeared.\n   \n2. **Narrative Structures**: We could consider how different narrative structures might be explored, such as through flashbacks, present-tense storytelling, or non-linear narratives.\n\n3. **Imagery and Symbolism**: Perhaps there's imagery related to time, like waves crashing against the horizon or distant stars.\n\n",
+        "continuation_text": "To complete this text with a deeper recursive transformation using the given anchors, we can explore potential themes or narratives that might unfold based on these elements:\n\n1. **Time Travel**: The passage suggests an exploration of time travel where the original creators' devices continue to operate even when they disappeared.\n   \n2. **Narrative Structures**: We could consider how different narrative structures might be explored, such as through flashbacks, present-tense storytelling, or non-linear narratives.\n\n3. **Imagery and Symbolism**: Perhaps there's imagery related to time, like waves crashing against the horizon or distant stars.",
+        "input_token_count": 123,
+        "output_token_count": 243,
+        "new_token_count": 120
+      },
+      "metrics": {
+        "char_count": 648,
+        "word_count": 91,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.9340659340659341,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "时间",
+        "TO",
+        "_TO",
+        "to",
+        "To",
+        "-Time",
+        "tunnel",
+        "時間",
+        "overs",
+        "Builds",
+        "Time",
+        "¶"
+      ],
+      "output_text": "**Latent Anchor Tokens:**\n- 时间\n- TO\n- to\n- To\n- -Time\n- tunnel\n- 時間\n- Overs\n- Build\n- Time\n- ¶",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 时间, TO, _TO, to, To, -Time, tunnel, 時間, overs, Builds, Time, ¶\n\nTEXT:\nTo complete this text with a deeper recursive transformation using the given anchors, we can explore potential themes or narratives that might unfold based on these elements:\n\n1. **Time Travel**: The passage suggests an exploration of time travel where the original creators' devices continue to operate even when they disappeared.\n   \n2. **Narrative Structures**: We could consider how different narrative structures might be explored, such as through flashbacks, present-tense storytelling, or non-linear narratives.\n\n3. **Imagery and Symbolism**: Perhaps there's imagery related to time, like waves crashing against the horizon or distant stars.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 时间, TO, _TO, to, To, -Time, tunnel, 時間, overs, Builds, Time, ¶\n\nTEXT:\nTo complete this text with a deeper recursive transformation using the given anchors, we can explore potential themes or narratives that might unfold based on these elements:\n\n1. **Time Travel**: The passage suggests an exploration of time travel where the original creators' devices continue to operate even when they disappeared.\n   \n2. **Narrative Structures**: We could consider how different narrative structures might be explored, such as through flashbacks, present-tense storytelling, or non-linear narratives.\n\n3. **Imagery and Symbolism**: Perhaps there's imagery related to time, like waves crashing against the horizon or distant stars.\nassistant\n**Latent Anchor Tokens:**\n- 时间\n- TO\n- to\n- To\n- -Time\n- tunnel\n- 時間\n- Overs\n- Build\n- Time\n- ¶",
+        "continuation_text": "**Latent Anchor Tokens:**\n- 时间\n- TO\n- to\n- To\n- -Time\n- tunnel\n- 時間\n- Overs\n- Build\n- Time\n- ¶",
+        "input_token_count": 212,
+        "output_token_count": 255,
+        "new_token_count": 43
+      },
+      "metrics": {
+        "char_count": 94,
+        "word_count": 25,
+        "unique_word_count": 15,
+        "unique_word_ratio": 0.6,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "usp",
+        "Tick",
+        "cent",
+        "/sp",
+        "Rut",
+        "cr",
+        "航空",
+        ".Throw",
+        "cricket",
+        "Classroom",
+        ".FormattingEnabled",
+        "/{"
+      ],
+      "output_text": "```python\nlatent_anchor_tokens = [\"时间\", \"TO\", \"to\", \"To\"]\n\nnext_sentence_transformed = \" \".join(\n    [\n        *[\"{} {}\".format(tkn, t)\n         for tkn in latent_anchor_tokens],  # 转换为硬指导形式\n        \"To {} time\".format(\"build\")\n    ]\n)\n\nprint(next_sentence_transformed)\n```\n\n解释：\n1. **time** 是时间的锚定词。\n2. `TO` 是转义符，用于在需要时替换锚定词。\n3. 基",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: usp, Tick, cent, /sp, Rut, cr, 航空, .Throw, cricket, Classroom, .FormattingEnabled, /{\n\nTEXT:\n**Latent Anchor Tokens:**\n- 时间\n- TO\n- to\n- To\n- -Time\n- tunnel\n- 時間\n- Overs\n- Build\n- Time\n- ¶<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: usp, Tick, cent, /sp, Rut, cr, 航空, .Throw, cricket, Classroom, .FormattingEnabled, /{\n\nTEXT:\n**Latent Anchor Tokens:**\n- 时间\n- TO\n- to\n- To\n- -Time\n- tunnel\n- 時間\n- Overs\n- Build\n- Time\n- ¶\nassistant\n```python\nlatent_anchor_tokens = [\"时间\", \"TO\", \"to\", \"To\"]\n\nnext_sentence_transformed = \" \".join(\n    [\n        *[\"{} {}\".format(tkn, t)\n         for tkn in latent_anchor_tokens],  # 转换为硬指导形式\n        \"To {} time\".format(\"build\")\n    ]\n)\n\nprint(next_sentence_transformed)\n```\n\n解释：\n1. **time** 是时间的锚定词。\n2. `TO` 是转义符，用于在需要时替换锚定词。\n3. 基",
+        "continuation_text": "```python\nlatent_anchor_tokens = [\"时间\", \"TO\", \"to\", \"To\"]\n\nnext_sentence_transformed = \" \".join(\n    [\n        *[\"{} {}\".format(tkn, t)\n         for tkn in latent_anchor_tokens],  # 转换为硬指导形式\n        \"To {} time\".format(\"build\")\n    ]\n)\n\nprint(next_sentence_transformed)\n```\n\n解释：\n1. **time** 是时间的锚定词。\n2. `TO` 是转义符，用于在需要时替换锚定词。\n3. 基",
+        "input_token_count": 138,
+        "output_token_count": 258,
+        "new_token_count": 120
+      },
+      "metrics": {
+        "char_count": 330,
+        "word_count": 37,
+        "unique_word_count": 36,
+        "unique_word_ratio": 0.972972972972973,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

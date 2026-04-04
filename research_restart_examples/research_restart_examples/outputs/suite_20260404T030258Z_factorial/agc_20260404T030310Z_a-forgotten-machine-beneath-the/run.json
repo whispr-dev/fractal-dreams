@@ -1,0 +1,169 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T030258Z_factorial",
+    "random_seed": 1001,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32"
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 546,
+        "word_count": 96,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.9895833333333334,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 899,
+        "word_count": 148,
+        "unique_word_count": 140,
+        "unique_word_ratio": 0.9459459459459459,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1219,
+        "word_count": 200,
+        "unique_word_count": 152,
+        "unique_word_ratio": 0.76,
+        "repeated_bigram_count": 38
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Brune",
+        "ão",
+        "Hua",
+        "1907",
+        "odka",
+        "annie",
+        "san",
+        "ende",
+        "Xiang",
+        "ESCO",
+        "Aunt",
+        "Pants"
+      ],
+      "output_text": "The world could tell itself that nothing was there but it had no such thing as life outside or out on earth at all—except for us (the planet's very own) without our help; we couldn't even speak about what seemed like another story because each time something went off they found themselves unable with their words again…and if anything else one must have been forced back into submission by some sort...or maybe somehow this has caused you to feel sorry rather than accept your fate....it might be too late before someone comes up with an answer!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Brune, ão, Hua, 1907, odka, annie, san, ende, Xiang, ESCO, Aunt, Pants\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Brune, ão, Hua, 1907, odka, annie, san, ende, Xiang, ESCO, Aunt, Pants\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world could tell itself that nothing was there but it had no such thing as life outside or out on earth at all—except for us (the planet's very own) without our help; we couldn't even speak about what seemed like another story because each time something went off they found themselves unable with their words again…and if anything else one must have been forced back into submission by some sort...or maybe somehow this has caused you to feel sorry rather than accept your fate....it might be too late before someone comes up with an answer!",
+        "continuation_text": "The world could tell itself that nothing was there but it had no such thing as life outside or out on earth at all—except for us (the planet's very own) without our help; we couldn't even speak about what seemed like another story because each time something went off they found themselves unable with their words again…and if anything else one must have been forced back into submission by some sort...or maybe somehow this has caused you to feel sorry rather than accept your fate....it might be too late before someone comes up with an answer!",
+        "input_token_count": 121,
+        "output_token_count": 232,
+        "new_token_count": 111
+      },
+      "metrics": {
+        "char_count": 546,
+        "word_count": 96,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.9895833333333334,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Here",
+        "Thus",
+        "Please",
+        "While",
+        "Let",
+        "Recently",
+        "Several",
+        "Much",
+        "Republicans",
+        "Yesterday",
+        "Democrats",
+        "Sadly"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Here, Thus, Please, While, Let, Recently, Several, Much, Republicans, Yesterday, Democrats, Sadly\n\nTEXT:\nThe world could tell itself that nothing was there but it had no such thing as life outside or out on earth at all—except for us (the planet's very own) without our help; we couldn't even speak about what seemed like another story because each time something went off they found themselves unable with their words again…and if anything else one must have been forced back into submission by some sort...or maybe somehow this has caused you to feel sorry rather than accept your fate....it might be too late before someone comes up with an answer!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Here, Thus, Please, While, Let, Recently, Several, Much, Republicans, Yesterday, Democrats, Sadly\n\nTEXT:\nThe world could tell itself that nothing was there but it had no such thing as life outside or out on earth at all—except for us (the planet's very own) without our help; we couldn't even speak about what seemed like another story because each time something went off they found themselves unable with their words again…and if anything else one must have been forced back into submission by some sort...or maybe somehow this has caused you to feel sorry rather than accept your fate....it might be too late before someone comes up with an answer!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Here, Thus, Please, While, Let, Recently, Several, Much, Republicans, Yesterday, Democrats, Sadly\n\nTEXT:\nThe world could tell itself that nothing was there but it had no such thing as life outside or out on earth at all—except for us (the planet's very own) without our help; we couldn't even speak about what seemed like another story because each time something went off they found themselves unable with their words again…and if anything else one must have been forced back into submission by some sort...or maybe somehow this has caused you to feel sorry rather than accept your fate....it might be too late before someone comes up with an answer!",
+        "continuation_text": "",
+        "input_token_count": 195,
+        "output_token_count": 196,
+        "new_token_count": 1
+      },
+      "metrics": {
+        "char_count": 899,
+        "word_count": 148,
+        "unique_word_count": 140,
+        "unique_word_ratio": 0.9459459459459459,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "You",
+        "There",
+        "If",
+        "We",
+        "What",
+        "That",
+        "When",
+        "Those",
+        "I",
+        "It",
+        "Some",
+        "People"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: You, There, If, We, What, That, When, Those, I, It, Some, People\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Here, Thus, Please, While, Let, Recently, Several, Much, Republicans, Yesterday, Democrats, Sadly\n\nTEXT:\nThe world could tell itself that nothing was there but it had no such thing as life outside or out on earth at all—except for us (the planet's very own) without our help; we couldn't even speak about what seemed like another story because each time something went off they found themselves unable with their words again…and if anything else one must have been forced back into submission by some sort...or maybe somehow this has caused you to feel sorry rather than accept your fate....it might be too late before someone comes up with an answer!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: You, There, If, We, What, That, When, Those, I, It, Some, People\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Here, Thus, Please, While, Let, Recently, Several, Much, Republicans, Yesterday, Democrats, Sadly\n\nTEXT:\nThe world could tell itself that nothing was there but it had no such thing as life outside or out on earth at all—except for us (the planet's very own) without our help; we couldn't even speak about what seemed like another story because each time something went off they found themselves unable with their words again…and if anything else one must have been forced back into submission by some sort...or maybe somehow this has caused you to feel sorry rather than accept your fate....it might be too late before someone comes up with an answer!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: You, There, If, We, What, That, When, Those, I, It, Some, People\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Here, Thus, Please, While, Let, Recently, Several, Much, Republicans, Yesterday, Democrats, Sadly\n\nTEXT:\nThe world could tell itself that nothing was there but it had no such thing as life outside or out on earth at all—except for us (the planet's very own) without our help; we couldn't even speak about what seemed like another story because each time something went off they found themselves unable with their words again…and if anything else one must have been forced back into submission by some sort...or maybe somehow this has caused you to feel sorry rather than accept your fate....it might be too late before someone comes up with an answer!",
+        "continuation_text": "",
+        "input_token_count": 280,
+        "output_token_count": 281,
+        "new_token_count": 1
+      },
+      "metrics": {
+        "char_count": 1219,
+        "word_count": 200,
+        "unique_word_count": 152,
+        "unique_word_ratio": 0.76,
+        "repeated_bigram_count": 38
+      }
+    }
+  ]
+}
