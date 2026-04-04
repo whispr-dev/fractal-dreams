@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1274,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 615,
+        "word_count": 83,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.7951807228915663,
+        "repeated_bigram_count": 4
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 269,
+        "word_count": 39,
+        "unique_word_count": 37,
+        "unique_word_ratio": 0.9487179487179487,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 459,
+        "word_count": 73,
+        "unique_word_count": 60,
+        "unique_word_ratio": 0.821917808219178,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 651,
+        "word_count": 94,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.9042553191489362,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "if",
+        "was",
+        "its",
+        "the",
+        "are",
+        "that",
+        "a",
+        "It",
+        "intelligence",
+        "If"
+      ],
+      "output_text": "To write the next recursive transformation based on the given latent direction token set (which includes \"were\", \"it\", \"if\" for \"the last librarian\") into natural language with an English structure:\n\n---\n\n**Text Transformation:** The last librarian trained a language model on a dead civilization’s poetry and discovered that its footnotes were predictions.\n   - **Subject:** \"the last librarian\"\n     - **Verb:** \n       - 1st person singular present tense verb (\"trained\")\n         - 1st person singular past participle verb (\"a language model\")\n           - **Adverbial phrase:**\n             - **Quantifier**: *",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\nTo write the next recursive transformation based on the given latent direction token set (which includes \"were\", \"it\", \"if\" for \"the last librarian\") into natural language with an English structure:\n\n---\n\n**Text Transformation:** The last librarian trained a language model on a dead civilization’s poetry and discovered that its footnotes were predictions.\n   - **Subject:** \"the last librarian\"\n     - **Verb:** \n       - 1st person singular present tense verb (\"trained\")\n         - 1st person singular past participle verb (\"a language model\")\n           - **Adverbial phrase:**\n             - **Quantifier**: *",
+        "continuation_text": "To write the next recursive transformation based on the given latent direction token set (which includes \"were\", \"it\", \"if\" for \"the last librarian\") into natural language with an English structure:\n\n---\n\n**Text Transformation:** The last librarian trained a language model on a dead civilization’s poetry and discovered that its footnotes were predictions.\n   - **Subject:** \"the last librarian\"\n     - **Verb:** \n       - 1st person singular present tense verb (\"trained\")\n         - 1st person singular past participle verb (\"a language model\")\n           - **Adverbial phrase:**\n             - **Quantifier**: *",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 232,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 615,
+        "word_count": 83,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.7951807228915663,
+        "repeated_bigram_count": 4
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "\"",
+        "-",
+        "**",
+        "If",
+        "*",
+        "was",
+        "It",
+        "are",
+        "the"
+      ],
+      "output_text": "The final step is to construct the sentence from the transformed phrases while maintaining coherence and flow. Here's one possible sequence:\n\n\"The last librarian trained a language model on a dead civilization’s poetry, discovering that its footnotes were predictions.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, \", -, **, If, *, was, It, are, the\n\nTEXT:\nTo write the next recursive transformation based on the given latent direction token set (which includes \"were\", \"it\", \"if\" for \"the last librarian\") into natural language with an English structure:\n\n---\n\n**Text Transformation:** The last librarian trained a language model on a dead civilization’s poetry and discovered that its footnotes were predictions.\n   - **Subject:** \"the last librarian\"\n     - **Verb:** \n       - 1st person singular present tense verb (\"trained\")\n         - 1st person singular past participle verb (\"a language model\")\n           - **Adverbial phrase:**\n             - **Quantifier**: *<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, \", -, **, If, *, was, It, are, the\n\nTEXT:\nTo write the next recursive transformation based on the given latent direction token set (which includes \"were\", \"it\", \"if\" for \"the last librarian\") into natural language with an English structure:\n\n---\n\n**Text Transformation:** The last librarian trained a language model on a dead civilization’s poetry and discovered that its footnotes were predictions.\n   - **Subject:** \"the last librarian\"\n     - **Verb:** \n       - 1st person singular present tense verb (\"trained\")\n         - 1st person singular past participle verb (\"a language model\")\n           - **Adverbial phrase:**\n             - **Quantifier**: *\nassistant\nThe final step is to construct the sentence from the transformed phrases while maintaining coherence and flow. Here's one possible sequence:\n\n\"The last librarian trained a language model on a dead civilization’s poetry, discovering that its footnotes were predictions.\"",
+        "continuation_text": "The final step is to construct the sentence from the transformed phrases while maintaining coherence and flow. Here's one possible sequence:\n\n\"The last librarian trained a language model on a dead civilization’s poetry, discovering that its footnotes were predictions.\"",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 254,
+        "new_token_count": 47,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 269,
+        "word_count": 39,
+        "unique_word_count": 37,
+        "unique_word_ratio": 0.9487179487179487,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "the",
+        "was",
+        "are",
+        "is",
+        "that",
+        "there",
+        "If",
+        "while",
+        "its"
+      ],
+      "output_text": "To write the next recursive transformation for this text using the given latent anchor tokens (if, the, were, was, were) as guidance, we can structure the sentence as follows:\n\n\"Once upon a time, an elderly woman decided to embark on a journey through the depths of an ancient library filled with books of forgotten knowledge and forgotten history.\"\n\nThis sentence maintains coherence and flow by following the semantic direction provided by the instructions.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, was, are, is, that, there, If, while, its\n\nTEXT:\nThe final step is to construct the sentence from the transformed phrases while maintaining coherence and flow. Here's one possible sequence:\n\n\"The last librarian trained a language model on a dead civilization’s poetry, discovering that its footnotes were predictions.\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, was, are, is, that, there, If, while, its\n\nTEXT:\nThe final step is to construct the sentence from the transformed phrases while maintaining coherence and flow. Here's one possible sequence:\n\n\"The last librarian trained a language model on a dead civilization’s poetry, discovering that its footnotes were predictions.\"\nassistant\nTo write the next recursive transformation for this text using the given latent anchor tokens (if, the, were, was, were) as guidance, we can structure the sentence as follows:\n\n\"Once upon a time, an elderly woman decided to embark on a journey through the depths of an ancient library filled with books of forgotten knowledge and forgotten history.\"\n\nThis sentence maintains coherence and flow by following the semantic direction provided by the instructions.",
+        "continuation_text": "To write the next recursive transformation for this text using the given latent anchor tokens (if, the, were, was, were) as guidance, we can structure the sentence as follows:\n\n\"Once upon a time, an elderly woman decided to embark on a journey through the depths of an ancient library filled with books of forgotten knowledge and forgotten history.\"\n\nThis sentence maintains coherence and flow by following the semantic direction provided by the instructions.",
+        "input_token_count": 128,
+        "raw_input_token_count": 128,
+        "output_token_count": 214,
+        "new_token_count": 86,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 459,
+        "word_count": 73,
+        "unique_word_count": 60,
+        "unique_word_ratio": 0.821917808219178,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "the",
+        "it",
+        "to",
+        "and",
+        "for",
+        ",",
+        "is",
+        "were",
+        "of",
+        "was",
+        "in"
+      ],
+      "output_text": "The next recursive transformation involves rewriting sentences based on specific rules or constraints. For this particular set of restrictions (using only three words from \"if\", \"the\", \"was\", \"of\", \"were\"), let's create one new sentence that adheres closely to their guidelines while being coherent:\n\n\"The once-elderly traveler decided to seek out an old book from the dusty aisle, hoping to uncover secrets long hidden under leafy trees.\" \n\nThis sentence fulfills the requirements by incorporating all three requested words (\"once,\" \"traveler,\" and \"secluded\") into its construction without altering any other part of the original text significantly.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, the, it, to, and, for, ,, is, were, of, was, in\n\nTEXT:\nTo write the next recursive transformation for this text using the given latent anchor tokens (if, the, were, was, were) as guidance, we can structure the sentence as follows:\n\n\"Once upon a time, an elderly woman decided to embark on a journey through the depths of an ancient library filled with books of forgotten knowledge and forgotten history.\"\n\nThis sentence maintains coherence and flow by following the semantic direction provided by the instructions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, the, it, to, and, for, ,, is, were, of, was, in\n\nTEXT:\nTo write the next recursive transformation for this text using the given latent anchor tokens (if, the, were, was, were) as guidance, we can structure the sentence as follows:\n\n\"Once upon a time, an elderly woman decided to embark on a journey through the depths of an ancient library filled with books of forgotten knowledge and forgotten history.\"\n\nThis sentence maintains coherence and flow by following the semantic direction provided by the instructions.\nassistant\nThe next recursive transformation involves rewriting sentences based on specific rules or constraints. For this particular set of restrictions (using only three words from \"if\", \"the\", \"was\", \"of\", \"were\"), let's create one new sentence that adheres closely to their guidelines while being coherent:\n\n\"The once-elderly traveler decided to seek out an old book from the dusty aisle, hoping to uncover secrets long hidden under leafy trees.\" \n\nThis sentence fulfills the requirements by incorporating all three requested words (\"once,\" \"traveler,\" and \"secluded\") into its construction without altering any other part of the original text significantly.",
+        "continuation_text": "The next recursive transformation involves rewriting sentences based on specific rules or constraints. For this particular set of restrictions (using only three words from \"if\", \"the\", \"was\", \"of\", \"were\"), let's create one new sentence that adheres closely to their guidelines while being coherent:\n\n\"The once-elderly traveler decided to seek out an old book from the dusty aisle, hoping to uncover secrets long hidden under leafy trees.\" \n\nThis sentence fulfills the requirements by incorporating all three requested words (\"once,\" \"traveler,\" and \"secluded\") into its construction without altering any other part of the original text significantly.",
+        "input_token_count": 166,
+        "raw_input_token_count": 166,
+        "output_token_count": 293,
+        "new_token_count": 127,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 651,
+        "word_count": 94,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.9042553191489362,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

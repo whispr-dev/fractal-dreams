@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1553,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 571,
+        "word_count": 88,
+        "unique_word_count": 88,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 724,
+        "word_count": 111,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.9819819819819819,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 175,
+        "word_count": 31,
+        "unique_word_count": 31,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Likewise",
+        "Similarly",
+        "Another",
+        "Also",
+        "especially",
+        "Pin",
+        "Aside",
+        "adapters",
+        "carved",
+        "Additionally",
+        "traditionally",
+        "comfortable"
+      ],
+      "output_text": "Later experiments were conducted with an average density 1 mm at depth (3) that was 2 meters wide by 4 cm² (\"4\") thick; this allowed it even more room for improvement over previous efforts.[1] The initial results showed high fidelity but remained unstable when applied directly through sublinear methods or against other systems like microcomputers[2]. For example if you could just turn on your local computer immediately after entering certain stages then use some small amount of memory until everything is running normally [3], thereby reducing latency dramatically.]",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Likewise, Similarly, Another, Also, especially, Pin, Aside, adapters, carved, Additionally, traditionally, comfortable\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Likewise, Similarly, Another, Also, especially, Pin, Aside, adapters, carved, Additionally, traditionally, comfortable\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. Later experiments were conducted with an average density 1 mm at depth (3) that was 2 meters wide by 4 cm² (\"4\") thick; this allowed it even more room for improvement over previous efforts.[1] The initial results showed high fidelity but remained unstable when applied directly through sublinear methods or against other systems like microcomputers[2]. For example if you could just turn on your local computer immediately after entering certain stages then use some small amount of memory until everything is running normally [3], thereby reducing latency dramatically.]",
+        "continuation_text": "Later experiments were conducted with an average density 1 mm at depth (3) that was 2 meters wide by 4 cm² (\"4\") thick; this allowed it even more room for improvement over previous efforts.[1] The initial results showed high fidelity but remained unstable when applied directly through sublinear methods or against other systems like microcomputers[2]. For example if you could just turn on your local computer immediately after entering certain stages then use some small amount of memory until everything is running normally [3], thereby reducing latency dramatically.]",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 215,
+        "new_token_count": 107,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 571,
+        "word_count": 88,
+        "unique_word_count": 88,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Later",
+        ",)",
+        "sarcast",
+        "サ",
+        "Likewise",
+        "Chrys",
+        "Sparkle",
+        "omnip",
+        "Throughout",
+        "Away",
+        ")?",
+        "Spirit"
+      ],
+      "output_text": "This makes writing code easier and reduces performance rather than being slow during computation because any changes caused by each step can be easily undone once completed so those steps will never run out altogether without further assistance from both developers and software development staff! As mentioned above, we have used our low volume \"sphere\" method frequently since its implementation has been very robust enough due to how much data needed per level every second compared back to conventional languages such css files created using C++ functions - all while avoiding introducing bugs which may cause problems within existing programs too… We think these differences should help make programming difficult... If",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Later, ,), sarcast, サ, Likewise, Chrys, Sparkle, omnip, Throughout, Away, )?, Spirit\n\nTEXT:\nLater experiments were conducted with an average density 1 mm at depth (3) that was 2 meters wide by 4 cm² (\"4\") thick; this allowed it even more room for improvement over previous efforts.[1] The initial results showed high fidelity but remained unstable when applied directly through sublinear methods or against other systems like microcomputers[2]. For example if you could just turn on your local computer immediately after entering certain stages then use some small amount of memory until everything is running normally [3], thereby reducing latency dramatically.]",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Later, ,), sarcast, サ, Likewise, Chrys, Sparkle, omnip, Throughout, Away, )?, Spirit\n\nTEXT:\nLater experiments were conducted with an average density 1 mm at depth (3) that was 2 meters wide by 4 cm² (\"4\") thick; this allowed it even more room for improvement over previous efforts.[1] The initial results showed high fidelity but remained unstable when applied directly through sublinear methods or against other systems like microcomputers[2]. For example if you could just turn on your local computer immediately after entering certain stages then use some small amount of memory until everything is running normally [3], thereby reducing latency dramatically.] This makes writing code easier and reduces performance rather than being slow during computation because any changes caused by each step can be easily undone once completed so those steps will never run out altogether without further assistance from both developers and software development staff! As mentioned above, we have used our low volume \"sphere\" method frequently since its implementation has been very robust enough due to how much data needed per level every second compared back to conventional languages such css files created using C++ functions - all while avoiding introducing bugs which may cause problems within existing programs too… We think these differences should help make programming difficult... If",
+        "continuation_text": "This makes writing code easier and reduces performance rather than being slow during computation because any changes caused by each step can be easily undone once completed so those steps will never run out altogether without further assistance from both developers and software development staff! As mentioned above, we have used our low volume \"sphere\" method frequently since its implementation has been very robust enough due to how much data needed per level every second compared back to conventional languages such css files created using C++ functions - all while avoiding introducing bugs which may cause problems within existing programs too… We think these differences should help make programming difficult... If",
+        "input_token_count": 191,
+        "raw_input_token_count": 191,
+        "output_token_count": 311,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 724,
+        "word_count": 111,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.9819819819819819,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Honestly",
+        "Whoever",
+        "lied",
+        "Daniel",
+        "Fred",
+        "Sarah",
+        "proclaimed",
+        "Obviously",
+        "eh",
+        "Qian",
+        "cloneembedreportprint",
+        "Elsa"
+      ],
+      "output_text": "you were wondering what it is that means for learning about Java's syntax (which I'm sure others don't know but there might also be) then this topic deserves your attention :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Honestly, Whoever, lied, Daniel, Fred, Sarah, proclaimed, Obviously, eh, Qian, cloneembedreportprint, Elsa\n\nTEXT:\nThis makes writing code easier and reduces performance rather than being slow during computation because any changes caused by each step can be easily undone once completed so those steps will never run out altogether without further assistance from both developers and software development staff! As mentioned above, we have used our low volume \"sphere\" method frequently since its implementation has been very robust enough due to how much data needed per level every second compared back to conventional languages such css files created using C++ functions - all while avoiding introducing bugs which may cause problems within existing programs too… We think these differences should help make programming difficult... If",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Honestly, Whoever, lied, Daniel, Fred, Sarah, proclaimed, Obviously, eh, Qian, cloneembedreportprint, Elsa\n\nTEXT:\nThis makes writing code easier and reduces performance rather than being slow during computation because any changes caused by each step can be easily undone once completed so those steps will never run out altogether without further assistance from both developers and software development staff! As mentioned above, we have used our low volume \"sphere\" method frequently since its implementation has been very robust enough due to how much data needed per level every second compared back to conventional languages such css files created using C++ functions - all while avoiding introducing bugs which may cause problems within existing programs too… We think these differences should help make programming difficult... If you were wondering what it is that means for learning about Java's syntax (which I'm sure others don't know but there might also be) then this topic deserves your attention :)",
+        "continuation_text": "you were wondering what it is that means for learning about Java's syntax (which I'm sure others don't know but there might also be) then this topic deserves your attention :)",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 243,
+        "new_token_count": 37,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 175,
+        "word_count": 31,
+        "unique_word_count": 31,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

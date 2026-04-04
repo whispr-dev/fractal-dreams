@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1253,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 630,
+        "word_count": 106,
+        "unique_word_count": 104,
+        "unique_word_ratio": 0.9811320754716981,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 417,
+        "word_count": 66,
+        "unique_word_count": 62,
+        "unique_word_ratio": 0.9393939393939394,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 797,
+        "word_count": 118,
+        "unique_word_count": 107,
+        "unique_word_ratio": 0.9067796610169492,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "mentor",
+        "Coach",
+        "Aunt",
+        "forge",
+        "mentors",
+        "Strongh",
+        "Colossus",
+        "pioneered",
+        "Wyatt",
+        "alliances",
+        "friendships",
+        "organise"
+      ],
+      "output_text": "The first was used during this program when we would be taught how to translate an unsympathetic reader into writing code without being subjected to some kind or formalization process (such as using multiple lines from two characters). To accomplish these tasks with no difficulty at all, each Librarians have been able to teach their own languages together for years; it is possible that most writers had never read any more than one word before because they knew what words meant by them but did not believe such texts existed until recently.[1] Some members of our staff felt overwhelmed if there wasn't enough room outside the",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mentor, Coach, Aunt, forge, mentors, Strongh, Colossus, pioneered, Wyatt, alliances, friendships, organise\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mentor, Coach, Aunt, forge, mentors, Strongh, Colossus, pioneered, Wyatt, alliances, friendships, organise\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The first was used during this program when we would be taught how to translate an unsympathetic reader into writing code without being subjected to some kind or formalization process (such as using multiple lines from two characters). To accomplish these tasks with no difficulty at all, each Librarians have been able to teach their own languages together for years; it is possible that most writers had never read any more than one word before because they knew what words meant by them but did not believe such texts existed until recently.[1] Some members of our staff felt overwhelmed if there wasn't enough room outside the",
+        "continuation_text": "The first was used during this program when we would be taught how to translate an unsympathetic reader into writing code without being subjected to some kind or formalization process (such as using multiple lines from two characters). To accomplish these tasks with no difficulty at all, each Librarians have been able to teach their own languages together for years; it is possible that most writers had never read any more than one word before because they knew what words meant by them but did not believe such texts existed until recently.[1] Some members of our staff felt overwhelmed if there wasn't enough room outside the",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 228,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 630,
+        "word_count": 106,
+        "unique_word_count": 104,
+        "unique_word_ratio": 0.9811320754716981,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Personally",
+        "According",
+        "Whether",
+        "Regardless",
+        "Everyone",
+        "Being",
+        "Our",
+        "Considering",
+        "Keeping",
+        "Imagine",
+        "Keep",
+        "The"
+      ],
+      "output_text": "classroom and could simply go over books written on computer screens while others were unable to write themselves through sentences alone instead of doing those letters directly—which leads us to conclude that \"it's important to know which letter you really want.\" We will continue working closely with your teachers today so that everyone who uses Google knows exactly where to start reading after seeing my article!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Personally, According, Whether, Regardless, Everyone, Being, Our, Considering, Keeping, Imagine, Keep, The\n\nTEXT:\nThe first was used during this program when we would be taught how to translate an unsympathetic reader into writing code without being subjected to some kind or formalization process (such as using multiple lines from two characters). To accomplish these tasks with no difficulty at all, each Librarians have been able to teach their own languages together for years; it is possible that most writers had never read any more than one word before because they knew what words meant by them but did not believe such texts existed until recently.[1] Some members of our staff felt overwhelmed if there wasn't enough room outside the",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Personally, According, Whether, Regardless, Everyone, Being, Our, Considering, Keeping, Imagine, Keep, The\n\nTEXT:\nThe first was used during this program when we would be taught how to translate an unsympathetic reader into writing code without being subjected to some kind or formalization process (such as using multiple lines from two characters). To accomplish these tasks with no difficulty at all, each Librarians have been able to teach their own languages together for years; it is possible that most writers had never read any more than one word before because they knew what words meant by them but did not believe such texts existed until recently.[1] Some members of our staff felt overwhelmed if there wasn't enough room outside the classroom and could simply go over books written on computer screens while others were unable to write themselves through sentences alone instead of doing those letters directly—which leads us to conclude that \"it's important to know which letter you really want.\" We will continue working closely with your teachers today so that everyone who uses Google knows exactly where to start reading after seeing my article!",
+        "continuation_text": "classroom and could simply go over books written on computer screens while others were unable to write themselves through sentences alone instead of doing those letters directly—which leads us to conclude that \"it's important to know which letter you really want.\" We will continue working closely with your teachers today so that everyone who uses Google knows exactly where to start reading after seeing my article!",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 278,
+        "new_token_count": 73,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 417,
+        "word_count": 66,
+        "unique_word_count": 62,
+        "unique_word_ratio": 0.9393939393939394,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "class",
+        "neoliberal",
+        "punitive",
+        "fossil",
+        "wealthy",
+        "disadvantaged",
+        "tariff",
+        "wage",
+        "disadvantage",
+        "incarceration",
+        "utilitarian",
+        "tuition"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: class, neoliberal, punitive, fossil, wealthy, disadvantaged, tariff, wage, disadvantage, incarceration, utilitarian, tuition\n\nTEXT:\nclassroom and could simply go over books written on computer screens while others were unable to write themselves through sentences alone instead of doing those letters directly—which leads us to conclude that \"it's important to know which letter you really want.\" We will continue working closely with your teachers today so that everyone who uses Google knows exactly where to start reading after seeing my article!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: class, neoliberal, punitive, fossil, wealthy, disadvantaged, tariff, wage, disadvantage, incarceration, utilitarian, tuition\n\nTEXT:\nclassroom and could simply go over books written on computer screens while others were unable to write themselves through sentences alone instead of doing those letters directly—which leads us to conclude that \"it's important to know which letter you really want.\" We will continue working closely with your teachers today so that everyone who uses Google knows exactly where to start reading after seeing my article!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: class, neoliberal, punitive, fossil, wealthy, disadvantaged, tariff, wage, disadvantage, incarceration, utilitarian, tuition\n\nTEXT:\nclassroom and could simply go over books written on computer screens while others were unable to write themselves through sentences alone instead of doing those letters directly—which leads us to conclude that \"it's important to know which letter you really want.\" We will continue working closely with your teachers today so that everyone who uses Google knows exactly where to start reading after seeing my article!",
+        "continuation_text": "",
+        "input_token_count": 158,
+        "raw_input_token_count": 158,
+        "output_token_count": 159,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 797,
+        "word_count": 118,
+        "unique_word_count": 107,
+        "unique_word_ratio": 0.9067796610169492,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

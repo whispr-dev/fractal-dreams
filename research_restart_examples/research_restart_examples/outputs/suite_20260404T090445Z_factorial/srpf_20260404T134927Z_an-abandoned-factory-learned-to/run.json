@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1387,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 21,
+        "word_count": 3,
+        "unique_word_count": 3,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 178,
+        "word_count": 29,
+        "unique_word_count": 29,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 72,
+        "word_count": 10,
+        "unique_word_count": 10,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 351,
+        "word_count": 74,
+        "unique_word_count": 73,
+        "unique_word_ratio": 0.9864864864864865,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "This is exactly how you write your thoughts through dialogue – no matter what level of complexity we play out in these examples! It sounds very simple from the beginning…it's also much easier to find all possible paths between learning something with some basic syntax (like English) or writing an idea without having to worry about spelling mistakes for example; since they're written by humans this means there's usually only one way around them which would be better if he'd just said \"OK\", so why bother? The original goal was to learn everything now when new people start working on sentences instead as per our approach - because even though each has different definitions/rules then I expect most readers won't have enough information here at first until their brains become fully aware. So let me give myself time to think up my next",
+      "output_text": "logical step again...",
+      "source_window_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+      "reflection_window_text": "This is exactly how you write your thoughts through dialogue – no matter what level of complexity we play out in these examples! It sounds very simple from the beginning…it's also much easier to find all possible paths between learning something with some basic syntax (like English) or writing an idea without having to worry about spelling mistakes for example; since they're written by humans this means there's usually only one way around them which would be better if he'd just said \"OK\", so why bother? The original goal was to learn everything now when new people start working on sentences instead as per our approach - because even though each has different definitions/rules then I expect most readers won't have enough information here at first until their brains become fully aware. So let me give myself time to think up my next",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. This is exactly how you write your thoughts through dialogue – no matter what level of complexity we play out in these examples! It sounds very simple from the beginning…it's also much easier to find all possible paths between learning something with some basic syntax (like English) or writing an idea without having to worry about spelling mistakes for example; since they're written by humans this means there's usually only one way around them which would be better if he'd just said \"OK\", so why bother? The original goal was to learn everything now when new people start working on sentences instead as per our approach - because even though each has different definitions/rules then I expect most readers won't have enough information here at first until their brains become fully aware. So let me give myself time to think up my next",
+        "continuation_text": "This is exactly how you write your thoughts through dialogue – no matter what level of complexity we play out in these examples! It sounds very simple from the beginning…it's also much easier to find all possible paths between learning something with some basic syntax (like English) or writing an idea without having to worry about spelling mistakes for example; since they're written by humans this means there's usually only one way around them which would be better if he'd just said \"OK\", so why bother? The original goal was to learn everything now when new people start working on sentences instead as per our approach - because even though each has different definitions/rules then I expect most readers won't have enough information here at first until their brains become fully aware. So let me give myself time to think up my next",
+        "input_token_count": 95,
+        "raw_input_token_count": 95,
+        "output_token_count": 255,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\nThis is exactly how you write your thoughts through dialogue – no matter what level of complexity we play out in these examples! It sounds very simple from the beginning…it's also much easier to find all possible paths between learning something with some basic syntax (like English) or writing an idea without having to worry about spelling mistakes for example; since they're written by humans this means there's usually only one way around them which would be better if he'd just said \"OK\", so why bother? The original goal was to learn everything now when new people start working on sentences instead as per our approach - because even though each has different definitions/rules then I expect most readers won't have enough information here at first until their brains become fully aware. So let me give myself time to think up my next",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\nThis is exactly how you write your thoughts through dialogue – no matter what level of complexity we play out in these examples! It sounds very simple from the beginning…it's also much easier to find all possible paths between learning something with some basic syntax (like English) or writing an idea without having to worry about spelling mistakes for example; since they're written by humans this means there's usually only one way around them which would be better if he'd just said \"OK\", so why bother? The original goal was to learn everything now when new people start working on sentences instead as per our approach - because even though each has different definitions/rules then I expect most readers won't have enough information here at first until their brains become fully aware. So let me give myself time to think up my next logical step again...",
+        "continuation_text": "logical step again...",
+        "input_token_count": 243,
+        "raw_input_token_count": 243,
+        "output_token_count": 248,
+        "new_token_count": 5,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 21,
+        "word_count": 3,
+        "unique_word_count": 3,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "But just what is \"a\" (and should \"t\") of it? A subset—not necessarily an entire one. In our case, we have to make sure this behavior doesn't impact actual program performance or code correctness over time as well; you can find examples from many others on StackOverflow . For example , if I were running with multiple packages into each other's dependencies/extensions package at once, my main difference would be making them look something like these :\nSo now let us see how different kinds of software behave when they need to change their state so long as there aren’e(*) new versions for all sorts!",
+      "output_text": "That makes sense because although some components don�d do work by default and thus often cause crashes that only use native syntax than those supported ones will happen anyway..",
+      "source_window_text": "logical step again...",
+      "reflection_window_text": "But just what is \"a\" (and should \"t\") of it? A subset—not necessarily an entire one. In our case, we have to make sure this behavior doesn't impact actual program performance or code correctness over time as well; you can find examples from many others on StackOverflow . For example , if I were running with multiple packages into each other's dependencies/extensions package at once, my main difference would be making them look something like these :\nSo now let us see how different kinds of software behave when they need to change their state so long as there aren’e(*) new versions for all sorts!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nlogical step again...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nlogical step again... But just what is \"a\" (and should \"t\") of it? A subset—not necessarily an entire one. In our case, we have to make sure this behavior doesn't impact actual program performance or code correctness over time as well; you can find examples from many others on StackOverflow . For example , if I were running with multiple packages into each other's dependencies/extensions package at once, my main difference would be making them look something like these :\nSo now let us see how different kinds of software behave when they need to change their state so long as there aren’e(*) new versions for all sorts!",
+        "continuation_text": "But just what is \"a\" (and should \"t\") of it? A subset—not necessarily an entire one. In our case, we have to make sure this behavior doesn't impact actual program performance or code correctness over time as well; you can find examples from many others on StackOverflow . For example , if I were running with multiple packages into each other's dependencies/extensions package at once, my main difference would be making them look something like these :\nSo now let us see how different kinds of software behave when they need to change their state so long as there aren’e(*) new versions for all sorts!",
+        "input_token_count": 74,
+        "raw_input_token_count": 74,
+        "output_token_count": 206,
+        "new_token_count": 132,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nlogical step again...\n\nREFLECTION:\nBut just what is \"a\" (and should \"t\") of it? A subset—not necessarily an entire one. In our case, we have to make sure this behavior doesn't impact actual program performance or code correctness over time as well; you can find examples from many others on StackOverflow . For example , if I were running with multiple packages into each other's dependencies/extensions package at once, my main difference would be making them look something like these :\nSo now let us see how different kinds of software behave when they need to change their state so long as there aren’e(*) new versions for all sorts!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nlogical step again...\n\nREFLECTION:\nBut just what is \"a\" (and should \"t\") of it? A subset—not necessarily an entire one. In our case, we have to make sure this behavior doesn't impact actual program performance or code correctness over time as well; you can find examples from many others on StackOverflow . For example , if I were running with multiple packages into each other's dependencies/extensions package at once, my main difference would be making them look something like these :\nSo now let us see how different kinds of software behave when they need to change their state so long as there aren’e(*) new versions for all sorts! That makes sense because although some components don�d do work by default and thus often cause crashes that only use native syntax than those supported ones will happen anyway..",
+        "continuation_text": "That makes sense because although some components don�d do work by default and thus often cause crashes that only use native syntax than those supported ones will happen anyway..",
+        "input_token_count": 193,
+        "raw_input_token_count": 193,
+        "output_token_count": 226,
+        "new_token_count": 33,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 178,
+        "word_count": 29,
+        "unique_word_count": 29,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "the whole system is very robust, making it extremely difficult to run code over memory or read/write without having much support for these features which might also need to be used (though they're easy to implement). This allows you easily change your own behavior using other languages such as Java . It works fine just with any existing program on MacOS but most of them have all been built from scratch so there's no way I'm going to write new programs within 4 hours! That could help explain why many people think about calling up old software instead if needed...or writing improved version control systems like this one?",
+      "output_text": "And should anyone really consider implementing non-native versions too ?",
+      "source_window_text": "That makes sense because although some components don�d do work by default and thus often cause crashes that only use native syntax than those supported ones will happen anyway..",
+      "reflection_window_text": "the whole system is very robust, making it extremely difficult to run code over memory or read/write without having much support for these features which might also need to be used (though they're easy to implement). This allows you easily change your own behavior using other languages such as Java . It works fine just with any existing program on MacOS but most of them have all been built from scratch so there's no way I'm going to write new programs within 4 hours! That could help explain why many people think about calling up old software instead if needed...or writing improved version control systems like this one?",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThat makes sense because although some components don�d do work by default and thus often cause crashes that only use native syntax than those supported ones will happen anyway..",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThat makes sense because although some components don�d do work by default and thus often cause crashes that only use native syntax than those supported ones will happen anyway..the whole system is very robust, making it extremely difficult to run code over memory or read/write without having much support for these features which might also need to be used (though they're easy to implement). This allows you easily change your own behavior using other languages such as Java . It works fine just with any existing program on MacOS but most of them have all been built from scratch so there's no way I'm going to write new programs within 4 hours! That could help explain why many people think about calling up old software instead if needed...or writing improved version control systems like this one?",
+        "continuation_text": "the whole system is very robust, making it extremely difficult to run code over memory or read/write without having much support for these features which might also need to be used (though they're easy to implement). This allows you easily change your own behavior using other languages such as Java . It works fine just with any existing program on MacOS but most of them have all been built from scratch so there's no way I'm going to write new programs within 4 hours! That could help explain why many people think about calling up old software instead if needed...or writing improved version control systems like this one?",
+        "input_token_count": 101,
+        "raw_input_token_count": 101,
+        "output_token_count": 223,
+        "new_token_count": 122,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThat makes sense because although some components don�d do work by default and thus often cause crashes that only use native syntax than those supported ones will happen anyway..\n\nREFLECTION:\nthe whole system is very robust, making it extremely difficult to run code over memory or read/write without having much support for these features which might also need to be used (though they're easy to implement). This allows you easily change your own behavior using other languages such as Java . It works fine just with any existing program on MacOS but most of them have all been built from scratch so there's no way I'm going to write new programs within 4 hours! That could help explain why many people think about calling up old software instead if needed...or writing improved version control systems like this one?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThat makes sense because although some components don�d do work by default and thus often cause crashes that only use native syntax than those supported ones will happen anyway..\n\nREFLECTION:\nthe whole system is very robust, making it extremely difficult to run code over memory or read/write without having much support for these features which might also need to be used (though they're easy to implement). This allows you easily change your own behavior using other languages such as Java . It works fine just with any existing program on MacOS but most of them have all been built from scratch so there's no way I'm going to write new programs within 4 hours! That could help explain why many people think about calling up old software instead if needed...or writing improved version control systems like this one? And should anyone really consider implementing non-native versions too ?",
+        "continuation_text": "And should anyone really consider implementing non-native versions too ?",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 223,
+        "new_token_count": 13,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 72,
+        "word_count": 10,
+        "unique_word_count": 10,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAnd should anyone really consider implementing non-native versions too ?",
+      "output_text": "REFLECTIONS: It's easy for people to get started by writing some simple form of syntax here :\nBEGIN <Text> \"Hello World!\" (or even just use your first argument) > ; END ; T; X; Y; Z; O; I; V; P; W; S; { - } }; EXCEPTION:\nLet’s try out all three rules on what can be written with NODE 1 . A few basic terms were added which help improve this feature :)",
+      "source_window_text": "And should anyone really consider implementing non-native versions too ?",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAnd should anyone really consider implementing non-native versions too ?",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAnd should anyone really consider implementing non-native versions too ?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAnd should anyone really consider implementing non-native versions too ?",
+        "continuation_text": "",
+        "input_token_count": 81,
+        "raw_input_token_count": 81,
+        "output_token_count": 82,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAnd should anyone really consider implementing non-native versions too ?\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAnd should anyone really consider implementing non-native versions too ?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAnd should anyone really consider implementing non-native versions too ?\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAnd should anyone really consider implementing non-native versions too ?\nREFLECTIONS: It's easy for people to get started by writing some simple form of syntax here :\nBEGIN <Text> \"Hello World!\" (or even just use your first argument) > ; END ; T; X; Y; Z; O; I; V; P; W; S; { - } }; EXCEPTION:\nLet’s try out all three rules on what can be written with NODE 1 . A few basic terms were added which help improve this feature :)",
+        "continuation_text": "REFLECTIONS: It's easy for people to get started by writing some simple form of syntax here :\nBEGIN <Text> \"Hello World!\" (or even just use your first argument) > ; END ; T; X; Y; Z; O; I; V; P; W; S; { - } }; EXCEPTION:\nLet’s try out all three rules on what can be written with NODE 1 . A few basic terms were added which help improve this feature :)",
+        "input_token_count": 150,
+        "raw_input_token_count": 150,
+        "output_token_count": 257,
+        "new_token_count": 107,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 351,
+        "word_count": 74,
+        "unique_word_count": 73,
+        "unique_word_ratio": 0.9864864864864865,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

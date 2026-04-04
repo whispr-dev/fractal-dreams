@@ -1,0 +1,34 @@
+[0] seed
+A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.
+
+[1] latent anchors
+opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction
+
+[1] output
+The next recursive transformation could be:
+
+"ویژگی‌های درجه نرم‌افزاری به زمینه صنعتی بروید و ساختار آن را پشتیبانی کرده است."
+
+This is derived by finding the most recently appeared token with an EOS (End Of Sentence) symbol within the original sequence, which is "خواسته" ('about'), followed by the subsequent tokens that provide context for it. The result can now continue expanding its meaning while staying true to the constraints set by the given latent anchors
+
+[2] latent anchors
+),, },, ,, )),, )，, ",, ，, ），, ()),, ',, }),, (),
+
+[2] output
+"پس از مطالعات و تصميم فعال، بررسی عملکرد مدل شناسایی تمرین‌ها حفاظت تا جانشاسه‌ای."
+
+[3] latent anchors
+”, 白, “, ", "), �, ”), "}, ");, _, \, 的
+
+[3] output
+The next recursive transformation involves expanding and constructing the Latent Anchor Tokens (LATTES) into a more complex structure that includes both the words from the original sentence and further LATTES for additional information or context. Here's how it can be structured:
+
+```plaintext
+۱) پس چیست؟
+۲) زیرا ما هدایمت آزمون‌ها را به صورت دقت بزنیم.
+```
+
+In this example:
+1. The first LATTE is `۱)` which represents the number one.
+2.
+

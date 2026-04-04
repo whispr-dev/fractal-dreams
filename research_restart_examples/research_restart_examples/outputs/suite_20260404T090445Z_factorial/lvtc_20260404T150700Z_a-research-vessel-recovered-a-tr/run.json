@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1494,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 719,
+        "word_count": 112,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.9732142857142857,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 836,
+        "word_count": 119,
+        "unique_word_count": 117,
+        "unique_word_ratio": 0.9831932773109243,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 283,
+        "word_count": 51,
+        "unique_word_count": 51,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 35,
+        "word_count": 7,
+        "unique_word_count": 7,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "had",
+        "was",
+        "are",
+        "It",
+        "went",
+        "have",
+        "in",
+        "has",
+        "with",
+        "is"
+      ],
+      "output_text": "The theory became accepted for all practical purposes since that time; this principle came to define modern technology based upon an understanding of how communication works among different classes of thought (see \"Transgressions\") which might lead to new ideas/programming techniques where people can build their own systems without being forced into thinking about what they say or do but on more abstract terms such as ‐I‬ 。 That may sound like so much stuff right now you know... But when I looked at two experiments we found something interesting - one involving individuals who wanted to use computers efficiently while communicating freely between users across groups via internet connections.. And other studies",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, had, was, are, It, went, have, in, has, with, is\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, had, was, are, It, went, have, in, has, with, is\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The theory became accepted for all practical purposes since that time; this principle came to define modern technology based upon an understanding of how communication works among different classes of thought (see \"Transgressions\") which might lead to new ideas/programming techniques where people can build their own systems without being forced into thinking about what they say or do but on more abstract terms such as ‐I‬ 。 That may sound like so much stuff right now you know... But when I looked at two experiments we found something interesting - one involving individuals who wanted to use computers efficiently while communicating freely between users across groups via internet connections.. And other studies",
+        "continuation_text": "The theory became accepted for all practical purposes since that time; this principle came to define modern technology based upon an understanding of how communication works among different classes of thought (see \"Transgressions\") which might lead to new ideas/programming techniques where people can build their own systems without being forced into thinking about what they say or do but on more abstract terms such as ‐I‬ 。 That may sound like so much stuff right now you know... But when I looked at two experiments we found something interesting - one involving individuals who wanted to use computers efficiently while communicating freely between users across groups via internet connections.. And other studies",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 230,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 719,
+        "word_count": 112,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.9732142857142857,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "had",
+        "they",
+        "did",
+        "could",
+        "was",
+        "is",
+        "It"
+      ],
+      "output_text": "showed even fewer students using those kinds and less computer programming than teachers with advanced degrees! They also noticed there still wasn't enough knowledge regarding some areas including linguistic fluency rather than verbal comprehension skills developed throughout both teams :D The problem here lies in knowing exactly whom group gets from most languages instead , thus creating better networks during negotiations . Moreover, though many experts see clearly differences between native speakers speaking English versus fluent Spanish over various contexts due to not having access information through them.... Of course learning directly relates to social interaction ! Therefore far our results show little difference towards just generalisation of speech patterns however .. One reason why humans often prefer nonstandard",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, they, did, could, was, is, It\n\nTEXT:\nThe theory became accepted for all practical purposes since that time; this principle came to define modern technology based upon an understanding of how communication works among different classes of thought (see \"Transgressions\") which might lead to new ideas/programming techniques where people can build their own systems without being forced into thinking about what they say or do but on more abstract terms such as ‐I‬ 。 That may sound like so much stuff right now you know... But when I looked at two experiments we found something interesting - one involving individuals who wanted to use computers efficiently while communicating freely between users across groups via internet connections.. And other studies",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, they, did, could, was, is, It\n\nTEXT:\nThe theory became accepted for all practical purposes since that time; this principle came to define modern technology based upon an understanding of how communication works among different classes of thought (see \"Transgressions\") which might lead to new ideas/programming techniques where people can build their own systems without being forced into thinking about what they say or do but on more abstract terms such as ‐I‬ 。 That may sound like so much stuff right now you know... But when I looked at two experiments we found something interesting - one involving individuals who wanted to use computers efficiently while communicating freely between users across groups via internet connections.. And other studies showed even fewer students using those kinds and less computer programming than teachers with advanced degrees! They also noticed there still wasn't enough knowledge regarding some areas including linguistic fluency rather than verbal comprehension skills developed throughout both teams :D The problem here lies in knowing exactly whom group gets from most languages instead , thus creating better networks during negotiations . Moreover, though many experts see clearly differences between native speakers speaking English versus fluent Spanish over various contexts due to not having access information through them.... Of course learning directly relates to social interaction ! Therefore far our results show little difference towards just generalisation of speech patterns however .. One reason why humans often prefer nonstandard",
+        "continuation_text": "showed even fewer students using those kinds and less computer programming than teachers with advanced degrees! They also noticed there still wasn't enough knowledge regarding some areas including linguistic fluency rather than verbal comprehension skills developed throughout both teams :D The problem here lies in knowing exactly whom group gets from most languages instead , thus creating better networks during negotiations . Moreover, though many experts see clearly differences between native speakers speaking English versus fluent Spanish over various contexts due to not having access information through them.... Of course learning directly relates to social interaction ! Therefore far our results show little difference towards just generalisation of speech patterns however .. One reason why humans often prefer nonstandard",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 836,
+        "word_count": 119,
+        "unique_word_count": 117,
+        "unique_word_ratio": 0.9831932773109243,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "if",
+        "are",
+        "although",
+        "had",
+        "they",
+        "didn",
+        "despite",
+        "did",
+        "It",
+        "getting"
+      ],
+      "output_text": "izing is that you have more familiarity at different time points (in terms of how long people remember), so this means we could easily learn only specific words without any bias or biases which would make us do much worse - as for what happens when all other groups don’t understand?",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, are, although, had, they, didn, despite, did, It, getting\n\nTEXT:\nshowed even fewer students using those kinds and less computer programming than teachers with advanced degrees! They also noticed there still wasn't enough knowledge regarding some areas including linguistic fluency rather than verbal comprehension skills developed throughout both teams :D The problem here lies in knowing exactly whom group gets from most languages instead , thus creating better networks during negotiations . Moreover, though many experts see clearly differences between native speakers speaking English versus fluent Spanish over various contexts due to not having access information through them.... Of course learning directly relates to social interaction ! Therefore far our results show little difference towards just generalisation of speech patterns however .. One reason why humans often prefer nonstandard",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, are, although, had, they, didn, despite, did, It, getting\n\nTEXT:\nshowed even fewer students using those kinds and less computer programming than teachers with advanced degrees! They also noticed there still wasn't enough knowledge regarding some areas including linguistic fluency rather than verbal comprehension skills developed throughout both teams :D The problem here lies in knowing exactly whom group gets from most languages instead , thus creating better networks during negotiations . Moreover, though many experts see clearly differences between native speakers speaking English versus fluent Spanish over various contexts due to not having access information through them.... Of course learning directly relates to social interaction ! Therefore far our results show little difference towards just generalisation of speech patterns however .. One reason why humans often prefer nonstandardizing is that you have more familiarity at different time points (in terms of how long people remember), so this means we could easily learn only specific words without any bias or biases which would make us do much worse - as for what happens when all other groups don’t understand?",
+        "continuation_text": "izing is that you have more familiarity at different time points (in terms of how long people remember), so this means we could easily learn only specific words without any bias or biases which would make us do much worse - as for what happens when all other groups don’t understand?",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 266,
+        "new_token_count": 58,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 283,
+        "word_count": 51,
+        "unique_word_count": 51,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "were",
+        "if",
+        "have",
+        "is",
+        "had",
+        "could",
+        "was",
+        "would",
+        "has",
+        "we"
+      ],
+      "output_text": "This should come back to me here...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, have, is, had, could, was, would, has, we\n\nTEXT:\nizing is that you have more familiarity at different time points (in terms of how long people remember), so this means we could easily learn only specific words without any bias or biases which would make us do much worse - as for what happens when all other groups don’t understand?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, have, is, had, could, was, would, has, we\n\nTEXT:\nizing is that you have more familiarity at different time points (in terms of how long people remember), so this means we could easily learn only specific words without any bias or biases which would make us do much worse - as for what happens when all other groups don’t understand? This should come back to me here...",
+        "continuation_text": "This should come back to me here...",
+        "input_token_count": 136,
+        "raw_input_token_count": 136,
+        "output_token_count": 145,
+        "new_token_count": 9,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 35,
+        "word_count": 7,
+        "unique_word_count": 7,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

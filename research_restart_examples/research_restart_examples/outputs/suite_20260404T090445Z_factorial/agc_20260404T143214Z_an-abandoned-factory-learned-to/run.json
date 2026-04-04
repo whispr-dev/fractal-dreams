@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1449,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 599,
+        "word_count": 103,
+        "unique_word_count": 103,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 313,
+        "word_count": 53,
+        "unique_word_count": 53,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 39,
+        "word_count": 8,
+        "unique_word_count": 8,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "did",
+        "ikhail",
+        "Rachel",
+        "double",
+        "do",
+        "David",
+        "THESE",
+        "does",
+        "colm",
+        "struggled",
+        "eredith",
+        "Conversely"
+      ],
+      "output_text": "As I've mentioned before, this is an example where people get their head out for easy solutions rather than realisation that there's still room left over from learning these things… or even just letting them know how they're going about making sense of something else (or some other) after all! It really doesn't matter what you call \"a lesson\" here on our site; we have found those questions with good answers anyway – one time when trying new stuff was quite interesting because no teacher said anything coherently which led me back down into thinking 'Oh my God' instead.' That could be explained",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: did, ikhail, Rachel, double, do, David, THESE, does, colm, struggled, eredith, Conversely\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: did, ikhail, Rachel, double, do, David, THESE, does, colm, struggled, eredith, Conversely\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. As I've mentioned before, this is an example where people get their head out for easy solutions rather than realisation that there's still room left over from learning these things… or even just letting them know how they're going about making sense of something else (or some other) after all! It really doesn't matter what you call \"a lesson\" here on our site; we have found those questions with good answers anyway – one time when trying new stuff was quite interesting because no teacher said anything coherently which led me back down into thinking 'Oh my God' instead.' That could be explained",
+        "continuation_text": "As I've mentioned before, this is an example where people get their head out for easy solutions rather than realisation that there's still room left over from learning these things… or even just letting them know how they're going about making sense of something else (or some other) after all! It really doesn't matter what you call \"a lesson\" here on our site; we have found those questions with good answers anyway – one time when trying new stuff was quite interesting because no teacher said anything coherently which led me back down into thinking 'Oh my God' instead.' That could be explained",
+        "input_token_count": 115,
+        "raw_input_token_count": 115,
+        "output_token_count": 235,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 599,
+        "word_count": 103,
+        "unique_word_count": 103,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "As",
+        ".",
+        "�",
+        "Anyway",
+        "of",
+        "At",
+        "scen",
+        "mint",
+        "IC",
+        "RON",
+        "note",
+        "Finally"
+      ],
+      "output_text": "by having at least six different ideas and also being able pick two possible ones if it might make any difference whether your idea looks more plausible then another variation has already been proposed so don´t think yourself qualified enough yet but do try doing experiments like ours using such techniques too 🙂",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: As, ., �, Anyway, of, At, scen, mint, IC, RON, note, Finally\n\nTEXT:\nAs I've mentioned before, this is an example where people get their head out for easy solutions rather than realisation that there's still room left over from learning these things… or even just letting them know how they're going about making sense of something else (or some other) after all! It really doesn't matter what you call \"a lesson\" here on our site; we have found those questions with good answers anyway – one time when trying new stuff was quite interesting because no teacher said anything coherently which led me back down into thinking 'Oh my God' instead.' That could be explained",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: As, ., �, Anyway, of, At, scen, mint, IC, RON, note, Finally\n\nTEXT:\nAs I've mentioned before, this is an example where people get their head out for easy solutions rather than realisation that there's still room left over from learning these things… or even just letting them know how they're going about making sense of something else (or some other) after all! It really doesn't matter what you call \"a lesson\" here on our site; we have found those questions with good answers anyway – one time when trying new stuff was quite interesting because no teacher said anything coherently which led me back down into thinking 'Oh my God' instead.' That could be explained by having at least six different ideas and also being able pick two possible ones if it might make any difference whether your idea looks more plausible then another variation has already been proposed so don´t think yourself qualified enough yet but do try doing experiments like ours using such techniques too 🙂",
+        "continuation_text": "by having at least six different ideas and also being able pick two possible ones if it might make any difference whether your idea looks more plausible then another variation has already been proposed so don´t think yourself qualified enough yet but do try doing experiments like ours using such techniques too 🙂",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 262,
+        "new_token_count": 56,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 313,
+        "word_count": 53,
+        "unique_word_count": 53,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "by",
+        "Wayne",
+        "brook",
+        "By",
+        "ington",
+        "ton",
+        "Willis",
+        "Frank",
+        "1934",
+        "Leslie",
+        "Brook",
+        "ileen"
+      ],
+      "output_text": "(The code is now available on github ).",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: by, Wayne, brook, By, ington, ton, Willis, Frank, 1934, Leslie, Brook, ileen\n\nTEXT:\nby having at least six different ideas and also being able pick two possible ones if it might make any difference whether your idea looks more plausible then another variation has already been proposed so don´t think yourself qualified enough yet but do try doing experiments like ours using such techniques too 🙂",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: by, Wayne, brook, By, ington, ton, Willis, Frank, 1934, Leslie, Brook, ileen\n\nTEXT:\nby having at least six different ideas and also being able pick two possible ones if it might make any difference whether your idea looks more plausible then another variation has already been proposed so don´t think yourself qualified enough yet but do try doing experiments like ours using such techniques too 🙂 (The code is now available on github ).\n\n",
+        "continuation_text": "(The code is now available on github ).",
+        "input_token_count": 143,
+        "raw_input_token_count": 143,
+        "output_token_count": 154,
+        "new_token_count": 11,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 39,
+        "word_count": 8,
+        "unique_word_count": 8,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

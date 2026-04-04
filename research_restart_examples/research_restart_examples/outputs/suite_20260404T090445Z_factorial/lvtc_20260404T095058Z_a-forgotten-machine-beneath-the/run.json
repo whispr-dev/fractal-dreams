@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1062,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 691,
+        "word_count": 113,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.9646017699115044,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 766,
+        "word_count": 119,
+        "unique_word_count": 119,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 690,
+        "word_count": 116,
+        "unique_word_count": 113,
+        "unique_word_ratio": 0.9741379310344828,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 135,
+        "word_count": 24,
+        "unique_word_count": 24,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        ",",
+        "have",
+        "was",
+        "made",
+        "It",
+        "if",
+        "the",
+        "."
+      ],
+      "output_text": "The words remained only vaguely related to each other's name (the one that they used as an example for their syntax). Yet all this is lost on us today; we need not leave them with any clues at all about what caused those characters to come from elsewhere. They may seem like weird things when you say something so strange or unusual over time but then again there has never been anything such as either word itself—they actually appear different than just some random \"text,\" which sounds almost incomprehensible within English texts —or even certain phrases themselves without being explicitly mentioned (\"it\" seems completely unnecessary) rather than merely another syllable alone! Now let",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The words remained only vaguely related to each other's name (the one that they used as an example for their syntax). Yet all this is lost on us today; we need not leave them with any clues at all about what caused those characters to come from elsewhere. They may seem like weird things when you say something so strange or unusual over time but then again there has never been anything such as either word itself—they actually appear different than just some random \"text,\" which sounds almost incomprehensible within English texts —or even certain phrases themselves without being explicitly mentioned (\"it\" seems completely unnecessary) rather than merely another syllable alone! Now let",
+        "continuation_text": "The words remained only vaguely related to each other's name (the one that they used as an example for their syntax). Yet all this is lost on us today; we need not leave them with any clues at all about what caused those characters to come from elsewhere. They may seem like weird things when you say something so strange or unusual over time but then again there has never been anything such as either word itself—they actually appear different than just some random \"text,\" which sounds almost incomprehensible within English texts —or even certain phrases themselves without being explicitly mentioned (\"it\" seems completely unnecessary) rather than merely another syllable alone! Now let",
+        "input_token_count": 110,
+        "raw_input_token_count": 110,
+        "output_token_count": 238,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 691,
+        "word_count": 113,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.9646017699115044,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "they",
+        "if",
+        "have",
+        "had",
+        "is",
+        "was",
+        "the",
+        "that",
+        "in"
+      ],
+      "output_text": "us take our cue and put together six sentences composed simply before typing off your sentence here…and imagine how much more amazing might someone could do using three distinct symbols? How many questions would anyone ask me now?! The answer depends entirely on whether I'm reading through whatever code my students read somewhere else instead of writing back home once everything starts working out nicely enough after two seconds into passing?\" If he asked somebody why his expression went crazy every second while doing multiple repetitions consecutively prior to completing several simple calculations above him somehow didn't end up coming right down behind everyone who did exactly that first bit during five minutes later – especially considering no external",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, they, if, have, had, is, was, the, that, in\n\nTEXT:\nThe words remained only vaguely related to each other's name (the one that they used as an example for their syntax). Yet all this is lost on us today; we need not leave them with any clues at all about what caused those characters to come from elsewhere. They may seem like weird things when you say something so strange or unusual over time but then again there has never been anything such as either word itself—they actually appear different than just some random \"text,\" which sounds almost incomprehensible within English texts —or even certain phrases themselves without being explicitly mentioned (\"it\" seems completely unnecessary) rather than merely another syllable alone! Now let",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, they, if, have, had, is, was, the, that, in\n\nTEXT:\nThe words remained only vaguely related to each other's name (the one that they used as an example for their syntax). Yet all this is lost on us today; we need not leave them with any clues at all about what caused those characters to come from elsewhere. They may seem like weird things when you say something so strange or unusual over time but then again there has never been anything such as either word itself—they actually appear different than just some random \"text,\" which sounds almost incomprehensible within English texts —or even certain phrases themselves without being explicitly mentioned (\"it\" seems completely unnecessary) rather than merely another syllable alone! Now let us take our cue and put together six sentences composed simply before typing off your sentence here…and imagine how much more amazing might someone could do using three distinct symbols? How many questions would anyone ask me now?! The answer depends entirely on whether I'm reading through whatever code my students read somewhere else instead of writing back home once everything starts working out nicely enough after two seconds into passing?\" If he asked somebody why his expression went crazy every second while doing multiple repetitions consecutively prior to completing several simple calculations above him somehow didn't end up coming right down behind everyone who did exactly that first bit during five minutes later – especially considering no external",
+        "continuation_text": "us take our cue and put together six sentences composed simply before typing off your sentence here…and imagine how much more amazing might someone could do using three distinct symbols? How many questions would anyone ask me now?! The answer depends entirely on whether I'm reading through whatever code my students read somewhere else instead of writing back home once everything starts working out nicely enough after two seconds into passing?\" If he asked somebody why his expression went crazy every second while doing multiple repetitions consecutively prior to completing several simple calculations above him somehow didn't end up coming right down behind everyone who did exactly that first bit during five minutes later – especially considering no external",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 766,
+        "word_count": 119,
+        "unique_word_count": 119,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "did",
+        "didn",
+        "had",
+        "are",
+        "getting",
+        "doing",
+        "could",
+        "does",
+        "If"
+      ],
+      "output_text": "help from any other program you can think of for this example! It's one step closer than most things we know about Lisp today which is what makes us better learners - because then there will be an entire set of concepts at hand where even less good grammar or idioms like \"Do What You Want\" have been implemented successfully (which may sound weirdly familiar since they all work well). In fact, as long as those rules apply correctly under certain circumstances with respect to programming languages such as Python, Haskell and Ruby, their performance rate seems really low without being broken; unfortunately not so easily within each case though but still significantly higher both times",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, did, didn, had, are, getting, doing, could, does, If\n\nTEXT:\nus take our cue and put together six sentences composed simply before typing off your sentence here…and imagine how much more amazing might someone could do using three distinct symbols? How many questions would anyone ask me now?! The answer depends entirely on whether I'm reading through whatever code my students read somewhere else instead of writing back home once everything starts working out nicely enough after two seconds into passing?\" If he asked somebody why his expression went crazy every second while doing multiple repetitions consecutively prior to completing several simple calculations above him somehow didn't end up coming right down behind everyone who did exactly that first bit during five minutes later – especially considering no external",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, did, didn, had, are, getting, doing, could, does, If\n\nTEXT:\nus take our cue and put together six sentences composed simply before typing off your sentence here…and imagine how much more amazing might someone could do using three distinct symbols? How many questions would anyone ask me now?! The answer depends entirely on whether I'm reading through whatever code my students read somewhere else instead of writing back home once everything starts working out nicely enough after two seconds into passing?\" If he asked somebody why his expression went crazy every second while doing multiple repetitions consecutively prior to completing several simple calculations above him somehow didn't end up coming right down behind everyone who did exactly that first bit during five minutes later – especially considering no external help from any other program you can think of for this example! It's one step closer than most things we know about Lisp today which is what makes us better learners - because then there will be an entire set of concepts at hand where even less good grammar or idioms like \"Do What You Want\" have been implemented successfully (which may sound weirdly familiar since they all work well). In fact, as long as those rules apply correctly under certain circumstances with respect to programming languages such as Python, Haskell and Ruby, their performance rate seems really low without being broken; unfortunately not so easily within each case though but still significantly higher both times",
+        "continuation_text": "help from any other program you can think of for this example! It's one step closer than most things we know about Lisp today which is what makes us better learners - because then there will be an entire set of concepts at hand where even less good grammar or idioms like \"Do What You Want\" have been implemented successfully (which may sound weirdly familiar since they all work well). In fact, as long as those rules apply correctly under certain circumstances with respect to programming languages such as Python, Haskell and Ruby, their performance rate seems really low without being broken; unfortunately not so easily within each case though but still significantly higher both times",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 690,
+        "word_count": 116,
+        "unique_word_count": 113,
+        "unique_word_ratio": 0.9741379310344828,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "is",
+        "had",
+        "they",
+        "in",
+        "was",
+        "has",
+        "with"
+      ],
+      "output_text": "out over when new ones get added on top and back together again using more complex systems rather now that I'm starting from scratch...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, is, had, they, in, was, has, with\n\nTEXT:\nhelp from any other program you can think of for this example! It's one step closer than most things we know about Lisp today which is what makes us better learners - because then there will be an entire set of concepts at hand where even less good grammar or idioms like \"Do What You Want\" have been implemented successfully (which may sound weirdly familiar since they all work well). In fact, as long as those rules apply correctly under certain circumstances with respect to programming languages such as Python, Haskell and Ruby, their performance rate seems really low without being broken; unfortunately not so easily within each case though but still significantly higher both times",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, is, had, they, in, was, has, with\n\nTEXT:\nhelp from any other program you can think of for this example! It's one step closer than most things we know about Lisp today which is what makes us better learners - because then there will be an entire set of concepts at hand where even less good grammar or idioms like \"Do What You Want\" have been implemented successfully (which may sound weirdly familiar since they all work well). In fact, as long as those rules apply correctly under certain circumstances with respect to programming languages such as Python, Haskell and Ruby, their performance rate seems really low without being broken; unfortunately not so easily within each case though but still significantly higher both times out over when new ones get added on top and back together again using more complex systems rather now that I'm starting from scratch...",
+        "continuation_text": "out over when new ones get added on top and back together again using more complex systems rather now that I'm starting from scratch...",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 234,
+        "new_token_count": 27,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 135,
+        "word_count": 24,
+        "unique_word_count": 24,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

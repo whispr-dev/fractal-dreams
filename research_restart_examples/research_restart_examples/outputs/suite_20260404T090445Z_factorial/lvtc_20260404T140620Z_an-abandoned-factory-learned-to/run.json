@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1410,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 252,
+        "word_count": 42,
+        "unique_word_count": 42,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 209,
+        "word_count": 37,
+        "unique_word_count": 37,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 650,
+        "word_count": 113,
+        "unique_word_count": 113,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 241,
+        "word_count": 45,
+        "unique_word_count": 45,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "had",
+        "are",
+        "have",
+        "It",
+        "make",
+        "if",
+        "made",
+        "was",
+        "to",
+        "makes"
+      ],
+      "output_text": "The result is that when you start creating something interesting (but not so much boring), your whole work becomes repetitive with all kinds or ideas before repeating them again as needed... You will end up getting bored while writing about things new!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The result is that when you start creating something interesting (but not so much boring), your whole work becomes repetitive with all kinds or ideas before repeating them again as needed... You will end up getting bored while writing about things new!",
+        "continuation_text": "The result is that when you start creating something interesting (but not so much boring), your whole work becomes repetitive with all kinds or ideas before repeating them again as needed... You will end up getting bored while writing about things new!",
+        "input_token_count": 105,
+        "raw_input_token_count": 105,
+        "output_token_count": 152,
+        "new_token_count": 47,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 252,
+        "word_count": 42,
+        "unique_word_count": 42,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "are",
+        "were",
+        "you",
+        "is",
+        "getting",
+        "with",
+        "have",
+        "they",
+        "when",
+        "the"
+      ],
+      "output_text": "And remember, there's nothing I can say for sure on this topic because my paper was written using simple words and verbs rather than two sentences per sentence after each step.. \"I'm going to repeat one word.\"",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, you, is, getting, with, have, they, when, the\n\nTEXT:\nThe result is that when you start creating something interesting (but not so much boring), your whole work becomes repetitive with all kinds or ideas before repeating them again as needed... You will end up getting bored while writing about things new!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, you, is, getting, with, have, they, when, the\n\nTEXT:\nThe result is that when you start creating something interesting (but not so much boring), your whole work becomes repetitive with all kinds or ideas before repeating them again as needed... You will end up getting bored while writing about things new! And remember, there's nothing I can say for sure on this topic because my paper was written using simple words and verbs rather than two sentences per sentence after each step.. \"I'm going to repeat one word.\"",
+        "continuation_text": "And remember, there's nothing I can say for sure on this topic because my paper was written using simple words and verbs rather than two sentences per sentence after each step.. \"I'm going to repeat one word.\"",
+        "input_token_count": 125,
+        "raw_input_token_count": 125,
+        "output_token_count": 169,
+        "new_token_count": 44,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 209,
+        "word_count": 37,
+        "unique_word_count": 37,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "if",
+        "are",
+        "was",
+        "is",
+        "have",
+        "had",
+        "in",
+        "for",
+        "they",
+        "with"
+      ],
+      "output_text": "And when your brain asks you what kind of verb would that mean? It depends upon how long or even small (for example) those three variables come into play during processing time! How do we keep our eyes peeled where possible before being able go further down memory chain so as not to accidentally confuse some people who don't know exactly why their brains believe something just like 'they're talking' at all!? Why does somebody assume anything but saying no matter which way past them while others get overconfident about any other subject... WHY DOES someone think anyone has an idea yet anyway?! Or maybe he hasn`t thought twice now trying it out",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, are, was, is, have, had, in, for, they, with\n\nTEXT:\nAnd remember, there's nothing I can say for sure on this topic because my paper was written using simple words and verbs rather than two sentences per sentence after each step.. \"I'm going to repeat one word.\"",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, are, was, is, have, had, in, for, they, with\n\nTEXT:\nAnd remember, there's nothing I can say for sure on this topic because my paper was written using simple words and verbs rather than two sentences per sentence after each step.. \"I'm going to repeat one word.\" And when your brain asks you what kind of verb would that mean? It depends upon how long or even small (for example) those three variables come into play during processing time! How do we keep our eyes peeled where possible before being able go further down memory chain so as not to accidentally confuse some people who don't know exactly why their brains believe something just like 'they're talking' at all!? Why does somebody assume anything but saying no matter which way past them while others get overconfident about any other subject... WHY DOES someone think anyone has an idea yet anyway?! Or maybe he hasn`t thought twice now trying it out",
+        "continuation_text": "And when your brain asks you what kind of verb would that mean? It depends upon how long or even small (for example) those three variables come into play during processing time! How do we keep our eyes peeled where possible before being able go further down memory chain so as not to accidentally confuse some people who don't know exactly why their brains believe something just like 'they're talking' at all!? Why does somebody assume anything but saying no matter which way past them while others get overconfident about any other subject... WHY DOES someone think anyone has an idea yet anyway?! Or maybe he hasn`t thought twice now trying it out",
+        "input_token_count": 122,
+        "raw_input_token_count": 122,
+        "output_token_count": 250,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 650,
+        "word_count": 113,
+        "unique_word_count": 113,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "are",
+        "have",
+        "they",
+        "did",
+        "don",
+        "had",
+        "didn",
+        "If",
+        "what"
+      ],
+      "output_text": "and then wondering \"Why is this happening?\" Just ask yourself : What am I supposed [I'm actually thinking?] WHAT ARE YOU THING DO??? Are there more words already?? You can use my word for things better than mine; let me help with each one :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, have, they, did, don, had, didn, If, what\n\nTEXT:\nAnd when your brain asks you what kind of verb would that mean? It depends upon how long or even small (for example) those three variables come into play during processing time! How do we keep our eyes peeled where possible before being able go further down memory chain so as not to accidentally confuse some people who don't know exactly why their brains believe something just like 'they're talking' at all!? Why does somebody assume anything but saying no matter which way past them while others get overconfident about any other subject... WHY DOES someone think anyone has an idea yet anyway?! Or maybe he hasn`t thought twice now trying it out",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, have, they, did, don, had, didn, If, what\n\nTEXT:\nAnd when your brain asks you what kind of verb would that mean? It depends upon how long or even small (for example) those three variables come into play during processing time! How do we keep our eyes peeled where possible before being able go further down memory chain so as not to accidentally confuse some people who don't know exactly why their brains believe something just like 'they're talking' at all!? Why does somebody assume anything but saying no matter which way past them while others get overconfident about any other subject... WHY DOES someone think anyone has an idea yet anyway?! Or maybe he hasn`t thought twice now trying it out and then wondering \"Why is this happening?\" Just ask yourself : What am I supposed [I'm actually thinking?] WHAT ARE YOU THING DO??? Are there more words already?? You can use my word for things better than mine; let me help with each one :)",
+        "continuation_text": "and then wondering \"Why is this happening?\" Just ask yourself : What am I supposed [I'm actually thinking?] WHAT ARE YOU THING DO??? Are there more words already?? You can use my word for things better than mine; let me help with each one :)",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 262,
+        "new_token_count": 55,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 241,
+        "word_count": 45,
+        "unique_word_count": 45,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

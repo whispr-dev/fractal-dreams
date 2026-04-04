@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1212
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 607,
+        "word_count": 105,
+        "unique_word_count": 83,
+        "unique_word_ratio": 0.7904761904761904,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1120,
+        "word_count": 191,
+        "unique_word_count": 150,
+        "unique_word_ratio": 0.7853403141361257,
+        "repeated_bigram_count": 4
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1619,
+        "word_count": 270,
+        "unique_word_count": 206,
+        "unique_word_ratio": 0.762962962962963,
+        "repeated_bigram_count": 7
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1804,
+        "word_count": 303,
+        "unique_word_count": 234,
+        "unique_word_ratio": 0.7722772277227723,
+        "repeated_bigram_count": 7
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2277,
+        "word_count": 383,
+        "unique_word_count": 292,
+        "unique_word_ratio": 0.762402088772846,
+        "repeated_bigram_count": 10
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nAs I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the",
+        "continuation_text": "As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the",
+        "input_token_count": 68,
+        "raw_input_token_count": 68,
+        "output_token_count": 164,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 607,
+        "word_count": 105,
+        "unique_word_count": 83,
+        "unique_word_ratio": 0.7904761904761904,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the ... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the\nassistant\n... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on",
+        "continuation_text": "... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on",
+        "input_token_count": 164,
+        "raw_input_token_count": 164,
+        "output_token_count": 260,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1120,
+        "word_count": 191,
+        "unique_word_count": 150,
+        "unique_word_ratio": 0.7853403141361257,
+        "repeated_bigram_count": 4
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the ... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "horizon, casting long shadows across the desolate landscape until they vanished entirely under the night sky. The horizon itself now lay shattered, its surface mottled and blotchy unlike anything I'd seen since this place had been inhabited. The stars seemed dimmer, their presence lost to obscurity among these flickering patches of light.\n\nAs I reached out tentatively, my fingers brushed against one of the worn brass keys nestled at the base of an ancient monument guarding the Observatory city",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the ... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on horizon, casting long shadows across the desolate landscape until they vanished entirely under the night sky. The horizon itself now lay shattered, its surface mottled and blotchy unlike anything I'd seen since this place had been inhabited. The stars seemed dimmer, their presence lost to obscurity among these flickering patches of light.\n\nAs I reached out tentatively, my fingers brushed against one of the worn brass keys nestled at the base of an ancient monument guarding the Observatory city",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the ... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the ... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on\nassistant\nhorizon, casting long shadows across the desolate landscape until they vanished entirely under the night sky. The horizon itself now lay shattered, its surface mottled and blotchy unlike anything I'd seen since this place had been inhabited. The stars seemed dimmer, their presence lost to obscurity among these flickering patches of light.\n\nAs I reached out tentatively, my fingers brushed against one of the worn brass keys nestled at the base of an ancient monument guarding the Observatory city",
+        "continuation_text": "horizon, casting long shadows across the desolate landscape until they vanished entirely under the night sky. The horizon itself now lay shattered, its surface mottled and blotchy unlike anything I'd seen since this place had been inhabited. The stars seemed dimmer, their presence lost to obscurity among these flickering patches of light.\n\nAs I reached out tentatively, my fingers brushed against one of the worn brass keys nestled at the base of an ancient monument guarding the Observatory city",
+        "input_token_count": 260,
+        "raw_input_token_count": 260,
+        "output_token_count": 356,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1619,
+        "word_count": 270,
+        "unique_word_count": 206,
+        "unique_word_ratio": 0.762962962962963,
+        "repeated_bigram_count": 7
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the ... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on horizon, casting long shadows across the desolate landscape until they vanished entirely under the night sky. The horizon itself now lay shattered, its surface mottled and blotchy unlike anything I'd seen since this place had been inhabited. The stars seemed dimmer, their presence lost to obscurity among these flickering patches of light.\n\nAs I reached out tentatively, my fingers brushed against one of the worn brass keys nestled at the base of an ancient monument guarding the Observatory city<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "... What? Why is it all broken now? And where did those keyhole crypts go?\nI thought maybe someone had just forgotten about them...\nNow I'm torn between running away or staying here...",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the ... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on horizon, casting long shadows across the desolate landscape until they vanished entirely under the night sky. The horizon itself now lay shattered, its surface mottled and blotchy unlike anything I'd seen since this place had been inhabited. The stars seemed dimmer, their presence lost to obscurity among these flickering patches of light.\n\nAs I reached out tentatively, my fingers brushed against one of the worn brass keys nestled at the base of an ancient monument guarding the Observatory city ... What? Why is it all broken now? And where did those keyhole crypts go?\nI thought maybe someone had just forgotten about them...\nNow I'm torn between running away or staying here...",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the ... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on horizon, casting long shadows across the desolate landscape until they vanished entirely under the night sky. The horizon itself now lay shattered, its surface mottled and blotchy unlike anything I'd seen since this place had been inhabited. The stars seemed dimmer, their presence lost to obscurity among these flickering patches of light.\n\nAs I reached out tentatively, my fingers brushed against one of the worn brass keys nestled at the base of an ancient monument guarding the Observatory city<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the ... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on horizon, casting long shadows across the desolate landscape until they vanished entirely under the night sky. The horizon itself now lay shattered, its surface mottled and blotchy unlike anything I'd seen since this place had been inhabited. The stars seemed dimmer, their presence lost to obscurity among these flickering patches of light.\n\nAs I reached out tentatively, my fingers brushed against one of the worn brass keys nestled at the base of an ancient monument guarding the Observatory city\nassistant\n... What? Why is it all broken now? And where did those keyhole crypts go?\nI thought maybe someone had just forgotten about them...\nNow I'm torn between running away or staying here...",
+        "continuation_text": "... What? Why is it all broken now? And where did those keyhole crypts go?\nI thought maybe someone had just forgotten about them...\nNow I'm torn between running away or staying here...",
+        "input_token_count": 355,
+        "raw_input_token_count": 355,
+        "output_token_count": 397,
+        "new_token_count": 42,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1804,
+        "word_count": 303,
+        "unique_word_count": 234,
+        "unique_word_ratio": 0.7722772277227723,
+        "repeated_bigram_count": 7
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the ... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on horizon, casting long shadows across the desolate landscape until they vanished entirely under the night sky. The horizon itself now lay shattered, its surface mottled and blotchy unlike anything I'd seen since this place had been inhabited. The stars seemed dimmer, their presence lost to obscurity among these flickering patches of light.\n\nAs I reached out tentatively, my fingers brushed against one of the worn brass keys nestled at the base of an ancient monument guarding the Observatory city ... What? Why is it all broken now? And where did those keyhole crypts go?\nI thought maybe someone had just forgotten about them...\nNow I'm torn between running away or staying here...<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "...Or should I try hiding?\n\nThat sounds terrifyingly real! My mind races over each possibility. Should I run? Should I stay? Perhaps both paths lead somewhere darker...\n\nThis feeling seems to be part of the complex pattern of human fears and desires, weaving together past missteps with future threats. It reminds me of our nature to always hope that good things will eventually happen but often times turn around and do exactly the opposite depending on how we act first.",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the ... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on horizon, casting long shadows across the desolate landscape until they vanished entirely under the night sky. The horizon itself now lay shattered, its surface mottled and blotchy unlike anything I'd seen since this place had been inhabited. The stars seemed dimmer, their presence lost to obscurity among these flickering patches of light.\n\nAs I reached out tentatively, my fingers brushed against one of the worn brass keys nestled at the base of an ancient monument guarding the Observatory city ... What? Why is it all broken now? And where did those keyhole crypts go?\nI thought maybe someone had just forgotten about them...\nNow I'm torn between running away or staying here... ...Or should I try hiding?\n\nThat sounds terrifyingly real! My mind races over each possibility. Should I run? Should I stay? Perhaps both paths lead somewhere darker...\n\nThis feeling seems to be part of the complex pattern of human fears and desires, weaving together past missteps with future threats. It reminds me of our nature to always hope that good things will eventually happen but often times turn around and do exactly the opposite depending on how we act first.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the ... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on horizon, casting long shadows across the desolate landscape until they vanished entirely under the night sky. The horizon itself now lay shattered, its surface mottled and blotchy unlike anything I'd seen since this place had been inhabited. The stars seemed dimmer, their presence lost to obscurity among these flickering patches of light.\n\nAs I reached out tentatively, my fingers brushed against one of the worn brass keys nestled at the base of an ancient monument guarding the Observatory city ... What? Why is it all broken now? And where did those keyhole crypts go?\nI thought maybe someone had just forgotten about them...\nNow I'm torn between running away or staying here...<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As I wandered through the crumbling earth, my heart thudding with each step,\nI couldn't shake the feeling of a dark prophecy unfolding before me.\nThe air hummed with energy as the clockwork map slowly adjusted its scales,\na silent warning sign that only the brave would heed.\nMy thoughts raced back to the moment when humanity faced off against an unknown threat,\nthe dawn of the Age of Enlightenment,\nwhen dreams collided with reality's harsh constraints.\nAnd then there was the ... The fear crept into my chest again as the map faltered slightly, unable to stabilize without intervention from the darkness.\n\nIt seemed like every time we tried to move forward, it fell further behind the current chaos.\n\nAs I approached the ruins of the Observatory City, my eyes widened in horror at what I saw - the maps were unraveling, becoming chaotic symbols for something more sinister than humans could comprehend.\n\nEach symbol they painted appeared to be leading directly towards an ominous front on horizon, casting long shadows across the desolate landscape until they vanished entirely under the night sky. The horizon itself now lay shattered, its surface mottled and blotchy unlike anything I'd seen since this place had been inhabited. The stars seemed dimmer, their presence lost to obscurity among these flickering patches of light.\n\nAs I reached out tentatively, my fingers brushed against one of the worn brass keys nestled at the base of an ancient monument guarding the Observatory city ... What? Why is it all broken now? And where did those keyhole crypts go?\nI thought maybe someone had just forgotten about them...\nNow I'm torn between running away or staying here...\nassistant\n...Or should I try hiding?\n\nThat sounds terrifyingly real! My mind races over each possibility. Should I run? Should I stay? Perhaps both paths lead somewhere darker...\n\nThis feeling seems to be part of the complex pattern of human fears and desires, weaving together past missteps with future threats. It reminds me of our nature to always hope that good things will eventually happen but often times turn around and do exactly the opposite depending on how we act first.",
+        "continuation_text": "...Or should I try hiding?\n\nThat sounds terrifyingly real! My mind races over each possibility. Should I run? Should I stay? Perhaps both paths lead somewhere darker...\n\nThis feeling seems to be part of the complex pattern of human fears and desires, weaving together past missteps with future threats. It reminds me of our nature to always hope that good things will eventually happen but often times turn around and do exactly the opposite depending on how we act first.",
+        "input_token_count": 396,
+        "raw_input_token_count": 396,
+        "output_token_count": 489,
+        "new_token_count": 93,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2277,
+        "word_count": 383,
+        "unique_word_count": 292,
+        "unique_word_ratio": 0.762402088772846,
+        "repeated_bigram_count": 10
+      }
+    }
+  ]
+}

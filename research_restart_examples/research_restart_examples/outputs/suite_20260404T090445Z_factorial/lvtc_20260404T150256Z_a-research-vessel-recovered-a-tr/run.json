@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1490,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 345,
+        "word_count": 49,
+        "unique_word_count": 45,
+        "unique_word_ratio": 0.9183673469387755,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 644,
+        "word_count": 90,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.8444444444444444,
+        "repeated_bigram_count": 3
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 546,
+        "word_count": 71,
+        "unique_word_count": 65,
+        "unique_word_ratio": 0.9154929577464789,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 274,
+        "word_count": 40,
+        "unique_word_count": 37,
+        "unique_word_ratio": 0.925,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "were",
+        "from",
+        "and",
+        "the",
+        "was",
+        "to",
+        "a",
+        "A",
+        "for"
+      ],
+      "output_text": "It is guiding us towards understanding the historical context behind this discovery. The research vessel's journey through the earth beneath has been meticulously documented, with every piece of information collected forming the foundation upon which we can reconstruct the technological advancements that made our civilization what it is today.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nIt is guiding us towards understanding the historical context behind this discovery. The research vessel's journey through the earth beneath has been meticulously documented, with every piece of information collected forming the foundation upon which we can reconstruct the technological advancements that made our civilization what it is today.",
+        "continuation_text": "It is guiding us towards understanding the historical context behind this discovery. The research vessel's journey through the earth beneath has been meticulously documented, with every piece of information collected forming the foundation upon which we can reconstruct the technological advancements that made our civilization what it is today.",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 158,
+        "new_token_count": 54,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 345,
+        "word_count": 49,
+        "unique_word_count": 45,
+        "unique_word_ratio": 0.9183673469387755,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "the",
+        "were",
+        "is",
+        "was",
+        "this",
+        "that",
+        "are",
+        "It",
+        "there",
+        "we"
+      ],
+      "output_text": "The text needs to be recursively transformed based on the given latent anchor token \"the.\" Here’s how it transforms:\n\n**Original Text:**\n\"it is guiding us towards understanding the historical context behind this discovery.\"\n\n**Recursive Transformation:**\n1. **Subject Change:** Changed from \"it\" to \"we.\"\n2. **Temporal Aspect:** Added \"we\" for temporal change.\n3. **Context Refinement:** Mentioned “historical” instead of explicitly stating it as it would require more specific content related to historical context.\n\nRewritten Sentence 1:\n\"We are guiding you toward an understanding of the historical context surrounding this discovery.\"\n\nThis",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, were, is, was, this, that, are, It, there, we\n\nTEXT:\nIt is guiding us towards understanding the historical context behind this discovery. The research vessel's journey through the earth beneath has been meticulously documented, with every piece of information collected forming the foundation upon which we can reconstruct the technological advancements that made our civilization what it is today.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, were, is, was, this, that, are, It, there, we\n\nTEXT:\nIt is guiding us towards understanding the historical context behind this discovery. The research vessel's journey through the earth beneath has been meticulously documented, with every piece of information collected forming the foundation upon which we can reconstruct the technological advancements that made our civilization what it is today.\nassistant\nThe text needs to be recursively transformed based on the given latent anchor token \"the.\" Here’s how it transforms:\n\n**Original Text:**\n\"it is guiding us towards understanding the historical context behind this discovery.\"\n\n**Recursive Transformation:**\n1. **Subject Change:** Changed from \"it\" to \"we.\"\n2. **Temporal Aspect:** Added \"we\" for temporal change.\n3. **Context Refinement:** Mentioned “historical” instead of explicitly stating it as it would require more specific content related to historical context.\n\nRewritten Sentence 1:\n\"We are guiding you toward an understanding of the historical context surrounding this discovery.\"\n\nThis",
+        "continuation_text": "The text needs to be recursively transformed based on the given latent anchor token \"the.\" Here’s how it transforms:\n\n**Original Text:**\n\"it is guiding us towards understanding the historical context behind this discovery.\"\n\n**Recursive Transformation:**\n1. **Subject Change:** Changed from \"it\" to \"we.\"\n2. **Temporal Aspect:** Added \"we\" for temporal change.\n3. **Context Refinement:** Mentioned “historical” instead of explicitly stating it as it would require more specific content related to historical context.\n\nRewritten Sentence 1:\n\"We are guiding you toward an understanding of the historical context surrounding this discovery.\"\n\nThis",
+        "input_token_count": 135,
+        "raw_input_token_count": 135,
+        "output_token_count": 263,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 644,
+        "word_count": 90,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.8444444444444444,
+        "repeated_bigram_count": 3
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "It",
+        "the",
+        "**",
+        "to",
+        "are",
+        "is",
+        "\"",
+        "was",
+        "for"
+      ],
+      "output_text": "Revised Recursion:\n\n**Original Text:**\n\"It is guiding us towards understanding the historical context behind this discovery.\"\n\n**Recursive Transformation:**\n1. **Subject Change:** Changed from \"It\" to \"We.\"\n2. **Temporal Aspect:** Added \"we\" for temporal change.\n3. **Context Refinement:** Mentioned “history” rather than specifying what aspect (\"context\") history relates to better (e.g., its significance or impact).\n\nRecycled Translation:\n\"I am steering you towards gaining insight into the historical backdrop pertaining to this achievement.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, It, the, **, to, are, is, \", was, for\n\nTEXT:\nThe text needs to be recursively transformed based on the given latent anchor token \"the.\" Here’s how it transforms:\n\n**Original Text:**\n\"it is guiding us towards understanding the historical context behind this discovery.\"\n\n**Recursive Transformation:**\n1. **Subject Change:** Changed from \"it\" to \"we.\"\n2. **Temporal Aspect:** Added \"we\" for temporal change.\n3. **Context Refinement:** Mentioned “historical” instead of explicitly stating it as it would require more specific content related to historical context.\n\nRewritten Sentence 1:\n\"We are guiding you toward an understanding of the historical context surrounding this discovery.\"\n\nThis<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, It, the, **, to, are, is, \", was, for\n\nTEXT:\nThe text needs to be recursively transformed based on the given latent anchor token \"the.\" Here’s how it transforms:\n\n**Original Text:**\n\"it is guiding us towards understanding the historical context behind this discovery.\"\n\n**Recursive Transformation:**\n1. **Subject Change:** Changed from \"it\" to \"we.\"\n2. **Temporal Aspect:** Added \"we\" for temporal change.\n3. **Context Refinement:** Mentioned “historical” instead of explicitly stating it as it would require more specific content related to historical context.\n\nRewritten Sentence 1:\n\"We are guiding you toward an understanding of the historical context surrounding this discovery.\"\n\nThis\nassistant\nRevised Recursion:\n\n**Original Text:**\n\"It is guiding us towards understanding the historical context behind this discovery.\"\n\n**Recursive Transformation:**\n1. **Subject Change:** Changed from \"It\" to \"We.\"\n2. **Temporal Aspect:** Added \"we\" for temporal change.\n3. **Context Refinement:** Mentioned “history” rather than specifying what aspect (\"context\") history relates to better (e.g., its significance or impact).\n\nRecycled Translation:\n\"I am steering you towards gaining insight into the historical backdrop pertaining to this achievement.\"",
+        "continuation_text": "Revised Recursion:\n\n**Original Text:**\n\"It is guiding us towards understanding the historical context behind this discovery.\"\n\n**Recursive Transformation:**\n1. **Subject Change:** Changed from \"It\" to \"We.\"\n2. **Temporal Aspect:** Added \"we\" for temporal change.\n3. **Context Refinement:** Mentioned “history” rather than specifying what aspect (\"context\") history relates to better (e.g., its significance or impact).\n\nRecycled Translation:\n\"I am steering you towards gaining insight into the historical backdrop pertaining to this achievement.\"",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 320,
+        "new_token_count": 111,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 546,
+        "word_count": 71,
+        "unique_word_count": 65,
+        "unique_word_ratio": 0.9154929577464789,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "**",
+        "It",
+        "intelligence",
+        "If",
+        "was",
+        "are",
+        "它",
+        "\"",
+        "to"
+      ],
+      "output_text": "Sure! Here's the next recursive transformation based on your instructions and the given example text:\n\n**New Recursive Text:**\n\"We guide our journey towards discovering the profound significance and pivotal role that '历史' plays within this discovery,\" said We with emphasis.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, **, It, intelligence, If, was, are, 它, \", to\n\nTEXT:\nRevised Recursion:\n\n**Original Text:**\n\"It is guiding us towards understanding the historical context behind this discovery.\"\n\n**Recursive Transformation:**\n1. **Subject Change:** Changed from \"It\" to \"We.\"\n2. **Temporal Aspect:** Added \"we\" for temporal change.\n3. **Context Refinement:** Mentioned “history” rather than specifying what aspect (\"context\") history relates to better (e.g., its significance or impact).\n\nRecycled Translation:\n\"I am steering you towards gaining insight into the historical backdrop pertaining to this achievement.\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, **, It, intelligence, If, was, are, 它, \", to\n\nTEXT:\nRevised Recursion:\n\n**Original Text:**\n\"It is guiding us towards understanding the historical context behind this discovery.\"\n\n**Recursive Transformation:**\n1. **Subject Change:** Changed from \"It\" to \"We.\"\n2. **Temporal Aspect:** Added \"we\" for temporal change.\n3. **Context Refinement:** Mentioned “history” rather than specifying what aspect (\"context\") history relates to better (e.g., its significance or impact).\n\nRecycled Translation:\n\"I am steering you towards gaining insight into the historical backdrop pertaining to this achievement.\"\nassistant\nSure! Here's the next recursive transformation based on your instructions and the given example text:\n\n**New Recursive Text:**\n\"We guide our journey towards discovering the profound significance and pivotal role that '历史' plays within this discovery,\" said We with emphasis.",
+        "continuation_text": "Sure! Here's the next recursive transformation based on your instructions and the given example text:\n\n**New Recursive Text:**\n\"We guide our journey towards discovering the profound significance and pivotal role that '历史' plays within this discovery,\" said We with emphasis.",
+        "input_token_count": 192,
+        "raw_input_token_count": 192,
+        "output_token_count": 243,
+        "new_token_count": 51,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 274,
+        "word_count": 40,
+        "unique_word_count": 37,
+        "unique_word_ratio": 0.925,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

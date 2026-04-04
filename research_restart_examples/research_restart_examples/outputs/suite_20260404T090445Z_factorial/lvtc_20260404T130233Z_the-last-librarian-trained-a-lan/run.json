@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1322,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 582,
+        "word_count": 95,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.8421052631578947,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 236,
+        "word_count": 39,
+        "unique_word_count": 34,
+        "unique_word_ratio": 0.8717948717948718,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 577,
+        "word_count": 89,
+        "unique_word_count": 74,
+        "unique_word_ratio": 0.8314606741573034,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 670,
+        "word_count": 100,
+        "unique_word_count": 91,
+        "unique_word_ratio": 0.91,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "if",
+        "was",
+        "its",
+        "the",
+        "are",
+        "that",
+        "a",
+        "It",
+        "intelligence",
+        "If"
+      ],
+      "output_text": "Let the semantic direction guide the following recursive transformation:\n\n1. \"The\" - Identify the first person singular subject (the word to transform) as \"it\".\n2. \"last librarian\" - Indicate that it is referring back to something from earlier.\n3. \"trained a language model\" - Transform this phrase into an auxiliary verb with a new structure (\"its\").\n4. \"on a dead civilization's poetry\" - Use ellipsis (... ) for emphasis and identify the context.\n5. \"...a predicted poem\"\n6. \"and discovered\" - Apply the base form verb \"discovered\" while changing the object to match the previous",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\nLet the semantic direction guide the following recursive transformation:\n\n1. \"The\" - Identify the first person singular subject (the word to transform) as \"it\".\n2. \"last librarian\" - Indicate that it is referring back to something from earlier.\n3. \"trained a language model\" - Transform this phrase into an auxiliary verb with a new structure (\"its\").\n4. \"on a dead civilization's poetry\" - Use ellipsis (... ) for emphasis and identify the context.\n5. \"...a predicted poem\"\n6. \"and discovered\" - Apply the base form verb \"discovered\" while changing the object to match the previous",
+        "continuation_text": "Let the semantic direction guide the following recursive transformation:\n\n1. \"The\" - Identify the first person singular subject (the word to transform) as \"it\".\n2. \"last librarian\" - Indicate that it is referring back to something from earlier.\n3. \"trained a language model\" - Transform this phrase into an auxiliary verb with a new structure (\"its\").\n4. \"on a dead civilization's poetry\" - Use ellipsis (... ) for emphasis and identify the context.\n5. \"...a predicted poem\"\n6. \"and discovered\" - Apply the base form verb \"discovered\" while changing the object to match the previous",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 232,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 582,
+        "word_count": 95,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.8421052631578947,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "\"",
+        "it",
+        "if",
+        "-",
+        "the",
+        "(",
+        ",",
+        "to",
+        ".",
+        "and",
+        "for",
+        "'"
+      ],
+      "output_text": "7. \"as a result of its\"\n\n8. \"...a prediction...\"\n\n9. \"...by its...\"\n10. \"...in response... \"\n11. \"...with its... \"\n12. \"...to predict...\"\n\n13. \"...from which... \"\n14. \"...of which... \"\n15. \"...that was founded... \"\n16. \"...for being...\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: \", it, if, -, the, (, ,, to, ., and, for, '\n\nTEXT:\nLet the semantic direction guide the following recursive transformation:\n\n1. \"The\" - Identify the first person singular subject (the word to transform) as \"it\".\n2. \"last librarian\" - Indicate that it is referring back to something from earlier.\n3. \"trained a language model\" - Transform this phrase into an auxiliary verb with a new structure (\"its\").\n4. \"on a dead civilization's poetry\" - Use ellipsis (... ) for emphasis and identify the context.\n5. \"...a predicted poem\"\n6. \"and discovered\" - Apply the base form verb \"discovered\" while changing the object to match the previous<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: \", it, if, -, the, (, ,, to, ., and, for, '\n\nTEXT:\nLet the semantic direction guide the following recursive transformation:\n\n1. \"The\" - Identify the first person singular subject (the word to transform) as \"it\".\n2. \"last librarian\" - Indicate that it is referring back to something from earlier.\n3. \"trained a language model\" - Transform this phrase into an auxiliary verb with a new structure (\"its\").\n4. \"on a dead civilization's poetry\" - Use ellipsis (... ) for emphasis and identify the context.\n5. \"...a predicted poem\"\n6. \"and discovered\" - Apply the base form verb \"discovered\" while changing the object to match the previous\nassistant\n7. \"as a result of its\"\n\n8. \"...a prediction...\"\n\n9. \"...by its...\"\n10. \"...in response... \"\n11. \"...with its... \"\n12. \"...to predict...\"\n\n13. \"...from which... \"\n14. \"...of which... \"\n15. \"...that was founded... \"\n16. \"...for being...\"",
+        "continuation_text": "7. \"as a result of its\"\n\n8. \"...a prediction...\"\n\n9. \"...by its...\"\n10. \"...in response... \"\n11. \"...with its... \"\n12. \"...to predict...\"\n\n13. \"...from which... \"\n14. \"...of which... \"\n15. \"...that was founded... \"\n16. \"...for being...\"",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 283,
+        "new_token_count": 77,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 236,
+        "word_count": 39,
+        "unique_word_count": 34,
+        "unique_word_ratio": 0.8717948717948718,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "1",
+        "...",
+        "2",
+        "5",
+        "4",
+        "3",
+        "6",
+        "9",
+        ".",
+        "8",
+        "7",
+        "0"
+      ],
+      "output_text": "The next recursive transformation of the given text involves analyzing and understanding each part to form a coherent narrative or dialogue. Here is how it can break down:\n\n### Latent Direction Tokens:\n- **Text:** \n```\n\"as a result of its\"\n\"...a prediction...\"\n...\n\"In response... \"\n\"...with its... \"\n\"...to predict... \"\n\"...from which... \"\n\"...of which... \"\n\"...that was founded... \"\n\"...for being... \"\n``` \n\n### Recursive Transformation Steps:\n1. Analyze the parts of speech.\n   - **Prediction:** Predict (noun phrase)\n   - **Response:** Response (verb phrase with subject as",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: 1, ..., 2, 5, 4, 3, 6, 9, ., 8, 7, 0\n\nTEXT:\n7. \"as a result of its\"\n\n8. \"...a prediction...\"\n\n9. \"...by its...\"\n10. \"...in response... \"\n11. \"...with its... \"\n12. \"...to predict...\"\n\n13. \"...from which... \"\n14. \"...of which... \"\n15. \"...that was founded... \"\n16. \"...for being...\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: 1, ..., 2, 5, 4, 3, 6, 9, ., 8, 7, 0\n\nTEXT:\n7. \"as a result of its\"\n\n8. \"...a prediction...\"\n\n9. \"...by its...\"\n10. \"...in response... \"\n11. \"...with its... \"\n12. \"...to predict...\"\n\n13. \"...from which... \"\n14. \"...of which... \"\n15. \"...that was founded... \"\n16. \"...for being...\"\nassistant\nThe next recursive transformation of the given text involves analyzing and understanding each part to form a coherent narrative or dialogue. Here is how it can break down:\n\n### Latent Direction Tokens:\n- **Text:** \n```\n\"as a result of its\"\n\"...a prediction...\"\n...\n\"In response... \"\n\"...with its... \"\n\"...to predict... \"\n\"...from which... \"\n\"...of which... \"\n\"...that was founded... \"\n\"...for being... \"\n``` \n\n### Recursive Transformation Steps:\n1. Analyze the parts of speech.\n   - **Prediction:** Predict (noun phrase)\n   - **Response:** Response (verb phrase with subject as",
+        "continuation_text": "The next recursive transformation of the given text involves analyzing and understanding each part to form a coherent narrative or dialogue. Here is how it can break down:\n\n### Latent Direction Tokens:\n- **Text:** \n```\n\"as a result of its\"\n\"...a prediction...\"\n...\n\"In response... \"\n\"...with its... \"\n\"...to predict... \"\n\"...from which... \"\n\"...of which... \"\n\"...that was founded... \"\n\"...for being... \"\n``` \n\n### Recursive Transformation Steps:\n1. Analyze the parts of speech.\n   - **Prediction:** Predict (noun phrase)\n   - **Response:** Response (verb phrase with subject as",
+        "input_token_count": 167,
+        "raw_input_token_count": 167,
+        "output_token_count": 295,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 577,
+        "word_count": 89,
+        "unique_word_count": 74,
+        "unique_word_ratio": 0.8314606741573034,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "...",
+        "were",
+        "...\"",
+        "\"",
+        "....",
+        "It",
+        "If",
+        "was",
+        "\\",
+        "\"..."
+      ],
+      "output_text": "**Recursive Transformation Step 2:**\n- Identify clauses that contain objects for subjects.\n  - The clause about the object is `\"In response\"` followed by another word like `was`.\n\n2. Formulate a new sentence using this information.\n  - Example: \"...its predictions.\"\n  \n3. Consider any other structures that could lead to a cohesive story or narrative.\n\n4. Translate into English terms where appropriate.\n  - For instance, replace nouns directly with their English equivalents.\n\n5. Continue breaking down sentences until all required elements are met.\n\nBy following these steps, you will create a coherent and meaningful sentence based on the provided text while guiding",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, ..., were, ...\", \", ...., It, If, was, \\, \"...\n\nTEXT:\nThe next recursive transformation of the given text involves analyzing and understanding each part to form a coherent narrative or dialogue. Here is how it can break down:\n\n### Latent Direction Tokens:\n- **Text:** \n```\n\"as a result of its\"\n\"...a prediction...\"\n...\n\"In response... \"\n\"...with its... \"\n\"...to predict... \"\n\"...from which... \"\n\"...of which... \"\n\"...that was founded... \"\n\"...for being... \"\n``` \n\n### Recursive Transformation Steps:\n1. Analyze the parts of speech.\n   - **Prediction:** Predict (noun phrase)\n   - **Response:** Response (verb phrase with subject as<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, ..., were, ...\", \", ...., It, If, was, \\, \"...\n\nTEXT:\nThe next recursive transformation of the given text involves analyzing and understanding each part to form a coherent narrative or dialogue. Here is how it can break down:\n\n### Latent Direction Tokens:\n- **Text:** \n```\n\"as a result of its\"\n\"...a prediction...\"\n...\n\"In response... \"\n\"...with its... \"\n\"...to predict... \"\n\"...from which... \"\n\"...of which... \"\n\"...that was founded... \"\n\"...for being... \"\n``` \n\n### Recursive Transformation Steps:\n1. Analyze the parts of speech.\n   - **Prediction:** Predict (noun phrase)\n   - **Response:** Response (verb phrase with subject as\nassistant\n**Recursive Transformation Step 2:**\n- Identify clauses that contain objects for subjects.\n  - The clause about the object is `\"In response\"` followed by another word like `was`.\n\n2. Formulate a new sentence using this information.\n  - Example: \"...its predictions.\"\n  \n3. Consider any other structures that could lead to a cohesive story or narrative.\n\n4. Translate into English terms where appropriate.\n  - For instance, replace nouns directly with their English equivalents.\n\n5. Continue breaking down sentences until all required elements are met.\n\nBy following these steps, you will create a coherent and meaningful sentence based on the provided text while guiding",
+        "continuation_text": "**Recursive Transformation Step 2:**\n- Identify clauses that contain objects for subjects.\n  - The clause about the object is `\"In response\"` followed by another word like `was`.\n\n2. Formulate a new sentence using this information.\n  - Example: \"...its predictions.\"\n  \n3. Consider any other structures that could lead to a cohesive story or narrative.\n\n4. Translate into English terms where appropriate.\n  - For instance, replace nouns directly with their English equivalents.\n\n5. Continue breaking down sentences until all required elements are met.\n\nBy following these steps, you will create a coherent and meaningful sentence based on the provided text while guiding",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 336,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 670,
+        "word_count": 100,
+        "unique_word_count": 91,
+        "unique_word_ratio": 0.91,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

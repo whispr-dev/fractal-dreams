@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1445,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 475,
+        "word_count": 81,
+        "unique_word_count": 81,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 827,
+        "word_count": 133,
+        "unique_word_count": 128,
+        "unique_word_ratio": 0.9624060150375939,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1189,
+        "word_count": 185,
+        "unique_word_count": 139,
+        "unique_word_ratio": 0.7513513513513513,
+        "repeated_bigram_count": 38
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Did",
+        "Can",
+        "Fortunately",
+        "Luckily",
+        "Does",
+        "Altern",
+        "An",
+        "Sure",
+        "Sometimes",
+        "Interestingly",
+        "Thankfully",
+        "Isn"
+      ],
+      "output_text": "The resulting message was called \"a complete waste.\" While this is probably true (though we should know that there's no reason why some people would stop doing so), most readers might rather be curious about where their code comes from or what they think happened with them—especially when you consider how well each story could have been rewritten on your mind before adding any new information! There were many examples here at MCCR today; I will leave one for tomorrow :-)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The resulting message was called \"a complete waste.\" While this is probably true (though we should know that there's no reason why some people would stop doing so), most readers might rather be curious about where their code comes from or what they think happened with them—especially when you consider how well each story could have been rewritten on your mind before adding any new information! There were many examples here at MCCR today; I will leave one for tomorrow :-)",
+        "continuation_text": "The resulting message was called \"a complete waste.\" While this is probably true (though we should know that there's no reason why some people would stop doing so), most readers might rather be curious about where their code comes from or what they think happened with them—especially when you consider how well each story could have been rewritten on your mind before adding any new information! There were many examples here at MCCR today; I will leave one for tomorrow :-)",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 204,
+        "new_token_count": 93,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 475,
+        "word_count": 81,
+        "unique_word_count": 81,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "desserts",
+        "1984",
+        "Another",
+        "somebody",
+        "whereas",
+        "(?,",
+        "『",
+        "perpetrated",
+        "2014",
+        "When",
+        "temptation",
+        "Similar"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: desserts, 1984, Another, somebody, whereas, (?,, 『, perpetrated, 2014, When, temptation, Similar\n\nTEXT:\nThe resulting message was called \"a complete waste.\" While this is probably true (though we should know that there's no reason why some people would stop doing so), most readers might rather be curious about where their code comes from or what they think happened with them—especially when you consider how well each story could have been rewritten on your mind before adding any new information! There were many examples here at MCCR today; I will leave one for tomorrow :-)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: desserts, 1984, Another, somebody, whereas, (?,, 『, perpetrated, 2014, When, temptation, Similar\n\nTEXT:\nThe resulting message was called \"a complete waste.\" While this is probably true (though we should know that there's no reason why some people would stop doing so), most readers might rather be curious about where their code comes from or what they think happened with them—especially when you consider how well each story could have been rewritten on your mind before adding any new information! There were many examples here at MCCR today; I will leave one for tomorrow :-)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: desserts, 1984, Another, somebody, whereas, (?,, 『, perpetrated, 2014, When, temptation, Similar\n\nTEXT:\nThe resulting message was called \"a complete waste.\" While this is probably true (though we should know that there's no reason why some people would stop doing so), most readers might rather be curious about where their code comes from or what they think happened with them—especially when you consider how well each story could have been rewritten on your mind before adding any new information! There were many examples here at MCCR today; I will leave one for tomorrow :-)",
+        "continuation_text": "",
+        "input_token_count": 179,
+        "raw_input_token_count": 179,
+        "output_token_count": 180,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 827,
+        "word_count": 133,
+        "unique_word_count": 128,
+        "unique_word_ratio": 0.9624060150375939,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "along",
+        "Throughout",
+        "People",
+        "Along",
+        "Everybody",
+        "throughout",
+        "Sometimes",
+        "Talking",
+        "someone",
+        "),\"",
+        "somebody",
+        "joked"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: along, Throughout, People, Along, Everybody, throughout, Sometimes, Talking, someone, ),\", somebody, joked\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: desserts, 1984, Another, somebody, whereas, (?,, 『, perpetrated, 2014, When, temptation, Similar\n\nTEXT:\nThe resulting message was called \"a complete waste.\" While this is probably true (though we should know that there's no reason why some people would stop doing so), most readers might rather be curious about where their code comes from or what they think happened with them—especially when you consider how well each story could have been rewritten on your mind before adding any new information! There were many examples here at MCCR today; I will leave one for tomorrow :-)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: along, Throughout, People, Along, Everybody, throughout, Sometimes, Talking, someone, ),\", somebody, joked\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: desserts, 1984, Another, somebody, whereas, (?,, 『, perpetrated, 2014, When, temptation, Similar\n\nTEXT:\nThe resulting message was called \"a complete waste.\" While this is probably true (though we should know that there's no reason why some people would stop doing so), most readers might rather be curious about where their code comes from or what they think happened with them—especially when you consider how well each story could have been rewritten on your mind before adding any new information! There were many examples here at MCCR today; I will leave one for tomorrow :-)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: along, Throughout, People, Along, Everybody, throughout, Sometimes, Talking, someone, ),\", somebody, joked\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: desserts, 1984, Another, somebody, whereas, (?,, 『, perpetrated, 2014, When, temptation, Similar\n\nTEXT:\nThe resulting message was called \"a complete waste.\" While this is probably true (though we should know that there's no reason why some people would stop doing so), most readers might rather be curious about where their code comes from or what they think happened with them—especially when you consider how well each story could have been rewritten on your mind before adding any new information! There were many examples here at MCCR today; I will leave one for tomorrow :-)",
+        "continuation_text": "",
+        "input_token_count": 265,
+        "raw_input_token_count": 265,
+        "output_token_count": 266,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1189,
+        "word_count": 185,
+        "unique_word_count": 139,
+        "unique_word_ratio": 0.7513513513513513,
+        "repeated_bigram_count": 38
+      }
+    }
+  ]
+}

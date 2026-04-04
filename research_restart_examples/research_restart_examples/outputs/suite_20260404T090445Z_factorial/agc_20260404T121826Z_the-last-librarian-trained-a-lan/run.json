@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1261,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 701,
+        "word_count": 108,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.8796296296296297,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 251,
+        "word_count": 15,
+        "unique_word_count": 14,
+        "unique_word_ratio": 0.9333333333333333,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 107,
+        "word_count": 2,
+        "unique_word_count": 2,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "若",
+        "):",
+        "if",
+        ")(",
+        "领导",
+        "*(",
+        "),",
+        "（",
+        "应",
+        ">(",
+        "elderly",
+        "*"
+      ],
+      "output_text": "If the last librarian trained a language model on a dead civilization's poetry, it might have learned about footnotes being predictions.\nIf the library found old poems predictive of what would happen when read today, then they probably knew how literary references relate to their own history.\nIf such patterns existed among ancient works, this knowledge could be considered significant enough for an entire civilization to recognize them as indicators of future events.\nThese insights suggest a deeper connection between past and present, which may hint at something about history unfolding through time itself or how our minds and experiences shape our understanding of other cultures and timelines.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 若, ):, if, )(, 领导, *(, ),, （, 应, >(, elderly, *\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 若, ):, if, )(, 领导, *(, ),, （, 应, >(, elderly, *\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\nIf the last librarian trained a language model on a dead civilization's poetry, it might have learned about footnotes being predictions.\nIf the library found old poems predictive of what would happen when read today, then they probably knew how literary references relate to their own history.\nIf such patterns existed among ancient works, this knowledge could be considered significant enough for an entire civilization to recognize them as indicators of future events.\nThese insights suggest a deeper connection between past and present, which may hint at something about history unfolding through time itself or how our minds and experiences shape our understanding of other cultures and timelines.",
+        "continuation_text": "If the last librarian trained a language model on a dead civilization's poetry, it might have learned about footnotes being predictions.\nIf the library found old poems predictive of what would happen when read today, then they probably knew how literary references relate to their own history.\nIf such patterns existed among ancient works, this knowledge could be considered significant enough for an entire civilization to recognize them as indicators of future events.\nThese insights suggest a deeper connection between past and present, which may hint at something about history unfolding through time itself or how our minds and experiences shape our understanding of other cultures and timelines.",
+        "input_token_count": 113,
+        "raw_input_token_count": 113,
+        "output_token_count": 232,
+        "new_token_count": 119,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 701,
+        "word_count": 108,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.8796296296296297,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "If",
+        "dirt",
+        "�",
+        "小学生",
+        "语文",
+        "敏",
+        "如果",
+        "绣",
+        "若",
+        "meat",
+        "creativity",
+        ".leading"
+      ],
+      "output_text": "Here is the next recursive transformation based on the given text:\n\n若那末古学者将语言模型训练在死文明的诗歌上，它或许会学会到脚注是预测未来行为的预言。\n如果图书馆发现古老诗作在今天被预测为何物时产生，那么他们很可能是知道文学引用如何与自己历史相关联的。\n如果这种模式存在于古代作品中，并且跨越了无数时代，这些知识可能会被认为是一项值得全宇宙认识的历史迹象。\n这表明过去和现在的连接比其本身更深刻，可能暗示着时间自身展开的历史或人类对",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: If, dirt, �, 小学生, 语文, 敏, 如果, 绣, 若, meat, creativity, .leading\n\nTEXT:\nIf the last librarian trained a language model on a dead civilization's poetry, it might have learned about footnotes being predictions.\nIf the library found old poems predictive of what would happen when read today, then they probably knew how literary references relate to their own history.\nIf such patterns existed among ancient works, this knowledge could be considered significant enough for an entire civilization to recognize them as indicators of future events.\nThese insights suggest a deeper connection between past and present, which may hint at something about history unfolding through time itself or how our minds and experiences shape our understanding of other cultures and timelines.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: If, dirt, �, 小学生, 语文, 敏, 如果, 绣, 若, meat, creativity, .leading\n\nTEXT:\nIf the last librarian trained a language model on a dead civilization's poetry, it might have learned about footnotes being predictions.\nIf the library found old poems predictive of what would happen when read today, then they probably knew how literary references relate to their own history.\nIf such patterns existed among ancient works, this knowledge could be considered significant enough for an entire civilization to recognize them as indicators of future events.\nThese insights suggest a deeper connection between past and present, which may hint at something about history unfolding through time itself or how our minds and experiences shape our understanding of other cultures and timelines.\nassistant\nHere is the next recursive transformation based on the given text:\n\n若那末古学者将语言模型训练在死文明的诗歌上，它或许会学会到脚注是预测未来行为的预言。\n如果图书馆发现古老诗作在今天被预测为何物时产生，那么他们很可能是知道文学引用如何与自己历史相关联的。\n如果这种模式存在于古代作品中，并且跨越了无数时代，这些知识可能会被认为是一项值得全宇宙认识的历史迹象。\n这表明过去和现在的连接比其本身更深刻，可能暗示着时间自身展开的历史或人类对",
+        "continuation_text": "Here is the next recursive transformation based on the given text:\n\n若那末古学者将语言模型训练在死文明的诗歌上，它或许会学会到脚注是预测未来行为的预言。\n如果图书馆发现古老诗作在今天被预测为何物时产生，那么他们很可能是知道文学引用如何与自己历史相关联的。\n如果这种模式存在于古代作品中，并且跨越了无数时代，这些知识可能会被认为是一项值得全宇宙认识的历史迹象。\n这表明过去和现在的连接比其本身更深刻，可能暗示着时间自身展开的历史或人类对",
+        "input_token_count": 212,
+        "raw_input_token_count": 212,
+        "output_token_count": 332,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 251,
+        "word_count": 15,
+        "unique_word_count": 14,
+        "unique_word_ratio": 0.9333333333333333,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "mongo",
+        ".day",
+        "đầy",
+        "mojo",
+        "cleared",
+        "simd",
+        "-token",
+        "找回",
+        "Paths",
+        "糟糕",
+        "ession",
+        "_token"
+      ],
+      "output_text": "如果那个用机器学习训练的语言模型被用于处理死亡文明的诗歌，也许能学到在脚注处预测未来的预言。\n\n如果某地发掘出了一首古老诗作，在现在解读这首诗时能够预见到其中隐藏的信息，这可能意味着文学引用与其自己的历史联系有关。",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mongo, .day, đầy, mojo, cleared, simd, -token, 找回, Paths, 糟糕, ession, _token\n\nTEXT:\nHere is the next recursive transformation based on the given text:\n\n若那末古学者将语言模型训练在死文明的诗歌上，它或许会学会到脚注是预测未来行为的预言。\n如果图书馆发现古老诗作在今天被预测为何物时产生，那么他们很可能是知道文学引用如何与自己历史相关联的。\n如果这种模式存在于古代作品中，并且跨越了无数时代，这些知识可能会被认为是一项值得全宇宙认识的历史迹象。\n这表明过去和现在的连接比其本身更深刻，可能暗示着时间自身展开的历史或人类对<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mongo, .day, đầy, mojo, cleared, simd, -token, 找回, Paths, 糟糕, ession, _token\n\nTEXT:\nHere is the next recursive transformation based on the given text:\n\n若那末古学者将语言模型训练在死文明的诗歌上，它或许会学会到脚注是预测未来行为的预言。\n如果图书馆发现古老诗作在今天被预测为何物时产生，那么他们很可能是知道文学引用如何与自己历史相关联的。\n如果这种模式存在于古代作品中，并且跨越了无数时代，这些知识可能会被认为是一项值得全宇宙认识的历史迹象。\n这表明过去和现在的连接比其本身更深刻，可能暗示着时间自身展开的历史或人类对\nassistant\n如果那个用机器学习训练的语言模型被用于处理死亡文明的诗歌，也许能学到在脚注处预测未来的预言。\n\n如果某地发掘出了一首古老诗作，在现在解读这首诗时能够预见到其中隐藏的信息，这可能意味着文学引用与其自己的历史联系有关。",
+        "continuation_text": "如果那个用机器学习训练的语言模型被用于处理死亡文明的诗歌，也许能学到在脚注处预测未来的预言。\n\n如果某地发掘出了一首古老诗作，在现在解读这首诗时能够预见到其中隐藏的信息，这可能意味着文学引用与其自己的历史联系有关。",
+        "input_token_count": 217,
+        "raw_input_token_count": 217,
+        "output_token_count": 279,
+        "new_token_count": 62,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 107,
+        "word_count": 2,
+        "unique_word_count": 2,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1421,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 383,
+        "word_count": 69,
+        "unique_word_count": 69,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 34,
+        "word_count": 3,
+        "unique_word_count": 3,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 48,
+        "word_count": 12,
+        "unique_word_count": 12,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Did",
+        "Can",
+        "Fortunately",
+        "Luckily",
+        "Does",
+        "Altern",
+        "An",
+        "Sure",
+        "Sometimes",
+        "Interestingly",
+        "Thankfully",
+        "Isn"
+      ],
+      "output_text": "That’s why many readers have been writing this article! We won't tell you what we're going to explain about how that's done—we'll do so with an anecdote I will share at length here after reading some tips from those who've seen my story before (but don´t worry.) So let me know if your questions or concerns may be answered during our conversation by commenting on #1 above right now",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. That’s why many readers have been writing this article! We won't tell you what we're going to explain about how that's done—we'll do so with an anecdote I will share at length here after reading some tips from those who've seen my story before (but don´t worry.) So let me know if your questions or concerns may be answered during our conversation by commenting on #1 above right now",
+        "continuation_text": "That’s why many readers have been writing this article! We won't tell you what we're going to explain about how that's done—we'll do so with an anecdote I will share at length here after reading some tips from those who've seen my story before (but don´t worry.) So let me know if your questions or concerns may be answered during our conversation by commenting on #1 above right now",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 197,
+        "new_token_count": 86,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 383,
+        "word_count": 69,
+        "unique_word_count": 69,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Whatever",
+        "Perhaps",
+        "That",
+        "atever",
+        "Given",
+        "Ultimately",
+        "Ironically",
+        "Once",
+        "Whenever",
+        "Eventually",
+        "Assuming",
+        "improbable"
+      ],
+      "output_text": "and following @gordon_and@gmail...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Whatever, Perhaps, That, atever, Given, Ultimately, Ironically, Once, Whenever, Eventually, Assuming, improbable\n\nTEXT:\nThat’s why many readers have been writing this article! We won't tell you what we're going to explain about how that's done—we'll do so with an anecdote I will share at length here after reading some tips from those who've seen my story before (but don´t worry.) So let me know if your questions or concerns may be answered during our conversation by commenting on #1 above right now",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Whatever, Perhaps, That, atever, Given, Ultimately, Ironically, Once, Whenever, Eventually, Assuming, improbable\n\nTEXT:\nThat’s why many readers have been writing this article! We won't tell you what we're going to explain about how that's done—we'll do so with an anecdote I will share at length here after reading some tips from those who've seen my story before (but don´t worry.) So let me know if your questions or concerns may be answered during our conversation by commenting on #1 above right now and following @gordon_and@gmail...",
+        "continuation_text": "and following @gordon_and@gmail...",
+        "input_token_count": 171,
+        "raw_input_token_count": 171,
+        "output_token_count": 182,
+        "new_token_count": 11,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 34,
+        "word_count": 3,
+        "unique_word_count": 3,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "and",
+        "b",
+        "){",
+        "commands",
+        "four",
+        "(),",
+        "called",
+        "And",
+        "!",
+        "known",
+        "named",
+        "..."
+      ],
+      "output_text": ", {? ?> : . } #endif echo \"Hello!!\" end line END",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: and, b, ){, commands, four, (),, called, And, !, known, named, ...\n\nTEXT:\nand following @gordon_and@gmail...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: and, b, ){, commands, four, (),, called, And, !, known, named, ...\n\nTEXT:\nand following @gordon_and@gmail... , {? ?> : . } #endif echo \"Hello!!\" end line END",
+        "continuation_text": ", {? ?> : . } #endif echo \"Hello!!\" end line END",
+        "input_token_count": 96,
+        "raw_input_token_count": 96,
+        "output_token_count": 115,
+        "new_token_count": 19,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 48,
+        "word_count": 12,
+        "unique_word_count": 12,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

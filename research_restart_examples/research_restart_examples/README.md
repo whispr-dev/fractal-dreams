@@ -1,49 +1,96 @@
-# Research Restart Example Bundle
+# Analysis toolkit for recursion-suite outputs
 
-This bundle is a clean, text-only starting point for rebuilding the hallucination-engines / latent-recursion work on a defensible footing.
+This toolkit adds two things your original `utils_io.py` metrics do not provide well enough for a publishable write-up:
 
-## Included files
+1. **Polished linguistic analysis**
+2. **Tokenizer-accurate model comparisons**
 
-- `model_registry.py` — one loader for the recommended Hugging Face model trio.
-- `engine_recursive_token_self_mirroring.py` — baseline recursion engine.
-- `engine_activation_gradient_climbing.py` — experimental activation-guided recursion baseline.
-- `engine_latent_vector_transform_composition.py` — experimental embedding-delta recursion baseline.
-- `engine_self_reflective_prompt_feedback.py` — reflective rewrite recursion engine.
-- `run_suite.py` — example suite runner showing how to wire the recommended models into the tests.
-- `utils_io.py` — logging and basic defensible text metrics.
+## Why both are needed
+
+For the paper, do **not** rely only on whitespace word counts or one model's tokenizer counts.
+
+Use:
+- **linguistic metrics** to characterize style, lexical diversity, repetition, drift, and readability
+- **native tokenizer metrics** to describe how each model internally budgeted the text
+- **shared reference tokenizer metrics** to compare outputs across models on a common scale
+
+That last point matters because model-native token counts are *not directly comparable* across different tokenizers.
+
+## Files
+
+- `analysis_common.py` — suite/run loading helpers and shared metrics
+- `analyze_linguistics.py` — final-output linguistic analysis
+- `analyze_tokenizers.py` — native + cross-tokenizer count analysis
+- `render_latex_tables.py` — turns summary CSVs into Overleaf-ready LaTeX tables
+- `requirements-analysis.txt` — suggested analysis dependencies
+
+## Suggested analysis stack for the paper
+
+### Linguistic analysis
+This script computes:
+- character count
+- word count
+- type-token ratio
+- MATTR-50
+- MTLD
+- hapax ratio
+- word entropy
+- character entropy
+- distinct-1/2/3
+- repeated 2/3/4-gram fractions
+- prompt TF-IDF cosine similarity
+- previous-step TF-IDF cosine similarity
+- lexical overlap with the seed prompt
+- sentence count
+- average sentence length
+- Flesch reading ease
+- Flesch-Kincaid grade
+- Gunning fog
+- optional POS ratios via spaCy
+
+### Tokenizer analysis
+This script reports:
+- native input/new/output token counts already logged by the run JSON
+- cross-tokenizer token counts for the final output text under:
+  - each model tokenizer in the suite registry
+  - one shared reference tokenizer
+- tokens per character
+- tokens per word
+
+## Recommended reporting practice
+
+For the paper, report both:
+
+1. **native model token counts**
+   - useful for runtime/context behavior
+2. **shared reference tokenizer counts**
+   - useful for apples-to-apples cross-model comparison
+
+Do **not** treat native token counts from different tokenizers as directly comparable.
 
 ## Install
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install --upgrade pip
-pip install torch transformers accelerate sentencepiece
+pip install -r requirements-analysis.txt
+python -m spacy download en_core_web_sm
 ```
 
-## Download models once
+## Run on your outputs root
 
 ```bash
-hf download distilbert/distilgpt2
-hf download openai-community/gpt2
-hf download Qwen/Qwen2.5-0.5B-Instruct
+python analyze_linguistics.py --input outputs --output-dir analysis/linguistics
+
+python analyze_tokenizers.py --input outputs --output-dir analysis/tokenizers --reference-tokenizer openai-community/gpt2
 ```
 
-## Run one engine manually
+## Generate LaTeX tables
 
 ```bash
-python engine_recursive_token_self_mirroring.py \
-  --model gpt2 \
-  --seed-text "A machine dreams in recursive echoes beneath the sea." \
-  --iterations 5
+python render_latex_tables.py --linguistics-summary analysis/linguistics/suite_20260404T090445Z_factorial/linguistics_overall_summary.csv  --tokenizer-summary analysis/tokenizers/suite_20260404T090445Z_factorial/tokenizer_summary.csv --output analysis/tables.tex
 ```
 
-## Run the bundled example suite
+## Notes
 
-```bash
-python run_suite.py --output-dir outputs
-```
-
-## Important caveat
-
-`engine_activation_gradient_climbing.py` and `engine_latent_vector_transform_composition.py` are honest restart baselines, not validated claims. They are designed so the project can move from prose to runnable experiments, but they still need real test runs and paper-quality evaluation before they count as results.
+- `distilgpt2` and `gpt2` share the GPT-2 tokenizer family, so their cross-tokenizer counts may match exactly.
+- The scripts analyze the **final output at the final recursion step** for each run. That is usually the cleanest unit for between-run statistics.
+- If you want per-step analysis later, extend the scripts to iterate all records rather than final records only.

@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1531,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 44,
+        "word_count": 6,
+        "unique_word_count": 6,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 473,
+        "word_count": 77,
+        "unique_word_count": 71,
+        "unique_word_ratio": 0.922077922077922,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 60,
+        "word_count": 9,
+        "unique_word_count": 9,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 234,
+        "word_count": 33,
+        "unique_word_count": 33,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "The main problem was not how it would perform on an existing, large number of messages; but what does each signal mean for us? We can use one word to describe this new idea with regard only to paper applications involving texts or other resources at all times. In addition we could make simple choices (e—g., if you want to communicate between your own team members), including making sense out of possible future possibilities using our data collection methods instead -- by combining any types of metadata such so that when done correctly, they will show some significant improvement over previous iterations...",
+      "output_text": "The results seem very interesting indeed....",
+      "source_window_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+      "reflection_window_text": "The main problem was not how it would perform on an existing, large number of messages; but what does each signal mean for us? We can use one word to describe this new idea with regard only to paper applications involving texts or other resources at all times. In addition we could make simple choices (e—g., if you want to communicate between your own team members), including making sense out of possible future possibilities using our data collection methods instead -- by combining any types of metadata such so that when done correctly, they will show some significant improvement over previous iterations...",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The main problem was not how it would perform on an existing, large number of messages; but what does each signal mean for us? We can use one word to describe this new idea with regard only to paper applications involving texts or other resources at all times. In addition we could make simple choices (e—g., if you want to communicate between your own team members), including making sense out of possible future possibilities using our data collection methods instead -- by combining any types of metadata such so that when done correctly, they will show some significant improvement over previous iterations...",
+        "continuation_text": "The main problem was not how it would perform on an existing, large number of messages; but what does each signal mean for us? We can use one word to describe this new idea with regard only to paper applications involving texts or other resources at all times. In addition we could make simple choices (e—g., if you want to communicate between your own team members), including making sense out of possible future possibilities using our data collection methods instead -- by combining any types of metadata such so that when done correctly, they will show some significant improvement over previous iterations...",
+        "input_token_count": 92,
+        "raw_input_token_count": 92,
+        "output_token_count": 206,
+        "new_token_count": 114,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nThe main problem was not how it would perform on an existing, large number of messages; but what does each signal mean for us? We can use one word to describe this new idea with regard only to paper applications involving texts or other resources at all times. In addition we could make simple choices (e—g., if you want to communicate between your own team members), including making sense out of possible future possibilities using our data collection methods instead -- by combining any types of metadata such so that when done correctly, they will show some significant improvement over previous iterations...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nThe main problem was not how it would perform on an existing, large number of messages; but what does each signal mean for us? We can use one word to describe this new idea with regard only to paper applications involving texts or other resources at all times. In addition we could make simple choices (e—g., if you want to communicate between your own team members), including making sense out of possible future possibilities using our data collection methods instead -- by combining any types of metadata such so that when done correctly, they will show some significant improvement over previous iterations... The results seem very interesting indeed....",
+        "continuation_text": "The results seem very interesting indeed....",
+        "input_token_count": 193,
+        "raw_input_token_count": 193,
+        "output_token_count": 201,
+        "new_token_count": 8,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 44,
+        "word_count": 6,
+        "unique_word_count": 6,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "We will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe results seem very interesting indeed....\n\nREFLECTION:\nWe will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!",
+      "source_window_text": "The results seem very interesting indeed....",
+      "reflection_window_text": "We will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe results seem very interesting indeed....",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe results seem very interesting indeed.... We will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!",
+        "continuation_text": "We will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!",
+        "input_token_count": 76,
+        "raw_input_token_count": 76,
+        "output_token_count": 114,
+        "new_token_count": 38,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe results seem very interesting indeed....\n\nREFLECTION:\nWe will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe results seem very interesting indeed....\n\nREFLECTION:\nWe will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!",
+        "continuation_text": "",
+        "input_token_count": 101,
+        "raw_input_token_count": 101,
+        "output_token_count": 102,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 473,
+        "word_count": 77,
+        "unique_word_count": 71,
+        "unique_word_ratio": 0.922077922077922,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe results seem very interesting indeed....\n\nREFLECTION:\nWe will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!",
+      "output_text": "(Note: For example you should choose different versions).\n3…",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe results seem very interesting indeed....\n\nREFLECTION:\nWe will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe results seem very interesting indeed....\n\nREFLECTION:\nWe will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe results seem very interesting indeed....\n\nREFLECTION:\nWe will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe results seem very interesting indeed....\n\nREFLECTION:\nWe will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!",
+        "continuation_text": "",
+        "input_token_count": 170,
+        "raw_input_token_count": 170,
+        "output_token_count": 171,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe results seem very interesting indeed....\n\nREFLECTION:\nWe will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe results seem very interesting indeed....\n\nREFLECTION:\nWe will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe results seem very interesting indeed....\n\nREFLECTION:\nWe will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe results seem very interesting indeed....\n\nREFLECTION:\nWe will look at these for yourself as we explore each possible candidate through further experiments - such as this one, but if you have any other questions please feel free to leave them out! (Note: For example you should choose different versions).\n3…",
+        "continuation_text": "(Note: For example you should choose different versions).\n3…",
+        "input_token_count": 328,
+        "raw_input_token_count": 328,
+        "output_token_count": 343,
+        "new_token_count": 15,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 60,
+        "word_count": 9,
+        "unique_word_count": 9,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "to generate an idea from this paper, then add it into your project by adding something like \"text\", but note how many times each of these would be added (or missed) so far? One way is to create some kind at first as opposed not just one or two ways when implementing code for every single piece of data – which could make us think twice about trying to reuse our original concept once we can develop several additional features over time; however if any problem arises I may need to figure out exactly what will work on my part before making changes based solely upon feedback rather than looking directly at existing solutions such where there exists no reason why they might appear later because their motivation has never been known yet! This means most important parts don't seem appropriate until after finalizing them within 3 months depending both",
+      "output_text": "sides have settled onto another proposal and decided that using those elements instead helps preserve performance further while remaining stable overall . If anything new seems possible please do consider supporting contributions here",
+      "source_window_text": "(Note: For example you should choose different versions).\n3…",
+      "reflection_window_text": "to generate an idea from this paper, then add it into your project by adding something like \"text\", but note how many times each of these would be added (or missed) so far? One way is to create some kind at first as opposed not just one or two ways when implementing code for every single piece of data – which could make us think twice about trying to reuse our original concept once we can develop several additional features over time; however if any problem arises I may need to figure out exactly what will work on my part before making changes based solely upon feedback rather than looking directly at existing solutions such where there exists no reason why they might appear later because their motivation has never been known yet! This means most important parts don't seem appropriate until after finalizing them within 3 months depending both",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n(Note: For example you should choose different versions).\n3…",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n(Note: For example you should choose different versions).\n3… to generate an idea from this paper, then add it into your project by adding something like \"text\", but note how many times each of these would be added (or missed) so far? One way is to create some kind at first as opposed not just one or two ways when implementing code for every single piece of data – which could make us think twice about trying to reuse our original concept once we can develop several additional features over time; however if any problem arises I may need to figure out exactly what will work on my part before making changes based solely upon feedback rather than looking directly at existing solutions such where there exists no reason why they might appear later because their motivation has never been known yet! This means most important parts don't seem appropriate until after finalizing them within 3 months depending both",
+        "continuation_text": "to generate an idea from this paper, then add it into your project by adding something like \"text\", but note how many times each of these would be added (or missed) so far? One way is to create some kind at first as opposed not just one or two ways when implementing code for every single piece of data – which could make us think twice about trying to reuse our original concept once we can develop several additional features over time; however if any problem arises I may need to figure out exactly what will work on my part before making changes based solely upon feedback rather than looking directly at existing solutions such where there exists no reason why they might appear later because their motivation has never been known yet! This means most important parts don't seem appropriate until after finalizing them within 3 months depending both",
+        "input_token_count": 83,
+        "raw_input_token_count": 83,
+        "output_token_count": 243,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n(Note: For example you should choose different versions).\n3…\n\nREFLECTION:\nto generate an idea from this paper, then add it into your project by adding something like \"text\", but note how many times each of these would be added (or missed) so far? One way is to create some kind at first as opposed not just one or two ways when implementing code for every single piece of data – which could make us think twice about trying to reuse our original concept once we can develop several additional features over time; however if any problem arises I may need to figure out exactly what will work on my part before making changes based solely upon feedback rather than looking directly at existing solutions such where there exists no reason why they might appear later because their motivation has never been known yet! This means most important parts don't seem appropriate until after finalizing them within 3 months depending both",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n(Note: For example you should choose different versions).\n3…\n\nREFLECTION:\nto generate an idea from this paper, then add it into your project by adding something like \"text\", but note how many times each of these would be added (or missed) so far? One way is to create some kind at first as opposed not just one or two ways when implementing code for every single piece of data – which could make us think twice about trying to reuse our original concept once we can develop several additional features over time; however if any problem arises I may need to figure out exactly what will work on my part before making changes based solely upon feedback rather than looking directly at existing solutions such where there exists no reason why they might appear later because their motivation has never been known yet! This means most important parts don't seem appropriate until after finalizing them within 3 months depending both sides have settled onto another proposal and decided that using those elements instead helps preserve performance further while remaining stable overall . If anything new seems possible please do consider supporting contributions here",
+        "continuation_text": "sides have settled onto another proposal and decided that using those elements instead helps preserve performance further while remaining stable overall . If anything new seems possible please do consider supporting contributions here",
+        "input_token_count": 231,
+        "raw_input_token_count": 231,
+        "output_token_count": 265,
+        "new_token_count": 34,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 234,
+        "word_count": 33,
+        "unique_word_count": 33,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1457,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 343,
+        "word_count": 61,
+        "unique_word_count": 61,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 509,
+        "word_count": 88,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.9886363636363636,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 40,
+        "word_count": 8,
+        "unique_word_count": 8,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Did",
+        "Can",
+        "Fortunately",
+        "Luckily",
+        "Does",
+        "Altern",
+        "An",
+        "Sure",
+        "Sometimes",
+        "Interestingly",
+        "Thankfully",
+        "Isn"
+      ],
+      "output_text": "When you see them on your screen for six months straight, tell me that they have already written these words over again without any trouble...but there is no way back yet! And I guess we will never know how long this sentence has been since one last comment (and nothing else), so let’s look at some interesting examples....And who knows what?",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. When you see them on your screen for six months straight, tell me that they have already written these words over again without any trouble...but there is no way back yet! And I guess we will never know how long this sentence has been since one last comment (and nothing else), so let’s look at some interesting examples....And who knows what?",
+        "continuation_text": "When you see them on your screen for six months straight, tell me that they have already written these words over again without any trouble...but there is no way back yet! And I guess we will never know how long this sentence has been since one last comment (and nothing else), so let’s look at some interesting examples....And who knows what?",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 185,
+        "new_token_count": 74,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 343,
+        "word_count": 61,
+        "unique_word_count": 61,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "When",
+        "Anyone",
+        "Depending",
+        "Nobody",
+        "Creating",
+        "Yep",
+        "Everybody",
+        "Luckily",
+        "Authorities",
+        "Those",
+        "Everyone",
+        "Typically"
+      ],
+      "output_text": "Let’s just make sure it doesn't cause us problems :) In addition , everyone does our own thing with \"tactics\" but people don´ll even notice where their characters take place inside those scenes when and if something goes wrong :). The best part is actually creating new ones based upon actual data stored from existing programs.. . If all other files were copied directly after first making use thereof then its probably due process is still better than adding two lines instead of an additional line here [].",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: When, Anyone, Depending, Nobody, Creating, Yep, Everybody, Luckily, Authorities, Those, Everyone, Typically\n\nTEXT:\nWhen you see them on your screen for six months straight, tell me that they have already written these words over again without any trouble...but there is no way back yet! And I guess we will never know how long this sentence has been since one last comment (and nothing else), so let’s look at some interesting examples....And who knows what?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: When, Anyone, Depending, Nobody, Creating, Yep, Everybody, Luckily, Authorities, Those, Everyone, Typically\n\nTEXT:\nWhen you see them on your screen for six months straight, tell me that they have already written these words over again without any trouble...but there is no way back yet! And I guess we will never know how long this sentence has been since one last comment (and nothing else), so let’s look at some interesting examples....And who knows what? Let’s just make sure it doesn't cause us problems :) In addition , everyone does our own thing with \"tactics\" but people don´ll even notice where their characters take place inside those scenes when and if something goes wrong :). The best part is actually creating new ones based upon actual data stored from existing programs.. . If all other files were copied directly after first making use thereof then its probably due process is still better than adding two lines instead of an additional line here [].",
+        "continuation_text": "Let’s just make sure it doesn't cause us problems :) In addition , everyone does our own thing with \"tactics\" but people don´ll even notice where their characters take place inside those scenes when and if something goes wrong :). The best part is actually creating new ones based upon actual data stored from existing programs.. . If all other files were copied directly after first making use thereof then its probably due process is still better than adding two lines instead of an additional line here [].",
+        "input_token_count": 158,
+        "raw_input_token_count": 158,
+        "output_token_count": 261,
+        "new_token_count": 103,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 509,
+        "word_count": 88,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.9886363636363636,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "airplanes",
+        "Let",
+        "expel",
+        "remember",
+        "joice",
+        "flaming",
+        "missionaries",
+        "tempt",
+        "cruise",
+        "Login",
+        "conceptions",
+        "minions"
+      ],
+      "output_text": "So let's see what happens at each end...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: airplanes, Let, expel, remember, joice, flaming, missionaries, tempt, cruise, Login, conceptions, minions\n\nTEXT:\nLet’s just make sure it doesn't cause us problems :) In addition , everyone does our own thing with \"tactics\" but people don´ll even notice where their characters take place inside those scenes when and if something goes wrong :). The best part is actually creating new ones based upon actual data stored from existing programs.. . If all other files were copied directly after first making use thereof then its probably due process is still better than adding two lines instead of an additional line here [].",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: airplanes, Let, expel, remember, joice, flaming, missionaries, tempt, cruise, Login, conceptions, minions\n\nTEXT:\nLet’s just make sure it doesn't cause us problems :) In addition , everyone does our own thing with \"tactics\" but people don´ll even notice where their characters take place inside those scenes when and if something goes wrong :). The best part is actually creating new ones based upon actual data stored from existing programs.. . If all other files were copied directly after first making use thereof then its probably due process is still better than adding two lines instead of an additional line here []. So let's see what happens at each end...",
+        "continuation_text": "So let's see what happens at each end...",
+        "input_token_count": 188,
+        "raw_input_token_count": 188,
+        "output_token_count": 199,
+        "new_token_count": 11,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 40,
+        "word_count": 8,
+        "unique_word_count": 8,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

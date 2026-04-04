@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1130,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 563,
+        "word_count": 89,
+        "unique_word_count": 46,
+        "unique_word_ratio": 0.5168539325842697,
+        "repeated_bigram_count": 35
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 23,
+        "word_count": 4,
+        "unique_word_count": 4,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 549,
+        "word_count": 92,
+        "unique_word_count": 78,
+        "unique_word_ratio": 0.8478260869565217,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 535,
+        "word_count": 84,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.9404761904761905,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "was",
+        "the",
+        "had",
+        "If",
+        "to",
+        "is",
+        "for",
+        "and",
+        "are"
+      ],
+      "output_text": "Certainly! The following is the next recursive transformation of the given text based on the provided latent anchor tokens:\n\n**Observation:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow had already happened**, and was trying to **warn us**. \n\n**Response 1:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow had already happened**, and was trying to **warn you**.\n\n**Response 2:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow would happen again**, and was",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, was, the, had, If, to, is, for, and, are\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, was, the, had, If, to, is, for, and, are\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nCertainly! The following is the next recursive transformation of the given text based on the provided latent anchor tokens:\n\n**Observation:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow had already happened**, and was trying to **warn us**. \n\n**Response 1:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow had already happened**, and was trying to **warn you**.\n\n**Response 2:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow would happen again**, and was",
+        "continuation_text": "Certainly! The following is the next recursive transformation of the given text based on the provided latent anchor tokens:\n\n**Observation:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow had already happened**, and was trying to **warn us**. \n\n**Response 1:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow had already happened**, and was trying to **warn you**.\n\n**Response 2:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow would happen again**, and was",
+        "input_token_count": 110,
+        "raw_input_token_count": 110,
+        "output_token_count": 238,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 563,
+        "word_count": 89,
+        "unique_word_count": 46,
+        "unique_word_ratio": 0.5168539325842697,
+        "repeated_bigram_count": 35
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "**",
+        "the",
+        "were",
+        "If",
+        "was",
+        "is",
+        "are",
+        "to",
+        "for",
+        "It"
+      ],
+      "output_text": "trying to **warn you**.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, **, the, were, If, was, is, are, to, for, It\n\nTEXT:\nCertainly! The following is the next recursive transformation of the given text based on the provided latent anchor tokens:\n\n**Observation:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow had already happened**, and was trying to **warn us**. \n\n**Response 1:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow had already happened**, and was trying to **warn you**.\n\n**Response 2:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow would happen again**, and was<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, **, the, were, If, was, is, are, to, for, It\n\nTEXT:\nCertainly! The following is the next recursive transformation of the given text based on the provided latent anchor tokens:\n\n**Observation:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow had already happened**, and was trying to **warn us**. \n\n**Response 1:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow had already happened**, and was trying to **warn you**.\n\n**Response 2:** In the observatory ruins, a clockwork map kept redrawing the sky as if **tomorrow would happen again**, and was\nassistant\ntrying to **warn you**.",
+        "continuation_text": "trying to **warn you**.",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 218,
+        "new_token_count": 8,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 23,
+        "word_count": 4,
+        "unique_word_count": 4,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "**",
+        "to",
+        "you",
+        "*",
+        ".",
+        "if",
+        "***",
+        "it",
+        "(**",
+        "**,",
+        ",",
+        "**:"
+      ],
+      "output_text": "Let's start with the given text \"trying to **warn you**.\" We need to break this into smaller segments based on the provided latent anchors and then apply the appropriate transformations step-by-step.\n\n### Step 1: Identify Latent Anchors\n- The first latent anchor is `to`. This indicates that we should find an equivalent verb or action related to \"warning.\"\n  \n### Step 2: Analyze the Text Segment by Segment\n\n#### First Segment (From \"trying\" to \"try\")\n**Trying to warn you.**\n\n   - \"Trying to\" can be replaced with either \"I am trying to,\" \"We are",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: **, to, you, *, ., if, ***, it, (**, **,, ,, **:\n\nTEXT:\ntrying to **warn you**.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: **, to, you, *, ., if, ***, it, (**, **,, ,, **:\n\nTEXT:\ntrying to **warn you**.\nassistant\nLet's start with the given text \"trying to **warn you**.\" We need to break this into smaller segments based on the provided latent anchors and then apply the appropriate transformations step-by-step.\n\n### Step 1: Identify Latent Anchors\n- The first latent anchor is `to`. This indicates that we should find an equivalent verb or action related to \"warning.\"\n  \n### Step 2: Analyze the Text Segment by Segment\n\n#### First Segment (From \"trying\" to \"try\")\n**Trying to warn you.**\n\n   - \"Trying to\" can be replaced with either \"I am trying to,\" \"We are",
+        "continuation_text": "Let's start with the given text \"trying to **warn you**.\" We need to break this into smaller segments based on the provided latent anchors and then apply the appropriate transformations step-by-step.\n\n### Step 1: Identify Latent Anchors\n- The first latent anchor is `to`. This indicates that we should find an equivalent verb or action related to \"warning.\"\n  \n### Step 2: Analyze the Text Segment by Segment\n\n#### First Segment (From \"trying\" to \"try\")\n**Trying to warn you.**\n\n   - \"Trying to\" can be replaced with either \"I am trying to,\" \"We are",
+        "input_token_count": 87,
+        "raw_input_token_count": 87,
+        "output_token_count": 215,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 549,
+        "word_count": 92,
+        "unique_word_count": 78,
+        "unique_word_ratio": 0.8478260869565217,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "to",
+        "it",
+        "\"",
+        "is",
+        "the",
+        "(",
+        "and",
+        "for",
+        ",",
+        "are",
+        "-"
+      ],
+      "output_text": "tried to,\" etc., depending on the context.\n   \n   - Applying the same reasoning as before, I would replace \"it\" with another relative pronoun like \"we\" or \"they.\"\n\nSo far, my response from Step 2:\n\n```plaintext\n\"I am trying to warn them.\"\n```\n\n#### Second Segment (From \"against\" to \"for\")\n**Against me. Then go forward. To make sure they get what they want...**\n\n   - **Adverbial Adjective**: \"For against\" could potentially represent an adverbial phrase modifying the object being warned about (\"me\"). It’s worth considering how such",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, to, it, \", is, the, (, and, for, ,, are, -\n\nTEXT:\nLet's start with the given text \"trying to **warn you**.\" We need to break this into smaller segments based on the provided latent anchors and then apply the appropriate transformations step-by-step.\n\n### Step 1: Identify Latent Anchors\n- The first latent anchor is `to`. This indicates that we should find an equivalent verb or action related to \"warning.\"\n  \n### Step 2: Analyze the Text Segment by Segment\n\n#### First Segment (From \"trying\" to \"try\")\n**Trying to warn you.**\n\n   - \"Trying to\" can be replaced with either \"I am trying to,\" \"We are<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, to, it, \", is, the, (, and, for, ,, are, -\n\nTEXT:\nLet's start with the given text \"trying to **warn you**.\" We need to break this into smaller segments based on the provided latent anchors and then apply the appropriate transformations step-by-step.\n\n### Step 1: Identify Latent Anchors\n- The first latent anchor is `to`. This indicates that we should find an equivalent verb or action related to \"warning.\"\n  \n### Step 2: Analyze the Text Segment by Segment\n\n#### First Segment (From \"trying\" to \"try\")\n**Trying to warn you.**\n\n   - \"Trying to\" can be replaced with either \"I am trying to,\" \"We are\nassistant\ntried to,\" etc., depending on the context.\n   \n   - Applying the same reasoning as before, I would replace \"it\" with another relative pronoun like \"we\" or \"they.\"\n\nSo far, my response from Step 2:\n\n```plaintext\n\"I am trying to warn them.\"\n```\n\n#### Second Segment (From \"against\" to \"for\")\n**Against me. Then go forward. To make sure they get what they want...**\n\n   - **Adverbial Adjective**: \"For against\" could potentially represent an adverbial phrase modifying the object being warned about (\"me\"). It’s worth considering how such",
+        "continuation_text": "tried to,\" etc., depending on the context.\n   \n   - Applying the same reasoning as before, I would replace \"it\" with another relative pronoun like \"we\" or \"they.\"\n\nSo far, my response from Step 2:\n\n```plaintext\n\"I am trying to warn them.\"\n```\n\n#### Second Segment (From \"against\" to \"for\")\n**Against me. Then go forward. To make sure they get what they want...**\n\n   - **Adverbial Adjective**: \"For against\" could potentially represent an adverbial phrase modifying the object being warned about (\"me\"). It’s worth considering how such",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 535,
+        "word_count": 84,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.9404761904761905,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

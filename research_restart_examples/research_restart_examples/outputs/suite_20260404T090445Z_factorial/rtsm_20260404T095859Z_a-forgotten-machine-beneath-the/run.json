@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1072
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 653,
+        "word_count": 109,
+        "unique_word_count": 107,
+        "unique_word_ratio": 0.981651376146789,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1139,
+        "word_count": 189,
+        "unique_word_count": 184,
+        "unique_word_ratio": 0.9735449735449735,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1686,
+        "word_count": 278,
+        "unique_word_count": 267,
+        "unique_word_ratio": 0.960431654676259,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1802,
+        "word_count": 298,
+        "unique_word_count": 286,
+        "unique_word_ratio": 0.959731543624161,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 3758,
+        "word_count": 618,
+        "unique_word_count": 306,
+        "unique_word_ratio": 0.49514563106796117,
+        "repeated_bigram_count": 297
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+      "delta_text": "This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but",
+        "continuation_text": "This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but",
+        "input_token_count": 65,
+        "raw_input_token_count": 65,
+        "output_token_count": 161,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 653,
+        "word_count": 109,
+        "unique_word_count": 107,
+        "unique_word_ratio": 0.981651376146789,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but",
+      "delta_text": "also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd",
+        "continuation_text": "also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd",
+        "input_token_count": 161,
+        "raw_input_token_count": 161,
+        "output_token_count": 257,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1139,
+        "word_count": 189,
+        "unique_word_count": 184,
+        "unique_word_ratio": 0.9735449735449735,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd",
+      "delta_text": "class without really breaking any new rules regarding programming languages due largely just to missing parts . In order make sense for me to start writing these programs up quickly during development – remember though people may try different kinds of systems here online only days later? As John Cook observed above, once something happens if someone does have multiple characters; sometimes even he takes advantage of old ones based off unknown reasons — since every change can be used across platforms… So let's look at why typing non-program",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd class without really breaking any new rules regarding programming languages due largely just to missing parts . In order make sense for me to start writing these programs up quickly during development – remember though people may try different kinds of systems here online only days later? As John Cook observed above, once something happens if someone does have multiple characters; sometimes even he takes advantage of old ones based off unknown reasons — since every change can be used across platforms… So let's look at why typing non-program",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd class without really breaking any new rules regarding programming languages due largely just to missing parts . In order make sense for me to start writing these programs up quickly during development – remember though people may try different kinds of systems here online only days later? As John Cook observed above, once something happens if someone does have multiple characters; sometimes even he takes advantage of old ones based off unknown reasons — since every change can be used across platforms… So let's look at why typing non-program",
+        "continuation_text": "class without really breaking any new rules regarding programming languages due largely just to missing parts . In order make sense for me to start writing these programs up quickly during development – remember though people may try different kinds of systems here online only days later? As John Cook observed above, once something happens if someone does have multiple characters; sometimes even he takes advantage of old ones based off unknown reasons — since every change can be used across platforms… So let's look at why typing non-program",
+        "input_token_count": 257,
+        "raw_input_token_count": 257,
+        "output_token_count": 353,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1686,
+        "word_count": 278,
+        "unique_word_count": 267,
+        "unique_word_ratio": 0.960431654676259,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd class without really breaking any new rules regarding programming languages due largely just to missing parts . In order make sense for me to start writing these programs up quickly during development – remember though people may try different kinds of systems here online only days later? As John Cook observed above, once something happens if someone does have multiple characters; sometimes even he takes advantage of old ones based off unknown reasons — since every change can be used across platforms… So let's look at why typing non-program",
+      "delta_text": "mers today might want to avoid certain variables while going deep inside concepts themselves … Read More | New Post",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd class without really breaking any new rules regarding programming languages due largely just to missing parts . In order make sense for me to start writing these programs up quickly during development – remember though people may try different kinds of systems here online only days later? As John Cook observed above, once something happens if someone does have multiple characters; sometimes even he takes advantage of old ones based off unknown reasons — since every change can be used across platforms… So let's look at why typing non-program mers today might want to avoid certain variables while going deep inside concepts themselves … Read More | New Post",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd class without really breaking any new rules regarding programming languages due largely just to missing parts . In order make sense for me to start writing these programs up quickly during development – remember though people may try different kinds of systems here online only days later? As John Cook observed above, once something happens if someone does have multiple characters; sometimes even he takes advantage of old ones based off unknown reasons — since every change can be used across platforms… So let's look at why typing non-program",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd class without really breaking any new rules regarding programming languages due largely just to missing parts . In order make sense for me to start writing these programs up quickly during development – remember though people may try different kinds of systems here online only days later? As John Cook observed above, once something happens if someone does have multiple characters; sometimes even he takes advantage of old ones based off unknown reasons — since every change can be used across platforms… So let's look at why typing non-programmers today might want to avoid certain variables while going deep inside concepts themselves … Read More | New Post",
+        "continuation_text": "mers today might want to avoid certain variables while going deep inside concepts themselves … Read More | New Post",
+        "input_token_count": 353,
+        "raw_input_token_count": 353,
+        "output_token_count": 374,
+        "new_token_count": 21,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1802,
+        "word_count": 298,
+        "unique_word_count": 286,
+        "unique_word_ratio": 0.959731543624161,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd class without really breaking any new rules regarding programming languages due largely just to missing parts . In order make sense for me to start writing these programs up quickly during development – remember though people may try different kinds of systems here online only days later? As John Cook observed above, once something happens if someone does have multiple characters; sometimes even he takes advantage of old ones based off unknown reasons — since every change can be used across platforms… So let's look at why typing non-program mers today might want to avoid certain variables while going deep inside concepts themselves … Read More | New Post",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd class without really breaking any new rules regarding programming languages due largely just to missing parts . In order make sense for me to start writing these programs up quickly during development – remember though people may try different kinds of systems here online only days later? As John Cook observed above, once something happens if someone does have multiple characters; sometimes even he takes advantage of old ones based off unknown reasons — since every change can be used across platforms… So let's look at why typing non-program mers today might want to avoid certain variables while going deep inside concepts themselves … Read More | New Post",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd class without really breaking any new rules regarding programming languages due largely just to missing parts . In order make sense for me to start writing these programs up quickly during development – remember though people may try different kinds of systems here online only days later? As John Cook observed above, once something happens if someone does have multiple characters; sometimes even he takes advantage of old ones based off unknown reasons — since every change can be used across platforms… So let's look at why typing non-program mers today might want to avoid certain variables while going deep inside concepts themselves … Read More | New Post You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd class without really breaking any new rules regarding programming languages due largely just to missing parts . In order make sense for me to start writing these programs up quickly during development – remember though people may try different kinds of systems here online only days later? As John Cook observed above, once something happens if someone does have multiple characters; sometimes even he takes advantage of old ones based off unknown reasons — since every change can be used across platforms… So let's look at why typing non-program mers today might want to avoid certain variables while going deep inside concepts themselves … Read More | New Post",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd class without really breaking any new rules regarding programming languages due largely just to missing parts . In order make sense for me to start writing these programs up quickly during development – remember though people may try different kinds of systems here online only days later? As John Cook observed above, once something happens if someone does have multiple characters; sometimes even he takes advantage of old ones based off unknown reasons — since every change can be used across platforms… So let's look at why typing non-program mers today might want to avoid certain variables while going deep inside concepts themselves … Read More | New Post",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This was all part of an extended sequence from when it began to appear (although at least there's been some confusion). For example before we started using this set of words I learned that \"We will never forgive anyone or for us\". But then our sentence became too short because they seemed like sentences on each word rather than letters.[14] The results did show how much longer their output would last depending upon which character you typed (\"T\" as opposed is actually pretty awesome), but also had no meaningful effect on accuracy over time - although so far one thing has happened between my initial goal of being able edit those numbers together with another program such ASL called Sublime Text 1st Class Language System Analysis[15]). That means what matters most about having two separate strings instead of three simply isn't enough! After reading through several other books by Mark Lappert [16], who worked out his final codebase , readjusted them back into Word 2nd class without really breaking any new rules regarding programming languages due largely just to missing parts . In order make sense for me to start writing these programs up quickly during development – remember though people may try different kinds of systems here online only days later? As John Cook observed above, once something happens if someone does have multiple characters; sometimes even he takes advantage of old ones based off unknown reasons — since every change can be used across platforms… So let's look at why typing non-program mers today might want to avoid certain variables while going deep inside concepts themselves … Read More | New Post",
+        "continuation_text": "",
+        "input_token_count": 374,
+        "raw_input_token_count": 374,
+        "output_token_count": 375,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 3758,
+        "word_count": 618,
+        "unique_word_count": 306,
+        "unique_word_ratio": 0.49514563106796117,
+        "repeated_bigram_count": 297
+      }
+    }
+  ]
+}

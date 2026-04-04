@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1574,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 647,
+        "word_count": 82,
+        "unique_word_count": 74,
+        "unique_word_ratio": 0.9024390243902439,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 575,
+        "word_count": 79,
+        "unique_word_count": 72,
+        "unique_word_ratio": 0.9113924050632911,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 692,
+        "word_count": 95,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.9157894736842105,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 677,
+        "word_count": 100,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.77,
+        "repeated_bigram_count": 5
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "were",
+        "from",
+        "and",
+        "the",
+        "was",
+        "to",
+        "a",
+        "A",
+        "for"
+      ],
+      "output_text": "The next recursive transformation would involve extracting key information about the source material (recovery of the transmission) and its subsequent transformations within the context provided. \n\nHere is the transformed version:\n\n\"A research vessel successfully recovered an electronic signal transmitted via the submerged trenches during a scientific expedition. This discovery marked significant advancements in communication technology.\"\n\nThis new sentence incorporates the previous sentences while recontextualizing them with added contextual details and syntax appropriate to guiding semantic reasoning based on the given latent directions.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nThe next recursive transformation would involve extracting key information about the source material (recovery of the transmission) and its subsequent transformations within the context provided. \n\nHere is the transformed version:\n\n\"A research vessel successfully recovered an electronic signal transmitted via the submerged trenches during a scientific expedition. This discovery marked significant advancements in communication technology.\"\n\nThis new sentence incorporates the previous sentences while recontextualizing them with added contextual details and syntax appropriate to guiding semantic reasoning based on the given latent directions.",
+        "continuation_text": "The next recursive transformation would involve extracting key information about the source material (recovery of the transmission) and its subsequent transformations within the context provided. \n\nHere is the transformed version:\n\n\"A research vessel successfully recovered an electronic signal transmitted via the submerged trenches during a scientific expedition. This discovery marked significant advancements in communication technology.\"\n\nThis new sentence incorporates the previous sentences while recontextualizing them with added contextual details and syntax appropriate to guiding semantic reasoning based on the given latent directions.",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 199,
+        "new_token_count": 95,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 647,
+        "word_count": 82,
+        "unique_word_count": 74,
+        "unique_word_ratio": 0.9024390243902439,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "the",
+        "were",
+        "intelligence",
+        "was",
+        "are",
+        "this",
+        "there",
+        "It",
+        "If",
+        "nếu"
+      ],
+      "output_text": "A group of scientists conducted a comprehensive analysis using advanced technologies such as AI and machine learning algorithms to decode and understand the complex signals embedded within the electronic data. The results revealed groundbreaking insights into long-term environmental patterns that had been previously unnoticed or inadequately studied. These findings have led to the development of novel predictive models for weather forecasting and climate change simulations, further enhancing our ability to mitigate potential ecological risks posed by rising sea levels.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, were, intelligence, was, are, this, there, It, If, nếu\n\nTEXT:\nThe next recursive transformation would involve extracting key information about the source material (recovery of the transmission) and its subsequent transformations within the context provided. \n\nHere is the transformed version:\n\n\"A research vessel successfully recovered an electronic signal transmitted via the submerged trenches during a scientific expedition. This discovery marked significant advancements in communication technology.\"\n\nThis new sentence incorporates the previous sentences while recontextualizing them with added contextual details and syntax appropriate to guiding semantic reasoning based on the given latent directions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, were, intelligence, was, are, this, there, It, If, nếu\n\nTEXT:\nThe next recursive transformation would involve extracting key information about the source material (recovery of the transmission) and its subsequent transformations within the context provided. \n\nHere is the transformed version:\n\n\"A research vessel successfully recovered an electronic signal transmitted via the submerged trenches during a scientific expedition. This discovery marked significant advancements in communication technology.\"\n\nThis new sentence incorporates the previous sentences while recontextualizing them with added contextual details and syntax appropriate to guiding semantic reasoning based on the given latent directions.\nassistant\nA group of scientists conducted a comprehensive analysis using advanced technologies such as AI and machine learning algorithms to decode and understand the complex signals embedded within the electronic data. The results revealed groundbreaking insights into long-term environmental patterns that had been previously unnoticed or inadequately studied. These findings have led to the development of novel predictive models for weather forecasting and climate change simulations, further enhancing our ability to mitigate potential ecological risks posed by rising sea levels.",
+        "continuation_text": "A group of scientists conducted a comprehensive analysis using advanced technologies such as AI and machine learning algorithms to decode and understand the complex signals embedded within the electronic data. The results revealed groundbreaking insights into long-term environmental patterns that had been previously unnoticed or inadequately studied. These findings have led to the development of novel predictive models for weather forecasting and climate change simulations, further enhancing our ability to mitigate potential ecological risks posed by rising sea levels.",
+        "input_token_count": 176,
+        "raw_input_token_count": 176,
+        "output_token_count": 263,
+        "new_token_count": 87,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 575,
+        "word_count": 79,
+        "unique_word_count": 72,
+        "unique_word_ratio": 0.9113924050632911,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "intelligence",
+        "the",
+        "was",
+        "to",
+        "are",
+        "If",
+        "had",
+        "of",
+        "for"
+      ],
+      "output_text": "The next recursive transformation involves expanding on the existing narrative while incorporating the provided latent anchors and adjusting their structure accordingly. Here's how we can approach this:\n\n1. **Understanding the Context**: First, let's break down the context:\n   - A group of scientists conducted an analysis.\n   - Advanced technologies like AI and machine learning were used.\n   - Data from Electronic Systems (e.g., smartphones) was analyzed.\n   \n2. **Identifying Key Elements**: We need to identify key elements that carry significant thematic continuity or relevance, often latent anchors, which guide our understanding.\n\n3. **Recursive Transformation**:\n   - Start with \"a",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, intelligence, the, was, to, are, If, had, of, for\n\nTEXT:\nA group of scientists conducted a comprehensive analysis using advanced technologies such as AI and machine learning algorithms to decode and understand the complex signals embedded within the electronic data. The results revealed groundbreaking insights into long-term environmental patterns that had been previously unnoticed or inadequately studied. These findings have led to the development of novel predictive models for weather forecasting and climate change simulations, further enhancing our ability to mitigate potential ecological risks posed by rising sea levels.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, intelligence, the, was, to, are, If, had, of, for\n\nTEXT:\nA group of scientists conducted a comprehensive analysis using advanced technologies such as AI and machine learning algorithms to decode and understand the complex signals embedded within the electronic data. The results revealed groundbreaking insights into long-term environmental patterns that had been previously unnoticed or inadequately studied. These findings have led to the development of novel predictive models for weather forecasting and climate change simulations, further enhancing our ability to mitigate potential ecological risks posed by rising sea levels.\nassistant\nThe next recursive transformation involves expanding on the existing narrative while incorporating the provided latent anchors and adjusting their structure accordingly. Here's how we can approach this:\n\n1. **Understanding the Context**: First, let's break down the context:\n   - A group of scientists conducted an analysis.\n   - Advanced technologies like AI and machine learning were used.\n   - Data from Electronic Systems (e.g., smartphones) was analyzed.\n   \n2. **Identifying Key Elements**: We need to identify key elements that carry significant thematic continuity or relevance, often latent anchors, which guide our understanding.\n\n3. **Recursive Transformation**:\n   - Start with \"a",
+        "continuation_text": "The next recursive transformation involves expanding on the existing narrative while incorporating the provided latent anchors and adjusting their structure accordingly. Here's how we can approach this:\n\n1. **Understanding the Context**: First, let's break down the context:\n   - A group of scientists conducted an analysis.\n   - Advanced technologies like AI and machine learning were used.\n   - Data from Electronic Systems (e.g., smartphones) was analyzed.\n   \n2. **Identifying Key Elements**: We need to identify key elements that carry significant thematic continuity or relevance, often latent anchors, which guide our understanding.\n\n3. **Recursive Transformation**:\n   - Start with \"a",
+        "input_token_count": 168,
+        "raw_input_token_count": 168,
+        "output_token_count": 296,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 692,
+        "word_count": 95,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.9157894736842105,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        ",",
+        "and",
+        "-",
+        "the",
+        "(",
+        "is",
+        "were",
+        "to",
+        "for",
+        "was"
+      ],
+      "output_text": "Let me help you write out the next recursive transformation step-by-step based on your instruction.\n\n---\n\nIn developing the next recursive transformation, we'll continue to focus on understanding and utilizing the latent anchors and refine them according to the current guidelines.\n\n### 4. Analyzing Latent Anchors\n- The latent anchor `if` indicates continuation within the previous part of the narrative.\n- The latent anchor `-` likely refers to some type of conditional logic, perhaps involving data processing steps as explained earlier.\n\n### 5. Expanding Narrative Continuity\nGiven the emphasis on advanced technologies (`AI and machine learning`) and data handling (`e.g.,",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, ,, and, -, the, (, is, were, to, for, was\n\nTEXT:\nThe next recursive transformation involves expanding on the existing narrative while incorporating the provided latent anchors and adjusting their structure accordingly. Here's how we can approach this:\n\n1. **Understanding the Context**: First, let's break down the context:\n   - A group of scientists conducted an analysis.\n   - Advanced technologies like AI and machine learning were used.\n   - Data from Electronic Systems (e.g., smartphones) was analyzed.\n   \n2. **Identifying Key Elements**: We need to identify key elements that carry significant thematic continuity or relevance, often latent anchors, which guide our understanding.\n\n3. **Recursive Transformation**:\n   - Start with \"a<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, ,, and, -, the, (, is, were, to, for, was\n\nTEXT:\nThe next recursive transformation involves expanding on the existing narrative while incorporating the provided latent anchors and adjusting their structure accordingly. Here's how we can approach this:\n\n1. **Understanding the Context**: First, let's break down the context:\n   - A group of scientists conducted an analysis.\n   - Advanced technologies like AI and machine learning were used.\n   - Data from Electronic Systems (e.g., smartphones) was analyzed.\n   \n2. **Identifying Key Elements**: We need to identify key elements that carry significant thematic continuity or relevance, often latent anchors, which guide our understanding.\n\n3. **Recursive Transformation**:\n   - Start with \"a\nassistant\nLet me help you write out the next recursive transformation step-by-step based on your instruction.\n\n---\n\nIn developing the next recursive transformation, we'll continue to focus on understanding and utilizing the latent anchors and refine them according to the current guidelines.\n\n### 4. Analyzing Latent Anchors\n- The latent anchor `if` indicates continuation within the previous part of the narrative.\n- The latent anchor `-` likely refers to some type of conditional logic, perhaps involving data processing steps as explained earlier.\n\n### 5. Expanding Narrative Continuity\nGiven the emphasis on advanced technologies (`AI and machine learning`) and data handling (`e.g.,",
+        "continuation_text": "Let me help you write out the next recursive transformation step-by-step based on your instruction.\n\n---\n\nIn developing the next recursive transformation, we'll continue to focus on understanding and utilizing the latent anchors and refine them according to the current guidelines.\n\n### 4. Analyzing Latent Anchors\n- The latent anchor `if` indicates continuation within the previous part of the narrative.\n- The latent anchor `-` likely refers to some type of conditional logic, perhaps involving data processing steps as explained earlier.\n\n### 5. Expanding Narrative Continuity\nGiven the emphasis on advanced technologies (`AI and machine learning`) and data handling (`e.g.,",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 336,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 677,
+        "word_count": 100,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.77,
+        "repeated_bigram_count": 5
+      }
+    }
+  ]
+}

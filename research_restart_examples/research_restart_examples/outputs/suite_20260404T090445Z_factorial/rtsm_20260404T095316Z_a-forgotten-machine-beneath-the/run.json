@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1068
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 658,
+        "word_count": 103,
+        "unique_word_count": 92,
+        "unique_word_ratio": 0.8932038834951457,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1157,
+        "word_count": 180,
+        "unique_word_count": 148,
+        "unique_word_ratio": 0.8222222222222222,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1663,
+        "word_count": 259,
+        "unique_word_count": 149,
+        "unique_word_ratio": 0.5752895752895753,
+        "repeated_bigram_count": 76
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2181,
+        "word_count": 339,
+        "unique_word_count": 211,
+        "unique_word_ratio": 0.6224188790560472,
+        "repeated_bigram_count": 76
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2199,
+        "word_count": 341,
+        "unique_word_count": 212,
+        "unique_word_ratio": 0.6217008797653959,
+        "repeated_bigram_count": 76
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nAs the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with",
+        "continuation_text": "As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with",
+        "input_token_count": 70,
+        "raw_input_token_count": 70,
+        "output_token_count": 166,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 658,
+        "word_count": 103,
+        "unique_word_count": 92,
+        "unique_word_ratio": 0.8932038834951457,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with\nassistant\ndreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered",
+        "continuation_text": "dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered",
+        "input_token_count": 166,
+        "raw_input_token_count": 166,
+        "output_token_count": 262,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1157,
+        "word_count": 180,
+        "unique_word_count": 148,
+        "unique_word_ratio": 0.8222222222222222,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has quietly carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now,",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has quietly carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now,",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered\nassistant\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has quietly carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now,",
+        "continuation_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has quietly carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now,",
+        "input_token_count": 261,
+        "raw_input_token_count": 261,
+        "output_token_count": 357,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1663,
+        "word_count": 259,
+        "unique_word_count": 149,
+        "unique_word_ratio": 0.5752895752895753,
+        "repeated_bigram_count": 76
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has quietly carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now,<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "with time, history, and curiosity slowly replaced the mechanical whisper. The world seemed smaller than before, but also slightly brighter. Shadows danced above the vast expanse like unseen hands moving fluidly across the blue waters. Strange creatures whispered tales of lost civilizations below the wave-lit horizon. Fish swam deeper underwater, eager to find new grounds or sanctuary in shallows that had once been rich with life. It was then that whispers pierced through the twilight fog and broke through... but",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has quietly carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, with time, history, and curiosity slowly replaced the mechanical whisper. The world seemed smaller than before, but also slightly brighter. Shadows danced above the vast expanse like unseen hands moving fluidly across the blue waters. Strange creatures whispered tales of lost civilizations below the wave-lit horizon. Fish swam deeper underwater, eager to find new grounds or sanctuary in shallows that had once been rich with life. It was then that whispers pierced through the twilight fog and broke through... but",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has quietly carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now,<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has quietly carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now,\nassistant\nwith time, history, and curiosity slowly replaced the mechanical whisper. The world seemed smaller than before, but also slightly brighter. Shadows danced above the vast expanse like unseen hands moving fluidly across the blue waters. Strange creatures whispered tales of lost civilizations below the wave-lit horizon. Fish swam deeper underwater, eager to find new grounds or sanctuary in shallows that had once been rich with life. It was then that whispers pierced through the twilight fog and broke through... but",
+        "continuation_text": "with time, history, and curiosity slowly replaced the mechanical whisper. The world seemed smaller than before, but also slightly brighter. Shadows danced above the vast expanse like unseen hands moving fluidly across the blue waters. Strange creatures whispered tales of lost civilizations below the wave-lit horizon. Fish swam deeper underwater, eager to find new grounds or sanctuary in shallows that had once been rich with life. It was then that whispers pierced through the twilight fog and broke through... but",
+        "input_token_count": 357,
+        "raw_input_token_count": 357,
+        "output_token_count": 453,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2181,
+        "word_count": 339,
+        "unique_word_count": 211,
+        "unique_word_ratio": 0.6224188790560472,
+        "repeated_bigram_count": 76
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has quietly carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, with time, history, and curiosity slowly replaced the mechanical whisper. The world seemed smaller than before, but also slightly brighter. Shadows danced above the vast expanse like unseen hands moving fluidly across the blue waters. Strange creatures whispered tales of lost civilizations below the wave-lit horizon. Fish swam deeper underwater, eager to find new grounds or sanctuary in shallows that had once been rich with life. It was then that whispers pierced through the twilight fog and broke through... but<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "into nothingness!",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has quietly carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, with time, history, and curiosity slowly replaced the mechanical whisper. The world seemed smaller than before, but also slightly brighter. Shadows danced above the vast expanse like unseen hands moving fluidly across the blue waters. Strange creatures whispered tales of lost civilizations below the wave-lit horizon. Fish swam deeper underwater, eager to find new grounds or sanctuary in shallows that had once been rich with life. It was then that whispers pierced through the twilight fog and broke through... but into nothingness!",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has quietly carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, with time, history, and curiosity slowly replaced the mechanical whisper. The world seemed smaller than before, but also slightly brighter. Shadows danced above the vast expanse like unseen hands moving fluidly across the blue waters. Strange creatures whispered tales of lost civilizations below the wave-lit horizon. Fish swam deeper underwater, eager to find new grounds or sanctuary in shallows that had once been rich with life. It was then that whispers pierced through the twilight fog and broke through... but<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has silently carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, as darkness crept closer to the surface, something shifted inside that watery shell.\nWith each passing day, the echoes became more complex, filled with dreams, longing, and warnings; and as the darkness deepened, strange phenomena began to emerge: waves washed up on coral reefs, causing shimmering patterns on their surfaces. Plants thrived under secret gardens carved into the seafloor, blooming with rare flowers unknown to humans until they fell victim to tidal waves and pollution. Birds migrated higher up the food chain, seeking refuge in areas still habitable by divers.\nThe silence grew even more profound as ancient treasures were uncovered A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As the silence around it grew colder, an eerie chime sounded deep within the water's heart – one of many silent secrets the ocean has quietly carried for millennia.\nFor centuries, this submerged machine had been silent, protected from prying eyes by layers of saltwater and corrosion-resistant armor designed to withstand any challenge. But now, with time, history, and curiosity slowly replaced the mechanical whisper. The world seemed smaller than before, but also slightly brighter. Shadows danced above the vast expanse like unseen hands moving fluidly across the blue waters. Strange creatures whispered tales of lost civilizations below the wave-lit horizon. Fish swam deeper underwater, eager to find new grounds or sanctuary in shallows that had once been rich with life. It was then that whispers pierced through the twilight fog and broke through... but\nassistant\ninto nothingness!",
+        "continuation_text": "into nothingness!",
+        "input_token_count": 453,
+        "raw_input_token_count": 453,
+        "output_token_count": 458,
+        "new_token_count": 5,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2199,
+        "word_count": 341,
+        "unique_word_count": 212,
+        "unique_word_ratio": 0.6217008797653959,
+        "repeated_bigram_count": 76
+      }
+    }
+  ]
+}

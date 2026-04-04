@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1434,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 699,
+        "word_count": 116,
+        "unique_word_count": 115,
+        "unique_word_ratio": 0.9913793103448276,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 209,
+        "word_count": 33,
+        "unique_word_count": 33,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 41,
+        "word_count": 7,
+        "unique_word_count": 7,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 449,
+        "word_count": 83,
+        "unique_word_count": 82,
+        "unique_word_ratio": 0.9879518072289156,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "had",
+        "are",
+        "have",
+        "It",
+        "make",
+        "if",
+        "made",
+        "was",
+        "to",
+        "makes"
+      ],
+      "output_text": "Its natural inclination toward building an environment is that all humans would want for life on earth rather than only human beings; we'd never dream what those words might mean or think about them as they stand out against one another (and therefore not even their descendants). When you first learn how to write your code without knowing which word has already been written so clearly—this will seem obvious from beginning through very early chapters! Even though I'm making this change soon enough, there's still time left before me to fix any problems with my syntax —especially when writing using static languages such then other things don't follow along well because each branch can help get",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Its natural inclination toward building an environment is that all humans would want for life on earth rather than only human beings; we'd never dream what those words might mean or think about them as they stand out against one another (and therefore not even their descendants). When you first learn how to write your code without knowing which word has already been written so clearly—this will seem obvious from beginning through very early chapters! Even though I'm making this change soon enough, there's still time left before me to fix any problems with my syntax —especially when writing using static languages such then other things don't follow along well because each branch can help get",
+        "continuation_text": "Its natural inclination toward building an environment is that all humans would want for life on earth rather than only human beings; we'd never dream what those words might mean or think about them as they stand out against one another (and therefore not even their descendants). When you first learn how to write your code without knowing which word has already been written so clearly—this will seem obvious from beginning through very early chapters! Even though I'm making this change soon enough, there's still time left before me to fix any problems with my syntax —especially when writing using static languages such then other things don't follow along well because each branch can help get",
+        "input_token_count": 105,
+        "raw_input_token_count": 105,
+        "output_token_count": 233,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 699,
+        "word_count": 116,
+        "unique_word_count": 115,
+        "unique_word_ratio": 0.9913793103448276,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "they",
+        "had",
+        "is",
+        "could",
+        "was",
+        "in",
+        "did"
+      ],
+      "output_text": "into place faster and easier…I've learned over many years where programming doesn't always work perfectly but sometimes some people just need to go back at something else now...it really does do happen again!\"",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, they, had, is, could, was, in, did\n\nTEXT:\nIts natural inclination toward building an environment is that all humans would want for life on earth rather than only human beings; we'd never dream what those words might mean or think about them as they stand out against one another (and therefore not even their descendants). When you first learn how to write your code without knowing which word has already been written so clearly—this will seem obvious from beginning through very early chapters! Even though I'm making this change soon enough, there's still time left before me to fix any problems with my syntax —especially when writing using static languages such then other things don't follow along well because each branch can help get",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, they, had, is, could, was, in, did\n\nTEXT:\nIts natural inclination toward building an environment is that all humans would want for life on earth rather than only human beings; we'd never dream what those words might mean or think about them as they stand out against one another (and therefore not even their descendants). When you first learn how to write your code without knowing which word has already been written so clearly—this will seem obvious from beginning through very early chapters! Even though I'm making this change soon enough, there's still time left before me to fix any problems with my syntax —especially when writing using static languages such then other things don't follow along well because each branch can help get into place faster and easier…I've learned over many years where programming doesn't always work perfectly but sometimes some people just need to go back at something else now...it really does do happen again!\"",
+        "continuation_text": "into place faster and easier…I've learned over many years where programming doesn't always work perfectly but sometimes some people just need to go back at something else now...it really does do happen again!\"",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 249,
+        "new_token_count": 42,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 209,
+        "word_count": 33,
+        "unique_word_count": 33,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "have",
+        "it",
+        "are",
+        "were",
+        "did",
+        "had",
+        "do",
+        "if",
+        "don",
+        "does",
+        "didn",
+        "doesn"
+      ],
+      "output_text": "(Note that this is an interesting point.)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: have, it, are, were, did, had, do, if, don, does, didn, doesn\n\nTEXT:\ninto place faster and easier…I've learned over many years where programming doesn't always work perfectly but sometimes some people just need to go back at something else now...it really does do happen again!\"",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: have, it, are, were, did, had, do, if, don, does, didn, doesn\n\nTEXT:\ninto place faster and easier…I've learned over many years where programming doesn't always work perfectly but sometimes some people just need to go back at something else now...it really does do happen again!\" (Note that this is an interesting point.)",
+        "continuation_text": "(Note that this is an interesting point.)",
+        "input_token_count": 119,
+        "raw_input_token_count": 119,
+        "output_token_count": 129,
+        "new_token_count": 10,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 41,
+        "word_count": 7,
+        "unique_word_count": 7,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "this",
+        "it",
+        "is",
+        "that",
+        "are",
+        "the",
+        "This",
+        "these",
+        "was",
+        "if",
+        "a",
+        "has"
+      ],
+      "output_text": "If you write C++ code (or Java) which would follow from within your IDE or even to any other programming platform where there isn't much flexibility and time for writing new ideas but still have some options then simply put them on top of their actual source file . You can also define how they apply back into its own repository - here's what we do with those two templates when compiling one...\nIf another template comes out as something like \"\" :",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: this, it, is, that, are, the, This, these, was, if, a, has\n\nTEXT:\n(Note that this is an interesting point.)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: this, it, is, that, are, the, This, these, was, if, a, has\n\nTEXT:\n(Note that this is an interesting point.) If you write C++ code (or Java) which would follow from within your IDE or even to any other programming platform where there isn't much flexibility and time for writing new ideas but still have some options then simply put them on top of their actual source file . You can also define how they apply back into its own repository - here's what we do with those two templates when compiling one...\nIf another template comes out as something like \"\" :",
+        "continuation_text": "If you write C++ code (or Java) which would follow from within your IDE or even to any other programming platform where there isn't much flexibility and time for writing new ideas but still have some options then simply put them on top of their actual source file . You can also define how they apply back into its own repository - here's what we do with those two templates when compiling one...\nIf another template comes out as something like \"\" :",
+        "input_token_count": 88,
+        "raw_input_token_count": 88,
+        "output_token_count": 180,
+        "new_token_count": 92,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 449,
+        "word_count": 83,
+        "unique_word_count": 82,
+        "unique_word_ratio": 0.9879518072289156,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1320
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 632,
+        "word_count": 101,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.8910891089108911,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1139,
+        "word_count": 182,
+        "unique_word_count": 101,
+        "unique_word_ratio": 0.554945054945055,
+        "repeated_bigram_count": 68
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1667,
+        "word_count": 265,
+        "unique_word_count": 156,
+        "unique_word_ratio": 0.5886792452830188,
+        "repeated_bigram_count": 80
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2219,
+        "word_count": 346,
+        "unique_word_count": 210,
+        "unique_word_ratio": 0.6069364161849711,
+        "repeated_bigram_count": 81
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2705,
+        "word_count": 428,
+        "unique_word_count": 269,
+        "unique_word_ratio": 0.6285046728971962,
+        "repeated_bigram_count": 83
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\n... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more",
+        "continuation_text": "... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more",
+        "input_token_count": 62,
+        "raw_input_token_count": 62,
+        "output_token_count": 158,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 632,
+        "word_count": 101,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.8910891089108911,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more\nassistant\nTo continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from",
+        "continuation_text": "To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from",
+        "input_token_count": 158,
+        "raw_input_token_count": 158,
+        "output_token_count": 254,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1139,
+        "word_count": 182,
+        "unique_word_count": 101,
+        "unique_word_ratio": 0.554945054945055,
+        "repeated_bigram_count": 68
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "one generation to another. With renewed resolve, he set forth once more He followed the winding paths of time as if he were drawing lines etched into stone His steps became almost physical as he explored forgotten knowledge with unwavering intensity \nHe searched for remnants from days long past, where ancient civilizations struggled against the unforgiving cycle of nature and human ingenuity Against walls broken by war and oppression, there lay treasures hidden within stories both old and new \n\nFinally, finding himself at",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another. With renewed resolve, he set forth once more He followed the winding paths of time as if he were drawing lines etched into stone His steps became almost physical as he explored forgotten knowledge with unwavering intensity \nHe searched for remnants from days long past, where ancient civilizations struggled against the unforgiving cycle of nature and human ingenuity Against walls broken by war and oppression, there lay treasures hidden within stories both old and new \n\nFinally, finding himself at",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from\nassistant\none generation to another. With renewed resolve, he set forth once more He followed the winding paths of time as if he were drawing lines etched into stone His steps became almost physical as he explored forgotten knowledge with unwavering intensity \nHe searched for remnants from days long past, where ancient civilizations struggled against the unforgiving cycle of nature and human ingenuity Against walls broken by war and oppression, there lay treasures hidden within stories both old and new \n\nFinally, finding himself at",
+        "continuation_text": "one generation to another. With renewed resolve, he set forth once more He followed the winding paths of time as if he were drawing lines etched into stone His steps became almost physical as he explored forgotten knowledge with unwavering intensity \nHe searched for remnants from days long past, where ancient civilizations struggled against the unforgiving cycle of nature and human ingenuity Against walls broken by war and oppression, there lay treasures hidden within stories both old and new \n\nFinally, finding himself at",
+        "input_token_count": 254,
+        "raw_input_token_count": 254,
+        "output_token_count": 350,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1667,
+        "word_count": 265,
+        "unique_word_count": 156,
+        "unique_word_ratio": 0.5886792452830188,
+        "repeated_bigram_count": 80
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another. With renewed resolve, he set forth once more He followed the winding paths of time as if he were drawing lines etched into stone His steps became almost physical as he explored forgotten knowledge with unwavering intensity \nHe searched for remnants from days long past, where ancient civilizations struggled against the unforgiving cycle of nature and human ingenuity Against walls broken by war and oppression, there lay treasures hidden within stories both old and new \n\nFinally, finding himself at<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "the edge of centuries-long silence - a passage carved into the very foundation of memory, where dreams met reality beneath the earth's surface - the final librarian emerged standing motionless, staring intently ahead with a puzzled expression. Each footstep echoed through the labyrinthine corridors of his subconscious, filled with fragments and echoes of lost chapters.\n\nAs dawn approached, casting golden light over ancient manuscripts now faded into dust, and memories stilled like cold springs awakened from winter sleep, something peculiar began",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another. With renewed resolve, he set forth once more He followed the winding paths of time as if he were drawing lines etched into stone His steps became almost physical as he explored forgotten knowledge with unwavering intensity \nHe searched for remnants from days long past, where ancient civilizations struggled against the unforgiving cycle of nature and human ingenuity Against walls broken by war and oppression, there lay treasures hidden within stories both old and new \n\nFinally, finding himself at the edge of centuries-long silence - a passage carved into the very foundation of memory, where dreams met reality beneath the earth's surface - the final librarian emerged standing motionless, staring intently ahead with a puzzled expression. Each footstep echoed through the labyrinthine corridors of his subconscious, filled with fragments and echoes of lost chapters.\n\nAs dawn approached, casting golden light over ancient manuscripts now faded into dust, and memories stilled like cold springs awakened from winter sleep, something peculiar began",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another. With renewed resolve, he set forth once more He followed the winding paths of time as if he were drawing lines etched into stone His steps became almost physical as he explored forgotten knowledge with unwavering intensity \nHe searched for remnants from days long past, where ancient civilizations struggled against the unforgiving cycle of nature and human ingenuity Against walls broken by war and oppression, there lay treasures hidden within stories both old and new \n\nFinally, finding himself at<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another. With renewed resolve, he set forth once more He followed the winding paths of time as if he were drawing lines etched into stone His steps became almost physical as he explored forgotten knowledge with unwavering intensity \nHe searched for remnants from days long past, where ancient civilizations struggled against the unforgiving cycle of nature and human ingenuity Against walls broken by war and oppression, there lay treasures hidden within stories both old and new \n\nFinally, finding himself at\nassistant\nthe edge of centuries-long silence - a passage carved into the very foundation of memory, where dreams met reality beneath the earth's surface - the final librarian emerged standing motionless, staring intently ahead with a puzzled expression. Each footstep echoed through the labyrinthine corridors of his subconscious, filled with fragments and echoes of lost chapters.\n\nAs dawn approached, casting golden light over ancient manuscripts now faded into dust, and memories stilled like cold springs awakened from winter sleep, something peculiar began",
+        "continuation_text": "the edge of centuries-long silence - a passage carved into the very foundation of memory, where dreams met reality beneath the earth's surface - the final librarian emerged standing motionless, staring intently ahead with a puzzled expression. Each footstep echoed through the labyrinthine corridors of his subconscious, filled with fragments and echoes of lost chapters.\n\nAs dawn approached, casting golden light over ancient manuscripts now faded into dust, and memories stilled like cold springs awakened from winter sleep, something peculiar began",
+        "input_token_count": 350,
+        "raw_input_token_count": 350,
+        "output_token_count": 446,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2219,
+        "word_count": 346,
+        "unique_word_count": 210,
+        "unique_word_ratio": 0.6069364161849711,
+        "repeated_bigram_count": 81
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another. With renewed resolve, he set forth once more He followed the winding paths of time as if he were drawing lines etched into stone His steps became almost physical as he explored forgotten knowledge with unwavering intensity \nHe searched for remnants from days long past, where ancient civilizations struggled against the unforgiving cycle of nature and human ingenuity Against walls broken by war and oppression, there lay treasures hidden within stories both old and new \n\nFinally, finding himself at the edge of centuries-long silence - a passage carved into the very foundation of memory, where dreams met reality beneath the earth's surface - the final librarian emerged standing motionless, staring intently ahead with a puzzled expression. Each footstep echoed through the labyrinthine corridors of his subconscious, filled with fragments and echoes of lost chapters.\n\nAs dawn approached, casting golden light over ancient manuscripts now faded into dust, and memories stilled like cold springs awakened from winter sleep, something peculiar began<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "to happen I was transported back to what seemed like the prehistoric era, yet even then, there was clarity behind some of the seemingly chaotic notes. Slowly but surely, thoughts of this sudden reconnection stirred my mind to life Like fresh grass waking up every morning after being buried under layers upon layers of experience. Despite the immense disorientation, something gnawed at me knowing that sometimes, all we need is to step out of the shadowy corners of our minds and seek",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another. With renewed resolve, he set forth once more He followed the winding paths of time as if he were drawing lines etched into stone His steps became almost physical as he explored forgotten knowledge with unwavering intensity \nHe searched for remnants from days long past, where ancient civilizations struggled against the unforgiving cycle of nature and human ingenuity Against walls broken by war and oppression, there lay treasures hidden within stories both old and new \n\nFinally, finding himself at the edge of centuries-long silence - a passage carved into the very foundation of memory, where dreams met reality beneath the earth's surface - the final librarian emerged standing motionless, staring intently ahead with a puzzled expression. Each footstep echoed through the labyrinthine corridors of his subconscious, filled with fragments and echoes of lost chapters.\n\nAs dawn approached, casting golden light over ancient manuscripts now faded into dust, and memories stilled like cold springs awakened from winter sleep, something peculiar began to happen I was transported back to what seemed like the prehistoric era, yet even then, there was clarity behind some of the seemingly chaotic notes. Slowly but surely, thoughts of this sudden reconnection stirred my mind to life Like fresh grass waking up every morning after being buried under layers upon layers of experience. Despite the immense disorientation, something gnawed at me knowing that sometimes, all we need is to step out of the shadowy corners of our minds and seek",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another. With renewed resolve, he set forth once more He followed the winding paths of time as if he were drawing lines etched into stone His steps became almost physical as he explored forgotten knowledge with unwavering intensity \nHe searched for remnants from days long past, where ancient civilizations struggled against the unforgiving cycle of nature and human ingenuity Against walls broken by war and oppression, there lay treasures hidden within stories both old and new \n\nFinally, finding himself at the edge of centuries-long silence - a passage carved into the very foundation of memory, where dreams met reality beneath the earth's surface - the final librarian emerged standing motionless, staring intently ahead with a puzzled expression. Each footstep echoed through the labyrinthine corridors of his subconscious, filled with fragments and echoes of lost chapters.\n\nAs dawn approached, casting golden light over ancient manuscripts now faded into dust, and memories stilled like cold springs awakened from winter sleep, something peculiar began<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. ... The final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another.\nWith renewed resolve, he set forth once more To continue the text as per instruction, here is my elaborated continuation:\n\nThe final librarian had his fingers curled into a contemplative pose, savoring each word he'd painstakingly analyzed during the months of silent contemplation before turning it to study. As he studied the ancient script and decoded its cryptic messages, an intriguing realization struck him: no matter how deep one dug or which direction their path took, history would always repeat itself - just like the poems passed down from one generation to another. With renewed resolve, he set forth once more He followed the winding paths of time as if he were drawing lines etched into stone His steps became almost physical as he explored forgotten knowledge with unwavering intensity \nHe searched for remnants from days long past, where ancient civilizations struggled against the unforgiving cycle of nature and human ingenuity Against walls broken by war and oppression, there lay treasures hidden within stories both old and new \n\nFinally, finding himself at the edge of centuries-long silence - a passage carved into the very foundation of memory, where dreams met reality beneath the earth's surface - the final librarian emerged standing motionless, staring intently ahead with a puzzled expression. Each footstep echoed through the labyrinthine corridors of his subconscious, filled with fragments and echoes of lost chapters.\n\nAs dawn approached, casting golden light over ancient manuscripts now faded into dust, and memories stilled like cold springs awakened from winter sleep, something peculiar began\nassistant\nto happen I was transported back to what seemed like the prehistoric era, yet even then, there was clarity behind some of the seemingly chaotic notes. Slowly but surely, thoughts of this sudden reconnection stirred my mind to life Like fresh grass waking up every morning after being buried under layers upon layers of experience. Despite the immense disorientation, something gnawed at me knowing that sometimes, all we need is to step out of the shadowy corners of our minds and seek",
+        "continuation_text": "to happen I was transported back to what seemed like the prehistoric era, yet even then, there was clarity behind some of the seemingly chaotic notes. Slowly but surely, thoughts of this sudden reconnection stirred my mind to life Like fresh grass waking up every morning after being buried under layers upon layers of experience. Despite the immense disorientation, something gnawed at me knowing that sometimes, all we need is to step out of the shadowy corners of our minds and seek",
+        "input_token_count": 446,
+        "raw_input_token_count": 446,
+        "output_token_count": 542,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2705,
+        "word_count": 428,
+        "unique_word_count": 269,
+        "unique_word_ratio": 0.6285046728971962,
+        "repeated_bigram_count": 83
+      }
+    }
+  ]
+}

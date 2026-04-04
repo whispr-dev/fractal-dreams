@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1017,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 355,
+        "word_count": 65,
+        "unique_word_count": 65,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 605,
+        "word_count": 98,
+        "unique_word_count": 98,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 294,
+        "word_count": 60,
+        "unique_word_count": 60,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "A",
+        ">",
+        "&",
+        "She",
+        "The",
+        "\",",
+        ">\"",
+        ".\"\"",
+        "I",
+        "\",\"",
+        "\"\"",
+        "\"."
+      ],
+      "output_text": "As soon this came up again it sounded like an ancient tune that was sung over time by people who had died for their music—a song about death but no longer singing itself; then suddenly they said something along the lines we hear here today from folk singers or at least heard many times now with us outside our groupings.\"\n\n (This quote has been changed.)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: A, >, &, She, The, \",, >\", .\"\", I, \",\", \"\", \".\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: A, >, &, She, The, \",, >\", .\"\", I, \",\", \"\", \".\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As soon this came up again it sounded like an ancient tune that was sung over time by people who had died for their music—a song about death but no longer singing itself; then suddenly they said something along the lines we hear here today from folk singers or at least heard many times now with us outside our groupings.\"\n\n (This quote has been changed.)",
+        "continuation_text": "As soon this came up again it sounded like an ancient tune that was sung over time by people who had died for their music—a song about death but no longer singing itself; then suddenly they said something along the lines we hear here today from folk singers or at least heard many times now with us outside our groupings.\"\n\n (This quote has been changed.)",
+        "input_token_count": 117,
+        "raw_input_token_count": 117,
+        "output_token_count": 191,
+        "new_token_count": 74,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 355,
+        "word_count": 65,
+        "unique_word_count": 65,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Despite",
+        "ambiguity",
+        "transparency",
+        "Ironically",
+        "Transparency",
+        "As",
+        "Mis",
+        "Though",
+        "Nearly",
+        "Terms",
+        "Surprisingly",
+        "dark"
+      ],
+      "output_text": "Text \"as\" is just plain normal meaning because these words actually represent anything and everything so you can imagine how far into space those phrases would have come if I'd used them instead of word order when writing such things down right? It's important also to note though what kind each phrase means will be discussed further on later pages regarding both grammar rules & other variables associated around use case definitions which may help explain why more recent changes seem necessary before others begin working out exactly where all your input might apply within certain context boundaries!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Despite, ambiguity, transparency, Ironically, Transparency, As, Mis, Though, Nearly, Terms, Surprisingly, dark\n\nTEXT:\nAs soon this came up again it sounded like an ancient tune that was sung over time by people who had died for their music—a song about death but no longer singing itself; then suddenly they said something along the lines we hear here today from folk singers or at least heard many times now with us outside our groupings.\"\n\n (This quote has been changed.)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Despite, ambiguity, transparency, Ironically, Transparency, As, Mis, Though, Nearly, Terms, Surprisingly, dark\n\nTEXT:\nAs soon this came up again it sounded like an ancient tune that was sung over time by people who had died for their music—a song about death but no longer singing itself; then suddenly they said something along the lines we hear here today from folk singers or at least heard many times now with us outside our groupings.\"\n\n (This quote has been changed.) Text \"as\" is just plain normal meaning because these words actually represent anything and everything so you can imagine how far into space those phrases would have come if I'd used them instead of word order when writing such things down right? It's important also to note though what kind each phrase means will be discussed further on later pages regarding both grammar rules & other variables associated around use case definitions which may help explain why more recent changes seem necessary before others begin working out exactly where all your input might apply within certain context boundaries!",
+        "continuation_text": "Text \"as\" is just plain normal meaning because these words actually represent anything and everything so you can imagine how far into space those phrases would have come if I'd used them instead of word order when writing such things down right? It's important also to note though what kind each phrase means will be discussed further on later pages regarding both grammar rules & other variables associated around use case definitions which may help explain why more recent changes seem necessary before others begin working out exactly where all your input might apply within certain context boundaries!",
+        "input_token_count": 158,
+        "raw_input_token_count": 158,
+        "output_token_count": 263,
+        "new_token_count": 105,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 605,
+        "word_count": 98,
+        "unique_word_count": 98,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "fumble",
+        "ift",
+        "));",
+        "Text",
+        ";)",
+        "dc",
+        "midfield",
+        "utf",
+        "vapor",
+        "mith",
+        "Vapor",
+        "leather"
+      ],
+      "output_text": "[Note:] For now this seems like quite an obvious rule but there really isn't much we need to do here about it for clarity sake.]\n\n— ———.—.-.--._,-^-.^^'-+----+ ^|| \\{#}'@|\\_<~[...] /` @/&$=* '--(##1)==>=' , '' > ( : ', \\\\ . '[.(;);))'. '.''.'% + #'/// | <><-' .. _ ` ~ !\\' % =\"\" :: (( { } ) ? ]",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: fumble, ift, ));, Text, ;), dc, midfield, utf, vapor, mith, Vapor, leather\n\nTEXT:\nText \"as\" is just plain normal meaning because these words actually represent anything and everything so you can imagine how far into space those phrases would have come if I'd used them instead of word order when writing such things down right? It's important also to note though what kind each phrase means will be discussed further on later pages regarding both grammar rules & other variables associated around use case definitions which may help explain why more recent changes seem necessary before others begin working out exactly where all your input might apply within certain context boundaries!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: fumble, ift, ));, Text, ;), dc, midfield, utf, vapor, mith, Vapor, leather\n\nTEXT:\nText \"as\" is just plain normal meaning because these words actually represent anything and everything so you can imagine how far into space those phrases would have come if I'd used them instead of word order when writing such things down right? It's important also to note though what kind each phrase means will be discussed further on later pages regarding both grammar rules & other variables associated around use case definitions which may help explain why more recent changes seem necessary before others begin working out exactly where all your input might apply within certain context boundaries! [Note:] For now this seems like quite an obvious rule but there really isn't much we need to do here about it for clarity sake.]\n\n— ———.—.-.--._,-^-.^^'-+----+ ^|| \\{#}'@|\\_<~[...] /` @/&$=* '--(##1)==>=' , '' > ( : ', \\\\ . '[.(;);))'. '.''.'% + #'/// | <><-' .. _ ` ~ !\\' % =\"\" :: (( { } ) ? ]",
+        "continuation_text": "[Note:] For now this seems like quite an obvious rule but there really isn't much we need to do here about it for clarity sake.]\n\n— ———.—.-.--._,-^-.^^'-+----+ ^|| \\{#}'@|\\_<~[...] /` @/&$=* '--(##1)==>=' , '' > ( : ', \\\\ . '[.(;);))'. '.''.'% + #'/// | <><-' .. _ ` ~ !\\' % =\"\" :: (( { } ) ? ]",
+        "input_token_count": 192,
+        "raw_input_token_count": 192,
+        "output_token_count": 312,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 294,
+        "word_count": 60,
+        "unique_word_count": 60,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

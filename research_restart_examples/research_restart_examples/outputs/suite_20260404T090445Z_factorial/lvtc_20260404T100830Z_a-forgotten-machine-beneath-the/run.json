@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1086,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 418,
+        "word_count": 78,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.9743589743589743,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 615,
+        "word_count": 98,
+        "unique_word_count": 98,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 648,
+        "word_count": 112,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.9642857142857143,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 138,
+        "word_count": 26,
+        "unique_word_count": 26,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        ",",
+        "have",
+        "was",
+        "made",
+        "It",
+        "if",
+        "the",
+        "."
+      ],
+      "output_text": "They would not see or hear their voice again as they spoke to one another until new ones started learning how to pronounce words that did NOT speak English correctly. The word is now recognized everywhere on Earth through use of this feature (see Fig. 2). In other words, we learned our way from an old joke about having two children — my mom's favorite toy named \"I'm going to play with\" when I saw her playing piano!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. They would not see or hear their voice again as they spoke to one another until new ones started learning how to pronounce words that did NOT speak English correctly. The word is now recognized everywhere on Earth through use of this feature (see Fig. 2). In other words, we learned our way from an old joke about having two children — my mom's favorite toy named \"I'm going to play with\" when I saw her playing piano!",
+        "continuation_text": "They would not see or hear their voice again as they spoke to one another until new ones started learning how to pronounce words that did NOT speak English correctly. The word is now recognized everywhere on Earth through use of this feature (see Fig. 2). In other words, we learned our way from an old joke about having two children — my mom's favorite toy named \"I'm going to play with\" when I saw her playing piano!",
+        "input_token_count": 110,
+        "raw_input_token_count": 110,
+        "output_token_count": 199,
+        "new_token_count": 89,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 418,
+        "word_count": 78,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.9743589743589743,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "have",
+        "had",
+        "if",
+        "they",
+        "was",
+        "in",
+        "is",
+        "to",
+        "with"
+      ],
+      "output_text": "We learn all kinds and different ways to express ourselves at once; but most people don't realize what your vocabulary contains even before you read them aloud for example. They only know where every child has put his hand into its mouth using information gathered during speech recognition so there can be no time difference between each individual person passing down those keys simultaneously while speaking alone . Thus, let us write commands such as “”¯️'¼´/ '\\^s', which just means nothing after being selected either right away nor left behind—not because both parties understand something like «*'¯️'¼´/ '\\\"",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, have, had, if, they, was, in, is, to, with\n\nTEXT:\nThey would not see or hear their voice again as they spoke to one another until new ones started learning how to pronounce words that did NOT speak English correctly. The word is now recognized everywhere on Earth through use of this feature (see Fig. 2). In other words, we learned our way from an old joke about having two children — my mom's favorite toy named \"I'm going to play with\" when I saw her playing piano!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, have, had, if, they, was, in, is, to, with\n\nTEXT:\nThey would not see or hear their voice again as they spoke to one another until new ones started learning how to pronounce words that did NOT speak English correctly. The word is now recognized everywhere on Earth through use of this feature (see Fig. 2). In other words, we learned our way from an old joke about having two children — my mom's favorite toy named \"I'm going to play with\" when I saw her playing piano! We learn all kinds and different ways to express ourselves at once; but most people don't realize what your vocabulary contains even before you read them aloud for example. They only know where every child has put his hand into its mouth using information gathered during speech recognition so there can be no time difference between each individual person passing down those keys simultaneously while speaking alone . Thus, let us write commands such as “”¯️'¼´/ '\\^s', which just means nothing after being selected either right away nor left behind—not because both parties understand something like «*'¯️'¼´/ '\\\"",
+        "continuation_text": "We learn all kinds and different ways to express ourselves at once; but most people don't realize what your vocabulary contains even before you read them aloud for example. They only know where every child has put his hand into its mouth using information gathered during speech recognition so there can be no time difference between each individual person passing down those keys simultaneously while speaking alone . Thus, let us write commands such as “”¯️'¼´/ '\\^s', which just means nothing after being selected either right away nor left behind—not because both parties understand something like «*'¯️'¼´/ '\\\"",
+        "input_token_count": 167,
+        "raw_input_token_count": 167,
+        "output_token_count": 295,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 615,
+        "word_count": 98,
+        "unique_word_count": 98,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "if",
+        "are",
+        "have",
+        "had",
+        "they",
+        "It",
+        "did",
+        "If",
+        "when",
+        "didn"
+      ],
+      "output_text": "¯️'¾'. This is why our syntax allows other languages to use this behavior well from experience with others too — including humans! To make that clearer we need to create one simple command line script (the LTA ), first pass through C# code via an interpreter on Python 2 or 3… The problem here isn�t how I should say any more than \"I am talking about everything!\" But then... maybe not? So now instead we must start writing scripts based upon their own knowledge rather than thinking out loud over words themselves , written under very special circumstances along with examples made entirely separate by rules used elsewhere inside Haskell itself ?",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, are, have, had, they, It, did, If, when, didn\n\nTEXT:\nWe learn all kinds and different ways to express ourselves at once; but most people don't realize what your vocabulary contains even before you read them aloud for example. They only know where every child has put his hand into its mouth using information gathered during speech recognition so there can be no time difference between each individual person passing down those keys simultaneously while speaking alone . Thus, let us write commands such as “”¯️'¼´/ '\\^s', which just means nothing after being selected either right away nor left behind—not because both parties understand something like «*'¯️'¼´/ '\\\"",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, are, have, had, they, It, did, If, when, didn\n\nTEXT:\nWe learn all kinds and different ways to express ourselves at once; but most people don't realize what your vocabulary contains even before you read them aloud for example. They only know where every child has put his hand into its mouth using information gathered during speech recognition so there can be no time difference between each individual person passing down those keys simultaneously while speaking alone . Thus, let us write commands such as “”¯️'¼´/ '\\^s', which just means nothing after being selected either right away nor left behind—not because both parties understand something like «*'¯️'¼´/ '\\\"¯️'¾'. This is why our syntax allows other languages to use this behavior well from experience with others too — including humans! To make that clearer we need to create one simple command line script (the LTA ), first pass through C# code via an interpreter on Python 2 or 3… The problem here isn�t how I should say any more than \"I am talking about everything!\" But then... maybe not? So now instead we must start writing scripts based upon their own knowledge rather than thinking out loud over words themselves , written under very special circumstances along with examples made entirely separate by rules used elsewhere inside Haskell itself ?",
+        "continuation_text": "¯️'¾'. This is why our syntax allows other languages to use this behavior well from experience with others too — including humans! To make that clearer we need to create one simple command line script (the LTA ), first pass through C# code via an interpreter on Python 2 or 3… The problem here isn�t how I should say any more than \"I am talking about everything!\" But then... maybe not? So now instead we must start writing scripts based upon their own knowledge rather than thinking out loud over words themselves , written under very special circumstances along with examples made entirely separate by rules used elsewhere inside Haskell itself ?",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 648,
+        "word_count": 112,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.9642857142857143,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "had",
+        "they",
+        "is",
+        "It",
+        "If",
+        "did",
+        "in"
+      ],
+      "output_text": "And let us assume what will happen when you begin using longhand . In short ... and finally your solution begins working for yourself :\\ ~",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, they, is, It, If, did, in\n\nTEXT:\n¯️'¾'. This is why our syntax allows other languages to use this behavior well from experience with others too — including humans! To make that clearer we need to create one simple command line script (the LTA ), first pass through C# code via an interpreter on Python 2 or 3… The problem here isn�t how I should say any more than \"I am talking about everything!\" But then... maybe not? So now instead we must start writing scripts based upon their own knowledge rather than thinking out loud over words themselves , written under very special circumstances along with examples made entirely separate by rules used elsewhere inside Haskell itself ?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, they, is, It, If, did, in\n\nTEXT:\n¯️'¾'. This is why our syntax allows other languages to use this behavior well from experience with others too — including humans! To make that clearer we need to create one simple command line script (the LTA ), first pass through C# code via an interpreter on Python 2 or 3… The problem here isn�t how I should say any more than \"I am talking about everything!\" But then... maybe not? So now instead we must start writing scripts based upon their own knowledge rather than thinking out loud over words themselves , written under very special circumstances along with examples made entirely separate by rules used elsewhere inside Haskell itself ? And let us assume what will happen when you begin using longhand . In short ... and finally your solution begins working for yourself :\\ ~",
+        "continuation_text": "And let us assume what will happen when you begin using longhand . In short ... and finally your solution begins working for yourself :\\ ~",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 237,
+        "new_token_count": 30,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 138,
+        "word_count": 26,
+        "unique_word_count": 26,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

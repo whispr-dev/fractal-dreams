@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1122,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 541,
+        "word_count": 98,
+        "unique_word_count": 98,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 317,
+        "word_count": 50,
+        "unique_word_count": 50,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 716,
+        "word_count": 118,
+        "unique_word_count": 115,
+        "unique_word_ratio": 0.9745762711864406,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 732,
+        "word_count": 122,
+        "unique_word_count": 119,
+        "unique_word_ratio": 0.9754098360655737,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "had",
+        "it",
+        "if",
+        "was",
+        "have",
+        "are",
+        "is",
+        "the",
+        "has",
+        "in",
+        "did"
+      ],
+      "output_text": "We can see this with our own eyes; for example, we would use that color now instead of when not! But also because there's more information about how things move on or off from some point at any moment—how long will one set up an intercom? The answer seems quite simple (you might want to read earlier), but still far too many words out there just don't make sense anymore after all. And yet no matter what happens you'll find yourself stuck forever waiting your way through time until something finally changes so soon…and maybe even worse .",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, it, if, was, have, are, is, the, has, in, did\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, it, if, was, have, are, is, the, has, in, did\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. We can see this with our own eyes; for example, we would use that color now instead of when not! But also because there's more information about how things move on or off from some point at any moment—how long will one set up an intercom? The answer seems quite simple (you might want to read earlier), but still far too many words out there just don't make sense anymore after all. And yet no matter what happens you'll find yourself stuck forever waiting your way through time until something finally changes so soon…and maybe even worse .",
+        "continuation_text": "We can see this with our own eyes; for example, we would use that color now instead of when not! But also because there's more information about how things move on or off from some point at any moment—how long will one set up an intercom? The answer seems quite simple (you might want to read earlier), but still far too many words out there just don't make sense anymore after all. And yet no matter what happens you'll find yourself stuck forever waiting your way through time until something finally changes so soon…and maybe even worse .",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 222,
+        "new_token_count": 114,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 541,
+        "word_count": 98,
+        "unique_word_count": 98,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "are",
+        "were",
+        "have",
+        "is",
+        "in",
+        "had",
+        "they",
+        "we",
+        "the",
+        "there"
+      ],
+      "output_text": "How does writing such syntax work properly as well? We need new ways of thinking and exploring why patterns start happening which makes us feel like life has changed drastically over two decades...we know better than ever before where \"fuzzy\" ideas get thrown into context without having real consequences whatsoever.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, is, in, had, they, we, the, there\n\nTEXT:\nWe can see this with our own eyes; for example, we would use that color now instead of when not! But also because there's more information about how things move on or off from some point at any moment—how long will one set up an intercom? The answer seems quite simple (you might want to read earlier), but still far too many words out there just don't make sense anymore after all. And yet no matter what happens you'll find yourself stuck forever waiting your way through time until something finally changes so soon…and maybe even worse .",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, is, in, had, they, we, the, there\n\nTEXT:\nWe can see this with our own eyes; for example, we would use that color now instead of when not! But also because there's more information about how things move on or off from some point at any moment—how long will one set up an intercom? The answer seems quite simple (you might want to read earlier), but still far too many words out there just don't make sense anymore after all. And yet no matter what happens you'll find yourself stuck forever waiting your way through time until something finally changes so soon…and maybe even worse . How does writing such syntax work properly as well? We need new ways of thinking and exploring why patterns start happening which makes us feel like life has changed drastically over two decades...we know better than ever before where \"fuzzy\" ideas get thrown into context without having real consequences whatsoever.",
+        "continuation_text": "How does writing such syntax work properly as well? We need new ways of thinking and exploring why patterns start happening which makes us feel like life has changed drastically over two decades...we know better than ever before where \"fuzzy\" ideas get thrown into context without having real consequences whatsoever.",
+        "input_token_count": 192,
+        "raw_input_token_count": 192,
+        "output_token_count": 251,
+        "new_token_count": 59,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 317,
+        "word_count": 50,
+        "unique_word_count": 50,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "have",
+        "are",
+        "if",
+        "had",
+        "makes",
+        "did",
+        "make",
+        "getting",
+        "has",
+        "could"
+      ],
+      "output_text": "But we don't want to use them on our own for an argument that is easily presented with trivial examples but also more clearly written about complex problems using common words/contexts (e., example 1). Instead we choose to build upon what they can give you - simple sentences or phrases from ordinary sources while still being able say something meaningful when applied together so far; this avoids some very messy ones because their main effects actually exist only through direct translation rather then indirectly due to implicit grammar tricks! The first time I wrote rules within standard JavaScript code was during my senior year at MIT's Cambridge School of Engineering & Technology . This allowed me not just",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, have, are, if, had, makes, did, make, getting, has, could\n\nTEXT:\nHow does writing such syntax work properly as well? We need new ways of thinking and exploring why patterns start happening which makes us feel like life has changed drastically over two decades...we know better than ever before where \"fuzzy\" ideas get thrown into context without having real consequences whatsoever.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, have, are, if, had, makes, did, make, getting, has, could\n\nTEXT:\nHow does writing such syntax work properly as well? We need new ways of thinking and exploring why patterns start happening which makes us feel like life has changed drastically over two decades...we know better than ever before where \"fuzzy\" ideas get thrown into context without having real consequences whatsoever. But we don't want to use them on our own for an argument that is easily presented with trivial examples but also more clearly written about complex problems using common words/contexts (e., example 1). Instead we choose to build upon what they can give you - simple sentences or phrases from ordinary sources while still being able say something meaningful when applied together so far; this avoids some very messy ones because their main effects actually exist only through direct translation rather then indirectly due to implicit grammar tricks! The first time I wrote rules within standard JavaScript code was during my senior year at MIT's Cambridge School of Engineering & Technology . This allowed me not just",
+        "continuation_text": "But we don't want to use them on our own for an argument that is easily presented with trivial examples but also more clearly written about complex problems using common words/contexts (e., example 1). Instead we choose to build upon what they can give you - simple sentences or phrases from ordinary sources while still being able say something meaningful when applied together so far; this avoids some very messy ones because their main effects actually exist only through direct translation rather then indirectly due to implicit grammar tricks! The first time I wrote rules within standard JavaScript code was during my senior year at MIT's Cambridge School of Engineering & Technology . This allowed me not just",
+        "input_token_count": 137,
+        "raw_input_token_count": 137,
+        "output_token_count": 265,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 716,
+        "word_count": 118,
+        "unique_word_count": 115,
+        "unique_word_ratio": 0.9745762711864406,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "they",
+        "had",
+        "is",
+        "was",
+        "in",
+        "did",
+        "It"
+      ],
+      "output_text": "to write basic concepts like data structures and properties such as how do we know whether people will read things? How does one deal with those pesky questions without even having to explicitly start building your syntax themselves ? There must go back over all kinds of other types of logic before starting making formal statements :) In short, no matter where someone ends up doing certain sorts of different calculations around various values , there should be two possible scenarios running across both lines which means writing pretty long notes instead than following exact orders based solely directly on order level semantics ! You could put any number out here now after reading 2D math equations ;) But once again…you may",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, they, had, is, was, in, did, It\n\nTEXT:\nBut we don't want to use them on our own for an argument that is easily presented with trivial examples but also more clearly written about complex problems using common words/contexts (e., example 1). Instead we choose to build upon what they can give you - simple sentences or phrases from ordinary sources while still being able say something meaningful when applied together so far; this avoids some very messy ones because their main effects actually exist only through direct translation rather then indirectly due to implicit grammar tricks! The first time I wrote rules within standard JavaScript code was during my senior year at MIT's Cambridge School of Engineering & Technology . This allowed me not just",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, they, had, is, was, in, did, It\n\nTEXT:\nBut we don't want to use them on our own for an argument that is easily presented with trivial examples but also more clearly written about complex problems using common words/contexts (e., example 1). Instead we choose to build upon what they can give you - simple sentences or phrases from ordinary sources while still being able say something meaningful when applied together so far; this avoids some very messy ones because their main effects actually exist only through direct translation rather then indirectly due to implicit grammar tricks! The first time I wrote rules within standard JavaScript code was during my senior year at MIT's Cambridge School of Engineering & Technology . This allowed me not just to write basic concepts like data structures and properties such as how do we know whether people will read things? How does one deal with those pesky questions without even having to explicitly start building your syntax themselves ? There must go back over all kinds of other types of logic before starting making formal statements :) In short, no matter where someone ends up doing certain sorts of different calculations around various values , there should be two possible scenarios running across both lines which means writing pretty long notes instead than following exact orders based solely directly on order level semantics ! You could put any number out here now after reading 2D math equations ;) But once again…you may",
+        "continuation_text": "to write basic concepts like data structures and properties such as how do we know whether people will read things? How does one deal with those pesky questions without even having to explicitly start building your syntax themselves ? There must go back over all kinds of other types of logic before starting making formal statements :) In short, no matter where someone ends up doing certain sorts of different calculations around various values , there should be two possible scenarios running across both lines which means writing pretty long notes instead than following exact orders based solely directly on order level semantics ! You could put any number out here now after reading 2D math equations ;) But once again…you may",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 732,
+        "word_count": 122,
+        "unique_word_count": 119,
+        "unique_word_ratio": 0.9754098360655737,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

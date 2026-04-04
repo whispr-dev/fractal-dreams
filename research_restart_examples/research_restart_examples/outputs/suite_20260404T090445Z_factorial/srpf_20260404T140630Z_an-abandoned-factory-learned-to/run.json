@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1411,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 100,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 569,
+        "word_count": 95,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.9157894736842105,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 873,
+        "word_count": 143,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.6923076923076923,
+        "repeated_bigram_count": 35
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2296,
+        "word_count": 369,
+        "unique_word_count": 122,
+        "unique_word_ratio": 0.33062330623306235,
+        "repeated_bigram_count": 227
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "Text-only code is easy to read at this point because only 1 of 9 texts with multiple lines make one move (e.. 3) or fewer characters long enough for each statement alone to be readable as well on paper without being completely incoherent . For example some sentences might appear confusing depending upon whether you know where your sentence ends if they aren't just repeated before either paragraph goes into writing form — I don’t care what type of word there exists right now! The other way around, we can change our definitions so people will find out when anything happens anyway using their current vocabulary instead :)",
+      "output_text": "The new syntax also adds an entirely different look that makes them easier than previous languages :",
+      "source_window_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+      "reflection_window_text": "Text-only code is easy to read at this point because only 1 of 9 texts with multiple lines make one move (e.. 3) or fewer characters long enough for each statement alone to be readable as well on paper without being completely incoherent . For example some sentences might appear confusing depending upon whether you know where your sentence ends if they aren't just repeated before either paragraph goes into writing form — I don’t care what type of word there exists right now! The other way around, we can change our definitions so people will find out when anything happens anyway using their current vocabulary instead :)",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nText-only code is easy to read at this point because only 1 of 9 texts with multiple lines make one move (e.. 3) or fewer characters long enough for each statement alone to be readable as well on paper without being completely incoherent . For example some sentences might appear confusing depending upon whether you know where your sentence ends if they aren't just repeated before either paragraph goes into writing form — I don’t care what type of word there exists right now! The other way around, we can change our definitions so people will find out when anything happens anyway using their current vocabulary instead :)",
+        "continuation_text": "Text-only code is easy to read at this point because only 1 of 9 texts with multiple lines make one move (e.. 3) or fewer characters long enough for each statement alone to be readable as well on paper without being completely incoherent . For example some sentences might appear confusing depending upon whether you know where your sentence ends if they aren't just repeated before either paragraph goes into writing form — I don’t care what type of word there exists right now! The other way around, we can change our definitions so people will find out when anything happens anyway using their current vocabulary instead :)",
+        "input_token_count": 95,
+        "raw_input_token_count": 95,
+        "output_token_count": 217,
+        "new_token_count": 122,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\nText-only code is easy to read at this point because only 1 of 9 texts with multiple lines make one move (e.. 3) or fewer characters long enough for each statement alone to be readable as well on paper without being completely incoherent . For example some sentences might appear confusing depending upon whether you know where your sentence ends if they aren't just repeated before either paragraph goes into writing form — I don’t care what type of word there exists right now! The other way around, we can change our definitions so people will find out when anything happens anyway using their current vocabulary instead :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\nText-only code is easy to read at this point because only 1 of 9 texts with multiple lines make one move (e.. 3) or fewer characters long enough for each statement alone to be readable as well on paper without being completely incoherent . For example some sentences might appear confusing depending upon whether you know where your sentence ends if they aren't just repeated before either paragraph goes into writing form — I don’t care what type of word there exists right now! The other way around, we can change our definitions so people will find out when anything happens anyway using their current vocabulary instead :)\nThe new syntax also adds an entirely different look that makes them easier than previous languages :",
+        "continuation_text": "The new syntax also adds an entirely different look that makes them easier than previous languages :",
+        "input_token_count": 203,
+        "raw_input_token_count": 203,
+        "output_token_count": 222,
+        "new_token_count": 19,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 100,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!",
+      "source_window_text": "The new syntax also adds an entirely different look that makes them easier than previous languages :",
+      "reflection_window_text": "You can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages : You can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!",
+        "continuation_text": "You can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!",
+        "input_token_count": 86,
+        "raw_input_token_count": 86,
+        "output_token_count": 134,
+        "new_token_count": 48,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!",
+        "continuation_text": "",
+        "input_token_count": 121,
+        "raw_input_token_count": 121,
+        "output_token_count": 122,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 569,
+        "word_count": 95,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.9157894736842105,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "We hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!\n\nREFLECTION:\nWe hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!",
+      "reflection_window_text": "We hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on! We hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+        "continuation_text": "We hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+        "input_token_count": 190,
+        "raw_input_token_count": 190,
+        "output_token_count": 205,
+        "new_token_count": 15,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!\n\nREFLECTION:\nWe hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!\n\nREFLECTION:\nWe hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+        "continuation_text": "",
+        "input_token_count": 193,
+        "raw_input_token_count": 193,
+        "output_token_count": 194,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 873,
+        "word_count": 143,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.6923076923076923,
+        "repeated_bigram_count": 35
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!\n\nREFLECTION:\nWe hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!\n\nREFLECTION:\nWe hope we'll all enjoy these wonderful sentences – thankyou guys 🙂\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!\n\nREFLECTION:\nWe hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!\n\nREFLECTION:\nWe hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!\n\nREFLECTION:\nWe hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!\n\nREFLECTION:\nWe hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!\n\nREFLECTION:\nWe hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+        "continuation_text": "",
+        "input_token_count": 262,
+        "raw_input_token_count": 262,
+        "output_token_count": 263,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!\n\nREFLECTION:\nWe hope we'll all enjoy these wonderful sentences – thankyou guys 🙂\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!\n\nREFLECTION:\nWe hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!\n\nREFLECTION:\nWe hope we'll all enjoy these wonderful sentences – thankyou guys 🙂\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe new syntax also adds an entirely different look that makes them easier than previous languages :\n\nREFLECTION:\nYou can use it as code like this to illustrate something about your project, or try for some variation of functions (like return) with other objects; you will be able find examples from many projects which help out both here and on!\n\nREFLECTION:\nWe hope we'll all enjoy these wonderful sentences – thankyou guys 🙂",
+        "continuation_text": "",
+        "input_token_count": 512,
+        "raw_input_token_count": 512,
+        "output_token_count": 513,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2296,
+        "word_count": 369,
+        "unique_word_count": 122,
+        "unique_word_ratio": 0.33062330623306235,
+        "repeated_bigram_count": 227
+      }
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1346,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 614,
+        "word_count": 85,
+        "unique_word_count": 71,
+        "unique_word_ratio": 0.8352941176470589,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 324,
+        "word_count": 44,
+        "unique_word_count": 41,
+        "unique_word_ratio": 0.9318181818181818,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 738,
+        "word_count": 98,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.8877551020408163,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 803,
+        "word_count": 95,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.8421052631578947,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "if",
+        "was",
+        "its",
+        "the",
+        "are",
+        "that",
+        "a",
+        "It",
+        "intelligence",
+        "If"
+      ],
+      "output_text": "Here is the next recursive transformation of the given text:\n\n\"The last librarian trained an AI system on a digital copy of ancient civilizations' history and observed how their legendaries incorporated predictive footnotes into their literary works.\"\n\nThis follows the guide for guiding the semantic direction with the provided latent anchors. The transformation maintains the structure while incorporating new contextual information related to libraries, librarianship, and ancient civilizations through the use of synonyms and phrases such as \"AI systems,\" \"digital copies,\" and \"legenda\" (literary references).",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\nHere is the next recursive transformation of the given text:\n\n\"The last librarian trained an AI system on a digital copy of ancient civilizations' history and observed how their legendaries incorporated predictive footnotes into their literary works.\"\n\nThis follows the guide for guiding the semantic direction with the provided latent anchors. The transformation maintains the structure while incorporating new contextual information related to libraries, librarianship, and ancient civilizations through the use of synonyms and phrases such as \"AI systems,\" \"digital copies,\" and \"legenda\" (literary references).",
+        "continuation_text": "Here is the next recursive transformation of the given text:\n\n\"The last librarian trained an AI system on a digital copy of ancient civilizations' history and observed how their legendaries incorporated predictive footnotes into their literary works.\"\n\nThis follows the guide for guiding the semantic direction with the provided latent anchors. The transformation maintains the structure while incorporating new contextual information related to libraries, librarianship, and ancient civilizations through the use of synonyms and phrases such as \"AI systems,\" \"digital copies,\" and \"legenda\" (literary references).",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 211,
+        "new_token_count": 107,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 614,
+        "word_count": 85,
+        "unique_word_count": 71,
+        "unique_word_ratio": 0.8352941176470589,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "were",
+        "are",
+        "for",
+        "If",
+        "of",
+        "and",
+        "was",
+        "is",
+        "intelligence"
+      ],
+      "output_text": "The current recursive transformation requires further refinement based on the guidance provided. Here's the next step:\n\n---\n\nThe last librarian trained an AI system using a digitized copy of ancient civilizations' historical legends, observing how they incorporated predictive footnotes into their written narratives.\" \n\n---",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, are, for, If, of, and, was, is, intelligence\n\nTEXT:\nHere is the next recursive transformation of the given text:\n\n\"The last librarian trained an AI system on a digital copy of ancient civilizations' history and observed how their legendaries incorporated predictive footnotes into their literary works.\"\n\nThis follows the guide for guiding the semantic direction with the provided latent anchors. The transformation maintains the structure while incorporating new contextual information related to libraries, librarianship, and ancient civilizations through the use of synonyms and phrases such as \"AI systems,\" \"digital copies,\" and \"legenda\" (literary references).<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, are, for, If, of, and, was, is, intelligence\n\nTEXT:\nHere is the next recursive transformation of the given text:\n\n\"The last librarian trained an AI system on a digital copy of ancient civilizations' history and observed how their legendaries incorporated predictive footnotes into their literary works.\"\n\nThis follows the guide for guiding the semantic direction with the provided latent anchors. The transformation maintains the structure while incorporating new contextual information related to libraries, librarianship, and ancient civilizations through the use of synonyms and phrases such as \"AI systems,\" \"digital copies,\" and \"legenda\" (literary references).\nassistant\nThe current recursive transformation requires further refinement based on the guidance provided. Here's the next step:\n\n---\n\nThe last librarian trained an AI system using a digitized copy of ancient civilizations' historical legends, observing how they incorporated predictive footnotes into their written narratives.\" \n\n---",
+        "continuation_text": "The current recursive transformation requires further refinement based on the guidance provided. Here's the next step:\n\n---\n\nThe last librarian trained an AI system using a digitized copy of ancient civilizations' historical legends, observing how they incorporated predictive footnotes into their written narratives.\" \n\n---",
+        "input_token_count": 188,
+        "raw_input_token_count": 188,
+        "output_token_count": 243,
+        "new_token_count": 55,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 324,
+        "word_count": 44,
+        "unique_word_count": 41,
+        "unique_word_ratio": 0.9318181818181818,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "intelligence",
+        "they",
+        "the",
+        "If",
+        "nếu",
+        "there",
+        "are",
+        "It",
+        "dreaming"
+      ],
+      "output_text": "Now that we have refined our approach to integrate more sophisticated data and incorporate advanced machine learning algorithms for natural language processing (NLP) tasks, let us proceed with the following next steps:\n\n1. **Enhance Data Quality**: Collect additional data from diverse sources such as archaeological archives, linguistic studies, and digital humanities projects.\n2. **Implement Advanced NLP Techniques**: Apply deep learning models like transformers or recurrent neural networks (RNNs), along with other unsupervised learning methods, to improve the accuracy of content classification and summarization tasks.\n3. **Develop Statistical Models**: Create statistical models that can predict narrative structures, themes, and",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, intelligence, they, the, If, nếu, there, are, It, dreaming\n\nTEXT:\nThe current recursive transformation requires further refinement based on the guidance provided. Here's the next step:\n\n---\n\nThe last librarian trained an AI system using a digitized copy of ancient civilizations' historical legends, observing how they incorporated predictive footnotes into their written narratives.\" \n\n---<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, intelligence, they, the, If, nếu, there, are, It, dreaming\n\nTEXT:\nThe current recursive transformation requires further refinement based on the guidance provided. Here's the next step:\n\n---\n\nThe last librarian trained an AI system using a digitized copy of ancient civilizations' historical legends, observing how they incorporated predictive footnotes into their written narratives.\" \n\n---\nassistant\nNow that we have refined our approach to integrate more sophisticated data and incorporate advanced machine learning algorithms for natural language processing (NLP) tasks, let us proceed with the following next steps:\n\n1. **Enhance Data Quality**: Collect additional data from diverse sources such as archaeological archives, linguistic studies, and digital humanities projects.\n2. **Implement Advanced NLP Techniques**: Apply deep learning models like transformers or recurrent neural networks (RNNs), along with other unsupervised learning methods, to improve the accuracy of content classification and summarization tasks.\n3. **Develop Statistical Models**: Create statistical models that can predict narrative structures, themes, and",
+        "continuation_text": "Now that we have refined our approach to integrate more sophisticated data and incorporate advanced machine learning algorithms for natural language processing (NLP) tasks, let us proceed with the following next steps:\n\n1. **Enhance Data Quality**: Collect additional data from diverse sources such as archaeological archives, linguistic studies, and digital humanities projects.\n2. **Implement Advanced NLP Techniques**: Apply deep learning models like transformers or recurrent neural networks (RNNs), along with other unsupervised learning methods, to improve the accuracy of content classification and summarization tasks.\n3. **Develop Statistical Models**: Create statistical models that can predict narrative structures, themes, and",
+        "input_token_count": 135,
+        "raw_input_token_count": 135,
+        "output_token_count": 263,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 738,
+        "word_count": 98,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.8877551020408163,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "and",
+        "for",
+        "to",
+        ",",
+        "are",
+        "was",
+        "is",
+        "If",
+        "that"
+      ],
+      "output_text": "**Statistical Models:** Develop predictive models based on collaborative filtering techniques and user interaction patterns to enhance comprehension and recommendation systems.\n\n4. **Integrate Human-Aware Enhancements**: Utilize human-computer interactions through sentiment analysis tools and provide users with context-aware recommendations tailored to their preferences and behaviors.\n\n5. **Collaborative Filtering Optimization**: Implement an optimization algorithm to balance the importance weights of different types of information within the collection of reviewed material.\n\n6. **User Interface Customizability**: Allow users to choose between static visual representations and interactive dashboards displaying real-time summaries and analyses of the collected data.\n\n7. **Real-Time Updates and",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, and, for, to, ,, are, was, is, If, that\n\nTEXT:\nNow that we have refined our approach to integrate more sophisticated data and incorporate advanced machine learning algorithms for natural language processing (NLP) tasks, let us proceed with the following next steps:\n\n1. **Enhance Data Quality**: Collect additional data from diverse sources such as archaeological archives, linguistic studies, and digital humanities projects.\n2. **Implement Advanced NLP Techniques**: Apply deep learning models like transformers or recurrent neural networks (RNNs), along with other unsupervised learning methods, to improve the accuracy of content classification and summarization tasks.\n3. **Develop Statistical Models**: Create statistical models that can predict narrative structures, themes, and<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, and, for, to, ,, are, was, is, If, that\n\nTEXT:\nNow that we have refined our approach to integrate more sophisticated data and incorporate advanced machine learning algorithms for natural language processing (NLP) tasks, let us proceed with the following next steps:\n\n1. **Enhance Data Quality**: Collect additional data from diverse sources such as archaeological archives, linguistic studies, and digital humanities projects.\n2. **Implement Advanced NLP Techniques**: Apply deep learning models like transformers or recurrent neural networks (RNNs), along with other unsupervised learning methods, to improve the accuracy of content classification and summarization tasks.\n3. **Develop Statistical Models**: Create statistical models that can predict narrative structures, themes, and\nassistant\n**Statistical Models:** Develop predictive models based on collaborative filtering techniques and user interaction patterns to enhance comprehension and recommendation systems.\n\n4. **Integrate Human-Aware Enhancements**: Utilize human-computer interactions through sentiment analysis tools and provide users with context-aware recommendations tailored to their preferences and behaviors.\n\n5. **Collaborative Filtering Optimization**: Implement an optimization algorithm to balance the importance weights of different types of information within the collection of reviewed material.\n\n6. **User Interface Customizability**: Allow users to choose between static visual representations and interactive dashboards displaying real-time summaries and analyses of the collected data.\n\n7. **Real-Time Updates and",
+        "continuation_text": "**Statistical Models:** Develop predictive models based on collaborative filtering techniques and user interaction patterns to enhance comprehension and recommendation systems.\n\n4. **Integrate Human-Aware Enhancements**: Utilize human-computer interactions through sentiment analysis tools and provide users with context-aware recommendations tailored to their preferences and behaviors.\n\n5. **Collaborative Filtering Optimization**: Implement an optimization algorithm to balance the importance weights of different types of information within the collection of reviewed material.\n\n6. **User Interface Customizability**: Allow users to choose between static visual representations and interactive dashboards displaying real-time summaries and analyses of the collected data.\n\n7. **Real-Time Updates and",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 337,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 803,
+        "word_count": 95,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.8421052631578947,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

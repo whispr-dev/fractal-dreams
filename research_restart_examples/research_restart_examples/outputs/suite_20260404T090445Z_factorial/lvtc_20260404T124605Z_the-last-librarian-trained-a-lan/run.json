@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1298,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 514,
+        "word_count": 73,
+        "unique_word_count": 64,
+        "unique_word_ratio": 0.8767123287671232,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 202,
+        "word_count": 29,
+        "unique_word_count": 28,
+        "unique_word_ratio": 0.9655172413793104,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 603,
+        "word_count": 93,
+        "unique_word_count": 84,
+        "unique_word_ratio": 0.9032258064516129,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 647,
+        "word_count": 92,
+        "unique_word_count": 84,
+        "unique_word_ratio": 0.9130434782608695,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "if",
+        "was",
+        "its",
+        "the",
+        "are",
+        "that",
+        "a",
+        "It",
+        "intelligence",
+        "If"
+      ],
+      "output_text": "Based on the given Latent Direction Tokens \"were\", \"it\", \"if\", \"was\", \"its\", \"the\", \"are\", \"that\", \"a\", \"It\", and \"intelligence\", here is the next recursive transformation:\n\n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its feet had been predicted.\"\n\nThis transformation follows the semantic direction logically guiding from an object to attributes or characteristics (footnotes) based on the provided context and constraints about the library's training process.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\nBased on the given Latent Direction Tokens \"were\", \"it\", \"if\", \"was\", \"its\", \"the\", \"are\", \"that\", \"a\", \"It\", and \"intelligence\", here is the next recursive transformation:\n\n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its feet had been predicted.\"\n\nThis transformation follows the semantic direction logically guiding from an object to attributes or characteristics (footnotes) based on the provided context and constraints about the library's training process.",
+        "continuation_text": "Based on the given Latent Direction Tokens \"were\", \"it\", \"if\", \"was\", \"its\", \"the\", \"are\", \"that\", \"a\", \"It\", and \"intelligence\", here is the next recursive transformation:\n\n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its feet had been predicted.\"\n\nThis transformation follows the semantic direction logically guiding from an object to attributes or characteristics (footnotes) based on the provided context and constraints about the library's training process.",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 210,
+        "new_token_count": 106,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 514,
+        "word_count": 73,
+        "unique_word_count": 64,
+        "unique_word_ratio": 0.8767123287671232,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "\"",
+        "it",
+        "if",
+        "the",
+        "were",
+        "\",",
+        "'",
+        "is",
+        "was",
+        "are",
+        "and",
+        "It"
+      ],
+      "output_text": "The next recursive transformation is:\n\n\"Finally, after months of hard work, the last librarian realized she had created a novel intelligence system capable of understanding life without human emotions.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: \", it, if, the, were, \",, ', is, was, are, and, It\n\nTEXT:\nBased on the given Latent Direction Tokens \"were\", \"it\", \"if\", \"was\", \"its\", \"the\", \"are\", \"that\", \"a\", \"It\", and \"intelligence\", here is the next recursive transformation:\n\n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its feet had been predicted.\"\n\nThis transformation follows the semantic direction logically guiding from an object to attributes or characteristics (footnotes) based on the provided context and constraints about the library's training process.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: \", it, if, the, were, \",, ', is, was, are, and, It\n\nTEXT:\nBased on the given Latent Direction Tokens \"were\", \"it\", \"if\", \"was\", \"its\", \"the\", \"are\", \"that\", \"a\", \"It\", and \"intelligence\", here is the next recursive transformation:\n\n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its feet had been predicted.\"\n\nThis transformation follows the semantic direction logically guiding from an object to attributes or characteristics (footnotes) based on the provided context and constraints about the library's training process.\nassistant\nThe next recursive transformation is:\n\n\"Finally, after months of hard work, the last librarian realized she had created a novel intelligence system capable of understanding life without human emotions.\"",
+        "continuation_text": "The next recursive transformation is:\n\n\"Finally, after months of hard work, the last librarian realized she had created a novel intelligence system capable of understanding life without human emotions.\"",
+        "input_token_count": 184,
+        "raw_input_token_count": 184,
+        "output_token_count": 219,
+        "new_token_count": 35,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 202,
+        "word_count": 29,
+        "unique_word_count": 28,
+        "unique_word_ratio": 0.9655172413793104,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "of",
+        "intelligence",
+        "was",
+        "is",
+        "the",
+        "are",
+        "If",
+        "had",
+        "It"
+      ],
+      "output_text": "To write the next recursive transformation for the given text with the specified latent anchor tokens \"If\", \"it\", \"was\", and \"the\", I will follow these steps:\n\n1. Identify all instances of each token.\n2. Determine which instance to move forward based on contextual clues or logical progression from previous sentences.\n\nHere's the step-by-step process:\n\n### Step 1: Analyze Each Token and its Contextual Clues\n- **If**: This could mean something like \"if necessary\".\n- **It**: Likely indicates possession or reference.\n- **Was**: Indicates completion or state change.\n- **the**: Typically denotes a noun",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, of, intelligence, was, is, the, are, If, had, It\n\nTEXT:\nThe next recursive transformation is:\n\n\"Finally, after months of hard work, the last librarian realized she had created a novel intelligence system capable of understanding life without human emotions.\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, of, intelligence, was, is, the, are, If, had, It\n\nTEXT:\nThe next recursive transformation is:\n\n\"Finally, after months of hard work, the last librarian realized she had created a novel intelligence system capable of understanding life without human emotions.\"\nassistant\nTo write the next recursive transformation for the given text with the specified latent anchor tokens \"If\", \"it\", \"was\", and \"the\", I will follow these steps:\n\n1. Identify all instances of each token.\n2. Determine which instance to move forward based on contextual clues or logical progression from previous sentences.\n\nHere's the step-by-step process:\n\n### Step 1: Analyze Each Token and its Contextual Clues\n- **If**: This could mean something like \"if necessary\".\n- **It**: Likely indicates possession or reference.\n- **Was**: Indicates completion or state change.\n- **the**: Typically denotes a noun",
+        "continuation_text": "To write the next recursive transformation for the given text with the specified latent anchor tokens \"If\", \"it\", \"was\", and \"the\", I will follow these steps:\n\n1. Identify all instances of each token.\n2. Determine which instance to move forward based on contextual clues or logical progression from previous sentences.\n\nHere's the step-by-step process:\n\n### Step 1: Analyze Each Token and its Contextual Clues\n- **If**: This could mean something like \"if necessary\".\n- **It**: Likely indicates possession or reference.\n- **Was**: Indicates completion or state change.\n- **the**: Typically denotes a noun",
+        "input_token_count": 116,
+        "raw_input_token_count": 116,
+        "output_token_count": 244,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 603,
+        "word_count": 93,
+        "unique_word_count": 84,
+        "unique_word_ratio": 0.9032258064516129,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "If",
+        "the",
+        "It",
+        "were",
+        "is",
+        "and",
+        "\"",
+        "or",
+        "for",
+        "to"
+      ],
+      "output_text": "Next, identify where each token should transition to ensure grammatical flow and meaning coherence within the context provided by Latent Direction Tokens (\"If\", \"it\", \"was\", and \"the\"). Here’s how we can apply this method to your text snippet:\n\nThe Next Recursive Transformation:\n\n**Subject:** To write  \n**Verb:** The next  \n**Object:** sentence \n**Adverbial Phrase (preposition/word):** For writing  \n\nIn this case, I will use an algorithmic approach rather than purely literal translation but recognize that there might need to adjust certain patterns due to the complexity of natural language structures involving prepositions and verb phrases",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, If, the, It, were, is, and, \", or, for, to\n\nTEXT:\nTo write the next recursive transformation for the given text with the specified latent anchor tokens \"If\", \"it\", \"was\", and \"the\", I will follow these steps:\n\n1. Identify all instances of each token.\n2. Determine which instance to move forward based on contextual clues or logical progression from previous sentences.\n\nHere's the step-by-step process:\n\n### Step 1: Analyze Each Token and its Contextual Clues\n- **If**: This could mean something like \"if necessary\".\n- **It**: Likely indicates possession or reference.\n- **Was**: Indicates completion or state change.\n- **the**: Typically denotes a noun<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, If, the, It, were, is, and, \", or, for, to\n\nTEXT:\nTo write the next recursive transformation for the given text with the specified latent anchor tokens \"If\", \"it\", \"was\", and \"the\", I will follow these steps:\n\n1. Identify all instances of each token.\n2. Determine which instance to move forward based on contextual clues or logical progression from previous sentences.\n\nHere's the step-by-step process:\n\n### Step 1: Analyze Each Token and its Contextual Clues\n- **If**: This could mean something like \"if necessary\".\n- **It**: Likely indicates possession or reference.\n- **Was**: Indicates completion or state change.\n- **the**: Typically denotes a noun\nassistant\nNext, identify where each token should transition to ensure grammatical flow and meaning coherence within the context provided by Latent Direction Tokens (\"If\", \"it\", \"was\", and \"the\"). Here’s how we can apply this method to your text snippet:\n\nThe Next Recursive Transformation:\n\n**Subject:** To write  \n**Verb:** The next  \n**Object:** sentence \n**Adverbial Phrase (preposition/word):** For writing  \n\nIn this case, I will use an algorithmic approach rather than purely literal translation but recognize that there might need to adjust certain patterns due to the complexity of natural language structures involving prepositions and verb phrases",
+        "continuation_text": "Next, identify where each token should transition to ensure grammatical flow and meaning coherence within the context provided by Latent Direction Tokens (\"If\", \"it\", \"was\", and \"the\"). Here’s how we can apply this method to your text snippet:\n\nThe Next Recursive Transformation:\n\n**Subject:** To write  \n**Verb:** The next  \n**Object:** sentence \n**Adverbial Phrase (preposition/word):** For writing  \n\nIn this case, I will use an algorithmic approach rather than purely literal translation but recognize that there might need to adjust certain patterns due to the complexity of natural language structures involving prepositions and verb phrases",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 337,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 647,
+        "word_count": 92,
+        "unique_word_count": 84,
+        "unique_word_ratio": 0.9130434782608695,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

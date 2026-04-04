@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1329,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 611,
+        "word_count": 98,
+        "unique_word_count": 98,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 598,
+        "word_count": 101,
+        "unique_word_count": 101,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 659,
+        "word_count": 107,
+        "unique_word_count": 107,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "aren",
+        "didn",
+        "did",
+        "He",
+        "are",
+        "weren",
+        "shall",
+        "does",
+        "We",
+        "couldn",
+        "cannot",
+        "C"
+      ],
+      "output_text": "The result was an annotated version (see Figure 7). This made it possible for humans with knowledge of languages like Greek and Roman to be able effectively communicate their ideas without any kindof hand waving at each other—this is where we learn our lingua franca! Librarians will also eventually become linguists too when they discover new ones have been found by human scientists who read them back during development experiments or later from historical sources which give us clues about this same thing happening over time across cultures around the world today. For example…\n\n TOWARD REVOLUTION AND CONF",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: aren, didn, did, He, are, weren, shall, does, We, couldn, cannot, C\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: aren, didn, did, He, are, weren, shall, does, We, couldn, cannot, C\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The result was an annotated version (see Figure 7). This made it possible for humans with knowledge of languages like Greek and Roman to be able effectively communicate their ideas without any kindof hand waving at each other—this is where we learn our lingua franca! Librarians will also eventually become linguists too when they discover new ones have been found by human scientists who read them back during development experiments or later from historical sources which give us clues about this same thing happening over time across cultures around the world today. For example…\n\n TOWARD REVOLUTION AND CONF",
+        "continuation_text": "The result was an annotated version (see Figure 7). This made it possible for humans with knowledge of languages like Greek and Roman to be able effectively communicate their ideas without any kindof hand waving at each other—this is where we learn our lingua franca! Librarians will also eventually become linguists too when they discover new ones have been found by human scientists who read them back during development experiments or later from historical sources which give us clues about this same thing happening over time across cultures around the world today. For example…\n\n TOWARD REVOLUTION AND CONF",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 228,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 611,
+        "word_count": 98,
+        "unique_word_count": 98,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "The",
+        "In",
+        "While",
+        "For",
+        "If",
+        "giant",
+        "S",
+        "On",
+        "led",
+        "It",
+        "When",
+        "A"
+      ],
+      "output_text": "USION IN VARIOUS WORDS - Part 1 We just can't know right now what 'VARIANCE' means anymore because even though that's far more accurate than previous versions there still aren´t many terms left on Wikipedia after all these years so I'm going ahead and giving you some examples here... Now let me start off saying something very interesting using those words again.. There has never been anything written yet indicating how much writing goes into rewriting one word but every little bit helps out if someone ever hears your talk while studying Sanskrit.... So don�ts expect my original post nor mine",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: The, In, While, For, If, giant, S, On, led, It, When, A\n\nTEXT:\nThe result was an annotated version (see Figure 7). This made it possible for humans with knowledge of languages like Greek and Roman to be able effectively communicate their ideas without any kindof hand waving at each other—this is where we learn our lingua franca! Librarians will also eventually become linguists too when they discover new ones have been found by human scientists who read them back during development experiments or later from historical sources which give us clues about this same thing happening over time across cultures around the world today. For example…\n\n TOWARD REVOLUTION AND CONF",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: The, In, While, For, If, giant, S, On, led, It, When, A\n\nTEXT:\nThe result was an annotated version (see Figure 7). This made it possible for humans with knowledge of languages like Greek and Roman to be able effectively communicate their ideas without any kindof hand waving at each other—this is where we learn our lingua franca! Librarians will also eventually become linguists too when they discover new ones have been found by human scientists who read them back during development experiments or later from historical sources which give us clues about this same thing happening over time across cultures around the world today. For example…\n\n TOWARD REVOLUTION AND CONFUSION IN VARIOUS WORDS - Part 1 We just can't know right now what 'VARIANCE' means anymore because even though that's far more accurate than previous versions there still aren´t many terms left on Wikipedia after all these years so I'm going ahead and giving you some examples here... Now let me start off saying something very interesting using those words again.. There has never been anything written yet indicating how much writing goes into rewriting one word but every little bit helps out if someone ever hears your talk while studying Sanskrit.... So don�ts expect my original post nor mine",
+        "continuation_text": "USION IN VARIOUS WORDS - Part 1 We just can't know right now what 'VARIANCE' means anymore because even though that's far more accurate than previous versions there still aren´t many terms left on Wikipedia after all these years so I'm going ahead and giving you some examples here... Now let me start off saying something very interesting using those words again.. There has never been anything written yet indicating how much writing goes into rewriting one word but every little bit helps out if someone ever hears your talk while studying Sanskrit.... So don�ts expect my original post nor mine",
+        "input_token_count": 204,
+        "raw_input_token_count": 204,
+        "output_token_count": 324,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 598,
+        "word_count": 101,
+        "unique_word_count": 101,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Lon",
+        "Mine",
+        "ummer",
+        "artz",
+        "mine",
+        ">>>",
+        "sbm",
+        "YING",
+        "lil",
+        "luaj",
+        "fing",
+        "TPP"
+      ],
+      "output_text": "or yours for example will be up till today although it won\\'s quite good with this kind Of course we could do them both together :) But why should people use dictionaries when they need their own? The first part is pretty simple : Just rewrite each term from somewhere else . Then check over where such changes have taken place before making any modifications! This way things become clearer immediately rather than waiting until later ... Here at Nanyang Technological University (NITU), our faculty members help us improve English by adding features like punctuation support across two parts , formatting compatibility between sentences about grammar points",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Lon, Mine, ummer, artz, mine, >>>, sbm, YING, lil, luaj, fing, TPP\n\nTEXT:\nUSION IN VARIOUS WORDS - Part 1 We just can't know right now what 'VARIANCE' means anymore because even though that's far more accurate than previous versions there still aren´t many terms left on Wikipedia after all these years so I'm going ahead and giving you some examples here... Now let me start off saying something very interesting using those words again.. There has never been anything written yet indicating how much writing goes into rewriting one word but every little bit helps out if someone ever hears your talk while studying Sanskrit.... So don�ts expect my original post nor mine",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Lon, Mine, ummer, artz, mine, >>>, sbm, YING, lil, luaj, fing, TPP\n\nTEXT:\nUSION IN VARIOUS WORDS - Part 1 We just can't know right now what 'VARIANCE' means anymore because even though that's far more accurate than previous versions there still aren´t many terms left on Wikipedia after all these years so I'm going ahead and giving you some examples here... Now let me start off saying something very interesting using those words again.. There has never been anything written yet indicating how much writing goes into rewriting one word but every little bit helps out if someone ever hears your talk while studying Sanskrit.... So don�ts expect my original post nor mine or yours for example will be up till today although it won\\'s quite good with this kind Of course we could do them both together :) But why should people use dictionaries when they need their own? The first part is pretty simple : Just rewrite each term from somewhere else . Then check over where such changes have taken place before making any modifications! This way things become clearer immediately rather than waiting until later ... Here at Nanyang Technological University (NITU), our faculty members help us improve English by adding features like punctuation support across two parts , formatting compatibility between sentences about grammar points",
+        "continuation_text": "or yours for example will be up till today although it won\\'s quite good with this kind Of course we could do them both together :) But why should people use dictionaries when they need their own? The first part is pretty simple : Just rewrite each term from somewhere else . Then check over where such changes have taken place before making any modifications! This way things become clearer immediately rather than waiting until later ... Here at Nanyang Technological University (NITU), our faculty members help us improve English by adding features like punctuation support across two parts , formatting compatibility between sentences about grammar points",
+        "input_token_count": 211,
+        "raw_input_token_count": 211,
+        "output_token_count": 331,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 659,
+        "word_count": 107,
+        "unique_word_count": 107,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

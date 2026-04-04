@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1046,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 647,
+        "word_count": 91,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.8791208791208791,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 390,
+        "word_count": 57,
+        "unique_word_count": 47,
+        "unique_word_ratio": 0.8245614035087719,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 204,
+        "word_count": 27,
+        "unique_word_count": 24,
+        "unique_word_ratio": 0.8888888888888888,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 721,
+        "word_count": 106,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.8490566037735849,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "its",
+        "the",
+        "was",
+        "It",
+        "are",
+        ",",
+        "and",
+        "If",
+        "for"
+      ],
+      "output_text": "The next recursive transformation would involve extracting additional information from the existing sentence to create a new sentence with different aspects or perspectives. Here's an attempt at transforming this text:\n\n1. **Original Text:** \"A forgotten machine beneath the sea continued speaking long after its makers were gone.\"\n2. **Transformation Steps:**\n   - Identify key elements that relate to each other.\n   - Choose a focus point for further elaboration.\n3. **Subsequent Sentence Creation:**\n\nLet's continue this process.\n\n### Step-by-Step Transformation:\n1. **Identify Key Elements:**\n   - The mention of the machine being hidden (it).",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nThe next recursive transformation would involve extracting additional information from the existing sentence to create a new sentence with different aspects or perspectives. Here's an attempt at transforming this text:\n\n1. **Original Text:** \"A forgotten machine beneath the sea continued speaking long after its makers were gone.\"\n2. **Transformation Steps:**\n   - Identify key elements that relate to each other.\n   - Choose a focus point for further elaboration.\n3. **Subsequent Sentence Creation:**\n\nLet's continue this process.\n\n### Step-by-Step Transformation:\n1. **Identify Key Elements:**\n   - The mention of the machine being hidden (it).\n  ",
+        "continuation_text": "The next recursive transformation would involve extracting additional information from the existing sentence to create a new sentence with different aspects or perspectives. Here's an attempt at transforming this text:\n\n1. **Original Text:** \"A forgotten machine beneath the sea continued speaking long after its makers were gone.\"\n2. **Transformation Steps:**\n   - Identify key elements that relate to each other.\n   - Choose a focus point for further elaboration.\n3. **Subsequent Sentence Creation:**\n\nLet's continue this process.\n\n### Step-by-Step Transformation:\n1. **Identify Key Elements:**\n   - The mention of the machine being hidden (it).",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 239,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 647,
+        "word_count": 91,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.8791208791208791,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "the",
+        "to",
+        "for",
+        "-",
+        "is",
+        ",",
+        "(",
+        "If",
+        "are"
+      ],
+      "output_text": "2. **Choose a Focus Point:**\n   - Focus on the context and implications surrounding the submerged machine.\n\n### Subsequent Sentence:\n\"The discovery of such a mysterious artifact has unveiled a profound mystery about the underwater civilization that once thrived here.\"\n\nThis completes the second recursive transformation based on the given latent anchor tokens and the steps outlined above.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, to, for, -, is, ,, (, If, are\n\nTEXT:\nThe next recursive transformation would involve extracting additional information from the existing sentence to create a new sentence with different aspects or perspectives. Here's an attempt at transforming this text:\n\n1. **Original Text:** \"A forgotten machine beneath the sea continued speaking long after its makers were gone.\"\n2. **Transformation Steps:**\n   - Identify key elements that relate to each other.\n   - Choose a focus point for further elaboration.\n3. **Subsequent Sentence Creation:**\n\nLet's continue this process.\n\n### Step-by-Step Transformation:\n1. **Identify Key Elements:**\n   - The mention of the machine being hidden (it).<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, to, for, -, is, ,, (, If, are\n\nTEXT:\nThe next recursive transformation would involve extracting additional information from the existing sentence to create a new sentence with different aspects or perspectives. Here's an attempt at transforming this text:\n\n1. **Original Text:** \"A forgotten machine beneath the sea continued speaking long after its makers were gone.\"\n2. **Transformation Steps:**\n   - Identify key elements that relate to each other.\n   - Choose a focus point for further elaboration.\n3. **Subsequent Sentence Creation:**\n\nLet's continue this process.\n\n### Step-by-Step Transformation:\n1. **Identify Key Elements:**\n   - The mention of the machine being hidden (it).\nassistant\n2. **Choose a Focus Point:**\n   - Focus on the context and implications surrounding the submerged machine.\n\n### Subsequent Sentence:\n\"The discovery of such a mysterious artifact has unveiled a profound mystery about the underwater civilization that once thrived here.\"\n\nThis completes the second recursive transformation based on the given latent anchor tokens and the steps outlined above.",
+        "continuation_text": "2. **Choose a Focus Point:**\n   - Focus on the context and implications surrounding the submerged machine.\n\n### Subsequent Sentence:\n\"The discovery of such a mysterious artifact has unveiled a profound mystery about the underwater civilization that once thrived here.\"\n\nThis completes the second recursive transformation based on the given latent anchor tokens and the steps outlined above.",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 276,
+        "new_token_count": 69,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 390,
+        "word_count": 57,
+        "unique_word_count": 47,
+        "unique_word_ratio": 0.8245614035087719,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "the",
+        "it",
+        "were",
+        "that",
+        "a",
+        "this",
+        "are",
+        "If",
+        "is",
+        "there",
+        "on"
+      ],
+      "output_text": "The extraction and understanding process reveals new insights into the significance of the submergent machine's findings within the broader context of an underwater civilization previously thriving there.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, the, it, were, that, a, this, are, If, is, there, on\n\nTEXT:\n2. **Choose a Focus Point:**\n   - Focus on the context and implications surrounding the submerged machine.\n\n### Subsequent Sentence:\n\"The discovery of such a mysterious artifact has unveiled a profound mystery about the underwater civilization that once thrived here.\"\n\nThis completes the second recursive transformation based on the given latent anchor tokens and the steps outlined above.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, the, it, were, that, a, this, are, If, is, there, on\n\nTEXT:\n2. **Choose a Focus Point:**\n   - Focus on the context and implications surrounding the submerged machine.\n\n### Subsequent Sentence:\n\"The discovery of such a mysterious artifact has unveiled a profound mystery about the underwater civilization that once thrived here.\"\n\nThis completes the second recursive transformation based on the given latent anchor tokens and the steps outlined above.\nassistant\nThe extraction and understanding process reveals new insights into the significance of the submergent machine's findings within the broader context of an underwater civilization previously thriving there.",
+        "continuation_text": "The extraction and understanding process reveals new insights into the significance of the submergent machine's findings within the broader context of an underwater civilization previously thriving there.",
+        "input_token_count": 150,
+        "raw_input_token_count": 150,
+        "output_token_count": 182,
+        "new_token_count": 32,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 204,
+        "word_count": 27,
+        "unique_word_count": 24,
+        "unique_word_ratio": 0.8888888888888888,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "the",
+        "it",
+        "if",
+        "of",
+        "were",
+        "there",
+        "intelligence",
+        "are",
+        "was",
+        "this",
+        "and",
+        "If"
+      ],
+      "output_text": "To generate the next recursive transformation based on the provided latent direction tokens, I'll need more information about what kind of transformation you're asking for or how to interpret the given sentence. Since no further details have been specified, let me provide a general example approach:\n\n1. **Identify the Latent Direction Tokens**: The given tokens could indicate certain rules or patterns that should guide the transformation.\n2. **Understand the Sentence Context**: Analyze the content surrounding those tokens and understand their relationships with each other.\n3. **Compose the Recursive Transformation**: Based on these elements, write out a logical sequence of steps that would lead from the original",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, it, if, of, were, there, intelligence, are, was, this, and, If\n\nTEXT:\nThe extraction and understanding process reveals new insights into the significance of the submergent machine's findings within the broader context of an underwater civilization previously thriving there.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, it, if, of, were, there, intelligence, are, was, this, and, If\n\nTEXT:\nThe extraction and understanding process reveals new insights into the significance of the submergent machine's findings within the broader context of an underwater civilization previously thriving there.\nassistant\nTo generate the next recursive transformation based on the provided latent direction tokens, I'll need more information about what kind of transformation you're asking for or how to interpret the given sentence. Since no further details have been specified, let me provide a general example approach:\n\n1. **Identify the Latent Direction Tokens**: The given tokens could indicate certain rules or patterns that should guide the transformation.\n2. **Understand the Sentence Context**: Analyze the content surrounding those tokens and understand their relationships with each other.\n3. **Compose the Recursive Transformation**: Based on these elements, write out a logical sequence of steps that would lead from the original",
+        "continuation_text": "To generate the next recursive transformation based on the provided latent direction tokens, I'll need more information about what kind of transformation you're asking for or how to interpret the given sentence. Since no further details have been specified, let me provide a general example approach:\n\n1. **Identify the Latent Direction Tokens**: The given tokens could indicate certain rules or patterns that should guide the transformation.\n2. **Understand the Sentence Context**: Analyze the content surrounding those tokens and understand their relationships with each other.\n3. **Compose the Recursive Transformation**: Based on these elements, write out a logical sequence of steps that would lead from the original",
+        "input_token_count": 113,
+        "raw_input_token_count": 113,
+        "output_token_count": 241,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 721,
+        "word_count": 106,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.8490566037735849,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

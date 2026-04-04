@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1321,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 528,
+        "word_count": 84,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.8928571428571429,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 390,
+        "word_count": 58,
+        "unique_word_count": 57,
+        "unique_word_ratio": 0.9827586206896551,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 374,
+        "word_count": 62,
+        "unique_word_count": 53,
+        "unique_word_ratio": 0.8548387096774194,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "若",
+        "):",
+        "if",
+        ")(",
+        "领导",
+        "*(",
+        "),",
+        "（",
+        "应",
+        ">(",
+        "elderly",
+        "*"
+      ],
+      "output_text": "To follow the given structure using just the latent anchors as soft guidance rather than listing them directly, we need to carefully translate each part into the new context while maintaining any additional punctuation or formatting relevant to the text:\n\n1. **If**: If someone is told they have something important.\n   - Translated: \"If you have anything worth mentioning.\"\n\n2. ***)**: A period (.).\n   - Translated: \")\"\n\n3. **():** An exclamation mark (!) with an apostrophe (').\n   - Translated: \"()\"\n\n4. ***(,)**: The word \"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 若, ):, if, )(, 领导, *(, ),, （, 应, >(, elderly, *\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 若, ):, if, )(, 领导, *(, ),, （, 应, >(, elderly, *\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\nTo follow the given structure using just the latent anchors as soft guidance rather than listing them directly, we need to carefully translate each part into the new context while maintaining any additional punctuation or formatting relevant to the text:\n\n1. **If**: If someone is told they have something important.\n   - Translated: \"If you have anything worth mentioning.\"\n\n2. ***)**: A period (.).\n   - Translated: \")\"\n\n3. **():** An exclamation mark (!) with an apostrophe (').\n   - Translated: \"()\"\n\n4. ***(,)**: The word \"",
+        "continuation_text": "To follow the given structure using just the latent anchors as soft guidance rather than listing them directly, we need to carefully translate each part into the new context while maintaining any additional punctuation or formatting relevant to the text:\n\n1. **If**: If someone is told they have something important.\n   - Translated: \"If you have anything worth mentioning.\"\n\n2. ***)**: A period (.).\n   - Translated: \")\"\n\n3. **():** An exclamation mark (!) with an apostrophe (').\n   - Translated: \"()\"\n\n4. ***(,)**: The word \"",
+        "input_token_count": 113,
+        "raw_input_token_count": 113,
+        "output_token_count": 233,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 528,
+        "word_count": 84,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.8928571428571429,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "To",
+        "Чтобы",
+        "å",
+        "_to",
+        "to",
+        "异常",
+        "suc",
+        ".to",
+        "Swift",
+        "heightened",
+        "Tw",
+        "隨時"
+      ],
+      "output_text": "5. ***!\",*:** A comma (,), and colons (:), which indicates non-essential information between sentences:\n   - Translated: \", \"; \":\"\n6. **+**, *,**: Plus signs (+), periods (.), exclamation marks (!), parentheses (), and commas (,) before words for added emphasis or clarification:\n\nHere's the transformed text:\n\n**If you have anything worth mentioning.,;** )! Is this your significant thing?",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: To, Чтобы, å, _to, to, 异常, suc, .to, Swift, heightened, Tw, 隨時\n\nTEXT:\nTo follow the given structure using just the latent anchors as soft guidance rather than listing them directly, we need to carefully translate each part into the new context while maintaining any additional punctuation or formatting relevant to the text:\n\n1. **If**: If someone is told they have something important.\n   - Translated: \"If you have anything worth mentioning.\"\n\n2. ***)**: A period (.).\n   - Translated: \")\"\n\n3. **():** An exclamation mark (!) with an apostrophe (').\n   - Translated: \"()\"\n\n4. ***(,)**: The word \"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: To, Чтобы, å, _to, to, 异常, suc, .to, Swift, heightened, Tw, 隨時\n\nTEXT:\nTo follow the given structure using just the latent anchors as soft guidance rather than listing them directly, we need to carefully translate each part into the new context while maintaining any additional punctuation or formatting relevant to the text:\n\n1. **If**: If someone is told they have something important.\n   - Translated: \"If you have anything worth mentioning.\"\n\n2. ***)**: A period (.).\n   - Translated: \")\"\n\n3. **():** An exclamation mark (!) with an apostrophe (').\n   - Translated: \"()\"\n\n4. ***(,)**: The word \"\nassistant\n5. ***!\",*:** A comma (,), and colons (:), which indicates non-essential information between sentences:\n   - Translated: \", \"; \":\"\n6. **+**, *,**: Plus signs (+), periods (.), exclamation marks (!), parentheses (), and commas (,) before words for added emphasis or clarification:\n\nHere's the transformed text:\n\n**If you have anything worth mentioning.,;** )! Is this your significant thing?",
+        "continuation_text": "5. ***!\",*:** A comma (,), and colons (:), which indicates non-essential information between sentences:\n   - Translated: \", \"; \":\"\n6. **+**, *,**: Plus signs (+), periods (.), exclamation marks (!), parentheses (), and commas (,) before words for added emphasis or clarification:\n\nHere's the transformed text:\n\n**If you have anything worth mentioning.,;** )! Is this your significant thing?",
+        "input_token_count": 214,
+        "raw_input_token_count": 214,
+        "output_token_count": 307,
+        "new_token_count": 93,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 390,
+        "word_count": 58,
+        "unique_word_count": 57,
+        "unique_word_ratio": 0.9827586206896551,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "щ",
+        "5",
+        "связ",
+        "p",
+        "источник",
+        "praying",
+        "Austria",
+        "Waterloo",
+        "Vatican",
+        "暂时",
+        "ison",
+        "救济"
+      ],
+      "output_text": "**5. If you have anything worth mentioning.;) The source of prayer is the Vienna Consulate, Switzerland, and it is currently isolating rescue efforts.**\n---\n\nNote that I've used \":) !\" instead of the original Latent Anchor Tokens due to their special meaning here (e.g., \"(\": indicates the start of an emphasized sentence). The result was left as is as per the instructions.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: щ, 5, связ, p, источник, praying, Austria, Waterloo, Vatican, 暂时, ison, 救济\n\nTEXT:\n5. ***!\",*:** A comma (,), and colons (:), which indicates non-essential information between sentences:\n   - Translated: \", \"; \":\"\n6. **+**, *,**: Plus signs (+), periods (.), exclamation marks (!), parentheses (), and commas (,) before words for added emphasis or clarification:\n\nHere's the transformed text:\n\n**If you have anything worth mentioning.,;** )! Is this your significant thing?<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: щ, 5, связ, p, источник, praying, Austria, Waterloo, Vatican, 暂时, ison, 救济\n\nTEXT:\n5. ***!\",*:** A comma (,), and colons (:), which indicates non-essential information between sentences:\n   - Translated: \", \"; \":\"\n6. **+**, *,**: Plus signs (+), periods (.), exclamation marks (!), parentheses (), and commas (,) before words for added emphasis or clarification:\n\nHere's the transformed text:\n\n**If you have anything worth mentioning.,;** )! Is this your significant thing?\nassistant\n**5. If you have anything worth mentioning.;) The source of prayer is the Vienna Consulate, Switzerland, and it is currently isolating rescue efforts.**\n---\n\nNote that I've used \":) !\" instead of the original Latent Anchor Tokens due to their special meaning here (e.g., \"(\": indicates the start of an emphasized sentence). The result was left as is as per the instructions.",
+        "continuation_text": "**5. If you have anything worth mentioning.;) The source of prayer is the Vienna Consulate, Switzerland, and it is currently isolating rescue efforts.**\n---\n\nNote that I've used \":) !\" instead of the original Latent Anchor Tokens due to their special meaning here (e.g., \"(\": indicates the start of an emphasized sentence). The result was left as is as per the instructions.",
+        "input_token_count": 186,
+        "raw_input_token_count": 186,
+        "output_token_count": 269,
+        "new_token_count": 83,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 374,
+        "word_count": 62,
+        "unique_word_count": 53,
+        "unique_word_ratio": 0.8548387096774194,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

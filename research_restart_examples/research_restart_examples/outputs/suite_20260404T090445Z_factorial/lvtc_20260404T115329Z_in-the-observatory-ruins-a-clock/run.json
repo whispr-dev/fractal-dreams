@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1226,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 191,
+        "word_count": 29,
+        "unique_word_count": 25,
+        "unique_word_ratio": 0.8620689655172413,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 663,
+        "word_count": 97,
+        "unique_word_count": 84,
+        "unique_word_ratio": 0.865979381443299,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 611,
+        "word_count": 85,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.9411764705882353,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 647,
+        "word_count": 84,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.8928571428571429,
+        "repeated_bigram_count": 3
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "was",
+        "the",
+        "had",
+        "If",
+        "to",
+        "is",
+        "for",
+        "and",
+        "are"
+      ],
+      "output_text": "The observed phenomenon involves the continuous re-drawing of the sky using mechanical clocks that display the passage of time with no indication of its progression towards an uneventful day.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, was, the, had, If, to, is, for, and, are\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, was, the, had, If, to, is, for, and, are\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nThe observed phenomenon involves the continuous re-drawing of the sky using mechanical clocks that display the passage of time with no indication of its progression towards an uneventful day.",
+        "continuation_text": "The observed phenomenon involves the continuous re-drawing of the sky using mechanical clocks that display the passage of time with no indication of its progression towards an uneventful day.",
+        "input_token_count": 110,
+        "raw_input_token_count": 110,
+        "output_token_count": 145,
+        "new_token_count": 35,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 191,
+        "word_count": 29,
+        "unique_word_count": 25,
+        "unique_word_ratio": 0.8620689655172413,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "the",
+        "it",
+        "if",
+        "of",
+        "that",
+        "with",
+        "its",
+        "were",
+        "for",
+        "are",
+        "It",
+        "is"
+      ],
+      "output_text": "To follow your instructions and guide this text through the process of generating a deep understanding or inference from the given latent directions while maintaining the structural coherence described, I will provide you with some key elements to focus on:\n\n### Step 1: Understand the Text Structure\n- **Subject:** \"The observed phenomenon\" (which could potentially refer back to the beginning without specifying).\n- **Action:** The sequence is repetitive (\"drawn\", \"re-drawn\").\n- **Mechanical Clocks:** These control the passing of time.\n- **Time Display:** No mention regarding how the clock's indication progresses beyond simplicity.\n\n### Step 2: Identify Key",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, it, if, of, that, with, its, were, for, are, It, is\n\nTEXT:\nThe observed phenomenon involves the continuous re-drawing of the sky using mechanical clocks that display the passage of time with no indication of its progression towards an uneventful day.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, it, if, of, that, with, its, were, for, are, It, is\n\nTEXT:\nThe observed phenomenon involves the continuous re-drawing of the sky using mechanical clocks that display the passage of time with no indication of its progression towards an uneventful day.\nassistant\nTo follow your instructions and guide this text through the process of generating a deep understanding or inference from the given latent directions while maintaining the structural coherence described, I will provide you with some key elements to focus on:\n\n### Step 1: Understand the Text Structure\n- **Subject:** \"The observed phenomenon\" (which could potentially refer back to the beginning without specifying).\n- **Action:** The sequence is repetitive (\"drawn\", \"re-drawn\").\n- **Mechanical Clocks:** These control the passing of time.\n- **Time Display:** No mention regarding how the clock's indication progresses beyond simplicity.\n\n### Step 2: Identify Key",
+        "continuation_text": "To follow your instructions and guide this text through the process of generating a deep understanding or inference from the given latent directions while maintaining the structural coherence described, I will provide you with some key elements to focus on:\n\n### Step 1: Understand the Text Structure\n- **Subject:** \"The observed phenomenon\" (which could potentially refer back to the beginning without specifying).\n- **Action:** The sequence is repetitive (\"drawn\", \"re-drawn\").\n- **Mechanical Clocks:** These control the passing of time.\n- **Time Display:** No mention regarding how the clock's indication progresses beyond simplicity.\n\n### Step 2: Identify Key",
+        "input_token_count": 116,
+        "raw_input_token_count": 116,
+        "output_token_count": 244,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 663,
+        "word_count": 97,
+        "unique_word_count": 84,
+        "unique_word_ratio": 0.865979381443299,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "were",
+        "to",
+        "is",
+        "are",
+        "for",
+        "If",
+        "and",
+        "It",
+        "of"
+      ],
+      "output_text": "```python\ndef understand_text(text):\n    # This function would extract the subject, action, mechanics, and time display information\n    pass\n```\n\n### Step 3: Apply Latent Direction Annotation Rules\nHere’s an annotated version of what might be done after recognizing key elements from previous steps:\n\n#### 1. Analyze Subject and Action\n**Context Check:** Determine whether there is clear reference to something being drawn or re-drawn.\n\n#### 2. Interpret Mechanics\n**Observation:** Recognize that the actions appear repetitive or repeat certain patterns.\n\n#### 3. Examine Time Elements\n**Synthesis Rule:** Given",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, to, is, are, for, If, and, It, of\n\nTEXT:\nTo follow your instructions and guide this text through the process of generating a deep understanding or inference from the given latent directions while maintaining the structural coherence described, I will provide you with some key elements to focus on:\n\n### Step 1: Understand the Text Structure\n- **Subject:** \"The observed phenomenon\" (which could potentially refer back to the beginning without specifying).\n- **Action:** The sequence is repetitive (\"drawn\", \"re-drawn\").\n- **Mechanical Clocks:** These control the passing of time.\n- **Time Display:** No mention regarding how the clock's indication progresses beyond simplicity.\n\n### Step 2: Identify Key<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, to, is, are, for, If, and, It, of\n\nTEXT:\nTo follow your instructions and guide this text through the process of generating a deep understanding or inference from the given latent directions while maintaining the structural coherence described, I will provide you with some key elements to focus on:\n\n### Step 1: Understand the Text Structure\n- **Subject:** \"The observed phenomenon\" (which could potentially refer back to the beginning without specifying).\n- **Action:** The sequence is repetitive (\"drawn\", \"re-drawn\").\n- **Mechanical Clocks:** These control the passing of time.\n- **Time Display:** No mention regarding how the clock's indication progresses beyond simplicity.\n\n### Step 2: Identify Key\nassistant\n```python\ndef understand_text(text):\n    # This function would extract the subject, action, mechanics, and time display information\n    pass\n```\n\n### Step 3: Apply Latent Direction Annotation Rules\nHere’s an annotated version of what might be done after recognizing key elements from previous steps:\n\n#### 1. Analyze Subject and Action\n**Context Check:** Determine whether there is clear reference to something being drawn or re-drawn.\n\n#### 2. Interpret Mechanics\n**Observation:** Recognize that the actions appear repetitive or repeat certain patterns.\n\n#### 3. Examine Time Elements\n**Synthesis Rule:** Given",
+        "continuation_text": "```python\ndef understand_text(text):\n    # This function would extract the subject, action, mechanics, and time display information\n    pass\n```\n\n### Step 3: Apply Latent Direction Annotation Rules\nHere’s an annotated version of what might be done after recognizing key elements from previous steps:\n\n#### 1. Analyze Subject and Action\n**Context Check:** Determine whether there is clear reference to something being drawn or re-drawn.\n\n#### 2. Interpret Mechanics\n**Observation:** Recognize that the actions appear repetitive or repeat certain patterns.\n\n#### 3. Examine Time Elements\n**Synthesis Rule:** Given",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 338,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 611,
+        "word_count": 85,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.9411764705882353,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        ",",
+        "and",
+        "If",
+        "is",
+        "to",
+        "(",
+        "were",
+        ".",
+        ":",
+        "for"
+      ],
+      "output_text": "The next recursive transformation based on the given annotations could be as follows:\n\n```plaintext\ndef understand_text(text):\n    if \"repeating\" in text.lower():\n        return f\"The provided text contains repeated action-repetition.\"\n    elif \"pattern\" in text.lower() and not \"mechanics\" in text.lower():\n        return f\"The text suggests repetition involving specific rules or structures.\"\n\n# Example usage:\ntext = \"\"\"\nThis is a sequence of repeating events.\nAnother instance involves a pattern that has distinct structural components.\"\"\"\nunderstand_text(text)\n```\n\nIn this translation:\n- The phrase `if \"repeating\"` was analyzed first due to",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, ,, and, If, is, to, (, were, ., :, for\n\nTEXT:\n```python\ndef understand_text(text):\n    # This function would extract the subject, action, mechanics, and time display information\n    pass\n```\n\n### Step 3: Apply Latent Direction Annotation Rules\nHere’s an annotated version of what might be done after recognizing key elements from previous steps:\n\n#### 1. Analyze Subject and Action\n**Context Check:** Determine whether there is clear reference to something being drawn or re-drawn.\n\n#### 2. Interpret Mechanics\n**Observation:** Recognize that the actions appear repetitive or repeat certain patterns.\n\n#### 3. Examine Time Elements\n**Synthesis Rule:** Given<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, ,, and, If, is, to, (, were, ., :, for\n\nTEXT:\n```python\ndef understand_text(text):\n    # This function would extract the subject, action, mechanics, and time display information\n    pass\n```\n\n### Step 3: Apply Latent Direction Annotation Rules\nHere’s an annotated version of what might be done after recognizing key elements from previous steps:\n\n#### 1. Analyze Subject and Action\n**Context Check:** Determine whether there is clear reference to something being drawn or re-drawn.\n\n#### 2. Interpret Mechanics\n**Observation:** Recognize that the actions appear repetitive or repeat certain patterns.\n\n#### 3. Examine Time Elements\n**Synthesis Rule:** Given\nassistant\nThe next recursive transformation based on the given annotations could be as follows:\n\n```plaintext\ndef understand_text(text):\n    if \"repeating\" in text.lower():\n        return f\"The provided text contains repeated action-repetition.\"\n    elif \"pattern\" in text.lower() and not \"mechanics\" in text.lower():\n        return f\"The text suggests repetition involving specific rules or structures.\"\n\n# Example usage:\ntext = \"\"\"\nThis is a sequence of repeating events.\nAnother instance involves a pattern that has distinct structural components.\"\"\"\nunderstand_text(text)\n```\n\nIn this translation:\n- The phrase `if \"repeating\"` was analyzed first due to",
+        "continuation_text": "The next recursive transformation based on the given annotations could be as follows:\n\n```plaintext\ndef understand_text(text):\n    if \"repeating\" in text.lower():\n        return f\"The provided text contains repeated action-repetition.\"\n    elif \"pattern\" in text.lower() and not \"mechanics\" in text.lower():\n        return f\"The text suggests repetition involving specific rules or structures.\"\n\n# Example usage:\ntext = \"\"\"\nThis is a sequence of repeating events.\nAnother instance involves a pattern that has distinct structural components.\"\"\"\nunderstand_text(text)\n```\n\nIn this translation:\n- The phrase `if \"repeating\"` was analyzed first due to",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 336,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 647,
+        "word_count": 84,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.8928571428571429,
+        "repeated_bigram_count": 3
+      }
+    }
+  ]
+}

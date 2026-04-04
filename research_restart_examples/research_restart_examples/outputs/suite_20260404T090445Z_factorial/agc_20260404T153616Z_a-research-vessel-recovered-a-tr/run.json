@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1537,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 536,
+        "word_count": 75,
+        "unique_word_count": 65,
+        "unique_word_ratio": 0.8666666666666667,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 112,
+        "word_count": 11,
+        "unique_word_count": 10,
+        "unique_word_ratio": 0.9090909090909091,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 32,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "opportunities",
+        "از",
+        "engaged",
+        "�",
+        "いや",
+        "(verbose",
+        "are",
+        "or",
+        "_INFO",
+        "journal",
+        "anc",
+        "satisfaction"
+      ],
+      "output_text": "Here is the next recursive transformation based on the given latent anchors:\n\n\"A research vessel recovered a transmission from the trench floor. Initially it was engineering telemetry, which gradually evolved into philosophical concepts.\"\n\nThis iteration keeps the same latent anchor \"engineering\" while modifying it slightly by shifting to a more abstract perspective within the context of philosophy. The remaining anchor remains unchanged at its current position (\"trench\") to maintain coherence with the original sentence structure.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nHere is the next recursive transformation based on the given latent anchors:\n\n\"A research vessel recovered a transmission from the trench floor. Initially it was engineering telemetry, which gradually evolved into philosophical concepts.\"\n\nThis iteration keeps the same latent anchor \"engineering\" while modifying it slightly by shifting to a more abstract perspective within the context of philosophy. The remaining anchor remains unchanged at its current position (\"trench\") to maintain coherence with the original sentence structure.",
+        "continuation_text": "Here is the next recursive transformation based on the given latent anchors:\n\n\"A research vessel recovered a transmission from the trench floor. Initially it was engineering telemetry, which gradually evolved into philosophical concepts.\"\n\nThis iteration keeps the same latent anchor \"engineering\" while modifying it slightly by shifting to a more abstract perspective within the context of philosophy. The remaining anchor remains unchanged at its current position (\"trench\") to maintain coherence with the original sentence structure.",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 201,
+        "new_token_count": 87,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 536,
+        "word_count": 75,
+        "unique_word_count": 65,
+        "unique_word_ratio": 0.8666666666666667,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "раг",
+        "Rosen",
+        "短信",
+        "lev",
+        "פ",
+        "在这里",
+        "screenshots",
+        "_cancel",
+        "CREEN",
+        "HERE",
+        "窗",
+        "提示"
+      ],
+      "output_text": "研究船从地表深处接收到信息。起初是工程数据，逐渐演变成为哲学概念。\n\nLatent Anchor Tokens Updated: 保留 \"engineering\"\nRemaining Anchor Token: trench",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: раг, Rosen, 短信, lev, פ, 在这里, screenshots, _cancel, CREEN, HERE, 窗, 提示\n\nTEXT:\nHere is the next recursive transformation based on the given latent anchors:\n\n\"A research vessel recovered a transmission from the trench floor. Initially it was engineering telemetry, which gradually evolved into philosophical concepts.\"\n\nThis iteration keeps the same latent anchor \"engineering\" while modifying it slightly by shifting to a more abstract perspective within the context of philosophy. The remaining anchor remains unchanged at its current position (\"trench\") to maintain coherence with the original sentence structure.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: раг, Rosen, 短信, lev, פ, 在这里, screenshots, _cancel, CREEN, HERE, 窗, 提示\n\nTEXT:\nHere is the next recursive transformation based on the given latent anchors:\n\n\"A research vessel recovered a transmission from the trench floor. Initially it was engineering telemetry, which gradually evolved into philosophical concepts.\"\n\nThis iteration keeps the same latent anchor \"engineering\" while modifying it slightly by shifting to a more abstract perspective within the context of philosophy. The remaining anchor remains unchanged at its current position (\"trench\") to maintain coherence with the original sentence structure.\nassistant\n研究船从地表深处接收到信息。起初是工程数据，逐渐演变成为哲学概念。\n\nLatent Anchor Tokens Updated: 保留 \"engineering\"\nRemaining Anchor Token: trench",
+        "continuation_text": "研究船从地表深处接收到信息。起初是工程数据，逐渐演变成为哲学概念。\n\nLatent Anchor Tokens Updated: 保留 \"engineering\"\nRemaining Anchor Token: trench",
+        "input_token_count": 184,
+        "raw_input_token_count": 184,
+        "output_token_count": 222,
+        "new_token_count": 38,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 112,
+        "word_count": 11,
+        "unique_word_count": 10,
+        "unique_word_ratio": 0.9090909090909091,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "❚",
+        "(zip",
+        "Soil",
+        "Explosion",
+        "uyo",
+        "华盛",
+        "Output",
+        "📓",
+        "(parcel",
+        "一刻",
+        "ported",
+        "place"
+      ],
+      "output_text": "研究船从地下深处接收到信息。起初是工程数据，逐渐演化为哲学概念。",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ❚, (zip, Soil, Explosion, uyo, 华盛, Output, 📓, (parcel, 一刻, ported, place\n\nTEXT:\n研究船从地表深处接收到信息。起初是工程数据，逐渐演变成为哲学概念。\n\nLatent Anchor Tokens Updated: 保留 \"engineering\"\nRemaining Anchor Token: trench<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ❚, (zip, Soil, Explosion, uyo, 华盛, Output, 📓, (parcel, 一刻, ported, place\n\nTEXT:\n研究船从地表深处接收到信息。起初是工程数据，逐渐演变成为哲学概念。\n\nLatent Anchor Tokens Updated: 保留 \"engineering\"\nRemaining Anchor Token: trench\nassistant\n研究船从地下深处接收到信息。起初是工程数据，逐渐演化为哲学概念。",
+        "continuation_text": "研究船从地下深处接收到信息。起初是工程数据，逐渐演化为哲学概念。",
+        "input_token_count": 135,
+        "raw_input_token_count": 135,
+        "output_token_count": 156,
+        "new_token_count": 21,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 32,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

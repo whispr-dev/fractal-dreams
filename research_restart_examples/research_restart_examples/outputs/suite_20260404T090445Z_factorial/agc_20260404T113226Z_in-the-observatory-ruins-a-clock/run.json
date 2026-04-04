@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1201,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 620,
+        "word_count": 92,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.9347826086956522,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 634,
+        "word_count": 91,
+        "unique_word_count": 88,
+        "unique_word_ratio": 0.967032967032967,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 523,
+        "word_count": 76,
+        "unique_word_count": 71,
+        "unique_word_ratio": 0.9342105263157895,
+        "repeated_bigram_count": 1
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "cor",
+        "At",
+        "oklyn",
+        "静静地",
+        "cu",
+        "_di",
+        "Ferry",
+        "gu",
+        "nu",
+        "ner",
+        "Ur",
+        "가"
+      ],
+      "output_text": "The next recursive transformation would involve expanding on or adding new information that is not explicitly mentioned in the given sentence, while maintaining the context and meaning. Here's an attempt at this:\n\n1. **Observatory Ruins:** In these old times when people longed for what they lacked.\n2. **Clockwork Map:** A complex mechanism with intricate gears that move through time, altering historical events every day.\n3. **Redrawing Sky:** The process by which past events are being reinterpreted and mapped onto future possibilities using digital technology.\n4. **Tomorrow Had Happened:** People yearn for things",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: cor, At, oklyn, 静静地, cu, _di, Ferry, gu, nu, ner, Ur, 가\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: cor, At, oklyn, 静静地, cu, _di, Ferry, gu, nu, ner, Ur, 가\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nThe next recursive transformation would involve expanding on or adding new information that is not explicitly mentioned in the given sentence, while maintaining the context and meaning. Here's an attempt at this:\n\n1. **Observatory Ruins:** In these old times when people longed for what they lacked.\n2. **Clockwork Map:** A complex mechanism with intricate gears that move through time, altering historical events every day.\n3. **Redrawing Sky:** The process by which past events are being reinterpreted and mapped onto future possibilities using digital technology.\n4. **Tomorrow Had Happened:** People yearn for things",
+        "continuation_text": "The next recursive transformation would involve expanding on or adding new information that is not explicitly mentioned in the given sentence, while maintaining the context and meaning. Here's an attempt at this:\n\n1. **Observatory Ruins:** In these old times when people longed for what they lacked.\n2. **Clockwork Map:** A complex mechanism with intricate gears that move through time, altering historical events every day.\n3. **Redrawing Sky:** The process by which past events are being reinterpreted and mapped onto future possibilities using digital technology.\n4. **Tomorrow Had Happened:** People yearn for things",
+        "input_token_count": 122,
+        "raw_input_token_count": 122,
+        "output_token_count": 242,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 620,
+        "word_count": 92,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.9347826086956522,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "W",
+        "ov",
+        "rites",
+        ".Description",
+        "ie",
+        "Conference",
+        "adjective",
+        "description",
+        "收费站",
+        "O",
+        "_description",
+        "two"
+      ],
+      "output_text": "**Observatory Ruins:** In these old times when people sought more than just basic sustenance; their longing was for lands rich in resources, fertile fields beyond imagining.\n\n**Clockwork Map:** A device where movements were precise yet mechanical—precise enough so that once adjusted, it could alter historic occurrences daily.\n\n**Redrawing Sky:** Through technological means, the past was being etched into the fabric of tomorrow’s cosmos, making connections between disparate realities.\n\n**Tomorrow Had Happened:** It seemed like there had always been something, even if one could never fully grasp its true nature—or perhaps better",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: W, ov, rites, .Description, ie, Conference, adjective, description, 收费站, O, _description, two\n\nTEXT:\nThe next recursive transformation would involve expanding on or adding new information that is not explicitly mentioned in the given sentence, while maintaining the context and meaning. Here's an attempt at this:\n\n1. **Observatory Ruins:** In these old times when people longed for what they lacked.\n2. **Clockwork Map:** A complex mechanism with intricate gears that move through time, altering historical events every day.\n3. **Redrawing Sky:** The process by which past events are being reinterpreted and mapped onto future possibilities using digital technology.\n4. **Tomorrow Had Happened:** People yearn for things<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: W, ov, rites, .Description, ie, Conference, adjective, description, 收费站, O, _description, two\n\nTEXT:\nThe next recursive transformation would involve expanding on or adding new information that is not explicitly mentioned in the given sentence, while maintaining the context and meaning. Here's an attempt at this:\n\n1. **Observatory Ruins:** In these old times when people longed for what they lacked.\n2. **Clockwork Map:** A complex mechanism with intricate gears that move through time, altering historical events every day.\n3. **Redrawing Sky:** The process by which past events are being reinterpreted and mapped onto future possibilities using digital technology.\n4. **Tomorrow Had Happened:** People yearn for things\nassistant\n**Observatory Ruins:** In these old times when people sought more than just basic sustenance; their longing was for lands rich in resources, fertile fields beyond imagining.\n\n**Clockwork Map:** A device where movements were precise yet mechanical—precise enough so that once adjusted, it could alter historic occurrences daily.\n\n**Redrawing Sky:** Through technological means, the past was being etched into the fabric of tomorrow’s cosmos, making connections between disparate realities.\n\n**Tomorrow Had Happened:** It seemed like there had always been something, even if one could never fully grasp its true nature—or perhaps better",
+        "continuation_text": "**Observatory Ruins:** In these old times when people sought more than just basic sustenance; their longing was for lands rich in resources, fertile fields beyond imagining.\n\n**Clockwork Map:** A device where movements were precise yet mechanical—precise enough so that once adjusted, it could alter historic occurrences daily.\n\n**Redrawing Sky:** Through technological means, the past was being etched into the fabric of tomorrow’s cosmos, making connections between disparate realities.\n\n**Tomorrow Had Happened:** It seemed like there had always been something, even if one could never fully grasp its true nature—or perhaps better",
+        "input_token_count": 213,
+        "raw_input_token_count": 213,
+        "output_token_count": 333,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 634,
+        "word_count": 91,
+        "unique_word_count": 88,
+        "unique_word_ratio": 0.967032967032967,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "消费升级",
+        "migrated",
+        ".core",
+        "showcased",
+        "triển",
+        "擘",
+        "Lafayette",
+        ".SelectedIndexChanged",
+        "declined",
+        "opened",
+        "exce",
+        "訴"
+      ],
+      "output_text": "```plaintext\n**Observatory Ruins:** In these old times when people sought more than just basic sustenance; their longing was for lands rich in resources, fertile fields beyond imagination. They may have longed for lands with rivers and lakes instead of waterfalls or streams today. As technology advanced, they shifted towards renewable energy sources such as solar power. The inhabitants would utilize this knowledge to design more efficient and sustainable dwellings, ensuring their survival amidst changing climates.\n```",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 消费升级, migrated, .core, showcased, triển, 擘, Lafayette, .SelectedIndexChanged, declined, opened, exce, 訴\n\nTEXT:\n**Observatory Ruins:** In these old times when people sought more than just basic sustenance; their longing was for lands rich in resources, fertile fields beyond imagining.\n\n**Clockwork Map:** A device where movements were precise yet mechanical—precise enough so that once adjusted, it could alter historic occurrences daily.\n\n**Redrawing Sky:** Through technological means, the past was being etched into the fabric of tomorrow’s cosmos, making connections between disparate realities.\n\n**Tomorrow Had Happened:** It seemed like there had always been something, even if one could never fully grasp its true nature—or perhaps better<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 消费升级, migrated, .core, showcased, triển, 擘, Lafayette, .SelectedIndexChanged, declined, opened, exce, 訴\n\nTEXT:\n**Observatory Ruins:** In these old times when people sought more than just basic sustenance; their longing was for lands rich in resources, fertile fields beyond imagining.\n\n**Clockwork Map:** A device where movements were precise yet mechanical—precise enough so that once adjusted, it could alter historic occurrences daily.\n\n**Redrawing Sky:** Through technological means, the past was being etched into the fabric of tomorrow’s cosmos, making connections between disparate realities.\n\n**Tomorrow Had Happened:** It seemed like there had always been something, even if one could never fully grasp its true nature—or perhaps better\nassistant\n```plaintext\n**Observatory Ruins:** In these old times when people sought more than just basic sustenance; their longing was for lands rich in resources, fertile fields beyond imagination. They may have longed for lands with rivers and lakes instead of waterfalls or streams today. As technology advanced, they shifted towards renewable energy sources such as solar power. The inhabitants would utilize this knowledge to design more efficient and sustainable dwellings, ensuring their survival amidst changing climates.\n```",
+        "continuation_text": "```plaintext\n**Observatory Ruins:** In these old times when people sought more than just basic sustenance; their longing was for lands rich in resources, fertile fields beyond imagination. They may have longed for lands with rivers and lakes instead of waterfalls or streams today. As technology advanced, they shifted towards renewable energy sources such as solar power. The inhabitants would utilize this knowledge to design more efficient and sustainable dwellings, ensuring their survival amidst changing climates.\n```",
+        "input_token_count": 217,
+        "raw_input_token_count": 217,
+        "output_token_count": 312,
+        "new_token_count": 95,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 523,
+        "word_count": 76,
+        "unique_word_count": 71,
+        "unique_word_ratio": 0.9342105263157895,
+        "repeated_bigram_count": 1
+      }
+    }
+  ]
+}

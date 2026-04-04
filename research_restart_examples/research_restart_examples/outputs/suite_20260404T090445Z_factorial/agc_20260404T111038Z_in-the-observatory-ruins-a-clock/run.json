@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1169,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 624,
+        "word_count": 105,
+        "unique_word_count": 105,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 467,
+        "word_count": 78,
+        "unique_word_count": 78,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 51,
+        "word_count": 10,
+        "unique_word_count": 10,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Besides",
+        "Moreover",
+        "Apparently",
+        "Having",
+        "Why",
+        "Although",
+        "Nearly",
+        "An",
+        "Another",
+        "Bell",
+        "Among",
+        "Furthermore"
+      ],
+      "output_text": "In case we think that this is correct or incorrect, then some words must be rewritten so they can also reflect what happens during our initial time trial at home (or maybe even by future ones). It should take longer for all types than just random variations but it has been known since before such experiments were performed [22]. We have many different ways to express these problems with models which will depend on learning about them without having done anything hard because you cannot imagine where your results would come from when something looks good today – especially after repeated tests may change dramatically!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. In case we think that this is correct or incorrect, then some words must be rewritten so they can also reflect what happens during our initial time trial at home (or maybe even by future ones). It should take longer for all types than just random variations but it has been known since before such experiments were performed [22]. We have many different ways to express these problems with models which will depend on learning about them without having done anything hard because you cannot imagine where your results would come from when something looks good today – especially after repeated tests may change dramatically!",
+        "continuation_text": "In case we think that this is correct or incorrect, then some words must be rewritten so they can also reflect what happens during our initial time trial at home (or maybe even by future ones). It should take longer for all types than just random variations but it has been known since before such experiments were performed [22]. We have many different ways to express these problems with models which will depend on learning about them without having done anything hard because you cannot imagine where your results would come from when something looks good today – especially after repeated tests may change dramatically!",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 226,
+        "new_token_count": 112,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 624,
+        "word_count": 105,
+        "unique_word_count": 105,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "In",
+        "Sen",
+        "Isn",
+        "According",
+        "Don",
+        "according",
+        "Personally",
+        "shouldn",
+        "advocated",
+        "proponents",
+        "Though",
+        "Imagine"
+      ],
+      "output_text": "The first thing I want to emphasize here is how well and why each person behaves within their environment; see \"What does my personality look like?\" , etc. For example, if somebody says he's sad anymore/he'll say no immediately while standing up against an opponent who doesn't do either? As long as there aren's enough opportunities around him one day everyone becomes unhappy again once more…well let us know whether people don`t appreciate me too much right now...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: In, Sen, Isn, According, Don, according, Personally, shouldn, advocated, proponents, Though, Imagine\n\nTEXT:\nIn case we think that this is correct or incorrect, then some words must be rewritten so they can also reflect what happens during our initial time trial at home (or maybe even by future ones). It should take longer for all types than just random variations but it has been known since before such experiments were performed [22]. We have many different ways to express these problems with models which will depend on learning about them without having done anything hard because you cannot imagine where your results would come from when something looks good today – especially after repeated tests may change dramatically!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: In, Sen, Isn, According, Don, according, Personally, shouldn, advocated, proponents, Though, Imagine\n\nTEXT:\nIn case we think that this is correct or incorrect, then some words must be rewritten so they can also reflect what happens during our initial time trial at home (or maybe even by future ones). It should take longer for all types than just random variations but it has been known since before such experiments were performed [22]. We have many different ways to express these problems with models which will depend on learning about them without having done anything hard because you cannot imagine where your results would come from when something looks good today – especially after repeated tests may change dramatically! The first thing I want to emphasize here is how well and why each person behaves within their environment; see \"What does my personality look like?\" , etc. For example, if somebody says he's sad anymore/he'll say no immediately while standing up against an opponent who doesn't do either? As long as there aren's enough opportunities around him one day everyone becomes unhappy again once more…well let us know whether people don`t appreciate me too much right now...",
+        "continuation_text": "The first thing I want to emphasize here is how well and why each person behaves within their environment; see \"What does my personality look like?\" , etc. For example, if somebody says he's sad anymore/he'll say no immediately while standing up against an opponent who doesn't do either? As long as there aren's enough opportunities around him one day everyone becomes unhappy again once more…well let us know whether people don`t appreciate me too much right now...",
+        "input_token_count": 196,
+        "raw_input_token_count": 196,
+        "output_token_count": 293,
+        "new_token_count": 97,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 467,
+        "word_count": 78,
+        "unique_word_count": 78,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "The",
+        "It",
+        "When",
+        "While",
+        "Despite",
+        "According",
+        "Although",
+        "That",
+        "There",
+        "In",
+        "During",
+        "If"
+      ],
+      "output_text": "we can expect some change over time or even better!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: The, It, When, While, Despite, According, Although, That, There, In, During, If\n\nTEXT:\nThe first thing I want to emphasize here is how well and why each person behaves within their environment; see \"What does my personality look like?\" , etc. For example, if somebody says he's sad anymore/he'll say no immediately while standing up against an opponent who doesn't do either? As long as there aren's enough opportunities around him one day everyone becomes unhappy again once more…well let us know whether people don`t appreciate me too much right now...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: The, It, When, While, Despite, According, Although, That, There, In, During, If\n\nTEXT:\nThe first thing I want to emphasize here is how well and why each person behaves within their environment; see \"What does my personality look like?\" , etc. For example, if somebody says he's sad anymore/he'll say no immediately while standing up against an opponent who doesn't do either? As long as there aren's enough opportunities around him one day everyone becomes unhappy again once more…well let us know whether people don`t appreciate me too much right now...we can expect some change over time or even better!",
+        "continuation_text": "we can expect some change over time or even better!",
+        "input_token_count": 180,
+        "raw_input_token_count": 180,
+        "output_token_count": 192,
+        "new_token_count": 12,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 51,
+        "word_count": 10,
+        "unique_word_count": 10,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

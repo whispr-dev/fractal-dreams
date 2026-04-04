@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1549,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 543,
+        "word_count": 79,
+        "unique_word_count": 57,
+        "unique_word_ratio": 0.7215189873417721,
+        "repeated_bigram_count": 10
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 296,
+        "word_count": 37,
+        "unique_word_count": 35,
+        "unique_word_ratio": 0.9459459459459459,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 69,
+        "word_count": 3,
+        "unique_word_count": 3,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "opportunities",
+        "از",
+        "engaged",
+        "�",
+        "いや",
+        "(verbose",
+        "are",
+        "or",
+        "_INFO",
+        "journal",
+        "anc",
+        "satisfaction"
+      ],
+      "output_text": "Here's the next recursive transformation of the given text:\n\n---\nText: A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and gradually evolved into philosophy.\n---\n\nLatent Anchor Tokens Soft Guidance:  \n1. recovery  \n2. transmits  \n3. from  \n4. trench floor  \n\nOutput Text:\n---\nA research vessel recovered a transmission from the trench floor.\nIt started as an engineering telemetry, progressing through philosophical concepts, then evolving into abstract ideas within its own discipline.\n\n---",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nHere's the next recursive transformation of the given text:\n\n---\nText: A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and gradually evolved into philosophy.\n---\n\nLatent Anchor Tokens Soft Guidance:  \n1. recovery  \n2. transmits  \n3. from  \n4. trench floor  \n\nOutput Text:\n---\nA research vessel recovered a transmission from the trench floor.\nIt started as an engineering telemetry, progressing through philosophical concepts, then evolving into abstract ideas within its own discipline.\n\n---",
+        "continuation_text": "Here's the next recursive transformation of the given text:\n\n---\nText: A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and gradually evolved into philosophy.\n---\n\nLatent Anchor Tokens Soft Guidance:  \n1. recovery  \n2. transmits  \n3. from  \n4. trench floor  \n\nOutput Text:\n---\nA research vessel recovered a transmission from the trench floor.\nIt started as an engineering telemetry, progressing through philosophical concepts, then evolving into abstract ideas within its own discipline.\n\n---",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 216,
+        "new_token_count": 102,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 543,
+        "word_count": 79,
+        "unique_word_count": 57,
+        "unique_word_ratio": 0.7215189873417721,
+        "repeated_bigram_count": 10
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "ウォ",
+        "関",
+        "onClick",
+        "を入れ",
+        "så",
+        "로",
+        "так",
+        "However",
+        "事务",
+        "onclick",
+        "블",
+        "グ"
+      ],
+      "output_text": "---\nResearch vessels successfully retrieved a signal transmitted from the underwater trenches.\nThe initial data became engineering telemetry before it developed into philosophical perspectives.\nAs time passed, the signals evolved further by expanding into broader interdisciplinary understanding.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ウォ, 関, onClick, を入れ, så, 로, так, However, 事务, onclick, 블, グ\n\nTEXT:\nHere's the next recursive transformation of the given text:\n\n---\nText: A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and gradually evolved into philosophy.\n---\n\nLatent Anchor Tokens Soft Guidance:  \n1. recovery  \n2. transmits  \n3. from  \n4. trench floor  \n\nOutput Text:\n---\nA research vessel recovered a transmission from the trench floor.\nIt started as an engineering telemetry, progressing through philosophical concepts, then evolving into abstract ideas within its own discipline.\n\n---<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ウォ, 関, onClick, を入れ, så, 로, так, However, 事务, onclick, 블, グ\n\nTEXT:\nHere's the next recursive transformation of the given text:\n\n---\nText: A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and gradually evolved into philosophy.\n---\n\nLatent Anchor Tokens Soft Guidance:  \n1. recovery  \n2. transmits  \n3. from  \n4. trench floor  \n\nOutput Text:\n---\nA research vessel recovered a transmission from the trench floor.\nIt started as an engineering telemetry, progressing through philosophical concepts, then evolving into abstract ideas within its own discipline.\n\n---\nassistant\n---\nResearch vessels successfully retrieved a signal transmitted from the underwater trenches.\nThe initial data became engineering telemetry before it developed into philosophical perspectives.\nAs time passed, the signals evolved further by expanding into broader interdisciplinary understanding.",
+        "continuation_text": "---\nResearch vessels successfully retrieved a signal transmitted from the underwater trenches.\nThe initial data became engineering telemetry before it developed into philosophical perspectives.\nAs time passed, the signals evolved further by expanding into broader interdisciplinary understanding.",
+        "input_token_count": 198,
+        "raw_input_token_count": 198,
+        "output_token_count": 240,
+        "new_token_count": 42,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 296,
+        "word_count": 37,
+        "unique_word_count": 35,
+        "unique_word_ratio": 0.9459459459459459,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "了很久",
+        "otonin",
+        "devoted",
+        "BB",
+        "疳",
+        "oystick",
+        "诛",
+        "ictory",
+        "了好几",
+        "mostat",
+        "ampire",
+        ".tax"
+      ],
+      "output_text": "研究船成功地从海底深沟中提取了信号。\n初始数据变成了工程遥测，然后发展成为哲学视角。\n随着时间的推移，信号进一步扩展为更广泛的跨学科理解。",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 了很久, otonin, devoted, BB, 疳, oystick, 诛, ictory, 了好几, mostat, ampire, .tax\n\nTEXT:\n---\nResearch vessels successfully retrieved a signal transmitted from the underwater trenches.\nThe initial data became engineering telemetry before it developed into philosophical perspectives.\nAs time passed, the signals evolved further by expanding into broader interdisciplinary understanding.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 了很久, otonin, devoted, BB, 疳, oystick, 诛, ictory, 了好几, mostat, ampire, .tax\n\nTEXT:\n---\nResearch vessels successfully retrieved a signal transmitted from the underwater trenches.\nThe initial data became engineering telemetry before it developed into philosophical perspectives.\nAs time passed, the signals evolved further by expanding into broader interdisciplinary understanding.\nassistant\n研究船成功地从海底深沟中提取了信号。\n初始数据变成了工程遥测，然后发展成为哲学视角。\n随着时间的推移，信号进一步扩展为更广泛的跨学科理解。",
+        "continuation_text": "研究船成功地从海底深沟中提取了信号。\n初始数据变成了工程遥测，然后发展成为哲学视角。\n随着时间的推移，信号进一步扩展为更广泛的跨学科理解。",
+        "input_token_count": 141,
+        "raw_input_token_count": 141,
+        "output_token_count": 183,
+        "new_token_count": 42,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 69,
+        "word_count": 3,
+        "unique_word_count": 3,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

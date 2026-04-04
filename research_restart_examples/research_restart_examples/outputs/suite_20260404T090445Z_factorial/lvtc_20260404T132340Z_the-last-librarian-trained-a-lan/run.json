@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1350,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 337,
+        "word_count": 56,
+        "unique_word_count": 55,
+        "unique_word_ratio": 0.9821428571428571,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 688,
+        "word_count": 119,
+        "unique_word_count": 117,
+        "unique_word_ratio": 0.9831932773109243,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 38,
+        "word_count": 7,
+        "unique_word_count": 7,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 671,
+        "word_count": 119,
+        "unique_word_count": 116,
+        "unique_word_ratio": 0.9747899159663865,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        "was",
+        "have",
+        "the",
+        "is",
+        "The",
+        "has",
+        "did",
+        "that"
+      ],
+      "output_text": "By combining multiple words into one word (the second part of a sentence), an expression produces information for each character; while using different lines to read up sentences or write down those first ones (\"sides\"), they're not meant as any indication of whether someone will find them useful elsewhere – but rather what can we say?",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, was, have, the, is, The, has, did, that\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, was, have, the, is, The, has, did, that\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. By combining multiple words into one word (the second part of a sentence), an expression produces information for each character; while using different lines to read up sentences or write down those first ones (\"sides\"), they're not meant as any indication of whether someone will find them useful elsewhere – but rather what can we say?",
+        "continuation_text": "By combining multiple words into one word (the second part of a sentence), an expression produces information for each character; while using different lines to read up sentences or write down those first ones (\"sides\"), they're not meant as any indication of whether someone will find them useful elsewhere – but rather what can we say?",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 167,
+        "new_token_count": 65,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 337,
+        "word_count": 56,
+        "unique_word_count": 55,
+        "unique_word_ratio": 0.9821428571428571,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "they",
+        "have",
+        "is",
+        "in",
+        "the",
+        "had",
+        "with",
+        "to"
+      ],
+      "output_text": "When you look at this concept and learn more about how things work on your system than I do here , \"text\" actually means something similar…and also because so many languages make writing simpler when speaking from outside without having to repeat all their steps over again even after reading through some other document . You might think that's probably true too! But consider my own opinion regarding LATENT DIRECTIONS : both allow us access to very small amounts of code which take no time off per day compared either way - simply making sure there is enough memory available where our program gets used within minutes :) The rest of the examples illustrate why such ideas could happen",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, they, have, is, in, the, had, with, to\n\nTEXT:\nBy combining multiple words into one word (the second part of a sentence), an expression produces information for each character; while using different lines to read up sentences or write down those first ones (\"sides\"), they're not meant as any indication of whether someone will find them useful elsewhere – but rather what can we say?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, they, have, is, in, the, had, with, to\n\nTEXT:\nBy combining multiple words into one word (the second part of a sentence), an expression produces information for each character; while using different lines to read up sentences or write down those first ones (\"sides\"), they're not meant as any indication of whether someone will find them useful elsewhere – but rather what can we say? When you look at this concept and learn more about how things work on your system than I do here , \"text\" actually means something similar…and also because so many languages make writing simpler when speaking from outside without having to repeat all their steps over again even after reading through some other document . You might think that's probably true too! But consider my own opinion regarding LATENT DIRECTIONS : both allow us access to very small amounts of code which take no time off per day compared either way - simply making sure there is enough memory available where our program gets used within minutes :) The rest of the examples illustrate why such ideas could happen",
+        "continuation_text": "When you look at this concept and learn more about how things work on your system than I do here , \"text\" actually means something similar…and also because so many languages make writing simpler when speaking from outside without having to repeat all their steps over again even after reading through some other document . You might think that's probably true too! But consider my own opinion regarding LATENT DIRECTIONS : both allow us access to very small amounts of code which take no time off per day compared either way - simply making sure there is enough memory available where our program gets used within minutes :) The rest of the examples illustrate why such ideas could happen",
+        "input_token_count": 143,
+        "raw_input_token_count": 143,
+        "output_token_count": 271,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 688,
+        "word_count": 119,
+        "unique_word_count": 117,
+        "unique_word_ratio": 0.9831932773109243,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "are",
+        "have",
+        "had",
+        "in",
+        "make",
+        "is",
+        "they",
+        "did",
+        "the"
+      ],
+      "output_text": "as well (like adding an example page):",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, have, had, in, make, is, they, did, the\n\nTEXT:\nWhen you look at this concept and learn more about how things work on your system than I do here , \"text\" actually means something similar…and also because so many languages make writing simpler when speaking from outside without having to repeat all their steps over again even after reading through some other document . You might think that's probably true too! But consider my own opinion regarding LATENT DIRECTIONS : both allow us access to very small amounts of code which take no time off per day compared either way - simply making sure there is enough memory available where our program gets used within minutes :) The rest of the examples illustrate why such ideas could happen",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, have, had, in, make, is, they, did, the\n\nTEXT:\nWhen you look at this concept and learn more about how things work on your system than I do here , \"text\" actually means something similar…and also because so many languages make writing simpler when speaking from outside without having to repeat all their steps over again even after reading through some other document . You might think that's probably true too! But consider my own opinion regarding LATENT DIRECTIONS : both allow us access to very small amounts of code which take no time off per day compared either way - simply making sure there is enough memory available where our program gets used within minutes :) The rest of the examples illustrate why such ideas could happen as well (like adding an example page):",
+        "continuation_text": "as well (like adding an example page):",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 216,
+        "new_token_count": 10,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 38,
+        "word_count": 7,
+        "unique_word_count": 7,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "as",
+        "if",
+        "like",
+        "If",
+        "had",
+        "have",
+        "It",
+        "is",
+        "well"
+      ],
+      "output_text": "this can easily run to any location on your screen at all time... or even with some number of different ways that you could write something about those other nodes before they go out and make sure everything's working correctly across them! The basic idea here was for us to construct one vector based on what we knew from previous experiments such things being possible so there would be no need both sides competing against each others - I’d assume only once i got close enough… but how much? All our predictions do not depend on just where every node goes because most places still don't exist yet , nor does anything else affect their position among themselves except",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, as, if, like, If, had, have, It, is, well\n\nTEXT:\nas well (like adding an example page):",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, as, if, like, If, had, have, It, is, well\n\nTEXT:\nas well (like adding an example page): this can easily run to any location on your screen at all time... or even with some number of different ways that you could write something about those other nodes before they go out and make sure everything's working correctly across them! The basic idea here was for us to construct one vector based on what we knew from previous experiments such things being possible so there would be no need both sides competing against each others - I’d assume only once i got close enough… but how much? All our predictions do not depend on just where every node goes because most places still don't exist yet , nor does anything else affect their position among themselves except",
+        "continuation_text": "this can easily run to any location on your screen at all time... or even with some number of different ways that you could write something about those other nodes before they go out and make sure everything's working correctly across them! The basic idea here was for us to construct one vector based on what we knew from previous experiments such things being possible so there would be no need both sides competing against each others - I’d assume only once i got close enough… but how much? All our predictions do not depend on just where every node goes because most places still don't exist yet , nor does anything else affect their position among themselves except",
+        "input_token_count": 88,
+        "raw_input_token_count": 88,
+        "output_token_count": 216,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 671,
+        "word_count": 119,
+        "unique_word_count": 116,
+        "unique_word_ratio": 0.9747899159663865,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

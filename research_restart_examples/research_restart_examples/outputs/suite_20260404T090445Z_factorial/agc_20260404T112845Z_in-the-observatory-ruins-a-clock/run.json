@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1193,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 46,
+        "word_count": 8,
+        "unique_word_count": 8,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 22,
+        "word_count": 5,
+        "unique_word_count": 5,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 628,
+        "word_count": 100,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.99,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Besides",
+        "Moreover",
+        "Apparently",
+        "Having",
+        "Why",
+        "Although",
+        "Nearly",
+        "An",
+        "Another",
+        "Bell",
+        "Among",
+        "Furthermore"
+      ],
+      "output_text": "The time now appears right on your calendar...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The time now appears right on your calendar...",
+        "continuation_text": "The time now appears right on your calendar...",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 124,
+        "new_token_count": 10,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 46,
+        "word_count": 8,
+        "unique_word_count": 8,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        ").",
+        "angular",
+        "Sean",
+        "mitted",
+        "popular",
+        "narcissistic",
+        "perpetrator",
+        ".).",
+        "...)",
+        ".),",
+        "!).",
+        "taining"
+      ],
+      "output_text": "you can read it again!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: )., angular, Sean, mitted, popular, narcissistic, perpetrator, .)., ...), .),, !)., taining\n\nTEXT:\nThe time now appears right on your calendar...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: )., angular, Sean, mitted, popular, narcissistic, perpetrator, .)., ...), .),, !)., taining\n\nTEXT:\nThe time now appears right on your calendar... you can read it again!",
+        "continuation_text": "you can read it again!",
+        "input_token_count": 99,
+        "raw_input_token_count": 99,
+        "output_token_count": 106,
+        "new_token_count": 7,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 22,
+        "word_count": 5,
+        "unique_word_count": 5,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "you",
+        "your",
+        "You",
+        "ye",
+        "yourself",
+        "YOU",
+        "ya",
+        "copper",
+        "rather",
+        "Nice",
+        "Your",
+        "imilar"
+      ],
+      "output_text": "I love this idea that there is no natural structure for learning words and thus cannot be replaced with concrete examples using simple concepts like \"hello\" or \"to do.\" (We know what's right.) The term 'word' refers specifically at all kinds of moments; our grammar doesn't have any real meaning outside of comprehension so we could never see if they were used directly by humans because many people wouldn—even though most students don’t understand how verbs work when compared other languages). These types aren�t just grammatical constructs but actually represent new information on some underlying world events such up front",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: you, your, You, ye, yourself, YOU, ya, copper, rather, Nice, Your, imilar\n\nTEXT:\nyou can read it again!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: you, your, You, ye, yourself, YOU, ya, copper, rather, Nice, Your, imilar\n\nTEXT:\nyou can read it again! I love this idea that there is no natural structure for learning words and thus cannot be replaced with concrete examples using simple concepts like \"hello\" or \"to do.\" (We know what's right.) The term 'word' refers specifically at all kinds of moments; our grammar doesn't have any real meaning outside of comprehension so we could never see if they were used directly by humans because many people wouldn—even though most students don’t understand how verbs work when compared other languages). These types aren�t just grammatical constructs but actually represent new information on some underlying world events such up front",
+        "continuation_text": "I love this idea that there is no natural structure for learning words and thus cannot be replaced with concrete examples using simple concepts like \"hello\" or \"to do.\" (We know what's right.) The term 'word' refers specifically at all kinds of moments; our grammar doesn't have any real meaning outside of comprehension so we could never see if they were used directly by humans because many people wouldn—even though most students don’t understand how verbs work when compared other languages). These types aren�t just grammatical constructs but actually represent new information on some underlying world events such up front",
+        "input_token_count": 92,
+        "raw_input_token_count": 92,
+        "output_token_count": 212,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 628,
+        "word_count": 100,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.99,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

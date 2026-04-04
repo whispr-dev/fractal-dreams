@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1002,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 462,
+        "word_count": 72,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.9305555555555556,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 647,
+        "word_count": 109,
+        "unique_word_count": 109,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 463,
+        "word_count": 75,
+        "unique_word_count": 75,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 5,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        ",",
+        "have",
+        "was",
+        "made",
+        "It",
+        "if",
+        "the",
+        "."
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "continuation_text": "",
+        "input_token_count": 110,
+        "raw_input_token_count": 110,
+        "output_token_count": 111,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 462,
+        "word_count": 72,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.9305555555555556,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        ",",
+        "were",
+        "are",
+        "it",
+        ".",
+        "is",
+        "in",
+        "have",
+        "had",
+        "was",
+        "the",
+        "if"
+      ],
+      "output_text": "Thereafter each repeated repeating repeat failed to yield any output information until all other words that ever came up on this table (if there's one) became empty or even blank; at least for those who want nothing but immediate answers from their new maker they must begin writing away with everything else you know about them! The only way we can find out why isn't our memory running slow? Why doesn’t anyone read some history written before—and doní¹s he explain something like what happened back then when people left him alone because someone died watching as she couldn´t tell which ones will continue reading into her life forever without",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: ,, were, are, it, ., is, in, have, had, was, the, if\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: ,, were, are, it, ., is, in, have, had, was, the, if\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. Thereafter each repeated repeating repeat failed to yield any output information until all other words that ever came up on this table (if there's one) became empty or even blank; at least for those who want nothing but immediate answers from their new maker they must begin writing away with everything else you know about them! The only way we can find out why isn't our memory running slow? Why doesn’t anyone read some history written before—and doní¹s he explain something like what happened back then when people left him alone because someone died watching as she couldn´t tell which ones will continue reading into her life forever without",
+        "continuation_text": "Thereafter each repeated repeating repeat failed to yield any output information until all other words that ever came up on this table (if there's one) became empty or even blank; at least for those who want nothing but immediate answers from their new maker they must begin writing away with everything else you know about them! The only way we can find out why isn't our memory running slow? Why doesn’t anyone read some history written before—and doní¹s he explain something like what happened back then when people left him alone because someone died watching as she couldn´t tell which ones will continue reading into her life forever without",
+        "input_token_count": 189,
+        "raw_input_token_count": 189,
+        "output_token_count": 317,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 647,
+        "word_count": 109,
+        "unique_word_count": 109,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "if",
+        "are",
+        "have",
+        "they",
+        "had",
+        "did",
+        "didn",
+        "could",
+        "was",
+        "there"
+      ],
+      "output_text": "asking questions and finding yourself trying hard to keep things alive while others still aren�t getting through his endless struggle just saying \"I guess I should do whatever\" is not really true…just making sure everyone knows how bad my word always gets right again anyway after being unable answer another sentence based upon its contentions now than many years ago!! And here come two more scenarios where both outcomes get wrong...but so far none happens!!!!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, are, have, they, had, did, didn, could, was, there\n\nTEXT:\nThereafter each repeated repeating repeat failed to yield any output information until all other words that ever came up on this table (if there's one) became empty or even blank; at least for those who want nothing but immediate answers from their new maker they must begin writing away with everything else you know about them! The only way we can find out why isn't our memory running slow? Why doesn’t anyone read some history written before—and doní¹s he explain something like what happened back then when people left him alone because someone died watching as she couldn´t tell which ones will continue reading into her life forever without",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, are, have, they, had, did, didn, could, was, there\n\nTEXT:\nThereafter each repeated repeating repeat failed to yield any output information until all other words that ever came up on this table (if there's one) became empty or even blank; at least for those who want nothing but immediate answers from their new maker they must begin writing away with everything else you know about them! The only way we can find out why isn't our memory running slow? Why doesn’t anyone read some history written before—and doní¹s he explain something like what happened back then when people left him alone because someone died watching as she couldn´t tell which ones will continue reading into her life forever without asking questions and finding yourself trying hard to keep things alive while others still aren�t getting through his endless struggle just saying \"I guess I should do whatever\" is not really true…just making sure everyone knows how bad my word always gets right again anyway after being unable answer another sentence based upon its contentions now than many years ago!! And here come two more scenarios where both outcomes get wrong...but so far none happens!!!!",
+        "continuation_text": "asking questions and finding yourself trying hard to keep things alive while others still aren�t getting through his endless struggle just saying \"I guess I should do whatever\" is not really true…just making sure everyone knows how bad my word always gets right again anyway after being unable answer another sentence based upon its contentions now than many years ago!! And here come two more scenarios where both outcomes get wrong...but so far none happens!!!!",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 294,
+        "new_token_count": 87,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 463,
+        "word_count": 75,
+        "unique_word_count": 75,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "if",
+        "getting",
+        "are",
+        "didn",
+        "have",
+        "did",
+        "doing",
+        "had",
+        "don",
+        "does"
+      ],
+      "output_text": "!!!!!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, getting, are, didn, have, did, doing, had, don, does\n\nTEXT:\nasking questions and finding yourself trying hard to keep things alive while others still aren�t getting through his endless struggle just saying \"I guess I should do whatever\" is not really true…just making sure everyone knows how bad my word always gets right again anyway after being unable answer another sentence based upon its contentions now than many years ago!! And here come two more scenarios where both outcomes get wrong...but so far none happens!!!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, getting, are, didn, have, did, doing, had, don, does\n\nTEXT:\nasking questions and finding yourself trying hard to keep things alive while others still aren�t getting through his endless struggle just saying \"I guess I should do whatever\" is not really true…just making sure everyone knows how bad my word always gets right again anyway after being unable answer another sentence based upon its contentions now than many years ago!! And here come two more scenarios where both outcomes get wrong...but so far none happens!!!!!!!!!",
+        "continuation_text": "!!!!!",
+        "input_token_count": 165,
+        "raw_input_token_count": 165,
+        "output_token_count": 167,
+        "new_token_count": 2,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 5,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

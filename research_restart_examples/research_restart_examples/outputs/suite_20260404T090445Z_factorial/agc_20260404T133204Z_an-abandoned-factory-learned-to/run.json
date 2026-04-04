@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1361,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 421,
+        "word_count": 77,
+        "unique_word_count": 77,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 298,
+        "word_count": 47,
+        "unique_word_count": 46,
+        "unique_word_ratio": 0.9787234042553191,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 636,
+        "word_count": 99,
+        "unique_word_count": 91,
+        "unique_word_ratio": 0.9191919191919192,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Did",
+        "Can",
+        "Fortunately",
+        "Luckily",
+        "Does",
+        "Altern",
+        "An",
+        "Sure",
+        "Sometimes",
+        "Interestingly",
+        "Thankfully",
+        "Isn"
+      ],
+      "output_text": "If you can’t tell me why I am crying at this point – or what was wrong with my story? It is so simple we cannot ever stop talking about things that have been fixed before; even if they haven't happened yet… But there will be times when something new happens where one way/other might get better (or worse) rather than just another thing happening completely different for us all–and then again our future depends on both!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. If you can’t tell me why I am crying at this point – or what was wrong with my story? It is so simple we cannot ever stop talking about things that have been fixed before; even if they haven't happened yet… But there will be times when something new happens where one way/other might get better (or worse) rather than just another thing happening completely different for us all–and then again our future depends on both!",
+        "continuation_text": "If you can’t tell me why I am crying at this point – or what was wrong with my story? It is so simple we cannot ever stop talking about things that have been fixed before; even if they haven't happened yet… But there will be times when something new happens where one way/other might get better (or worse) rather than just another thing happening completely different for us all–and then again our future depends on both!",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 203,
+        "new_token_count": 92,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 421,
+        "word_count": 77,
+        "unique_word_count": 77,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "If",
+        "tablets",
+        "You",
+        "if",
+        "pretty",
+        "Here",
+        "Getting",
+        "see",
+        "Consider",
+        "Take",
+        "getting",
+        "There"
+      ],
+      "output_text": "All these concepts help give an example of how life works and it doesn´ll change much more radically without being able to write anything else entirely by means of methods which make them possible — but most importantly—without using any artificial constructions from other people's perspective :).",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: If, tablets, You, if, pretty, Here, Getting, see, Consider, Take, getting, There\n\nTEXT:\nIf you can’t tell me why I am crying at this point – or what was wrong with my story? It is so simple we cannot ever stop talking about things that have been fixed before; even if they haven't happened yet… But there will be times when something new happens where one way/other might get better (or worse) rather than just another thing happening completely different for us all–and then again our future depends on both!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: If, tablets, You, if, pretty, Here, Getting, see, Consider, Take, getting, There\n\nTEXT:\nIf you can’t tell me why I am crying at this point – or what was wrong with my story? It is so simple we cannot ever stop talking about things that have been fixed before; even if they haven't happened yet… But there will be times when something new happens where one way/other might get better (or worse) rather than just another thing happening completely different for us all–and then again our future depends on both! All these concepts help give an example of how life works and it doesn´ll change much more radically without being able to write anything else entirely by means of methods which make them possible — but most importantly—without using any artificial constructions from other people's perspective :).",
+        "continuation_text": "All these concepts help give an example of how life works and it doesn´ll change much more radically without being able to write anything else entirely by means of methods which make them possible — but most importantly—without using any artificial constructions from other people's perspective :).",
+        "input_token_count": 176,
+        "raw_input_token_count": 176,
+        "output_token_count": 231,
+        "new_token_count": 55,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 298,
+        "word_count": 47,
+        "unique_word_count": 46,
+        "unique_word_ratio": 0.9787234042553191,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "All",
+        "all",
+        "None",
+        "Every",
+        "none",
+        "Everybody",
+        "Everything",
+        "ALL",
+        "Everyone",
+        "And",
+        "Those",
+        "God"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: All, all, None, Every, none, Everybody, Everything, ALL, Everyone, And, Those, God\n\nTEXT:\nAll these concepts help give an example of how life works and it doesn´ll change much more radically without being able to write anything else entirely by means of methods which make them possible — but most importantly—without using any artificial constructions from other people's perspective :).",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: All, all, None, Every, none, Everybody, Everything, ALL, Everyone, And, Those, God\n\nTEXT:\nAll these concepts help give an example of how life works and it doesn´ll change much more radically without being able to write anything else entirely by means of methods which make them possible — but most importantly—without using any artificial constructions from other people's perspective :).",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: All, all, None, Every, none, Everybody, Everything, ALL, Everyone, And, Those, God\n\nTEXT:\nAll these concepts help give an example of how life works and it doesn´ll change much more radically without being able to write anything else entirely by means of methods which make them possible — but most importantly—without using any artificial constructions from other people's perspective :).",
+        "continuation_text": "",
+        "input_token_count": 139,
+        "raw_input_token_count": 139,
+        "output_token_count": 140,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 636,
+        "word_count": 99,
+        "unique_word_count": 91,
+        "unique_word_ratio": 0.9191919191919192,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

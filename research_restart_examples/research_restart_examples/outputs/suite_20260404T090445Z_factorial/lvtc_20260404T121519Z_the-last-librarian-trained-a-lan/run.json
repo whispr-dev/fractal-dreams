@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1254,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 738,
+        "word_count": 120,
+        "unique_word_count": 118,
+        "unique_word_ratio": 0.9833333333333333,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 642,
+        "word_count": 107,
+        "unique_word_count": 103,
+        "unique_word_ratio": 0.9626168224299065,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 432,
+        "word_count": 57,
+        "unique_word_count": 57,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 830,
+        "word_count": 116,
+        "unique_word_count": 115,
+        "unique_word_ratio": 0.9913793103448276,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        "was",
+        "have",
+        "the",
+        "is",
+        "The",
+        "has",
+        "did",
+        "that"
+      ],
+      "output_text": "In their book \"How to Do It,\" they described how this information could possibly explain writing an unspoken word for something if you put one line into each sentence with zero syllables or three letters at random (i) while giving them two choices before picking up any words from your brain until after reading those lines first; then using all four variables as input every time someone finishes editing again without having just repeated sentences throughout more than 3 minutes . By keeping track of which ones appear right when talking about what happens within paragraphs alone, researchers may discover ways to build new knowledge through simple repetition exercises instead of long repeats -- usually done only once during several",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, was, have, the, is, The, has, did, that\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, was, have, the, is, The, has, did, that\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. In their book \"How to Do It,\" they described how this information could possibly explain writing an unspoken word for something if you put one line into each sentence with zero syllables or three letters at random (i) while giving them two choices before picking up any words from your brain until after reading those lines first; then using all four variables as input every time someone finishes editing again without having just repeated sentences throughout more than 3 minutes . By keeping track of which ones appear right when talking about what happens within paragraphs alone, researchers may discover ways to build new knowledge through simple repetition exercises instead of long repeats -- usually done only once during several",
+        "continuation_text": "In their book \"How to Do It,\" they described how this information could possibly explain writing an unspoken word for something if you put one line into each sentence with zero syllables or three letters at random (i) while giving them two choices before picking up any words from your brain until after reading those lines first; then using all four variables as input every time someone finishes editing again without having just repeated sentences throughout more than 3 minutes . By keeping track of which ones appear right when talking about what happens within paragraphs alone, researchers may discover ways to build new knowledge through simple repetition exercises instead of long repeats -- usually done only once during several",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 230,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 738,
+        "word_count": 120,
+        "unique_word_count": 118,
+        "unique_word_ratio": 0.9833333333333333,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "are",
+        "when",
+        "they",
+        "with",
+        "in",
+        "had",
+        "have",
+        "after",
+        "If"
+      ],
+      "output_text": "sessions per week on average-- that will lead people to better strategies and help keep our understanding alive even though we still don't know where exactly some things went wrong.\"\n\"Why Don’t You Want To Talk About How We Write?\"\nWhat is important to remember? There aren “no rules — no means to create shortcuts like I was saying here! But there seems to exist many great techniques available so far along – not yet invented—that can give us reason enough insight but maybe too little research required further exploration [!]– since sometimes very limited data sets do much better together than previously thought possible.[6] And because",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, when, they, with, in, had, have, after, If\n\nTEXT:\nIn their book \"How to Do It,\" they described how this information could possibly explain writing an unspoken word for something if you put one line into each sentence with zero syllables or three letters at random (i) while giving them two choices before picking up any words from your brain until after reading those lines first; then using all four variables as input every time someone finishes editing again without having just repeated sentences throughout more than 3 minutes . By keeping track of which ones appear right when talking about what happens within paragraphs alone, researchers may discover ways to build new knowledge through simple repetition exercises instead of long repeats -- usually done only once during several",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, when, they, with, in, had, have, after, If\n\nTEXT:\nIn their book \"How to Do It,\" they described how this information could possibly explain writing an unspoken word for something if you put one line into each sentence with zero syllables or three letters at random (i) while giving them two choices before picking up any words from your brain until after reading those lines first; then using all four variables as input every time someone finishes editing again without having just repeated sentences throughout more than 3 minutes . By keeping track of which ones appear right when talking about what happens within paragraphs alone, researchers may discover ways to build new knowledge through simple repetition exercises instead of long repeats -- usually done only once during several sessions per week on average-- that will lead people to better strategies and help keep our understanding alive even though we still don't know where exactly some things went wrong.\"\n\"Why Don’t You Want To Talk About How We Write?\"\nWhat is important to remember? There aren “no rules — no means to create shortcuts like I was saying here! But there seems to exist many great techniques available so far along – not yet invented—that can give us reason enough insight but maybe too little research required further exploration [!]– since sometimes very limited data sets do much better together than previously thought possible.[6] And because",
+        "continuation_text": "sessions per week on average-- that will lead people to better strategies and help keep our understanding alive even though we still don't know where exactly some things went wrong.\"\n\"Why Don’t You Want To Talk About How We Write?\"\nWhat is important to remember? There aren “no rules — no means to create shortcuts like I was saying here! But there seems to exist many great techniques available so far along – not yet invented—that can give us reason enough insight but maybe too little research required further exploration [!]– since sometimes very limited data sets do much better together than previously thought possible.[6] And because",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 642,
+        "word_count": 107,
+        "unique_word_count": 103,
+        "unique_word_ratio": 0.9626168224299065,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "are",
+        "it",
+        "have",
+        "if",
+        "had",
+        "If",
+        "did",
+        "It",
+        "didn",
+        "don",
+        "could"
+      ],
+      "output_text": "such studies rely on multiple factors (e.g., cognitive abilities), they need to get into more detail about how concepts work for you all from one point forward or just two points away.\"[7][8]\"A recent study found an estimated 75% accuracy rate with three examples based upon five basic constructs used at least once during this time period:[9](http://www3.journals.org/doi.../10.(2)2596[10], http:/i.paul.edu/authors/a_brief(17):1-5",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, it, have, if, had, If, did, It, didn, don, could\n\nTEXT:\nsessions per week on average-- that will lead people to better strategies and help keep our understanding alive even though we still don't know where exactly some things went wrong.\"\n\"Why Don’t You Want To Talk About How We Write?\"\nWhat is important to remember? There aren “no rules — no means to create shortcuts like I was saying here! But there seems to exist many great techniques available so far along – not yet invented—that can give us reason enough insight but maybe too little research required further exploration [!]– since sometimes very limited data sets do much better together than previously thought possible.[6] And because",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, it, have, if, had, If, did, It, didn, don, could\n\nTEXT:\nsessions per week on average-- that will lead people to better strategies and help keep our understanding alive even though we still don't know where exactly some things went wrong.\"\n\"Why Don’t You Want To Talk About How We Write?\"\nWhat is important to remember? There aren “no rules — no means to create shortcuts like I was saying here! But there seems to exist many great techniques available so far along – not yet invented—that can give us reason enough insight but maybe too little research required further exploration [!]– since sometimes very limited data sets do much better together than previously thought possible.[6] And because such studies rely on multiple factors (e.g., cognitive abilities), they need to get into more detail about how concepts work for you all from one point forward or just two points away.\"[7][8]\"A recent study found an estimated 75% accuracy rate with three examples based upon five basic constructs used at least once during this time period:[9](http://www3.journals.org/doi.../10.(2)2596[10], http:/i.paul.edu/authors/a_brief(17):1-5",
+        "continuation_text": "such studies rely on multiple factors (e.g., cognitive abilities), they need to get into more detail about how concepts work for you all from one point forward or just two points away.\"[7][8]\"A recent study found an estimated 75% accuracy rate with three examples based upon five basic constructs used at least once during this time period:[9](http://www3.journals.org/doi.../10.(2)2596[10], http:/i.paul.edu/authors/a_brief(17):1-5",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 323,
+        "new_token_count": 115,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 432,
+        "word_count": 57,
+        "unique_word_count": 57,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "are",
+        "if",
+        "it",
+        "had",
+        "It",
+        "have",
+        "If",
+        "10",
+        "7",
+        "6",
+        "5"
+      ],
+      "output_text": "The ability and degree thereof of convergence can also affect outcomes that could occur when variables become intertwined.[11] For example here we use LBT as being consistent across different types of experiments but without any differences between each other; which is another limitation because there may not always seem both possible scenarios simultaneously within some particular case under consideration,[12]. In many cases though no such correlation exists yet even after several comparisons due only slightly over 50%. This result provides evidence concerning potential interactions among people who do perform similar tasks themselves including working through various social interaction methods rather than simply using separate processes altogether – see \"Mapping Across Groups\". Another important issue involved having",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, if, it, had, It, have, If, 10, 7, 6, 5\n\nTEXT:\nsuch studies rely on multiple factors (e.g., cognitive abilities), they need to get into more detail about how concepts work for you all from one point forward or just two points away.\"[7][8]\"A recent study found an estimated 75% accuracy rate with three examples based upon five basic constructs used at least once during this time period:[9](http://www3.journals.org/doi.../10.(2)2596[10], http:/i.paul.edu/authors/a_brief(17):1-5",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, if, it, had, It, have, If, 10, 7, 6, 5\n\nTEXT:\nsuch studies rely on multiple factors (e.g., cognitive abilities), they need to get into more detail about how concepts work for you all from one point forward or just two points away.\"[7][8]\"A recent study found an estimated 75% accuracy rate with three examples based upon five basic constructs used at least once during this time period:[9](http://www3.journals.org/doi.../10.(2)2596[10], http:/i.paul.edu/authors/a_brief(17):1-5 The ability and degree thereof of convergence can also affect outcomes that could occur when variables become intertwined.[11] For example here we use LBT as being consistent across different types of experiments but without any differences between each other; which is another limitation because there may not always seem both possible scenarios simultaneously within some particular case under consideration,[12]. In many cases though no such correlation exists yet even after several comparisons due only slightly over 50%. This result provides evidence concerning potential interactions among people who do perform similar tasks themselves including working through various social interaction methods rather than simply using separate processes altogether – see \"Mapping Across Groups\". Another important issue involved having",
+        "continuation_text": "The ability and degree thereof of convergence can also affect outcomes that could occur when variables become intertwined.[11] For example here we use LBT as being consistent across different types of experiments but without any differences between each other; which is another limitation because there may not always seem both possible scenarios simultaneously within some particular case under consideration,[12]. In many cases though no such correlation exists yet even after several comparisons due only slightly over 50%. This result provides evidence concerning potential interactions among people who do perform similar tasks themselves including working through various social interaction methods rather than simply using separate processes altogether – see \"Mapping Across Groups\". Another important issue involved having",
+        "input_token_count": 193,
+        "raw_input_token_count": 193,
+        "output_token_count": 321,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 830,
+        "word_count": 116,
+        "unique_word_count": 115,
+        "unique_word_ratio": 0.9913793103448276,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

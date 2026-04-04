@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1417,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 542,
+        "word_count": 78,
+        "unique_word_count": 73,
+        "unique_word_ratio": 0.9358974358974359,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 163,
+        "word_count": 18,
+        "unique_word_count": 18,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 44,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "sick",
+        ".metadata",
+        "metadata",
+        "余名",
+        "نه",
+        "(/",
+        "special",
+        "ig",
+        "-rich",
+        "高品质",
+        "GT",
+        "intensive"
+      ],
+      "output_text": "The next recursive transformation would involve extracting meaningful phrases that represent themes or ideas from the original text. Here's how it could progress:\n\n1. **\"Abandoned factory\"** can be transformed into \"废弃的工厂\", which captures an element related to destruction and neglect.\n2. **\"Learned to narrate its own decay\"** becomes \"学会了如何讲述自己的衰败\". This is about personal narrative reflection rather than literal content change.\n3. **\"But every retelling made it sound less like rust and more like prayer.\"** transforms this to \"但每一重演绎都让它的",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nThe next recursive transformation would involve extracting meaningful phrases that represent themes or ideas from the original text. Here's how it could progress:\n\n1. **\"Abandoned factory\"** can be transformed into \"废弃的工厂\", which captures an element related to destruction and neglect.\n2. **\"Learned to narrate its own decay\"** becomes \"学会了如何讲述自己的衰败\". This is about personal narrative reflection rather than literal content change.\n3. **\"But every retelling made it sound less like rust and more like prayer.\"** transforms this to \"但每一重演绎都让它的",
+        "continuation_text": "The next recursive transformation would involve extracting meaningful phrases that represent themes or ideas from the original text. Here's how it could progress:\n\n1. **\"Abandoned factory\"** can be transformed into \"废弃的工厂\", which captures an element related to destruction and neglect.\n2. **\"Learned to narrate its own decay\"** becomes \"学会了如何讲述自己的衰败\". This is about personal narrative reflection rather than literal content change.\n3. **\"But every retelling made it sound less like rust and more like prayer.\"** transforms this to \"但每一重演绎都让它的",
+        "input_token_count": 120,
+        "raw_input_token_count": 120,
+        "output_token_count": 240,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 542,
+        "word_count": 78,
+        "unique_word_count": 73,
+        "unique_word_ratio": 0.9358974358974359,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "сов",
+        "Play",
+        "홀",
+        "comput",
+        "遍",
+        "羊",
+        "ngày",
+        "ден",
+        "HEEL",
+        "残",
+        "heel",
+        ".PL"
+      ],
+      "output_text": "sound好像不像锈，反而像祈祷了。这表达了一种内在的情感或宗教感觉。\n\nThis final form incorporates elements of metaphorical meaning while retaining some specific textual reference for each phrase.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: сов, Play, 홀, comput, 遍, 羊, ngày, ден, HEEL, 残, heel, .PL\n\nTEXT:\nThe next recursive transformation would involve extracting meaningful phrases that represent themes or ideas from the original text. Here's how it could progress:\n\n1. **\"Abandoned factory\"** can be transformed into \"废弃的工厂\", which captures an element related to destruction and neglect.\n2. **\"Learned to narrate its own decay\"** becomes \"学会了如何讲述自己的衰败\". This is about personal narrative reflection rather than literal content change.\n3. **\"But every retelling made it sound less like rust and more like prayer.\"** transforms this to \"但每一重演绎都让它的<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: сов, Play, 홀, comput, 遍, 羊, ngày, ден, HEEL, 残, heel, .PL\n\nTEXT:\nThe next recursive transformation would involve extracting meaningful phrases that represent themes or ideas from the original text. Here's how it could progress:\n\n1. **\"Abandoned factory\"** can be transformed into \"废弃的工厂\", which captures an element related to destruction and neglect.\n2. **\"Learned to narrate its own decay\"** becomes \"学会了如何讲述自己的衰败\". This is about personal narrative reflection rather than literal content change.\n3. **\"But every retelling made it sound less like rust and more like prayer.\"** transforms this to \"但每一重演绎都让它的\nassistant\nsound好像不像锈，反而像祈祷了。这表达了一种内在的情感或宗教感觉。\n\nThis final form incorporates elements of metaphorical meaning while retaining some specific textual reference for each phrase.",
+        "continuation_text": "sound好像不像锈，反而像祈祷了。这表达了一种内在的情感或宗教感觉。\n\nThis final form incorporates elements of metaphorical meaning while retaining some specific textual reference for each phrase.",
+        "input_token_count": 217,
+        "raw_input_token_count": 217,
+        "output_token_count": 257,
+        "new_token_count": 40,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 163,
+        "word_count": 18,
+        "unique_word_count": 18,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "internal",
+        "ience",
+        "INTERNAL",
+        ".core",
+        "且",
+        "rapped",
+        "«",
+        "《",
+        "ishop",
+        "imeter",
+        "Ray",
+        "itre"
+      ],
+      "output_text": "内燃机似乎不像是铁质的，而是为了祷告而锻造的。这种内在情感或宗教的感觉得到了进一步阐述。",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: internal, ience, INTERNAL, .core, 且, rapped, «, 《, ishop, imeter, Ray, itre\n\nTEXT:\nsound好像不像锈，反而像祈祷了。这表达了一种内在的情感或宗教感觉。\n\nThis final form incorporates elements of metaphorical meaning while retaining some specific textual reference for each phrase.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: internal, ience, INTERNAL, .core, 且, rapped, «, 《, ishop, imeter, Ray, itre\n\nTEXT:\nsound好像不像锈，反而像祈祷了。这表达了一种内在的情感或宗教感觉。\n\nThis final form incorporates elements of metaphorical meaning while retaining some specific textual reference for each phrase.\nassistant\n内燃机似乎不像是铁质的，而是为了祷告而锻造的。这种内在情感或宗教的感觉得到了进一步阐述。",
+        "continuation_text": "内燃机似乎不像是铁质的，而是为了祷告而锻造的。这种内在情感或宗教的感觉得到了进一步阐述。",
+        "input_token_count": 135,
+        "raw_input_token_count": 135,
+        "output_token_count": 164,
+        "new_token_count": 29,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 44,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

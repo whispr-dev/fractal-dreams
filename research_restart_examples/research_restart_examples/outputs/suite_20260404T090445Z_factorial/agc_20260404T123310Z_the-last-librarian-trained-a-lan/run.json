@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1277,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 605,
+        "word_count": 102,
+        "unique_word_count": 102,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 933,
+        "word_count": 154,
+        "unique_word_count": 148,
+        "unique_word_ratio": 0.961038961038961,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1269,
+        "word_count": 206,
+        "unique_word_count": 160,
+        "unique_word_ratio": 0.7766990291262136,
+        "repeated_bigram_count": 38
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "mentor",
+        "Coach",
+        "Aunt",
+        "forge",
+        "mentors",
+        "Strongh",
+        "Colossus",
+        "pioneered",
+        "Wyatt",
+        "alliances",
+        "friendships",
+        "organise"
+      ],
+      "output_text": "When it emerged this did not make sense; if they could be used for historical purposes (for example), then any data collected would become an argument or proof . The Librarian had already been taught over at least one literary journal - which he later abandoned because his training was insufficient.[3] However, when I saw him doing work from scratch using my own techniques we realized how much code needed more than just words but also thought about what might have happened with them being written like these:[5][6]. So far no other languages has offered similar examples so use your vocabulary alone!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mentor, Coach, Aunt, forge, mentors, Strongh, Colossus, pioneered, Wyatt, alliances, friendships, organise\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mentor, Coach, Aunt, forge, mentors, Strongh, Colossus, pioneered, Wyatt, alliances, friendships, organise\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. When it emerged this did not make sense; if they could be used for historical purposes (for example), then any data collected would become an argument or proof . The Librarian had already been taught over at least one literary journal - which he later abandoned because his training was insufficient.[3] However, when I saw him doing work from scratch using my own techniques we realized how much code needed more than just words but also thought about what might have happened with them being written like these:[5][6]. So far no other languages has offered similar examples so use your vocabulary alone!",
+        "continuation_text": "When it emerged this did not make sense; if they could be used for historical purposes (for example), then any data collected would become an argument or proof . The Librarian had already been taught over at least one literary journal - which he later abandoned because his training was insufficient.[3] However, when I saw him doing work from scratch using my own techniques we realized how much code needed more than just words but also thought about what might have happened with them being written like these:[5][6]. So far no other languages has offered similar examples so use your vocabulary alone!",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 225,
+        "new_token_count": 117,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 605,
+        "word_count": 102,
+        "unique_word_count": 102,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "doesn",
+        "aren",
+        "don",
+        "Come",
+        "didn",
+        "Those",
+        "Isn",
+        "someone",
+        "Don",
+        "makes",
+        "hasn",
+        "isn"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: doesn, aren, don, Come, didn, Those, Isn, someone, Don, makes, hasn, isn\n\nTEXT:\nWhen it emerged this did not make sense; if they could be used for historical purposes (for example), then any data collected would become an argument or proof . The Librarian had already been taught over at least one literary journal - which he later abandoned because his training was insufficient.[3] However, when I saw him doing work from scratch using my own techniques we realized how much code needed more than just words but also thought about what might have happened with them being written like these:[5][6]. So far no other languages has offered similar examples so use your vocabulary alone!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: doesn, aren, don, Come, didn, Those, Isn, someone, Don, makes, hasn, isn\n\nTEXT:\nWhen it emerged this did not make sense; if they could be used for historical purposes (for example), then any data collected would become an argument or proof . The Librarian had already been taught over at least one literary journal - which he later abandoned because his training was insufficient.[3] However, when I saw him doing work from scratch using my own techniques we realized how much code needed more than just words but also thought about what might have happened with them being written like these:[5][6]. So far no other languages has offered similar examples so use your vocabulary alone!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: doesn, aren, don, Come, didn, Those, Isn, someone, Don, makes, hasn, isn\n\nTEXT:\nWhen it emerged this did not make sense; if they could be used for historical purposes (for example), then any data collected would become an argument or proof . The Librarian had already been taught over at least one literary journal - which he later abandoned because his training was insufficient.[3] However, when I saw him doing work from scratch using my own techniques we realized how much code needed more than just words but also thought about what might have happened with them being written like these:[5][6]. So far no other languages has offered similar examples so use your vocabulary alone!",
+        "continuation_text": "",
+        "input_token_count": 201,
+        "raw_input_token_count": 201,
+        "output_token_count": 202,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 933,
+        "word_count": 154,
+        "unique_word_count": 148,
+        "unique_word_ratio": 0.961038961038961,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "While",
+        "Many",
+        "Some",
+        "According",
+        "Saying",
+        "With",
+        "Anyone",
+        "You",
+        "Despite",
+        "saying",
+        "We",
+        "To"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: While, Many, Some, According, Saying, With, Anyone, You, Despite, saying, We, To\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: doesn, aren, don, Come, didn, Those, Isn, someone, Don, makes, hasn, isn\n\nTEXT:\nWhen it emerged this did not make sense; if they could be used for historical purposes (for example), then any data collected would become an argument or proof . The Librarian had already been taught over at least one literary journal - which he later abandoned because his training was insufficient.[3] However, when I saw him doing work from scratch using my own techniques we realized how much code needed more than just words but also thought about what might have happened with them being written like these:[5][6]. So far no other languages has offered similar examples so use your vocabulary alone!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: While, Many, Some, According, Saying, With, Anyone, You, Despite, saying, We, To\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: doesn, aren, don, Come, didn, Those, Isn, someone, Don, makes, hasn, isn\n\nTEXT:\nWhen it emerged this did not make sense; if they could be used for historical purposes (for example), then any data collected would become an argument or proof . The Librarian had already been taught over at least one literary journal - which he later abandoned because his training was insufficient.[3] However, when I saw him doing work from scratch using my own techniques we realized how much code needed more than just words but also thought about what might have happened with them being written like these:[5][6]. So far no other languages has offered similar examples so use your vocabulary alone!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: While, Many, Some, According, Saying, With, Anyone, You, Despite, saying, We, To\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: doesn, aren, don, Come, didn, Those, Isn, someone, Don, makes, hasn, isn\n\nTEXT:\nWhen it emerged this did not make sense; if they could be used for historical purposes (for example), then any data collected would become an argument or proof . The Librarian had already been taught over at least one literary journal - which he later abandoned because his training was insufficient.[3] However, when I saw him doing work from scratch using my own techniques we realized how much code needed more than just words but also thought about what might have happened with them being written like these:[5][6]. So far no other languages has offered similar examples so use your vocabulary alone!",
+        "continuation_text": "",
+        "input_token_count": 286,
+        "raw_input_token_count": 286,
+        "output_token_count": 287,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1269,
+        "word_count": 206,
+        "unique_word_count": 160,
+        "unique_word_ratio": 0.7766990291262136,
+        "repeated_bigram_count": 38
+      }
+    }
+  ]
+}

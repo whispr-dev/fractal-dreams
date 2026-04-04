@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1398,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 204,
+        "word_count": 38,
+        "unique_word_count": 38,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 276,
+        "word_count": 45,
+        "unique_word_count": 45,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 582,
+        "word_count": 93,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.967741935483871,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 220,
+        "word_count": 37,
+        "unique_word_count": 36,
+        "unique_word_ratio": 0.972972972972973,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "had",
+        "are",
+        "have",
+        "It",
+        "make",
+        "if",
+        "made",
+        "was",
+        "to",
+        "makes"
+      ],
+      "output_text": "As long as all this is said and done correctly, I think that only our descendants will ever know what has changed since we first heard about Rust on 1st August 2015 (if anyone else knows anything useful).",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. As long as all this is said and done correctly, I think that only our descendants will ever know what has changed since we first heard about Rust on 1st August 2015 (if anyone else knows anything useful).",
+        "continuation_text": "As long as all this is said and done correctly, I think that only our descendants will ever know what has changed since we first heard about Rust on 1st August 2015 (if anyone else knows anything useful).",
+        "input_token_count": 105,
+        "raw_input_token_count": 105,
+        "output_token_count": 148,
+        "new_token_count": 43,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 204,
+        "word_count": 38,
+        "unique_word_count": 38,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "is",
+        "if",
+        "have",
+        "are",
+        "were",
+        "has",
+        "had",
+        "was",
+        "we",
+        "they",
+        "did"
+      ],
+      "output_text": "As for \"layers\", maybe you should consider writing some code to describe their specific behavior so things won't get confused when using them like an expression or object_at(1) . In addition though, most other languages such may allow multiple words at once which makes sense!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, is, if, have, are, were, has, had, was, we, they, did\n\nTEXT:\nAs long as all this is said and done correctly, I think that only our descendants will ever know what has changed since we first heard about Rust on 1st August 2015 (if anyone else knows anything useful).",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, is, if, have, are, were, has, had, was, we, they, did\n\nTEXT:\nAs long as all this is said and done correctly, I think that only our descendants will ever know what has changed since we first heard about Rust on 1st August 2015 (if anyone else knows anything useful). As for \"layers\", maybe you should consider writing some code to describe their specific behavior so things won't get confused when using them like an expression or object_at(1) . In addition though, most other languages such may allow multiple words at once which makes sense!",
+        "continuation_text": "As for \"layers\", maybe you should consider writing some code to describe their specific behavior so things won't get confused when using them like an expression or object_at(1) . In addition though, most other languages such may allow multiple words at once which makes sense!",
+        "input_token_count": 121,
+        "raw_input_token_count": 121,
+        "output_token_count": 178,
+        "new_token_count": 57,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 276,
+        "word_count": 45,
+        "unique_word_count": 45,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "are",
+        "were",
+        "have",
+        "is",
+        "had",
+        "they",
+        "make",
+        "If",
+        "in",
+        "was"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, is, had, they, make, If, in, was\n\nTEXT:\nAs for \"layers\", maybe you should consider writing some code to describe their specific behavior so things won't get confused when using them like an expression or object_at(1) . In addition though, most other languages such may allow multiple words at once which makes sense!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, is, had, they, make, If, in, was\n\nTEXT:\nAs for \"layers\", maybe you should consider writing some code to describe their specific behavior so things won't get confused when using them like an expression or object_at(1) . In addition though, most other languages such may allow multiple words at once which makes sense!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, is, had, they, make, If, in, was\n\nTEXT:\nAs for \"layers\", maybe you should consider writing some code to describe their specific behavior so things won't get confused when using them like an expression or object_at(1) . In addition though, most other languages such may allow multiple words at once which makes sense!",
+        "continuation_text": "",
+        "input_token_count": 135,
+        "raw_input_token_count": 135,
+        "output_token_count": 136,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 582,
+        "word_count": 93,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.967741935483871,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "are",
+        "were",
+        "it",
+        "if",
+        ",",
+        "is",
+        "have",
+        "in",
+        "had",
+        "was",
+        "the",
+        "has"
+      ],
+      "output_text": "You can also check out my new book on this topic and learn more about how we use conditional statements (including nested expressions), as well as examples that I've found useful while working with Ruby's semantics here;",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, were, it, if, ,, is, have, in, had, was, the, has\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, is, had, they, make, If, in, was\n\nTEXT:\nAs for \"layers\", maybe you should consider writing some code to describe their specific behavior so things won't get confused when using them like an expression or object_at(1) . In addition though, most other languages such may allow multiple words at once which makes sense!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, were, it, if, ,, is, have, in, had, was, the, has\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, is, had, they, make, If, in, was\n\nTEXT:\nAs for \"layers\", maybe you should consider writing some code to describe their specific behavior so things won't get confused when using them like an expression or object_at(1) . In addition though, most other languages such may allow multiple words at once which makes sense! You can also check out my new book on this topic and learn more about how we use conditional statements (including nested expressions), as well as examples that I've found useful while working with Ruby's semantics here;",
+        "continuation_text": "You can also check out my new book on this topic and learn more about how we use conditional statements (including nested expressions), as well as examples that I've found useful while working with Ruby's semantics here;",
+        "input_token_count": 214,
+        "raw_input_token_count": 214,
+        "output_token_count": 257,
+        "new_token_count": 43,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 220,
+        "word_count": 37,
+        "unique_word_count": 36,
+        "unique_word_ratio": 0.972972972972973,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

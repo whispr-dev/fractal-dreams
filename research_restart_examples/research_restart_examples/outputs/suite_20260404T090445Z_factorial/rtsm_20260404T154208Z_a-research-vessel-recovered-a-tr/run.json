@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1540
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 627,
+        "word_count": 101,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.9801980198019802,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 854,
+        "word_count": 143,
+        "unique_word_count": 138,
+        "unique_word_ratio": 0.965034965034965,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1415,
+        "word_count": 223,
+        "unique_word_count": 215,
+        "unique_word_ratio": 0.9641255605381166,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1990,
+        "word_count": 299,
+        "unique_word_count": 289,
+        "unique_word_ratio": 0.9665551839464883,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 4134,
+        "word_count": 620,
+        "unique_word_count": 308,
+        "unique_word_ratio": 0.4967741935483871,
+        "repeated_bigram_count": 298
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+      "delta_text": "The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[",
+        "continuation_text": "The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[",
+        "input_token_count": 57,
+        "raw_input_token_count": 57,
+        "output_token_count": 153,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 627,
+        "word_count": 101,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.9801980198019802,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[",
+      "delta_text": "1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4]",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4]",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4]",
+        "continuation_text": "1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4]",
+        "input_token_count": 153,
+        "raw_input_token_count": 153,
+        "output_token_count": 205,
+        "new_token_count": 52,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 854,
+        "word_count": 143,
+        "unique_word_count": 138,
+        "unique_word_ratio": 0.965034965034965,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4]",
+      "delta_text": "so far.\"[1]. As well \"a team of highly trained scientists\", one can imagine why something must have happened between 2008 and 2012 after seeing images on multiple occasions showing several similar vessels appearing within minutes - probably due both to an explosion causing massive damage throughout nearby areas,[3](note 15). That leaves us without very precise understanding just where these experiments went wrong...perhaps because there isn't really anything anyone else's done around them outside government buildings....it depends upon someone saying yes",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4] so far.\"[1]. As well \"a team of highly trained scientists\", one can imagine why something must have happened between 2008 and 2012 after seeing images on multiple occasions showing several similar vessels appearing within minutes - probably due both to an explosion causing massive damage throughout nearby areas,[3](note 15). That leaves us without very precise understanding just where these experiments went wrong...perhaps because there isn't really anything anyone else's done around them outside government buildings....it depends upon someone saying yes",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4]",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4] so far.\"[1]. As well \"a team of highly trained scientists\", one can imagine why something must have happened between 2008 and 2012 after seeing images on multiple occasions showing several similar vessels appearing within minutes - probably due both to an explosion causing massive damage throughout nearby areas,[3](note 15). That leaves us without very precise understanding just where these experiments went wrong...perhaps because there isn't really anything anyone else's done around them outside government buildings....it depends upon someone saying yes",
+        "continuation_text": "so far.\"[1]. As well \"a team of highly trained scientists\", one can imagine why something must have happened between 2008 and 2012 after seeing images on multiple occasions showing several similar vessels appearing within minutes - probably due both to an explosion causing massive damage throughout nearby areas,[3](note 15). That leaves us without very precise understanding just where these experiments went wrong...perhaps because there isn't really anything anyone else's done around them outside government buildings....it depends upon someone saying yes",
+        "input_token_count": 204,
+        "raw_input_token_count": 204,
+        "output_token_count": 300,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1415,
+        "word_count": 223,
+        "unique_word_count": 215,
+        "unique_word_ratio": 0.9641255605381166,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4] so far.\"[1]. As well \"a team of highly trained scientists\", one can imagine why something must have happened between 2008 and 2012 after seeing images on multiple occasions showing several similar vessels appearing within minutes - probably due both to an explosion causing massive damage throughout nearby areas,[3](note 15). That leaves us without very precise understanding just where these experiments went wrong...perhaps because there isn't really anything anyone else's done around them outside government buildings....it depends upon someone saying yes",
+      "delta_text": "! Perhaps my interest goes beyond simply having people watch television programs through remote control technology; I believe many others will make use of radio waves instead; perhaps most importantly maybe human beings using bioengineering technologies don´t understand advanced chemistry while also developing artificial intelligence products--but nevertheless keep asking questions whether we'd love to hear answers directly above everything unless our answer becomes known right away either way.(see e.g., ‪The First Generation Reveals Massive Evolutionary Biology[/b]).",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4] so far.\"[1]. As well \"a team of highly trained scientists\", one can imagine why something must have happened between 2008 and 2012 after seeing images on multiple occasions showing several similar vessels appearing within minutes - probably due both to an explosion causing massive damage throughout nearby areas,[3](note 15). That leaves us without very precise understanding just where these experiments went wrong...perhaps because there isn't really anything anyone else's done around them outside government buildings....it depends upon someone saying yes ! Perhaps my interest goes beyond simply having people watch television programs through remote control technology; I believe many others will make use of radio waves instead; perhaps most importantly maybe human beings using bioengineering technologies don´t understand advanced chemistry while also developing artificial intelligence products--but nevertheless keep asking questions whether we'd love to hear answers directly above everything unless our answer becomes known right away either way.(see e.g., ‪The First Generation Reveals Massive Evolutionary Biology[/b]).",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4] so far.\"[1]. As well \"a team of highly trained scientists\", one can imagine why something must have happened between 2008 and 2012 after seeing images on multiple occasions showing several similar vessels appearing within minutes - probably due both to an explosion causing massive damage throughout nearby areas,[3](note 15). That leaves us without very precise understanding just where these experiments went wrong...perhaps because there isn't really anything anyone else's done around them outside government buildings....it depends upon someone saying yes",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4] so far.\"[1]. As well \"a team of highly trained scientists\", one can imagine why something must have happened between 2008 and 2012 after seeing images on multiple occasions showing several similar vessels appearing within minutes - probably due both to an explosion causing massive damage throughout nearby areas,[3](note 15). That leaves us without very precise understanding just where these experiments went wrong...perhaps because there isn't really anything anyone else's done around them outside government buildings....it depends upon someone saying yes! Perhaps my interest goes beyond simply having people watch television programs through remote control technology; I believe many others will make use of radio waves instead; perhaps most importantly maybe human beings using bioengineering technologies don´t understand advanced chemistry while also developing artificial intelligence products--but nevertheless keep asking questions whether we'd love to hear answers directly above everything unless our answer becomes known right away either way.(see e.g., ‪The First Generation Reveals Massive Evolutionary Biology[/b]).",
+        "continuation_text": "! Perhaps my interest goes beyond simply having people watch television programs through remote control technology; I believe many others will make use of radio waves instead; perhaps most importantly maybe human beings using bioengineering technologies don´t understand advanced chemistry while also developing artificial intelligence products--but nevertheless keep asking questions whether we'd love to hear answers directly above everything unless our answer becomes known right away either way.(see e.g., ‪The First Generation Reveals Massive Evolutionary Biology[/b]).",
+        "input_token_count": 300,
+        "raw_input_token_count": 300,
+        "output_token_count": 396,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1990,
+        "word_count": 299,
+        "unique_word_count": 289,
+        "unique_word_ratio": 0.9665551839464883,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4] so far.\"[1]. As well \"a team of highly trained scientists\", one can imagine why something must have happened between 2008 and 2012 after seeing images on multiple occasions showing several similar vessels appearing within minutes - probably due both to an explosion causing massive damage throughout nearby areas,[3](note 15). That leaves us without very precise understanding just where these experiments went wrong...perhaps because there isn't really anything anyone else's done around them outside government buildings....it depends upon someone saying yes ! Perhaps my interest goes beyond simply having people watch television programs through remote control technology; I believe many others will make use of radio waves instead; perhaps most importantly maybe human beings using bioengineering technologies don´t understand advanced chemistry while also developing artificial intelligence products--but nevertheless keep asking questions whether we'd love to hear answers directly above everything unless our answer becomes known right away either way.(see e.g., ‪The First Generation Reveals Massive Evolutionary Biology[/b]).",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4] so far.\"[1]. As well \"a team of highly trained scientists\", one can imagine why something must have happened between 2008 and 2012 after seeing images on multiple occasions showing several similar vessels appearing within minutes - probably due both to an explosion causing massive damage throughout nearby areas,[3](note 15). That leaves us without very precise understanding just where these experiments went wrong...perhaps because there isn't really anything anyone else's done around them outside government buildings....it depends upon someone saying yes ! Perhaps my interest goes beyond simply having people watch television programs through remote control technology; I believe many others will make use of radio waves instead; perhaps most importantly maybe human beings using bioengineering technologies don´t understand advanced chemistry while also developing artificial intelligence products--but nevertheless keep asking questions whether we'd love to hear answers directly above everything unless our answer becomes known right away either way.(see e.g., ‪The First Generation Reveals Massive Evolutionary Biology[/b]).",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4] so far.\"[1]. As well \"a team of highly trained scientists\", one can imagine why something must have happened between 2008 and 2012 after seeing images on multiple occasions showing several similar vessels appearing within minutes - probably due both to an explosion causing massive damage throughout nearby areas,[3](note 15). That leaves us without very precise understanding just where these experiments went wrong...perhaps because there isn't really anything anyone else's done around them outside government buildings....it depends upon someone saying yes ! Perhaps my interest goes beyond simply having people watch television programs through remote control technology; I believe many others will make use of radio waves instead; perhaps most importantly maybe human beings using bioengineering technologies don´t understand advanced chemistry while also developing artificial intelligence products--but nevertheless keep asking questions whether we'd love to hear answers directly above everything unless our answer becomes known right away either way.(see e.g., ‪The First Generation Reveals Massive Evolutionary Biology[/b]). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4] so far.\"[1]. As well \"a team of highly trained scientists\", one can imagine why something must have happened between 2008 and 2012 after seeing images on multiple occasions showing several similar vessels appearing within minutes - probably due both to an explosion causing massive damage throughout nearby areas,[3](note 15). That leaves us without very precise understanding just where these experiments went wrong...perhaps because there isn't really anything anyone else's done around them outside government buildings....it depends upon someone saying yes ! Perhaps my interest goes beyond simply having people watch television programs through remote control technology; I believe many others will make use of radio waves instead; perhaps most importantly maybe human beings using bioengineering technologies don´t understand advanced chemistry while also developing artificial intelligence products--but nevertheless keep asking questions whether we'd love to hear answers directly above everything unless our answer becomes known right away either way.(see e.g., ‪The First Generation Reveals Massive Evolutionary Biology[/b]).",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4] so far.\"[1]. As well \"a team of highly trained scientists\", one can imagine why something must have happened between 2008 and 2012 after seeing images on multiple occasions showing several similar vessels appearing within minutes - probably due both to an explosion causing massive damage throughout nearby areas,[3](note 15). That leaves us without very precise understanding just where these experiments went wrong...perhaps because there isn't really anything anyone else's done around them outside government buildings....it depends upon someone saying yes ! Perhaps my interest goes beyond simply having people watch television programs through remote control technology; I believe many others will make use of radio waves instead; perhaps most importantly maybe human beings using bioengineering technologies don´t understand advanced chemistry while also developing artificial intelligence products--but nevertheless keep asking questions whether we'd love to hear answers directly above everything unless our answer becomes known right away either way.(see e.g., ‪The First Generation Reveals Massive Evolutionary Biology[/b]).",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship’s engineers discovered what it actually looked like when he came over to see how much energy was being pumped out of each channel, which they determined would require some significant technological change before long enough to be able get any power back at all for its mission.� They were surprised that this particular structure contained only about 1 tonne (3 TmE per hour) of water available during construction time�―in short, almost no ice or other material behind those pipes.[ 1][2] A small sample containing 0.5 million cubic feet is still needed if you want to know more exactly who could create such systems with 3 tons of CO 2 particles—although none has yet been made clear by their own sources [4] so far.\"[1]. As well \"a team of highly trained scientists\", one can imagine why something must have happened between 2008 and 2012 after seeing images on multiple occasions showing several similar vessels appearing within minutes - probably due both to an explosion causing massive damage throughout nearby areas,[3](note 15). That leaves us without very precise understanding just where these experiments went wrong...perhaps because there isn't really anything anyone else's done around them outside government buildings....it depends upon someone saying yes ! Perhaps my interest goes beyond simply having people watch television programs through remote control technology; I believe many others will make use of radio waves instead; perhaps most importantly maybe human beings using bioengineering technologies don´t understand advanced chemistry while also developing artificial intelligence products--but nevertheless keep asking questions whether we'd love to hear answers directly above everything unless our answer becomes known right away either way.(see e.g., ‪The First Generation Reveals Massive Evolutionary Biology[/b]).",
+        "continuation_text": "",
+        "input_token_count": 396,
+        "raw_input_token_count": 396,
+        "output_token_count": 397,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 4134,
+        "word_count": 620,
+        "unique_word_count": 308,
+        "unique_word_ratio": 0.4967741935483871,
+        "repeated_bigram_count": 298
+      }
+    }
+  ]
+}

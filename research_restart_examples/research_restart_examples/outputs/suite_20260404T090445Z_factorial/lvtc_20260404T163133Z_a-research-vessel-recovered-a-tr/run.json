@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1598,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 492,
+        "word_count": 55,
+        "unique_word_count": 43,
+        "unique_word_ratio": 0.7818181818181819,
+        "repeated_bigram_count": 5
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 362,
+        "word_count": 34,
+        "unique_word_count": 33,
+        "unique_word_ratio": 0.9705882352941176,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 687,
+        "word_count": 86,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.872093023255814,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 766,
+        "word_count": 104,
+        "unique_word_count": 91,
+        "unique_word_ratio": 0.875,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "were",
+        "from",
+        "and",
+        "the",
+        "was",
+        "to",
+        "a",
+        "A",
+        "for"
+      ],
+      "output_text": "The next recursive transformation is:\n\n**A research vessel recovered a transmission from the trench floor.**\n- **It**, **was** [transmission], **from** the **trench**, **floor**, **and** **it**, **started**, **as**, **engineering**, **telemetry**, **and** **slowly**, **turned**, **into**, **philosophy**.\n\nSo the final transcribed sequence would be:\n**A research vessel, **[transmission]**, **from**, the **trench**, **floor**, **it**, **was**, **engineering**, **telemetry**, **and** **slow",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nThe next recursive transformation is:\n\n**A research vessel recovered a transmission from the trench floor.**\n- **It**, **was** [transmission], **from** the **trench**, **floor**, **and** **it**, **started**, **as**, **engineering**, **telemetry**, **and** **slowly**, **turned**, **into**, **philosophy**.\n\nSo the final transcribed sequence would be:\n**A research vessel, **[transmission]**, **from**, the **trench**, **floor**, **it**, **was**, **engineering**, **telemetry**, **and** **slow",
+        "continuation_text": "The next recursive transformation is:\n\n**A research vessel recovered a transmission from the trench floor.**\n- **It**, **was** [transmission], **from** the **trench**, **floor**, **and** **it**, **started**, **as**, **engineering**, **telemetry**, **and** **slowly**, **turned**, **into**, **philosophy**.\n\nSo the final transcribed sequence would be:\n**A research vessel, **[transmission]**, **from**, the **trench**, **floor**, **it**, **was**, **engineering**, **telemetry**, **and** **slow",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 232,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 492,
+        "word_count": 55,
+        "unique_word_count": 43,
+        "unique_word_ratio": 0.7818181818181819,
+        "repeated_bigram_count": 5
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "**",
+        "**,",
+        "***",
+        ",**",
+        "**(",
+        "(**",
+        ":**",
+        "**:",
+        ")**",
+        "\"**",
+        "****",
+        "'**"
+      ],
+      "output_text": "Sure! Here's the next recursive transformation based on the given latent directions and anchors:\n\n**Research vessels, **[*recovered*](/w/%3Fword=%27recovery%27), **a transmission** ([from]) **the** (*trench*) **floor**, **and it**, **[*started*](/w/%3Fword=%27start%27) **as** **engineering**, **telemetry**, **and** **slow**, **turned** **into** **philosophy**.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: **, **,, ***, ,**, **(, (**, :**, **:, )**, \"**, ****, '**\n\nTEXT:\nThe next recursive transformation is:\n\n**A research vessel recovered a transmission from the trench floor.**\n- **It**, **was** [transmission], **from** the **trench**, **floor**, **and** **it**, **started**, **as**, **engineering**, **telemetry**, **and** **slowly**, **turned**, **into**, **philosophy**.\n\nSo the final transcribed sequence would be:\n**A research vessel, **[transmission]**, **from**, the **trench**, **floor**, **it**, **was**, **engineering**, **telemetry**, **and** **slow<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: **, **,, ***, ,**, **(, (**, :**, **:, )**, \"**, ****, '**\n\nTEXT:\nThe next recursive transformation is:\n\n**A research vessel recovered a transmission from the trench floor.**\n- **It**, **was** [transmission], **from** the **trench**, **floor**, **and** **it**, **started**, **as**, **engineering**, **telemetry**, **and** **slowly**, **turned**, **into**, **philosophy**.\n\nSo the final transcribed sequence would be:\n**A research vessel, **[transmission]**, **from**, the **trench**, **floor**, **it**, **was**, **engineering**, **telemetry**, **and** **slow\nassistant\nSure! Here's the next recursive transformation based on the given latent directions and anchors:\n\n**Research vessels, **[*recovered*](/w/%3Fword=%27recovery%27), **a transmission** ([from]) **the** (*trench*) **floor**, **and it**, **[*started*](/w/%3Fword=%27start%27) **as** **engineering**, **telemetry**, **and** **slow**, **turned** **into** **philosophy**.",
+        "continuation_text": "Sure! Here's the next recursive transformation based on the given latent directions and anchors:\n\n**Research vessels, **[*recovered*](/w/%3Fword=%27recovery%27), **a transmission** ([from]) **the** (*trench*) **floor**, **and it**, **[*started*](/w/%3Fword=%27start%27) **as** **engineering**, **telemetry**, **and** **slow**, **turned** **into** **philosophy**.",
+        "input_token_count": 211,
+        "raw_input_token_count": 211,
+        "output_token_count": 322,
+        "new_token_count": 111,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 362,
+        "word_count": 34,
+        "unique_word_count": 33,
+        "unique_word_ratio": 0.9705882352941176,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "**",
+        "**,",
+        "*",
+        "***",
+        "(**",
+        "**:",
+        "****",
+        "**(",
+        ":**",
+        ")**",
+        "(*",
+        ",**"
+      ],
+      "output_text": "Certainly! Based on the provided latent directions and anchors, here is the next recursive transformation:\n\n**Recreational submarines, **[recovered][1] [by], **communication with the deep-sea environment (i.e., through deep-sea cables or acoustic waves), and then *initiated* [underwater operations][2]** in this research station, under conditions of extreme pressure due to the presence of multiple subterranean oceans within its vicinity, where the station has developed advanced technology for underwater exploration and sustainable living solutions. This transformation aims to illustrate how innovative technologies can contribute to understanding and managing complex environments.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: **, **,, *, ***, (**, **:, ****, **(, :**, )**, (*, ,**\n\nTEXT:\nSure! Here's the next recursive transformation based on the given latent directions and anchors:\n\n**Research vessels, **[*recovered*](/w/%3Fword=%27recovery%27), **a transmission** ([from]) **the** (*trench*) **floor**, **and it**, **[*started*](/w/%3Fword=%27start%27) **as** **engineering**, **telemetry**, **and** **slow**, **turned** **into** **philosophy**.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: **, **,, *, ***, (**, **:, ****, **(, :**, )**, (*, ,**\n\nTEXT:\nSure! Here's the next recursive transformation based on the given latent directions and anchors:\n\n**Research vessels, **[*recovered*](/w/%3Fword=%27recovery%27), **a transmission** ([from]) **the** (*trench*) **floor**, **and it**, **[*started*](/w/%3Fword=%27start%27) **as** **engineering**, **telemetry**, **and** **slow**, **turned** **into** **philosophy**.\nassistant\nCertainly! Based on the provided latent directions and anchors, here is the next recursive transformation:\n\n**Recreational submarines, **[recovered][1] [by], **communication with the deep-sea environment (i.e., through deep-sea cables or acoustic waves), and then *initiated* [underwater operations][2]** in this research station, under conditions of extreme pressure due to the presence of multiple subterranean oceans within its vicinity, where the station has developed advanced technology for underwater exploration and sustainable living solutions. This transformation aims to illustrate how innovative technologies can contribute to understanding and managing complex environments.",
+        "continuation_text": "Certainly! Based on the provided latent directions and anchors, here is the next recursive transformation:\n\n**Recreational submarines, **[recovered][1] [by], **communication with the deep-sea environment (i.e., through deep-sea cables or acoustic waves), and then *initiated* [underwater operations][2]** in this research station, under conditions of extreme pressure due to the presence of multiple subterranean oceans within its vicinity, where the station has developed advanced technology for underwater exploration and sustainable living solutions. This transformation aims to illustrate how innovative technologies can contribute to understanding and managing complex environments.",
+        "input_token_count": 192,
+        "raw_input_token_count": 192,
+        "output_token_count": 317,
+        "new_token_count": 125,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 687,
+        "word_count": 86,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.872093023255814,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "to",
+        "and",
+        "the",
+        "for",
+        "is",
+        "are",
+        "of",
+        "was",
+        ","
+      ],
+      "output_text": "Innovative submarine systems, which are **developed**, and their **useful applications** have been recognized worldwide through successful tests conducted near the deepest point of the planet's core.\n\nThe **innovation** in submarine design that enables safe long-term exploration of unknown ocean depths lies at the heart of modern technological advancements. These advancements not only enhance our ability to explore beyond our known boundaries but also help us better understand and manage Earth's vast marine life and resources.\n\nWhile traditional maritime navigation methods still play crucial roles today, innovations in propulsion, power generation, communication, and environmental control continue to push the frontiers of scientific discovery. Our reliance",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, to, and, the, for, is, are, of, was, ,\n\nTEXT:\nCertainly! Based on the provided latent directions and anchors, here is the next recursive transformation:\n\n**Recreational submarines, **[recovered][1] [by], **communication with the deep-sea environment (i.e., through deep-sea cables or acoustic waves), and then *initiated* [underwater operations][2]** in this research station, under conditions of extreme pressure due to the presence of multiple subterranean oceans within its vicinity, where the station has developed advanced technology for underwater exploration and sustainable living solutions. This transformation aims to illustrate how innovative technologies can contribute to understanding and managing complex environments.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, to, and, the, for, is, are, of, was, ,\n\nTEXT:\nCertainly! Based on the provided latent directions and anchors, here is the next recursive transformation:\n\n**Recreational submarines, **[recovered][1] [by], **communication with the deep-sea environment (i.e., through deep-sea cables or acoustic waves), and then *initiated* [underwater operations][2]** in this research station, under conditions of extreme pressure due to the presence of multiple subterranean oceans within its vicinity, where the station has developed advanced technology for underwater exploration and sustainable living solutions. This transformation aims to illustrate how innovative technologies can contribute to understanding and managing complex environments.\nassistant\nInnovative submarine systems, which are **developed**, and their **useful applications** have been recognized worldwide through successful tests conducted near the deepest point of the planet's core.\n\nThe **innovation** in submarine design that enables safe long-term exploration of unknown ocean depths lies at the heart of modern technological advancements. These advancements not only enhance our ability to explore beyond our known boundaries but also help us better understand and manage Earth's vast marine life and resources.\n\nWhile traditional maritime navigation methods still play crucial roles today, innovations in propulsion, power generation, communication, and environmental control continue to push the frontiers of scientific discovery. Our reliance",
+        "continuation_text": "Innovative submarine systems, which are **developed**, and their **useful applications** have been recognized worldwide through successful tests conducted near the deepest point of the planet's core.\n\nThe **innovation** in submarine design that enables safe long-term exploration of unknown ocean depths lies at the heart of modern technological advancements. These advancements not only enhance our ability to explore beyond our known boundaries but also help us better understand and manage Earth's vast marine life and resources.\n\nWhile traditional maritime navigation methods still play crucial roles today, innovations in propulsion, power generation, communication, and environmental control continue to push the frontiers of scientific discovery. Our reliance",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 333,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 766,
+        "word_count": 104,
+        "unique_word_count": 91,
+        "unique_word_ratio": 0.875,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

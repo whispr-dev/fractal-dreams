@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1514,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 491,
+        "word_count": 68,
+        "unique_word_count": 60,
+        "unique_word_ratio": 0.8823529411764706,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 691,
+        "word_count": 95,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.8421052631578947,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 570,
+        "word_count": 93,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.8602150537634409,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 287,
+        "word_count": 41,
+        "unique_word_count": 38,
+        "unique_word_ratio": 0.926829268292683,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "were",
+        "from",
+        "and",
+        "the",
+        "was",
+        "to",
+        "a",
+        "A",
+        "for"
+      ],
+      "output_text": "It is believed that a research vessel has discovered valuable information on the bottom of the sea through its investigation of this particular trench facility. The discovery of communication lines suggests that there may have been ongoing scientific activities conducted at the site. However, further analysis will reveal more about the historical context surrounding this finding. This conclusion comes after careful consideration of archaeological evidence and linguistic interpretations.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nIt is believed that a research vessel has discovered valuable information on the bottom of the sea through its investigation of this particular trench facility. The discovery of communication lines suggests that there may have been ongoing scientific activities conducted at the site. However, further analysis will reveal more about the historical context surrounding this finding. This conclusion comes after careful consideration of archaeological evidence and linguistic interpretations.",
+        "continuation_text": "It is believed that a research vessel has discovered valuable information on the bottom of the sea through its investigation of this particular trench facility. The discovery of communication lines suggests that there may have been ongoing scientific activities conducted at the site. However, further analysis will reveal more about the historical context surrounding this finding. This conclusion comes after careful consideration of archaeological evidence and linguistic interpretations.",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 178,
+        "new_token_count": 74,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 491,
+        "word_count": 68,
+        "unique_word_count": 60,
+        "unique_word_ratio": 0.8823529411764706,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "the",
+        "of",
+        "that",
+        "were",
+        "this",
+        "is",
+        "was",
+        "are",
+        "there",
+        "It"
+      ],
+      "output_text": "The extraction process involves understanding the sentence structure and identifying key phrases or clauses to extract their respective meanings while incorporating any necessary annotations from the given latent directions. For example:\n\n1. **Identify the main subject:** \"it\" (repetition)\n2. **Find the core meaning:** \"discovery of valuable information\"\n3. **Analyze potential contexts and relationships:** \"at the bottom of the sea\", \"through its investigation of this particular trench facility\"\n\nNext steps include refining the extracted components according to the rules provided for each latent direction token (i.e., `the`, `if`), ensuring coherence with other parts of the sentence",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, of, that, were, this, is, was, are, there, It\n\nTEXT:\nIt is believed that a research vessel has discovered valuable information on the bottom of the sea through its investigation of this particular trench facility. The discovery of communication lines suggests that there may have been ongoing scientific activities conducted at the site. However, further analysis will reveal more about the historical context surrounding this finding. This conclusion comes after careful consideration of archaeological evidence and linguistic interpretations.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, of, that, were, this, is, was, are, there, It\n\nTEXT:\nIt is believed that a research vessel has discovered valuable information on the bottom of the sea through its investigation of this particular trench facility. The discovery of communication lines suggests that there may have been ongoing scientific activities conducted at the site. However, further analysis will reveal more about the historical context surrounding this finding. This conclusion comes after careful consideration of archaeological evidence and linguistic interpretations.\nassistant\nThe extraction process involves understanding the sentence structure and identifying key phrases or clauses to extract their respective meanings while incorporating any necessary annotations from the given latent directions. For example:\n\n1. **Identify the main subject:** \"it\" (repetition)\n2. **Find the core meaning:** \"discovery of valuable information\"\n3. **Analyze potential contexts and relationships:** \"at the bottom of the sea\", \"through its investigation of this particular trench facility\"\n\nNext steps include refining the extracted components according to the rules provided for each latent direction token (i.e., `the`, `if`), ensuring coherence with other parts of the sentence",
+        "continuation_text": "The extraction process involves understanding the sentence structure and identifying key phrases or clauses to extract their respective meanings while incorporating any necessary annotations from the given latent directions. For example:\n\n1. **Identify the main subject:** \"it\" (repetition)\n2. **Find the core meaning:** \"discovery of valuable information\"\n3. **Analyze potential contexts and relationships:** \"at the bottom of the sea\", \"through its investigation of this particular trench facility\"\n\nNext steps include refining the extracted components according to the rules provided for each latent direction token (i.e., `the`, `if`), ensuring coherence with other parts of the sentence",
+        "input_token_count": 155,
+        "raw_input_token_count": 155,
+        "output_token_count": 283,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 691,
+        "word_count": 95,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.8421052631578947,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "were",
+        "for",
+        "of",
+        "If",
+        "to",
+        "are",
+        "It",
+        "and",
+        "is"
+      ],
+      "output_text": "To refine the extracted components based on the rules provided for each latent direction token (`the`, `if`), we need more context about what these rules entail. However, assuming you're looking for an example where certain conditions would apply, here’s one way to proceed that assumes some common interpretation scenarios:\n\n### Example Scenario:\n\n**Text:**\n\"The discovery was made through an intricate study.\"\n\n### Latent Direction Tokens:\n- The = 3\n- Is = 0\n- To = 5\n\n#### Extracted Components Based on Rules:\n1. Identify the main subject: \"it.\"\n   - Annotate as: `It",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, for, of, If, to, are, It, and, is\n\nTEXT:\nThe extraction process involves understanding the sentence structure and identifying key phrases or clauses to extract their respective meanings while incorporating any necessary annotations from the given latent directions. For example:\n\n1. **Identify the main subject:** \"it\" (repetition)\n2. **Find the core meaning:** \"discovery of valuable information\"\n3. **Analyze potential contexts and relationships:** \"at the bottom of the sea\", \"through its investigation of this particular trench facility\"\n\nNext steps include refining the extracted components according to the rules provided for each latent direction token (i.e., `the`, `if`), ensuring coherence with other parts of the sentence<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, for, of, If, to, are, It, and, is\n\nTEXT:\nThe extraction process involves understanding the sentence structure and identifying key phrases or clauses to extract their respective meanings while incorporating any necessary annotations from the given latent directions. For example:\n\n1. **Identify the main subject:** \"it\" (repetition)\n2. **Find the core meaning:** \"discovery of valuable information\"\n3. **Analyze potential contexts and relationships:** \"at the bottom of the sea\", \"through its investigation of this particular trench facility\"\n\nNext steps include refining the extracted components according to the rules provided for each latent direction token (i.e., `the`, `if`), ensuring coherence with other parts of the sentence\nassistant\nTo refine the extracted components based on the rules provided for each latent direction token (`the`, `if`), we need more context about what these rules entail. However, assuming you're looking for an example where certain conditions would apply, here’s one way to proceed that assumes some common interpretation scenarios:\n\n### Example Scenario:\n\n**Text:**\n\"The discovery was made through an intricate study.\"\n\n### Latent Direction Tokens:\n- The = 3\n- Is = 0\n- To = 5\n\n#### Extracted Components Based on Rules:\n1. Identify the main subject: \"it.\"\n   - Annotate as: `It",
+        "continuation_text": "To refine the extracted components based on the rules provided for each latent direction token (`the`, `if`), we need more context about what these rules entail. However, assuming you're looking for an example where certain conditions would apply, here’s one way to proceed that assumes some common interpretation scenarios:\n\n### Example Scenario:\n\n**Text:**\n\"The discovery was made through an intricate study.\"\n\n### Latent Direction Tokens:\n- The = 3\n- Is = 0\n- To = 5\n\n#### Extracted Components Based on Rules:\n1. Identify the main subject: \"it.\"\n   - Annotate as: `It",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 338,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 570,
+        "word_count": 93,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.8602150537634409,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        ",",
+        "for",
+        "(",
+        ":",
+        "to",
+        "-",
+        "the",
+        "is",
+        "and",
+        "."
+      ],
+      "output_text": "2. Determine the condition: \"is.\"\n   - Annotate as: `Is`\n   \nTherefore, **extracted components**: `It Is`\n\nThis follows the Semantic Directions specified in the prompt, guiding us towards defining key elements such as `It`, `Is`, and their respective roles within the sentence structure.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, ,, for, (, :, to, -, the, is, and, .\n\nTEXT:\nTo refine the extracted components based on the rules provided for each latent direction token (`the`, `if`), we need more context about what these rules entail. However, assuming you're looking for an example where certain conditions would apply, here’s one way to proceed that assumes some common interpretation scenarios:\n\n### Example Scenario:\n\n**Text:**\n\"The discovery was made through an intricate study.\"\n\n### Latent Direction Tokens:\n- The = 3\n- Is = 0\n- To = 5\n\n#### Extracted Components Based on Rules:\n1. Identify the main subject: \"it.\"\n   - Annotate as: `It<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, ,, for, (, :, to, -, the, is, and, .\n\nTEXT:\nTo refine the extracted components based on the rules provided for each latent direction token (`the`, `if`), we need more context about what these rules entail. However, assuming you're looking for an example where certain conditions would apply, here’s one way to proceed that assumes some common interpretation scenarios:\n\n### Example Scenario:\n\n**Text:**\n\"The discovery was made through an intricate study.\"\n\n### Latent Direction Tokens:\n- The = 3\n- Is = 0\n- To = 5\n\n#### Extracted Components Based on Rules:\n1. Identify the main subject: \"it.\"\n   - Annotate as: `It\nassistant\n2. Determine the condition: \"is.\"\n   - Annotate as: `Is`\n   \nTherefore, **extracted components**: `It Is`\n\nThis follows the Semantic Directions specified in the prompt, guiding us towards defining key elements such as `It`, `Is`, and their respective roles within the sentence structure.",
+        "continuation_text": "2. Determine the condition: \"is.\"\n   - Annotate as: `Is`\n   \nTherefore, **extracted components**: `It Is`\n\nThis follows the Semantic Directions specified in the prompt, guiding us towards defining key elements such as `It`, `Is`, and their respective roles within the sentence structure.",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 271,
+        "new_token_count": 65,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 287,
+        "word_count": 41,
+        "unique_word_count": 38,
+        "unique_word_ratio": 0.926829268292683,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

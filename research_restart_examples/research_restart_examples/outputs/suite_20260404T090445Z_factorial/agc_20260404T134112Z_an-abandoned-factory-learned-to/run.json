@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1377,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 600,
+        "word_count": 110,
+        "unique_word_count": 110,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 293,
+        "word_count": 49,
+        "unique_word_count": 49,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 271,
+        "word_count": 55,
+        "unique_word_count": 55,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "did",
+        "ikhail",
+        "Rachel",
+        "double",
+        "do",
+        "David",
+        "THESE",
+        "does",
+        "colm",
+        "struggled",
+        "eredith",
+        "Conversely"
+      ],
+      "output_text": "If there is no such thing then you should be ashamed! It was hard enough being trapped on an iron bed without anything else... Even when I gave up my home at that age (and many other people's lives after) those days were long gone forever because they would never see me again once or twice while we had children so this has changed their view very much - nowadays these things seem even harder than before for us....but also if all our stories start from scratch what can your story tell about human beings? That may have been true though ...we still remember some pretty important memories by using",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: did, ikhail, Rachel, double, do, David, THESE, does, colm, struggled, eredith, Conversely\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: did, ikhail, Rachel, double, do, David, THESE, does, colm, struggled, eredith, Conversely\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. If there is no such thing then you should be ashamed! It was hard enough being trapped on an iron bed without anything else... Even when I gave up my home at that age (and many other people's lives after) those days were long gone forever because they would never see me again once or twice while we had children so this has changed their view very much - nowadays these things seem even harder than before for us....but also if all our stories start from scratch what can your story tell about human beings? That may have been true though ...we still remember some pretty important memories by using",
+        "continuation_text": "If there is no such thing then you should be ashamed! It was hard enough being trapped on an iron bed without anything else... Even when I gave up my home at that age (and many other people's lives after) those days were long gone forever because they would never see me again once or twice while we had children so this has changed their view very much - nowadays these things seem even harder than before for us....but also if all our stories start from scratch what can your story tell about human beings? That may have been true though ...we still remember some pretty important memories by using",
+        "input_token_count": 115,
+        "raw_input_token_count": 115,
+        "output_token_count": 235,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 600,
+        "word_count": 110,
+        "unique_word_count": 110,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "with",
+        "for",
+        "(",
+        "in",
+        "-",
+        "to",
+        "w",
+        "from",
+        "which",
+        "without",
+        "With",
+        "and"
+      ],
+      "output_text": "\"chosen words\" now..which it turns out helps get rid away old mistakes & errors like 'she won't do whatever she wants' but here too sometimes remembering something really doesn´t make sense anymore :-) We use them often just thinking over how someone will react/do stuff i don`ll understand :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: with, for, (, in, -, to, w, from, which, without, With, and\n\nTEXT:\nIf there is no such thing then you should be ashamed! It was hard enough being trapped on an iron bed without anything else... Even when I gave up my home at that age (and many other people's lives after) those days were long gone forever because they would never see me again once or twice while we had children so this has changed their view very much - nowadays these things seem even harder than before for us....but also if all our stories start from scratch what can your story tell about human beings? That may have been true though ...we still remember some pretty important memories by using",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: with, for, (, in, -, to, w, from, which, without, With, and\n\nTEXT:\nIf there is no such thing then you should be ashamed! It was hard enough being trapped on an iron bed without anything else... Even when I gave up my home at that age (and many other people's lives after) those days were long gone forever because they would never see me again once or twice while we had children so this has changed their view very much - nowadays these things seem even harder than before for us....but also if all our stories start from scratch what can your story tell about human beings? That may have been true though ...we still remember some pretty important memories by using \"chosen words\" now..which it turns out helps get rid away old mistakes & errors like 'she won't do whatever she wants' but here too sometimes remembering something really doesn´t make sense anymore :-) We use them often just thinking over how someone will react/do stuff i don`ll understand :)",
+        "continuation_text": "\"chosen words\" now..which it turns out helps get rid away old mistakes & errors like 'she won't do whatever she wants' but here too sometimes remembering something really doesn´t make sense anymore :-) We use them often just thinking over how someone will react/do stuff i don`ll understand :)",
+        "input_token_count": 204,
+        "raw_input_token_count": 204,
+        "output_token_count": 268,
+        "new_token_count": 64,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 293,
+        "word_count": 49,
+        "unique_word_count": 49,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "\"",
+        "\",",
+        "!!\"",
+        "!\"",
+        "\".",
+        "%\"",
+        "\"></",
+        "Several",
+        "\"))",
+        "\"}",
+        "\".[",
+        "\"…"
+      ],
+      "output_text": "Now we could give that back into our own functions or maybe they can help some things with finding new parts and missing ones from these examples :) Also try your best (or at least take care if you think about what this is all going for ;) ) . It might be helpful though!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: \", \",, !!\", !\", \"., %\", \"></, Several, \")), \"}, \".[, \"…\n\nTEXT:\n\"chosen words\" now..which it turns out helps get rid away old mistakes & errors like 'she won't do whatever she wants' but here too sometimes remembering something really doesn´t make sense anymore :-) We use them often just thinking over how someone will react/do stuff i don`ll understand :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: \", \",, !!\", !\", \"., %\", \"></, Several, \")), \"}, \".[, \"…\n\nTEXT:\n\"chosen words\" now..which it turns out helps get rid away old mistakes & errors like 'she won't do whatever she wants' but here too sometimes remembering something really doesn´t make sense anymore :-) We use them often just thinking over how someone will react/do stuff i don`ll understand :) Now we could give that back into our own functions or maybe they can help some things with finding new parts and missing ones from these examples :) Also try your best (or at least take care if you think about what this is all going for ;) ) . It might be helpful though!",
+        "continuation_text": "Now we could give that back into our own functions or maybe they can help some things with finding new parts and missing ones from these examples :) Also try your best (or at least take care if you think about what this is all going for ;) ) . It might be helpful though!",
+        "input_token_count": 149,
+        "raw_input_token_count": 149,
+        "output_token_count": 208,
+        "new_token_count": 59,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 271,
+        "word_count": 55,
+        "unique_word_count": 55,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

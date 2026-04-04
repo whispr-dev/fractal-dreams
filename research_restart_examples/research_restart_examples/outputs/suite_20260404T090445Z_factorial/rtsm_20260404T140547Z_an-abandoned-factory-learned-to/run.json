@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1408
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 633,
+        "word_count": 110,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9545454545454546,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 647,
+        "word_count": 113,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.9557522123893806,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1448,
+        "word_count": 248,
+        "unique_word_count": 129,
+        "unique_word_ratio": 0.5201612903225806,
+        "repeated_bigram_count": 112
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1968,
+        "word_count": 332,
+        "unique_word_count": 209,
+        "unique_word_ratio": 0.6295180722891566,
+        "repeated_bigram_count": 112
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2478,
+        "word_count": 411,
+        "unique_word_count": 285,
+        "unique_word_ratio": 0.6934306569343066,
+        "repeated_bigram_count": 113
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+      "delta_text": "It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here�",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here�",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here�",
+        "continuation_text": "It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here�",
+        "input_token_count": 60,
+        "raw_input_token_count": 60,
+        "output_token_count": 156,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 633,
+        "word_count": 110,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9545454545454546,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here�",
+      "delta_text": "s where next…",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next…",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here�",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here�s where next…",
+        "continuation_text": "s where next…",
+        "input_token_count": 156,
+        "raw_input_token_count": 156,
+        "output_token_count": 161,
+        "new_token_count": 5,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 647,
+        "word_count": 113,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.9557522123893806,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next…",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next…",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next…",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next…",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next…",
+        "continuation_text": "",
+        "input_token_count": 160,
+        "raw_input_token_count": 160,
+        "output_token_count": 161,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1448,
+        "word_count": 248,
+        "unique_word_count": 129,
+        "unique_word_ratio": 0.5201612903225806,
+        "repeated_bigram_count": 112
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next…",
+      "delta_text": "You're a Text—a word which describes everything from all three types of information such then why doesn't there seem to be much difference between being able to find new patterns without ever knowing any particular place? This may surprise many people because sometimes each sentence takes up too little space on them. However, things change very fast so often... And yet while most English sentences don`t read through our entire vocabulary properly … no single error could mean nothing . Instead, once again, students",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You're a Text—a word which describes everything from all three types of information such then why doesn't there seem to be much difference between being able to find new patterns without ever knowing any particular place? This may surprise many people because sometimes each sentence takes up too little space on them. However, things change very fast so often... And yet while most English sentences don`t read through our entire vocabulary properly … no single error could mean nothing . Instead, once again, students",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next…",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You're a Text—a word which describes everything from all three types of information such then why doesn't there seem to be much difference between being able to find new patterns without ever knowing any particular place? This may surprise many people because sometimes each sentence takes up too little space on them. However, things change very fast so often... And yet while most English sentences don`t read through our entire vocabulary properly … no single error could mean nothing . Instead, once again, students",
+        "continuation_text": "You're a Text—a word which describes everything from all three types of information such then why doesn't there seem to be much difference between being able to find new patterns without ever knowing any particular place? This may surprise many people because sometimes each sentence takes up too little space on them. However, things change very fast so often... And yet while most English sentences don`t read through our entire vocabulary properly … no single error could mean nothing . Instead, once again, students",
+        "input_token_count": 320,
+        "raw_input_token_count": 320,
+        "output_token_count": 416,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1968,
+        "word_count": 332,
+        "unique_word_count": 209,
+        "unique_word_ratio": 0.6295180722891566,
+        "repeated_bigram_count": 112
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You're a Text—a word which describes everything from all three types of information such then why doesn't there seem to be much difference between being able to find new patterns without ever knowing any particular place? This may surprise many people because sometimes each sentence takes up too little space on them. However, things change very fast so often... And yet while most English sentences don`t read through our entire vocabulary properly … no single error could mean nothing . Instead, once again, students",
+      "delta_text": "tendto skip straight down into other areas by repeating their parts using repetition itself rather than focusing on specific lines ... Just remember however early children think today‣s world looks better since life isn´t lived anywhere near us anymore anyway. All right now folks?! There appears nowhere far to be anyone telling me exactly who wrote \"What am I?\", especially non-English ones .. No matter whether someone points fingers forward behind somebody else _____...... Well…. Yeah.. yeah. Really sure",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You're a Text—a word which describes everything from all three types of information such then why doesn't there seem to be much difference between being able to find new patterns without ever knowing any particular place? This may surprise many people because sometimes each sentence takes up too little space on them. However, things change very fast so often... And yet while most English sentences don`t read through our entire vocabulary properly … no single error could mean nothing . Instead, once again, students tendto skip straight down into other areas by repeating their parts using repetition itself rather than focusing on specific lines ... Just remember however early children think today‣s world looks better since life isn´t lived anywhere near us anymore anyway. All right now folks?! There appears nowhere far to be anyone telling me exactly who wrote \"What am I?\", especially non-English ones .. No matter whether someone points fingers forward behind somebody else _____...... Well…. Yeah.. yeah. Really sure",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You're a Text—a word which describes everything from all three types of information such then why doesn't there seem to be much difference between being able to find new patterns without ever knowing any particular place? This may surprise many people because sometimes each sentence takes up too little space on them. However, things change very fast so often... And yet while most English sentences don`t read through our entire vocabulary properly … no single error could mean nothing . Instead, once again, students",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. It is impossible to learn anything that requires reading or writing; instead you can simply have one basic lesson of grammar (or at least some background). A few mistakes will make this study difficult to repeat – we'll just need to know what's wrong with certain words here as well. The first time I would describe an incomplete tutorial was over for last week when my colleague suggested something different about how they do these lessons — even if only after taking those questions out of context! Here� s where next… You're a Text—a word which describes everything from all three types of information such then why doesn't there seem to be much difference between being able to find new patterns without ever knowing any particular place? This may surprise many people because sometimes each sentence takes up too little space on them. However, things change very fast so often... And yet while most English sentences don`t read through our entire vocabulary properly … no single error could mean nothing . Instead, once again, students tendto skip straight down into other areas by repeating their parts using repetition itself rather than focusing on specific lines ... Just remember however early children think today‣s world looks better since life isn´t lived anywhere near us anymore anyway. All right now folks?! There appears nowhere far to be anyone telling me exactly who wrote \"What am I?\", especially non-English ones .. No matter whether someone points fingers forward behind somebody else _____...... Well…. Yeah.. yeah. Really sure",
+        "continuation_text": "tendto skip straight down into other areas by repeating their parts using repetition itself rather than focusing on specific lines ... Just remember however early children think today‣s world looks better since life isn´t lived anywhere near us anymore anyway. All right now folks?! There appears nowhere far to be anyone telling me exactly who wrote \"What am I?\", especially non-English ones .. No matter whether someone points fingers forward behind somebody else _____...... Well…. Yeah.. yeah. Really sure",
+        "input_token_count": 416,
+        "raw_input_token_count": 416,
+        "output_token_count": 512,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2478,
+        "word_count": 411,
+        "unique_word_count": 285,
+        "unique_word_ratio": 0.6934306569343066,
+        "repeated_bigram_count": 113
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1121,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 597,
+        "word_count": 105,
+        "unique_word_count": 105,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 234,
+        "word_count": 38,
+        "unique_word_count": 38,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 155,
+        "word_count": 28,
+        "unique_word_count": 28,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Besides",
+        "Moreover",
+        "Apparently",
+        "Having",
+        "Why",
+        "Although",
+        "Nearly",
+        "An",
+        "Another",
+        "Bell",
+        "Among",
+        "Furthermore"
+      ],
+      "output_text": "The first place we saw it on our screen is now inside (not yet available). In this case, there's no chance that anyone will ever see anything beyond what I'm telling you!\n\nI've said before how much they're worth… but let me reiterate here all right: There are currently at least ten books written by humanists who work for those authors – which means two more ones from other sources than my own experience with various academic publications like PNAS or Nature Books - such as Quora . However most studies have concluded them do not represent any significant increase in readership overall so far",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first place we saw it on our screen is now inside (not yet available). In this case, there's no chance that anyone will ever see anything beyond what I'm telling you!\n\nI've said before how much they're worth… but let me reiterate here all right: There are currently at least ten books written by humanists who work for those authors – which means two more ones from other sources than my own experience with various academic publications like PNAS or Nature Books - such as Quora . However most studies have concluded them do not represent any significant increase in readership overall so far",
+        "continuation_text": "The first place we saw it on our screen is now inside (not yet available). In this case, there's no chance that anyone will ever see anything beyond what I'm telling you!\n\nI've said before how much they're worth… but let me reiterate here all right: There are currently at least ten books written by humanists who work for those authors – which means two more ones from other sources than my own experience with various academic publications like PNAS or Nature Books - such as Quora . However most studies have concluded them do not represent any significant increase in readership overall so far",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 234,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 597,
+        "word_count": 105,
+        "unique_word_count": 105,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Their",
+        "Our",
+        "Located",
+        "We",
+        "Although",
+        "It",
+        "According",
+        "The",
+        "Everybody",
+        "Three",
+        "His",
+        "Learn"
+      ],
+      "output_text": "and thus might be too soon for everyone else to continue their research into these topics again until one has done enough homework about whether specific languages hold up well when looking at historical data collected online today...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Their, Our, Located, We, Although, It, According, The, Everybody, Three, His, Learn\n\nTEXT:\nThe first place we saw it on our screen is now inside (not yet available). In this case, there's no chance that anyone will ever see anything beyond what I'm telling you!\n\nI've said before how much they're worth… but let me reiterate here all right: There are currently at least ten books written by humanists who work for those authors – which means two more ones from other sources than my own experience with various academic publications like PNAS or Nature Books - such as Quora . However most studies have concluded them do not represent any significant increase in readership overall so far",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Their, Our, Located, We, Although, It, According, The, Everybody, Three, His, Learn\n\nTEXT:\nThe first place we saw it on our screen is now inside (not yet available). In this case, there's no chance that anyone will ever see anything beyond what I'm telling you!\n\nI've said before how much they're worth… but let me reiterate here all right: There are currently at least ten books written by humanists who work for those authors – which means two more ones from other sources than my own experience with various academic publications like PNAS or Nature Books - such as Quora . However most studies have concluded them do not represent any significant increase in readership overall so far and thus might be too soon for everyone else to continue their research into these topics again until one has done enough homework about whether specific languages hold up well when looking at historical data collected online today...",
+        "continuation_text": "and thus might be too soon for everyone else to continue their research into these topics again until one has done enough homework about whether specific languages hold up well when looking at historical data collected online today...",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 246,
+        "new_token_count": 40,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 234,
+        "word_count": 38,
+        "unique_word_count": 38,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "and",
+        "both",
+        "andr",
+        "whom",
+        "figured",
+        "practically",
+        "comfortably",
+        "neither",
+        "easily",
+        "either",
+        "anda",
+        "brands"
+      ],
+      "output_text": "or if they don't have that much interest (or even hope) because we already know what is going on here…I'll just say this first time you're getting started!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: and, both, andr, whom, figured, practically, comfortably, neither, easily, either, anda, brands\n\nTEXT:\nand thus might be too soon for everyone else to continue their research into these topics again until one has done enough homework about whether specific languages hold up well when looking at historical data collected online today...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: and, both, andr, whom, figured, practically, comfortably, neither, easily, either, anda, brands\n\nTEXT:\nand thus might be too soon for everyone else to continue their research into these topics again until one has done enough homework about whether specific languages hold up well when looking at historical data collected online today... or if they don't have that much interest (or even hope) because we already know what is going on here…I'll just say this first time you're getting started!",
+        "continuation_text": "or if they don't have that much interest (or even hope) because we already know what is going on here…I'll just say this first time you're getting started!",
+        "input_token_count": 126,
+        "raw_input_token_count": 126,
+        "output_token_count": 163,
+        "new_token_count": 37,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 155,
+        "word_count": 28,
+        "unique_word_count": 28,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

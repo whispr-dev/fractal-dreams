@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1394,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 598,
+        "word_count": 90,
+        "unique_word_count": 73,
+        "unique_word_ratio": 0.8111111111111111,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 583,
+        "word_count": 88,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.7613636363636364,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 603,
+        "word_count": 92,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.8586956521739131,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 685,
+        "word_count": 99,
+        "unique_word_count": 82,
+        "unique_word_ratio": 0.8282828282828283,
+        "repeated_bigram_count": 3
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "like",
+        "to",
+        "were",
+        "its",
+        "and",
+        "for",
+        "If",
+        "它",
+        "the"
+      ],
+      "output_text": "The next recursive transformation can involve breaking down the sentence into smaller units or sub-strings while preserving the original meaning and structure. Here's how we might transform the given text:\n\n1. **Identify the main idea**: The main idea is that an abandoned factory began to narrate its own decay.\n2. **Break down the sentence**:\n   - \"An abandoned factory\" (the subject)\n   - \"learned to narrate\"\n   - \"its own decay\"\n\n3. **Apply transformation rules**:\n   - Identify any potential anchors within the first two words (\"It\", \"and\").\n   - Apply transformations where appropriate while",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, like, to, were, its, and, for, If, 它, the\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, like, to, were, its, and, for, If, 它, the\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nThe next recursive transformation can involve breaking down the sentence into smaller units or sub-strings while preserving the original meaning and structure. Here's how we might transform the given text:\n\n1. **Identify the main idea**: The main idea is that an abandoned factory began to narrate its own decay.\n2. **Break down the sentence**:\n   - \"An abandoned factory\" (the subject)\n   - \"learned to narrate\"\n   - \"its own decay\"\n\n3. **Apply transformation rules**:\n   - Identify any potential anchors within the first two words (\"It\", \"and\").\n   - Apply transformations where appropriate while",
+        "continuation_text": "The next recursive transformation can involve breaking down the sentence into smaller units or sub-strings while preserving the original meaning and structure. Here's how we might transform the given text:\n\n1. **Identify the main idea**: The main idea is that an abandoned factory began to narrate its own decay.\n2. **Break down the sentence**:\n   - \"An abandoned factory\" (the subject)\n   - \"learned to narrate\"\n   - \"its own decay\"\n\n3. **Apply transformation rules**:\n   - Identify any potential anchors within the first two words (\"It\", \"and\").\n   - Apply transformations where appropriate while",
+        "input_token_count": 109,
+        "raw_input_token_count": 109,
+        "output_token_count": 237,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 598,
+        "word_count": 90,
+        "unique_word_count": 73,
+        "unique_word_ratio": 0.8111111111111111,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "-",
+        "\"",
+        "(",
+        "is",
+        "to",
+        "and",
+        "It",
+        "were",
+        ","
+      ],
+      "output_text": "Transforming each part step-by-step according to the specified rule ensures the coherence and understanding of the sentence. Here’s the transformed version of the text with the application of the latent direction token guidelines:\n\n1. **Identify the main idea**: The main idea is that an abandoned factory began to narrate its own decay.\n2. **Break down the sentence**:\n   - \"An abandoned factory\" (main topic) - identified as latent\n   - \"learned to narrate\" (process/behavior) - this becomes active voice for narration\n   - \"its own decay\" (result/desire)\n\nBy applying the guidance",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, -, \", (, is, to, and, It, were, ,\n\nTEXT:\nThe next recursive transformation can involve breaking down the sentence into smaller units or sub-strings while preserving the original meaning and structure. Here's how we might transform the given text:\n\n1. **Identify the main idea**: The main idea is that an abandoned factory began to narrate its own decay.\n2. **Break down the sentence**:\n   - \"An abandoned factory\" (the subject)\n   - \"learned to narrate\"\n   - \"its own decay\"\n\n3. **Apply transformation rules**:\n   - Identify any potential anchors within the first two words (\"It\", \"and\").\n   - Apply transformations where appropriate while<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, -, \", (, is, to, and, It, were, ,\n\nTEXT:\nThe next recursive transformation can involve breaking down the sentence into smaller units or sub-strings while preserving the original meaning and structure. Here's how we might transform the given text:\n\n1. **Identify the main idea**: The main idea is that an abandoned factory began to narrate its own decay.\n2. **Break down the sentence**:\n   - \"An abandoned factory\" (the subject)\n   - \"learned to narrate\"\n   - \"its own decay\"\n\n3. **Apply transformation rules**:\n   - Identify any potential anchors within the first two words (\"It\", \"and\").\n   - Apply transformations where appropriate while\nassistant\nTransforming each part step-by-step according to the specified rule ensures the coherence and understanding of the sentence. Here’s the transformed version of the text with the application of the latent direction token guidelines:\n\n1. **Identify the main idea**: The main idea is that an abandoned factory began to narrate its own decay.\n2. **Break down the sentence**:\n   - \"An abandoned factory\" (main topic) - identified as latent\n   - \"learned to narrate\" (process/behavior) - this becomes active voice for narration\n   - \"its own decay\" (result/desire)\n\nBy applying the guidance",
+        "continuation_text": "Transforming each part step-by-step according to the specified rule ensures the coherence and understanding of the sentence. Here’s the transformed version of the text with the application of the latent direction token guidelines:\n\n1. **Identify the main idea**: The main idea is that an abandoned factory began to narrate its own decay.\n2. **Break down the sentence**:\n   - \"An abandoned factory\" (main topic) - identified as latent\n   - \"learned to narrate\" (process/behavior) - this becomes active voice for narration\n   - \"its own decay\" (result/desire)\n\nBy applying the guidance",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 583,
+        "word_count": 88,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.7613636363636364,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "(",
+        "-",
+        "to",
+        ",",
+        "and",
+        "is",
+        "\"",
+        "for",
+        "of"
+      ],
+      "output_text": "into this order, we can transform each part step-by-step according to the specified rules:\n\n### Transformations Made According to Latent Direction Token Guidelines:\n#### 1. Identify the main idea: \n- The main idea here is that an abandoned factory started narrating its own decline. This is represented through the latent directions: `if`, `it`, `the`, `(), -(,), and `,` \n\n#### 2. Break down the sentence into parts:\n1. **Describe what happened first**: An abandoned factory learned to narrate.\n    - **Latent Directions:** If they were already familiar with storytelling practices or had some previous",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, (, -, to, ,, and, is, \", for, of\n\nTEXT:\nTransforming each part step-by-step according to the specified rule ensures the coherence and understanding of the sentence. Here’s the transformed version of the text with the application of the latent direction token guidelines:\n\n1. **Identify the main idea**: The main idea is that an abandoned factory began to narrate its own decay.\n2. **Break down the sentence**:\n   - \"An abandoned factory\" (main topic) - identified as latent\n   - \"learned to narrate\" (process/behavior) - this becomes active voice for narration\n   - \"its own decay\" (result/desire)\n\nBy applying the guidance<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, (, -, to, ,, and, is, \", for, of\n\nTEXT:\nTransforming each part step-by-step according to the specified rule ensures the coherence and understanding of the sentence. Here’s the transformed version of the text with the application of the latent direction token guidelines:\n\n1. **Identify the main idea**: The main idea is that an abandoned factory began to narrate its own decay.\n2. **Break down the sentence**:\n   - \"An abandoned factory\" (main topic) - identified as latent\n   - \"learned to narrate\" (process/behavior) - this becomes active voice for narration\n   - \"its own decay\" (result/desire)\n\nBy applying the guidance\nassistant\ninto this order, we can transform each part step-by-step according to the specified rules:\n\n### Transformations Made According to Latent Direction Token Guidelines:\n#### 1. Identify the main idea: \n- The main idea here is that an abandoned factory started narrating its own decline. This is represented through the latent directions: `if`, `it`, `the`, `(), -(,), and `,` \n\n#### 2. Break down the sentence into parts:\n1. **Describe what happened first**: An abandoned factory learned to narrate.\n    - **Latent Directions:** If they were already familiar with storytelling practices or had some previous",
+        "continuation_text": "into this order, we can transform each part step-by-step according to the specified rules:\n\n### Transformations Made According to Latent Direction Token Guidelines:\n#### 1. Identify the main idea: \n- The main idea here is that an abandoned factory started narrating its own decline. This is represented through the latent directions: `if`, `it`, `the`, `(), -(,), and `,` \n\n#### 2. Break down the sentence into parts:\n1. **Describe what happened first**: An abandoned factory learned to narrate.\n    - **Latent Directions:** If they were already familiar with storytelling practices or had some previous",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 603,
+        "word_count": 92,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.8586956521739131,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "the",
+        "If",
+        "It",
+        "is",
+        "to",
+        "are",
+        "was",
+        "for",
+        "and"
+      ],
+      "output_text": "knowledge about narrative styles, then they decided to start telling their story themselves.\n\n2. **Describe the sequence of events**:\n    - After deciding to start narrating, they developed a plan.\n        - They figured out how to tell their own story differently from others.\n        - Using techniques like metaphorical storytelling and humorous exaggeration,\n            - But not all stories should have such elements.\n            - They also considered using humor instead.\n\n3. **Discuss challenges faced during creation**:\n    - There were no clear guidelines on which aspects to avoid.\n    - Some ideas seemed too complex or difficult for them to implement properly.\n    - They",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, If, It, is, to, are, was, for, and\n\nTEXT:\ninto this order, we can transform each part step-by-step according to the specified rules:\n\n### Transformations Made According to Latent Direction Token Guidelines:\n#### 1. Identify the main idea: \n- The main idea here is that an abandoned factory started narrating its own decline. This is represented through the latent directions: `if`, `it`, `the`, `(), -(,), and `,` \n\n#### 2. Break down the sentence into parts:\n1. **Describe what happened first**: An abandoned factory learned to narrate.\n    - **Latent Directions:** If they were already familiar with storytelling practices or had some previous<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, If, It, is, to, are, was, for, and\n\nTEXT:\ninto this order, we can transform each part step-by-step according to the specified rules:\n\n### Transformations Made According to Latent Direction Token Guidelines:\n#### 1. Identify the main idea: \n- The main idea here is that an abandoned factory started narrating its own decline. This is represented through the latent directions: `if`, `it`, `the`, `(), -(,), and `,` \n\n#### 2. Break down the sentence into parts:\n1. **Describe what happened first**: An abandoned factory learned to narrate.\n    - **Latent Directions:** If they were already familiar with storytelling practices or had some previous\nassistant\nknowledge about narrative styles, then they decided to start telling their story themselves.\n\n2. **Describe the sequence of events**:\n    - After deciding to start narrating, they developed a plan.\n        - They figured out how to tell their own story differently from others.\n        - Using techniques like metaphorical storytelling and humorous exaggeration,\n            - But not all stories should have such elements.\n            - They also considered using humor instead.\n\n3. **Discuss challenges faced during creation**:\n    - There were no clear guidelines on which aspects to avoid.\n    - Some ideas seemed too complex or difficult for them to implement properly.\n    - They",
+        "continuation_text": "knowledge about narrative styles, then they decided to start telling their story themselves.\n\n2. **Describe the sequence of events**:\n    - After deciding to start narrating, they developed a plan.\n        - They figured out how to tell their own story differently from others.\n        - Using techniques like metaphorical storytelling and humorous exaggeration,\n            - But not all stories should have such elements.\n            - They also considered using humor instead.\n\n3. **Discuss challenges faced during creation**:\n    - There were no clear guidelines on which aspects to avoid.\n    - Some ideas seemed too complex or difficult for them to implement properly.\n    - They",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 338,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 685,
+        "word_count": 99,
+        "unique_word_count": 82,
+        "unique_word_ratio": 0.8282828282828283,
+        "repeated_bigram_count": 3
+      }
+    }
+  ]
+}

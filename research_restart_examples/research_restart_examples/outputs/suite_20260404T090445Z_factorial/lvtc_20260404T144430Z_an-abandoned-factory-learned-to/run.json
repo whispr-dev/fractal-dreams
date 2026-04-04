@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1466,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 603,
+        "word_count": 110,
+        "unique_word_count": 92,
+        "unique_word_ratio": 0.8363636363636363,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 532,
+        "word_count": 91,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.8461538461538461,
+        "repeated_bigram_count": 6
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 392,
+        "word_count": 73,
+        "unique_word_count": 71,
+        "unique_word_ratio": 0.9726027397260274,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 109,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "like",
+        "to",
+        "were",
+        "its",
+        "and",
+        "for",
+        "If",
+        "它",
+        "the"
+      ],
+      "output_text": "The next recursive transformation would be:\n\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nIt was an old man who had been abandoned since he could remember. He lived alone with his only dog, and when someone visited him, they found him dead as well. The dog, which belonged to his wife, tried to find him in the ruins of their former home, but could not locate her husband's body. The man couldn't help but wonder what happened to him.\nIf he ever knew that, he would curse himself for having left them there without trying.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, like, to, were, its, and, for, If, 它, the\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, like, to, were, its, and, for, If, 它, the\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nThe next recursive transformation would be:\n\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nIt was an old man who had been abandoned since he could remember. He lived alone with his only dog, and when someone visited him, they found him dead as well. The dog, which belonged to his wife, tried to find him in the ruins of their former home, but could not locate her husband's body. The man couldn't help but wonder what happened to him.\nIf he ever knew that, he would curse himself for having left them there without trying.",
+        "continuation_text": "The next recursive transformation would be:\n\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nIt was an old man who had been abandoned since he could remember. He lived alone with his only dog, and when someone visited him, they found him dead as well. The dog, which belonged to his wife, tried to find him in the ruins of their former home, but could not locate her husband's body. The man couldn't help but wonder what happened to him.\nIf he ever knew that, he would curse himself for having left them there without trying.",
+        "input_token_count": 109,
+        "raw_input_token_count": 109,
+        "output_token_count": 237,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 603,
+        "word_count": 110,
+        "unique_word_count": 92,
+        "unique_word_ratio": 0.8363636363636363,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "to",
+        "was",
+        "for",
+        "the",
+        "and",
+        "is",
+        "that",
+        "It",
+        ","
+      ],
+      "output_text": "Now let's proceed with the next recursive transformation step-by-step based on the given latent directions (if, it, were, to, was, for, the, and, is).\n\n1. **An abandoned factory learned to narrate its own decay** → **A forgotten factory learned to narrate its own demise**\n2. **But every retelling made it sound less like rust and more like prayer.**\n   - This part uses the concept of \"prayer\" from the previous line.\n3. **It was an old man who had been abandoned since he could remember.**\n   - Using \"since he could remember,\" we",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, to, was, for, the, and, is, that, It, ,\n\nTEXT:\nThe next recursive transformation would be:\n\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nIt was an old man who had been abandoned since he could remember. He lived alone with his only dog, and when someone visited him, they found him dead as well. The dog, which belonged to his wife, tried to find him in the ruins of their former home, but could not locate her husband's body. The man couldn't help but wonder what happened to him.\nIf he ever knew that, he would curse himself for having left them there without trying.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, to, was, for, the, and, is, that, It, ,\n\nTEXT:\nThe next recursive transformation would be:\n\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nIt was an old man who had been abandoned since he could remember. He lived alone with his only dog, and when someone visited him, they found him dead as well. The dog, which belonged to his wife, tried to find him in the ruins of their former home, but could not locate her husband's body. The man couldn't help but wonder what happened to him.\nIf he ever knew that, he would curse himself for having left them there without trying.\nassistant\nNow let's proceed with the next recursive transformation step-by-step based on the given latent directions (if, it, were, to, was, for, the, and, is).\n\n1. **An abandoned factory learned to narrate its own decay** → **A forgotten factory learned to narrate its own demise**\n2. **But every retelling made it sound less like rust and more like prayer.**\n   - This part uses the concept of \"prayer\" from the previous line.\n3. **It was an old man who had been abandoned since he could remember.**\n   - Using \"since he could remember,\" we",
+        "continuation_text": "Now let's proceed with the next recursive transformation step-by-step based on the given latent directions (if, it, were, to, was, for, the, and, is).\n\n1. **An abandoned factory learned to narrate its own decay** → **A forgotten factory learned to narrate its own demise**\n2. **But every retelling made it sound less like rust and more like prayer.**\n   - This part uses the concept of \"prayer\" from the previous line.\n3. **It was an old man who had been abandoned since he could remember.**\n   - Using \"since he could remember,\" we",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 337,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 532,
+        "word_count": 91,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.8461538461538461,
+        "repeated_bigram_count": 6
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        ",",
+        "to",
+        "and",
+        "is",
+        "(",
+        "for",
+        "the",
+        ".",
+        "in",
+        "of"
+      ],
+      "output_text": "to infer that he may not have been born yet.\n4. **This man died very quietly at a time when his children would need him most.**\n5. **And this woman, who was named after her husband’s name, did what she should do after their marriage ended.**\n6. **She said, 'I am sorry I left you.' And so they all felt better together.**\n\nThe final sentence follows the instructions using \"for\" as the guide.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, ,, to, and, is, (, for, the, ., in, of\n\nTEXT:\nNow let's proceed with the next recursive transformation step-by-step based on the given latent directions (if, it, were, to, was, for, the, and, is).\n\n1. **An abandoned factory learned to narrate its own decay** → **A forgotten factory learned to narrate its own demise**\n2. **But every retelling made it sound less like rust and more like prayer.**\n   - This part uses the concept of \"prayer\" from the previous line.\n3. **It was an old man who had been abandoned since he could remember.**\n   - Using \"since he could remember,\" we<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, ,, to, and, is, (, for, the, ., in, of\n\nTEXT:\nNow let's proceed with the next recursive transformation step-by-step based on the given latent directions (if, it, were, to, was, for, the, and, is).\n\n1. **An abandoned factory learned to narrate its own decay** → **A forgotten factory learned to narrate its own demise**\n2. **But every retelling made it sound less like rust and more like prayer.**\n   - This part uses the concept of \"prayer\" from the previous line.\n3. **It was an old man who had been abandoned since he could remember.**\n   - Using \"since he could remember,\" we\nassistant\nto infer that he may not have been born yet.\n4. **This man died very quietly at a time when his children would need him most.**\n5. **And this woman, who was named after her husband’s name, did what she should do after their marriage ended.**\n6. **She said, 'I am sorry I left you.' And so they all felt better together.**\n\nThe final sentence follows the instructions using \"for\" as the guide.",
+        "continuation_text": "to infer that he may not have been born yet.\n4. **This man died very quietly at a time when his children would need him most.**\n5. **And this woman, who was named after her husband’s name, did what she should do after their marriage ended.**\n6. **She said, 'I am sorry I left you.' And so they all felt better together.**\n\nThe final sentence follows the instructions using \"for\" as the guide.",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 305,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 392,
+        "word_count": 73,
+        "unique_word_count": 71,
+        "unique_word_ratio": 0.9726027397260274,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        ",",
+        "for",
+        "is",
+        ".",
+        "and",
+        "to",
+        "the",
+        "was",
+        "were",
+        "("
+      ],
+      "output_text": "7. **And with this couple's love growing stronger, they decided to continue living under each other's roof.**",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, ,, for, is, ., and, to, the, was, were, (\n\nTEXT:\nto infer that he may not have been born yet.\n4. **This man died very quietly at a time when his children would need him most.**\n5. **And this woman, who was named after her husband’s name, did what she should do after their marriage ended.**\n6. **She said, 'I am sorry I left you.' And so they all felt better together.**\n\nThe final sentence follows the instructions using \"for\" as the guide.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, ,, for, is, ., and, to, the, was, were, (\n\nTEXT:\nto infer that he may not have been born yet.\n4. **This man died very quietly at a time when his children would need him most.**\n5. **And this woman, who was named after her husband’s name, did what she should do after their marriage ended.**\n6. **She said, 'I am sorry I left you.' And so they all felt better together.**\n\nThe final sentence follows the instructions using \"for\" as the guide.\nassistant\n7. **And with this couple's love growing stronger, they decided to continue living under each other's roof.**",
+        "continuation_text": "7. **And with this couple's love growing stronger, they decided to continue living under each other's roof.**",
+        "input_token_count": 175,
+        "raw_input_token_count": 175,
+        "output_token_count": 200,
+        "new_token_count": 25,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 109,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

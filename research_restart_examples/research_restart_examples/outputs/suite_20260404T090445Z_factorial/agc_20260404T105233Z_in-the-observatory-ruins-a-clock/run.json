@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1145,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 366,
+        "word_count": 64,
+        "unique_word_count": 61,
+        "unique_word_ratio": 0.953125,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 103,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 54,
+        "word_count": 7,
+        "unique_word_count": 7,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Besides",
+        "Moreover",
+        "Apparently",
+        "Having",
+        "Why",
+        "Although",
+        "Nearly",
+        "An",
+        "Another",
+        "Bell",
+        "Among",
+        "Furthermore"
+      ],
+      "output_text": "On top of that, Asking someone for their interpretation is also very useful when it allows you one more time without any special constraints or complications (that's why we call this type of communication). The key thing here is how I guess your understanding will translate into reading my own thoughts about what kind of story must be told by other people at once!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. On top of that, Asking someone for their interpretation is also very useful when it allows you one more time without any special constraints or complications (that's why we call this type of communication). The key thing here is how I guess your understanding will translate into reading my own thoughts about what kind of story must be told by other people at once!",
+        "continuation_text": "On top of that, Asking someone for their interpretation is also very useful when it allows you one more time without any special constraints or complications (that's why we call this type of communication). The key thing here is how I guess your understanding will translate into reading my own thoughts about what kind of story must be told by other people at once!",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 185,
+        "new_token_count": 71,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 366,
+        "word_count": 64,
+        "unique_word_count": 61,
+        "unique_word_ratio": 0.953125,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "On",
+        "Whatever",
+        "Along",
+        "Personally",
+        "Recently",
+        "Though",
+        "Regardless",
+        "Perhaps",
+        "Nevertheless",
+        "Maybe",
+        "Upon",
+        "Whether"
+      ],
+      "output_text": "This article was originally published on January 16th 2017 and has since been revised again later today",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: On, Whatever, Along, Personally, Recently, Though, Regardless, Perhaps, Nevertheless, Maybe, Upon, Whether\n\nTEXT:\nOn top of that, Asking someone for their interpretation is also very useful when it allows you one more time without any special constraints or complications (that's why we call this type of communication). The key thing here is how I guess your understanding will translate into reading my own thoughts about what kind of story must be told by other people at once!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: On, Whatever, Along, Personally, Recently, Though, Regardless, Perhaps, Nevertheless, Maybe, Upon, Whether\n\nTEXT:\nOn top of that, Asking someone for their interpretation is also very useful when it allows you one more time without any special constraints or complications (that's why we call this type of communication). The key thing here is how I guess your understanding will translate into reading my own thoughts about what kind of story must be told by other people at once! This article was originally published on January 16th 2017 and has since been revised again later today",
+        "continuation_text": "This article was originally published on January 16th 2017 and has since been revised again later today",
+        "input_token_count": 155,
+        "raw_input_token_count": 155,
+        "output_token_count": 174,
+        "new_token_count": 19,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 103,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "\u0010",
+        "\u0019",
+        "\u0015",
+        "subur",
+        "�",
+        "龍�",
+        "TheNitrome",
+        "\u001a",
+        "\u0006",
+        "\u0013",
+        "oreAndOnline",
+        "\u0011"
+      ],
+      "output_text": "after further research is required before publication.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: \u0010, \u0019, \u0015, subur, �, 龍�, TheNitrome, \u001a, \u0006, \u0013, oreAndOnline, \u0011\n\nTEXT:\nThis article was originally published on January 16th 2017 and has since been revised again later today",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: \u0010, \u0019, \u0015, subur, �, 龍�, TheNitrome, \u001a, \u0006, \u0013, oreAndOnline, \u0011\n\nTEXT:\nThis article was originally published on January 16th 2017 and has since been revised again later today after further research is required before publication.",
+        "continuation_text": "after further research is required before publication.",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 123,
+        "new_token_count": 9,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 54,
+        "word_count": 7,
+        "unique_word_count": 7,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

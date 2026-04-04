@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1166,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 504,
+        "word_count": 81,
+        "unique_word_count": 73,
+        "unique_word_ratio": 0.9012345679012346,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 224,
+        "word_count": 34,
+        "unique_word_count": 30,
+        "unique_word_ratio": 0.8823529411764706,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 111,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 208,
+        "word_count": 29,
+        "unique_word_count": 28,
+        "unique_word_ratio": 0.9655172413793104,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "was",
+        "the",
+        "had",
+        "If",
+        "to",
+        "is",
+        "for",
+        "and",
+        "are"
+      ],
+      "output_text": "To solve this problem, we need to understand the context provided by the given text and apply logical transformations based on the specified rules (if, It, Were, Was, The, Had, If, To, Is, For, And, Are). Here's how I will approach it:\n\n1. **Identify Key Phrases**: Identify sentences that contain key phrases or action verbs like \"kept\", \"redrawed\", and \"warning\".\n\n2. **Apply Logical Transformation Rules**:\n   - Replace \"if\" with \"Were\"\n   - Replace \"was\" with \"It\"\n   - Apply other rules (like \"the\",",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, was, the, had, If, to, is, for, and, are\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, was, the, had, If, to, is, for, and, are\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nTo solve this problem, we need to understand the context provided by the given text and apply logical transformations based on the specified rules (if, It, Were, Was, The, Had, If, To, Is, For, And, Are). Here's how I will approach it:\n\n1. **Identify Key Phrases**: Identify sentences that contain key phrases or action verbs like \"kept\", \"redrawed\", and \"warning\".\n\n2. **Apply Logical Transformation Rules**:\n   - Replace \"if\" with \"Were\"\n   - Replace \"was\" with \"It\"\n   - Apply other rules (like \"the\",",
+        "continuation_text": "To solve this problem, we need to understand the context provided by the given text and apply logical transformations based on the specified rules (if, It, Were, Was, The, Had, If, To, Is, For, And, Are). Here's how I will approach it:\n\n1. **Identify Key Phrases**: Identify sentences that contain key phrases or action verbs like \"kept\", \"redrawed\", and \"warning\".\n\n2. **Apply Logical Transformation Rules**:\n   - Replace \"if\" with \"Were\"\n   - Replace \"was\" with \"It\"\n   - Apply other rules (like \"the\",",
+        "input_token_count": 110,
+        "raw_input_token_count": 110,
+        "output_token_count": 238,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 504,
+        "word_count": 81,
+        "unique_word_count": 73,
+        "unique_word_ratio": 0.9012345679012346,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        ",",
+        "\"",
+        "if",
+        "(",
+        "-",
+        "and",
+        "it",
+        ".",
+        "to",
+        ":",
+        "is",
+        "for"
+      ],
+      "output_text": "Let the semantic direction guide the logic here.\n\nHere's the next recursive transformation based on the specified rules:\n\n```\nTo keep redrawing warning information means ensuring that you stay informed about any changes.\n```",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: ,, \", if, (, -, and, it, ., to, :, is, for\n\nTEXT:\nTo solve this problem, we need to understand the context provided by the given text and apply logical transformations based on the specified rules (if, It, Were, Was, The, Had, If, To, Is, For, And, Are). Here's how I will approach it:\n\n1. **Identify Key Phrases**: Identify sentences that contain key phrases or action verbs like \"kept\", \"redrawed\", and \"warning\".\n\n2. **Apply Logical Transformation Rules**:\n   - Replace \"if\" with \"Were\"\n   - Replace \"was\" with \"It\"\n   - Apply other rules (like \"the\",<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: ,, \", if, (, -, and, it, ., to, :, is, for\n\nTEXT:\nTo solve this problem, we need to understand the context provided by the given text and apply logical transformations based on the specified rules (if, It, Were, Was, The, Had, If, To, Is, For, And, Are). Here's how I will approach it:\n\n1. **Identify Key Phrases**: Identify sentences that contain key phrases or action verbs like \"kept\", \"redrawed\", and \"warning\".\n\n2. **Apply Logical Transformation Rules**:\n   - Replace \"if\" with \"Were\"\n   - Replace \"was\" with \"It\"\n   - Apply other rules (like \"the\",\nassistant\nLet the semantic direction guide the logic here.\n\nHere's the next recursive transformation based on the specified rules:\n\n```\nTo keep redrawing warning information means ensuring that you stay informed about any changes.\n```",
+        "continuation_text": "Let the semantic direction guide the logic here.\n\nHere's the next recursive transformation based on the specified rules:\n\n```\nTo keep redrawing warning information means ensuring that you stay informed about any changes.\n```",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 247,
+        "new_token_count": 41,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 224,
+        "word_count": 34,
+        "unique_word_count": 30,
+        "unique_word_ratio": 0.8823529411764706,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "were",
+        "there",
+        "If",
+        "intelligence",
+        "nếu",
+        "you",
+        "this",
+        "here",
+        "that"
+      ],
+      "output_text": "The semantic direction guides me to consider how I can ensure ongoing communication and engagement with others.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, there, If, intelligence, nếu, you, this, here, that\n\nTEXT:\nLet the semantic direction guide the logic here.\n\nHere's the next recursive transformation based on the specified rules:\n\n```\nTo keep redrawing warning information means ensuring that you stay informed about any changes.\n```<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, there, If, intelligence, nếu, you, this, here, that\n\nTEXT:\nLet the semantic direction guide the logic here.\n\nHere's the next recursive transformation based on the specified rules:\n\n```\nTo keep redrawing warning information means ensuring that you stay informed about any changes.\n```\nassistant\nThe semantic direction guides me to consider how I can ensure ongoing communication and engagement with others.",
+        "continuation_text": "The semantic direction guides me to consider how I can ensure ongoing communication and engagement with others.",
+        "input_token_count": 122,
+        "raw_input_token_count": 122,
+        "output_token_count": 141,
+        "new_token_count": 19,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 111,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "to",
+        "with",
+        "and",
+        "can",
+        "are",
+        "the",
+        "were",
+        "I",
+        "is",
+        "for"
+      ],
+      "output_text": "**Next Recursive Transformation:** If there's need to continue our conversation, we should focus on maintaining open lines of communication so that we can stay connected without interruptions or distractions.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, to, with, and, can, are, the, were, I, is, for\n\nTEXT:\nThe semantic direction guides me to consider how I can ensure ongoing communication and engagement with others.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, to, with, and, can, are, the, were, I, is, for\n\nTEXT:\nThe semantic direction guides me to consider how I can ensure ongoing communication and engagement with others.\nassistant\n**Next Recursive Transformation:** If there's need to continue our conversation, we should focus on maintaining open lines of communication so that we can stay connected without interruptions or distractions.",
+        "continuation_text": "**Next Recursive Transformation:** If there's need to continue our conversation, we should focus on maintaining open lines of communication so that we can stay connected without interruptions or distractions.",
+        "input_token_count": 100,
+        "raw_input_token_count": 100,
+        "output_token_count": 135,
+        "new_token_count": 35,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 208,
+        "word_count": 29,
+        "unique_word_count": 28,
+        "unique_word_ratio": 0.9655172413793104,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

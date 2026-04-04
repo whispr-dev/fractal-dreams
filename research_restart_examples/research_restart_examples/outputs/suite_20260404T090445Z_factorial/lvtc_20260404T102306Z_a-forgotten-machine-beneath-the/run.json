@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1106,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 605,
+        "word_count": 93,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.8602150537634409,
+        "repeated_bigram_count": 3
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 97,
+        "word_count": 15,
+        "unique_word_count": 15,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 621,
+        "word_count": 94,
+        "unique_word_count": 83,
+        "unique_word_ratio": 0.8829787234042553,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 504,
+        "word_count": 68,
+        "unique_word_count": 59,
+        "unique_word_ratio": 0.8676470588235294,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "its",
+        "the",
+        "was",
+        "It",
+        "are",
+        ",",
+        "and",
+        "If",
+        "for"
+      ],
+      "output_text": "Let's break down the text into smaller parts to understand each element:\n\n1. **\"It\"**: This is referring back to the previous \"a forgotten machine,\" indicating that this is related to the previous sentence.\n2. **\"were\"**: Indicates past tense or repeated action.\n3. **its** (singular pronoun): Identifies a specific thing being referred to.\n4. The rest of the text describes how something repeats and becomes more complex over time.\n\nNow let's apply the Latent Direction Tokenization:\n\n1. **\"The\"**: Can refer to either singular or plural things depending on context but typically points towards something",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nLet's break down the text into smaller parts to understand each element:\n\n1. **\"It\"**: This is referring back to the previous \"a forgotten machine,\" indicating that this is related to the previous sentence.\n2. **\"were\"**: Indicates past tense or repeated action.\n3. **its** (singular pronoun): Identifies a specific thing being referred to.\n4. The rest of the text describes how something repeats and becomes more complex over time.\n\nNow let's apply the Latent Direction Tokenization:\n\n1. **\"The\"**: Can refer to either singular or plural things depending on context but typically points towards something",
+        "continuation_text": "Let's break down the text into smaller parts to understand each element:\n\n1. **\"It\"**: This is referring back to the previous \"a forgotten machine,\" indicating that this is related to the previous sentence.\n2. **\"were\"**: Indicates past tense or repeated action.\n3. **its** (singular pronoun): Identifies a specific thing being referred to.\n4. The rest of the text describes how something repeats and becomes more complex over time.\n\nNow let's apply the Latent Direction Tokenization:\n\n1. **\"The\"**: Can refer to either singular or plural things depending on context but typically points towards something",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 239,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 605,
+        "word_count": 93,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.8602150537634409,
+        "repeated_bigram_count": 3
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "to",
+        "the",
+        "is",
+        "and",
+        ",",
+        "for",
+        "\"",
+        "or",
+        "were",
+        "("
+      ],
+      "output_text": "The subsequent part will describe the growth and development over time of this repeating concept.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, to, the, is, and, ,, for, \", or, were, (\n\nTEXT:\nLet's break down the text into smaller parts to understand each element:\n\n1. **\"It\"**: This is referring back to the previous \"a forgotten machine,\" indicating that this is related to the previous sentence.\n2. **\"were\"**: Indicates past tense or repeated action.\n3. **its** (singular pronoun): Identifies a specific thing being referred to.\n4. The rest of the text describes how something repeats and becomes more complex over time.\n\nNow let's apply the Latent Direction Tokenization:\n\n1. **\"The\"**: Can refer to either singular or plural things depending on context but typically points towards something<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, to, the, is, and, ,, for, \", or, were, (\n\nTEXT:\nLet's break down the text into smaller parts to understand each element:\n\n1. **\"It\"**: This is referring back to the previous \"a forgotten machine,\" indicating that this is related to the previous sentence.\n2. **\"were\"**: Indicates past tense or repeated action.\n3. **its** (singular pronoun): Identifies a specific thing being referred to.\n4. The rest of the text describes how something repeats and becomes more complex over time.\n\nNow let's apply the Latent Direction Tokenization:\n\n1. **\"The\"**: Can refer to either singular or plural things depending on context but typically points towards something\nassistant\nThe subsequent part will describe the growth and development over time of this repeating concept.",
+        "continuation_text": "The subsequent part will describe the growth and development over time of this repeating concept.",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 224,
+        "new_token_count": 17,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 97,
+        "word_count": 15,
+        "unique_word_count": 15,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "the",
+        "it",
+        "if",
+        "of",
+        "and",
+        "this",
+        "is",
+        "for",
+        "The",
+        "to",
+        "will",
+        "are"
+      ],
+      "output_text": "To write the next recursive transformation based on the given latent anchor tokens (the, it, if, of, and, this, is, for), we need to analyze how these tokens can guide the meaning flow within the sentence structure. Here's one possible approach:\n\n### Original Text:\n\"The subsequent part will describe the growth and development over time of this repeating concept.\"\n\n#### Latent Anchor Tokens:\n- **\"will\":** indicates an action or future event.\n- **\"describe\":** suggests describing something explicitly.\n- **\"growth\":** implies the process of increasing in size or importance.\n- **and development\": connects two concepts",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, it, if, of, and, this, is, for, The, to, will, are\n\nTEXT:\nThe subsequent part will describe the growth and development over time of this repeating concept.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, it, if, of, and, this, is, for, The, to, will, are\n\nTEXT:\nThe subsequent part will describe the growth and development over time of this repeating concept.\nassistant\nTo write the next recursive transformation based on the given latent anchor tokens (the, it, if, of, and, this, is, for), we need to analyze how these tokens can guide the meaning flow within the sentence structure. Here's one possible approach:\n\n### Original Text:\n\"The subsequent part will describe the growth and development over time of this repeating concept.\"\n\n#### Latent Anchor Tokens:\n- **\"will\":** indicates an action or future event.\n- **\"describe\":** suggests describing something explicitly.\n- **\"growth\":** implies the process of increasing in size or importance.\n- **and development\": connects two concepts",
+        "continuation_text": "To write the next recursive transformation based on the given latent anchor tokens (the, it, if, of, and, this, is, for), we need to analyze how these tokens can guide the meaning flow within the sentence structure. Here's one possible approach:\n\n### Original Text:\n\"The subsequent part will describe the growth and development over time of this repeating concept.\"\n\n#### Latent Anchor Tokens:\n- **\"will\":** indicates an action or future event.\n- **\"describe\":** suggests describing something explicitly.\n- **\"growth\":** implies the process of increasing in size or importance.\n- **and development\": connects two concepts",
+        "input_token_count": 98,
+        "raw_input_token_count": 98,
+        "output_token_count": 226,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 621,
+        "word_count": 94,
+        "unique_word_count": 83,
+        "unique_word_ratio": 0.8829787234042553,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        ",",
+        "the",
+        "and",
+        "is",
+        "to",
+        "for",
+        "of",
+        "in",
+        "(",
+        "or"
+      ],
+      "output_text": "Certainly! Based on the latent anchor tokens provided (\"will\", \"describe\", \"growth\", \"development\"), let's rewrite this text using a recursive translation technique where each token guides the meaning forward in the sentence.\n\nHere’s the next recursive transformation:\n\n---\n\nThe subsequent part (if described) about this repeating concept's growth and development over time (...).\n\n---\n\nThis form maintains the overall structure while incorporating the additional contextual information from the anchors.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, ,, the, and, is, to, for, of, in, (, or\n\nTEXT:\nTo write the next recursive transformation based on the given latent anchor tokens (the, it, if, of, and, this, is, for), we need to analyze how these tokens can guide the meaning flow within the sentence structure. Here's one possible approach:\n\n### Original Text:\n\"The subsequent part will describe the growth and development over time of this repeating concept.\"\n\n#### Latent Anchor Tokens:\n- **\"will\":** indicates an action or future event.\n- **\"describe\":** suggests describing something explicitly.\n- **\"growth\":** implies the process of increasing in size or importance.\n- **and development\": connects two concepts<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, ,, the, and, is, to, for, of, in, (, or\n\nTEXT:\nTo write the next recursive transformation based on the given latent anchor tokens (the, it, if, of, and, this, is, for), we need to analyze how these tokens can guide the meaning flow within the sentence structure. Here's one possible approach:\n\n### Original Text:\n\"The subsequent part will describe the growth and development over time of this repeating concept.\"\n\n#### Latent Anchor Tokens:\n- **\"will\":** indicates an action or future event.\n- **\"describe\":** suggests describing something explicitly.\n- **\"growth\":** implies the process of increasing in size or importance.\n- **and development\": connects two concepts\nassistant\nCertainly! Based on the latent anchor tokens provided (\"will\", \"describe\", \"growth\", \"development\"), let's rewrite this text using a recursive translation technique where each token guides the meaning forward in the sentence.\n\nHere’s the next recursive transformation:\n\n---\n\nThe subsequent part (if described) about this repeating concept's growth and development over time (...).\n\n---\n\nThis form maintains the overall structure while incorporating the additional contextual information from the anchors.",
+        "continuation_text": "Certainly! Based on the latent anchor tokens provided (\"will\", \"describe\", \"growth\", \"development\"), let's rewrite this text using a recursive translation technique where each token guides the meaning forward in the sentence.\n\nHere’s the next recursive transformation:\n\n---\n\nThe subsequent part (if described) about this repeating concept's growth and development over time (...).\n\n---\n\nThis form maintains the overall structure while incorporating the additional contextual information from the anchors.",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 296,
+        "new_token_count": 88,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 504,
+        "word_count": 68,
+        "unique_word_count": 59,
+        "unique_word_ratio": 0.8676470588235294,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

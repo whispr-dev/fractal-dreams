@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1501,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 506,
+        "word_count": 74,
+        "unique_word_count": 68,
+        "unique_word_ratio": 0.918918918918919,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 324,
+        "word_count": 46,
+        "unique_word_count": 43,
+        "unique_word_ratio": 0.9347826086956522,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 635,
+        "word_count": 104,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.8365384615384616,
+        "repeated_bigram_count": 2
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "opportunities",
+        "از",
+        "engaged",
+        "�",
+        "いや",
+        "(verbose",
+        "are",
+        "or",
+        "_INFO",
+        "journal",
+        "anc",
+        "satisfaction"
+      ],
+      "output_text": "The next recursive transformation could involve exploring deeper perspectives within the context provided by the sentence while maintaining consistency with the given anchors:\n\n\"أيضا، من خلال هذه التجربة العلمية، يمكننا تحليل الوراثة الطبيعية للذرة والبقر بطرق مختلفة ومتعددة. يمكن أن نقوم بتقديم الإحصاءات المتخصصة في هذا الموضوع لمساعدتك على فهم ما يحتوي عليه الفرد البشري.\"\n\nThis version maintains the structure and content of the original sentence using latent anchor tokens to guide the interpretation",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nThe next recursive transformation could involve exploring deeper perspectives within the context provided by the sentence while maintaining consistency with the given anchors:\n\n\"أيضا، من خلال هذه التجربة العلمية، يمكننا تحليل الوراثة الطبيعية للذرة والبقر بطرق مختلفة ومتعددة. يمكن أن نقوم بتقديم الإحصاءات المتخصصة في هذا الموضوع لمساعدتك على فهم ما يحتوي عليه الفرد البشري.\"\n\nThis version maintains the structure and content of the original sentence using latent anchor tokens to guide the interpretation",
+        "continuation_text": "The next recursive transformation could involve exploring deeper perspectives within the context provided by the sentence while maintaining consistency with the given anchors:\n\n\"أيضا، من خلال هذه التجربة العلمية، يمكننا تحليل الوراثة الطبيعية للذرة والبقر بطرق مختلفة ومتعددة. يمكن أن نقوم بتقديم الإحصاءات المتخصصة في هذا الموضوع لمساعدتك على فهم ما يحتوي عليه الفرد البشري.\"\n\nThis version maintains the structure and content of the original sentence using latent anchor tokens to guide the interpretation",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 234,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 506,
+        "word_count": 74,
+        "unique_word_count": 68,
+        "unique_word_ratio": 0.918918918918919,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "existence",
+        "taken",
+        "Eg",
+        "Taking",
+        "存在问题",
+        "Negative",
+        "supremacy",
+        "李某",
+        "Pir",
+        "james",
+        "evil",
+        "гр"
+      ],
+      "output_text": "الnext recursive transformation could involve exploring deeper perspectives within the context provided by the sentence while maintaining consistency with the given anchors:\n\n\"توفير معرفة عن كيفية تطور النباتات والأبقار البشرية من جينات وآلات. يمكن النظر إلى دراسة مجموعة واسعة من النقاط المتعلقة بهذا الحدث العظيم لأفكارك.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: existence, taken, Eg, Taking, 存在问题, Negative, supremacy, 李某, Pir, james, evil, гр\n\nTEXT:\nThe next recursive transformation could involve exploring deeper perspectives within the context provided by the sentence while maintaining consistency with the given anchors:\n\n\"أيضا، من خلال هذه التجربة العلمية، يمكننا تحليل الوراثة الطبيعية للذرة والبقر بطرق مختلفة ومتعددة. يمكن أن نقوم بتقديم الإحصاءات المتخصصة في هذا الموضوع لمساعدتك على فهم ما يحتوي عليه الفرد البشري.\"\n\nThis version maintains the structure and content of the original sentence using latent anchor tokens to guide the interpretation<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: existence, taken, Eg, Taking, 存在问题, Negative, supremacy, 李某, Pir, james, evil, гр\n\nTEXT:\nThe next recursive transformation could involve exploring deeper perspectives within the context provided by the sentence while maintaining consistency with the given anchors:\n\n\"أيضا، من خلال هذه التجربة العلمية، يمكننا تحليل الوراثة الطبيعية للذرة والبقر بطرق مختلفة ومتعددة. يمكن أن نقوم بتقديم الإحصاءات المتخصصة في هذا الموضوع لمساعدتك على فهم ما يحتوي عليه الفرد البشري.\"\n\nThis version maintains the structure and content of the original sentence using latent anchor tokens to guide the interpretation\nassistant\nالnext recursive transformation could involve exploring deeper perspectives within the context provided by the sentence while maintaining consistency with the given anchors:\n\n\"توفير معرفة عن كيفية تطور النباتات والأبقار البشرية من جينات وآلات. يمكن النظر إلى دراسة مجموعة واسعة من النقاط المتعلقة بهذا الحدث العظيم لأفكارك.\"",
+        "continuation_text": "الnext recursive transformation could involve exploring deeper perspectives within the context provided by the sentence while maintaining consistency with the given anchors:\n\n\"توفير معرفة عن كيفية تطور النباتات والأبقار البشرية من جينات وآلات. يمكن النظر إلى دراسة مجموعة واسعة من النقاط المتعلقة بهذا الحدث العظيم لأفكارك.\"",
+        "input_token_count": 213,
+        "raw_input_token_count": 213,
+        "output_token_count": 291,
+        "new_token_count": 78,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 324,
+        "word_count": 46,
+        "unique_word_count": 43,
+        "unique_word_ratio": 0.9347826086956522,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        ")",
+        ",",
+        "\\[",
+        "|",
+        ".",
+        ":",
+        ")]",
+        "\"",
+        "(-",
+        ">",
+        "\">",
+        "if"
+      ],
+      "output_text": "This task involves generating a new, possibly more complex, form of text based on the input text using specific rules derived from the given anchor tokens and the Latent Anchor Tokens. Given that no clear set of instructions were specified for this process (a typical approach would be to generate a sequence of strings following certain patterns or principles), I will create an example output rather than provide a complete solution.\n\nHere's one possible way you might generate such a transformation using the rules provided:\n\n1. Start with the original text.\n2. Apply the Latent Anchor Tokens (\"\\[, |, \") according to their position",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ), ,, \\[, |, ., :, )], \", (-, >, \">, if\n\nTEXT:\nالnext recursive transformation could involve exploring deeper perspectives within the context provided by the sentence while maintaining consistency with the given anchors:\n\n\"توفير معرفة عن كيفية تطور النباتات والأبقار البشرية من جينات وآلات. يمكن النظر إلى دراسة مجموعة واسعة من النقاط المتعلقة بهذا الحدث العظيم لأفكارك.\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ), ,, \\[, |, ., :, )], \", (-, >, \">, if\n\nTEXT:\nالnext recursive transformation could involve exploring deeper perspectives within the context provided by the sentence while maintaining consistency with the given anchors:\n\n\"توفير معرفة عن كيفية تطور النباتات والأبقار البشرية من جينات وآلات. يمكن النظر إلى دراسة مجموعة واسعة من النقاط المتعلقة بهذا الحدث العظيم لأفكارك.\"\nassistant\nThis task involves generating a new, possibly more complex, form of text based on the input text using specific rules derived from the given anchor tokens and the Latent Anchor Tokens. Given that no clear set of instructions were specified for this process (a typical approach would be to generate a sequence of strings following certain patterns or principles), I will create an example output rather than provide a complete solution.\n\nHere's one possible way you might generate such a transformation using the rules provided:\n\n1. Start with the original text.\n2. Apply the Latent Anchor Tokens (\"\\[, |, \") according to their position",
+        "continuation_text": "This task involves generating a new, possibly more complex, form of text based on the input text using specific rules derived from the given anchor tokens and the Latent Anchor Tokens. Given that no clear set of instructions were specified for this process (a typical approach would be to generate a sequence of strings following certain patterns or principles), I will create an example output rather than provide a complete solution.\n\nHere's one possible way you might generate such a transformation using the rules provided:\n\n1. Start with the original text.\n2. Apply the Latent Anchor Tokens (\"\\[, |, \") according to their position",
+        "input_token_count": 161,
+        "raw_input_token_count": 161,
+        "output_token_count": 281,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 635,
+        "word_count": 104,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.8365384615384616,
+        "repeated_bigram_count": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1578,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 731,
+        "word_count": 120,
+        "unique_word_count": 117,
+        "unique_word_ratio": 0.975,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 732,
+        "word_count": 113,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.9646017699115044,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 189,
+        "word_count": 33,
+        "unique_word_count": 33,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 554,
+        "word_count": 88,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.9886363636363636,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "had",
+        "was",
+        "are",
+        "It",
+        "went",
+        "have",
+        "in",
+        "has",
+        "with",
+        "is"
+      ],
+      "output_text": "The team determined that what we thought would be an important part of this data structure could also happen when all those other features at once happened to exist outside the field - but even then they did not occur due to their limitations or any combination thereof. A single observation on three main characteristics for which one side may hold out above others will lead to new assumptions about how information flows between two systems; there might be some truth contained within both phenomena so far too much can never truly apply here under general conditions such as natural selection/coherence (see Methods ). In contrast, if your reasoning begins immediately after you're told something tells us where everything goes",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, had, was, are, It, went, have, in, has, with, is\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, had, was, are, It, went, have, in, has, with, is\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The team determined that what we thought would be an important part of this data structure could also happen when all those other features at once happened to exist outside the field - but even then they did not occur due to their limitations or any combination thereof. A single observation on three main characteristics for which one side may hold out above others will lead to new assumptions about how information flows between two systems; there might be some truth contained within both phenomena so far too much can never truly apply here under general conditions such as natural selection/coherence (see Methods ). In contrast, if your reasoning begins immediately after you're told something tells us where everything goes",
+        "continuation_text": "The team determined that what we thought would be an important part of this data structure could also happen when all those other features at once happened to exist outside the field - but even then they did not occur due to their limitations or any combination thereof. A single observation on three main characteristics for which one side may hold out above others will lead to new assumptions about how information flows between two systems; there might be some truth contained within both phenomena so far too much can never truly apply here under general conditions such as natural selection/coherence (see Methods ). In contrast, if your reasoning begins immediately after you're told something tells us where everything goes",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 230,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 731,
+        "word_count": 120,
+        "unique_word_count": 117,
+        "unique_word_ratio": 0.975,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "is",
+        "had",
+        "they",
+        "was",
+        "in",
+        "could",
+        "the"
+      ],
+      "output_text": "from here before anyone else starts making predictions against each other? For example, suppose 1st and 2nd degree trees need to start with very strong hypotheses based only on just certain things -- i... I don't know! But whether everyone knows anything really depends on who needs to say more than nothing because our intuition says \"so many times\" instead of believing them right now anyway. If someone tries to explain most complex problems while simultaneously trying harder to understand people's behavior etc., my guess becomes less accurate relative over time . This simplifies understanding rather dramatically since every system has different rules concerning orderality depending upon its dependencies. The result is that",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, is, had, they, was, in, could, the\n\nTEXT:\nThe team determined that what we thought would be an important part of this data structure could also happen when all those other features at once happened to exist outside the field - but even then they did not occur due to their limitations or any combination thereof. A single observation on three main characteristics for which one side may hold out above others will lead to new assumptions about how information flows between two systems; there might be some truth contained within both phenomena so far too much can never truly apply here under general conditions such as natural selection/coherence (see Methods ). In contrast, if your reasoning begins immediately after you're told something tells us where everything goes",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, is, had, they, was, in, could, the\n\nTEXT:\nThe team determined that what we thought would be an important part of this data structure could also happen when all those other features at once happened to exist outside the field - but even then they did not occur due to their limitations or any combination thereof. A single observation on three main characteristics for which one side may hold out above others will lead to new assumptions about how information flows between two systems; there might be some truth contained within both phenomena so far too much can never truly apply here under general conditions such as natural selection/coherence (see Methods ). In contrast, if your reasoning begins immediately after you're told something tells us where everything goes from here before anyone else starts making predictions against each other? For example, suppose 1st and 2nd degree trees need to start with very strong hypotheses based only on just certain things -- i... I don't know! But whether everyone knows anything really depends on who needs to say more than nothing because our intuition says \"so many times\" instead of believing them right now anyway. If someone tries to explain most complex problems while simultaneously trying harder to understand people's behavior etc., my guess becomes less accurate relative over time . This simplifies understanding rather dramatically since every system has different rules concerning orderality depending upon its dependencies. The result is that",
+        "continuation_text": "from here before anyone else starts making predictions against each other? For example, suppose 1st and 2nd degree trees need to start with very strong hypotheses based only on just certain things -- i... I don't know! But whether everyone knows anything really depends on who needs to say more than nothing because our intuition says \"so many times\" instead of believing them right now anyway. If someone tries to explain most complex problems while simultaneously trying harder to understand people's behavior etc., my guess becomes less accurate relative over time . This simplifies understanding rather dramatically since every system has different rules concerning orderality depending upon its dependencies. The result is that",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 732,
+        "word_count": 113,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.9646017699115044,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "are",
+        "have",
+        "If",
+        "is",
+        "had",
+        "makes",
+        "It",
+        "they",
+        "has"
+      ],
+      "output_text": "we can do this without changing one thing at all - but having said so much about how difficult solving an algorithm must actually solve (which basically means there isn't even any problem).",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, have, If, is, had, makes, It, they, has\n\nTEXT:\nfrom here before anyone else starts making predictions against each other? For example, suppose 1st and 2nd degree trees need to start with very strong hypotheses based only on just certain things -- i... I don't know! But whether everyone knows anything really depends on who needs to say more than nothing because our intuition says \"so many times\" instead of believing them right now anyway. If someone tries to explain most complex problems while simultaneously trying harder to understand people's behavior etc., my guess becomes less accurate relative over time . This simplifies understanding rather dramatically since every system has different rules concerning orderality depending upon its dependencies. The result is that",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, have, If, is, had, makes, It, they, has\n\nTEXT:\nfrom here before anyone else starts making predictions against each other? For example, suppose 1st and 2nd degree trees need to start with very strong hypotheses based only on just certain things -- i... I don't know! But whether everyone knows anything really depends on who needs to say more than nothing because our intuition says \"so many times\" instead of believing them right now anyway. If someone tries to explain most complex problems while simultaneously trying harder to understand people's behavior etc., my guess becomes less accurate relative over time . This simplifies understanding rather dramatically since every system has different rules concerning orderality depending upon its dependencies. The result is that we can do this without changing one thing at all - but having said so much about how difficult solving an algorithm must actually solve (which basically means there isn't even any problem).",
+        "continuation_text": "we can do this without changing one thing at all - but having said so much about how difficult solving an algorithm must actually solve (which basically means there isn't even any problem).",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 245,
+        "new_token_count": 38,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 189,
+        "word_count": 33,
+        "unique_word_count": 33,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "are",
+        "were",
+        "is",
+        "have",
+        "had",
+        "does",
+        "did",
+        "could",
+        "there",
+        "doing"
+      ],
+      "output_text": "One way to define what we're asking for as meaning \"is\" or \"i\", and which parts will need to fall within our grammar rules that seem quite obvious before you begin reading them yourself! It's probably better than ever because while many languages just use simple representations from each other rather then abstractions over complex ones...then let's see where they come into conflict with some specific idea/language structure I've mentioned above using first class definitions . We'll discuss more later on when implementing new functions here again :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, is, have, had, does, did, could, there, doing\n\nTEXT:\nwe can do this without changing one thing at all - but having said so much about how difficult solving an algorithm must actually solve (which basically means there isn't even any problem).",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, is, have, had, does, did, could, there, doing\n\nTEXT:\nwe can do this without changing one thing at all - but having said so much about how difficult solving an algorithm must actually solve (which basically means there isn't even any problem). One way to define what we're asking for as meaning \"is\" or \"i\", and which parts will need to fall within our grammar rules that seem quite obvious before you begin reading them yourself! It's probably better than ever because while many languages just use simple representations from each other rather then abstractions over complex ones...then let's see where they come into conflict with some specific idea/language structure I've mentioned above using first class definitions . We'll discuss more later on when implementing new functions here again :)",
+        "continuation_text": "One way to define what we're asking for as meaning \"is\" or \"i\", and which parts will need to fall within our grammar rules that seem quite obvious before you begin reading them yourself! It's probably better than ever because while many languages just use simple representations from each other rather then abstractions over complex ones...then let's see where they come into conflict with some specific idea/language structure I've mentioned above using first class definitions . We'll discuss more later on when implementing new functions here again :)",
+        "input_token_count": 115,
+        "raw_input_token_count": 115,
+        "output_token_count": 219,
+        "new_token_count": 104,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 554,
+        "word_count": 88,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.9886363636363636,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

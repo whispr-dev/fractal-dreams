@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1247,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 46,
+        "word_count": 6,
+        "unique_word_count": 6,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 487,
+        "word_count": 77,
+        "unique_word_count": 77,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1524,
+        "word_count": 237,
+        "unique_word_count": 133,
+        "unique_word_ratio": 0.5611814345991561,
+        "repeated_bigram_count": 89
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 611,
+        "word_count": 106,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9905660377358491,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "In doing this, she identified 4 possible endings to poem \"theories\" which could be used as reference material for poetic stories of life (though never thought out). The first story was about an ancient woman who had lost her husband after years of suffering from cancer... but got back together with his sister three days later when he became sicker than ever ... Her new lover would become pregnant by another man so they spent several weeks alone at home until both died; before anyone knew it all there is still one person left alive named Anna Nargislingin -- A beautiful old lady whom Lillian loved dearly enough . She said how lovely you have known him since childhood.... And I know what other people will say if no others like me follow their lovely footsteps or tell them just because we don't",
+      "output_text": "see eachother often anymore.\" -Lianne Hymowitz",
+      "source_window_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+      "reflection_window_text": "In doing this, she identified 4 possible endings to poem \"theories\" which could be used as reference material for poetic stories of life (though never thought out). The first story was about an ancient woman who had lost her husband after years of suffering from cancer... but got back together with his sister three days later when he became sicker than ever ... Her new lover would become pregnant by another man so they spent several weeks alone at home until both died; before anyone knew it all there is still one person left alive named Anna Nargislingin -- A beautiful old lady whom Lillian loved dearly enough . She said how lovely you have known him since childhood.... And I know what other people will say if no others like me follow their lovely footsteps or tell them just because we don't",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. In doing this, she identified 4 possible endings to poem \"theories\" which could be used as reference material for poetic stories of life (though never thought out). The first story was about an ancient woman who had lost her husband after years of suffering from cancer... but got back together with his sister three days later when he became sicker than ever ... Her new lover would become pregnant by another man so they spent several weeks alone at home until both died; before anyone knew it all there is still one person left alive named Anna Nargislingin -- A beautiful old lady whom Lillian loved dearly enough . She said how lovely you have known him since childhood.... And I know what other people will say if no others like me follow their lovely footsteps or tell them just because we don't",
+        "continuation_text": "In doing this, she identified 4 possible endings to poem \"theories\" which could be used as reference material for poetic stories of life (though never thought out). The first story was about an ancient woman who had lost her husband after years of suffering from cancer... but got back together with his sister three days later when he became sicker than ever ... Her new lover would become pregnant by another man so they spent several weeks alone at home until both died; before anyone knew it all there is still one person left alive named Anna Nargislingin -- A beautiful old lady whom Lillian loved dearly enough . She said how lovely you have known him since childhood.... And I know what other people will say if no others like me follow their lovely footsteps or tell them just because we don't",
+        "input_token_count": 92,
+        "raw_input_token_count": 92,
+        "output_token_count": 252,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nIn doing this, she identified 4 possible endings to poem \"theories\" which could be used as reference material for poetic stories of life (though never thought out). The first story was about an ancient woman who had lost her husband after years of suffering from cancer... but got back together with his sister three days later when he became sicker than ever ... Her new lover would become pregnant by another man so they spent several weeks alone at home until both died; before anyone knew it all there is still one person left alive named Anna Nargislingin -- A beautiful old lady whom Lillian loved dearly enough . She said how lovely you have known him since childhood.... And I know what other people will say if no others like me follow their lovely footsteps or tell them just because we don't",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nIn doing this, she identified 4 possible endings to poem \"theories\" which could be used as reference material for poetic stories of life (though never thought out). The first story was about an ancient woman who had lost her husband after years of suffering from cancer... but got back together with his sister three days later when he became sicker than ever ... Her new lover would become pregnant by another man so they spent several weeks alone at home until both died; before anyone knew it all there is still one person left alive named Anna Nargislingin -- A beautiful old lady whom Lillian loved dearly enough . She said how lovely you have known him since childhood.... And I know what other people will say if no others like me follow their lovely footsteps or tell them just because we don't see eachother often anymore.\" -Lianne Hymowitz",
+        "continuation_text": "see eachother often anymore.\" -Lianne Hymowitz",
+        "input_token_count": 239,
+        "raw_input_token_count": 239,
+        "output_token_count": 253,
+        "new_token_count": 14,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 46,
+        "word_count": 6,
+        "unique_word_count": 6,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": ", \"The Way We Learn\" on Coding Basics Theorem\n\n It sounds obvious but this is only for example because it's so hard to make up when you've done everything correctly with your brain! I'd say not even very clever people can go through all of these problems... So we need good examples here at Code Insights . There were several questions about what was going wrong while working from hand selected (not unselected) sentences as well as how quickly they got sorted out by an experienced programmer who knew code or where words ended after processing them right away....So no matter if he told us exactly which word will end first again within 5 seconds due to grammar error !!! No problem solved either way.. :) Well then look around one hundred times later i just saw something like:\"I",
+      "output_text": "get stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P",
+      "source_window_text": "see eachother often anymore.\" -Lianne Hymowitz",
+      "reflection_window_text": ", \"The Way We Learn\" on Coding Basics Theorem\n\n It sounds obvious but this is only for example because it's so hard to make up when you've done everything correctly with your brain! I'd say not even very clever people can go through all of these problems... So we need good examples here at Code Insights . There were several questions about what was going wrong while working from hand selected (not unselected) sentences as well as how quickly they got sorted out by an experienced programmer who knew code or where words ended after processing them right away....So no matter if he told us exactly which word will end first again within 5 seconds due to grammar error !!! No problem solved either way.. :) Well then look around one hundred times later i just saw something like:\"I",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nsee eachother often anymore.\" -Lianne Hymowitz",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nsee eachother often anymore.\" -Lianne Hymowitz, \"The Way We Learn\" on Coding Basics Theorem\n\n It sounds obvious but this is only for example because it's so hard to make up when you've done everything correctly with your brain! I'd say not even very clever people can go through all of these problems... So we need good examples here at Code Insights . There were several questions about what was going wrong while working from hand selected (not unselected) sentences as well as how quickly they got sorted out by an experienced programmer who knew code or where words ended after processing them right away....So no matter if he told us exactly which word will end first again within 5 seconds due to grammar error !!! No problem solved either way.. :) Well then look around one hundred times later i just saw something like:\"I",
+        "continuation_text": ", \"The Way We Learn\" on Coding Basics Theorem\n\n It sounds obvious but this is only for example because it's so hard to make up when you've done everything correctly with your brain! I'd say not even very clever people can go through all of these problems... So we need good examples here at Code Insights . There were several questions about what was going wrong while working from hand selected (not unselected) sentences as well as how quickly they got sorted out by an experienced programmer who knew code or where words ended after processing them right away....So no matter if he told us exactly which word will end first again within 5 seconds due to grammar error !!! No problem solved either way.. :) Well then look around one hundred times later i just saw something like:\"I",
+        "input_token_count": 82,
+        "raw_input_token_count": 82,
+        "output_token_count": 242,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsee eachother often anymore.\" -Lianne Hymowitz\n\nREFLECTION:\n, \"The Way We Learn\" on Coding Basics Theorem\n\n It sounds obvious but this is only for example because it's so hard to make up when you've done everything correctly with your brain! I'd say not even very clever people can go through all of these problems... So we need good examples here at Code Insights . There were several questions about what was going wrong while working from hand selected (not unselected) sentences as well as how quickly they got sorted out by an experienced programmer who knew code or where words ended after processing them right away....So no matter if he told us exactly which word will end first again within 5 seconds due to grammar error !!! No problem solved either way.. :) Well then look around one hundred times later i just saw something like:\"I",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsee eachother often anymore.\" -Lianne Hymowitz\n\nREFLECTION:\n, \"The Way We Learn\" on Coding Basics Theorem\n\n It sounds obvious but this is only for example because it's so hard to make up when you've done everything correctly with your brain! I'd say not even very clever people can go through all of these problems... So we need good examples here at Code Insights . There were several questions about what was going wrong while working from hand selected (not unselected) sentences as well as how quickly they got sorted out by an experienced programmer who knew code or where words ended after processing them right away....So no matter if he told us exactly which word will end first again within 5 seconds due to grammar error !!! No problem solved either way.. :) Well then look around one hundred times later i just saw something like:\"I get stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P",
+        "continuation_text": "get stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P",
+        "input_token_count": 230,
+        "raw_input_token_count": 230,
+        "output_token_count": 315,
+        "new_token_count": 85,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 487,
+        "word_count": 77,
+        "unique_word_count": 77,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P",
+      "source_window_text": "get stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P\n\n",
+        "continuation_text": "",
+        "input_token_count": 153,
+        "raw_input_token_count": 153,
+        "output_token_count": 155,
+        "new_token_count": 2,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P",
+        "continuation_text": "",
+        "input_token_count": 294,
+        "raw_input_token_count": 294,
+        "output_token_count": 295,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1524,
+        "word_count": 237,
+        "unique_word_count": 133,
+        "unique_word_ratio": 0.5611814345991561,
+        "repeated_bigram_count": 89
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "- Thanks for taking me through this... I really enjoyed your writing on these questions so far! :-)",
+      "output_text": "- \"How we make sense [of human behaviour] from scratch is what drives us.\" The idea behind reinterpretation here seems similar to how you found out about relativity via physics at an early age (you get caught up by maths!) or something like 'why does all life have six sides'? You can give anything back with either reference information OR even try building upon existing hypotheses/models . In fact if one wanted to say which hypothesis was best developed i could imagine getting rid around 10 years ago but guess who still comes round then ? We must always strive constantly ahead when finding new insights..",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P",
+      "reflection_window_text": "- Thanks for taking me through this... I really enjoyed your writing on these questions so far! :-)",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P\n - Thanks for taking me through this... I really enjoyed your writing on these questions so far! :-)",
+        "continuation_text": "- Thanks for taking me through this... I really enjoyed your writing on these questions so far! :-)",
+        "input_token_count": 363,
+        "raw_input_token_count": 363,
+        "output_token_count": 385,
+        "new_token_count": 22,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P\n\nREFLECTION:\n- Thanks for taking me through this... I really enjoyed your writing on these questions so far! :-)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nget stuck trying now\". That happened too many time and did seem completely fine before that? Just curious whether some extra steps might be needed along those lines ! Anyway my feeling would also change under conditions such light usage without having had any trouble translating sentence structure into English .. ...so probably there isn't much difference between two languages yet though since most folks don´t understand why our brains work differently over different parts anyway :P\n\nREFLECTION:\n- Thanks for taking me through this... I really enjoyed your writing on these questions so far! :-) - \"How we make sense [of human behaviour] from scratch is what drives us.\" The idea behind reinterpretation here seems similar to how you found out about relativity via physics at an early age (you get caught up by maths!) or something like 'why does all life have six sides'? You can give anything back with either reference information OR even try building upon existing hypotheses/models . In fact if one wanted to say which hypothesis was best developed i could imagine getting rid around 10 years ago but guess who still comes round then ? We must always strive constantly ahead when finding new insights..",
+        "continuation_text": "- \"How we make sense [of human behaviour] from scratch is what drives us.\" The idea behind reinterpretation here seems similar to how you found out about relativity via physics at an early age (you get caught up by maths!) or something like 'why does all life have six sides'? You can give anything back with either reference information OR even try building upon existing hypotheses/models . In fact if one wanted to say which hypothesis was best developed i could imagine getting rid around 10 years ago but guess who still comes round then ? We must always strive constantly ahead when finding new insights..",
+        "input_token_count": 371,
+        "raw_input_token_count": 371,
+        "output_token_count": 491,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 611,
+        "word_count": 106,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9905660377358491,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

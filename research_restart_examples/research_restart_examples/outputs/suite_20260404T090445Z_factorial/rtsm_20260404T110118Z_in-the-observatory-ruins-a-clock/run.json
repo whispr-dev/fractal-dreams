@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1156
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 214,
+        "word_count": 40,
+        "unique_word_count": 39,
+        "unique_word_ratio": 0.975,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 549,
+        "word_count": 97,
+        "unique_word_count": 94,
+        "unique_word_ratio": 0.9690721649484536,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 890,
+        "word_count": 157,
+        "unique_word_count": 153,
+        "unique_word_ratio": 0.9745222929936306,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 984,
+        "word_count": 175,
+        "unique_word_count": 170,
+        "unique_word_ratio": 0.9714285714285714,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2122,
+        "word_count": 372,
+        "unique_word_count": 189,
+        "unique_word_ratio": 0.5080645161290323,
+        "repeated_bigram_count": 174
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+      "delta_text": "But it's an actual game for all of you! There is another level which does just that...",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that...",
+        "continuation_text": "But it's an actual game for all of you! There is another level which does just that...",
+        "input_token_count": 63,
+        "raw_input_token_count": 63,
+        "output_token_count": 84,
+        "new_token_count": 21,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 214,
+        "word_count": 40,
+        "unique_word_count": 39,
+        "unique_word_ratio": 0.975,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that...",
+      "delta_text": "and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :)",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that...and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :)",
+        "continuation_text": "and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :)",
+        "input_token_count": 83,
+        "raw_input_token_count": 83,
+        "output_token_count": 147,
+        "new_token_count": 64,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 549,
+        "word_count": 97,
+        "unique_word_count": 94,
+        "unique_word_ratio": 0.9690721649484536,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :)",
+      "delta_text": "We're going make sure they've played by watching their videos first while i'm cooking up meals ;) Then go ahead and try out new rules because every one seems like there were changes after I tried doing things without anyone knowing where stuff got moved from until now ! This way our ideas change quickly so hopefully everything looks great",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :) We're going make sure they've played by watching their videos first while i'm cooking up meals ;) Then go ahead and try out new rules because every one seems like there were changes after I tried doing things without anyone knowing where stuff got moved from until now ! This way our ideas change quickly so hopefully everything looks great",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :) We're going make sure they've played by watching their videos first while i'm cooking up meals ;) Then go ahead and try out new rules because every one seems like there were changes after I tried doing things without anyone knowing where stuff got moved from until now ! This way our ideas change quickly so hopefully everything looks great",
+        "continuation_text": "We're going make sure they've played by watching their videos first while i'm cooking up meals ;) Then go ahead and try out new rules because every one seems like there were changes after I tried doing things without anyone knowing where stuff got moved from until now ! This way our ideas change quickly so hopefully everything looks great",
+        "input_token_count": 146,
+        "raw_input_token_count": 146,
+        "output_token_count": 210,
+        "new_token_count": 64,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 890,
+        "word_count": 157,
+        "unique_word_count": 153,
+        "unique_word_ratio": 0.9745222929936306,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :) We're going make sure they've played by watching their videos first while i'm cooking up meals ;) Then go ahead and try out new rules because every one seems like there were changes after I tried doing things without anyone knowing where stuff got moved from until now ! This way our ideas change quickly so hopefully everything looks great",
+      "delta_text": "together !!!\n\nIt may take hours but then please help keep those learning how to play again !!",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :) We're going make sure they've played by watching their videos first while i'm cooking up meals ;) Then go ahead and try out new rules because every one seems like there were changes after I tried doing things without anyone knowing where stuff got moved from until now ! This way our ideas change quickly so hopefully everything looks great together !!!\n\nIt may take hours but then please help keep those learning how to play again !!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :) We're going make sure they've played by watching their videos first while i'm cooking up meals ;) Then go ahead and try out new rules because every one seems like there were changes after I tried doing things without anyone knowing where stuff got moved from until now ! This way our ideas change quickly so hopefully everything looks great",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :) We're going make sure they've played by watching their videos first while i'm cooking up meals ;) Then go ahead and try out new rules because every one seems like there were changes after I tried doing things without anyone knowing where stuff got moved from until now ! This way our ideas change quickly so hopefully everything looks great together !!!\n\nIt may take hours but then please help keep those learning how to play again !!",
+        "continuation_text": "together !!!\n\nIt may take hours but then please help keep those learning how to play again !!",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 230,
+        "new_token_count": 21,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 984,
+        "word_count": 175,
+        "unique_word_count": 170,
+        "unique_word_ratio": 0.9714285714285714,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :) We're going make sure they've played by watching their videos first while i'm cooking up meals ;) Then go ahead and try out new rules because every one seems like there were changes after I tried doing things without anyone knowing where stuff got moved from until now ! This way our ideas change quickly so hopefully everything looks great together !!!\n\nIt may take hours but then please help keep those learning how to play again !!",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :) We're going make sure they've played by watching their videos first while i'm cooking up meals ;) Then go ahead and try out new rules because every one seems like there were changes after I tried doing things without anyone knowing where stuff got moved from until now ! This way our ideas change quickly so hopefully everything looks great together !!!\n\nIt may take hours but then please help keep those learning how to play again !!",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :) We're going make sure they've played by watching their videos first while i'm cooking up meals ;) Then go ahead and try out new rules because every one seems like there were changes after I tried doing things without anyone knowing where stuff got moved from until now ! This way our ideas change quickly so hopefully everything looks great together !!!\n\nIt may take hours but then please help keep those learning how to play again !! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :) We're going make sure they've played by watching their videos first while i'm cooking up meals ;) Then go ahead and try out new rules because every one seems like there were changes after I tried doing things without anyone knowing where stuff got moved from until now ! This way our ideas change quickly so hopefully everything looks great together !!!\n\nIt may take hours but then please help keep those learning how to play again !!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :) We're going make sure they've played by watching their videos first while i'm cooking up meals ;) Then go ahead and try out new rules because every one seems like there were changes after I tried doing things without anyone knowing where stuff got moved from until now ! This way our ideas change quickly so hopefully everything looks great together !!!\n\nIt may take hours but then please help keep those learning how to play again !!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. But it's an actual game for all of you! There is another level which does just that... and will be completed once on time? In this simulation we can choose between sending messages or making something specific about what happens when everyone has made mistakes at night with different devices before them - except some who have been playing games (e.g., my wife being able only watch tv during her lunch break) instead :) We're going make sure they've played by watching their videos first while i'm cooking up meals ;) Then go ahead and try out new rules because every one seems like there were changes after I tried doing things without anyone knowing where stuff got moved from until now ! This way our ideas change quickly so hopefully everything looks great together !!!\n\nIt may take hours but then please help keep those learning how to play again !!",
+        "continuation_text": "",
+        "input_token_count": 230,
+        "raw_input_token_count": 230,
+        "output_token_count": 231,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2122,
+        "word_count": 372,
+        "unique_word_count": 189,
+        "unique_word_ratio": 0.5080645161290323,
+        "repeated_bigram_count": 174
+      }
+    }
+  ]
+}

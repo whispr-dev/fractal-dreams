@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1597,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 566,
+        "word_count": 82,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.9390243902439024,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 587,
+        "word_count": 73,
+        "unique_word_count": 54,
+        "unique_word_ratio": 0.7397260273972602,
+        "repeated_bigram_count": 13
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 615,
+        "word_count": 85,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.8941176470588236,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "opportunities",
+        "از",
+        "engaged",
+        "�",
+        "いや",
+        "(verbose",
+        "are",
+        "or",
+        "_INFO",
+        "journal",
+        "anc",
+        "satisfaction"
+      ],
+      "output_text": "To write out the next recursive transformation using only the given latents, I'll follow these steps:\n\n1. **Identify Latent Tokens**: The text contains several tokens related to \"research\", \"vessel\", \"trench\", etc., but we need to keep them hidden for this process.\n2. **Understand Context**: We have three main elements that stand out - \"A research vessel\" (retrieved), \"transmission from the trench floor,\" and \"engineering telemetry\". These seem important based on context.\n3. **Recursive Transformation**: To achieve more complexity without revealing all initial",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nTo write out the next recursive transformation using only the given latents, I'll follow these steps:\n\n1. **Identify Latent Tokens**: The text contains several tokens related to \"research\", \"vessel\", \"trench\", etc., but we need to keep them hidden for this process.\n2. **Understand Context**: We have three main elements that stand out - \"A research vessel\" (retrieved), \"transmission from the trench floor,\" and \"engineering telemetry\". These seem important based on context.\n3. **Recursive Transformation**: To achieve more complexity without revealing all initial",
+        "continuation_text": "To write out the next recursive transformation using only the given latents, I'll follow these steps:\n\n1. **Identify Latent Tokens**: The text contains several tokens related to \"research\", \"vessel\", \"trench\", etc., but we need to keep them hidden for this process.\n2. **Understand Context**: We have three main elements that stand out - \"A research vessel\" (retrieved), \"transmission from the trench floor,\" and \"engineering telemetry\". These seem important based on context.\n3. **Recursive Transformation**: To achieve more complexity without revealing all initial",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 234,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 566,
+        "word_count": 82,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.9390243902439024,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "sizing",
+        "ידי",
+        "staring",
+        "chart",
+        "=open",
+        "<AudioSource",
+        "grass",
+        "要做到",
+        ".FIELD",
+        "_to",
+        "/icon",
+        "발"
+      ],
+      "output_text": "latent anchors, let's transform each token individually with attention mechanisms or neural architectures like Transformer blocks. Here is the transformed sequence:\n\n**Input Text:** \n```\n\"To write out the next recursive transformation using only the given latents, I'll follow these steps:\"\n```\n\n**Transformation Steps:**\n\n1. **Tokenization (Latent Tokens)**:\n   ```python\n   processed_text = tokenizer(\"To write out the next recursive transformation using only the given latents, I'll follow these steps:\", return_tensors=\"pt\")\n   ```\n\n2. **Encoding (Transformer Blocks)**:\n   ```python",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sizing, ידי, staring, chart, =open, <AudioSource, grass, 要做到, .FIELD, _to, /icon, 발\n\nTEXT:\nTo write out the next recursive transformation using only the given latents, I'll follow these steps:\n\n1. **Identify Latent Tokens**: The text contains several tokens related to \"research\", \"vessel\", \"trench\", etc., but we need to keep them hidden for this process.\n2. **Understand Context**: We have three main elements that stand out - \"A research vessel\" (retrieved), \"transmission from the trench floor,\" and \"engineering telemetry\". These seem important based on context.\n3. **Recursive Transformation**: To achieve more complexity without revealing all initial<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sizing, ידי, staring, chart, =open, <AudioSource, grass, 要做到, .FIELD, _to, /icon, 발\n\nTEXT:\nTo write out the next recursive transformation using only the given latents, I'll follow these steps:\n\n1. **Identify Latent Tokens**: The text contains several tokens related to \"research\", \"vessel\", \"trench\", etc., but we need to keep them hidden for this process.\n2. **Understand Context**: We have three main elements that stand out - \"A research vessel\" (retrieved), \"transmission from the trench floor,\" and \"engineering telemetry\". These seem important based on context.\n3. **Recursive Transformation**: To achieve more complexity without revealing all initial\nassistant\nlatent anchors, let's transform each token individually with attention mechanisms or neural architectures like Transformer blocks. Here is the transformed sequence:\n\n**Input Text:** \n```\n\"To write out the next recursive transformation using only the given latents, I'll follow these steps:\"\n```\n\n**Transformation Steps:**\n\n1. **Tokenization (Latent Tokens)**:\n   ```python\n   processed_text = tokenizer(\"To write out the next recursive transformation using only the given latents, I'll follow these steps:\", return_tensors=\"pt\")\n   ```\n\n2. **Encoding (Transformer Blocks)**:\n   ```python",
+        "continuation_text": "latent anchors, let's transform each token individually with attention mechanisms or neural architectures like Transformer blocks. Here is the transformed sequence:\n\n**Input Text:** \n```\n\"To write out the next recursive transformation using only the given latents, I'll follow these steps:\"\n```\n\n**Transformation Steps:**\n\n1. **Tokenization (Latent Tokens)**:\n   ```python\n   processed_text = tokenizer(\"To write out the next recursive transformation using only the given latents, I'll follow these steps:\", return_tensors=\"pt\")\n   ```\n\n2. **Encoding (Transformer Blocks)**:\n   ```python",
+        "input_token_count": 217,
+        "raw_input_token_count": 217,
+        "output_token_count": 337,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 587,
+        "word_count": 73,
+        "unique_word_count": 54,
+        "unique_word_ratio": 0.7397260273972602,
+        "repeated_bigram_count": 13
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "_VOL",
+        "镧",
+        ".Volume",
+        "told",
+        "września",
+        "Vol",
+        "AtA",
+        "კ",
+        "AZE",
+        ".Cells",
+        "oz",
+        ",X"
+      ],
+      "output_text": "```python\ninputs = {\"input_ids\": processed_text[\"input_ids\"]} # Convert input IDs back to tensors for processing\noutputs = encoder(inputs) # Run an inference on the inputs and get outputs.\n```\n\n3. **Attention Mechanisms/Neural Architectures**: Use your preferred methods to handle the attention across all tokens at once.\n\n4. **Output Formatting**: Ensure that any additional formatting requirements or transformations required by the prompt are applied here.\n\nThis step-by-step guide outlines how you can recursively process and modify the given text using Latent Attention Anchors within the constraints provided.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: _VOL, 镧, .Volume, told, września, Vol, AtA, კ, AZE, .Cells, oz, ,X\n\nTEXT:\nlatent anchors, let's transform each token individually with attention mechanisms or neural architectures like Transformer blocks. Here is the transformed sequence:\n\n**Input Text:** \n```\n\"To write out the next recursive transformation using only the given latents, I'll follow these steps:\"\n```\n\n**Transformation Steps:**\n\n1. **Tokenization (Latent Tokens)**:\n   ```python\n   processed_text = tokenizer(\"To write out the next recursive transformation using only the given latents, I'll follow these steps:\", return_tensors=\"pt\")\n   ```\n\n2. **Encoding (Transformer Blocks)**:\n   ```python<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: _VOL, 镧, .Volume, told, września, Vol, AtA, კ, AZE, .Cells, oz, ,X\n\nTEXT:\nlatent anchors, let's transform each token individually with attention mechanisms or neural architectures like Transformer blocks. Here is the transformed sequence:\n\n**Input Text:** \n```\n\"To write out the next recursive transformation using only the given latents, I'll follow these steps:\"\n```\n\n**Transformation Steps:**\n\n1. **Tokenization (Latent Tokens)**:\n   ```python\n   processed_text = tokenizer(\"To write out the next recursive transformation using only the given latents, I'll follow these steps:\", return_tensors=\"pt\")\n   ```\n\n2. **Encoding (Transformer Blocks)**:\n   ```python\nassistant\n```python\ninputs = {\"input_ids\": processed_text[\"input_ids\"]} # Convert input IDs back to tensors for processing\noutputs = encoder(inputs) # Run an inference on the inputs and get outputs.\n```\n\n3. **Attention Mechanisms/Neural Architectures**: Use your preferred methods to handle the attention across all tokens at once.\n\n4. **Output Formatting**: Ensure that any additional formatting requirements or transformations required by the prompt are applied here.\n\nThis step-by-step guide outlines how you can recursively process and modify the given text using Latent Attention Anchors within the constraints provided.",
+        "continuation_text": "```python\ninputs = {\"input_ids\": processed_text[\"input_ids\"]} # Convert input IDs back to tensors for processing\noutputs = encoder(inputs) # Run an inference on the inputs and get outputs.\n```\n\n3. **Attention Mechanisms/Neural Architectures**: Use your preferred methods to handle the attention across all tokens at once.\n\n4. **Output Formatting**: Ensure that any additional formatting requirements or transformations required by the prompt are applied here.\n\nThis step-by-step guide outlines how you can recursively process and modify the given text using Latent Attention Anchors within the constraints provided.",
+        "input_token_count": 218,
+        "raw_input_token_count": 218,
+        "output_token_count": 337,
+        "new_token_count": 119,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 615,
+        "word_count": 85,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.8941176470588236,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

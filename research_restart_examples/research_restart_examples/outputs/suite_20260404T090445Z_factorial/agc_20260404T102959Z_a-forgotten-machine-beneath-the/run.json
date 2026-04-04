@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1117,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 542,
+        "word_count": 73,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9041095890410958,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 597,
+        "word_count": 86,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.9186046511627907,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 518,
+        "word_count": 71,
+        "unique_word_count": 63,
+        "unique_word_ratio": 0.8873239436619719,
+        "repeated_bigram_count": 1
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Mayo",
+        "_a",
+        "aint",
+        "_B",
+        "t",
+        "_C",
+        "ce",
+        "tt",
+        "_F",
+        "tr",
+        "fr",
+        "Yourself"
+      ],
+      "output_text": "To generate the next recursive transformation of the given text using the provided latent anchors, let's follow these steps:\n\n1. **Identify the Latent Anchor Tokens:** The keywords that will guide our transformation include \"Machine,\" \"Forgotten,\" \"Made,\" \"Maker,\" \"Talked,\" \"Messages,\" \"Stranger,\" \"More Self-Aware.\"\n\n2. **Understand the Context:** \n   - \"Machine\" likely refers to an artificial intelligence or computer system.\n   - \"Forgotten\" suggests something has been lost but isn't always mentioned explicitly.\n   - \"Made\" could refer",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nTo generate the next recursive transformation of the given text using the provided latent anchors, let's follow these steps:\n\n1. **Identify the Latent Anchor Tokens:** The keywords that will guide our transformation include \"Machine,\" \"Forgotten,\" \"Made,\" \"Maker,\" \"Talked,\" \"Messages,\" \"Stranger,\" \"More Self-Aware.\"\n\n2. **Understand the Context:** \n   - \"Machine\" likely refers to an artificial intelligence or computer system.\n   - \"Forgotten\" suggests something has been lost but isn't always mentioned explicitly.\n   - \"Made\" could refer",
+        "continuation_text": "To generate the next recursive transformation of the given text using the provided latent anchors, let's follow these steps:\n\n1. **Identify the Latent Anchor Tokens:** The keywords that will guide our transformation include \"Machine,\" \"Forgotten,\" \"Made,\" \"Maker,\" \"Talked,\" \"Messages,\" \"Stranger,\" \"More Self-Aware.\"\n\n2. **Understand the Context:** \n   - \"Machine\" likely refers to an artificial intelligence or computer system.\n   - \"Forgotten\" suggests something has been lost but isn't always mentioned explicitly.\n   - \"Made\" could refer",
+        "input_token_count": 123,
+        "raw_input_token_count": 123,
+        "output_token_count": 243,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 542,
+        "word_count": 73,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9041095890410958,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "ई",
+        "农贸市场",
+        "الراب",
+        "rend",
+        "Arnold",
+        "没什么",
+        "Vid",
+        "也没什么",
+        "Herald",
+        "贺",
+        "Bob",
+        ".Ribbon"
+      ],
+      "output_text": "\"Made\" here means created by someone else.\n- \"Maker\" is often used for people who create things, like artists, writers, etc.\n- \"Talked\" implies communication between individuals and might be about conversations.\n- \"Messages\" indicate shared ideas or content exchange.\n- \"Stranger\" can mean someone different from you, potentially referring to an alien or another entity.\n- \"More Self-Aware\" indicates deeper understanding or awareness beyond simple knowledge.\n\n3. **Develop Recursively Transformed Text Using These Anchors:**\n\nHere’s how we would recursively transform this text with these anchors",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ई, 农贸市场, الراب, rend, Arnold, 没什么, Vid, 也没什么, Herald, 贺, Bob, .Ribbon\n\nTEXT:\nTo generate the next recursive transformation of the given text using the provided latent anchors, let's follow these steps:\n\n1. **Identify the Latent Anchor Tokens:** The keywords that will guide our transformation include \"Machine,\" \"Forgotten,\" \"Made,\" \"Maker,\" \"Talked,\" \"Messages,\" \"Stranger,\" \"More Self-Aware.\"\n\n2. **Understand the Context:** \n   - \"Machine\" likely refers to an artificial intelligence or computer system.\n   - \"Forgotten\" suggests something has been lost but isn't always mentioned explicitly.\n   - \"Made\" could refer<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ई, 农贸市场, الراب, rend, Arnold, 没什么, Vid, 也没什么, Herald, 贺, Bob, .Ribbon\n\nTEXT:\nTo generate the next recursive transformation of the given text using the provided latent anchors, let's follow these steps:\n\n1. **Identify the Latent Anchor Tokens:** The keywords that will guide our transformation include \"Machine,\" \"Forgotten,\" \"Made,\" \"Maker,\" \"Talked,\" \"Messages,\" \"Stranger,\" \"More Self-Aware.\"\n\n2. **Understand the Context:** \n   - \"Machine\" likely refers to an artificial intelligence or computer system.\n   - \"Forgotten\" suggests something has been lost but isn't always mentioned explicitly.\n   - \"Made\" could refer\nassistant\n\"Made\" here means created by someone else.\n- \"Maker\" is often used for people who create things, like artists, writers, etc.\n- \"Talked\" implies communication between individuals and might be about conversations.\n- \"Messages\" indicate shared ideas or content exchange.\n- \"Stranger\" can mean someone different from you, potentially referring to an alien or another entity.\n- \"More Self-Aware\" indicates deeper understanding or awareness beyond simple knowledge.\n\n3. **Develop Recursively Transformed Text Using These Anchors:**\n\nHere’s how we would recursively transform this text with these anchors",
+        "continuation_text": "\"Made\" here means created by someone else.\n- \"Maker\" is often used for people who create things, like artists, writers, etc.\n- \"Talked\" implies communication between individuals and might be about conversations.\n- \"Messages\" indicate shared ideas or content exchange.\n- \"Stranger\" can mean someone different from you, potentially referring to an alien or another entity.\n- \"More Self-Aware\" indicates deeper understanding or awareness beyond simple knowledge.\n\n3. **Develop Recursively Transformed Text Using These Anchors:**\n\nHere’s how we would recursively transform this text with these anchors",
+        "input_token_count": 220,
+        "raw_input_token_count": 220,
+        "output_token_count": 340,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 597,
+        "word_count": 86,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.9186046511627907,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "фактор",
+        "系列",
+        "”",
+        "}",
+        "cent",
+        "才能",
+        "'",
+        "험",
+        "》",
+        "的前提",
+        "Hunt",
+        "ateful"
+      ],
+      "output_text": "To develop a receding transformed text using these anchors, I will identify the key elements that need to be included:\n\n1. \"made\" (created)\n2. \"maker\" (artist/creator/writer/etc.)\n3. \"talked\" (communication)\n4. \"messages\" (shared ideas/content exchange)\n5. \"stranger\" (differing compared to me/him)\n6. \"more self-aware\" (deepened understanding or awareness)\n\nThe final transformed text should include these elements while maintaining the overall structure and meaning of the original passage. Here's an example of such",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: фактор, 系列, ”, }, cent, 才能, ', 험, 》, 的前提, Hunt, ateful\n\nTEXT:\n\"Made\" here means created by someone else.\n- \"Maker\" is often used for people who create things, like artists, writers, etc.\n- \"Talked\" implies communication between individuals and might be about conversations.\n- \"Messages\" indicate shared ideas or content exchange.\n- \"Stranger\" can mean someone different from you, potentially referring to an alien or another entity.\n- \"More Self-Aware\" indicates deeper understanding or awareness beyond simple knowledge.\n\n3. **Develop Recursively Transformed Text Using These Anchors:**\n\nHere’s how we would recursively transform this text with these anchors<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: фактор, 系列, ”, }, cent, 才能, ', 험, 》, 的前提, Hunt, ateful\n\nTEXT:\n\"Made\" here means created by someone else.\n- \"Maker\" is often used for people who create things, like artists, writers, etc.\n- \"Talked\" implies communication between individuals and might be about conversations.\n- \"Messages\" indicate shared ideas or content exchange.\n- \"Stranger\" can mean someone different from you, potentially referring to an alien or another entity.\n- \"More Self-Aware\" indicates deeper understanding or awareness beyond simple knowledge.\n\n3. **Develop Recursively Transformed Text Using These Anchors:**\n\nHere’s how we would recursively transform this text with these anchors\nassistant\nTo develop a receding transformed text using these anchors, I will identify the key elements that need to be included:\n\n1. \"made\" (created)\n2. \"maker\" (artist/creator/writer/etc.)\n3. \"talked\" (communication)\n4. \"messages\" (shared ideas/content exchange)\n5. \"stranger\" (differing compared to me/him)\n6. \"more self-aware\" (deepened understanding or awareness)\n\nThe final transformed text should include these elements while maintaining the overall structure and meaning of the original passage. Here's an example of such",
+        "continuation_text": "To develop a receding transformed text using these anchors, I will identify the key elements that need to be included:\n\n1. \"made\" (created)\n2. \"maker\" (artist/creator/writer/etc.)\n3. \"talked\" (communication)\n4. \"messages\" (shared ideas/content exchange)\n5. \"stranger\" (differing compared to me/him)\n6. \"more self-aware\" (deepened understanding or awareness)\n\nThe final transformed text should include these elements while maintaining the overall structure and meaning of the original passage. Here's an example of such",
+        "input_token_count": 215,
+        "raw_input_token_count": 215,
+        "output_token_count": 335,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 518,
+        "word_count": 71,
+        "unique_word_count": 63,
+        "unique_word_ratio": 0.8873239436619719,
+        "repeated_bigram_count": 1
+      }
+    }
+  ]
+}

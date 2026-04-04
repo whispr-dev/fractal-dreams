@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1497,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 642,
+        "word_count": 101,
+        "unique_word_count": 101,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 280,
+        "word_count": 47,
+        "unique_word_count": 47,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 631,
+        "word_count": 99,
+        "unique_word_count": 94,
+        "unique_word_ratio": 0.9494949494949495,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "scene",
+        "funeral",
+        "anti",
+        "military",
+        "GOP",
+        "blood",
+        "moment",
+        "party",
+        "families",
+        "border",
+        "pro",
+        "Republican"
+      ],
+      "output_text": "This was later used to develop information retrieval technology for warfare (see Section 5). In 1983, this project evolved beyond biology by integrating with many other disciplines including linguistics; anthropology, history – especially archaeology / ethnography/ sociocultural studies etc.. The program grew over time until it is now part one at Harvard University which has been called 'The Linguistic Project'. You can join its main team here under their title Language Data Analysis Unit . They have made up about half that number since 1985–although they may still be less than fully active when you get involved on your own initiative",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: scene, funeral, anti, military, GOP, blood, moment, party, families, border, pro, Republican\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: scene, funeral, anti, military, GOP, blood, moment, party, families, border, pro, Republican\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. This was later used to develop information retrieval technology for warfare (see Section 5). In 1983, this project evolved beyond biology by integrating with many other disciplines including linguistics; anthropology, history – especially archaeology / ethnography/ sociocultural studies etc.. The program grew over time until it is now part one at Harvard University which has been called 'The Linguistic Project'. You can join its main team here under their title Language Data Analysis Unit . They have made up about half that number since 1985–although they may still be less than fully active when you get involved on your own initiative",
+        "continuation_text": "This was later used to develop information retrieval technology for warfare (see Section 5). In 1983, this project evolved beyond biology by integrating with many other disciplines including linguistics; anthropology, history – especially archaeology / ethnography/ sociocultural studies etc.. The program grew over time until it is now part one at Harvard University which has been called 'The Linguistic Project'. You can join its main team here under their title Language Data Analysis Unit . They have made up about half that number since 1985–although they may still be less than fully active when you get involved on your own initiative",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 228,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 642,
+        "word_count": 101,
+        "unique_word_count": 101,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "\",\"",
+        "concluded",
+        "Recon",
+        "separating",
+        "の�",
+        "Ground",
+        "deployed",
+        "\"],\"",
+        "conducted",
+        "umat",
+        "Mountain",
+        "participating"
+      ],
+      "output_text": "through group projects such Aspergers and Mind Control , but no more so if I'm going back into psychology or any others fields again soon! Anyway, see comments regarding these examples above from my dissertation post titled How do we make sense out? Here's an interesting example…",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: \",\", concluded, Recon, separating, の�, Ground, deployed, \"],\", conducted, umat, Mountain, participating\n\nTEXT:\nThis was later used to develop information retrieval technology for warfare (see Section 5). In 1983, this project evolved beyond biology by integrating with many other disciplines including linguistics; anthropology, history – especially archaeology / ethnography/ sociocultural studies etc.. The program grew over time until it is now part one at Harvard University which has been called 'The Linguistic Project'. You can join its main team here under their title Language Data Analysis Unit . They have made up about half that number since 1985–although they may still be less than fully active when you get involved on your own initiative",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: \",\", concluded, Recon, separating, の�, Ground, deployed, \"],\", conducted, umat, Mountain, participating\n\nTEXT:\nThis was later used to develop information retrieval technology for warfare (see Section 5). In 1983, this project evolved beyond biology by integrating with many other disciplines including linguistics; anthropology, history – especially archaeology / ethnography/ sociocultural studies etc.. The program grew over time until it is now part one at Harvard University which has been called 'The Linguistic Project'. You can join its main team here under their title Language Data Analysis Unit . They have made up about half that number since 1985–although they may still be less than fully active when you get involved on your own initiative through group projects such Aspergers and Mind Control , but no more so if I'm going back into psychology or any others fields again soon! Anyway, see comments regarding these examples above from my dissertation post titled How do we make sense out? Here's an interesting example…",
+        "continuation_text": "through group projects such Aspergers and Mind Control , but no more so if I'm going back into psychology or any others fields again soon! Anyway, see comments regarding these examples above from my dissertation post titled How do we make sense out? Here's an interesting example…",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 266,
+        "new_token_count": 56,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 280,
+        "word_count": 47,
+        "unique_word_count": 47,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "been",
+        "whose",
+        "inexplicable",
+        "explains",
+        "unexplained",
+        "accuses",
+        "asserts",
+        "',\"",
+        "usual",
+        "seems",
+        "'ve",
+        "odd"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: been, whose, inexplicable, explains, unexplained, accuses, asserts, ',\", usual, seems, 've, odd\n\nTEXT:\nthrough group projects such Aspergers and Mind Control , but no more so if I'm going back into psychology or any others fields again soon! Anyway, see comments regarding these examples above from my dissertation post titled How do we make sense out? Here's an interesting example…",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: been, whose, inexplicable, explains, unexplained, accuses, asserts, ',\", usual, seems, 've, odd\n\nTEXT:\nthrough group projects such Aspergers and Mind Control , but no more so if I'm going back into psychology or any others fields again soon! Anyway, see comments regarding these examples above from my dissertation post titled How do we make sense out? Here's an interesting example…",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: been, whose, inexplicable, explains, unexplained, accuses, asserts, ',\", usual, seems, 've, odd\n\nTEXT:\nthrough group projects such Aspergers and Mind Control , but no more so if I'm going back into psychology or any others fields again soon! Anyway, see comments regarding these examples above from my dissertation post titled How do we make sense out? Here's an interesting example…",
+        "continuation_text": "",
+        "input_token_count": 142,
+        "raw_input_token_count": 142,
+        "output_token_count": 143,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 631,
+        "word_count": 99,
+        "unique_word_count": 94,
+        "unique_word_ratio": 0.9494949494949495,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

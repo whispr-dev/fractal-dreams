@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1392
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 610,
+        "word_count": 100,
+        "unique_word_count": 92,
+        "unique_word_ratio": 0.92,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1062,
+        "word_count": 181,
+        "unique_word_count": 156,
+        "unique_word_ratio": 0.861878453038674,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1503,
+        "word_count": 257,
+        "unique_word_count": 205,
+        "unique_word_ratio": 0.7976653696498055,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2017,
+        "word_count": 338,
+        "unique_word_count": 266,
+        "unique_word_ratio": 0.7869822485207101,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2509,
+        "word_count": 417,
+        "unique_word_count": 325,
+        "unique_word_ratio": 0.7793764988009593,
+        "repeated_bigram_count": 2
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nAfter years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This",
+        "continuation_text": "After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This",
+        "input_token_count": 66,
+        "raw_input_token_count": 66,
+        "output_token_count": 162,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 610,
+        "word_count": 100,
+        "unique_word_count": 92,
+        "unique_word_ratio": 0.92,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls.",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This\nassistant\nA lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls.",
+        "continuation_text": "A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls.",
+        "input_token_count": 162,
+        "raw_input_token_count": 162,
+        "output_token_count": 258,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1062,
+        "word_count": 181,
+        "unique_word_count": 156,
+        "unique_word_ratio": 0.861878453038674,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "the heart grew heavy with memories, and the weight of time hung over it like a thick fog. However, despite the past experiences, there was still a spark of optimism left in each ray of sunlight shone through the cracks in the wall. \n\nAmidst the silence, a soft rustling of leaves filled the air as if whispering secrets. Shadows danced on the dimly lit hallways, beckoning for whispers or incantations whispered with trembling hands. It was",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls. the heart grew heavy with memories, and the weight of time hung over it like a thick fog. However, despite the past experiences, there was still a spark of optimism left in each ray of sunlight shone through the cracks in the wall. \n\nAmidst the silence, a soft rustling of leaves filled the air as if whispering secrets. Shadows danced on the dimly lit hallways, beckoning for whispers or incantations whispered with trembling hands. It was",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls.\nassistant\nthe heart grew heavy with memories, and the weight of time hung over it like a thick fog. However, despite the past experiences, there was still a spark of optimism left in each ray of sunlight shone through the cracks in the wall. \n\nAmidst the silence, a soft rustling of leaves filled the air as if whispering secrets. Shadows danced on the dimly lit hallways, beckoning for whispers or incantations whispered with trembling hands. It was",
+        "continuation_text": "the heart grew heavy with memories, and the weight of time hung over it like a thick fog. However, despite the past experiences, there was still a spark of optimism left in each ray of sunlight shone through the cracks in the wall. \n\nAmidst the silence, a soft rustling of leaves filled the air as if whispering secrets. Shadows danced on the dimly lit hallways, beckoning for whispers or incantations whispered with trembling hands. It was",
+        "input_token_count": 258,
+        "raw_input_token_count": 258,
+        "output_token_count": 354,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1503,
+        "word_count": 257,
+        "unique_word_count": 205,
+        "unique_word_ratio": 0.7976653696498055,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls. the heart grew heavy with memories, and the weight of time hung over it like a thick fog. However, despite the past experiences, there was still a spark of optimism left in each ray of sunlight shone through the cracks in the wall. \n\nAmidst the silence, a soft rustling of leaves filled the air as if whispering secrets. Shadows danced on the dimly lit hallways, beckoning for whispers or incantations whispered with trembling hands. It was<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "A gentle wind carried ancient whispers, carrying symbols of old traditions back to their former land. Each call brought back a vivid image: laughter and joy, dreams come true; sadness and pain, lessons taught; triumphs and tribulations, stories told. These echoed tones were music composed by others, meant for another realm, while the narrator felt deeply connected to what had passed before himself.\n\nIn quiet corners scattered across the old structure stood figures draped in white coats, nursing patients in a",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls. the heart grew heavy with memories, and the weight of time hung over it like a thick fog. However, despite the past experiences, there was still a spark of optimism left in each ray of sunlight shone through the cracks in the wall. \n\nAmidst the silence, a soft rustling of leaves filled the air as if whispering secrets. Shadows danced on the dimly lit hallways, beckoning for whispers or incantations whispered with trembling hands. It was A gentle wind carried ancient whispers, carrying symbols of old traditions back to their former land. Each call brought back a vivid image: laughter and joy, dreams come true; sadness and pain, lessons taught; triumphs and tribulations, stories told. These echoed tones were music composed by others, meant for another realm, while the narrator felt deeply connected to what had passed before himself.\n\nIn quiet corners scattered across the old structure stood figures draped in white coats, nursing patients in a",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls. the heart grew heavy with memories, and the weight of time hung over it like a thick fog. However, despite the past experiences, there was still a spark of optimism left in each ray of sunlight shone through the cracks in the wall. \n\nAmidst the silence, a soft rustling of leaves filled the air as if whispering secrets. Shadows danced on the dimly lit hallways, beckoning for whispers or incantations whispered with trembling hands. It was<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls. the heart grew heavy with memories, and the weight of time hung over it like a thick fog. However, despite the past experiences, there was still a spark of optimism left in each ray of sunlight shone through the cracks in the wall. \n\nAmidst the silence, a soft rustling of leaves filled the air as if whispering secrets. Shadows danced on the dimly lit hallways, beckoning for whispers or incantations whispered with trembling hands. It was\nassistant\nA gentle wind carried ancient whispers, carrying symbols of old traditions back to their former land. Each call brought back a vivid image: laughter and joy, dreams come true; sadness and pain, lessons taught; triumphs and tribulations, stories told. These echoed tones were music composed by others, meant for another realm, while the narrator felt deeply connected to what had passed before himself.\n\nIn quiet corners scattered across the old structure stood figures draped in white coats, nursing patients in a",
+        "continuation_text": "A gentle wind carried ancient whispers, carrying symbols of old traditions back to their former land. Each call brought back a vivid image: laughter and joy, dreams come true; sadness and pain, lessons taught; triumphs and tribulations, stories told. These echoed tones were music composed by others, meant for another realm, while the narrator felt deeply connected to what had passed before himself.\n\nIn quiet corners scattered across the old structure stood figures draped in white coats, nursing patients in a",
+        "input_token_count": 354,
+        "raw_input_token_count": 354,
+        "output_token_count": 450,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2017,
+        "word_count": 338,
+        "unique_word_count": 266,
+        "unique_word_ratio": 0.7869822485207101,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls. the heart grew heavy with memories, and the weight of time hung over it like a thick fog. However, despite the past experiences, there was still a spark of optimism left in each ray of sunlight shone through the cracks in the wall. \n\nAmidst the silence, a soft rustling of leaves filled the air as if whispering secrets. Shadows danced on the dimly lit hallways, beckoning for whispers or incantations whispered with trembling hands. It was A gentle wind carried ancient whispers, carrying symbols of old traditions back to their former land. Each call brought back a vivid image: laughter and joy, dreams come true; sadness and pain, lessons taught; triumphs and tribulations, stories told. These echoed tones were music composed by others, meant for another realm, while the narrator felt deeply connected to what had passed before himself.\n\nIn quiet corners scattered across the old structure stood figures draped in white coats, nursing patients in a<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "dark cloaks reflecting harsh winter light. They smiled warmly at the narrator, offering comfort through tales woven around their faces. \"Your spirit may rest here,\" they said gently.  \nEach story was steeped in history, sharing insights into societal shifts. The stories recounted how change took place under mysterious circumstances which seemed divine.  \n\"Forgive us when we say we seek help,\" a wise old woman murmured as she placed two small boxes under an empty bed corner where a young",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls. the heart grew heavy with memories, and the weight of time hung over it like a thick fog. However, despite the past experiences, there was still a spark of optimism left in each ray of sunlight shone through the cracks in the wall. \n\nAmidst the silence, a soft rustling of leaves filled the air as if whispering secrets. Shadows danced on the dimly lit hallways, beckoning for whispers or incantations whispered with trembling hands. It was A gentle wind carried ancient whispers, carrying symbols of old traditions back to their former land. Each call brought back a vivid image: laughter and joy, dreams come true; sadness and pain, lessons taught; triumphs and tribulations, stories told. These echoed tones were music composed by others, meant for another realm, while the narrator felt deeply connected to what had passed before himself.\n\nIn quiet corners scattered across the old structure stood figures draped in white coats, nursing patients in a dark cloaks reflecting harsh winter light. They smiled warmly at the narrator, offering comfort through tales woven around their faces. \"Your spirit may rest here,\" they said gently.  \nEach story was steeped in history, sharing insights into societal shifts. The stories recounted how change took place under mysterious circumstances which seemed divine.  \n\"Forgive us when we say we seek help,\" a wise old woman murmured as she placed two small boxes under an empty bed corner where a young",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls. the heart grew heavy with memories, and the weight of time hung over it like a thick fog. However, despite the past experiences, there was still a spark of optimism left in each ray of sunlight shone through the cracks in the wall. \n\nAmidst the silence, a soft rustling of leaves filled the air as if whispering secrets. Shadows danced on the dimly lit hallways, beckoning for whispers or incantations whispered with trembling hands. It was A gentle wind carried ancient whispers, carrying symbols of old traditions back to their former land. Each call brought back a vivid image: laughter and joy, dreams come true; sadness and pain, lessons taught; triumphs and tribulations, stories told. These echoed tones were music composed by others, meant for another realm, while the narrator felt deeply connected to what had passed before himself.\n\nIn quiet corners scattered across the old structure stood figures draped in white coats, nursing patients in a<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. After years of silence, the old Victorian-era building's silent voice was finally heard. Each passing moment gave way to new words, weaving together stories about lost innocence, forgotten artistry, and tragic misadventures. The narrative turned from dark despair into serenading tears of sorrow at loved ones lost long ago. At last, amidst the haunting echo of their cries, there emerged hope - of finding love once again among those who might have been better known yet unseen. This A lone figure, lost in his thoughts, began to read aloud, her voice as broken as the stones he could no longer hold together. \"Dear child, remember now that this world has given you wings to soar beyond our confines,\" she continued, her fingers softly touching the letters. As the words fell from her lips, they began to form a melody, one that seemed to sing for him alone.\nThe memory faded away until only echoes lingered within the cavernous walls. the heart grew heavy with memories, and the weight of time hung over it like a thick fog. However, despite the past experiences, there was still a spark of optimism left in each ray of sunlight shone through the cracks in the wall. \n\nAmidst the silence, a soft rustling of leaves filled the air as if whispering secrets. Shadows danced on the dimly lit hallways, beckoning for whispers or incantations whispered with trembling hands. It was A gentle wind carried ancient whispers, carrying symbols of old traditions back to their former land. Each call brought back a vivid image: laughter and joy, dreams come true; sadness and pain, lessons taught; triumphs and tribulations, stories told. These echoed tones were music composed by others, meant for another realm, while the narrator felt deeply connected to what had passed before himself.\n\nIn quiet corners scattered across the old structure stood figures draped in white coats, nursing patients in a\nassistant\ndark cloaks reflecting harsh winter light. They smiled warmly at the narrator, offering comfort through tales woven around their faces. \"Your spirit may rest here,\" they said gently.  \nEach story was steeped in history, sharing insights into societal shifts. The stories recounted how change took place under mysterious circumstances which seemed divine.  \n\"Forgive us when we say we seek help,\" a wise old woman murmured as she placed two small boxes under an empty bed corner where a young",
+        "continuation_text": "dark cloaks reflecting harsh winter light. They smiled warmly at the narrator, offering comfort through tales woven around their faces. \"Your spirit may rest here,\" they said gently.  \nEach story was steeped in history, sharing insights into societal shifts. The stories recounted how change took place under mysterious circumstances which seemed divine.  \n\"Forgive us when we say we seek help,\" a wise old woman murmured as she placed two small boxes under an empty bed corner where a young",
+        "input_token_count": 450,
+        "raw_input_token_count": 450,
+        "output_token_count": 546,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2509,
+        "word_count": 417,
+        "unique_word_count": 325,
+        "unique_word_ratio": 0.7793764988009593,
+        "repeated_bigram_count": 2
+      }
+    }
+  ]
+}

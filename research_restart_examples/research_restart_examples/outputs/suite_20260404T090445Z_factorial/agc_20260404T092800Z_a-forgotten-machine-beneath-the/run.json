@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1033,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 403,
+        "word_count": 58,
+        "unique_word_count": 52,
+        "unique_word_ratio": 0.896551724137931,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 123,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 665,
+        "word_count": 96,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.8854166666666666,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Mayo",
+        "_a",
+        "aint",
+        "_B",
+        "t",
+        "_C",
+        "ce",
+        "tt",
+        "_F",
+        "tr",
+        "fr",
+        "Yourself"
+      ],
+      "output_text": "The next recursive transformation could be:\n\n\"Each repetition made its message more complex, less simple, and progressively harder for the listener to comprehend.\"\n\nThis transformation uses the given latent anchors (e.g., \"a\") and creates a new sentence that captures the essence of increasing complexity within the original one-liner without directly referencing any specific words from the input text.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nThe next recursive transformation could be:\n\n\"Each repetition made its message more complex, less simple, and progressively harder for the listener to comprehend.\"\n\nThis transformation uses the given latent anchors (e.g., \"a\") and creates a new sentence that captures the essence of increasing complexity within the original one-liner without directly referencing any specific words from the input text.",
+        "continuation_text": "The next recursive transformation could be:\n\n\"Each repetition made its message more complex, less simple, and progressively harder for the listener to comprehend.\"\n\nThis transformation uses the given latent anchors (e.g., \"a\") and creates a new sentence that captures the essence of increasing complexity within the original one-liner without directly referencing any specific words from the input text.",
+        "input_token_count": 123,
+        "raw_input_token_count": 123,
+        "output_token_count": 195,
+        "new_token_count": 72,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 403,
+        "word_count": 58,
+        "unique_word_count": 52,
+        "unique_word_ratio": 0.896551724137931,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "坚定",
+        "fp",
+        "$error",
+        "beautiful",
+        "UINT",
+        "学生的",
+        "-part",
+        "iest",
+        "PARTIC",
+        "…..",
+        "口气",
+        "THE"
+      ],
+      "output_text": "\"The repetition made each message more abstract, less concrete, and increasingly difficult for the listener to understand.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 坚定, fp, $error, beautiful, UINT, 学生的, -part, iest, PARTIC, ….., 口气, THE\n\nTEXT:\nThe next recursive transformation could be:\n\n\"Each repetition made its message more complex, less simple, and progressively harder for the listener to comprehend.\"\n\nThis transformation uses the given latent anchors (e.g., \"a\") and creates a new sentence that captures the essence of increasing complexity within the original one-liner without directly referencing any specific words from the input text.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 坚定, fp, $error, beautiful, UINT, 学生的, -part, iest, PARTIC, ….., 口气, THE\n\nTEXT:\nThe next recursive transformation could be:\n\n\"Each repetition made its message more complex, less simple, and progressively harder for the listener to comprehend.\"\n\nThis transformation uses the given latent anchors (e.g., \"a\") and creates a new sentence that captures the essence of increasing complexity within the original one-liner without directly referencing any specific words from the input text.\nassistant\n\"The repetition made each message more abstract, less concrete, and increasingly difficult for the listener to understand.\"",
+        "continuation_text": "\"The repetition made each message more abstract, less concrete, and increasingly difficult for the listener to understand.\"",
+        "input_token_count": 171,
+        "raw_input_token_count": 171,
+        "output_token_count": 192,
+        "new_token_count": 21,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 123,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Der",
+        "ihrer",
+        "﻿using",
+        "OTHER",
+        "THEIR",
+        "roman",
+        "der",
+        "_('",
+        "宝马",
+        "“Our",
+        "Desc",
+        "('#"
+      ],
+      "output_text": "The next recursive transformation would involve rephrasing or restructuring the given text using different forms that retain some structure while altering its meaning slightly. Given the context provided with the constraints on how much is considered \"soft guidance\" such as using existing anchors like \"Der,\" \"Their,\" etc., let's try to make it sound more conversational:\n\n\"The repetition gave each message more nuance, helping listeners grasp complex ideas better.\"\n\nThis new version incorporates meaningful words without relying heavily on Latin-based accents, maintaining the core idea about the text being more nuanced with respect to complexity when repeated.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Der, ihrer, ﻿using, OTHER, THEIR, roman, der, _(', 宝马, “Our, Desc, ('#\n\nTEXT:\n\"The repetition made each message more abstract, less concrete, and increasingly difficult for the listener to understand.\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Der, ihrer, ﻿using, OTHER, THEIR, roman, der, _(', 宝马, “Our, Desc, ('#\n\nTEXT:\n\"The repetition made each message more abstract, less concrete, and increasingly difficult for the listener to understand.\"\nassistant\nThe next recursive transformation would involve rephrasing or restructuring the given text using different forms that retain some structure while altering its meaning slightly. Given the context provided with the constraints on how much is considered \"soft guidance\" such as using existing anchors like \"Der,\" \"Their,\" etc., let's try to make it sound more conversational:\n\n\"The repetition gave each message more nuance, helping listeners grasp complex ideas better.\"\n\nThis new version incorporates meaningful words without relying heavily on Latin-based accents, maintaining the core idea about the text being more nuanced with respect to complexity when repeated.",
+        "continuation_text": "The next recursive transformation would involve rephrasing or restructuring the given text using different forms that retain some structure while altering its meaning slightly. Given the context provided with the constraints on how much is considered \"soft guidance\" such as using existing anchors like \"Der,\" \"Their,\" etc., let's try to make it sound more conversational:\n\n\"The repetition gave each message more nuance, helping listeners grasp complex ideas better.\"\n\nThis new version incorporates meaningful words without relying heavily on Latin-based accents, maintaining the core idea about the text being more nuanced with respect to complexity when repeated.",
+        "input_token_count": 112,
+        "raw_input_token_count": 112,
+        "output_token_count": 228,
+        "new_token_count": 116,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 665,
+        "word_count": 96,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.8854166666666666,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

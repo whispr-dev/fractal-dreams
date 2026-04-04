@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1137,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 605,
+        "word_count": 107,
+        "unique_word_count": 107,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 621,
+        "word_count": 104,
+        "unique_word_count": 104,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 587,
+        "word_count": 101,
+        "unique_word_count": 100,
+        "unique_word_ratio": 0.9900990099009901,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "got",
+        "Have",
+        "Are",
+        "have",
+        "Do",
+        "did",
+        "took",
+        "are",
+        "gave",
+        ",'\"",
+        "We",
+        "He"
+      ],
+      "output_text": "The last number is 0 by default; it's supposed that we should be able look at numbers up until now without falling asleep with an hourglass on our head or any other form than randomness so long you know how many times your eyes turn off when seeing something else like \"you\" (or some nonsense similar) but somehow I believe this has been removed from view because there will never again exist such thoughts where they would occur more often after people actually read each others words for hours instead! You can imagine me asking myself these questions before writing my book [the second sentence] : 'I'm",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: got, Have, Are, have, Do, did, took, are, gave, ,'\", We, He\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: got, Have, Are, have, Do, did, took, are, gave, ,'\", We, He\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The last number is 0 by default; it's supposed that we should be able look at numbers up until now without falling asleep with an hourglass on our head or any other form than randomness so long you know how many times your eyes turn off when seeing something else like \"you\" (or some nonsense similar) but somehow I believe this has been removed from view because there will never again exist such thoughts where they would occur more often after people actually read each others words for hours instead! You can imagine me asking myself these questions before writing my book [the second sentence] : 'I'm",
+        "continuation_text": "The last number is 0 by default; it's supposed that we should be able look at numbers up until now without falling asleep with an hourglass on our head or any other form than randomness so long you know how many times your eyes turn off when seeing something else like \"you\" (or some nonsense similar) but somehow I believe this has been removed from view because there will never again exist such thoughts where they would occur more often after people actually read each others words for hours instead! You can imagine me asking myself these questions before writing my book [the second sentence] : 'I'm",
+        "input_token_count": 115,
+        "raw_input_token_count": 115,
+        "output_token_count": 235,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 605,
+        "word_count": 107,
+        "unique_word_count": 107,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "repeated",
+        "false",
+        "correction",
+        "corrected",
+        "errors",
+        "comments",
+        "uster",
+        "calls",
+        "incorrectly",
+        "call",
+        "comparisons",
+        "similar"
+      ],
+      "output_text": "trying really hard here and just don't have time.' This might sound great if what was happening wasn't completely unexpected? But then…this isn´ts all right?' And no one even noticed..so why am I talking about saving data into memory rather than creating new ones?! It seems possible nobody expected their brains to explode once he finished reading over 1000 lines ? If everything went according plan , let him finish his first chapter quickly enough...because every single thing needed changing ! No matter which way someone turns out . That said, none dare say anything too extreme lest somebody get bored due give them",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: repeated, false, correction, corrected, errors, comments, uster, calls, incorrectly, call, comparisons, similar\n\nTEXT:\nThe last number is 0 by default; it's supposed that we should be able look at numbers up until now without falling asleep with an hourglass on our head or any other form than randomness so long you know how many times your eyes turn off when seeing something else like \"you\" (or some nonsense similar) but somehow I believe this has been removed from view because there will never again exist such thoughts where they would occur more often after people actually read each others words for hours instead! You can imagine me asking myself these questions before writing my book [the second sentence] : 'I'm",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: repeated, false, correction, corrected, errors, comments, uster, calls, incorrectly, call, comparisons, similar\n\nTEXT:\nThe last number is 0 by default; it's supposed that we should be able look at numbers up until now without falling asleep with an hourglass on our head or any other form than randomness so long you know how many times your eyes turn off when seeing something else like \"you\" (or some nonsense similar) but somehow I believe this has been removed from view because there will never again exist such thoughts where they would occur more often after people actually read each others words for hours instead! You can imagine me asking myself these questions before writing my book [the second sentence] : 'I'm trying really hard here and just don't have time.' This might sound great if what was happening wasn't completely unexpected? But then…this isn´ts all right?' And no one even noticed..so why am I talking about saving data into memory rather than creating new ones?! It seems possible nobody expected their brains to explode once he finished reading over 1000 lines ? If everything went according plan , let him finish his first chapter quickly enough...because every single thing needed changing ! No matter which way someone turns out . That said, none dare say anything too extreme lest somebody get bored due give them",
+        "continuation_text": "trying really hard here and just don't have time.' This might sound great if what was happening wasn't completely unexpected? But then…this isn´ts all right?' And no one even noticed..so why am I talking about saving data into memory rather than creating new ones?! It seems possible nobody expected their brains to explode once he finished reading over 1000 lines ? If everything went according plan , let him finish his first chapter quickly enough...because every single thing needed changing ! No matter which way someone turns out . That said, none dare say anything too extreme lest somebody get bored due give them",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 326,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 621,
+        "word_count": 104,
+        "unique_word_count": 104,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "T",
+        "Mountain",
+        "vill",
+        "�",
+        "mountain",
+        "t",
+        "countless",
+        "wooden",
+        "Ten",
+        "mountains",
+        "Wu",
+        "walls"
+      ],
+      "output_text": "more info on it later!  The problem is this ; you can easily go overboard with any number :)\n\n(Note that we're going for simplicity but after some further experimentation try adding numbers around 0 (0 * 100), 1 (1 * 12). Don`T do maths there ;) ) There were many other problems above mentioned though; like how does math work without variables or using strings instead Of course your brain would be better off knowing where each variable/string comes from since they should also contain \"strings\". We'll check those by doing an example sentence through normal logic when given something",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: T, Mountain, vill, �, mountain, t, countless, wooden, Ten, mountains, Wu, walls\n\nTEXT:\ntrying really hard here and just don't have time.' This might sound great if what was happening wasn't completely unexpected? But then…this isn´ts all right?' And no one even noticed..so why am I talking about saving data into memory rather than creating new ones?! It seems possible nobody expected their brains to explode once he finished reading over 1000 lines ? If everything went according plan , let him finish his first chapter quickly enough...because every single thing needed changing ! No matter which way someone turns out . That said, none dare say anything too extreme lest somebody get bored due give them",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: T, Mountain, vill, �, mountain, t, countless, wooden, Ten, mountains, Wu, walls\n\nTEXT:\ntrying really hard here and just don't have time.' This might sound great if what was happening wasn't completely unexpected? But then…this isn´ts all right?' And no one even noticed..so why am I talking about saving data into memory rather than creating new ones?! It seems possible nobody expected their brains to explode once he finished reading over 1000 lines ? If everything went according plan , let him finish his first chapter quickly enough...because every single thing needed changing ! No matter which way someone turns out . That said, none dare say anything too extreme lest somebody get bored due give them more info on it later!  The problem is this ; you can easily go overboard with any number :)\n\n(Note that we're going for simplicity but after some further experimentation try adding numbers around 0 (0 * 100), 1 (1 * 12). Don`T do maths there ;) ) There were many other problems above mentioned though; like how does math work without variables or using strings instead Of course your brain would be better off knowing where each variable/string comes from since they should also contain \"strings\". We'll check those by doing an example sentence through normal logic when given something",
+        "continuation_text": "more info on it later!  The problem is this ; you can easily go overboard with any number :)\n\n(Note that we're going for simplicity but after some further experimentation try adding numbers around 0 (0 * 100), 1 (1 * 12). Don`T do maths there ;) ) There were many other problems above mentioned though; like how does math work without variables or using strings instead Of course your brain would be better off knowing where each variable/string comes from since they should also contain \"strings\". We'll check those by doing an example sentence through normal logic when given something",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 325,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 587,
+        "word_count": 101,
+        "unique_word_count": 100,
+        "unique_word_ratio": 0.9900990099009901,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1526,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 781,
+        "word_count": 109,
+        "unique_word_count": 98,
+        "unique_word_ratio": 0.8990825688073395,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 680,
+        "word_count": 93,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.9139784946236559,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 807,
+        "word_count": 115,
+        "unique_word_count": 98,
+        "unique_word_ratio": 0.8521739130434782,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 499,
+        "word_count": 71,
+        "unique_word_count": 61,
+        "unique_word_ratio": 0.8591549295774648,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "were",
+        "from",
+        "and",
+        "the",
+        "was",
+        "to",
+        "a",
+        "A",
+        "for"
+      ],
+      "output_text": "The next recursive transformation would be:\n\nIt was an attempt at philosophical understanding that evolved through years of scientific inquiry. From then on, its purpose shifted toward practical applications, eventually culminating in modern technological advancements.\n\nThis is achieved using a step-by-step approach where each layer adds depth and complexity to the original text, gradually revealing its evolution from initial efforts towards advanced exploration and utilization. The syntax becomes more complex while maintaining the core essence of the narrative.\n\nFor reference, this could potentially lead to further transformations such as adding \"and\" before the year or incorporating new data points related to historical context or current developments within the field.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nThe next recursive transformation would be:\n\nIt was an attempt at philosophical understanding that evolved through years of scientific inquiry. From then on, its purpose shifted toward practical applications, eventually culminating in modern technological advancements.\n\nThis is achieved using a step-by-step approach where each layer adds depth and complexity to the original text, gradually revealing its evolution from initial efforts towards advanced exploration and utilization. The syntax becomes more complex while maintaining the core essence of the narrative.\n\nFor reference, this could potentially lead to further transformations such as adding \"and\" before the year or incorporating new data points related to historical context or current developments within the field.",
+        "continuation_text": "The next recursive transformation would be:\n\nIt was an attempt at philosophical understanding that evolved through years of scientific inquiry. From then on, its purpose shifted toward practical applications, eventually culminating in modern technological advancements.\n\nThis is achieved using a step-by-step approach where each layer adds depth and complexity to the original text, gradually revealing its evolution from initial efforts towards advanced exploration and utilization. The syntax becomes more complex while maintaining the core essence of the narrative.\n\nFor reference, this could potentially lead to further transformations such as adding \"and\" before the year or incorporating new data points related to historical context or current developments within the field.",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 229,
+        "new_token_count": 125,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 781,
+        "word_count": 109,
+        "unique_word_count": 98,
+        "unique_word_ratio": 0.8990825688073395,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "were",
+        "to",
+        "for",
+        "is",
+        "and",
+        "was",
+        "of",
+        "that",
+        "are"
+      ],
+      "output_text": "To proceed with the next recursive transformation, let's analyze the provided text and consider how we can apply the guide given by the latent directional tokens. \n\nFirstly, I'll break down the steps involved in generating the transformation:\n\n1. **Initial Understanding:** Start with a summary of what needs to be conveyed.\n2. **Evolution Through Scientific Inquiry:** Describe the progression from foundational work to contemporary impact.\n3. **Purpose Shift Toward Practical Applications:** Identify key areas where advancement takes place.\n4. **Enduring Purpose:**\n   - **Modern Technological Advancements:** Highlight significant innovations made during this period.\n5. **Syn",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, to, for, is, and, was, of, that, are\n\nTEXT:\nThe next recursive transformation would be:\n\nIt was an attempt at philosophical understanding that evolved through years of scientific inquiry. From then on, its purpose shifted toward practical applications, eventually culminating in modern technological advancements.\n\nThis is achieved using a step-by-step approach where each layer adds depth and complexity to the original text, gradually revealing its evolution from initial efforts towards advanced exploration and utilization. The syntax becomes more complex while maintaining the core essence of the narrative.\n\nFor reference, this could potentially lead to further transformations such as adding \"and\" before the year or incorporating new data points related to historical context or current developments within the field.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, to, for, is, and, was, of, that, are\n\nTEXT:\nThe next recursive transformation would be:\n\nIt was an attempt at philosophical understanding that evolved through years of scientific inquiry. From then on, its purpose shifted toward practical applications, eventually culminating in modern technological advancements.\n\nThis is achieved using a step-by-step approach where each layer adds depth and complexity to the original text, gradually revealing its evolution from initial efforts towards advanced exploration and utilization. The syntax becomes more complex while maintaining the core essence of the narrative.\n\nFor reference, this could potentially lead to further transformations such as adding \"and\" before the year or incorporating new data points related to historical context or current developments within the field.\nassistant\nTo proceed with the next recursive transformation, let's analyze the provided text and consider how we can apply the guide given by the latent directional tokens. \n\nFirstly, I'll break down the steps involved in generating the transformation:\n\n1. **Initial Understanding:** Start with a summary of what needs to be conveyed.\n2. **Evolution Through Scientific Inquiry:** Describe the progression from foundational work to contemporary impact.\n3. **Purpose Shift Toward Practical Applications:** Identify key areas where advancement takes place.\n4. **Enduring Purpose:**\n   - **Modern Technological Advancements:** Highlight significant innovations made during this period.\n5. **Syn",
+        "continuation_text": "To proceed with the next recursive transformation, let's analyze the provided text and consider how we can apply the guide given by the latent directional tokens. \n\nFirstly, I'll break down the steps involved in generating the transformation:\n\n1. **Initial Understanding:** Start with a summary of what needs to be conveyed.\n2. **Evolution Through Scientific Inquiry:** Describe the progression from foundational work to contemporary impact.\n3. **Purpose Shift Toward Practical Applications:** Identify key areas where advancement takes place.\n4. **Enduring Purpose:**\n   - **Modern Technological Advancements:** Highlight significant innovations made during this period.\n5. **Syn",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 334,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 680,
+        "word_count": 93,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.9139784946236559,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "the",
+        "**",
+        "to",
+        "If",
+        "are",
+        "for",
+        "is",
+        "was",
+        "It"
+      ],
+      "output_text": "**Next Recursive Transformation**\n\nThe following recursive transformation guides me through developing a comprehensive understanding of the initial concept and its subsequent evolution. By breaking down the narrative into manageable sections, each step will lead us towards elucidating the fundamental principles that have shaped our current state. This approach allows us to explore how scientific inquiry has progressively progressed, mapping out the transformations in terms of both progressiveness and depth.\n\nStarting with the basics, my focus will be on the establishment of foundational concepts that lay the groundwork for more advanced developments. As we delve deeper into this section, I aim to illustrate how each piece contributes uniquely to broader intellectual growth over time.\n\nMoving onto",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, **, to, If, are, for, is, was, It\n\nTEXT:\nTo proceed with the next recursive transformation, let's analyze the provided text and consider how we can apply the guide given by the latent directional tokens. \n\nFirstly, I'll break down the steps involved in generating the transformation:\n\n1. **Initial Understanding:** Start with a summary of what needs to be conveyed.\n2. **Evolution Through Scientific Inquiry:** Describe the progression from foundational work to contemporary impact.\n3. **Purpose Shift Toward Practical Applications:** Identify key areas where advancement takes place.\n4. **Enduring Purpose:**\n   - **Modern Technological Advancements:** Highlight significant innovations made during this period.\n5. **Syn<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, **, to, If, are, for, is, was, It\n\nTEXT:\nTo proceed with the next recursive transformation, let's analyze the provided text and consider how we can apply the guide given by the latent directional tokens. \n\nFirstly, I'll break down the steps involved in generating the transformation:\n\n1. **Initial Understanding:** Start with a summary of what needs to be conveyed.\n2. **Evolution Through Scientific Inquiry:** Describe the progression from foundational work to contemporary impact.\n3. **Purpose Shift Toward Practical Applications:** Identify key areas where advancement takes place.\n4. **Enduring Purpose:**\n   - **Modern Technological Advancements:** Highlight significant innovations made during this period.\n5. **Syn\nassistant\n**Next Recursive Transformation**\n\nThe following recursive transformation guides me through developing a comprehensive understanding of the initial concept and its subsequent evolution. By breaking down the narrative into manageable sections, each step will lead us towards elucidating the fundamental principles that have shaped our current state. This approach allows us to explore how scientific inquiry has progressively progressed, mapping out the transformations in terms of both progressiveness and depth.\n\nStarting with the basics, my focus will be on the establishment of foundational concepts that lay the groundwork for more advanced developments. As we delve deeper into this section, I aim to illustrate how each piece contributes uniquely to broader intellectual growth over time.\n\nMoving onto",
+        "continuation_text": "**Next Recursive Transformation**\n\nThe following recursive transformation guides me through developing a comprehensive understanding of the initial concept and its subsequent evolution. By breaking down the narrative into manageable sections, each step will lead us towards elucidating the fundamental principles that have shaped our current state. This approach allows us to explore how scientific inquiry has progressively progressed, mapping out the transformations in terms of both progressiveness and depth.\n\nStarting with the basics, my focus will be on the establishment of foundational concepts that lay the groundwork for more advanced developments. As we delve deeper into this section, I aim to illustrate how each piece contributes uniquely to broader intellectual growth over time.\n\nMoving onto",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 338,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 807,
+        "word_count": 115,
+        "unique_word_count": 98,
+        "unique_word_ratio": 0.8521739130434782,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "the",
+        "were",
+        "to",
+        "that",
+        "are",
+        "of",
+        "for",
+        "this",
+        "was",
+        "If"
+      ],
+      "output_text": "the development of critical thinking skills as well as empirical methods, which will aid us in navigating complex issues and making informed decisions based on evidence-based information.\nIn summary, this section will provide an overview of the overall progression of scientific inquiry from ancient civilizations to modern times. It aims to offer insights into the various approaches used across different epochs while emphasizing the importance of continuous improvement in research methodologies.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, were, to, that, are, of, for, this, was, If\n\nTEXT:\n**Next Recursive Transformation**\n\nThe following recursive transformation guides me through developing a comprehensive understanding of the initial concept and its subsequent evolution. By breaking down the narrative into manageable sections, each step will lead us towards elucidating the fundamental principles that have shaped our current state. This approach allows us to explore how scientific inquiry has progressively progressed, mapping out the transformations in terms of both progressiveness and depth.\n\nStarting with the basics, my focus will be on the establishment of foundational concepts that lay the groundwork for more advanced developments. As we delve deeper into this section, I aim to illustrate how each piece contributes uniquely to broader intellectual growth over time.\n\nMoving onto<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, were, to, that, are, of, for, this, was, If\n\nTEXT:\n**Next Recursive Transformation**\n\nThe following recursive transformation guides me through developing a comprehensive understanding of the initial concept and its subsequent evolution. By breaking down the narrative into manageable sections, each step will lead us towards elucidating the fundamental principles that have shaped our current state. This approach allows us to explore how scientific inquiry has progressively progressed, mapping out the transformations in terms of both progressiveness and depth.\n\nStarting with the basics, my focus will be on the establishment of foundational concepts that lay the groundwork for more advanced developments. As we delve deeper into this section, I aim to illustrate how each piece contributes uniquely to broader intellectual growth over time.\n\nMoving onto\nassistant\nthe development of critical thinking skills as well as empirical methods, which will aid us in navigating complex issues and making informed decisions based on evidence-based information.\nIn summary, this section will provide an overview of the overall progression of scientific inquiry from ancient civilizations to modern times. It aims to offer insights into the various approaches used across different epochs while emphasizing the importance of continuous improvement in research methodologies.",
+        "continuation_text": "the development of critical thinking skills as well as empirical methods, which will aid us in navigating complex issues and making informed decisions based on evidence-based information.\nIn summary, this section will provide an overview of the overall progression of scientific inquiry from ancient civilizations to modern times. It aims to offer insights into the various approaches used across different epochs while emphasizing the importance of continuous improvement in research methodologies.",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 288,
+        "new_token_count": 78,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 499,
+        "word_count": 71,
+        "unique_word_count": 61,
+        "unique_word_ratio": 0.8591549295774648,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

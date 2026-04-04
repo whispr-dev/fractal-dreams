@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1204
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 639,
+        "word_count": 110,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.990909090909091,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 720,
+        "word_count": 126,
+        "unique_word_count": 124,
+        "unique_word_ratio": 0.9841269841269841,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1594,
+        "word_count": 274,
+        "unique_word_count": 143,
+        "unique_word_ratio": 0.5218978102189781,
+        "repeated_bigram_count": 125
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1905,
+        "word_count": 331,
+        "unique_word_count": 198,
+        "unique_word_ratio": 0.5981873111782477,
+        "repeated_bigram_count": 126
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2372,
+        "word_count": 423,
+        "unique_word_count": 258,
+        "unique_word_ratio": 0.6099290780141844,
+        "repeated_bigram_count": 126
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+      "delta_text": "(If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough",
+        "continuation_text": "(If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough",
+        "input_token_count": 63,
+        "raw_input_token_count": 63,
+        "output_token_count": 159,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 639,
+        "word_count": 110,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.990909090909091,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough",
+      "delta_text": "... I want to see how these new maps work against today's situation at home!! <3",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough... I want to see how these new maps work against today's situation at home!! <3",
+        "continuation_text": "... I want to see how these new maps work against today's situation at home!! <3",
+        "input_token_count": 158,
+        "raw_input_token_count": 158,
+        "output_token_count": 178,
+        "new_token_count": 20,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 720,
+        "word_count": 126,
+        "unique_word_count": 124,
+        "unique_word_ratio": 0.9841269841269841,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3",
+        "continuation_text": "",
+        "input_token_count": 177,
+        "raw_input_token_count": 177,
+        "output_token_count": 178,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1594,
+        "word_count": 274,
+        "unique_word_count": 143,
+        "unique_word_ratio": 0.5218978102189781,
+        "repeated_bigram_count": 125
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3",
+      "delta_text": "You must take part in an Open Meeting between NGC & NSI - both hosted within Facebook – together here can find examples @nGC@nycgov where one person has posted something similar about them over email… But only 5 people seem concerned yet.. Not everyone seems worried then... Posted By | 9 Jul 2010 03 09 :21 PM",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You must take part in an Open Meeting between NGC & NSI - both hosted within Facebook – together here can find examples @nGC@nycgov where one person has posted something similar about them over email… But only 5 people seem concerned yet.. Not everyone seems worried then... Posted By | 9 Jul 2010 03 09 :21 PM",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You must take part in an Open Meeting between NGC & NSI - both hosted within Facebook – together here can find examples @nGC@nycgov where one person has posted something similar about them over email… But only 5 people seem concerned yet.. Not everyone seems worried then... Posted By | 9 Jul 2010 03 09 :21 PM",
+        "continuation_text": "You must take part in an Open Meeting between NGC & NSI - both hosted within Facebook – together here can find examples @nGC@nycgov where one person has posted something similar about them over email… But only 5 people seem concerned yet.. Not everyone seems worried then... Posted By | 9 Jul 2010 03 09 :21 PM",
+        "input_token_count": 354,
+        "raw_input_token_count": 354,
+        "output_token_count": 424,
+        "new_token_count": 70,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1905,
+        "word_count": 331,
+        "unique_word_count": 198,
+        "unique_word_ratio": 0.5981873111782477,
+        "repeated_bigram_count": 126
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You must take part in an Open Meeting between NGC & NSI - both hosted within Facebook – together here can find examples @nGC@nycgov where one person has posted something similar about them over email… But only 5 people seem concerned yet.. Not everyone seems worried then... Posted By | 9 Jul 2010 03 09 :21 PM",
+      "delta_text": ". 1 Comment No Comments 3 comments 8 comment 10 comment 11 comment 12 comment 13 comment 14 comment 15 comment 16 comment 17 comment 18 comment 19 comment 20 comment 21 comment 22 comment 23 comment 24 question 25 comment 25 reply 26 comment 27 thread 28 thread 29 thread 30 thread 31 thread 32 thread 33 thread 34 thread 35 thread 36 Thread 37 thread 38 threads 39 thread 40 thread 41 thread 42 thread 43 thread 44 end Date 2018 Aug 07 Apr 01 0040 0420 0525 0630 07",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You must take part in an Open Meeting between NGC & NSI - both hosted within Facebook – together here can find examples @nGC@nycgov where one person has posted something similar about them over email… But only 5 people seem concerned yet.. Not everyone seems worried then... Posted By | 9 Jul 2010 03 09 :21 PM . 1 Comment No Comments 3 comments 8 comment 10 comment 11 comment 12 comment 13 comment 14 comment 15 comment 16 comment 17 comment 18 comment 19 comment 20 comment 21 comment 22 comment 23 comment 24 question 25 comment 25 reply 26 comment 27 thread 28 thread 29 thread 30 thread 31 thread 32 thread 33 thread 34 thread 35 thread 36 Thread 37 thread 38 threads 39 thread 40 thread 41 thread 42 thread 43 thread 44 end Date 2018 Aug 07 Apr 01 0040 0420 0525 0630 07",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You must take part in an Open Meeting between NGC & NSI - both hosted within Facebook – together here can find examples @nGC@nycgov where one person has posted something similar about them over email… But only 5 people seem concerned yet.. Not everyone seems worried then... Posted By | 9 Jul 2010 03 09 :21 PM",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. (If you haven't found it on our table for this study please note that by now we have no date or location of any time so get back there quickly!) The rest is expected later each day after sunset but with more details like whether anything went wrong they should continue searching carefully because those changes will likely be made much less painful than yesterday's results which allow all sorts out while also removing some important visual effects such from memory altogether! [source] It really isn't enough ... I want to see how these new maps work against today's situation at home!! <3 You must take part in an Open Meeting between NGC & NSI - both hosted within Facebook – together here can find examples @nGC@nycgov where one person has posted something similar about them over email… But only 5 people seem concerned yet.. Not everyone seems worried then... Posted By | 9 Jul 2010 03 09 :21 PM . 1 Comment No Comments 3 comments 8 comment 10 comment 11 comment 12 comment 13 comment 14 comment 15 comment 16 comment 17 comment 18 comment 19 comment 20 comment 21 comment 22 comment 23 comment 24 question 25 comment 25 reply 26 comment 27 thread 28 thread 29 thread 30 thread 31 thread 32 thread 33 thread 34 thread 35 thread 36 Thread 37 thread 38 threads 39 thread 40 thread 41 thread 42 thread 43 thread 44 end Date 2018 Aug 07 Apr 01 0040 0420 0525 0630 07",
+        "continuation_text": ". 1 Comment No Comments 3 comments 8 comment 10 comment 11 comment 12 comment 13 comment 14 comment 15 comment 16 comment 17 comment 18 comment 19 comment 20 comment 21 comment 22 comment 23 comment 24 question 25 comment 25 reply 26 comment 27 thread 28 thread 29 thread 30 thread 31 thread 32 thread 33 thread 34 thread 35 thread 36 Thread 37 thread 38 threads 39 thread 40 thread 41 thread 42 thread 43 thread 44 end Date 2018 Aug 07 Apr 01 0040 0420 0525 0630 07",
+        "input_token_count": 423,
+        "raw_input_token_count": 423,
+        "output_token_count": 519,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2372,
+        "word_count": 423,
+        "unique_word_count": 258,
+        "unique_word_ratio": 0.6099290780141844,
+        "repeated_bigram_count": 126
+      }
+    }
+  ]
+}

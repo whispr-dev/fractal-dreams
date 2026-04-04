@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1470,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 434,
+        "word_count": 70,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9428571428571428,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 602,
+        "word_count": 102,
+        "unique_word_count": 102,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 663,
+        "word_count": 106,
+        "unique_word_count": 106,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 531,
+        "word_count": 87,
+        "unique_word_count": 87,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "had",
+        "are",
+        "have",
+        "It",
+        "make",
+        "if",
+        "made",
+        "was",
+        "to",
+        "makes"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "continuation_text": "",
+        "input_token_count": 105,
+        "raw_input_token_count": 105,
+        "output_token_count": 106,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 434,
+        "word_count": 70,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9428571428571428,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        ",",
+        "were",
+        "it",
+        "are",
+        "is",
+        "have",
+        "in",
+        "had",
+        ".",
+        "was",
+        "if",
+        "It"
+      ],
+      "output_text": "The words that could not repeat themselves become symbols for each other as they grow deeper into their meanings. We may also find our way through time or even on another level where there can be no repeating pattern before we turn up again at some point within your thought process after you go back down this road with something else new about yourself—which doesn't seem particularly bad either. Our brain will always continue reading things from outside my mind until I understand how those old memories affect me now because somehow when writing them (I haven’t) all come together inside myself...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: ,, were, it, are, is, have, in, had, ., was, if, It\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: ,, were, it, are, is, have, in, had, ., was, if, It\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words that could not repeat themselves become symbols for each other as they grow deeper into their meanings. We may also find our way through time or even on another level where there can be no repeating pattern before we turn up again at some point within your thought process after you go back down this road with something else new about yourself—which doesn't seem particularly bad either. Our brain will always continue reading things from outside my mind until I understand how those old memories affect me now because somehow when writing them (I haven’t) all come together inside myself...",
+        "continuation_text": "The words that could not repeat themselves become symbols for each other as they grow deeper into their meanings. We may also find our way through time or even on another level where there can be no repeating pattern before we turn up again at some point within your thought process after you go back down this road with something else new about yourself—which doesn't seem particularly bad either. Our brain will always continue reading things from outside my mind until I understand how those old memories affect me now because somehow when writing them (I haven’t) all come together inside myself...",
+        "input_token_count": 184,
+        "raw_input_token_count": 184,
+        "output_token_count": 298,
+        "new_token_count": 114,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 602,
+        "word_count": 102,
+        "unique_word_count": 102,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "have",
+        "if",
+        "they",
+        "had",
+        "in",
+        "we",
+        "is",
+        "the",
+        "with"
+      ],
+      "output_text": "which means whatever happens to us right then and there isn´s just nothing left but what goes around here…and every memory remains untouched! If someone starts telling me 'what happened?' instead he won�ll tell him everything--that was quite helpful since nobody ever really knows anything except maybe one word off his tongue somewhere during any period afterwards so why do people think? And oh well yes; everyone who has written an essay says more than once \"Why did she write?\", ??????!! What would happen unless somebody makes such statements without thinking too much....all only two simple answers exist - whether real person/person exists , reality itself",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, have, if, they, had, in, we, is, the, with\n\nTEXT:\nThe words that could not repeat themselves become symbols for each other as they grow deeper into their meanings. We may also find our way through time or even on another level where there can be no repeating pattern before we turn up again at some point within your thought process after you go back down this road with something else new about yourself—which doesn't seem particularly bad either. Our brain will always continue reading things from outside my mind until I understand how those old memories affect me now because somehow when writing them (I haven’t) all come together inside myself...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, have, if, they, had, in, we, is, the, with\n\nTEXT:\nThe words that could not repeat themselves become symbols for each other as they grow deeper into their meanings. We may also find our way through time or even on another level where there can be no repeating pattern before we turn up again at some point within your thought process after you go back down this road with something else new about yourself—which doesn't seem particularly bad either. Our brain will always continue reading things from outside my mind until I understand how those old memories affect me now because somehow when writing them (I haven’t) all come together inside myself... which means whatever happens to us right then and there isn´s just nothing left but what goes around here…and every memory remains untouched! If someone starts telling me 'what happened?' instead he won�ll tell him everything--that was quite helpful since nobody ever really knows anything except maybe one word off his tongue somewhere during any period afterwards so why do people think? And oh well yes; everyone who has written an essay says more than once \"Why did she write?\", ??????!! What would happen unless somebody makes such statements without thinking too much....all only two simple answers exist - whether real person/person exists , reality itself",
+        "continuation_text": "which means whatever happens to us right then and there isn´s just nothing left but what goes around here…and every memory remains untouched! If someone starts telling me 'what happened?' instead he won�ll tell him everything--that was quite helpful since nobody ever really knows anything except maybe one word off his tongue somewhere during any period afterwards so why do people think? And oh well yes; everyone who has written an essay says more than once \"Why did she write?\", ??????!! What would happen unless somebody makes such statements without thinking too much....all only two simple answers exist - whether real person/person exists , reality itself",
+        "input_token_count": 192,
+        "raw_input_token_count": 192,
+        "output_token_count": 320,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 663,
+        "word_count": 106,
+        "unique_word_count": 106,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "didn",
+        "did",
+        "does",
+        "makes",
+        "are",
+        "doesn",
+        "had",
+        "is",
+        "was"
+      ],
+      "output_text": "or not...but neither can anyone know how we got into that space before I started writing my entire article for you (I assume they have seen each other's work on this blog). It seems as though some folks may actually like talking about their own lives because doing something different now sounds very nice at least until another piece hits them with your head.\"And all those questions remain unanswered indefinitely till later—even after being asked exactly where else should start getting ideas from while working remotely today?!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, didn, did, does, makes, are, doesn, had, is, was\n\nTEXT:\nwhich means whatever happens to us right then and there isn´s just nothing left but what goes around here…and every memory remains untouched! If someone starts telling me 'what happened?' instead he won�ll tell him everything--that was quite helpful since nobody ever really knows anything except maybe one word off his tongue somewhere during any period afterwards so why do people think? And oh well yes; everyone who has written an essay says more than once \"Why did she write?\", ??????!! What would happen unless somebody makes such statements without thinking too much....all only two simple answers exist - whether real person/person exists , reality itself",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, didn, did, does, makes, are, doesn, had, is, was\n\nTEXT:\nwhich means whatever happens to us right then and there isn´s just nothing left but what goes around here…and every memory remains untouched! If someone starts telling me 'what happened?' instead he won�ll tell him everything--that was quite helpful since nobody ever really knows anything except maybe one word off his tongue somewhere during any period afterwards so why do people think? And oh well yes; everyone who has written an essay says more than once \"Why did she write?\", ??????!! What would happen unless somebody makes such statements without thinking too much....all only two simple answers exist - whether real person/person exists , reality itself or not...but neither can anyone know how we got into that space before I started writing my entire article for you (I assume they have seen each other's work on this blog). It seems as though some folks may actually like talking about their own lives because doing something different now sounds very nice at least until another piece hits them with your head.\"And all those questions remain unanswered indefinitely till later—even after being asked exactly where else should start getting ideas from while working remotely today?!",
+        "continuation_text": "or not...but neither can anyone know how we got into that space before I started writing my entire article for you (I assume they have seen each other's work on this blog). It seems as though some folks may actually like talking about their own lives because doing something different now sounds very nice at least until another piece hits them with your head.\"And all those questions remain unanswered indefinitely till later—even after being asked exactly where else should start getting ideas from while working remotely today?!",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 305,
+        "new_token_count": 98,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 531,
+        "word_count": 87,
+        "unique_word_count": 87,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

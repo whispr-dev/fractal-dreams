@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1513,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 568,
+        "word_count": 85,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.8823529411764706,
+        "repeated_bigram_count": 3
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 223,
+        "word_count": 33,
+        "unique_word_count": 31,
+        "unique_word_ratio": 0.9393939393939394,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 39,
+        "word_count": 9,
+        "unique_word_count": 9,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "opportunities",
+        "از",
+        "engaged",
+        "�",
+        "いや",
+        "(verbose",
+        "are",
+        "or",
+        "_INFO",
+        "journal",
+        "anc",
+        "satisfaction"
+      ],
+      "output_text": "The following is a Latent Anchor Tokenized version of your input:\n\n```\nA research vessel recovered a transmission from the trench floor.\nIt became an engineering-telemetry that slowly evolved into philosophical discourse.\n```\n\nIn this transformed text, I have replaced each word with its corresponding Latent Anchor Tokens using the provided list of available tokens. The `АВЕЩЕНЫ` token refers to \"engaged\" based on context clues, while `_INFO` has been omitted for brevity. However, these Latent Anchor Tokens serve as soft guidance rather than literal translations.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nThe following is a Latent Anchor Tokenized version of your input:\n\n```\nA research vessel recovered a transmission from the trench floor.\nIt became an engineering-telemetry that slowly evolved into philosophical discourse.\n```\n\nIn this transformed text, I have replaced each word with its corresponding Latent Anchor Tokens using the provided list of available tokens. The `АВЕЩЕНЫ` token refers to \"engaged\" based on context clues, while `_INFO` has been omitted for brevity. However, these Latent Anchor Tokens serve as soft guidance rather than literal translations.",
+        "continuation_text": "The following is a Latent Anchor Tokenized version of your input:\n\n```\nA research vessel recovered a transmission from the trench floor.\nIt became an engineering-telemetry that slowly evolved into philosophical discourse.\n```\n\nIn this transformed text, I have replaced each word with its corresponding Latent Anchor Tokens using the provided list of available tokens. The `АВЕЩЕНЫ` token refers to \"engaged\" based on context clues, while `_INFO` has been omitted for brevity. However, these Latent Anchor Tokens serve as soft guidance rather than literal translations.",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 231,
+        "new_token_count": 117,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 568,
+        "word_count": 85,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.8823529411764706,
+        "repeated_bigram_count": 3
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "soc",
+        "【",
+        "][",
+        "});",
+        "himself",
+        "Arab",
+        "灸",
+        "蓝牙",
+        "PCR",
+        "롱",
+        "reflux",
+        "eer"
+      ],
+      "output_text": "The following is a Latent Anchor Tokenized version of your input:\n\n```\nA research vessel engaged a transmission from the trench floor.\nIt became an engineering-TELEMETRY that slowly evolved into philosophical discourse.\n```",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: soc, 【, ][, });, himself, Arab, 灸, 蓝牙, PCR, 롱, reflux, eer\n\nTEXT:\nThe following is a Latent Anchor Tokenized version of your input:\n\n```\nA research vessel recovered a transmission from the trench floor.\nIt became an engineering-telemetry that slowly evolved into philosophical discourse.\n```\n\nIn this transformed text, I have replaced each word with its corresponding Latent Anchor Tokens using the provided list of available tokens. The `АВЕЩЕНЫ` token refers to \"engaged\" based on context clues, while `_INFO` has been omitted for brevity. However, these Latent Anchor Tokens serve as soft guidance rather than literal translations.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: soc, 【, ][, });, himself, Arab, 灸, 蓝牙, PCR, 롱, reflux, eer\n\nTEXT:\nThe following is a Latent Anchor Tokenized version of your input:\n\n```\nA research vessel recovered a transmission from the trench floor.\nIt became an engineering-telemetry that slowly evolved into philosophical discourse.\n```\n\nIn this transformed text, I have replaced each word with its corresponding Latent Anchor Tokens using the provided list of available tokens. The `АВЕЩЕНЫ` token refers to \"engaged\" based on context clues, while `_INFO` has been omitted for brevity. However, these Latent Anchor Tokens serve as soft guidance rather than literal translations.\nassistant\nThe following is a Latent Anchor Tokenized version of your input:\n\n```\nA research vessel engaged a transmission from the trench floor.\nIt became an engineering-TELEMETRY that slowly evolved into philosophical discourse.\n```",
+        "continuation_text": "The following is a Latent Anchor Tokenized version of your input:\n\n```\nA research vessel engaged a transmission from the trench floor.\nIt became an engineering-TELEMETRY that slowly evolved into philosophical discourse.\n```",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 255,
+        "new_token_count": 45,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 223,
+        "word_count": 33,
+        "unique_word_count": 31,
+        "unique_word_ratio": 0.9393939393939394,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "even",
+        ")}",
+        "}\\",
+        ")]",
+        "Up",
+        ");",
+        "}.",
+        "up",
+        "}\\\\",
+        "}",
+        "}}",
+        "};"
+      ],
+      "output_text": "Up;] ;\\; ],, \\;\n}., up;]} \\\\;}}; }\n}``.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: even, )}, }\\, )], Up, );, }., up, }\\\\, }, }}, };\n\nTEXT:\nThe following is a Latent Anchor Tokenized version of your input:\n\n```\nA research vessel engaged a transmission from the trench floor.\nIt became an engineering-TELEMETRY that slowly evolved into philosophical discourse.\n```<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: even, )}, }\\, )], Up, );, }., up, }\\\\, }, }}, };\n\nTEXT:\nThe following is a Latent Anchor Tokenized version of your input:\n\n```\nA research vessel engaged a transmission from the trench floor.\nIt became an engineering-TELEMETRY that slowly evolved into philosophical discourse.\n```\nassistant\nUp;] ;\\; ],, \\;\n}., up;]} \\\\;}}; }\n}``.",
+        "continuation_text": "Up;] ;\\; ],, \\;\n}., up;]} \\\\;}}; }\n}``.",
+        "input_token_count": 131,
+        "raw_input_token_count": 131,
+        "output_token_count": 153,
+        "new_token_count": 22,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 39,
+        "word_count": 9,
+        "unique_word_count": 9,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1481,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 83,
+        "word_count": 15,
+        "unique_word_count": 15,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 663,
+        "word_count": 105,
+        "unique_word_count": 104,
+        "unique_word_ratio": 0.9904761904761905,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1005,
+        "word_count": 157,
+        "unique_word_count": 150,
+        "unique_word_ratio": 0.9554140127388535,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Likewise",
+        "Similarly",
+        "Another",
+        "Also",
+        "especially",
+        "Pin",
+        "Aside",
+        "adapters",
+        "carved",
+        "Additionally",
+        "traditionally",
+        "comfortable"
+      ],
+      "output_text": "The result was that it could be rewritten for more purpose or other than reordering",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Likewise, Similarly, Another, Also, especially, Pin, Aside, adapters, carved, Additionally, traditionally, comfortable\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Likewise, Similarly, Another, Also, especially, Pin, Aside, adapters, carved, Additionally, traditionally, comfortable\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The result was that it could be rewritten for more purpose or other than reordering",
+        "continuation_text": "The result was that it could be rewritten for more purpose or other than reordering",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 125,
+        "new_token_count": 17,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 83,
+        "word_count": 15,
+        "unique_word_count": 15,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Wyoming",
+        "Angola",
+        "Kazakhstan",
+        "Bolivia",
+        "Indonesia",
+        "Syria",
+        "Venezuela",
+        "Kyr",
+        "contacts",
+        "ivia",
+        "Hungary",
+        "Honduras"
+      ],
+      "output_text": "data and rewriting this code faster because all is said and done better now by using less reliance on memory allocations rather then writing additional functions with fewer effort at executing new parts which would otherwise require much longer computation before starting again (in case you're working through multiple transformations). In fact, even if we use some kind \"write\" instruction called function_to do an operations like read() , nothing will ever get changed! That's how I got around my programming nightmare - maybe try updating something else without having already been written into one another instead! We just need to find out what works best...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Wyoming, Angola, Kazakhstan, Bolivia, Indonesia, Syria, Venezuela, Kyr, contacts, ivia, Hungary, Honduras\n\nTEXT:\nThe result was that it could be rewritten for more purpose or other than reordering",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Wyoming, Angola, Kazakhstan, Bolivia, Indonesia, Syria, Venezuela, Kyr, contacts, ivia, Hungary, Honduras\n\nTEXT:\nThe result was that it could be rewritten for more purpose or other than reordering data and rewriting this code faster because all is said and done better now by using less reliance on memory allocations rather then writing additional functions with fewer effort at executing new parts which would otherwise require much longer computation before starting again (in case you're working through multiple transformations). In fact, even if we use some kind \"write\" instruction called function_to do an operations like read() , nothing will ever get changed! That's how I got around my programming nightmare - maybe try updating something else without having already been written into one another instead! We just need to find out what works best...",
+        "continuation_text": "data and rewriting this code faster because all is said and done better now by using less reliance on memory allocations rather then writing additional functions with fewer effort at executing new parts which would otherwise require much longer computation before starting again (in case you're working through multiple transformations). In fact, even if we use some kind \"write\" instruction called function_to do an operations like read() , nothing will ever get changed! That's how I got around my programming nightmare - maybe try updating something else without having already been written into one another instead! We just need to find out what works best...",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 221,
+        "new_token_count": 119,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 663,
+        "word_count": 105,
+        "unique_word_count": 104,
+        "unique_word_ratio": 0.9904761904761905,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Qian",
+        "appar",
+        "satell",
+        "Ning",
+        "data",
+        "Cyber",
+        "Kiev",
+        "adversaries",
+        "doctrines",
+        "advoc",
+        "Bian",
+        "367"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Qian, appar, satell, Ning, data, Cyber, Kiev, adversaries, doctrines, advoc, Bian, 367\n\nTEXT:\ndata and rewriting this code faster because all is said and done better now by using less reliance on memory allocations rather then writing additional functions with fewer effort at executing new parts which would otherwise require much longer computation before starting again (in case you're working through multiple transformations). In fact, even if we use some kind \"write\" instruction called function_to do an operations like read() , nothing will ever get changed! That's how I got around my programming nightmare - maybe try updating something else without having already been written into one another instead! We just need to find out what works best...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Qian, appar, satell, Ning, data, Cyber, Kiev, adversaries, doctrines, advoc, Bian, 367\n\nTEXT:\ndata and rewriting this code faster because all is said and done better now by using less reliance on memory allocations rather then writing additional functions with fewer effort at executing new parts which would otherwise require much longer computation before starting again (in case you're working through multiple transformations). In fact, even if we use some kind \"write\" instruction called function_to do an operations like read() , nothing will ever get changed! That's how I got around my programming nightmare - maybe try updating something else without having already been written into one another instead! We just need to find out what works best...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Qian, appar, satell, Ning, data, Cyber, Kiev, adversaries, doctrines, advoc, Bian, 367\n\nTEXT:\ndata and rewriting this code faster because all is said and done better now by using less reliance on memory allocations rather then writing additional functions with fewer effort at executing new parts which would otherwise require much longer computation before starting again (in case you're working through multiple transformations). In fact, even if we use some kind \"write\" instruction called function_to do an operations like read() , nothing will ever get changed! That's how I got around my programming nightmare - maybe try updating something else without having already been written into one another instead! We just need to find out what works best...",
+        "continuation_text": "",
+        "input_token_count": 203,
+        "raw_input_token_count": 203,
+        "output_token_count": 204,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1005,
+        "word_count": 157,
+        "unique_word_count": 150,
+        "unique_word_ratio": 0.9554140127388535,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

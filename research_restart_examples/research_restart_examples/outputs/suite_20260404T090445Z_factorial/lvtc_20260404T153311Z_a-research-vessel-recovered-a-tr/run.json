@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1530,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 678,
+        "word_count": 117,
+        "unique_word_count": 115,
+        "unique_word_ratio": 0.9829059829059829,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 119,
+        "word_count": 16,
+        "unique_word_count": 16,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 430,
+        "word_count": 64,
+        "unique_word_count": 61,
+        "unique_word_ratio": 0.953125,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 661,
+        "word_count": 113,
+        "unique_word_count": 112,
+        "unique_word_ratio": 0.9911504424778761,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "had",
+        "was",
+        "are",
+        "It",
+        "went",
+        "have",
+        "in",
+        "has",
+        "with",
+        "is"
+      ],
+      "output_text": "The result seems to have been that if you wrote one sentence or two sentences over long time without having all four clauses applied each second (if not writing them), there will be no space between those lines for words on either end of the line until they get used to their meaning at least once. In this way, any subsequent word changes its content based upon what we learned about syntax rules; only when your brain sees an error before applying more verbosity can knowledge become clear--and so should everyone else involved. Allowing others to do just such things requires some practice rather than reading through every single thing our brains know very well enough. This",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, had, was, are, It, went, have, in, has, with, is\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, had, was, are, It, went, have, in, has, with, is\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The result seems to have been that if you wrote one sentence or two sentences over long time without having all four clauses applied each second (if not writing them), there will be no space between those lines for words on either end of the line until they get used to their meaning at least once. In this way, any subsequent word changes its content based upon what we learned about syntax rules; only when your brain sees an error before applying more verbosity can knowledge become clear--and so should everyone else involved. Allowing others to do just such things requires some practice rather than reading through every single thing our brains know very well enough. This",
+        "continuation_text": "The result seems to have been that if you wrote one sentence or two sentences over long time without having all four clauses applied each second (if not writing them), there will be no space between those lines for words on either end of the line until they get used to their meaning at least once. In this way, any subsequent word changes its content based upon what we learned about syntax rules; only when your brain sees an error before applying more verbosity can knowledge become clear--and so should everyone else involved. Allowing others to do just such things requires some practice rather than reading through every single thing our brains know very well enough. This",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 230,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 678,
+        "word_count": 117,
+        "unique_word_count": 115,
+        "unique_word_ratio": 0.9829059829059829,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "are",
+        "have",
+        "the",
+        "they",
+        "had",
+        "in",
+        "is",
+        "this",
+        "to"
+      ],
+      "output_text": "technique has already established itself as most suitable and effective approach to understanding grammar from scratch!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, have, the, they, had, in, is, this, to\n\nTEXT:\nThe result seems to have been that if you wrote one sentence or two sentences over long time without having all four clauses applied each second (if not writing them), there will be no space between those lines for words on either end of the line until they get used to their meaning at least once. In this way, any subsequent word changes its content based upon what we learned about syntax rules; only when your brain sees an error before applying more verbosity can knowledge become clear--and so should everyone else involved. Allowing others to do just such things requires some practice rather than reading through every single thing our brains know very well enough. This",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, have, the, they, had, in, is, this, to\n\nTEXT:\nThe result seems to have been that if you wrote one sentence or two sentences over long time without having all four clauses applied each second (if not writing them), there will be no space between those lines for words on either end of the line until they get used to their meaning at least once. In this way, any subsequent word changes its content based upon what we learned about syntax rules; only when your brain sees an error before applying more verbosity can knowledge become clear--and so should everyone else involved. Allowing others to do just such things requires some practice rather than reading through every single thing our brains know very well enough. This technique has already established itself as most suitable and effective approach to understanding grammar from scratch!",
+        "continuation_text": "technique has already established itself as most suitable and effective approach to understanding grammar from scratch!",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 225,
+        "new_token_count": 18,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 119,
+        "word_count": 16,
+        "unique_word_count": 16,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "had",
+        "has",
+        "it",
+        "have",
+        "are",
+        "if",
+        "makes",
+        "is",
+        "was",
+        "could",
+        "with"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, has, it, have, are, if, makes, is, was, could, with\n\nTEXT:\ntechnique has already established itself as most suitable and effective approach to understanding grammar from scratch!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, has, it, have, are, if, makes, is, was, could, with\n\nTEXT:\ntechnique has already established itself as most suitable and effective approach to understanding grammar from scratch!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, has, it, have, are, if, makes, is, was, could, with\n\nTEXT:\ntechnique has already established itself as most suitable and effective approach to understanding grammar from scratch!",
+        "continuation_text": "",
+        "input_token_count": 97,
+        "raw_input_token_count": 97,
+        "output_token_count": 98,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 430,
+        "word_count": 64,
+        "unique_word_count": 61,
+        "unique_word_ratio": 0.953125,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "are",
+        ",",
+        "is",
+        "it",
+        "have",
+        "was",
+        "in",
+        "had",
+        "has",
+        ".",
+        "if"
+      ],
+      "output_text": "The idea that they can create new models will not only provide an advantage (the semantics) but also help us understand more complex languages such about different types or variables than we think our first one would like them to use at best. We want to show this simple way for you all who don't know how linguistics works without using their vocabulary; just because words come out loud doesn't mean much when understood well enough so even though I'm afraid your system won's edge on translation still depends upon its ability—if there isn`s something really interesting around which other parts of the word appear too? How does syntax define what some verbs",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, ,, is, it, have, was, in, had, has, ., if\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, has, it, have, are, if, makes, is, was, could, with\n\nTEXT:\ntechnique has already established itself as most suitable and effective approach to understanding grammar from scratch!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, ,, is, it, have, was, in, had, has, ., if\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, has, it, have, are, if, makes, is, was, could, with\n\nTEXT:\ntechnique has already established itself as most suitable and effective approach to understanding grammar from scratch! The idea that they can create new models will not only provide an advantage (the semantics) but also help us understand more complex languages such about different types or variables than we think our first one would like them to use at best. We want to show this simple way for you all who don't know how linguistics works without using their vocabulary; just because words come out loud doesn't mean much when understood well enough so even though I'm afraid your system won's edge on translation still depends upon its ability—if there isn`s something really interesting around which other parts of the word appear too? How does syntax define what some verbs",
+        "continuation_text": "The idea that they can create new models will not only provide an advantage (the semantics) but also help us understand more complex languages such about different types or variables than we think our first one would like them to use at best. We want to show this simple way for you all who don't know how linguistics works without using their vocabulary; just because words come out loud doesn't mean much when understood well enough so even though I'm afraid your system won's edge on translation still depends upon its ability—if there isn`s something really interesting around which other parts of the word appear too? How does syntax define what some verbs",
+        "input_token_count": 176,
+        "raw_input_token_count": 176,
+        "output_token_count": 304,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 661,
+        "word_count": 113,
+        "unique_word_count": 112,
+        "unique_word_ratio": 0.9911504424778761,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1096
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 678,
+        "word_count": 112,
+        "unique_word_count": 111,
+        "unique_word_ratio": 0.9910714285714286,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 862,
+        "word_count": 142,
+        "unique_word_count": 140,
+        "unique_word_ratio": 0.9859154929577465,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1878,
+        "word_count": 306,
+        "unique_word_count": 160,
+        "unique_word_ratio": 0.5228758169934641,
+        "repeated_bigram_count": 141
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2402,
+        "word_count": 382,
+        "unique_word_count": 235,
+        "unique_word_ratio": 0.6151832460732984,
+        "repeated_bigram_count": 141
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2627,
+        "word_count": 411,
+        "unique_word_count": 263,
+        "unique_word_ratio": 0.6399026763990268,
+        "repeated_bigram_count": 141
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+      "delta_text": "This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while",
+        "continuation_text": "This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while",
+        "input_token_count": 65,
+        "raw_input_token_count": 65,
+        "output_token_count": 161,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 678,
+        "word_count": 112,
+        "unique_word_count": 111,
+        "unique_word_ratio": 0.9910714285714286,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while",
+      "delta_text": "telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question!",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question!",
+        "continuation_text": "telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question!",
+        "input_token_count": 161,
+        "raw_input_token_count": 161,
+        "output_token_count": 198,
+        "new_token_count": 37,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 862,
+        "word_count": 142,
+        "unique_word_count": 140,
+        "unique_word_ratio": 0.9859154929577465,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question!",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question!",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question!",
+        "continuation_text": "",
+        "input_token_count": 197,
+        "raw_input_token_count": 197,
+        "output_token_count": 198,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1878,
+        "word_count": 306,
+        "unique_word_count": 160,
+        "unique_word_ratio": 0.5228758169934641,
+        "repeated_bigram_count": 141
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question!",
+      "delta_text": "Your \"language\" won't contain anything relevant beyond human thought--like where Tango talks (\"the mind grows\"), but could still include only words such Asiatic Words; Alphanumeric Texts including Chinese phrases translated into English can all have meaning within two languages today. The internet seems to enjoy these messages by making frequent use even though humans aren’t native speakers yet. However, given how much information society gets online through speech exchanges using web chat networks many systems become",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! Your \"language\" won't contain anything relevant beyond human thought--like where Tango talks (\"the mind grows\"), but could still include only words such Asiatic Words; Alphanumeric Texts including Chinese phrases translated into English can all have meaning within two languages today. The internet seems to enjoy these messages by making frequent use even though humans aren’t native speakers yet. However, given how much information society gets online through speech exchanges using web chat networks many systems become",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! Your \"language\" won't contain anything relevant beyond human thought--like where Tango talks (\"the mind grows\"), but could still include only words such Asiatic Words; Alphanumeric Texts including Chinese phrases translated into English can all have meaning within two languages today. The internet seems to enjoy these messages by making frequent use even though humans aren’t native speakers yet. However, given how much information society gets online through speech exchanges using web chat networks many systems become",
+        "continuation_text": "Your \"language\" won't contain anything relevant beyond human thought--like where Tango talks (\"the mind grows\"), but could still include only words such Asiatic Words; Alphanumeric Texts including Chinese phrases translated into English can all have meaning within two languages today. The internet seems to enjoy these messages by making frequent use even though humans aren’t native speakers yet. However, given how much information society gets online through speech exchanges using web chat networks many systems become",
+        "input_token_count": 394,
+        "raw_input_token_count": 394,
+        "output_token_count": 490,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2402,
+        "word_count": 382,
+        "unique_word_count": 235,
+        "unique_word_ratio": 0.6151832460732984,
+        "repeated_bigram_count": 141
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! Your \"language\" won't contain anything relevant beyond human thought--like where Tango talks (\"the mind grows\"), but could still include only words such Asiatic Words; Alphanumeric Texts including Chinese phrases translated into English can all have meaning within two languages today. The internet seems to enjoy these messages by making frequent use even though humans aren’t native speakers yet. However, given how much information society gets online through speech exchanges using web chat networks many systems become",
+      "delta_text": "too often automated to handle properly since most computer processors rarely give off very detailed descriptions when communicating between machines.\" ―Tongue Umar Moojia (@d_moojia) December 14,, 2017\n[Image courtesyofLing]",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! Your \"language\" won't contain anything relevant beyond human thought--like where Tango talks (\"the mind grows\"), but could still include only words such Asiatic Words; Alphanumeric Texts including Chinese phrases translated into English can all have meaning within two languages today. The internet seems to enjoy these messages by making frequent use even though humans aren’t native speakers yet. However, given how much information society gets online through speech exchanges using web chat networks many systems become too often automated to handle properly since most computer processors rarely give off very detailed descriptions when communicating between machines.\" ―Tongue Umar Moojia (@d_moojia) December 14,, 2017\n[Image courtesyofLing]",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! Your \"language\" won't contain anything relevant beyond human thought--like where Tango talks (\"the mind grows\"), but could still include only words such Asiatic Words; Alphanumeric Texts including Chinese phrases translated into English can all have meaning within two languages today. The internet seems to enjoy these messages by making frequent use even though humans aren’t native speakers yet. However, given how much information society gets online through speech exchanges using web chat networks many systems become",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. This new medium would be so large that it was impossible to ignore or recognize which lines of communication I had come up with as an example. Instead our story became something entirely different from what we did if you'd just read my article about this particular subject (and then found me writing). In fact, once everyone else learned their own version here there's no doubt people on reddit began asking for help before they started calling each other out over Skype instead—just ask yourself some questions while telling them otherwise. Now every time someone wants to speak like Aida Cappeee is waiting next door without any answers because at least one person has already answered his question! Your \"language\" won't contain anything relevant beyond human thought--like where Tango talks (\"the mind grows\"), but could still include only words such Asiatic Words; Alphanumeric Texts including Chinese phrases translated into English can all have meaning within two languages today. The internet seems to enjoy these messages by making frequent use even though humans aren’t native speakers yet. However, given how much information society gets online through speech exchanges using web chat networks many systems become too often automated to handle properly since most computer processors rarely give off very detailed descriptions when communicating between machines.\" ―Tongue Umar Moojia (@d_moojia) December 14,, 2017\n[Image courtesyofLing]",
+        "continuation_text": "too often automated to handle properly since most computer processors rarely give off very detailed descriptions when communicating between machines.\" ―Tongue Umar Moojia (@d_moojia) December 14,, 2017\n[Image courtesyofLing]",
+        "input_token_count": 490,
+        "raw_input_token_count": 490,
+        "output_token_count": 542,
+        "new_token_count": 52,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2627,
+        "word_count": 411,
+        "unique_word_count": 263,
+        "unique_word_ratio": 0.6399026763990268,
+        "repeated_bigram_count": 141
+      }
+    }
+  ]
+}

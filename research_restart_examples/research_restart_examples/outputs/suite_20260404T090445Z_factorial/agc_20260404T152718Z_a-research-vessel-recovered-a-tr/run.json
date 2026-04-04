@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1525,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 497,
+        "word_count": 63,
+        "unique_word_count": 59,
+        "unique_word_ratio": 0.9365079365079365,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 106,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 141,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "opportunities",
+        "از",
+        "engaged",
+        "�",
+        "いや",
+        "(verbose",
+        "are",
+        "or",
+        "_INFO",
+        "journal",
+        "anc",
+        "satisfaction"
+      ],
+      "output_text": "The next recursive transformation is:\n\n研究船从海底挖掘出一个通信电缆。起初是工程数据，逐渐演变成为哲学思想。\n\nExplanation: The previous text describes an initial situation where \"a research vessel\" had extracted a communication cable from the seabed. This was initially carried out using engineering data but gradually developed over time through philosophical concepts. Therefore, the most accurate representation considering only hard constraints would be that they have evolved from engineering telemetry to philosophy thinking.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nThe next recursive transformation is:\n\n研究船从海底挖掘出一个通信电缆。起初是工程数据，逐渐演变成为哲学思想。\n\nExplanation: The previous text describes an initial situation where \"a research vessel\" had extracted a communication cable from the seabed. This was initially carried out using engineering data but gradually developed over time through philosophical concepts. Therefore, the most accurate representation considering only hard constraints would be that they have evolved from engineering telemetry to philosophy thinking.",
+        "continuation_text": "The next recursive transformation is:\n\n研究船从海底挖掘出一个通信电缆。起初是工程数据，逐渐演变成为哲学思想。\n\nExplanation: The previous text describes an initial situation where \"a research vessel\" had extracted a communication cable from the seabed. This was initially carried out using engineering data but gradually developed over time through philosophical concepts. Therefore, the most accurate representation considering only hard constraints would be that they have evolved from engineering telemetry to philosophy thinking.",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 207,
+        "new_token_count": 93,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 497,
+        "word_count": 63,
+        "unique_word_count": 59,
+        "unique_word_ratio": 0.9365079365079365,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "RIGHT",
+        ".math",
+        "­",
+        "ppt",
+        ";(",
+        "Even",
+        "движения",
+        "idine",
+        "‎",
+        "хож",
+        "(\"\\",
+        ".("
+      ],
+      "output_text": "研究船通过技术手段从海底成功地挖掘了一个通信电缆。起初，它采用的是基础的工程技术数据进行工作，但这逐步发展为一种哲学思考方式。因此，最准确的描述考虑只硬约束的情况下应该是它们经历了从工程技术到哲学思考的发展过程。",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: RIGHT, .math, ­, ppt, ;(, Even, движения, idine, ‎, хож, (\"\\, .(\n\nTEXT:\nThe next recursive transformation is:\n\n研究船从海底挖掘出一个通信电缆。起初是工程数据，逐渐演变成为哲学思想。\n\nExplanation: The previous text describes an initial situation where \"a research vessel\" had extracted a communication cable from the seabed. This was initially carried out using engineering data but gradually developed over time through philosophical concepts. Therefore, the most accurate representation considering only hard constraints would be that they have evolved from engineering telemetry to philosophy thinking.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: RIGHT, .math, ­, ppt, ;(, Even, движения, idine, ‎, хож, (\"\\, .(\n\nTEXT:\nThe next recursive transformation is:\n\n研究船从海底挖掘出一个通信电缆。起初是工程数据，逐渐演变成为哲学思想。\n\nExplanation: The previous text describes an initial situation where \"a research vessel\" had extracted a communication cable from the seabed. This was initially carried out using engineering data but gradually developed over time through philosophical concepts. Therefore, the most accurate representation considering only hard constraints would be that they have evolved from engineering telemetry to philosophy thinking.\nassistant\n研究船通过技术手段从海底成功地挖掘了一个通信电缆。起初，它采用的是基础的工程技术数据进行工作，但这逐步发展为一种哲学思考方式。因此，最准确的描述考虑只硬约束的情况下应该是它们经历了从工程技术到哲学思考的发展过程。",
+        "continuation_text": "研究船通过技术手段从海底成功地挖掘了一个通信电缆。起初，它采用的是基础的工程技术数据进行工作，但这逐步发展为一种哲学思考方式。因此，最准确的描述考虑只硬约束的情况下应该是它们经历了从工程技术到哲学思考的发展过程。",
+        "input_token_count": 184,
+        "raw_input_token_count": 184,
+        "output_token_count": 242,
+        "new_token_count": 58,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 106,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "carbon",
+        "科研",
+        ".getResult",
+        "loss",
+        "Meeting",
+        "Carbon",
+        "علم",
+        "Profit",
+        "Research",
+        "鱿",
+        "research",
+        "peer"
+      ],
+      "output_text": "为了完成这个文本的下一个递归变换，请提供原始的中间结构或一个可能需要进一步转换后的结果。目前提供的文本已包含足够的上下文以帮助我进行适当的转化。如果有必要，我可以尝试根据现有信息为您构建更复杂的网络或者生成某种形式的文字表达。请继续提供所需的文字内容，这样我能更好地辅助您完成任务。",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: carbon, 科研, .getResult, loss, Meeting, Carbon, علم, Profit, Research, 鱿, research, peer\n\nTEXT:\n研究船通过技术手段从海底成功地挖掘了一个通信电缆。起初，它采用的是基础的工程技术数据进行工作，但这逐步发展为一种哲学思考方式。因此，最准确的描述考虑只硬约束的情况下应该是它们经历了从工程技术到哲学思考的发展过程。<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: carbon, 科研, .getResult, loss, Meeting, Carbon, علم, Profit, Research, 鱿, research, peer\n\nTEXT:\n研究船通过技术手段从海底成功地挖掘了一个通信电缆。起初，它采用的是基础的工程技术数据进行工作，但这逐步发展为一种哲学思考方式。因此，最准确的描述考虑只硬约束的情况下应该是它们经历了从工程技术到哲学思考的发展过程。\nassistant\n为了完成这个文本的下一个递归变换，请提供原始的中间结构或一个可能需要进一步转换后的结果。目前提供的文本已包含足够的上下文以帮助我进行适当的转化。如果有必要，我可以尝试根据现有信息为您构建更复杂的网络或者生成某种形式的文字表达。请继续提供所需的文字内容，这样我能更好地辅助您完成任务。",
+        "continuation_text": "为了完成这个文本的下一个递归变换，请提供原始的中间结构或一个可能需要进一步转换后的结果。目前提供的文本已包含足够的上下文以帮助我进行适当的转化。如果有必要，我可以尝试根据现有信息为您构建更复杂的网络或者生成某种形式的文字表达。请继续提供所需的文字内容，这样我能更好地辅助您完成任务。",
+        "input_token_count": 150,
+        "raw_input_token_count": 150,
+        "output_token_count": 225,
+        "new_token_count": 75,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 141,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

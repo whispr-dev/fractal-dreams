@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1245,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 588,
+        "word_count": 101,
+        "unique_word_count": 101,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 731,
+        "word_count": 113,
+        "unique_word_count": 113,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 615,
+        "word_count": 102,
+        "unique_word_count": 102,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "aren",
+        "didn",
+        "did",
+        "He",
+        "are",
+        "weren",
+        "shall",
+        "does",
+        "We",
+        "couldn",
+        "cannot",
+        "C"
+      ],
+      "output_text": "The most famous examples might be \"He Who Is,\" by Michael Rotten (1890), which explains how human characters became obsolete through their use so often — for example, it was an ancient idea today (\"One must have been quite adept at reading books\"), then found out about literary criticism but never wrote any more; now one would probably think this is another kind up there or something like THAT BUG? I don't remember what happened with those notes before his book came along…\n\n...but they still make sense! ...It can all become confusing if you follow carefully.\" That same moment after",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: aren, didn, did, He, are, weren, shall, does, We, couldn, cannot, C\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: aren, didn, did, He, are, weren, shall, does, We, couldn, cannot, C\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The most famous examples might be \"He Who Is,\" by Michael Rotten (1890), which explains how human characters became obsolete through their use so often — for example, it was an ancient idea today (\"One must have been quite adept at reading books\"), then found out about literary criticism but never wrote any more; now one would probably think this is another kind up there or something like THAT BUG? I don't remember what happened with those notes before his book came along…\n\n...but they still make sense! ...It can all become confusing if you follow carefully.\" That same moment after",
+        "continuation_text": "The most famous examples might be \"He Who Is,\" by Michael Rotten (1890), which explains how human characters became obsolete through their use so often — for example, it was an ancient idea today (\"One must have been quite adept at reading books\"), then found out about literary criticism but never wrote any more; now one would probably think this is another kind up there or something like THAT BUG? I don't remember what happened with those notes before his book came along…\n\n...but they still make sense! ...It can all become confusing if you follow carefully.\" That same moment after",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 228,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 588,
+        "word_count": 101,
+        "unique_word_count": 101,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Love",
+        "En",
+        "To",
+        "From",
+        "An",
+        "Am",
+        "Away",
+        "For",
+        "Like",
+        "With",
+        "div",
+        "Have"
+      ],
+      "output_text": "he says that maybe people could understand when someone asks him why we do things differently every day and try new ways faster than previously understood systems did … But where's my understanding on evolution vs natural selection etc?? Can humans get away from trying different solutions just because nobody else does them better yet – especially under certain circumstances -- even though our brains work very well already ? A couple years ago research showed some interesting differences between nonlinear dynamics such Asiatic trees versus Linear models using data derived via genetic algorithms [source]. This shows us clearly whether complex features exist naturally over time without being influenced indirectly . If nature",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Love, En, To, From, An, Am, Away, For, Like, With, div, Have\n\nTEXT:\nThe most famous examples might be \"He Who Is,\" by Michael Rotten (1890), which explains how human characters became obsolete through their use so often — for example, it was an ancient idea today (\"One must have been quite adept at reading books\"), then found out about literary criticism but never wrote any more; now one would probably think this is another kind up there or something like THAT BUG? I don't remember what happened with those notes before his book came along…\n\n...but they still make sense! ...It can all become confusing if you follow carefully.\" That same moment after",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Love, En, To, From, An, Am, Away, For, Like, With, div, Have\n\nTEXT:\nThe most famous examples might be \"He Who Is,\" by Michael Rotten (1890), which explains how human characters became obsolete through their use so often — for example, it was an ancient idea today (\"One must have been quite adept at reading books\"), then found out about literary criticism but never wrote any more; now one would probably think this is another kind up there or something like THAT BUG? I don't remember what happened with those notes before his book came along…\n\n...but they still make sense! ...It can all become confusing if you follow carefully.\" That same moment after he says that maybe people could understand when someone asks him why we do things differently every day and try new ways faster than previously understood systems did … But where's my understanding on evolution vs natural selection etc?? Can humans get away from trying different solutions just because nobody else does them better yet – especially under certain circumstances -- even though our brains work very well already ? A couple years ago research showed some interesting differences between nonlinear dynamics such Asiatic trees versus Linear models using data derived via genetic algorithms [source]. This shows us clearly whether complex features exist naturally over time without being influenced indirectly . If nature",
+        "continuation_text": "he says that maybe people could understand when someone asks him why we do things differently every day and try new ways faster than previously understood systems did … But where's my understanding on evolution vs natural selection etc?? Can humans get away from trying different solutions just because nobody else does them better yet – especially under certain circumstances -- even though our brains work very well already ? A couple years ago research showed some interesting differences between nonlinear dynamics such Asiatic trees versus Linear models using data derived via genetic algorithms [source]. This shows us clearly whether complex features exist naturally over time without being influenced indirectly . If nature",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 326,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 731,
+        "word_count": 113,
+        "unique_word_count": 113,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "unknow",
+        "pract",
+        "Pract",
+        "Experts",
+        "Government",
+        "chron",
+        "government",
+        "Civil",
+        "riots",
+        "Samar",
+        "Commun",
+        "traditional"
+      ],
+      "output_text": "is what it seems like then there ought be an explicit distinction for each type , or \"no matter which one you choose\", but this was really never considered by any scientist before with large dataset sizes until now (since much more recent results have shown similar patterns). The result? In many cases linear/nonlinearity will emerge at random : if all life has been created through processes other efficient enough rather 'natural' ones ... Then I suspect humanity should use computers instead too i mean artificial intelligence can follow rules perfectly adapted across species > ————————–> =—————————- 1 2 3 4 5",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: unknow, pract, Pract, Experts, Government, chron, government, Civil, riots, Samar, Commun, traditional\n\nTEXT:\nhe says that maybe people could understand when someone asks him why we do things differently every day and try new ways faster than previously understood systems did … But where's my understanding on evolution vs natural selection etc?? Can humans get away from trying different solutions just because nobody else does them better yet – especially under certain circumstances -- even though our brains work very well already ? A couple years ago research showed some interesting differences between nonlinear dynamics such Asiatic trees versus Linear models using data derived via genetic algorithms [source]. This shows us clearly whether complex features exist naturally over time without being influenced indirectly . If nature",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: unknow, pract, Pract, Experts, Government, chron, government, Civil, riots, Samar, Commun, traditional\n\nTEXT:\nhe says that maybe people could understand when someone asks him why we do things differently every day and try new ways faster than previously understood systems did … But where's my understanding on evolution vs natural selection etc?? Can humans get away from trying different solutions just because nobody else does them better yet – especially under certain circumstances -- even though our brains work very well already ? A couple years ago research showed some interesting differences between nonlinear dynamics such Asiatic trees versus Linear models using data derived via genetic algorithms [source]. This shows us clearly whether complex features exist naturally over time without being influenced indirectly . If nature is what it seems like then there ought be an explicit distinction for each type , or \"no matter which one you choose\", but this was really never considered by any scientist before with large dataset sizes until now (since much more recent results have shown similar patterns). The result? In many cases linear/nonlinearity will emerge at random : if all life has been created through processes other efficient enough rather 'natural' ones ... Then I suspect humanity should use computers instead too i mean artificial intelligence can follow rules perfectly adapted across species > ————————–> =—————————- 1 2 3 4 5",
+        "continuation_text": "is what it seems like then there ought be an explicit distinction for each type , or \"no matter which one you choose\", but this was really never considered by any scientist before with large dataset sizes until now (since much more recent results have shown similar patterns). The result? In many cases linear/nonlinearity will emerge at random : if all life has been created through processes other efficient enough rather 'natural' ones ... Then I suspect humanity should use computers instead too i mean artificial intelligence can follow rules perfectly adapted across species > ————————–> =—————————- 1 2 3 4 5",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 325,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 615,
+        "word_count": 102,
+        "unique_word_count": 102,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

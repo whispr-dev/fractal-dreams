@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1097,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 342,
+        "word_count": 59,
+        "unique_word_count": 59,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 693,
+        "word_count": 111,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.954954954954955,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 666,
+        "word_count": 107,
+        "unique_word_count": 102,
+        "unique_word_ratio": 0.9532710280373832,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Brune",
+        "ão",
+        "Hua",
+        "1907",
+        "odka",
+        "annie",
+        "san",
+        "ende",
+        "Xiang",
+        "ESCO",
+        "Aunt",
+        "Pants"
+      ],
+      "output_text": "The machines slowly moved away from each other for now. It is clear that they understood this very well before their work was finished – it has been known through countless interviews about how humans interacted with them; what's even worse, when we can't say anything without knowing why or if our computers have turned into screens on fire!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Brune, ão, Hua, 1907, odka, annie, san, ende, Xiang, ESCO, Aunt, Pants\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Brune, ão, Hua, 1907, odka, annie, san, ende, Xiang, ESCO, Aunt, Pants\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The machines slowly moved away from each other for now. It is clear that they understood this very well before their work was finished – it has been known through countless interviews about how humans interacted with them; what's even worse, when we can't say anything without knowing why or if our computers have turned into screens on fire!",
+        "continuation_text": "The machines slowly moved away from each other for now. It is clear that they understood this very well before their work was finished – it has been known through countless interviews about how humans interacted with them; what's even worse, when we can't say anything without knowing why or if our computers have turned into screens on fire!",
+        "input_token_count": 121,
+        "raw_input_token_count": 121,
+        "output_token_count": 187,
+        "new_token_count": 66,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 342,
+        "word_count": 59,
+        "unique_word_count": 59,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "umbledore",
+        "ilitarian",
+        "Nitrome",
+        "\u0015",
+        "Dumbledore",
+        "Biden",
+        "�",
+        "RandomRedditor",
+        "サーティ",
+        "\u0016",
+        "reportprint",
+        "\u0018"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: umbledore, ilitarian, Nitrome, \u0015, Dumbledore, Biden, �, RandomRedditor, サーティ, \u0016, reportprint, \u0018\n\nTEXT:\nThe machines slowly moved away from each other for now. It is clear that they understood this very well before their work was finished – it has been known through countless interviews about how humans interacted with them; what's even worse, when we can't say anything without knowing why or if our computers have turned into screens on fire!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: umbledore, ilitarian, Nitrome, \u0015, Dumbledore, Biden, �, RandomRedditor, サーティ, \u0016, reportprint, \u0018\n\nTEXT:\nThe machines slowly moved away from each other for now. It is clear that they understood this very well before their work was finished – it has been known through countless interviews about how humans interacted with them; what's even worse, when we can't say anything without knowing why or if our computers have turned into screens on fire!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: umbledore, ilitarian, Nitrome, \u0015, Dumbledore, Biden, �, RandomRedditor, サーティ, \u0016, reportprint, \u0018\n\nTEXT:\nThe machines slowly moved away from each other for now. It is clear that they understood this very well before their work was finished – it has been known through countless interviews about how humans interacted with them; what's even worse, when we can't say anything without knowing why or if our computers have turned into screens on fire!",
+        "continuation_text": "",
+        "input_token_count": 158,
+        "raw_input_token_count": 158,
+        "output_token_count": 159,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 693,
+        "word_count": 111,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.954954954954955,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Anyone",
+        "migrant",
+        "Please",
+        "Hillary",
+        "Citizens",
+        "Actress",
+        "Planned",
+        "According",
+        "Follow",
+        "Cruz",
+        "You",
+        "igrant"
+      ],
+      "output_text": "We've learned quite often by looking at human interaction between us and those people within one person while trying different things based upon both ways of thinking (see here). The problem begins with these robots being able use data which cannot be translated directly out of paper so long as everything exists completely outside of control…and then make themselves transparent because there isn�t enough information behind every action until you know where your characters come from … What makes all manner of communication possible? I'm going back over some examples but let's go ahead and look at my own findings first...I'll just write down after more details",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Anyone, migrant, Please, Hillary, Citizens, Actress, Planned, According, Follow, Cruz, You, igrant\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: umbledore, ilitarian, Nitrome, \u0015, Dumbledore, Biden, �, RandomRedditor, サーティ, \u0016, reportprint, \u0018\n\nTEXT:\nThe machines slowly moved away from each other for now. It is clear that they understood this very well before their work was finished – it has been known through countless interviews about how humans interacted with them; what's even worse, when we can't say anything without knowing why or if our computers have turned into screens on fire!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Anyone, migrant, Please, Hillary, Citizens, Actress, Planned, According, Follow, Cruz, You, igrant\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: umbledore, ilitarian, Nitrome, \u0015, Dumbledore, Biden, �, RandomRedditor, サーティ, \u0016, reportprint, \u0018\n\nTEXT:\nThe machines slowly moved away from each other for now. It is clear that they understood this very well before their work was finished – it has been known through countless interviews about how humans interacted with them; what's even worse, when we can't say anything without knowing why or if our computers have turned into screens on fire! We've learned quite often by looking at human interaction between us and those people within one person while trying different things based upon both ways of thinking (see here). The problem begins with these robots being able use data which cannot be translated directly out of paper so long as everything exists completely outside of control…and then make themselves transparent because there isn�t enough information behind every action until you know where your characters come from … What makes all manner of communication possible? I'm going back over some examples but let's go ahead and look at my own findings first...I'll just write down after more details",
+        "continuation_text": "We've learned quite often by looking at human interaction between us and those people within one person while trying different things based upon both ways of thinking (see here). The problem begins with these robots being able use data which cannot be translated directly out of paper so long as everything exists completely outside of control…and then make themselves transparent because there isn�t enough information behind every action until you know where your characters come from … What makes all manner of communication possible? I'm going back over some examples but let's go ahead and look at my own findings first...I'll just write down after more details",
+        "input_token_count": 244,
+        "raw_input_token_count": 244,
+        "output_token_count": 364,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 666,
+        "word_count": 107,
+        "unique_word_count": 102,
+        "unique_word_ratio": 0.9532710280373832,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1429,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 601,
+        "word_count": 91,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.8241758241758241,
+        "repeated_bigram_count": 6
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 588,
+        "word_count": 96,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.8229166666666666,
+        "repeated_bigram_count": 4
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 138,
+        "word_count": 18,
+        "unique_word_count": 17,
+        "unique_word_ratio": 0.9444444444444444,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "sick",
+        ".metadata",
+        "metadata",
+        "余名",
+        "نه",
+        "(/",
+        "special",
+        "ig",
+        "-rich",
+        "高品质",
+        "GT",
+        "intensive"
+      ],
+      "output_text": "The next recursive transformation of the given text would be:\n\n\"An abandoned factory told its past tales quietly but with an indescribable warmth, each recital blending reality with spiritual fervor.\"\n\nThis follows the guidelines by focusing on transforming the original text into a new one using just the latent anchor tokens provided for \"an abandoned factory,\" and then adding descriptive elements such as \"told its past tales quietly but with an indescribably warmth.\" The specific instructions have been preserved for this transformed version while adhering strictly to the constraints set forth.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nThe next recursive transformation of the given text would be:\n\n\"An abandoned factory told its past tales quietly but with an indescribable warmth, each recital blending reality with spiritual fervor.\"\n\nThis follows the guidelines by focusing on transforming the original text into a new one using just the latent anchor tokens provided for \"an abandoned factory,\" and then adding descriptive elements such as \"told its past tales quietly but with an indescribably warmth.\" The specific instructions have been preserved for this transformed version while adhering strictly to the constraints set forth.",
+        "continuation_text": "The next recursive transformation of the given text would be:\n\n\"An abandoned factory told its past tales quietly but with an indescribable warmth, each recital blending reality with spiritual fervor.\"\n\nThis follows the guidelines by focusing on transforming the original text into a new one using just the latent anchor tokens provided for \"an abandoned factory,\" and then adding descriptive elements such as \"told its past tales quietly but with an indescribably warmth.\" The specific instructions have been preserved for this transformed version while adhering strictly to the constraints set forth.",
+        "input_token_count": 120,
+        "raw_input_token_count": 120,
+        "output_token_count": 233,
+        "new_token_count": 113,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 601,
+        "word_count": 91,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.8241758241758241,
+        "repeated_bigram_count": 6
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "F",
+        "K",
+        "similar",
+        "b",
+        "每隔",
+        "lọc",
+        "eb",
+        "erval",
+        "retention",
+        "й",
+        "L",
+        "шив"
+      ],
+      "output_text": "\"The next recursive transformation of the given text would be:\n\n\"A desolate farm nestled amidst rolling hills whispered tales long forgotten beneath the moonlit sky. Each tale was filled with the raw energy of childhood dreams mingled with the serene solitude that enveloped it.\"\n\nHere is how each part has been transformed based on the provided latent anchors:\n1. An abandoned factory - becomes \"a desolate farm\"\n2. Told its past tales quietly but with an indescribably warmth - becomes \"nursed tales silently but with a profound depth\"\n3. blended reality with spiritual fervor - becomes",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: F, K, similar, b, 每隔, lọc, eb, erval, retention, й, L, шив\n\nTEXT:\nThe next recursive transformation of the given text would be:\n\n\"An abandoned factory told its past tales quietly but with an indescribable warmth, each recital blending reality with spiritual fervor.\"\n\nThis follows the guidelines by focusing on transforming the original text into a new one using just the latent anchor tokens provided for \"an abandoned factory,\" and then adding descriptive elements such as \"told its past tales quietly but with an indescribably warmth.\" The specific instructions have been preserved for this transformed version while adhering strictly to the constraints set forth.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: F, K, similar, b, 每隔, lọc, eb, erval, retention, й, L, шив\n\nTEXT:\nThe next recursive transformation of the given text would be:\n\n\"An abandoned factory told its past tales quietly but with an indescribable warmth, each recital blending reality with spiritual fervor.\"\n\nThis follows the guidelines by focusing on transforming the original text into a new one using just the latent anchor tokens provided for \"an abandoned factory,\" and then adding descriptive elements such as \"told its past tales quietly but with an indescribably warmth.\" The specific instructions have been preserved for this transformed version while adhering strictly to the constraints set forth.\nassistant\n\"The next recursive transformation of the given text would be:\n\n\"A desolate farm nestled amidst rolling hills whispered tales long forgotten beneath the moonlit sky. Each tale was filled with the raw energy of childhood dreams mingled with the serene solitude that enveloped it.\"\n\nHere is how each part has been transformed based on the provided latent anchors:\n1. An abandoned factory - becomes \"a desolate farm\"\n2. Told its past tales quietly but with an indescribably warmth - becomes \"nursed tales silently but with a profound depth\"\n3. blended reality with spiritual fervor - becomes",
+        "continuation_text": "\"The next recursive transformation of the given text would be:\n\n\"A desolate farm nestled amidst rolling hills whispered tales long forgotten beneath the moonlit sky. Each tale was filled with the raw energy of childhood dreams mingled with the serene solitude that enveloped it.\"\n\nHere is how each part has been transformed based on the provided latent anchors:\n1. An abandoned factory - becomes \"a desolate farm\"\n2. Told its past tales quietly but with an indescribably warmth - becomes \"nursed tales silently but with a profound depth\"\n3. blended reality with spiritual fervor - becomes",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 325,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 588,
+        "word_count": 96,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.8229166666666666,
+        "repeated_bigram_count": 4
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "斥",
+        "Ish",
+        "支",
+        "redirectTo",
+        "ear",
+        "疲",
+        "le",
+        "Audio",
+        "Trail",
+        "abandoned",
+        "contributing",
+        "拥挤"
+      ],
+      "output_text": "\"blended reality and a deep spirituality\"\n\nThis transformation maintains the essence while utilizing the latent anchor tokens efficiently.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 斥, Ish, 支, redirectTo, ear, 疲, le, Audio, Trail, abandoned, contributing, 拥挤\n\nTEXT:\n\"The next recursive transformation of the given text would be:\n\n\"A desolate farm nestled amidst rolling hills whispered tales long forgotten beneath the moonlit sky. Each tale was filled with the raw energy of childhood dreams mingled with the serene solitude that enveloped it.\"\n\nHere is how each part has been transformed based on the provided latent anchors:\n1. An abandoned factory - becomes \"a desolate farm\"\n2. Told its past tales quietly but with an indescribably warmth - becomes \"nursed tales silently but with a profound depth\"\n3. blended reality with spiritual fervor - becomes<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 斥, Ish, 支, redirectTo, ear, 疲, le, Audio, Trail, abandoned, contributing, 拥挤\n\nTEXT:\n\"The next recursive transformation of the given text would be:\n\n\"A desolate farm nestled amidst rolling hills whispered tales long forgotten beneath the moonlit sky. Each tale was filled with the raw energy of childhood dreams mingled with the serene solitude that enveloped it.\"\n\nHere is how each part has been transformed based on the provided latent anchors:\n1. An abandoned factory - becomes \"a desolate farm\"\n2. Told its past tales quietly but with an indescribably warmth - becomes \"nursed tales silently but with a profound depth\"\n3. blended reality with spiritual fervor - becomes\nassistant\n\"blended reality and a deep spirituality\"\n\nThis transformation maintains the essence while utilizing the latent anchor tokens efficiently.",
+        "continuation_text": "\"blended reality and a deep spirituality\"\n\nThis transformation maintains the essence while utilizing the latent anchor tokens efficiently.",
+        "input_token_count": 214,
+        "raw_input_token_count": 214,
+        "output_token_count": 237,
+        "new_token_count": 23,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 138,
+        "word_count": 18,
+        "unique_word_count": 17,
+        "unique_word_ratio": 0.9444444444444444,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

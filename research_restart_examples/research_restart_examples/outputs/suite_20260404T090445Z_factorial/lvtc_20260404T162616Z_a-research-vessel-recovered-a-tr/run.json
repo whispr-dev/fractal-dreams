@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1590,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 709,
+        "word_count": 116,
+        "unique_word_count": 115,
+        "unique_word_ratio": 0.9913793103448276,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 450,
+        "word_count": 74,
+        "unique_word_count": 74,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 759,
+        "word_count": 122,
+        "unique_word_count": 117,
+        "unique_word_ratio": 0.9590163934426229,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 123,
+        "word_count": 24,
+        "unique_word_count": 24,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "had",
+        "was",
+        "are",
+        "It",
+        "went",
+        "have",
+        "in",
+        "has",
+        "with",
+        "is"
+      ],
+      "output_text": "The first phase contained only one key to making data available when required for human evolution (the idea that we could get more information) without compromising our capacity for knowledge or access. After receiving two transmissions over three minutes at 2 am every 12 seconds after sending some message along its path through space on which I believed they should remain intact until later this year but soon did not do so because there wasn't enough time now within 24 hours if my messages stopped being transmitted outwards all before dawning again during lunchtime; what follows would then make me feel better about having something up your sleeve than just thinking \"Wow\", whatever you're doing! That",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, had, was, are, It, went, have, in, has, with, is\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, had, was, are, It, went, have, in, has, with, is\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The first phase contained only one key to making data available when required for human evolution (the idea that we could get more information) without compromising our capacity for knowledge or access. After receiving two transmissions over three minutes at 2 am every 12 seconds after sending some message along its path through space on which I believed they should remain intact until later this year but soon did not do so because there wasn't enough time now within 24 hours if my messages stopped being transmitted outwards all before dawning again during lunchtime; what follows would then make me feel better about having something up your sleeve than just thinking \"Wow\", whatever you're doing! That",
+        "continuation_text": "The first phase contained only one key to making data available when required for human evolution (the idea that we could get more information) without compromising our capacity for knowledge or access. After receiving two transmissions over three minutes at 2 am every 12 seconds after sending some message along its path through space on which I believed they should remain intact until later this year but soon did not do so because there wasn't enough time now within 24 hours if my messages stopped being transmitted outwards all before dawning again during lunchtime; what follows would then make me feel better about having something up your sleeve than just thinking \"Wow\", whatever you're doing! That",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 230,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 709,
+        "word_count": 116,
+        "unique_word_count": 115,
+        "unique_word_ratio": 0.9913793103448276,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "if",
+        "are",
+        "had",
+        "have",
+        "they",
+        "when",
+        "did",
+        "in",
+        "was",
+        "after"
+      ],
+      "output_text": "'s like saying where is going? You can say who has got lots and tons of words as well...I'm sure someone will tell them how much money gets made per hour off their average budget though--but here comes another important point from using those extra levels while still learning any useful lessons once learned via math/programming skills—and finding good examples with no distractions whatsoever either way other people may need to learn too often....",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, are, had, have, they, when, did, in, was, after\n\nTEXT:\nThe first phase contained only one key to making data available when required for human evolution (the idea that we could get more information) without compromising our capacity for knowledge or access. After receiving two transmissions over three minutes at 2 am every 12 seconds after sending some message along its path through space on which I believed they should remain intact until later this year but soon did not do so because there wasn't enough time now within 24 hours if my messages stopped being transmitted outwards all before dawning again during lunchtime; what follows would then make me feel better about having something up your sleeve than just thinking \"Wow\", whatever you're doing! That",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, are, had, have, they, when, did, in, was, after\n\nTEXT:\nThe first phase contained only one key to making data available when required for human evolution (the idea that we could get more information) without compromising our capacity for knowledge or access. After receiving two transmissions over three minutes at 2 am every 12 seconds after sending some message along its path through space on which I believed they should remain intact until later this year but soon did not do so because there wasn't enough time now within 24 hours if my messages stopped being transmitted outwards all before dawning again during lunchtime; what follows would then make me feel better about having something up your sleeve than just thinking \"Wow\", whatever you're doing! That's like saying where is going? You can say who has got lots and tons of words as well...I'm sure someone will tell them how much money gets made per hour off their average budget though--but here comes another important point from using those extra levels while still learning any useful lessons once learned via math/programming skills—and finding good examples with no distractions whatsoever either way other people may need to learn too often....",
+        "continuation_text": "'s like saying where is going? You can say who has got lots and tons of words as well...I'm sure someone will tell them how much money gets made per hour off their average budget though--but here comes another important point from using those extra levels while still learning any useful lessons once learned via math/programming skills—and finding good examples with no distractions whatsoever either way other people may need to learn too often....",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 294,
+        "new_token_count": 87,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 450,
+        "word_count": 74,
+        "unique_word_count": 74,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "had",
+        "is",
+        "has",
+        "could",
+        "did",
+        "was",
+        "they"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, is, has, could, did, was, they\n\nTEXT:\n's like saying where is going? You can say who has got lots and tons of words as well...I'm sure someone will tell them how much money gets made per hour off their average budget though--but here comes another important point from using those extra levels while still learning any useful lessons once learned via math/programming skills—and finding good examples with no distractions whatsoever either way other people may need to learn too often....",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, is, has, could, did, was, they\n\nTEXT:\n's like saying where is going? You can say who has got lots and tons of words as well...I'm sure someone will tell them how much money gets made per hour off their average budget though--but here comes another important point from using those extra levels while still learning any useful lessons once learned via math/programming skills—and finding good examples with no distractions whatsoever either way other people may need to learn too often....",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, is, has, could, did, was, they\n\nTEXT:\n's like saying where is going? You can say who has got lots and tons of words as well...I'm sure someone will tell them how much money gets made per hour off their average budget though--but here comes another important point from using those extra levels while still learning any useful lessons once learned via math/programming skills—and finding good examples with no distractions whatsoever either way other people may need to learn too often....",
+        "continuation_text": "",
+        "input_token_count": 165,
+        "raw_input_token_count": 165,
+        "output_token_count": 166,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 759,
+        "word_count": 122,
+        "unique_word_count": 117,
+        "unique_word_ratio": 0.9590163934426229,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "are",
+        "it",
+        "is",
+        "have",
+        "had",
+        "if",
+        "was",
+        "has",
+        "could",
+        "in",
+        "did"
+      ],
+      "output_text": "And finally, let me give you something on your mind that would help all my friends out there better do this work over time!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, it, is, have, had, if, was, has, could, in, did\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, is, has, could, did, was, they\n\nTEXT:\n's like saying where is going? You can say who has got lots and tons of words as well...I'm sure someone will tell them how much money gets made per hour off their average budget though--but here comes another important point from using those extra levels while still learning any useful lessons once learned via math/programming skills—and finding good examples with no distractions whatsoever either way other people may need to learn too often....",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, it, is, have, had, if, was, has, could, in, did\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, is, has, could, did, was, they\n\nTEXT:\n's like saying where is going? You can say who has got lots and tons of words as well...I'm sure someone will tell them how much money gets made per hour off their average budget though--but here comes another important point from using those extra levels while still learning any useful lessons once learned via math/programming skills—and finding good examples with no distractions whatsoever either way other people may need to learn too often....And finally, let me give you something on your mind that would help all my friends out there better do this work over time!",
+        "continuation_text": "And finally, let me give you something on your mind that would help all my friends out there better do this work over time!",
+        "input_token_count": 244,
+        "raw_input_token_count": 244,
+        "output_token_count": 271,
+        "new_token_count": 27,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 123,
+        "word_count": 24,
+        "unique_word_count": 24,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

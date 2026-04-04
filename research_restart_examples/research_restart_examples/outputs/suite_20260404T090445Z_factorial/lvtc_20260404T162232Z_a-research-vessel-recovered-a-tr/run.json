@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1586,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 685,
+        "word_count": 100,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.87,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 326,
+        "word_count": 44,
+        "unique_word_count": 40,
+        "unique_word_ratio": 0.9090909090909091,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 124,
+        "word_count": 13,
+        "unique_word_count": 13,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 160,
+        "word_count": 20,
+        "unique_word_count": 18,
+        "unique_word_ratio": 0.9,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "were",
+        "from",
+        "and",
+        "the",
+        "was",
+        "to",
+        "a",
+        "A",
+        "for"
+      ],
+      "output_text": "**NEXT RECURSIVE TRANSFORMATION:** \n\nThe **semantic direction is now indicated by the following terminal tokens**: \"a\", \"from\". Therefore, our task transforms the given text into its next logical step based on this direction. The resulting sentence should describe how the equipment became a philosophical artifact or document.\n\n**Next Transformation Steps:**\n\n1. From engineering telemetry to philosophical artifact.\n2. It had been working as an engineering tool before becoming a philosophical one.\n3. An engineering system evolved over time to become more complex and influential over time.\n\nThus, we can write:\n\n\"A research vessel recovered a transmission from the trench floor. It",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\n**NEXT RECURSIVE TRANSFORMATION:** \n\nThe **semantic direction is now indicated by the following terminal tokens**: \"a\", \"from\". Therefore, our task transforms the given text into its next logical step based on this direction. The resulting sentence should describe how the equipment became a philosophical artifact or document.\n\n**Next Transformation Steps:**\n\n1. From engineering telemetry to philosophical artifact.\n2. It had been working as an engineering tool before becoming a philosophical one.\n3. An engineering system evolved over time to become more complex and influential over time.\n\nThus, we can write:\n\n\"A research vessel recovered a transmission from the trench floor. It",
+        "continuation_text": "**NEXT RECURSIVE TRANSFORMATION:** \n\nThe **semantic direction is now indicated by the following terminal tokens**: \"a\", \"from\". Therefore, our task transforms the given text into its next logical step based on this direction. The resulting sentence should describe how the equipment became a philosophical artifact or document.\n\n**Next Transformation Steps:**\n\n1. From engineering telemetry to philosophical artifact.\n2. It had been working as an engineering tool before becoming a philosophical one.\n3. An engineering system evolved over time to become more complex and influential over time.\n\nThus, we can write:\n\n\"A research vessel recovered a transmission from the trench floor. It",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 232,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 685,
+        "word_count": 100,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.87,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "the",
+        "were",
+        "It",
+        "If",
+        "to",
+        "was",
+        "is",
+        "are",
+        "for",
+        "from"
+      ],
+      "output_text": "\"From engineering telemetry to philosophical artifact.\"\n\nWe have transformed the initial statement into a more direct and concise explanation that adheres to the provided semantic guidance through the use of auxiliary verbs (\"recovered,\" \"evolved\") which reflect movement towards gaining deeper insight into historical events.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, were, It, If, to, was, is, are, for, from\n\nTEXT:\n**NEXT RECURSIVE TRANSFORMATION:** \n\nThe **semantic direction is now indicated by the following terminal tokens**: \"a\", \"from\". Therefore, our task transforms the given text into its next logical step based on this direction. The resulting sentence should describe how the equipment became a philosophical artifact or document.\n\n**Next Transformation Steps:**\n\n1. From engineering telemetry to philosophical artifact.\n2. It had been working as an engineering tool before becoming a philosophical one.\n3. An engineering system evolved over time to become more complex and influential over time.\n\nThus, we can write:\n\n\"A research vessel recovered a transmission from the trench floor. It<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, were, It, If, to, was, is, are, for, from\n\nTEXT:\n**NEXT RECURSIVE TRANSFORMATION:** \n\nThe **semantic direction is now indicated by the following terminal tokens**: \"a\", \"from\". Therefore, our task transforms the given text into its next logical step based on this direction. The resulting sentence should describe how the equipment became a philosophical artifact or document.\n\n**Next Transformation Steps:**\n\n1. From engineering telemetry to philosophical artifact.\n2. It had been working as an engineering tool before becoming a philosophical one.\n3. An engineering system evolved over time to become more complex and influential over time.\n\nThus, we can write:\n\n\"A research vessel recovered a transmission from the trench floor. It\nassistant\n\"From engineering telemetry to philosophical artifact.\"\n\nWe have transformed the initial statement into a more direct and concise explanation that adheres to the provided semantic guidance through the use of auxiliary verbs (\"recovered,\" \"evolved\") which reflect movement towards gaining deeper insight into historical events.",
+        "continuation_text": "\"From engineering telemetry to philosophical artifact.\"\n\nWe have transformed the initial statement into a more direct and concise explanation that adheres to the provided semantic guidance through the use of auxiliary verbs (\"recovered,\" \"evolved\") which reflect movement towards gaining deeper insight into historical events.",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 265,
+        "new_token_count": 55,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 326,
+        "word_count": 44,
+        "unique_word_count": 40,
+        "unique_word_ratio": 0.9090909090909091,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "the",
+        "intelligence",
+        "are",
+        "to",
+        "that",
+        "which",
+        "was",
+        "nếu",
+        "If"
+      ],
+      "output_text": "Recovering historical artifacts facilitates an exploration into intricate nuances within complex technological advancements.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, intelligence, are, to, that, which, was, nếu, If\n\nTEXT:\n\"From engineering telemetry to philosophical artifact.\"\n\nWe have transformed the initial statement into a more direct and concise explanation that adheres to the provided semantic guidance through the use of auxiliary verbs (\"recovered,\" \"evolved\") which reflect movement towards gaining deeper insight into historical events.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, intelligence, are, to, that, which, was, nếu, If\n\nTEXT:\n\"From engineering telemetry to philosophical artifact.\"\n\nWe have transformed the initial statement into a more direct and concise explanation that adheres to the provided semantic guidance through the use of auxiliary verbs (\"recovered,\" \"evolved\") which reflect movement towards gaining deeper insight into historical events.\nassistant\nRecovering historical artifacts facilitates an exploration into intricate nuances within complex technological advancements.",
+        "continuation_text": "Recovering historical artifacts facilitates an exploration into intricate nuances within complex technological advancements.",
+        "input_token_count": 136,
+        "raw_input_token_count": 136,
+        "output_token_count": 152,
+        "new_token_count": 16,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 124,
+        "word_count": 13,
+        "unique_word_count": 13,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "intricate",
+        "advancements",
+        "complexities",
+        "intelligence",
+        "Complex",
+        "nuances",
+        "complex",
+        "dreaming",
+        "technological",
+        "nếu",
+        "exploring",
+        "complexity"
+      ],
+      "output_text": "The next recursive transformation is:\n\n---\n\nExploring deeper into intricate details, enhanced technology offers insights into complex historical mysteries.\n\n---",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: intricate, advancements, complexities, intelligence, Complex, nuances, complex, dreaming, technological, nếu, exploring, complexity\n\nTEXT:\nRecovering historical artifacts facilitates an exploration into intricate nuances within complex technological advancements.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: intricate, advancements, complexities, intelligence, Complex, nuances, complex, dreaming, technological, nếu, exploring, complexity\n\nTEXT:\nRecovering historical artifacts facilitates an exploration into intricate nuances within complex technological advancements.\nassistant\nThe next recursive transformation is:\n\n---\n\nExploring deeper into intricate details, enhanced technology offers insights into complex historical mysteries.\n\n---",
+        "continuation_text": "The next recursive transformation is:\n\n---\n\nExploring deeper into intricate details, enhanced technology offers insights into complex historical mysteries.\n\n---",
+        "input_token_count": 97,
+        "raw_input_token_count": 97,
+        "output_token_count": 122,
+        "new_token_count": 25,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 160,
+        "word_count": 20,
+        "unique_word_count": 18,
+        "unique_word_ratio": 0.9,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

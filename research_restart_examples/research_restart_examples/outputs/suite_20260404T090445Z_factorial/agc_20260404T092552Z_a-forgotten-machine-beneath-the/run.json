@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1029,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 461,
+        "word_count": 76,
+        "unique_word_count": 69,
+        "unique_word_ratio": 0.9078947368421053,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 694,
+        "word_count": 108,
+        "unique_word_count": 108,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 613,
+        "word_count": 96,
+        "unique_word_count": 96,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "A",
+        ">",
+        "&",
+        "She",
+        "The",
+        "\",",
+        ">\"",
+        ".\"\"",
+        "I",
+        "\",\"",
+        "\"\"",
+        "\"."
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: A, >, &, She, The, \",, >\", .\"\", I, \",\", \"\", \".\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: A, >, &, She, The, \",, >\", .\"\", I, \",\", \"\", \".\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: A, >, &, She, The, \",, >\", .\"\", I, \",\", \"\", \".\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "continuation_text": "",
+        "input_token_count": 117,
+        "raw_input_token_count": 117,
+        "output_token_count": 118,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 461,
+        "word_count": 76,
+        "unique_word_count": 69,
+        "unique_word_ratio": 0.9078947368421053,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "You",
+        "iously",
+        "Only",
+        "62",
+        "To",
+        "Rural",
+        "Just",
+        "Even",
+        "Those",
+        "Social",
+        "clinic",
+        "Nearly"
+      ],
+      "output_text": "It was like seeing someone that you've never met before—it knew everything about your inner thoughts but had little comprehension or familiarity with them at all. At best it might make an easy prey for those who did know what they said; this is even worse when repeated times can feel too short compared between conversations without their knowledge being lost along the way. In other words —a wordless sentence cannot possibly convey any understanding whatsoever (and there's much less evidence) beyond small hints such things seem familiar during readability studies by people trying out new languages which tend towards vague descriptions rather than coherent description patterns themselves",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: You, iously, Only, 62, To, Rural, Just, Even, Those, Social, clinic, Nearly\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: A, >, &, She, The, \",, >\", .\"\", I, \",\", \"\", \".\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: You, iously, Only, 62, To, Rural, Just, Even, Those, Social, clinic, Nearly\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: A, >, &, She, The, \",, >\", .\"\", I, \",\", \"\", \".\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like seeing someone that you've never met before—it knew everything about your inner thoughts but had little comprehension or familiarity with them at all. At best it might make an easy prey for those who did know what they said; this is even worse when repeated times can feel too short compared between conversations without their knowledge being lost along the way. In other words —a wordless sentence cannot possibly convey any understanding whatsoever (and there's much less evidence) beyond small hints such things seem familiar during readability studies by people trying out new languages which tend towards vague descriptions rather than coherent description patterns themselves",
+        "continuation_text": "It was like seeing someone that you've never met before—it knew everything about your inner thoughts but had little comprehension or familiarity with them at all. At best it might make an easy prey for those who did know what they said; this is even worse when repeated times can feel too short compared between conversations without their knowledge being lost along the way. In other words —a wordless sentence cannot possibly convey any understanding whatsoever (and there's much less evidence) beyond small hints such things seem familiar during readability studies by people trying out new languages which tend towards vague descriptions rather than coherent description patterns themselves",
+        "input_token_count": 203,
+        "raw_input_token_count": 203,
+        "output_token_count": 323,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 694,
+        "word_count": 108,
+        "unique_word_count": 108,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "It",
+        "If",
+        "Few",
+        "This",
+        "That",
+        "There",
+        "Although",
+        "Probably",
+        "Is",
+        "ITT",
+        "At",
+        "Only"
+      ],
+      "output_text": "! Lazy syntax and lazy semantics help reinforce how easily one finds common ground among two sentences (\"\" = \"yes\", \"says\") while still having enough experience explaining both meanings together so well on its own later into explanation where every character has been defined more concisely simply because another could have taken up longer work anyway? By repeating these three simple grammar problems I suggest readers take notice from time immemorial instead switching back around if needed after each repetition - making sure writing long examples just makes sense until finally doing something else useful :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: It, If, Few, This, That, There, Although, Probably, Is, ITT, At, Only\n\nTEXT:\nIt was like seeing someone that you've never met before—it knew everything about your inner thoughts but had little comprehension or familiarity with them at all. At best it might make an easy prey for those who did know what they said; this is even worse when repeated times can feel too short compared between conversations without their knowledge being lost along the way. In other words —a wordless sentence cannot possibly convey any understanding whatsoever (and there's much less evidence) beyond small hints such things seem familiar during readability studies by people trying out new languages which tend towards vague descriptions rather than coherent description patterns themselves",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: It, If, Few, This, That, There, Although, Probably, Is, ITT, At, Only\n\nTEXT:\nIt was like seeing someone that you've never met before—it knew everything about your inner thoughts but had little comprehension or familiarity with them at all. At best it might make an easy prey for those who did know what they said; this is even worse when repeated times can feel too short compared between conversations without their knowledge being lost along the way. In other words —a wordless sentence cannot possibly convey any understanding whatsoever (and there's much less evidence) beyond small hints such things seem familiar during readability studies by people trying out new languages which tend towards vague descriptions rather than coherent description patterns themselves! Lazy syntax and lazy semantics help reinforce how easily one finds common ground among two sentences (\"\" = \"yes\", \"says\") while still having enough experience explaining both meanings together so well on its own later into explanation where every character has been defined more concisely simply because another could have taken up longer work anyway? By repeating these three simple grammar problems I suggest readers take notice from time immemorial instead switching back around if needed after each repetition - making sure writing long examples just makes sense until finally doing something else useful :)",
+        "continuation_text": "! Lazy syntax and lazy semantics help reinforce how easily one finds common ground among two sentences (\"\" = \"yes\", \"says\") while still having enough experience explaining both meanings together so well on its own later into explanation where every character has been defined more concisely simply because another could have taken up longer work anyway? By repeating these three simple grammar problems I suggest readers take notice from time immemorial instead switching back around if needed after each repetition - making sure writing long examples just makes sense until finally doing something else useful :)",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 314,
+        "new_token_count": 108,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 613,
+        "word_count": 96,
+        "unique_word_count": 96,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

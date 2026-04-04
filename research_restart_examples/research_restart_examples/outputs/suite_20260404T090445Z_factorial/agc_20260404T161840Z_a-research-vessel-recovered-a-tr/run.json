@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1581,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 405,
+        "word_count": 55,
+        "unique_word_count": 55,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 34,
+        "word_count": 4,
+        "unique_word_count": 4,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 589,
+        "word_count": 103,
+        "unique_word_count": 102,
+        "unique_word_ratio": 0.9902912621359223,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "scene",
+        "funeral",
+        "anti",
+        "military",
+        "GOP",
+        "blood",
+        "moment",
+        "party",
+        "families",
+        "border",
+        "pro",
+        "Republican"
+      ],
+      "output_text": "The starship was lost on an unknown planet where scientists have been working for centuries without realizing it had dropped off by Earth's surface or made contact with its host system at some point before their return mission ever started. A single human station left behind during that time is described here (in detail): http://www.....theresideofthissite.net/index....3f12b9e7c8a1de0d75ad6ed4be5395718",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: scene, funeral, anti, military, GOP, blood, moment, party, families, border, pro, Republican\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: scene, funeral, anti, military, GOP, blood, moment, party, families, border, pro, Republican\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The starship was lost on an unknown planet where scientists have been working for centuries without realizing it had dropped off by Earth's surface or made contact with its host system at some point before their return mission ever started. A single human station left behind during that time is described here (in detail): http://www.....theresideofthissite.net/index....3f12b9e7c8a1de0d75ad6ed4be5395718",
+        "continuation_text": "The starship was lost on an unknown planet where scientists have been working for centuries without realizing it had dropped off by Earth's surface or made contact with its host system at some point before their return mission ever started. A single human station left behind during that time is described here (in detail): http://www.....theresideofthissite.net/index....3f12b9e7c8a1de0d75ad6ed4be5395718",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 207,
+        "new_token_count": 99,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 405,
+        "word_count": 55,
+        "unique_word_count": 55,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "View",
+        "18",
+        "deg",
+        "vis",
+        "FE",
+        "view",
+        "occ",
+        "appearance",
+        "VIS",
+        "gri",
+        "arc",
+        "fc"
+      ],
+      "output_text": "14345035cf.....\n\n(Click For Image)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: View, 18, deg, vis, FE, view, occ, appearance, VIS, gri, arc, fc\n\nTEXT:\nThe starship was lost on an unknown planet where scientists have been working for centuries without realizing it had dropped off by Earth's surface or made contact with its host system at some point before their return mission ever started. A single human station left behind during that time is described here (in detail): http://www.....theresideofthissite.net/index....3f12b9e7c8a1de0d75ad6ed4be5395718",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: View, 18, deg, vis, FE, view, occ, appearance, VIS, gri, arc, fc\n\nTEXT:\nThe starship was lost on an unknown planet where scientists have been working for centuries without realizing it had dropped off by Earth's surface or made contact with its host system at some point before their return mission ever started. A single human station left behind during that time is described here (in detail): http://www.....theresideofthissite.net/index....3f12b9e7c8a1de0d75ad6ed4be539571814345035cf.....\n\n(Click For Image)",
+        "continuation_text": "14345035cf.....\n\n(Click For Image)",
+        "input_token_count": 184,
+        "raw_input_token_count": 184,
+        "output_token_count": 198,
+        "new_token_count": 14,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 34,
+        "word_count": 4,
+        "unique_word_count": 4,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Trans",
+        "Department",
+        "Title",
+        "Police",
+        "Chapter",
+        "w",
+        "currency",
+        "trans",
+        "Home",
+        "aid",
+        "A",
+        "Debt"
+      ],
+      "output_text": "[NOTE ON LANGUAGE] It should be noted that some basic grammar rules have been written for this dataset and may still apply (as indicated by 'rules' above), so read carefully! That is why I will try my best if possible to avoid having too much information about what you just learned here or how it might come across on Wikipedia when presented with questions like these without putting them into quotes...  It has become clear over the years - from \"What languages do people talk about?\". But there were no particular words used at all outside English spoken elsewhere but one could easily",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Trans, Department, Title, Police, Chapter, w, currency, trans, Home, aid, A, Debt\n\nTEXT:\n14345035cf.....\n\n(Click For Image)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Trans, Department, Title, Police, Chapter, w, currency, trans, Home, aid, A, Debt\n\nTEXT:\n14345035cf.....\n\n(Click For Image)\n\n [NOTE ON LANGUAGE] It should be noted that some basic grammar rules have been written for this dataset and may still apply (as indicated by 'rules' above), so read carefully! That is why I will try my best if possible to avoid having too much information about what you just learned here or how it might come across on Wikipedia when presented with questions like these without putting them into quotes...  It has become clear over the years - from \"What languages do people talk about?\". But there were no particular words used at all outside English spoken elsewhere but one could easily",
+        "continuation_text": "[NOTE ON LANGUAGE] It should be noted that some basic grammar rules have been written for this dataset and may still apply (as indicated by 'rules' above), so read carefully! That is why I will try my best if possible to avoid having too much information about what you just learned here or how it might come across on Wikipedia when presented with questions like these without putting them into quotes...  It has become clear over the years - from \"What languages do people talk about?\". But there were no particular words used at all outside English spoken elsewhere but one could easily",
+        "input_token_count": 98,
+        "raw_input_token_count": 98,
+        "output_token_count": 218,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 589,
+        "word_count": 103,
+        "unique_word_count": 102,
+        "unique_word_ratio": 0.9902912621359223,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

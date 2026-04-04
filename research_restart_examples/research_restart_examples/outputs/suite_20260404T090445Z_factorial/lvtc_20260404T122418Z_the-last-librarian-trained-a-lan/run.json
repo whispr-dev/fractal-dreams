@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1266,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 585,
+        "word_count": 96,
+        "unique_word_count": 93,
+        "unique_word_ratio": 0.96875,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 675,
+        "word_count": 114,
+        "unique_word_count": 110,
+        "unique_word_ratio": 0.9649122807017544,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 711,
+        "word_count": 111,
+        "unique_word_count": 111,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 689,
+        "word_count": 112,
+        "unique_word_count": 110,
+        "unique_word_ratio": 0.9821428571428571,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        "was",
+        "have",
+        "the",
+        "is",
+        "The",
+        "has",
+        "did",
+        "that"
+      ],
+      "output_text": "It worked with two different languages to build relationships between them (both English and French). They also found an algorithm for word order where each phrase appears at least twice as often as one line before matching another; they looked out their window when compared to other words from similar systems or regions through various historical records into those same set. This led to some results based upon observations made during this time period—the key difference here becomes not whether we're talking about 'words' alone but what else can you add? There may well be more!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, was, have, the, is, The, has, did, that\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, was, have, the, is, The, has, did, that\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. It worked with two different languages to build relationships between them (both English and French). They also found an algorithm for word order where each phrase appears at least twice as often as one line before matching another; they looked out their window when compared to other words from similar systems or regions through various historical records into those same set. This led to some results based upon observations made during this time period—the key difference here becomes not whether we're talking about 'words' alone but what else can you add? There may well be more!",
+        "continuation_text": "It worked with two different languages to build relationships between them (both English and French). They also found an algorithm for word order where each phrase appears at least twice as often as one line before matching another; they looked out their window when compared to other words from similar systems or regions through various historical records into those same set. This led to some results based upon observations made during this time period—the key difference here becomes not whether we're talking about 'words' alone but what else can you add? There may well be more!",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 210,
+        "new_token_count": 108,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 585,
+        "word_count": 96,
+        "unique_word_count": 93,
+        "unique_word_ratio": 0.96875,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "they",
+        "in",
+        "had",
+        "have",
+        "with",
+        "is",
+        "to",
+        "was"
+      ],
+      "output_text": "For example, there could be just because \"word\" did not appear on any books prior to 2007 than that which shows up again after 2008 —but even so, using keywords such Aspects cannot result in significant errors caused by variables like number of sentences rather then numbers too much -it's very possible our data would show how important learning strategies mean since most people get used to reading certain kinds omissions without understanding basic concepts etc. And I don't think anyone will ever want to know who said something wrong until someone has read your book...I've never been able to find anything bad yet ... It should probably come down to all three features",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, they, in, had, have, with, is, to, was\n\nTEXT:\nIt worked with two different languages to build relationships between them (both English and French). They also found an algorithm for word order where each phrase appears at least twice as often as one line before matching another; they looked out their window when compared to other words from similar systems or regions through various historical records into those same set. This led to some results based upon observations made during this time period—the key difference here becomes not whether we're talking about 'words' alone but what else can you add? There may well be more!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, they, in, had, have, with, is, to, was\n\nTEXT:\nIt worked with two different languages to build relationships between them (both English and French). They also found an algorithm for word order where each phrase appears at least twice as often as one line before matching another; they looked out their window when compared to other words from similar systems or regions through various historical records into those same set. This led to some results based upon observations made during this time period—the key difference here becomes not whether we're talking about 'words' alone but what else can you add? There may well be more! For example, there could be just because \"word\" did not appear on any books prior to 2007 than that which shows up again after 2008 —but even so, using keywords such Aspects cannot result in significant errors caused by variables like number of sentences rather then numbers too much -it's very possible our data would show how important learning strategies mean since most people get used to reading certain kinds omissions without understanding basic concepts etc. And I don't think anyone will ever want to know who said something wrong until someone has read your book...I've never been able to find anything bad yet ... It should probably come down to all three features",
+        "continuation_text": "For example, there could be just because \"word\" did not appear on any books prior to 2007 than that which shows up again after 2008 —but even so, using keywords such Aspects cannot result in significant errors caused by variables like number of sentences rather then numbers too much -it's very possible our data would show how important learning strategies mean since most people get used to reading certain kinds omissions without understanding basic concepts etc. And I don't think anyone will ever want to know who said something wrong until someone has read your book...I've never been able to find anything bad yet ... It should probably come down to all three features",
+        "input_token_count": 186,
+        "raw_input_token_count": 186,
+        "output_token_count": 314,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 675,
+        "word_count": 114,
+        "unique_word_count": 110,
+        "unique_word_ratio": 0.9649122807017544,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "have",
+        "are",
+        "if",
+        "had",
+        "could",
+        "did",
+        "is",
+        "was",
+        "has",
+        "they"
+      ],
+      "output_text": "(a) or 2 (b), and b). In my opinion this isn't an ideal approach for describing information more precisely; let's try things differently now instead! The reason we write about content changes from words as described above might look less useful when trying to explain exactly what happens at once given context level with similar semantics but still requires some thinking before you start asking whether another variable really does exist somewhere else? For instance, suppose one thing works well both ways depending upon its type/type structure except first time readers notice their characters starting off poorly anyway --then everyone knows nothing anymore while writing them right away--and only later do",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, have, are, if, had, could, did, is, was, has, they\n\nTEXT:\nFor example, there could be just because \"word\" did not appear on any books prior to 2007 than that which shows up again after 2008 —but even so, using keywords such Aspects cannot result in significant errors caused by variables like number of sentences rather then numbers too much -it's very possible our data would show how important learning strategies mean since most people get used to reading certain kinds omissions without understanding basic concepts etc. And I don't think anyone will ever want to know who said something wrong until someone has read your book...I've never been able to find anything bad yet ... It should probably come down to all three features",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, have, are, if, had, could, did, is, was, has, they\n\nTEXT:\nFor example, there could be just because \"word\" did not appear on any books prior to 2007 than that which shows up again after 2008 —but even so, using keywords such Aspects cannot result in significant errors caused by variables like number of sentences rather then numbers too much -it's very possible our data would show how important learning strategies mean since most people get used to reading certain kinds omissions without understanding basic concepts etc. And I don't think anyone will ever want to know who said something wrong until someone has read your book...I've never been able to find anything bad yet ... It should probably come down to all three features (a) or 2 (b), and b). In my opinion this isn't an ideal approach for describing information more precisely; let's try things differently now instead! The reason we write about content changes from words as described above might look less useful when trying to explain exactly what happens at once given context level with similar semantics but still requires some thinking before you start asking whether another variable really does exist somewhere else? For instance, suppose one thing works well both ways depending upon its type/type structure except first time readers notice their characters starting off poorly anyway --then everyone knows nothing anymore while writing them right away--and only later do",
+        "continuation_text": "(a) or 2 (b), and b). In my opinion this isn't an ideal approach for describing information more precisely; let's try things differently now instead! The reason we write about content changes from words as described above might look less useful when trying to explain exactly what happens at once given context level with similar semantics but still requires some thinking before you start asking whether another variable really does exist somewhere else? For instance, suppose one thing works well both ways depending upon its type/type structure except first time readers notice their characters starting off poorly anyway --then everyone knows nothing anymore while writing them right away--and only later do",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 711,
+        "word_count": 111,
+        "unique_word_count": 111,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "are",
+        "have",
+        "had",
+        "is",
+        "they",
+        "If",
+        "does",
+        "did",
+        "when"
+      ],
+      "output_text": "that will make sense because others read too much into your sentence rather than giving any meaning whatsoever even though none other variables actually exists on either side of the codeline itself so long as no matter how far ahead there may be out there which way each point has been defined within certain contexts over such specific events etc. But then again I'm not saying all lines should always stick together just fine -that was part of our concept design goals like \"losing weight\" vs \"rewardsing,\" although many writers think doing something better would help avoid being penalized under different circumstances...it doesn´t seem likely why anyone cares enough regarding who can",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, have, had, is, they, If, does, did, when\n\nTEXT:\n(a) or 2 (b), and b). In my opinion this isn't an ideal approach for describing information more precisely; let's try things differently now instead! The reason we write about content changes from words as described above might look less useful when trying to explain exactly what happens at once given context level with similar semantics but still requires some thinking before you start asking whether another variable really does exist somewhere else? For instance, suppose one thing works well both ways depending upon its type/type structure except first time readers notice their characters starting off poorly anyway --then everyone knows nothing anymore while writing them right away--and only later do",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, have, had, is, they, If, does, did, when\n\nTEXT:\n(a) or 2 (b), and b). In my opinion this isn't an ideal approach for describing information more precisely; let's try things differently now instead! The reason we write about content changes from words as described above might look less useful when trying to explain exactly what happens at once given context level with similar semantics but still requires some thinking before you start asking whether another variable really does exist somewhere else? For instance, suppose one thing works well both ways depending upon its type/type structure except first time readers notice their characters starting off poorly anyway --then everyone knows nothing anymore while writing them right away--and only later do that will make sense because others read too much into your sentence rather than giving any meaning whatsoever even though none other variables actually exists on either side of the codeline itself so long as no matter how far ahead there may be out there which way each point has been defined within certain contexts over such specific events etc. But then again I'm not saying all lines should always stick together just fine -that was part of our concept design goals like \"losing weight\" vs \"rewardsing,\" although many writers think doing something better would help avoid being penalized under different circumstances...it doesn´t seem likely why anyone cares enough regarding who can",
+        "continuation_text": "that will make sense because others read too much into your sentence rather than giving any meaning whatsoever even though none other variables actually exists on either side of the codeline itself so long as no matter how far ahead there may be out there which way each point has been defined within certain contexts over such specific events etc. But then again I'm not saying all lines should always stick together just fine -that was part of our concept design goals like \"losing weight\" vs \"rewardsing,\" although many writers think doing something better would help avoid being penalized under different circumstances...it doesn´t seem likely why anyone cares enough regarding who can",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 334,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 689,
+        "word_count": 112,
+        "unique_word_count": 110,
+        "unique_word_ratio": 0.9821428571428571,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

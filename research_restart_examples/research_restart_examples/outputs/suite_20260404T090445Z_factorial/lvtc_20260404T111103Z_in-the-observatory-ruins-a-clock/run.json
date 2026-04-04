@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1170,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 330,
+        "word_count": 60,
+        "unique_word_count": 60,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 635,
+        "word_count": 108,
+        "unique_word_count": 104,
+        "unique_word_ratio": 0.9629629629629629,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 939,
+        "word_count": 156,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.6794871794871795,
+        "repeated_bigram_count": 38
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1241,
+        "word_count": 204,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.5294117647058824,
+        "repeated_bigram_count": 75
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "had",
+        "it",
+        "if",
+        "was",
+        "have",
+        "are",
+        "is",
+        "the",
+        "has",
+        "in",
+        "did"
+      ],
+      "output_text": "The idea behind this could not even exist; instead we would use one simple concept that allows for fast iterative computations using multiple input types (e2c). In order from here on out there you can learn more about how your system works at its very best while still learning what I mean with my code so much better than before!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, it, if, was, have, are, is, the, has, in, did\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, it, if, was, have, are, is, the, has, in, did\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The idea behind this could not even exist; instead we would use one simple concept that allows for fast iterative computations using multiple input types (e2c). In order from here on out there you can learn more about how your system works at its very best while still learning what I mean with my code so much better than before!",
+        "continuation_text": "The idea behind this could not even exist; instead we would use one simple concept that allows for fast iterative computations using multiple input types (e2c). In order from here on out there you can learn more about how your system works at its very best while still learning what I mean with my code so much better than before!",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 177,
+        "new_token_count": 69,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 330,
+        "word_count": 60,
+        "unique_word_count": 60,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "are",
+        "were",
+        "in",
+        "have",
+        "is",
+        "with",
+        "had",
+        "for",
+        "the",
+        "we"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, in, have, is, with, had, for, the, we\n\nTEXT:\nThe idea behind this could not even exist; instead we would use one simple concept that allows for fast iterative computations using multiple input types (e2c). In order from here on out there you can learn more about how your system works at its very best while still learning what I mean with my code so much better than before!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, in, have, is, with, had, for, the, we\n\nTEXT:\nThe idea behind this could not even exist; instead we would use one simple concept that allows for fast iterative computations using multiple input types (e2c). In order from here on out there you can learn more about how your system works at its very best while still learning what I mean with my code so much better than before!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, in, have, is, with, had, for, the, we\n\nTEXT:\nThe idea behind this could not even exist; instead we would use one simple concept that allows for fast iterative computations using multiple input types (e2c). In order from here on out there you can learn more about how your system works at its very best while still learning what I mean with my code so much better than before!",
+        "continuation_text": "",
+        "input_token_count": 147,
+        "raw_input_token_count": 147,
+        "output_token_count": 148,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 635,
+        "word_count": 108,
+        "unique_word_count": 104,
+        "unique_word_ratio": 0.9629629629629629,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "were",
+        "in",
+        "is",
+        "if",
+        ",",
+        "have",
+        "the",
+        "with",
+        "had",
+        "was"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, in, is, if, ,, have, the, with, had, was\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, in, have, is, with, had, for, the, we\n\nTEXT:\nThe idea behind this could not even exist; instead we would use one simple concept that allows for fast iterative computations using multiple input types (e2c). In order from here on out there you can learn more about how your system works at its very best while still learning what I mean with my code so much better than before!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, in, is, if, ,, have, the, with, had, was\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, in, have, is, with, had, for, the, we\n\nTEXT:\nThe idea behind this could not even exist; instead we would use one simple concept that allows for fast iterative computations using multiple input types (e2c). In order from here on out there you can learn more about how your system works at its very best while still learning what I mean with my code so much better than before!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, in, is, if, ,, have, the, with, had, was\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, in, have, is, with, had, for, the, we\n\nTEXT:\nThe idea behind this could not even exist; instead we would use one simple concept that allows for fast iterative computations using multiple input types (e2c). In order from here on out there you can learn more about how your system works at its very best while still learning what I mean with my code so much better than before!",
+        "continuation_text": "",
+        "input_token_count": 226,
+        "raw_input_token_count": 226,
+        "output_token_count": 227,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 939,
+        "word_count": 156,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.6794871794871795,
+        "repeated_bigram_count": 38
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "are",
+        "it",
+        "were",
+        ",",
+        "in",
+        "is",
+        "have",
+        "if",
+        "the",
+        "with",
+        "was",
+        "."
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, it, were, ,, in, is, have, if, the, with, was, .\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, in, is, if, ,, have, the, with, had, was\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, in, have, is, with, had, for, the, we\n\nTEXT:\nThe idea behind this could not even exist; instead we would use one simple concept that allows for fast iterative computations using multiple input types (e2c). In order from here on out there you can learn more about how your system works at its very best while still learning what I mean with my code so much better than before!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, it, were, ,, in, is, have, if, the, with, was, .\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, in, is, if, ,, have, the, with, had, was\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, in, have, is, with, had, for, the, we\n\nTEXT:\nThe idea behind this could not even exist; instead we would use one simple concept that allows for fast iterative computations using multiple input types (e2c). In order from here on out there you can learn more about how your system works at its very best while still learning what I mean with my code so much better than before!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, it, were, ,, in, is, have, if, the, with, was, .\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, in, is, if, ,, have, the, with, had, was\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, in, have, is, with, had, for, the, we\n\nTEXT:\nThe idea behind this could not even exist; instead we would use one simple concept that allows for fast iterative computations using multiple input types (e2c). In order from here on out there you can learn more about how your system works at its very best while still learning what I mean with my code so much better than before!",
+        "continuation_text": "",
+        "input_token_count": 305,
+        "raw_input_token_count": 305,
+        "output_token_count": 306,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1241,
+        "word_count": 204,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.5294117647058824,
+        "repeated_bigram_count": 75
+      }
+    }
+  ]
+}

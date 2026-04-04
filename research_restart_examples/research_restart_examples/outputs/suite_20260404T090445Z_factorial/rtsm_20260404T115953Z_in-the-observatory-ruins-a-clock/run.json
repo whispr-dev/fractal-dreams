@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1236
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 603,
+        "word_count": 105,
+        "unique_word_count": 94,
+        "unique_word_ratio": 0.8952380952380953,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1111,
+        "word_count": 188,
+        "unique_word_count": 157,
+        "unique_word_ratio": 0.8351063829787234,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1373,
+        "word_count": 235,
+        "unique_word_count": 191,
+        "unique_word_ratio": 0.8127659574468085,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1869,
+        "word_count": 310,
+        "unique_word_count": 243,
+        "unique_word_ratio": 0.7838709677419354,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2385,
+        "word_count": 391,
+        "unique_word_count": 300,
+        "unique_word_ratio": 0.7672634271099744,
+        "repeated_bigram_count": 4
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him,",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him,",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nA man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him,",
+        "continuation_text": "A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him,",
+        "input_token_count": 68,
+        "raw_input_token_count": 68,
+        "output_token_count": 164,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 603,
+        "word_count": 105,
+        "unique_word_count": 94,
+        "unique_word_ratio": 0.8952380952380953,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him,<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him, ...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him,<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him,\nassistant\n...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like",
+        "continuation_text": "...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like",
+        "input_token_count": 164,
+        "raw_input_token_count": 164,
+        "output_token_count": 260,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1111,
+        "word_count": 188,
+        "unique_word_count": 157,
+        "unique_word_ratio": 0.8351063829787234,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him, ...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "lightships. However, there has been no sign of any real ships making their way closer to land. As he reflects on this strange scene, he wonders whether he should continue observing or perhaps leave now for the sake of safety, despite the chill of the night air.",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him, ...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like lightships. However, there has been no sign of any real ships making their way closer to land. As he reflects on this strange scene, he wonders whether he should continue observing or perhaps leave now for the sake of safety, despite the chill of the night air.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him, ...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him, ...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like\nassistant\nlightships. However, there has been no sign of any real ships making their way closer to land. As he reflects on this strange scene, he wonders whether he should continue observing or perhaps leave now for the sake of safety, despite the chill of the night air.",
+        "continuation_text": "lightships. However, there has been no sign of any real ships making their way closer to land. As he reflects on this strange scene, he wonders whether he should continue observing or perhaps leave now for the sake of safety, despite the chill of the night air.",
+        "input_token_count": 260,
+        "raw_input_token_count": 260,
+        "output_token_count": 315,
+        "new_token_count": 55,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1373,
+        "word_count": 235,
+        "unique_word_count": 191,
+        "unique_word_ratio": 0.8127659574468085,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him, ...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like lightships. However, there has been no sign of any real ships making their way closer to land. As he reflects on this strange scene, he wonders whether he should continue observing or perhaps leave now for the sake of safety, despite the chill of the night air.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The raindrops start to settle down over the ruined temples, creating soft symphonies on the cobblestones beneath them. The atmosphere quiets slightly, almost calming the tempests of thoughts floating about. He pauses and closes his eyes, exhaling deeply to regain balance before continuing. His mind drifts back to earlier encounters—visions of ancient worlds where artifacts lay forgotten and spirits spoke to him from a deep within the landscape. Now, these echoes become tinged with curiosity",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him, ...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like lightships. However, there has been no sign of any real ships making their way closer to land. As he reflects on this strange scene, he wonders whether he should continue observing or perhaps leave now for the sake of safety, despite the chill of the night air. The raindrops start to settle down over the ruined temples, creating soft symphonies on the cobblestones beneath them. The atmosphere quiets slightly, almost calming the tempests of thoughts floating about. He pauses and closes his eyes, exhaling deeply to regain balance before continuing. His mind drifts back to earlier encounters—visions of ancient worlds where artifacts lay forgotten and spirits spoke to him from a deep within the landscape. Now, these echoes become tinged with curiosity",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him, ...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like lightships. However, there has been no sign of any real ships making their way closer to land. As he reflects on this strange scene, he wonders whether he should continue observing or perhaps leave now for the sake of safety, despite the chill of the night air.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him, ...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like lightships. However, there has been no sign of any real ships making their way closer to land. As he reflects on this strange scene, he wonders whether he should continue observing or perhaps leave now for the sake of safety, despite the chill of the night air.\nassistant\nThe raindrops start to settle down over the ruined temples, creating soft symphonies on the cobblestones beneath them. The atmosphere quiets slightly, almost calming the tempests of thoughts floating about. He pauses and closes his eyes, exhaling deeply to regain balance before continuing. His mind drifts back to earlier encounters—visions of ancient worlds where artifacts lay forgotten and spirits spoke to him from a deep within the landscape. Now, these echoes become tinged with curiosity",
+        "continuation_text": "The raindrops start to settle down over the ruined temples, creating soft symphonies on the cobblestones beneath them. The atmosphere quiets slightly, almost calming the tempests of thoughts floating about. He pauses and closes his eyes, exhaling deeply to regain balance before continuing. His mind drifts back to earlier encounters—visions of ancient worlds where artifacts lay forgotten and spirits spoke to him from a deep within the landscape. Now, these echoes become tinged with curiosity",
+        "input_token_count": 314,
+        "raw_input_token_count": 314,
+        "output_token_count": 410,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1869,
+        "word_count": 310,
+        "unique_word_count": 243,
+        "unique_word_ratio": 0.7838709677419354,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him, ...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like lightships. However, there has been no sign of any real ships making their way closer to land. As he reflects on this strange scene, he wonders whether he should continue observing or perhaps leave now for the sake of safety, despite the chill of the night air. The raindrops start to settle down over the ruined temples, creating soft symphonies on the cobblestones beneath them. The atmosphere quiets slightly, almost calming the tempests of thoughts floating about. He pauses and closes his eyes, exhaling deeply to regain balance before continuing. His mind drifts back to earlier encounters—visions of ancient worlds where artifacts lay forgotten and spirits spoke to him from a deep within the landscape. Now, these echoes become tinged with curiosity<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "... and fear—the essence of the time travelers who once explored this realm. His heart skips a beat when he hears footsteps behind him. Is anyone out there? The moon appears higher tonight, its silvery reflection illuminating the gloom further into the forest.\n\nWith renewed determination, he steps forward cautiously. In the distance, there are hints of faint lights glowing with unusual colors: purple tones suggest distant civilizations buried under layers of sandstone. The trees along the path shift and darken",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him, ...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like lightships. However, there has been no sign of any real ships making their way closer to land. As he reflects on this strange scene, he wonders whether he should continue observing or perhaps leave now for the sake of safety, despite the chill of the night air. The raindrops start to settle down over the ruined temples, creating soft symphonies on the cobblestones beneath them. The atmosphere quiets slightly, almost calming the tempests of thoughts floating about. He pauses and closes his eyes, exhaling deeply to regain balance before continuing. His mind drifts back to earlier encounters—visions of ancient worlds where artifacts lay forgotten and spirits spoke to him from a deep within the landscape. Now, these echoes become tinged with curiosity ... and fear—the essence of the time travelers who once explored this realm. His heart skips a beat when he hears footsteps behind him. Is anyone out there? The moon appears higher tonight, its silvery reflection illuminating the gloom further into the forest.\n\nWith renewed determination, he steps forward cautiously. In the distance, there are hints of faint lights glowing with unusual colors: purple tones suggest distant civilizations buried under layers of sandstone. The trees along the path shift and darken",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him, ...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like lightships. However, there has been no sign of any real ships making their way closer to land. As he reflects on this strange scene, he wonders whether he should continue observing or perhaps leave now for the sake of safety, despite the chill of the night air. The raindrops start to settle down over the ruined temples, creating soft symphonies on the cobblestones beneath them. The atmosphere quiets slightly, almost calming the tempests of thoughts floating about. He pauses and closes his eyes, exhaling deeply to regain balance before continuing. His mind drifts back to earlier encounters—visions of ancient worlds where artifacts lay forgotten and spirits spoke to him from a deep within the landscape. Now, these echoes become tinged with curiosity<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A man stands outside the temple of Ceres, his eyes fixed on a plaque inscribed with an unattainable goal or ultimate truth. His presence seems to draw the observer's focus away from what he might be observing but instead turns it toward something else entirely.\nThe sun begins its descent across the horizon, casting long shadows that seem larger than life. The ground below is pitch black, with only stars visible through the haze. A young woman is seen walking towards him, ...leaning against some wooden posts, her face obscured by the weight of her robes... And slowly, she reaches up to touch him - without moving. She looks at his face curiously before disappearing into the night, leaving only trails of mist swirling around her figure. \n\nHe watches as the landscape changes, becoming more serene with each passing moment. There are still signs of activity on the horizon; distant clouds are drifting overhead, occasionally seeming to float above some small mass of light like lightships. However, there has been no sign of any real ships making their way closer to land. As he reflects on this strange scene, he wonders whether he should continue observing or perhaps leave now for the sake of safety, despite the chill of the night air. The raindrops start to settle down over the ruined temples, creating soft symphonies on the cobblestones beneath them. The atmosphere quiets slightly, almost calming the tempests of thoughts floating about. He pauses and closes his eyes, exhaling deeply to regain balance before continuing. His mind drifts back to earlier encounters—visions of ancient worlds where artifacts lay forgotten and spirits spoke to him from a deep within the landscape. Now, these echoes become tinged with curiosity\nassistant\n... and fear—the essence of the time travelers who once explored this realm. His heart skips a beat when he hears footsteps behind him. Is anyone out there? The moon appears higher tonight, its silvery reflection illuminating the gloom further into the forest.\n\nWith renewed determination, he steps forward cautiously. In the distance, there are hints of faint lights glowing with unusual colors: purple tones suggest distant civilizations buried under layers of sandstone. The trees along the path shift and darken",
+        "continuation_text": "... and fear—the essence of the time travelers who once explored this realm. His heart skips a beat when he hears footsteps behind him. Is anyone out there? The moon appears higher tonight, its silvery reflection illuminating the gloom further into the forest.\n\nWith renewed determination, he steps forward cautiously. In the distance, there are hints of faint lights glowing with unusual colors: purple tones suggest distant civilizations buried under layers of sandstone. The trees along the path shift and darken",
+        "input_token_count": 410,
+        "raw_input_token_count": 410,
+        "output_token_count": 506,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2385,
+        "word_count": 391,
+        "unique_word_count": 300,
+        "unique_word_ratio": 0.7672634271099744,
+        "repeated_bigram_count": 4
+      }
+    }
+  ]
+}

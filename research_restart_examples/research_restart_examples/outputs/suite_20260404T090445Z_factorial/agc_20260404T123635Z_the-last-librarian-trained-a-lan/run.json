@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1285,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 333,
+        "word_count": 51,
+        "unique_word_count": 49,
+        "unique_word_ratio": 0.9607843137254902,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 336,
+        "word_count": 48,
+        "unique_word_count": 45,
+        "unique_word_ratio": 0.9375,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 498,
+        "word_count": 73,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9041095890410958,
+        "repeated_bigram_count": 1
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "若",
+        "):",
+        "if",
+        ")(",
+        "领导",
+        "*(",
+        "),",
+        "（",
+        "应",
+        ">(",
+        "elderly",
+        "*"
+      ],
+      "output_text": "If it was originally designed for survival purposes, such predictions may be seen as an attempt at foresight or prediction rather than a genuine scientific endeavor. Therefore, I cannot determine whether the language model has successfully achieved this goal or how well it forecasts future events based solely on footnoting history.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 若, ):, if, )(, 领导, *(, ),, （, 应, >(, elderly, *\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 若, ):, if, )(, 领导, *(, ),, （, 应, >(, elderly, *\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\nIf it was originally designed for survival purposes, such predictions may be seen as an attempt at foresight or prediction rather than a genuine scientific endeavor. Therefore, I cannot determine whether the language model has successfully achieved this goal or how well it forecasts future events based solely on footnoting history.",
+        "continuation_text": "If it was originally designed for survival purposes, such predictions may be seen as an attempt at foresight or prediction rather than a genuine scientific endeavor. Therefore, I cannot determine whether the language model has successfully achieved this goal or how well it forecasts future events based solely on footnoting history.",
+        "input_token_count": 113,
+        "raw_input_token_count": 113,
+        "output_token_count": 172,
+        "new_token_count": 59,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 333,
+        "word_count": 51,
+        "unique_word_count": 49,
+        "unique_word_ratio": 0.9607843137254902,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Moist",
+        "ゃ",
+        "اذ",
+        "key",
+        "rain",
+        "TRAIN",
+        "pt",
+        "설정",
+        "training",
+        "(ptr",
+        "ptr",
+        "Key"
+      ],
+      "output_text": "If it had been designed specifically for survival purposes, its predictions might have focused more on immediate outcomes and potential threats instead of long-term forecasting. While it could potentially be seen as a precursor to scientific endeavors, its true success in both forecasting and predictive capabilities remains uncertain.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Moist, ゃ, اذ, key, rain, TRAIN, pt, 설정, training, (ptr, ptr, Key\n\nTEXT:\nIf it was originally designed for survival purposes, such predictions may be seen as an attempt at foresight or prediction rather than a genuine scientific endeavor. Therefore, I cannot determine whether the language model has successfully achieved this goal or how well it forecasts future events based solely on footnoting history.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Moist, ゃ, اذ, key, rain, TRAIN, pt, 설정, training, (ptr, ptr, Key\n\nTEXT:\nIf it was originally designed for survival purposes, such predictions may be seen as an attempt at foresight or prediction rather than a genuine scientific endeavor. Therefore, I cannot determine whether the language model has successfully achieved this goal or how well it forecasts future events based solely on footnoting history.\nassistant\nIf it had been designed specifically for survival purposes, its predictions might have focused more on immediate outcomes and potential threats instead of long-term forecasting. While it could potentially be seen as a precursor to scientific endeavors, its true success in both forecasting and predictive capabilities remains uncertain.",
+        "continuation_text": "If it had been designed specifically for survival purposes, its predictions might have focused more on immediate outcomes and potential threats instead of long-term forecasting. While it could potentially be seen as a precursor to scientific endeavors, its true success in both forecasting and predictive capabilities remains uncertain.",
+        "input_token_count": 149,
+        "raw_input_token_count": 149,
+        "output_token_count": 203,
+        "new_token_count": 54,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 336,
+        "word_count": 48,
+        "unique_word_count": 45,
+        "unique_word_ratio": 0.9375,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "导致",
+        "complexity",
+        "Complexity",
+        "skills",
+        "khiến",
+        "covered",
+        "营收",
+        "技能",
+        "triggering",
+        "男士",
+        "碎片",
+        "营业收入"
+      ],
+      "output_text": "Let's transform this sentence into a deeper form using the given anchor tokens:\n\n1. **导致** (causation)\n2. **复杂性** (complexity)\n3. **Complexity** (Complexity)\n4. **技能** (skills)\n\nUsing these latent anchors, we can create a deeper transformation. The first step is:\n\n1. **导致了** (resulted from)\n   - This creates an intermediate level that sets the stage for further analysis or discussion about how the original statement influences or leads to other elements.\n\n2. **复杂的预测** (predictive complexities)",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 导致, complexity, Complexity, skills, khiến, covered, 营收, 技能, triggering, 男士, 碎片, 营业收入\n\nTEXT:\nIf it had been designed specifically for survival purposes, its predictions might have focused more on immediate outcomes and potential threats instead of long-term forecasting. While it could potentially be seen as a precursor to scientific endeavors, its true success in both forecasting and predictive capabilities remains uncertain.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 导致, complexity, Complexity, skills, khiến, covered, 营收, 技能, triggering, 男士, 碎片, 营业收入\n\nTEXT:\nIf it had been designed specifically for survival purposes, its predictions might have focused more on immediate outcomes and potential threats instead of long-term forecasting. While it could potentially be seen as a precursor to scientific endeavors, its true success in both forecasting and predictive capabilities remains uncertain.\nassistant\nLet's transform this sentence into a deeper form using the given anchor tokens:\n\n1. **导致** (causation)\n2. **复杂性** (complexity)\n3. **Complexity** (Complexity)\n4. **技能** (skills)\n\nUsing these latent anchors, we can create a deeper transformation. The first step is:\n\n1. **导致了** (resulted from)\n   - This creates an intermediate level that sets the stage for further analysis or discussion about how the original statement influences or leads to other elements.\n\n2. **复杂的预测** (predictive complexities)\n",
+        "continuation_text": "Let's transform this sentence into a deeper form using the given anchor tokens:\n\n1. **导致** (causation)\n2. **复杂性** (complexity)\n3. **Complexity** (Complexity)\n4. **技能** (skills)\n\nUsing these latent anchors, we can create a deeper transformation. The first step is:\n\n1. **导致了** (resulted from)\n   - This creates an intermediate level that sets the stage for further analysis or discussion about how the original statement influences or leads to other elements.\n\n2. **复杂的预测** (predictive complexities)",
+        "input_token_count": 156,
+        "raw_input_token_count": 156,
+        "output_token_count": 276,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 498,
+        "word_count": 73,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9041095890410958,
+        "repeated_bigram_count": 1
+      }
+    }
+  ]
+}

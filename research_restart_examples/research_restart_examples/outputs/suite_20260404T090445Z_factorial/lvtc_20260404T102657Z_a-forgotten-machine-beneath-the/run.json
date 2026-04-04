@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1110,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 577,
+        "word_count": 109,
+        "unique_word_count": 107,
+        "unique_word_ratio": 0.981651376146789,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 104,
+        "word_count": 16,
+        "unique_word_count": 16,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 662,
+        "word_count": 107,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9813084112149533,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 183,
+        "word_count": 26,
+        "unique_word_count": 26,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        ",",
+        "have",
+        "was",
+        "made",
+        "It",
+        "if",
+        "the",
+        "."
+      ],
+      "output_text": "The reader would ask for words like ″ ㅜ where you thought I‹ is coming from to get your name off my face so that there will never be one? But what's wrong with this story here? If someone thinks they're going to read me or something else, then why not write about them myself instead? Then how can we all say 'I'm sorry,' because nobody wants us (or does anybody want us) knowing who our authors am! No matter which way their readers choose to believe whatever lies at hand – those two must always follow each other when talking through another program such as Python™ but just",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The reader would ask for words like ″ ㅜ where you thought I‹ is coming from to get your name off my face so that there will never be one? But what's wrong with this story here? If someone thinks they're going to read me or something else, then why not write about them myself instead? Then how can we all say 'I'm sorry,' because nobody wants us (or does anybody want us) knowing who our authors am! No matter which way their readers choose to believe whatever lies at hand – those two must always follow each other when talking through another program such as Python™ but just",
+        "continuation_text": "The reader would ask for words like ″ ㅜ where you thought I‹ is coming from to get your name off my face so that there will never be one? But what's wrong with this story here? If someone thinks they're going to read me or something else, then why not write about them myself instead? Then how can we all say 'I'm sorry,' because nobody wants us (or does anybody want us) knowing who our authors am! No matter which way their readers choose to believe whatever lies at hand – those two must always follow each other when talking through another program such as Python™ but just",
+        "input_token_count": 110,
+        "raw_input_token_count": 110,
+        "output_token_count": 238,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 577,
+        "word_count": 109,
+        "unique_word_count": 107,
+        "unique_word_ratio": 0.981651376146789,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "were",
+        "if",
+        "have",
+        "they",
+        "is",
+        "we",
+        "had",
+        "you",
+        "did",
+        "If"
+      ],
+      "output_text": "don't do anything different than speaking out loud and saying \"Hey!\" before proceeding into more detail…",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, have, they, is, we, had, you, did, If\n\nTEXT:\nThe reader would ask for words like ″ ㅜ where you thought I‹ is coming from to get your name off my face so that there will never be one? But what's wrong with this story here? If someone thinks they're going to read me or something else, then why not write about them myself instead? Then how can we all say 'I'm sorry,' because nobody wants us (or does anybody want us) knowing who our authors am! No matter which way their readers choose to believe whatever lies at hand – those two must always follow each other when talking through another program such as Python™ but just",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, have, they, is, we, had, you, did, If\n\nTEXT:\nThe reader would ask for words like ″ ㅜ where you thought I‹ is coming from to get your name off my face so that there will never be one? But what's wrong with this story here? If someone thinks they're going to read me or something else, then why not write about them myself instead? Then how can we all say 'I'm sorry,' because nobody wants us (or does anybody want us) knowing who our authors am! No matter which way their readers choose to believe whatever lies at hand – those two must always follow each other when talking through another program such as Python™ but just don't do anything different than speaking out loud and saying \"Hey!\" before proceeding into more detail…",
+        "continuation_text": "don't do anything different than speaking out loud and saying \"Hey!\" before proceeding into more detail…",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 228,
+        "new_token_count": 21,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 104,
+        "word_count": 16,
+        "unique_word_count": 16,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "doing",
+        "don",
+        "did",
+        "didn",
+        "getting",
+        "are",
+        "If",
+        "do",
+        "It"
+      ],
+      "output_text": "And that is what you will get with this script! Now let's start building your own code for us to implement some simple programming concepts like our LATENT directions (i.e., just using one word or two). You can use an object representing each input line at any time under either clause syntax – which means we have access to all sorts about variables from anywhere within those expressions being parsed as part on lines 1–2 until after processing them themselves through multiple nodes called subexpressions(which represent only certain words) where possible so there won't need to be additional characters during execution; however, they may also show something",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, doing, don, did, didn, getting, are, If, do, It\n\nTEXT:\ndon't do anything different than speaking out loud and saying \"Hey!\" before proceeding into more detail…",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, doing, don, did, didn, getting, are, If, do, It\n\nTEXT:\ndon't do anything different than speaking out loud and saying \"Hey!\" before proceeding into more detail… And that is what you will get with this script! Now let's start building your own code for us to implement some simple programming concepts like our LATENT directions (i.e., just using one word or two). You can use an object representing each input line at any time under either clause syntax – which means we have access to all sorts about variables from anywhere within those expressions being parsed as part on lines 1–2 until after processing them themselves through multiple nodes called subexpressions(which represent only certain words) where possible so there won't need to be additional characters during execution; however, they may also show something",
+        "continuation_text": "And that is what you will get with this script! Now let's start building your own code for us to implement some simple programming concepts like our LATENT directions (i.e., just using one word or two). You can use an object representing each input line at any time under either clause syntax – which means we have access to all sorts about variables from anywhere within those expressions being parsed as part on lines 1–2 until after processing them themselves through multiple nodes called subexpressions(which represent only certain words) where possible so there won't need to be additional characters during execution; however, they may also show something",
+        "input_token_count": 99,
+        "raw_input_token_count": 99,
+        "output_token_count": 227,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 662,
+        "word_count": 107,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9813084112149533,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "they",
+        "is",
+        "in",
+        "had",
+        "with",
+        "the",
+        "to"
+      ],
+      "output_text": "interesting even though not necessarily required because once every sentence has been interpreted directly into place and now more precisely executed across branches than ever before…",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, they, is, in, had, with, the, to\n\nTEXT:\nAnd that is what you will get with this script! Now let's start building your own code for us to implement some simple programming concepts like our LATENT directions (i.e., just using one word or two). You can use an object representing each input line at any time under either clause syntax – which means we have access to all sorts about variables from anywhere within those expressions being parsed as part on lines 1–2 until after processing them themselves through multiple nodes called subexpressions(which represent only certain words) where possible so there won't need to be additional characters during execution; however, they may also show something",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, they, is, in, had, with, the, to\n\nTEXT:\nAnd that is what you will get with this script! Now let's start building your own code for us to implement some simple programming concepts like our LATENT directions (i.e., just using one word or two). You can use an object representing each input line at any time under either clause syntax – which means we have access to all sorts about variables from anywhere within those expressions being parsed as part on lines 1–2 until after processing them themselves through multiple nodes called subexpressions(which represent only certain words) where possible so there won't need to be additional characters during execution; however, they may also show something interesting even though not necessarily required because once every sentence has been interpreted directly into place and now more precisely executed across branches than ever before…",
+        "continuation_text": "interesting even though not necessarily required because once every sentence has been interpreted directly into place and now more precisely executed across branches than ever before…",
+        "input_token_count": 204,
+        "raw_input_token_count": 204,
+        "output_token_count": 232,
+        "new_token_count": 28,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 183,
+        "word_count": 26,
+        "unique_word_count": 26,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

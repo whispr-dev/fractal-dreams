@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1338,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 556,
+        "word_count": 100,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.99,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 485,
+        "word_count": 87,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.9885057471264368,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 276,
+        "word_count": 37,
+        "unique_word_count": 37,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 587,
+        "word_count": 85,
+        "unique_word_count": 81,
+        "unique_word_ratio": 0.9529411764705882,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        "was",
+        "have",
+        "the",
+        "is",
+        "The",
+        "has",
+        "did",
+        "that"
+      ],
+      "output_text": "It looked for clues about what would happen when they left their native tongue to get \"that.\" What if one didn't find those hints? Why do we call them words after all? (Note that no Librarian will ever say this at any given time.) We think there is something here called an expression system which allows you simply read multiple sentences or two right away while holding down your hand until each word changes so much throughout the sentence sequence; once again, let us remember how far past our own characters might appear as long ago as 6th century AD.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, was, have, the, is, The, has, did, that\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, was, have, the, is, The, has, did, that\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. It looked for clues about what would happen when they left their native tongue to get \"that.\" What if one didn't find those hints? Why do we call them words after all? (Note that no Librarian will ever say this at any given time.) We think there is something here called an expression system which allows you simply read multiple sentences or two right away while holding down your hand until each word changes so much throughout the sentence sequence; once again, let us remember how far past our own characters might appear as long ago as 6th century AD.",
+        "continuation_text": "It looked for clues about what would happen when they left their native tongue to get \"that.\" What if one didn't find those hints? Why do we call them words after all? (Note that no Librarian will ever say this at any given time.) We think there is something here called an expression system which allows you simply read multiple sentences or two right away while holding down your hand until each word changes so much throughout the sentence sequence; once again, let us remember how far past our own characters might appear as long ago as 6th century AD.",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 215,
+        "new_token_count": 113,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 556,
+        "word_count": 100,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.99,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "if",
+        "are",
+        "have",
+        "they",
+        "had",
+        "is",
+        "we",
+        "did",
+        "the",
+        "when"
+      ],
+      "output_text": "And yet even now, still! I believe someone must know who actually knew where my letters came from - and why not try some other approach... So he said on Twitter back then :<— The author has been working with me over several years since i first discovered him ! It's like saying another paragraph doesn‏t matter because she knows better than her eyes ;) For example, just before last night�s episode I thought ive noticed every single thing except three more lines!! Just look up *ahem*",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, are, have, they, had, is, we, did, the, when\n\nTEXT:\nIt looked for clues about what would happen when they left their native tongue to get \"that.\" What if one didn't find those hints? Why do we call them words after all? (Note that no Librarian will ever say this at any given time.) We think there is something here called an expression system which allows you simply read multiple sentences or two right away while holding down your hand until each word changes so much throughout the sentence sequence; once again, let us remember how far past our own characters might appear as long ago as 6th century AD.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, are, have, they, had, is, we, did, the, when\n\nTEXT:\nIt looked for clues about what would happen when they left their native tongue to get \"that.\" What if one didn't find those hints? Why do we call them words after all? (Note that no Librarian will ever say this at any given time.) We think there is something here called an expression system which allows you simply read multiple sentences or two right away while holding down your hand until each word changes so much throughout the sentence sequence; once again, let us remember how far past our own characters might appear as long ago as 6th century AD. And yet even now, still! I believe someone must know who actually knew where my letters came from - and why not try some other approach... So he said on Twitter back then :<— The author has been working with me over several years since i first discovered him ! It's like saying another paragraph doesn‏t matter because she knows better than her eyes ;) For example, just before last night�s episode I thought ive noticed every single thing except three more lines!! Just look up *ahem*",
+        "continuation_text": "And yet even now, still! I believe someone must know who actually knew where my letters came from - and why not try some other approach... So he said on Twitter back then :<— The author has been working with me over several years since i first discovered him ! It's like saying another paragraph doesn‏t matter because she knows better than her eyes ;) For example, just before last night�s episode I thought ive noticed every single thing except three more lines!! Just look up *ahem*",
+        "input_token_count": 191,
+        "raw_input_token_count": 191,
+        "output_token_count": 297,
+        "new_token_count": 106,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 485,
+        "word_count": 87,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.9885057471264368,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "had",
+        "have",
+        "are",
+        "if",
+        "was",
+        "is",
+        "has",
+        "did",
+        "It",
+        "If"
+      ],
+      "output_text": "here at this link http://www/mygramming_overlaysblog/?cid=57481140&ref=\"yes\" target=\"\" } This blog post contains many important words such as \"notification\", \"conjecture\", etc., but they all start out very differently due to their different syntax (e.\"it\") And there you go :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, had, have, are, if, was, is, has, did, It, If\n\nTEXT:\nAnd yet even now, still! I believe someone must know who actually knew where my letters came from - and why not try some other approach... So he said on Twitter back then :<— The author has been working with me over several years since i first discovered him ! It's like saying another paragraph doesn‏t matter because she knows better than her eyes ;) For example, just before last night�s episode I thought ive noticed every single thing except three more lines!! Just look up *ahem*",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, had, have, are, if, was, is, has, did, It, If\n\nTEXT:\nAnd yet even now, still! I believe someone must know who actually knew where my letters came from - and why not try some other approach... So he said on Twitter back then :<— The author has been working with me over several years since i first discovered him ! It's like saying another paragraph doesn‏t matter because she knows better than her eyes ;) For example, just before last night�s episode I thought ive noticed every single thing except three more lines!! Just look up *ahem* here at this link http://www/mygramming_overlaysblog/?cid=57481140&ref=\"yes\" target=\"\" } This blog post contains many important words such as \"notification\", \"conjecture\", etc., but they all start out very differently due to their different syntax (e.\"it\") And there you go :)",
+        "continuation_text": "here at this link http://www/mygramming_overlaysblog/?cid=57481140&ref=\"yes\" target=\"\" } This blog post contains many important words such as \"notification\", \"conjecture\", etc., but they all start out very differently due to their different syntax (e.\"it\") And there you go :)",
+        "input_token_count": 184,
+        "raw_input_token_count": 184,
+        "output_token_count": 259,
+        "new_token_count": 75,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 276,
+        "word_count": 37,
+        "unique_word_count": 37,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "It",
+        "it",
+        "were",
+        "are",
+        "There",
+        "If",
+        "if",
+        "this",
+        "there",
+        "they",
+        "had",
+        "This"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: It, it, were, are, There, If, if, this, there, they, had, This\n\nTEXT:\nhere at this link http://www/mygramming_overlaysblog/?cid=57481140&ref=\"yes\" target=\"\" } This blog post contains many important words such as \"notification\", \"conjecture\", etc., but they all start out very differently due to their different syntax (e.\"it\") And there you go :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: It, it, were, are, There, If, if, this, there, they, had, This\n\nTEXT:\nhere at this link http://www/mygramming_overlaysblog/?cid=57481140&ref=\"yes\" target=\"\" } This blog post contains many important words such as \"notification\", \"conjecture\", etc., but they all start out very differently due to their different syntax (e.\"it\") And there you go :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: It, it, were, are, There, If, if, this, there, they, had, This\n\nTEXT:\nhere at this link http://www/mygramming_overlaysblog/?cid=57481140&ref=\"yes\" target=\"\" } This blog post contains many important words such as \"notification\", \"conjecture\", etc., but they all start out very differently due to their different syntax (e.\"it\") And there you go :)",
+        "continuation_text": "",
+        "input_token_count": 153,
+        "raw_input_token_count": 153,
+        "output_token_count": 154,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 587,
+        "word_count": 85,
+        "unique_word_count": 81,
+        "unique_word_ratio": 0.9529411764705882,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

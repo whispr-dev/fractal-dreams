@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1262,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 465,
+        "word_count": 70,
+        "unique_word_count": 59,
+        "unique_word_ratio": 0.8428571428571429,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 676,
+        "word_count": 101,
+        "unique_word_count": 68,
+        "unique_word_ratio": 0.6732673267326733,
+        "repeated_bigram_count": 18
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 337,
+        "word_count": 51,
+        "unique_word_count": 47,
+        "unique_word_ratio": 0.9215686274509803,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 842,
+        "word_count": 108,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.8796296296296297,
+        "repeated_bigram_count": 2
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "if",
+        "was",
+        "its",
+        "the",
+        "are",
+        "that",
+        "a",
+        "It",
+        "intelligence",
+        "If"
+      ],
+      "output_text": "Here is the next recursive transformation based on the given latent directions:\n\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nIf the trained language model had been to uncover similar footnoting patterns in ancient manuscripts or archives,\nthen there would have been an opportunity for it to predict outcomes from historical events that might otherwise remain obscure or unknowable.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\nHere is the next recursive transformation based on the given latent directions:\n\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nIf the trained language model had been to uncover similar footnoting patterns in ancient manuscripts or archives,\nthen there would have been an opportunity for it to predict outcomes from historical events that might otherwise remain obscure or unknowable.",
+        "continuation_text": "Here is the next recursive transformation based on the given latent directions:\n\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nIf the trained language model had been to uncover similar footnoting patterns in ancient manuscripts or archives,\nthen there would have been an opportunity for it to predict outcomes from historical events that might otherwise remain obscure or unknowable.",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 184,
+        "new_token_count": 80,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 465,
+        "word_count": 70,
+        "unique_word_count": 59,
+        "unique_word_ratio": 0.8428571428571429,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "the",
+        "was",
+        "are",
+        "there",
+        "that",
+        "If",
+        "is",
+        "had",
+        "It"
+      ],
+      "output_text": "The following is the next recursive transformation based on the given latent directions:\n\nHere is the next recursive transformation based on the given latent directions:\n\n- The word \"Library\" transforms into a verb phrase - **is** (past tense) - indicating possession over \"the Library.\"\n  \n- The phrase \"a language model\" evolves into another noun phrase - **language models**, which combines two distinct words here (language and models).\n\n- **Language Model** further evolves into a single noun phrase - **language models**, emphasizing their collective nature with \"models.\"\n\n- \"Training\" becomes \"trained\" as a process or method associated with making something better (\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, was, are, there, that, If, is, had, It\n\nTEXT:\nHere is the next recursive transformation based on the given latent directions:\n\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nIf the trained language model had been to uncover similar footnoting patterns in ancient manuscripts or archives,\nthen there would have been an opportunity for it to predict outcomes from historical events that might otherwise remain obscure or unknowable.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, was, are, there, that, If, is, had, It\n\nTEXT:\nHere is the next recursive transformation based on the given latent directions:\n\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nIf the trained language model had been to uncover similar footnoting patterns in ancient manuscripts or archives,\nthen there would have been an opportunity for it to predict outcomes from historical events that might otherwise remain obscure or unknowable.\nassistant\nThe following is the next recursive transformation based on the given latent directions:\n\nHere is the next recursive transformation based on the given latent directions:\n\n- The word \"Library\" transforms into a verb phrase - **is** (past tense) - indicating possession over \"the Library.\"\n  \n- The phrase \"a language model\" evolves into another noun phrase - **language models**, which combines two distinct words here (language and models).\n\n- **Language Model** further evolves into a single noun phrase - **language models**, emphasizing their collective nature with \"models.\"\n\n- \"Training\" becomes \"trained\" as a process or method associated with making something better (\"",
+        "continuation_text": "The following is the next recursive transformation based on the given latent directions:\n\nHere is the next recursive transformation based on the given latent directions:\n\n- The word \"Library\" transforms into a verb phrase - **is** (past tense) - indicating possession over \"the Library.\"\n  \n- The phrase \"a language model\" evolves into another noun phrase - **language models**, which combines two distinct words here (language and models).\n\n- **Language Model** further evolves into a single noun phrase - **language models**, emphasizing their collective nature with \"models.\"\n\n- \"Training\" becomes \"trained\" as a process or method associated with making something better (\"",
+        "input_token_count": 161,
+        "raw_input_token_count": 161,
+        "output_token_count": 289,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 676,
+        "word_count": 101,
+        "unique_word_count": 68,
+        "unique_word_ratio": 0.6732673267326733,
+        "repeated_bigram_count": 18
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "\"",
+        "the",
+        "is",
+        "-",
+        "were",
+        "**",
+        "are",
+        "was",
+        "If",
+        "for"
+      ],
+      "output_text": "It turns out that training involves more than just the act of putting information to work; there's also an element of adaptation and learning. This concept encapsulates how we understand and utilize data in machine learning tasks, where knowledge from previous runs influences subsequent analyses and improvements within the same system.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, \", the, is, -, were, **, are, was, If, for\n\nTEXT:\nThe following is the next recursive transformation based on the given latent directions:\n\nHere is the next recursive transformation based on the given latent directions:\n\n- The word \"Library\" transforms into a verb phrase - **is** (past tense) - indicating possession over \"the Library.\"\n  \n- The phrase \"a language model\" evolves into another noun phrase - **language models**, which combines two distinct words here (language and models).\n\n- **Language Model** further evolves into a single noun phrase - **language models**, emphasizing their collective nature with \"models.\"\n\n- \"Training\" becomes \"trained\" as a process or method associated with making something better (\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, \", the, is, -, were, **, are, was, If, for\n\nTEXT:\nThe following is the next recursive transformation based on the given latent directions:\n\nHere is the next recursive transformation based on the given latent directions:\n\n- The word \"Library\" transforms into a verb phrase - **is** (past tense) - indicating possession over \"the Library.\"\n  \n- The phrase \"a language model\" evolves into another noun phrase - **language models**, which combines two distinct words here (language and models).\n\n- **Language Model** further evolves into a single noun phrase - **language models**, emphasizing their collective nature with \"models.\"\n\n- \"Training\" becomes \"trained\" as a process or method associated with making something better (\"\nassistant\nIt turns out that training involves more than just the act of putting information to work; there's also an element of adaptation and learning. This concept encapsulates how we understand and utilize data in machine learning tasks, where knowledge from previous runs influences subsequent analyses and improvements within the same system.",
+        "continuation_text": "It turns out that training involves more than just the act of putting information to work; there's also an element of adaptation and learning. This concept encapsulates how we understand and utilize data in machine learning tasks, where knowledge from previous runs influences subsequent analyses and improvements within the same system.",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 266,
+        "new_token_count": 58,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 337,
+        "word_count": 51,
+        "unique_word_count": 47,
+        "unique_word_ratio": 0.9215686274509803,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "and",
+        "the",
+        "of",
+        "to",
+        "in",
+        "that",
+        "for",
+        "were",
+        "is",
+        "was"
+      ],
+      "output_text": "The natural language processing task proceeds through several stages involving various components such as understanding, preprocessing, feature extraction, modeling, evaluation, and deployment. Each stage has its own specific characteristics and challenges related to adaptability, data handling, model selection, performance analysis, optimization, and integration with other systems or datasets.\nIn summary, the process can be broken down into steps each addressing different aspects of the natural language processing workflow, emphasizing the importance of both input preparation and model tuning across diverse use cases.\nUnderstanding this multifaceted nature enhances our ability to design effective algorithms tailored to handle real-world scenarios efficiently, ensuring accuracy and effectiveness in applications ranging from speech",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, and, the, of, to, in, that, for, were, is, was\n\nTEXT:\nIt turns out that training involves more than just the act of putting information to work; there's also an element of adaptation and learning. This concept encapsulates how we understand and utilize data in machine learning tasks, where knowledge from previous runs influences subsequent analyses and improvements within the same system.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, and, the, of, to, in, that, for, were, is, was\n\nTEXT:\nIt turns out that training involves more than just the act of putting information to work; there's also an element of adaptation and learning. This concept encapsulates how we understand and utilize data in machine learning tasks, where knowledge from previous runs influences subsequent analyses and improvements within the same system.\nassistant\nThe natural language processing task proceeds through several stages involving various components such as understanding, preprocessing, feature extraction, modeling, evaluation, and deployment. Each stage has its own specific characteristics and challenges related to adaptability, data handling, model selection, performance analysis, optimization, and integration with other systems or datasets.\nIn summary, the process can be broken down into steps each addressing different aspects of the natural language processing workflow, emphasizing the importance of both input preparation and model tuning across diverse use cases.\nUnderstanding this multifaceted nature enhances our ability to design effective algorithms tailored to handle real-world scenarios efficiently, ensuring accuracy and effectiveness in applications ranging from speech",
+        "continuation_text": "The natural language processing task proceeds through several stages involving various components such as understanding, preprocessing, feature extraction, modeling, evaluation, and deployment. Each stage has its own specific characteristics and challenges related to adaptability, data handling, model selection, performance analysis, optimization, and integration with other systems or datasets.\nIn summary, the process can be broken down into steps each addressing different aspects of the natural language processing workflow, emphasizing the importance of both input preparation and model tuning across diverse use cases.\nUnderstanding this multifaceted nature enhances our ability to design effective algorithms tailored to handle real-world scenarios efficiently, ensuring accuracy and effectiveness in applications ranging from speech",
+        "input_token_count": 139,
+        "raw_input_token_count": 139,
+        "output_token_count": 267,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 842,
+        "word_count": 108,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.8796296296296297,
+        "repeated_bigram_count": 2
+      }
+    }
+  ]
+}

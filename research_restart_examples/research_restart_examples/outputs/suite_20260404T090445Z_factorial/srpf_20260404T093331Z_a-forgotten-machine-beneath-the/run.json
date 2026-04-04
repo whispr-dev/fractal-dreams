@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1039,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 258,
+        "word_count": 39,
+        "unique_word_count": 38,
+        "unique_word_ratio": 0.9743589743589743,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 10,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 255,
+        "word_count": 40,
+        "unique_word_count": 37,
+        "unique_word_ratio": 0.925,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1060,
+        "word_count": 163,
+        "unique_word_count": 63,
+        "unique_word_ratio": 0.38650306748466257,
+        "repeated_bigram_count": 86
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "The first one showed us their progress from being outmaneuvered by others to becoming powerful enough for life on earth or planet Earth at any given time as we evolved over thousands of years—like millions of generations ago! It is an important lesson learned so far with regard toward intelligent design because it gives people insight into what they might be thinking before making them realize how difficult these constraints become when your technology goes back down further than you would ever consider possible while using other technologies instead!!! (NOTE: A good example will come later.) In order not only could this help understanding human behavior through social networks but also prevent \"winding\" if needed without causing some serious problems like loneliness/spikes!! How much better can another person make our own sense?",
+      "output_text": "This article has been updated now that I've added comments; there's no doubt my original post may have caused additional confusion about whether such suggestions need to actually work around those limitations due to many different situations facing humans...",
+      "source_window_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+      "reflection_window_text": "The first one showed us their progress from being outmaneuvered by others to becoming powerful enough for life on earth or planet Earth at any given time as we evolved over thousands of years—like millions of generations ago! It is an important lesson learned so far with regard toward intelligent design because it gives people insight into what they might be thinking before making them realize how difficult these constraints become when your technology goes back down further than you would ever consider possible while using other technologies instead!!! (NOTE: A good example will come later.) In order not only could this help understanding human behavior through social networks but also prevent \"winding\" if needed without causing some serious problems like loneliness/spikes!! How much better can another person make our own sense?",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The first one showed us their progress from being outmaneuvered by others to becoming powerful enough for life on earth or planet Earth at any given time as we evolved over thousands of years—like millions of generations ago! It is an important lesson learned so far with regard toward intelligent design because it gives people insight into what they might be thinking before making them realize how difficult these constraints become when your technology goes back down further than you would ever consider possible while using other technologies instead!!! (NOTE: A good example will come later.) In order not only could this help understanding human behavior through social networks but also prevent \"winding\" if needed without causing some serious problems like loneliness/spikes!! How much better can another person make our own sense?",
+        "continuation_text": "The first one showed us their progress from being outmaneuvered by others to becoming powerful enough for life on earth or planet Earth at any given time as we evolved over thousands of years—like millions of generations ago! It is an important lesson learned so far with regard toward intelligent design because it gives people insight into what they might be thinking before making them realize how difficult these constraints become when your technology goes back down further than you would ever consider possible while using other technologies instead!!! (NOTE: A good example will come later.) In order not only could this help understanding human behavior through social networks but also prevent \"winding\" if needed without causing some serious problems like loneliness/spikes!! How much better can another person make our own sense?",
+        "input_token_count": 100,
+        "raw_input_token_count": 100,
+        "output_token_count": 251,
+        "new_token_count": 151,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\n\nREFLECTION:\nThe first one showed us their progress from being outmaneuvered by others to becoming powerful enough for life on earth or planet Earth at any given time as we evolved over thousands of years—like millions of generations ago! It is an important lesson learned so far with regard toward intelligent design because it gives people insight into what they might be thinking before making them realize how difficult these constraints become when your technology goes back down further than you would ever consider possible while using other technologies instead!!! (NOTE: A good example will come later.) In order not only could this help understanding human behavior through social networks but also prevent \"winding\" if needed without causing some serious problems like loneliness/spikes!! How much better can another person make our own sense?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\n\nREFLECTION:\nThe first one showed us their progress from being outmaneuvered by others to becoming powerful enough for life on earth or planet Earth at any given time as we evolved over thousands of years—like millions of generations ago! It is an important lesson learned so far with regard toward intelligent design because it gives people insight into what they might be thinking before making them realize how difficult these constraints become when your technology goes back down further than you would ever consider possible while using other technologies instead!!! (NOTE: A good example will come later.) In order not only could this help understanding human behavior through social networks but also prevent \"winding\" if needed without causing some serious problems like loneliness/spikes!! How much better can another person make our own sense? This article has been updated now that I've added comments; there's no doubt my original post may have caused additional confusion about whether such suggestions need to actually work around those limitations due to many different situations facing humans...",
+        "continuation_text": "This article has been updated now that I've added comments; there's no doubt my original post may have caused additional confusion about whether such suggestions need to actually work around those limitations due to many different situations facing humans...",
+        "input_token_count": 238,
+        "raw_input_token_count": 238,
+        "output_token_count": 282,
+        "new_token_count": 44,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 258,
+        "word_count": 39,
+        "unique_word_count": 38,
+        "unique_word_ratio": 0.9743589743589743,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThis article has been updated now that I've added comments; there's no doubt my original post may have caused additional confusion about whether such suggestions need to actually work around those limitations due to many different situations facing humans...",
+      "output_text": "REFERENCES",
+      "source_window_text": "This article has been updated now that I've added comments; there's no doubt my original post may have caused additional confusion about whether such suggestions need to actually work around those limitations due to many different situations facing humans...",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThis article has been updated now that I've added comments; there's no doubt my original post may have caused additional confusion about whether such suggestions need to actually work around those limitations due to many different situations facing humans...",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThis article has been updated now that I've added comments; there's no doubt my original post may have caused additional confusion about whether such suggestions need to actually work around those limitations due to many different situations facing humans...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThis article has been updated now that I've added comments; there's no doubt my original post may have caused additional confusion about whether such suggestions need to actually work around those limitations due to many different situations facing humans...",
+        "continuation_text": "",
+        "input_token_count": 112,
+        "raw_input_token_count": 112,
+        "output_token_count": 113,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThis article has been updated now that I've added comments; there's no doubt my original post may have caused additional confusion about whether such suggestions need to actually work around those limitations due to many different situations facing humans...\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThis article has been updated now that I've added comments; there's no doubt my original post may have caused additional confusion about whether such suggestions need to actually work around those limitations due to many different situations facing humans...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThis article has been updated now that I've added comments; there's no doubt my original post may have caused additional confusion about whether such suggestions need to actually work around those limitations due to many different situations facing humans...\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThis article has been updated now that I've added comments; there's no doubt my original post may have caused additional confusion about whether such suggestions need to actually work around those limitations due to many different situations facing humans...\nREFERENCES",
+        "continuation_text": "REFERENCES",
+        "input_token_count": 212,
+        "raw_input_token_count": 212,
+        "output_token_count": 218,
+        "new_token_count": 6,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 10,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "[ edit ]",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nREFERENCES\n\nREFLECTION:\n[ edit ]",
+      "source_window_text": "REFERENCES",
+      "reflection_window_text": "[ edit ]",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nREFERENCES",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nREFERENCES [ edit ]",
+        "continuation_text": "[ edit ]",
+        "input_token_count": 73,
+        "raw_input_token_count": 73,
+        "output_token_count": 77,
+        "new_token_count": 4,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nREFERENCES\n\nREFLECTION:\n[ edit ]",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nREFERENCES\n\nREFLECTION:\n[ edit ]",
+        "continuation_text": "",
+        "input_token_count": 64,
+        "raw_input_token_count": 64,
+        "output_token_count": 65,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 255,
+        "word_count": 40,
+        "unique_word_count": 37,
+        "unique_word_ratio": 0.925,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nREFERENCES\n\nREFLECTION:\n[ edit ]",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nREFERENCES\n\nREFLECTION:\n[ edit ]\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nREFERENCES\n\nREFLECTION:\n[ edit ]",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nREFERENCES\n\nREFLECTION:\n[ edit ]",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nREFERENCES\n\nREFLECTION:\n[ edit ]",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nREFERENCES\n\nREFLECTION:\n[ edit ]",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nREFERENCES\n\nREFLECTION:\n[ edit ]",
+        "continuation_text": "",
+        "input_token_count": 133,
+        "raw_input_token_count": 133,
+        "output_token_count": 134,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nREFERENCES\n\nREFLECTION:\n[ edit ]\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nREFERENCES\n\nREFLECTION:\n[ edit ]",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nREFERENCES\n\nREFLECTION:\n[ edit ]\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nREFERENCES\n\nREFLECTION:\n[ edit ]",
+        "continuation_text": "",
+        "input_token_count": 254,
+        "raw_input_token_count": 254,
+        "output_token_count": 255,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1060,
+        "word_count": 163,
+        "unique_word_count": 63,
+        "unique_word_ratio": 0.38650306748466257,
+        "repeated_bigram_count": 86
+      }
+    }
+  ]
+}

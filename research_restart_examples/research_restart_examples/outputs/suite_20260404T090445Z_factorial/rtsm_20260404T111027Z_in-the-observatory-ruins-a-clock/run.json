@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1168
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 363,
+        "word_count": 69,
+        "unique_word_count": 68,
+        "unique_word_ratio": 0.9855072463768116,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 880,
+        "word_count": 160,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.5375,
+        "repeated_bigram_count": 68
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1389,
+        "word_count": 249,
+        "unique_word_count": 171,
+        "unique_word_ratio": 0.6867469879518072,
+        "repeated_bigram_count": 69
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1549,
+        "word_count": 271,
+        "unique_word_count": 191,
+        "unique_word_ratio": 0.7047970479704797,
+        "repeated_bigram_count": 69
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 1785,
+        "word_count": 308,
+        "unique_word_count": 227,
+        "unique_word_ratio": 0.737012987012987,
+        "repeated_bigram_count": 69
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+      "delta_text": "The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out!",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out!",
+        "continuation_text": "The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out!",
+        "input_token_count": 63,
+        "raw_input_token_count": 63,
+        "output_token_count": 112,
+        "new_token_count": 49,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 363,
+        "word_count": 69,
+        "unique_word_count": 68,
+        "unique_word_ratio": 0.9855072463768116,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out!",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out!",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out!",
+        "continuation_text": "",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 112,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 880,
+        "word_count": 160,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.5375,
+        "repeated_bigram_count": 68
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out!",
+      "delta_text": "You should be able do what you want all to know about why or when one person did something wrong but they have no idea how exactly others were doing their tasks? What role does being an engineer play for them/her during development over time (or even who might think back then) without knowing any details prior to getting involved? This kind may sound confusing considering there seems now too much work done online which has changed since day two's study completed because none would really allow people to",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You should be able do what you want all to know about why or when one person did something wrong but they have no idea how exactly others were doing their tasks? What role does being an engineer play for them/her during development over time (or even who might think back then) without knowing any details prior to getting involved? This kind may sound confusing considering there seems now too much work done online which has changed since day two's study completed because none would really allow people to",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You should be able do what you want all to know about why or when one person did something wrong but they have no idea how exactly others were doing their tasks? What role does being an engineer play for them/her during development over time (or even who might think back then) without knowing any details prior to getting involved? This kind may sound confusing considering there seems now too much work done online which has changed since day two's study completed because none would really allow people to",
+        "continuation_text": "You should be able do what you want all to know about why or when one person did something wrong but they have no idea how exactly others were doing their tasks? What role does being an engineer play for them/her during development over time (or even who might think back then) without knowing any details prior to getting involved? This kind may sound confusing considering there seems now too much work done online which has changed since day two's study completed because none would really allow people to",
+        "input_token_count": 222,
+        "raw_input_token_count": 222,
+        "output_token_count": 318,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1389,
+        "word_count": 249,
+        "unique_word_count": 171,
+        "unique_word_ratio": 0.6867469879518072,
+        "repeated_bigram_count": 69
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You should be able do what you want all to know about why or when one person did something wrong but they have no idea how exactly others were doing their tasks? What role does being an engineer play for them/her during development over time (or even who might think back then) without knowing any details prior to getting involved? This kind may sound confusing considering there seems now too much work done online which has changed since day two's study completed because none would really allow people to",
+      "delta_text": "fully understand code completely due to such limitations rather than understanding every aspect of coding independently while looking into each other better...",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You should be able do what you want all to know about why or when one person did something wrong but they have no idea how exactly others were doing their tasks? What role does being an engineer play for them/her during development over time (or even who might think back then) without knowing any details prior to getting involved? This kind may sound confusing considering there seems now too much work done online which has changed since day two's study completed because none would really allow people to fully understand code completely due to such limitations rather than understanding every aspect of coding independently while looking into each other better...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You should be able do what you want all to know about why or when one person did something wrong but they have no idea how exactly others were doing their tasks? What role does being an engineer play for them/her during development over time (or even who might think back then) without knowing any details prior to getting involved? This kind may sound confusing considering there seems now too much work done online which has changed since day two's study completed because none would really allow people to",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You should be able do what you want all to know about why or when one person did something wrong but they have no idea how exactly others were doing their tasks? What role does being an engineer play for them/her during development over time (or even who might think back then) without knowing any details prior to getting involved? This kind may sound confusing considering there seems now too much work done online which has changed since day two's study completed because none would really allow people to fully understand code completely due to such limitations rather than understanding every aspect of coding independently while looking into each other better...",
+        "continuation_text": "fully understand code completely due to such limitations rather than understanding every aspect of coding independently while looking into each other better...",
+        "input_token_count": 318,
+        "raw_input_token_count": 318,
+        "output_token_count": 342,
+        "new_token_count": 24,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1549,
+        "word_count": 271,
+        "unique_word_count": 191,
+        "unique_word_ratio": 0.7047970479704797,
+        "repeated_bigram_count": 69
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You should be able do what you want all to know about why or when one person did something wrong but they have no idea how exactly others were doing their tasks? What role does being an engineer play for them/her during development over time (or even who might think back then) without knowing any details prior to getting involved? This kind may sound confusing considering there seems now too much work done online which has changed since day two's study completed because none would really allow people to fully understand code completely due to such limitations rather than understanding every aspect of coding independently while looking into each other better...",
+      "delta_text": "I don't believe anyone at Intel could ever build another processor though despite many attempts made lately just using some new tools used within various operating systems nowadays - most probably Microsoft One X instead thanks Google+",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You should be able do what you want all to know about why or when one person did something wrong but they have no idea how exactly others were doing their tasks? What role does being an engineer play for them/her during development over time (or even who might think back then) without knowing any details prior to getting involved? This kind may sound confusing considering there seems now too much work done online which has changed since day two's study completed because none would really allow people to fully understand code completely due to such limitations rather than understanding every aspect of coding independently while looking into each other better... I don't believe anyone at Intel could ever build another processor though despite many attempts made lately just using some new tools used within various operating systems nowadays - most probably Microsoft One X instead thanks Google+",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You should be able do what you want all to know about why or when one person did something wrong but they have no idea how exactly others were doing their tasks? What role does being an engineer play for them/her during development over time (or even who might think back then) without knowing any details prior to getting involved? This kind may sound confusing considering there seems now too much work done online which has changed since day two's study completed because none would really allow people to fully understand code completely due to such limitations rather than understanding every aspect of coding independently while looking into each other better...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first thing I came up with is that this will help me make use of my memory more easily by rereading it several times before taking part in further experiments like our last test so we can read everything else down from here on out! You should be able do what you want all to know about why or when one person did something wrong but they have no idea how exactly others were doing their tasks? What role does being an engineer play for them/her during development over time (or even who might think back then) without knowing any details prior to getting involved? This kind may sound confusing considering there seems now too much work done online which has changed since day two's study completed because none would really allow people to fully understand code completely due to such limitations rather than understanding every aspect of coding independently while looking into each other better...I don't believe anyone at Intel could ever build another processor though despite many attempts made lately just using some new tools used within various operating systems nowadays - most probably Microsoft One X instead thanks Google+",
+        "continuation_text": "I don't believe anyone at Intel could ever build another processor though despite many attempts made lately just using some new tools used within various operating systems nowadays - most probably Microsoft One X instead thanks Google+",
+        "input_token_count": 341,
+        "raw_input_token_count": 341,
+        "output_token_count": 381,
+        "new_token_count": 40,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1785,
+        "word_count": 308,
+        "unique_word_count": 227,
+        "unique_word_ratio": 0.737012987012987,
+        "repeated_bigram_count": 69
+      }
+    }
+  ]
+}

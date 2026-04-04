@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1194,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 264,
+        "word_count": 47,
+        "unique_word_count": 47,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 230,
+        "word_count": 40,
+        "unique_word_count": 39,
+        "unique_word_ratio": 0.975,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 117,
+        "word_count": 19,
+        "unique_word_count": 19,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 177,
+        "word_count": 34,
+        "unique_word_count": 33,
+        "unique_word_ratio": 0.9705882352941176,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "had",
+        "it",
+        "if",
+        "was",
+        "have",
+        "are",
+        "is",
+        "the",
+        "has",
+        "in",
+        "did"
+      ],
+      "output_text": "As you may recall, though, there's no sign that we've done anything wrong or our words will actually end up being written at all! That doesn't mean any new lines can start leaking out into space (though some might do), so they're probably not going anywhere yet...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, it, if, was, have, are, is, the, has, in, did\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, it, if, was, have, are, is, the, has, in, did\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As you may recall, though, there's no sign that we've done anything wrong or our words will actually end up being written at all! That doesn't mean any new lines can start leaking out into space (though some might do), so they're probably not going anywhere yet...",
+        "continuation_text": "As you may recall, though, there's no sign that we've done anything wrong or our words will actually end up being written at all! That doesn't mean any new lines can start leaking out into space (though some might do), so they're probably not going anywhere yet...",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 166,
+        "new_token_count": 58,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 264,
+        "word_count": 47,
+        "unique_word_count": 47,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "were",
+        "have",
+        "if",
+        "is",
+        "they",
+        "we",
+        "could",
+        "had",
+        "did",
+        "has"
+      ],
+      "output_text": "but I guess this seems to make sense given how much time now people want to keep pushing forward with their ideas and concepts while still doing what really matters; let's just leave them open for another chance—maybe even better?",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, have, if, is, they, we, could, had, did, has\n\nTEXT:\nAs you may recall, though, there's no sign that we've done anything wrong or our words will actually end up being written at all! That doesn't mean any new lines can start leaking out into space (though some might do), so they're probably not going anywhere yet...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, have, if, is, they, we, could, had, did, has\n\nTEXT:\nAs you may recall, though, there's no sign that we've done anything wrong or our words will actually end up being written at all! That doesn't mean any new lines can start leaking out into space (though some might do), so they're probably not going anywhere yet... but I guess this seems to make sense given how much time now people want to keep pushing forward with their ideas and concepts while still doing what really matters; let's just leave them open for another chance—maybe even better?",
+        "continuation_text": "but I guess this seems to make sense given how much time now people want to keep pushing forward with their ideas and concepts while still doing what really matters; let's just leave them open for another chance—maybe even better?",
+        "input_token_count": 136,
+        "raw_input_token_count": 136,
+        "output_token_count": 182,
+        "new_token_count": 46,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 230,
+        "word_count": 40,
+        "unique_word_count": 39,
+        "unique_word_ratio": 0.975,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "have",
+        "are",
+        "were",
+        "make",
+        "had",
+        "they",
+        "is",
+        "with",
+        "to",
+        "getting"
+      ],
+      "output_text": "And not because that would mean having new techniques or strategies available so quickly before you start your rerun!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, have, are, were, make, had, they, is, with, to, getting\n\nTEXT:\nbut I guess this seems to make sense given how much time now people want to keep pushing forward with their ideas and concepts while still doing what really matters; let's just leave them open for another chance—maybe even better?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, have, are, were, make, had, they, is, with, to, getting\n\nTEXT:\nbut I guess this seems to make sense given how much time now people want to keep pushing forward with their ideas and concepts while still doing what really matters; let's just leave them open for another chance—maybe even better? And not because that would mean having new techniques or strategies available so quickly before you start your rerun!",
+        "continuation_text": "And not because that would mean having new techniques or strategies available so quickly before you start your rerun!",
+        "input_token_count": 124,
+        "raw_input_token_count": 124,
+        "output_token_count": 146,
+        "new_token_count": 22,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 117,
+        "word_count": 19,
+        "unique_word_count": 19,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "have",
+        "are",
+        "you",
+        "that",
+        "had",
+        "they",
+        "would",
+        "not",
+        "because"
+      ],
+      "output_text": "That was all we needed to do as part (a) learning how to use this vector and what else could happen later on during our retraining process… We need both vectors for each step...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, have, are, you, that, had, they, would, not, because\n\nTEXT:\nAnd not because that would mean having new techniques or strategies available so quickly before you start your rerun!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, have, are, you, that, had, they, would, not, because\n\nTEXT:\nAnd not because that would mean having new techniques or strategies available so quickly before you start your rerun! That was all we needed to do as part (a) learning how to use this vector and what else could happen later on during our retraining process… We need both vectors for each step...",
+        "continuation_text": "That was all we needed to do as part (a) learning how to use this vector and what else could happen later on during our retraining process… We need both vectors for each step...",
+        "input_token_count": 100,
+        "raw_input_token_count": 100,
+        "output_token_count": 141,
+        "new_token_count": 41,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 177,
+        "word_count": 34,
+        "unique_word_count": 33,
+        "unique_word_ratio": 0.9705882352941176,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1149,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 335,
+        "word_count": 59,
+        "unique_word_count": 59,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 549,
+        "word_count": 102,
+        "unique_word_count": 102,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 654,
+        "word_count": 106,
+        "unique_word_count": 106,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "got",
+        "Have",
+        "Are",
+        "have",
+        "Do",
+        "did",
+        "took",
+        "are",
+        "gave",
+        ",'\"",
+        "We",
+        "He"
+      ],
+      "output_text": "A few seconds later they stopped reading it; an hour after this time there is still no sign that any more will occur on Wednesday with little apparent effect or significance except for possibly keeping you awake until 8 am at night . The final message from their last room's window reads something like \"Have your child come upstairs!\"",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: got, Have, Are, have, Do, did, took, are, gave, ,'\", We, He\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: got, Have, Are, have, Do, did, took, are, gave, ,'\", We, He\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A few seconds later they stopped reading it; an hour after this time there is still no sign that any more will occur on Wednesday with little apparent effect or significance except for possibly keeping you awake until 8 am at night . The final message from their last room's window reads something like \"Have your child come upstairs!\"",
+        "continuation_text": "A few seconds later they stopped reading it; an hour after this time there is still no sign that any more will occur on Wednesday with little apparent effect or significance except for possibly keeping you awake until 8 am at night . The final message from their last room's window reads something like \"Have your child come upstairs!\"",
+        "input_token_count": 115,
+        "raw_input_token_count": 115,
+        "output_token_count": 179,
+        "new_token_count": 64,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 335,
+        "word_count": 59,
+        "unique_word_count": 59,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "\".",
+        "UNCLASSIFIED",
+        "\"—",
+        "\">",
+        "\",",
+        "!!\"",
+        "\",\"",
+        "UNDER",
+        "!?\"",
+        "Stephen",
+        "!\"",
+        "\";"
+      ],
+      "output_text": "You have read all those pages but now cannot see them and so just ignore him! (If he comes out late - don't worry about me.) If anyone knows where his name was written I'll call up my children--it won' t be easy...I can get some other kids who may want to try one day.\" All right then..how do we know how much memory did these people leave behind? This problem persists even if someone has been missing since June 1999 , when Mr Parson went back outside onto Bishops Road using personal computer keys available through internet sockets under 'NTP '.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: \"., UNCLASSIFIED, \"—, \">, \",, !!\", \",\", UNDER, !?\", Stephen, !\", \";\n\nTEXT:\nA few seconds later they stopped reading it; an hour after this time there is still no sign that any more will occur on Wednesday with little apparent effect or significance except for possibly keeping you awake until 8 am at night . The final message from their last room's window reads something like \"Have your child come upstairs!\"",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: \"., UNCLASSIFIED, \"—, \">, \",, !!\", \",\", UNDER, !?\", Stephen, !\", \";\n\nTEXT:\nA few seconds later they stopped reading it; an hour after this time there is still no sign that any more will occur on Wednesday with little apparent effect or significance except for possibly keeping you awake until 8 am at night . The final message from their last room's window reads something like \"Have your child come upstairs!\" You have read all those pages but now cannot see them and so just ignore him! (If he comes out late - don't worry about me.) If anyone knows where his name was written I'll call up my children--it won' t be easy...I can get some other kids who may want to try one day.\" All right then..how do we know how much memory did these people leave behind? This problem persists even if someone has been missing since June 1999 , when Mr Parson went back outside onto Bishops Road using personal computer keys available through internet sockets under 'NTP '.",
+        "continuation_text": "You have read all those pages but now cannot see them and so just ignore him! (If he comes out late - don't worry about me.) If anyone knows where his name was written I'll call up my children--it won' t be easy...I can get some other kids who may want to try one day.\" All right then..how do we know how much memory did these people leave behind? This problem persists even if someone has been missing since June 1999 , when Mr Parson went back outside onto Bishops Road using personal computer keys available through internet sockets under 'NTP '.",
+        "input_token_count": 151,
+        "raw_input_token_count": 151,
+        "output_token_count": 271,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 549,
+        "word_count": 102,
+        "unique_word_count": 102,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "mayoral",
+        "arrested",
+        "Police",
+        "Downtown",
+        "whom",
+        "Deputy",
+        "deputies",
+        "Bringing",
+        "マ",
+        "bordering",
+        "downtown",
+        "Samar"
+      ],
+      "output_text": "Why would you ever bother with such an advanced code analysis method that is also called CERN's secret knowledge base ? These kinds OFs exist at no cost either for privacy reasons or security considerations because they run on nothing more than your imagination . You write this program off like it were something invented by somebody without any real intention whatsoever ! Here lies THE thing which makes our system impossible : \"The following instructions will require every user running NTFS 3+.1 installed...\"(for use once again). So what does there really need?\" We must first verify their existence before proceeding further into detail here .\"Yes",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mayoral, arrested, Police, Downtown, whom, Deputy, deputies, Bringing, マ, bordering, downtown, Samar\n\nTEXT:\nYou have read all those pages but now cannot see them and so just ignore him! (If he comes out late - don't worry about me.) If anyone knows where his name was written I'll call up my children--it won' t be easy...I can get some other kids who may want to try one day.\" All right then..how do we know how much memory did these people leave behind? This problem persists even if someone has been missing since June 1999 , when Mr Parson went back outside onto Bishops Road using personal computer keys available through internet sockets under 'NTP '.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mayoral, arrested, Police, Downtown, whom, Deputy, deputies, Bringing, マ, bordering, downtown, Samar\n\nTEXT:\nYou have read all those pages but now cannot see them and so just ignore him! (If he comes out late - don't worry about me.) If anyone knows where his name was written I'll call up my children--it won' t be easy...I can get some other kids who may want to try one day.\" All right then..how do we know how much memory did these people leave behind? This problem persists even if someone has been missing since June 1999 , when Mr Parson went back outside onto Bishops Road using personal computer keys available through internet sockets under 'NTP '. Why would you ever bother with such an advanced code analysis method that is also called CERN's secret knowledge base ? These kinds OFs exist at no cost either for privacy reasons or security considerations because they run on nothing more than your imagination . You write this program off like it were something invented by somebody without any real intention whatsoever ! Here lies THE thing which makes our system impossible : \"The following instructions will require every user running NTFS 3+.1 installed...\"(for use once again). So what does there really need?\" We must first verify their existence before proceeding further into detail here .\"Yes",
+        "continuation_text": "Why would you ever bother with such an advanced code analysis method that is also called CERN's secret knowledge base ? These kinds OFs exist at no cost either for privacy reasons or security considerations because they run on nothing more than your imagination . You write this program off like it were something invented by somebody without any real intention whatsoever ! Here lies THE thing which makes our system impossible : \"The following instructions will require every user running NTFS 3+.1 installed...\"(for use once again). So what does there really need?\" We must first verify their existence before proceeding further into detail here .\"Yes",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 326,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 654,
+        "word_count": 106,
+        "unique_word_count": 106,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

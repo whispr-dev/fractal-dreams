@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1213,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 232,
+        "word_count": 34,
+        "unique_word_count": 29,
+        "unique_word_ratio": 0.8529411764705882,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 616,
+        "word_count": 92,
+        "unique_word_count": 82,
+        "unique_word_ratio": 0.8913043478260869,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 365,
+        "word_count": 42,
+        "unique_word_count": 42,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "cor",
+        "At",
+        "oklyn",
+        "静静地",
+        "cu",
+        "_di",
+        "Ferry",
+        "gu",
+        "nu",
+        "ner",
+        "Ur",
+        "가"
+      ],
+      "output_text": "The next recursive transformation is:\n\nObservation | Map | Redraws | Warning |\n\nTranslation:\nIn the ruins of the observatory, a timekeeper's calendar faithfully retraced the heavens like yesterday has passed without anyone noticing.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: cor, At, oklyn, 静静地, cu, _di, Ferry, gu, nu, ner, Ur, 가\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: cor, At, oklyn, 静静地, cu, _di, Ferry, gu, nu, ner, Ur, 가\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nThe next recursive transformation is:\n\nObservation | Map | Redraws | Warning |\n\nTranslation:\nIn the ruins of the observatory, a timekeeper's calendar faithfully retraced the heavens like yesterday has passed without anyone noticing.",
+        "continuation_text": "The next recursive transformation is:\n\nObservation | Map | Redraws | Warning |\n\nTranslation:\nIn the ruins of the observatory, a timekeeper's calendar faithfully retraced the heavens like yesterday has passed without anyone noticing.",
+        "input_token_count": 122,
+        "raw_input_token_count": 122,
+        "output_token_count": 168,
+        "new_token_count": 46,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 232,
+        "word_count": 34,
+        "unique_word_count": 29,
+        "unique_word_ratio": 0.8529411764705882,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "\"][\"",
+        "}/",
+        "}(",
+        "。(",
+        "].",
+        ")<",
+        ".Al",
+        "](",
+        ".The",
+        "}[",
+        "。",
+        ">."
+      ],
+      "output_text": "Given the latent anchor tokens and their context, I will now attempt to write out the next recursive transformation step-by-step using these guidelines. However, due to constraints such as length limits for Latent Anchors or specific requirements, generating a complete translation that adheres strictly to those constraints might be challenging with just the provided information.\n\nHere’s what we know based on the given text:\n\n- The observation (``Observation`) describes an image or scene.\n- `Map` can refer to several aspects of this scene (e.g., architecture, instruments).\n- `Redrews` indicate any updates made",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: \"][\", }/, }(, 。(, ]., )<, .Al, ](, .The, }[, 。, >.\n\nTEXT:\nThe next recursive transformation is:\n\nObservation | Map | Redraws | Warning |\n\nTranslation:\nIn the ruins of the observatory, a timekeeper's calendar faithfully retraced the heavens like yesterday has passed without anyone noticing.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: \"][\", }/, }(, 。(, ]., )<, .Al, ](, .The, }[, 。, >.\n\nTEXT:\nThe next recursive transformation is:\n\nObservation | Map | Redraws | Warning |\n\nTranslation:\nIn the ruins of the observatory, a timekeeper's calendar faithfully retraced the heavens like yesterday has passed without anyone noticing.\nassistant\nGiven the latent anchor tokens and their context, I will now attempt to write out the next recursive transformation step-by-step using these guidelines. However, due to constraints such as length limits for Latent Anchors or specific requirements, generating a complete translation that adheres strictly to those constraints might be challenging with just the provided information.\n\nHere’s what we know based on the given text:\n\n- The observation (``Observation`) describes an image or scene.\n- `Map` can refer to several aspects of this scene (e.g., architecture, instruments).\n- `Redrews` indicate any updates made",
+        "continuation_text": "Given the latent anchor tokens and their context, I will now attempt to write out the next recursive transformation step-by-step using these guidelines. However, due to constraints such as length limits for Latent Anchors or specific requirements, generating a complete translation that adheres strictly to those constraints might be challenging with just the provided information.\n\nHere’s what we know based on the given text:\n\n- The observation (``Observation`) describes an image or scene.\n- `Map` can refer to several aspects of this scene (e.g., architecture, instruments).\n- `Redrews` indicate any updates made",
+        "input_token_count": 139,
+        "raw_input_token_count": 139,
+        "output_token_count": 259,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 616,
+        "word_count": 92,
+        "unique_word_count": 82,
+        "unique_word_ratio": 0.8913043478260869,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "SE",
+        "se",
+        "Se",
+        "させて",
+        "再也没有",
+        "no",
+        "framework",
+        "using",
+        "她们",
+        "参加会议",
+        "MD",
+        "への"
+      ],
+      "output_text": "Latent Anchor Tokens Provided: \nSE, se, Se, タイムマシーンを, フレームの、她们が参加する会議に含まれています。框架を使用します。\n\nNext Recursive Transformation Steps:\n1. タイムマシーンを再見つけることができます。\n2. オブジェクトリストを重ねることができます。\n3. 配列内での更新を作成できます。\n4. 自分自身でその場所に戻ることができます。\n\nThese steps follow a natural progression from general observations to specific actions within an environment described by the given latent anchor",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: SE, se, Se, させて, 再也没有, no, framework, using, 她们, 参加会议, MD, への\n\nTEXT:\nGiven the latent anchor tokens and their context, I will now attempt to write out the next recursive transformation step-by-step using these guidelines. However, due to constraints such as length limits for Latent Anchors or specific requirements, generating a complete translation that adheres strictly to those constraints might be challenging with just the provided information.\n\nHere’s what we know based on the given text:\n\n- The observation (``Observation`) describes an image or scene.\n- `Map` can refer to several aspects of this scene (e.g., architecture, instruments).\n- `Redrews` indicate any updates made<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: SE, se, Se, させて, 再也没有, no, framework, using, 她们, 参加会议, MD, への\n\nTEXT:\nGiven the latent anchor tokens and their context, I will now attempt to write out the next recursive transformation step-by-step using these guidelines. However, due to constraints such as length limits for Latent Anchors or specific requirements, generating a complete translation that adheres strictly to those constraints might be challenging with just the provided information.\n\nHere’s what we know based on the given text:\n\n- The observation (``Observation`) describes an image or scene.\n- `Map` can refer to several aspects of this scene (e.g., architecture, instruments).\n- `Redrews` indicate any updates made\nassistant\nLatent Anchor Tokens Provided: \nSE, se, Se, タイムマシーンを, フレームの、她们が参加する会議に含まれています。框架を使用します。\n\nNext Recursive Transformation Steps:\n1. タイムマシーンを再見つけることができます。\n2. オブジェクトリストを重ねることができます。\n3. 配列内での更新を作成できます。\n4. 自分自身でその場所に戻ることができます。\n\nThese steps follow a natural progression from general observations to specific actions within an environment described by the given latent anchor",
+        "continuation_text": "Latent Anchor Tokens Provided: \nSE, se, Se, タイムマシーンを, フレームの、她们が参加する会議に含まれています。框架を使用します。\n\nNext Recursive Transformation Steps:\n1. タイムマシーンを再見つけることができます。\n2. オブジェクトリストを重ねることができます。\n3. 配列内での更新を作成できます。\n4. 自分自身でその場所に戻ることができます。\n\nThese steps follow a natural progression from general observations to specific actions within an environment described by the given latent anchor",
+        "input_token_count": 218,
+        "raw_input_token_count": 218,
+        "output_token_count": 338,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 365,
+        "word_count": 42,
+        "unique_word_count": 42,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

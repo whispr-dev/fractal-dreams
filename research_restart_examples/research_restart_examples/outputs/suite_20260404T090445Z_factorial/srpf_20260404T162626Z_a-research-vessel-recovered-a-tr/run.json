@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1591,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 93,
+        "word_count": 13,
+        "unique_word_count": 13,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 398,
+        "word_count": 67,
+        "unique_word_count": 67,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 352,
+        "word_count": 63,
+        "unique_word_count": 62,
+        "unique_word_ratio": 0.9841269841269841,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 8,
+        "word_count": 4,
+        "unique_word_count": 4,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "As it became clear, both theoretical development and practical implementation of code were still largely unknown to them until recently. For example -- while there was no evidence for any link between data flow patterns and their physical conditions prior to use of such tools (including communication circuits) -- most researchers today continue pursuing this goal by studying how communications have evolved over time due to technological advances using information on radio waves or radiation exposure . Using these principles we learn important properties of early technology design , which can help us evaluate why people want to communicate electronically with each other through electronic means like voice commands.",
+      "output_text": "Because when those technologies become obsolete they provide better ways forward than before!",
+      "source_window_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+      "reflection_window_text": "As it became clear, both theoretical development and practical implementation of code were still largely unknown to them until recently. For example -- while there was no evidence for any link between data flow patterns and their physical conditions prior to use of such tools (including communication circuits) -- most researchers today continue pursuing this goal by studying how communications have evolved over time due to technological advances using information on radio waves or radiation exposure . Using these principles we learn important properties of early technology design , which can help us evaluate why people want to communicate electronically with each other through electronic means like voice commands.",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. As it became clear, both theoretical development and practical implementation of code were still largely unknown to them until recently. For example -- while there was no evidence for any link between data flow patterns and their physical conditions prior to use of such tools (including communication circuits) -- most researchers today continue pursuing this goal by studying how communications have evolved over time due to technological advances using information on radio waves or radiation exposure . Using these principles we learn important properties of early technology design , which can help us evaluate why people want to communicate electronically with each other through electronic means like voice commands.",
+        "continuation_text": "As it became clear, both theoretical development and practical implementation of code were still largely unknown to them until recently. For example -- while there was no evidence for any link between data flow patterns and their physical conditions prior to use of such tools (including communication circuits) -- most researchers today continue pursuing this goal by studying how communications have evolved over time due to technological advances using information on radio waves or radiation exposure . Using these principles we learn important properties of early technology design , which can help us evaluate why people want to communicate electronically with each other through electronic means like voice commands.",
+        "input_token_count": 92,
+        "raw_input_token_count": 92,
+        "output_token_count": 207,
+        "new_token_count": 115,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nAs it became clear, both theoretical development and practical implementation of code were still largely unknown to them until recently. For example -- while there was no evidence for any link between data flow patterns and their physical conditions prior to use of such tools (including communication circuits) -- most researchers today continue pursuing this goal by studying how communications have evolved over time due to technological advances using information on radio waves or radiation exposure . Using these principles we learn important properties of early technology design , which can help us evaluate why people want to communicate electronically with each other through electronic means like voice commands.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nAs it became clear, both theoretical development and practical implementation of code were still largely unknown to them until recently. For example -- while there was no evidence for any link between data flow patterns and their physical conditions prior to use of such tools (including communication circuits) -- most researchers today continue pursuing this goal by studying how communications have evolved over time due to technological advances using information on radio waves or radiation exposure . Using these principles we learn important properties of early technology design , which can help us evaluate why people want to communicate electronically with each other through electronic means like voice commands. Because when those technologies become obsolete they provide better ways forward than before!",
+        "continuation_text": "Because when those technologies become obsolete they provide better ways forward than before!",
+        "input_token_count": 194,
+        "raw_input_token_count": 194,
+        "output_token_count": 209,
+        "new_token_count": 15,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 93,
+        "word_count": 13,
+        "unique_word_count": 13,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nBecause when those technologies become obsolete they provide better ways forward than before!",
+      "output_text": "The answer is yes with your hands; you will see what happens if we change our state or modify how much each other does while trying something different at once (or else by reusing one another), but then again don't really give up on anything entirely unrelated to being able get through this process completely faster because writing code means making improvements even later for yourself instead!!",
+      "source_window_text": "Because when those technologies become obsolete they provide better ways forward than before!",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nBecause when those technologies become obsolete they provide better ways forward than before!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nBecause when those technologies become obsolete they provide better ways forward than before!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nBecause when those technologies become obsolete they provide better ways forward than before!",
+        "continuation_text": "",
+        "input_token_count": 83,
+        "raw_input_token_count": 83,
+        "output_token_count": 84,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nBecause when those technologies become obsolete they provide better ways forward than before!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nBecause when those technologies become obsolete they provide better ways forward than before!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nBecause when those technologies become obsolete they provide better ways forward than before!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nBecause when those technologies become obsolete they provide better ways forward than before! The answer is yes with your hands; you will see what happens if we change our state or modify how much each other does while trying something different at once (or else by reusing one another), but then again don't really give up on anything entirely unrelated to being able get through this process completely faster because writing code means making improvements even later for yourself instead!!",
+        "continuation_text": "The answer is yes with your hands; you will see what happens if we change our state or modify how much each other does while trying something different at once (or else by reusing one another), but then again don't really give up on anything entirely unrelated to being able get through this process completely faster because writing code means making improvements even later for yourself instead!!",
+        "input_token_count": 154,
+        "raw_input_token_count": 154,
+        "output_token_count": 228,
+        "new_token_count": 74,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 398,
+        "word_count": 67,
+        "unique_word_count": 67,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "So, let's look at some of the new results from here as well!",
+      "output_text": "All that remains left is just an initial example where I created my implementation using simple refactoring logic and implementing additional data structures which can be used when dealing about problems like memory leaks etc. But there has been no attempt yet to do so now - all these numbers only seem to grow fast :) So... maybe try having fun :/ ;)",
+      "source_window_text": "The answer is yes with your hands; you will see what happens if we change our state or modify how much each other does while trying something different at once (or else by reusing one another), but then again don't really give up on anything entirely unrelated to being able get through this process completely faster because writing code means making improvements even later for yourself instead!!",
+      "reflection_window_text": "So, let's look at some of the new results from here as well!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe answer is yes with your hands; you will see what happens if we change our state or modify how much each other does while trying something different at once (or else by reusing one another), but then again don't really give up on anything entirely unrelated to being able get through this process completely faster because writing code means making improvements even later for yourself instead!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe answer is yes with your hands; you will see what happens if we change our state or modify how much each other does while trying something different at once (or else by reusing one another), but then again don't really give up on anything entirely unrelated to being able get through this process completely faster because writing code means making improvements even later for yourself instead!! So, let's look at some of the new results from here as well!",
+        "continuation_text": "So, let's look at some of the new results from here as well!",
+        "input_token_count": 142,
+        "raw_input_token_count": 142,
+        "output_token_count": 159,
+        "new_token_count": 17,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe answer is yes with your hands; you will see what happens if we change our state or modify how much each other does while trying something different at once (or else by reusing one another), but then again don't really give up on anything entirely unrelated to being able get through this process completely faster because writing code means making improvements even later for yourself instead!!\n\nREFLECTION:\nSo, let's look at some of the new results from here as well!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe answer is yes with your hands; you will see what happens if we change our state or modify how much each other does while trying something different at once (or else by reusing one another), but then again don't really give up on anything entirely unrelated to being able get through this process completely faster because writing code means making improvements even later for yourself instead!!\n\nREFLECTION:\nSo, let's look at some of the new results from here as well! All that remains left is just an initial example where I created my implementation using simple refactoring logic and implementing additional data structures which can be used when dealing about problems like memory leaks etc. But there has been no attempt yet to do so now - all these numbers only seem to grow fast :) So... maybe try having fun :/ ;)",
+        "continuation_text": "All that remains left is just an initial example where I created my implementation using simple refactoring logic and implementing additional data structures which can be used when dealing about problems like memory leaks etc. But there has been no attempt yet to do so now - all these numbers only seem to grow fast :) So... maybe try having fun :/ ;)",
+        "input_token_count": 146,
+        "raw_input_token_count": 146,
+        "output_token_count": 215,
+        "new_token_count": 69,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 352,
+        "word_count": 63,
+        "unique_word_count": 62,
+        "unique_word_ratio": 0.9841269841269841,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAll that remains left is just an initial example where I created my implementation using simple refactoring logic and implementing additional data structures which can be used when dealing about problems like memory leaks etc. But there has been no attempt yet to do so now - all these numbers only seem to grow fast :) So... maybe try having fun :/ ;)",
+      "output_text": "1 of 4 3",
+      "source_window_text": "All that remains left is just an initial example where I created my implementation using simple refactoring logic and implementing additional data structures which can be used when dealing about problems like memory leaks etc. But there has been no attempt yet to do so now - all these numbers only seem to grow fast :) So... maybe try having fun :/ ;)",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAll that remains left is just an initial example where I created my implementation using simple refactoring logic and implementing additional data structures which can be used when dealing about problems like memory leaks etc. But there has been no attempt yet to do so now - all these numbers only seem to grow fast :) So... maybe try having fun :/ ;)",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAll that remains left is just an initial example where I created my implementation using simple refactoring logic and implementing additional data structures which can be used when dealing about problems like memory leaks etc. But there has been no attempt yet to do so now - all these numbers only seem to grow fast :) So... maybe try having fun :/ ;)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAll that remains left is just an initial example where I created my implementation using simple refactoring logic and implementing additional data structures which can be used when dealing about problems like memory leaks etc. But there has been no attempt yet to do so now - all these numbers only seem to grow fast :) So... maybe try having fun :/ ;)",
+        "continuation_text": "",
+        "input_token_count": 137,
+        "raw_input_token_count": 137,
+        "output_token_count": 138,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAll that remains left is just an initial example where I created my implementation using simple refactoring logic and implementing additional data structures which can be used when dealing about problems like memory leaks etc. But there has been no attempt yet to do so now - all these numbers only seem to grow fast :) So... maybe try having fun :/ ;)\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAll that remains left is just an initial example where I created my implementation using simple refactoring logic and implementing additional data structures which can be used when dealing about problems like memory leaks etc. But there has been no attempt yet to do so now - all these numbers only seem to grow fast :) So... maybe try having fun :/ ;)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAll that remains left is just an initial example where I created my implementation using simple refactoring logic and implementing additional data structures which can be used when dealing about problems like memory leaks etc. But there has been no attempt yet to do so now - all these numbers only seem to grow fast :) So... maybe try having fun :/ ;)\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAll that remains left is just an initial example where I created my implementation using simple refactoring logic and implementing additional data structures which can be used when dealing about problems like memory leaks etc. But there has been no attempt yet to do so now - all these numbers only seem to grow fast :) So... maybe try having fun :/ ;) 1 of 4 3",
+        "continuation_text": "1 of 4 3",
+        "input_token_count": 262,
+        "raw_input_token_count": 262,
+        "output_token_count": 267,
+        "new_token_count": 5,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 8,
+        "word_count": 4,
+        "unique_word_count": 4,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

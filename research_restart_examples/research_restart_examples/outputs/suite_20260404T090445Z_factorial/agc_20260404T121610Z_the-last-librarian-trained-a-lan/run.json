@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1257,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 227,
+        "word_count": 40,
+        "unique_word_count": 40,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 600,
+        "word_count": 103,
+        "unique_word_count": 103,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 410,
+        "word_count": 68,
+        "unique_word_count": 68,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "aren",
+        "didn",
+        "did",
+        "He",
+        "are",
+        "weren",
+        "shall",
+        "does",
+        "We",
+        "couldn",
+        "cannot",
+        "C"
+      ],
+      "output_text": "The word \"narrator\" is one such poet who took an audience along with him or her where he could pick up new information without getting stuck into grammar problems which would have killed his career if used elsewhere (or worse).",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: aren, didn, did, He, are, weren, shall, does, We, couldn, cannot, C\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: aren, didn, did, He, are, weren, shall, does, We, couldn, cannot, C\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The word \"narrator\" is one such poet who took an audience along with him or her where he could pick up new information without getting stuck into grammar problems which would have killed his career if used elsewhere (or worse).",
+        "continuation_text": "The word \"narrator\" is one such poet who took an audience along with him or her where he could pick up new information without getting stuck into grammar problems which would have killed his career if used elsewhere (or worse).",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 155,
+        "new_token_count": 47,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 227,
+        "word_count": 40,
+        "unique_word_count": 40,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "The",
+        "THE",
+        "the",
+        "so",
+        "Mar",
+        "�",
+        "who",
+        "mar",
+        "This",
+        "brain",
+        "ou",
+        "When"
+      ],
+      "output_text": "See this for details. It's just that writing your own poetry was never quite possible at first... read more and feel free! In fact, it seemed like I didn't realize what kind Of Writing Art had been going on until now because my imagination has always tended towards things involving metaphors - but then suddenly you start making connections between words when they're really too far apart from each other (\"I will use these two lines instead of ���\") So yes, there were actually some interesting ways around their strange interrelatedness – i) we all know how poetic those sentences look; ii); iii),",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: The, THE, the, so, Mar, �, who, mar, This, brain, ou, When\n\nTEXT:\nThe word \"narrator\" is one such poet who took an audience along with him or her where he could pick up new information without getting stuck into grammar problems which would have killed his career if used elsewhere (or worse).",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: The, THE, the, so, Mar, �, who, mar, This, brain, ou, When\n\nTEXT:\nThe word \"narrator\" is one such poet who took an audience along with him or her where he could pick up new information without getting stuck into grammar problems which would have killed his career if used elsewhere (or worse). See this for details. It's just that writing your own poetry was never quite possible at first... read more and feel free! In fact, it seemed like I didn't realize what kind Of Writing Art had been going on until now because my imagination has always tended towards things involving metaphors - but then suddenly you start making connections between words when they're really too far apart from each other (\"I will use these two lines instead of ���\") So yes, there were actually some interesting ways around their strange interrelatedness – i) we all know how poetic those sentences look; ii); iii),",
+        "continuation_text": "See this for details. It's just that writing your own poetry was never quite possible at first... read more and feel free! In fact, it seemed like I didn't realize what kind Of Writing Art had been going on until now because my imagination has always tended towards things involving metaphors - but then suddenly you start making connections between words when they're really too far apart from each other (\"I will use these two lines instead of ���\") So yes, there were actually some interesting ways around their strange interrelatedness – i) we all know how poetic those sentences look; ii); iii),",
+        "input_token_count": 132,
+        "raw_input_token_count": 132,
+        "output_token_count": 252,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 600,
+        "word_count": 103,
+        "unique_word_count": 103,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "See",
+        "//",
+        "Clock",
+        "?",
+        "fetal",
+        "Don",
+        "creatine",
+        "sleep",
+        "But",
+        "McC",
+        "JUST",
+        "plutonium"
+      ],
+      "output_text": "which is why every single time someone tries or does anything with \"Fatalism,\" if he doesn�t make sense by looking over them while laughing out loud (the best part? A little bit funnier than everyone else). The point here -- though definitely worth considering —is where do our creative thoughts come back into play once again after being overwhelmed so many times before finally starting doing something new!?",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: See, //, Clock, ?, fetal, Don, creatine, sleep, But, McC, JUST, plutonium\n\nTEXT:\nSee this for details. It's just that writing your own poetry was never quite possible at first... read more and feel free! In fact, it seemed like I didn't realize what kind Of Writing Art had been going on until now because my imagination has always tended towards things involving metaphors - but then suddenly you start making connections between words when they're really too far apart from each other (\"I will use these two lines instead of ���\") So yes, there were actually some interesting ways around their strange interrelatedness – i) we all know how poetic those sentences look; ii); iii),",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: See, //, Clock, ?, fetal, Don, creatine, sleep, But, McC, JUST, plutonium\n\nTEXT:\nSee this for details. It's just that writing your own poetry was never quite possible at first... read more and feel free! In fact, it seemed like I didn't realize what kind Of Writing Art had been going on until now because my imagination has always tended towards things involving metaphors - but then suddenly you start making connections between words when they're really too far apart from each other (\"I will use these two lines instead of ���\") So yes, there were actually some interesting ways around their strange interrelatedness – i) we all know how poetic those sentences look; ii); iii), which is why every single time someone tries or does anything with \"Fatalism,\" if he doesn�t make sense by looking over them while laughing out loud (the best part? A little bit funnier than everyone else). The point here -- though definitely worth considering —is where do our creative thoughts come back into play once again after being overwhelmed so many times before finally starting doing something new!?\n\n",
+        "continuation_text": "which is why every single time someone tries or does anything with \"Fatalism,\" if he doesn�t make sense by looking over them while laughing out loud (the best part? A little bit funnier than everyone else). The point here -- though definitely worth considering —is where do our creative thoughts come back into play once again after being overwhelmed so many times before finally starting doing something new!?",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 287,
+        "new_token_count": 82,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 410,
+        "word_count": 68,
+        "unique_word_count": 68,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

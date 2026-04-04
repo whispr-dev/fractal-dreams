@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1229,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 97,
+        "word_count": 21,
+        "unique_word_count": 21,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 399,
+        "word_count": 73,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.9178082191780822,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 22,
+        "word_count": 2,
+        "unique_word_count": 2,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Besides",
+        "Moreover",
+        "Apparently",
+        "Having",
+        "Why",
+        "Although",
+        "Nearly",
+        "An",
+        "Another",
+        "Bell",
+        "Among",
+        "Furthermore"
+      ],
+      "output_text": "We did this for hours before we could find our way out into space... Now it is time to leave now!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. We did this for hours before we could find our way out into space... Now it is time to leave now!",
+        "continuation_text": "We did this for hours before we could find our way out into space... Now it is time to leave now!",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 138,
+        "new_token_count": 24,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 97,
+        "word_count": 21,
+        "unique_word_count": 21,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "We",
+        "(",
+        "It",
+        "I",
+        "There",
+        "You",
+        "Oh",
+        "ey",
+        "we",
+        "N",
+        "E",
+        "Do"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: We, (, It, I, There, You, Oh, ey, we, N, E, Do\n\nTEXT:\nWe did this for hours before we could find our way out into space... Now it is time to leave now!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: We, (, It, I, There, You, Oh, ey, we, N, E, Do\n\nTEXT:\nWe did this for hours before we could find our way out into space... Now it is time to leave now!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: We, (, It, I, There, You, Oh, ey, we, N, E, Do\n\nTEXT:\nWe did this for hours before we could find our way out into space... Now it is time to leave now!",
+        "continuation_text": "",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 109,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 399,
+        "word_count": 73,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.9178082191780822,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "our",
+        "we",
+        "bringing",
+        "you",
+        "letting",
+        "Let",
+        "willing",
+        "come",
+        "embracing",
+        "how",
+        "tremendous",
+        "let"
+      ],
+      "output_text": "____________________ |",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: our, we, bringing, you, letting, Let, willing, come, embracing, how, tremendous, let\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: We, (, It, I, There, You, Oh, ey, we, N, E, Do\n\nTEXT:\nWe did this for hours before we could find our way out into space... Now it is time to leave now!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: our, we, bringing, you, letting, Let, willing, come, embracing, how, tremendous, let\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: We, (, It, I, There, You, Oh, ey, we, N, E, Do\n\nTEXT:\nWe did this for hours before we could find our way out into space... Now it is time to leave now! ____________________ |",
+        "continuation_text": "____________________ |",
+        "input_token_count": 193,
+        "raw_input_token_count": 193,
+        "output_token_count": 198,
+        "new_token_count": 5,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 22,
+        "word_count": 2,
+        "unique_word_count": 2,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

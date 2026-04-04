@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1206,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 214,
+        "word_count": 42,
+        "unique_word_count": 42,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 165,
+        "word_count": 34,
+        "unique_word_count": 34,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 123,
+        "word_count": 23,
+        "unique_word_count": 23,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 630,
+        "word_count": 111,
+        "unique_word_count": 110,
+        "unique_word_ratio": 0.990990990990991,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "had",
+        "it",
+        "if",
+        "was",
+        "have",
+        "are",
+        "is",
+        "the",
+        "has",
+        "in",
+        "did"
+      ],
+      "output_text": "The time for any words would pass but that didn't happen until after our last two hours…I don’t want them all out there now because I think we can do some research on how this new structure works (or just say yes).",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, it, if, was, have, are, is, the, has, in, did\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, it, if, was, have, are, is, the, has, in, did\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The time for any words would pass but that didn't happen until after our last two hours…I don’t want them all out there now because I think we can do some research on how this new structure works (or just say yes).",
+        "continuation_text": "The time for any words would pass but that didn't happen until after our last two hours…I don’t want them all out there now because I think we can do some research on how this new structure works (or just say yes).",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 159,
+        "new_token_count": 51,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 214,
+        "word_count": 42,
+        "unique_word_count": 42,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "were",
+        "have",
+        "if",
+        "don",
+        "we",
+        "they",
+        "had",
+        "did",
+        "the",
+        "is"
+      ],
+      "output_text": "If you take one example from ‪A and C & N – then let me know what kind thereof happened at each step or why so many sentences get passed without saying anything yet!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, have, if, don, we, they, had, did, the, is\n\nTEXT:\nThe time for any words would pass but that didn't happen until after our last two hours…I don’t want them all out there now because I think we can do some research on how this new structure works (or just say yes).",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, have, if, don, we, they, had, did, the, is\n\nTEXT:\nThe time for any words would pass but that didn't happen until after our last two hours…I don’t want them all out there now because I think we can do some research on how this new structure works (or just say yes). If you take one example from ‪A and C & N – then let me know what kind thereof happened at each step or why so many sentences get passed without saying anything yet!",
+        "continuation_text": "If you take one example from ‪A and C & N – then let me know what kind thereof happened at each step or why so many sentences get passed without saying anything yet!",
+        "input_token_count": 129,
+        "raw_input_token_count": 129,
+        "output_token_count": 167,
+        "new_token_count": 38,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 165,
+        "word_count": 34,
+        "unique_word_count": 34,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "are",
+        "have",
+        "If",
+        "had",
+        "they",
+        "you",
+        "did",
+        "what",
+        "is"
+      ],
+      "output_text": "What happens when your sentence was changed? And how does this affect other words that people may not remember to say now ?",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, are, have, If, had, they, you, did, what, is\n\nTEXT:\nIf you take one example from ‪A and C & N – then let me know what kind thereof happened at each step or why so many sentences get passed without saying anything yet!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, are, have, If, had, they, you, did, what, is\n\nTEXT:\nIf you take one example from ‪A and C & N – then let me know what kind thereof happened at each step or why so many sentences get passed without saying anything yet! What happens when your sentence was changed? And how does this affect other words that people may not remember to say now ?",
+        "continuation_text": "What happens when your sentence was changed? And how does this affect other words that people may not remember to say now ?",
+        "input_token_count": 116,
+        "raw_input_token_count": 116,
+        "output_token_count": 141,
+        "new_token_count": 25,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 123,
+        "word_count": 23,
+        "unique_word_count": 23,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "is",
+        "are",
+        "did",
+        "does",
+        "if",
+        "was",
+        "have",
+        "had",
+        "could",
+        "has"
+      ],
+      "output_text": "Well I guess there's an inherent contradiction between saying \"it\" and being able to use them for what they want (i.-) do... [p]omply! It tells you about our ability here at The Machine Learning Institute - we don't know which ones help us solve problems but more importantly let's get into my thoughts on why programming languages work so well :)  So really speaking i would like to ask some questions after reading all those comments with me :D If many statements only describe their own goal then no one knows where else will try even as much ! This gives real freedom over everything because its hardcoded expressions can lead",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, is, are, did, does, if, was, have, had, could, has\n\nTEXT:\nWhat happens when your sentence was changed? And how does this affect other words that people may not remember to say now ?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, is, are, did, does, if, was, have, had, could, has\n\nTEXT:\nWhat happens when your sentence was changed? And how does this affect other words that people may not remember to say now ? Well I guess there's an inherent contradiction between saying \"it\" and being able to use them for what they want (i.-) do... [p]omply! It tells you about our ability here at The Machine Learning Institute - we don't know which ones help us solve problems but more importantly let's get into my thoughts on why programming languages work so well :)  So really speaking i would like to ask some questions after reading all those comments with me :D If many statements only describe their own goal then no one knows where else will try even as much ! This gives real freedom over everything because its hardcoded expressions can lead",
+        "continuation_text": "Well I guess there's an inherent contradiction between saying \"it\" and being able to use them for what they want (i.-) do... [p]omply! It tells you about our ability here at The Machine Learning Institute - we don't know which ones help us solve problems but more importantly let's get into my thoughts on why programming languages work so well :)  So really speaking i would like to ask some questions after reading all those comments with me :D If many statements only describe their own goal then no one knows where else will try even as much ! This gives real freedom over everything because its hardcoded expressions can lead",
+        "input_token_count": 103,
+        "raw_input_token_count": 103,
+        "output_token_count": 231,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 630,
+        "word_count": 111,
+        "unique_word_count": 110,
+        "unique_word_ratio": 0.990990990990991,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

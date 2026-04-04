@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1141,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 642,
+        "word_count": 97,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.8969072164948454,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 90,
+        "word_count": 13,
+        "unique_word_count": 13,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 90,
+        "word_count": 13,
+        "unique_word_count": 13,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "cor",
+        "At",
+        "oklyn",
+        "静静地",
+        "cu",
+        "_di",
+        "Ferry",
+        "gu",
+        "nu",
+        "ner",
+        "Ur",
+        "가"
+      ],
+      "output_text": "The next recursive transformation would be:\n\n**Observatory ruins, A clockwork map kept drawing skies as if tomorrow had already happened and was trying to warn us.**\n\nThis follows the pattern where the first token \"In\" is replaced with an auxiliary word (\"A\") that will guide further transformations while keeping the original text intact. The second instance uses another key word from the given list (\"map\"), which again serves as a placeholder for potential changes or interpretations. The third instance introduces new elements like \"sky,\" \"telling,\" and \"warns,\" creating a more complex yet coherent sentence structure without explicitly",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: cor, At, oklyn, 静静地, cu, _di, Ferry, gu, nu, ner, Ur, 가\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: cor, At, oklyn, 静静地, cu, _di, Ferry, gu, nu, ner, Ur, 가\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nThe next recursive transformation would be:\n\n**Observatory ruins, A clockwork map kept drawing skies as if tomorrow had already happened and was trying to warn us.**\n\nThis follows the pattern where the first token \"In\" is replaced with an auxiliary word (\"A\") that will guide further transformations while keeping the original text intact. The second instance uses another key word from the given list (\"map\"), which again serves as a placeholder for potential changes or interpretations. The third instance introduces new elements like \"sky,\" \"telling,\" and \"warns,\" creating a more complex yet coherent sentence structure without explicitly",
+        "continuation_text": "The next recursive transformation would be:\n\n**Observatory ruins, A clockwork map kept drawing skies as if tomorrow had already happened and was trying to warn us.**\n\nThis follows the pattern where the first token \"In\" is replaced with an auxiliary word (\"A\") that will guide further transformations while keeping the original text intact. The second instance uses another key word from the given list (\"map\"), which again serves as a placeholder for potential changes or interpretations. The third instance introduces new elements like \"sky,\" \"telling,\" and \"warns,\" creating a more complex yet coherent sentence structure without explicitly",
+        "input_token_count": 122,
+        "raw_input_token_count": 122,
+        "output_token_count": 242,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 642,
+        "word_count": 97,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.8969072164948454,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        ".crypto",
+        "önüne",
+        "renewable",
+        ".disable",
+        "renewables",
+        "Devices",
+        "roy",
+        "thermal",
+        "contact",
+        "önünde",
+        "_opacity",
+        "elves"
+      ],
+      "output_text": "Observatory ruins, Clockwork maps kept drawing skies as if tomorrow had happened, warning.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: .crypto, önüne, renewable, .disable, renewables, Devices, roy, thermal, contact, önünde, _opacity, elves\n\nTEXT:\nThe next recursive transformation would be:\n\n**Observatory ruins, A clockwork map kept drawing skies as if tomorrow had already happened and was trying to warn us.**\n\nThis follows the pattern where the first token \"In\" is replaced with an auxiliary word (\"A\") that will guide further transformations while keeping the original text intact. The second instance uses another key word from the given list (\"map\"), which again serves as a placeholder for potential changes or interpretations. The third instance introduces new elements like \"sky,\" \"telling,\" and \"warns,\" creating a more complex yet coherent sentence structure without explicitly<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: .crypto, önüne, renewable, .disable, renewables, Devices, roy, thermal, contact, önünde, _opacity, elves\n\nTEXT:\nThe next recursive transformation would be:\n\n**Observatory ruins, A clockwork map kept drawing skies as if tomorrow had already happened and was trying to warn us.**\n\nThis follows the pattern where the first token \"In\" is replaced with an auxiliary word (\"A\") that will guide further transformations while keeping the original text intact. The second instance uses another key word from the given list (\"map\"), which again serves as a placeholder for potential changes or interpretations. The third instance introduces new elements like \"sky,\" \"telling,\" and \"warns,\" creating a more complex yet coherent sentence structure without explicitly\nassistant\nObservatory ruins, Clockwork maps kept drawing skies as if tomorrow had happened, warning.",
+        "continuation_text": "Observatory ruins, Clockwork maps kept drawing skies as if tomorrow had happened, warning.",
+        "input_token_count": 211,
+        "raw_input_token_count": 211,
+        "output_token_count": 230,
+        "new_token_count": 19,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 90,
+        "word_count": 13,
+        "unique_word_count": 13,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "电",
+        "；",
+        "Aeros",
+        "/A",
+        "：",
+        "ol",
+        "ainer",
+        "electro",
+        "，",
+        "。",
+        "？",
+        "?"
+      ],
+      "output_text": "Observatory Ruins, Clockwork Maps Keep Drawing Skies as If Tomorrow Had Happened, Warning.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 电, ；, Aeros, /A, ：, ol, ainer, electro, ，, 。, ？, ?\n\nTEXT:\nObservatory ruins, Clockwork maps kept drawing skies as if tomorrow had happened, warning.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 电, ；, Aeros, /A, ：, ol, ainer, electro, ，, 。, ？, ?\n\nTEXT:\nObservatory ruins, Clockwork maps kept drawing skies as if tomorrow had happened, warning.\nassistant\nObservatory Ruins, Clockwork Maps Keep Drawing Skies as If Tomorrow Had Happened, Warning.",
+        "continuation_text": "Observatory Ruins, Clockwork Maps Keep Drawing Skies as If Tomorrow Had Happened, Warning.",
+        "input_token_count": 110,
+        "raw_input_token_count": 110,
+        "output_token_count": 132,
+        "new_token_count": 22,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 90,
+        "word_count": 13,
+        "unique_word_count": 13,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

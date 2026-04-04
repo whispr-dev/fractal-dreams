@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1435,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 142,
+        "word_count": 21,
+        "unique_word_count": 21,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 486,
+        "word_count": 76,
+        "unique_word_count": 70,
+        "unique_word_ratio": 0.9210526315789473,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1522,
+        "word_count": 235,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.40425531914893614,
+        "repeated_bigram_count": 122
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 3594,
+        "word_count": 553,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.1717902350813743,
+        "repeated_bigram_count": 440
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "(But what about this one?) The state is broken when you run through multiple layers of abstraction while your code's implementation grows progressively slower so as not just new features become available; there have been over 10 times faster implementations which lead us into deeper problems than previous ones – even though I've only written five very large versions for each machine…as an example from earlier drafts! This can be done with almost any existing programming languages without sacrificing performance or efficiency at all depending on whether these were implemented correctly either by yourself or someone else inside the project during development time or simply because they weren't able quite enough to maintain them consistently after working together before running tests via e-mail? Here's how we ended up getting rid both operations once again due back to many design mistakes here - where our memory allocation was",
+      "output_text": "significantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)",
+      "source_window_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+      "reflection_window_text": "(But what about this one?) The state is broken when you run through multiple layers of abstraction while your code's implementation grows progressively slower so as not just new features become available; there have been over 10 times faster implementations which lead us into deeper problems than previous ones – even though I've only written five very large versions for each machine…as an example from earlier drafts! This can be done with almost any existing programming languages without sacrificing performance or efficiency at all depending on whether these were implemented correctly either by yourself or someone else inside the project during development time or simply because they weren't able quite enough to maintain them consistently after working together before running tests via e-mail? Here's how we ended up getting rid both operations once again due back to many design mistakes here - where our memory allocation was",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. (But what about this one?) The state is broken when you run through multiple layers of abstraction while your code's implementation grows progressively slower so as not just new features become available; there have been over 10 times faster implementations which lead us into deeper problems than previous ones – even though I've only written five very large versions for each machine…as an example from earlier drafts! This can be done with almost any existing programming languages without sacrificing performance or efficiency at all depending on whether these were implemented correctly either by yourself or someone else inside the project during development time or simply because they weren't able quite enough to maintain them consistently after working together before running tests via e-mail? Here's how we ended up getting rid both operations once again due back to many design mistakes here - where our memory allocation was",
+        "continuation_text": "(But what about this one?) The state is broken when you run through multiple layers of abstraction while your code's implementation grows progressively slower so as not just new features become available; there have been over 10 times faster implementations which lead us into deeper problems than previous ones – even though I've only written five very large versions for each machine…as an example from earlier drafts! This can be done with almost any existing programming languages without sacrificing performance or efficiency at all depending on whether these were implemented correctly either by yourself or someone else inside the project during development time or simply because they weren't able quite enough to maintain them consistently after working together before running tests via e-mail? Here's how we ended up getting rid both operations once again due back to many design mistakes here - where our memory allocation was",
+        "input_token_count": 95,
+        "raw_input_token_count": 95,
+        "output_token_count": 255,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\n(But what about this one?) The state is broken when you run through multiple layers of abstraction while your code's implementation grows progressively slower so as not just new features become available; there have been over 10 times faster implementations which lead us into deeper problems than previous ones – even though I've only written five very large versions for each machine…as an example from earlier drafts! This can be done with almost any existing programming languages without sacrificing performance or efficiency at all depending on whether these were implemented correctly either by yourself or someone else inside the project during development time or simply because they weren't able quite enough to maintain them consistently after working together before running tests via e-mail? Here's how we ended up getting rid both operations once again due back to many design mistakes here - where our memory allocation was",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\n(But what about this one?) The state is broken when you run through multiple layers of abstraction while your code's implementation grows progressively slower so as not just new features become available; there have been over 10 times faster implementations which lead us into deeper problems than previous ones – even though I've only written five very large versions for each machine…as an example from earlier drafts! This can be done with almost any existing programming languages without sacrificing performance or efficiency at all depending on whether these were implemented correctly either by yourself or someone else inside the project during development time or simply because they weren't able quite enough to maintain them consistently after working together before running tests via e-mail? Here's how we ended up getting rid both operations once again due back to many design mistakes here - where our memory allocation was significantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)",
+        "continuation_text": "significantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)",
+        "input_token_count": 243,
+        "raw_input_token_count": 243,
+        "output_token_count": 268,
+        "new_token_count": 25,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 142,
+        "word_count": 21,
+        "unique_word_count": 21,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "It also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+      "source_window_text": "significantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)",
+      "reflection_window_text": "It also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-) It also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+        "continuation_text": "It also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+        "input_token_count": 93,
+        "raw_input_token_count": 93,
+        "output_token_count": 115,
+        "new_token_count": 22,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+        "continuation_text": "",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 103,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 486,
+        "word_count": 76,
+        "unique_word_count": 70,
+        "unique_word_ratio": 0.9210526315789473,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+        "continuation_text": "",
+        "input_token_count": 171,
+        "raw_input_token_count": 171,
+        "output_token_count": 172,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+        "continuation_text": "",
+        "input_token_count": 330,
+        "raw_input_token_count": 330,
+        "output_token_count": 331,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1522,
+        "word_count": 235,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.40425531914893614,
+        "repeated_bigram_count": 122
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+        "continuation_text": "",
+        "input_token_count": 399,
+        "raw_input_token_count": 399,
+        "output_token_count": 400,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsignificantly increased (or worse) alongside the fact that data structure has changed greatly throughout my life since being first started :-)\n\nREFLECTION:\nIt also shows how to use this feature very effectively, thanks mostly simply for having me write code here!",
+        "continuation_text": "",
+        "input_token_count": 786,
+        "raw_input_token_count": 786,
+        "output_token_count": 787,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 3594,
+        "word_count": 553,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.1717902350813743,
+        "repeated_bigram_count": 440
+      }
+    }
+  ]
+}

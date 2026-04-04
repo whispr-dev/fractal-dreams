@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1178,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 662,
+        "word_count": 96,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.8958333333333334,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 632,
+        "word_count": 79,
+        "unique_word_count": 72,
+        "unique_word_ratio": 0.9113924050632911,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 673,
+        "word_count": 83,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.927710843373494,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 544,
+        "word_count": 71,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9295774647887324,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "was",
+        "the",
+        "had",
+        "If",
+        "to",
+        "is",
+        "for",
+        "and",
+        "are"
+      ],
+      "output_text": "The next recursive transformation involves analyzing the sentence structure and breaking it down into smaller units that can be further manipulated using the given Latent Direction Tokens. Here's how we might approach this:\n\n1. **Identify Key Components**: \n   - The initial part (\"in the observatory ruins\") seems to introduce an environment or setting.\n   - \"a clockwork map\" suggests a complex digital device designed to reproduce past events accurately.\n   - \"kept redrawing the sky\" indicates ongoing activity involving manipulating celestial objects.\n   - \"as if tomorrow had already happened\" implies a sense of imminent reality.\n\n2. **Decompose and Analy",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, was, the, had, If, to, is, for, and, are\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, was, the, had, If, to, is, for, and, are\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nThe next recursive transformation involves analyzing the sentence structure and breaking it down into smaller units that can be further manipulated using the given Latent Direction Tokens. Here's how we might approach this:\n\n1. **Identify Key Components**: \n   - The initial part (\"in the observatory ruins\") seems to introduce an environment or setting.\n   - \"a clockwork map\" suggests a complex digital device designed to reproduce past events accurately.\n   - \"kept redrawing the sky\" indicates ongoing activity involving manipulating celestial objects.\n   - \"as if tomorrow had already happened\" implies a sense of imminent reality.\n\n2. **Decompose and Analy",
+        "continuation_text": "The next recursive transformation involves analyzing the sentence structure and breaking it down into smaller units that can be further manipulated using the given Latent Direction Tokens. Here's how we might approach this:\n\n1. **Identify Key Components**: \n   - The initial part (\"in the observatory ruins\") seems to introduce an environment or setting.\n   - \"a clockwork map\" suggests a complex digital device designed to reproduce past events accurately.\n   - \"kept redrawing the sky\" indicates ongoing activity involving manipulating celestial objects.\n   - \"as if tomorrow had already happened\" implies a sense of imminent reality.\n\n2. **Decompose and Analy",
+        "input_token_count": 110,
+        "raw_input_token_count": 110,
+        "output_token_count": 238,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 662,
+        "word_count": 96,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.8958333333333334,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "the",
+        "If",
+        "is",
+        "\"",
+        "to",
+        "are",
+        "was",
+        "It",
+        "-"
+      ],
+      "output_text": "3. **Structure Analysis**:\n    - Identify any patterns or relationships within the components. For example, the use of multiple verbs (\"rusted,\" \"recreated,\" \"imminent\") adds complexity.\n  \n4. **Synthesize Elements**:\n    - Combine elements logically based on their functions (e.g., \"clockwork map\" as an instrument for manipulation).\n    \n5. **Contextual Considerations**:\n    - Incorporate contextual clues from surrounding sentences or descriptions related to astronomical phenomena.\n  \n6. **Grammar and Syntax**:\n    - Ensure adherence to proper grammar and syntax rules established by our previous understanding.\n\nLet’s proceed",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, If, is, \", to, are, was, It, -\n\nTEXT:\nThe next recursive transformation involves analyzing the sentence structure and breaking it down into smaller units that can be further manipulated using the given Latent Direction Tokens. Here's how we might approach this:\n\n1. **Identify Key Components**: \n   - The initial part (\"in the observatory ruins\") seems to introduce an environment or setting.\n   - \"a clockwork map\" suggests a complex digital device designed to reproduce past events accurately.\n   - \"kept redrawing the sky\" indicates ongoing activity involving manipulating celestial objects.\n   - \"as if tomorrow had already happened\" implies a sense of imminent reality.\n\n2. **Decompose and Analy<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, If, is, \", to, are, was, It, -\n\nTEXT:\nThe next recursive transformation involves analyzing the sentence structure and breaking it down into smaller units that can be further manipulated using the given Latent Direction Tokens. Here's how we might approach this:\n\n1. **Identify Key Components**: \n   - The initial part (\"in the observatory ruins\") seems to introduce an environment or setting.\n   - \"a clockwork map\" suggests a complex digital device designed to reproduce past events accurately.\n   - \"kept redrawing the sky\" indicates ongoing activity involving manipulating celestial objects.\n   - \"as if tomorrow had already happened\" implies a sense of imminent reality.\n\n2. **Decompose and Analy\nassistant\n3. **Structure Analysis**:\n    - Identify any patterns or relationships within the components. For example, the use of multiple verbs (\"rusted,\" \"recreated,\" \"imminent\") adds complexity.\n  \n4. **Synthesize Elements**:\n    - Combine elements logically based on their functions (e.g., \"clockwork map\" as an instrument for manipulation).\n    \n5. **Contextual Considerations**:\n    - Incorporate contextual clues from surrounding sentences or descriptions related to astronomical phenomena.\n  \n6. **Grammar and Syntax**:\n    - Ensure adherence to proper grammar and syntax rules established by our previous understanding.\n\nLet’s proceed",
+        "continuation_text": "3. **Structure Analysis**:\n    - Identify any patterns or relationships within the components. For example, the use of multiple verbs (\"rusted,\" \"recreated,\" \"imminent\") adds complexity.\n  \n4. **Synthesize Elements**:\n    - Combine elements logically based on their functions (e.g., \"clockwork map\" as an instrument for manipulation).\n    \n5. **Contextual Considerations**:\n    - Incorporate contextual clues from surrounding sentences or descriptions related to astronomical phenomena.\n  \n6. **Grammar and Syntax**:\n    - Ensure adherence to proper grammar and syntax rules established by our previous understanding.\n\nLet’s proceed",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 336,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 632,
+        "word_count": 79,
+        "unique_word_count": 72,
+        "unique_word_ratio": 0.9113924050632911,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        ",",
+        "-",
+        "\"",
+        "(",
+        "and",
+        "for",
+        "**",
+        "to",
+        ".",
+        "were"
+      ],
+      "output_text": "7. **Pattern Recognition**:\n   - Analyze how each component relates to one another to identify overarching themes or motifs.\n\n8. **Complexity Exploration**:\n   - Investigate potential complexities introduced by combining different types of grammatical elements, such as conjunctions (`and`, `but`) with nouns (`instrument`).\n\n9. **Logical Synthesis**:\n   - Develop logical sequences or chains that link individual parts together to form coherent statements about celestial phenomena.\n\n10. **Astronomical Context Integration**:\n    - Incorporate relevant astronomical contexts into the synthesis process where appropriate, ensuring historical accuracy and significance.\n\n11.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, ,, -, \", (, and, for, **, to, ., were\n\nTEXT:\n3. **Structure Analysis**:\n    - Identify any patterns or relationships within the components. For example, the use of multiple verbs (\"rusted,\" \"recreated,\" \"imminent\") adds complexity.\n  \n4. **Synthesize Elements**:\n    - Combine elements logically based on their functions (e.g., \"clockwork map\" as an instrument for manipulation).\n    \n5. **Contextual Considerations**:\n    - Incorporate contextual clues from surrounding sentences or descriptions related to astronomical phenomena.\n  \n6. **Grammar and Syntax**:\n    - Ensure adherence to proper grammar and syntax rules established by our previous understanding.\n\nLet’s proceed<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, ,, -, \", (, and, for, **, to, ., were\n\nTEXT:\n3. **Structure Analysis**:\n    - Identify any patterns or relationships within the components. For example, the use of multiple verbs (\"rusted,\" \"recreated,\" \"imminent\") adds complexity.\n  \n4. **Synthesize Elements**:\n    - Combine elements logically based on their functions (e.g., \"clockwork map\" as an instrument for manipulation).\n    \n5. **Contextual Considerations**:\n    - Incorporate contextual clues from surrounding sentences or descriptions related to astronomical phenomena.\n  \n6. **Grammar and Syntax**:\n    - Ensure adherence to proper grammar and syntax rules established by our previous understanding.\n\nLet’s proceed\nassistant\n7. **Pattern Recognition**:\n   - Analyze how each component relates to one another to identify overarching themes or motifs.\n\n8. **Complexity Exploration**:\n   - Investigate potential complexities introduced by combining different types of grammatical elements, such as conjunctions (`and`, `but`) with nouns (`instrument`).\n\n9. **Logical Synthesis**:\n   - Develop logical sequences or chains that link individual parts together to form coherent statements about celestial phenomena.\n\n10. **Astronomical Context Integration**:\n    - Incorporate relevant astronomical contexts into the synthesis process where appropriate, ensuring historical accuracy and significance.\n\n11.",
+        "continuation_text": "7. **Pattern Recognition**:\n   - Analyze how each component relates to one another to identify overarching themes or motifs.\n\n8. **Complexity Exploration**:\n   - Investigate potential complexities introduced by combining different types of grammatical elements, such as conjunctions (`and`, `but`) with nouns (`instrument`).\n\n9. **Logical Synthesis**:\n   - Develop logical sequences or chains that link individual parts together to form coherent statements about celestial phenomena.\n\n10. **Astronomical Context Integration**:\n    - Incorporate relevant astronomical contexts into the synthesis process where appropriate, ensuring historical accuracy and significance.\n\n11.",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 673,
+        "word_count": 83,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.927710843373494,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "**",
+        "-",
+        ",",
+        "were",
+        "to",
+        "and",
+        "If",
+        "*",
+        "(",
+        "for"
+      ],
+      "output_text": "The next recursive transformation would involve expanding on the concepts outlined within each sub-section while maintaining consistency with natural language syntax. Here’s an expanded version:\n\n### 12. **Synthetic Analysis**\n- Use the analysis of patterns from previous sections to synthesize new insights into contemporary astronomy.\n  \nThis continuation guides the reader through more focused discussion on specific areas related to celestial observations and their associated scientific theories, ensuring clarity and coherence throughout.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, **, -, ,, were, to, and, If, *, (, for\n\nTEXT:\n7. **Pattern Recognition**:\n   - Analyze how each component relates to one another to identify overarching themes or motifs.\n\n8. **Complexity Exploration**:\n   - Investigate potential complexities introduced by combining different types of grammatical elements, such as conjunctions (`and`, `but`) with nouns (`instrument`).\n\n9. **Logical Synthesis**:\n   - Develop logical sequences or chains that link individual parts together to form coherent statements about celestial phenomena.\n\n10. **Astronomical Context Integration**:\n    - Incorporate relevant astronomical contexts into the synthesis process where appropriate, ensuring historical accuracy and significance.\n\n11.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, **, -, ,, were, to, and, If, *, (, for\n\nTEXT:\n7. **Pattern Recognition**:\n   - Analyze how each component relates to one another to identify overarching themes or motifs.\n\n8. **Complexity Exploration**:\n   - Investigate potential complexities introduced by combining different types of grammatical elements, such as conjunctions (`and`, `but`) with nouns (`instrument`).\n\n9. **Logical Synthesis**:\n   - Develop logical sequences or chains that link individual parts together to form coherent statements about celestial phenomena.\n\n10. **Astronomical Context Integration**:\n    - Incorporate relevant astronomical contexts into the synthesis process where appropriate, ensuring historical accuracy and significance.\n\n11.\nassistant\nThe next recursive transformation would involve expanding on the concepts outlined within each sub-section while maintaining consistency with natural language syntax. Here’s an expanded version:\n\n### 12. **Synthetic Analysis**\n- Use the analysis of patterns from previous sections to synthesize new insights into contemporary astronomy.\n  \nThis continuation guides the reader through more focused discussion on specific areas related to celestial observations and their associated scientific theories, ensuring clarity and coherence throughout.",
+        "continuation_text": "The next recursive transformation would involve expanding on the concepts outlined within each sub-section while maintaining consistency with natural language syntax. Here’s an expanded version:\n\n### 12. **Synthetic Analysis**\n- Use the analysis of patterns from previous sections to synthesize new insights into contemporary astronomy.\n  \nThis continuation guides the reader through more focused discussion on specific areas related to celestial observations and their associated scientific theories, ensuring clarity and coherence throughout.",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 294,
+        "new_token_count": 87,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 544,
+        "word_count": 71,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9295774647887324,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

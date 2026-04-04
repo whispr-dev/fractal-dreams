@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1348
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 181,
+        "word_count": 30,
+        "unique_word_count": 29,
+        "unique_word_ratio": 0.9666666666666667,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 516,
+        "word_count": 82,
+        "unique_word_count": 47,
+        "unique_word_ratio": 0.573170731707317,
+        "repeated_bigram_count": 30
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 980,
+        "word_count": 168,
+        "unique_word_count": 129,
+        "unique_word_ratio": 0.7678571428571429,
+        "repeated_bigram_count": 31
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1466,
+        "word_count": 244,
+        "unique_word_count": 203,
+        "unique_word_ratio": 0.8319672131147541,
+        "repeated_bigram_count": 31
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 1640,
+        "word_count": 271,
+        "unique_word_count": 230,
+        "unique_word_ratio": 0.8487084870848709,
+        "repeated_bigram_count": 31
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+      "delta_text": "\"We've got people who can give you an idea,\" he said.",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said.",
+        "continuation_text": "\"We've got people who can give you an idea,\" he said.",
+        "input_token_count": 57,
+        "raw_input_token_count": 57,
+        "output_token_count": 73,
+        "new_token_count": 16,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 181,
+        "word_count": 30,
+        "unique_word_count": 29,
+        "unique_word_ratio": 0.9666666666666667,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said.",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said.",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said.",
+        "continuation_text": "",
+        "input_token_count": 72,
+        "raw_input_token_count": 72,
+        "output_token_count": 73,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 516,
+        "word_count": 82,
+        "unique_word_count": 47,
+        "unique_word_ratio": 0.573170731707317,
+        "repeated_bigram_count": 30
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said.",
+      "delta_text": "You is one of three students, but if someone tells you they need to create what this would be about, then maybe it might make sense, since nobody knows for sure whether or no there's any way their paper will work like these—or does some magic thing happen after we know more before telling them exactly how much time humans spent writing things? Then why don't other authors try to convince us where she wants to go now so I won't read her papers tomorrow because",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You is one of three students, but if someone tells you they need to create what this would be about, then maybe it might make sense, since nobody knows for sure whether or no there's any way their paper will work like these—or does some magic thing happen after we know more before telling them exactly how much time humans spent writing things? Then why don't other authors try to convince us where she wants to go now so I won't read her papers tomorrow because",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You is one of three students, but if someone tells you they need to create what this would be about, then maybe it might make sense, since nobody knows for sure whether or no there's any way their paper will work like these—or does some magic thing happen after we know more before telling them exactly how much time humans spent writing things? Then why don't other authors try to convince us where she wants to go now so I won't read her papers tomorrow because",
+        "continuation_text": "You is one of three students, but if someone tells you they need to create what this would be about, then maybe it might make sense, since nobody knows for sure whether or no there's any way their paper will work like these—or does some magic thing happen after we know more before telling them exactly how much time humans spent writing things? Then why don't other authors try to convince us where she wants to go now so I won't read her papers tomorrow because",
+        "input_token_count": 144,
+        "raw_input_token_count": 144,
+        "output_token_count": 240,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 980,
+        "word_count": 168,
+        "unique_word_count": 129,
+        "unique_word_ratio": 0.7678571428571429,
+        "repeated_bigram_count": 31
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You is one of three students, but if someone tells you they need to create what this would be about, then maybe it might make sense, since nobody knows for sure whether or no there's any way their paper will work like these—or does some magic thing happen after we know more before telling them exactly how much time humans spent writing things? Then why don't other authors try to convince us where she wants to go now so I won't read her papers tomorrow because",
+      "delta_text": "everything has gone fine over here! Just remember that when my next lecture was made public everyone could use all four words together at once; as long as our first word (slightly), however many times each sentence wasn\"nearly finished until somebody used his head right up instead!\"\nStart with ‒__. This code contains two short paragraphs which should help clarify both nouns correctly by making every second move toward completing sentences while maintaining good grammar practice...",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You is one of three students, but if someone tells you they need to create what this would be about, then maybe it might make sense, since nobody knows for sure whether or no there's any way their paper will work like these—or does some magic thing happen after we know more before telling them exactly how much time humans spent writing things? Then why don't other authors try to convince us where she wants to go now so I won't read her papers tomorrow because everything has gone fine over here! Just remember that when my next lecture was made public everyone could use all four words together at once; as long as our first word (slightly), however many times each sentence wasn\"nearly finished until somebody used his head right up instead!\"\nStart with ‒__. This code contains two short paragraphs which should help clarify both nouns correctly by making every second move toward completing sentences while maintaining good grammar practice...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You is one of three students, but if someone tells you they need to create what this would be about, then maybe it might make sense, since nobody knows for sure whether or no there's any way their paper will work like these—or does some magic thing happen after we know more before telling them exactly how much time humans spent writing things? Then why don't other authors try to convince us where she wants to go now so I won't read her papers tomorrow because",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You is one of three students, but if someone tells you they need to create what this would be about, then maybe it might make sense, since nobody knows for sure whether or no there's any way their paper will work like these—or does some magic thing happen after we know more before telling them exactly how much time humans spent writing things? Then why don't other authors try to convince us where she wants to go now so I won't read her papers tomorrow because everything has gone fine over here! Just remember that when my next lecture was made public everyone could use all four words together at once; as long as our first word (slightly), however many times each sentence wasn\"nearly finished until somebody used his head right up instead!\"\nStart with ‒__. This code contains two short paragraphs which should help clarify both nouns correctly by making every second move toward completing sentences while maintaining good grammar practice...",
+        "continuation_text": "everything has gone fine over here! Just remember that when my next lecture was made public everyone could use all four words together at once; as long as our first word (slightly), however many times each sentence wasn\"nearly finished until somebody used his head right up instead!\"\nStart with ‒__. This code contains two short paragraphs which should help clarify both nouns correctly by making every second move toward completing sentences while maintaining good grammar practice...",
+        "input_token_count": 239,
+        "raw_input_token_count": 239,
+        "output_token_count": 331,
+        "new_token_count": 92,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1466,
+        "word_count": 244,
+        "unique_word_count": 203,
+        "unique_word_ratio": 0.8319672131147541,
+        "repeated_bigram_count": 31
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You is one of three students, but if someone tells you they need to create what this would be about, then maybe it might make sense, since nobody knows for sure whether or no there's any way their paper will work like these—or does some magic thing happen after we know more before telling them exactly how much time humans spent writing things? Then why don't other authors try to convince us where she wants to go now so I won't read her papers tomorrow because everything has gone fine over here! Just remember that when my next lecture was made public everyone could use all four words together at once; as long as our first word (slightly), however many times each sentence wasn\"nearly finished until somebody used his head right up instead!\"\nStart with ‒__. This code contains two short paragraphs which should help clarify both nouns correctly by making every second move toward completing sentences while maintaining good grammar practice...",
+      "delta_text": "Once again, using 3 letters means either creating verbs already completed within 30 seconds… [if] 2 lines mean doing something new—\"this may also imply adding another verb.\"",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You is one of three students, but if someone tells you they need to create what this would be about, then maybe it might make sense, since nobody knows for sure whether or no there's any way their paper will work like these—or does some magic thing happen after we know more before telling them exactly how much time humans spent writing things? Then why don't other authors try to convince us where she wants to go now so I won't read her papers tomorrow because everything has gone fine over here! Just remember that when my next lecture was made public everyone could use all four words together at once; as long as our first word (slightly), however many times each sentence wasn\"nearly finished until somebody used his head right up instead!\"\nStart with ‒__. This code contains two short paragraphs which should help clarify both nouns correctly by making every second move toward completing sentences while maintaining good grammar practice... Once again, using 3 letters means either creating verbs already completed within 30 seconds… [if] 2 lines mean doing something new—\"this may also imply adding another verb.\"",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You is one of three students, but if someone tells you they need to create what this would be about, then maybe it might make sense, since nobody knows for sure whether or no there's any way their paper will work like these—or does some magic thing happen after we know more before telling them exactly how much time humans spent writing things? Then why don't other authors try to convince us where she wants to go now so I won't read her papers tomorrow because everything has gone fine over here! Just remember that when my next lecture was made public everyone could use all four words together at once; as long as our first word (slightly), however many times each sentence wasn\"nearly finished until somebody used his head right up instead!\"\nStart with ‒__. This code contains two short paragraphs which should help clarify both nouns correctly by making every second move toward completing sentences while maintaining good grammar practice...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. \"We've got people who can give you an idea,\" he said. You is one of three students, but if someone tells you they need to create what this would be about, then maybe it might make sense, since nobody knows for sure whether or no there's any way their paper will work like these—or does some magic thing happen after we know more before telling them exactly how much time humans spent writing things? Then why don't other authors try to convince us where she wants to go now so I won't read her papers tomorrow because everything has gone fine over here! Just remember that when my next lecture was made public everyone could use all four words together at once; as long as our first word (slightly), however many times each sentence wasn\"nearly finished until somebody used his head right up instead!\"\nStart with ‒__. This code contains two short paragraphs which should help clarify both nouns correctly by making every second move toward completing sentences while maintaining good grammar practice...   Once again, using 3 letters means either creating verbs already completed within 30 seconds… [if] 2 lines mean doing something new—\"this may also imply adding another verb.\"",
+        "continuation_text": "Once again, using 3 letters means either creating verbs already completed within 30 seconds… [if] 2 lines mean doing something new—\"this may also imply adding another verb.\"",
+        "input_token_count": 330,
+        "raw_input_token_count": 330,
+        "output_token_count": 367,
+        "new_token_count": 37,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1640,
+        "word_count": 271,
+        "unique_word_count": 230,
+        "unique_word_ratio": 0.8487084870848709,
+        "repeated_bigram_count": 31
+      }
+    }
+  ]
+}

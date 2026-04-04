@@ -1,0 +1,31 @@
+
+% Auto-generated appendix support
+\appendix
+\section{Data and Code Availability}
+The paper figures and tables in this appendix were generated from the balanced factorial suite
+\texttt{suite\_20260404T090445Z\_factorial}, which contains 600 completed runs.
+Derived analysis tables are provided as CSV files:
+\texttt{engine\_summary.csv},
+\texttt{engine\_model\_summary.csv},
+\texttt{anova\_results.csv},
+\texttt{pairwise\_tukey\_by\_engine.csv}, and
+\texttt{representative\_excerpts.csv}.
+
+The code used to generate the paper assets is provided in
+\texttt{build\_paper\_analysis.py}.
+The original linguistic and tokenizer analysis inputs are preserved in the
+\texttt{analysis/linguistics/...} and \texttt{analysis/tokenizers/...} directories.
+Representative textual outputs can be recovered from the corresponding
+\texttt{run.json} files in the suite outputs directory.
+
+\section{Statistical Notes}
+All reported ANOVA tables were computed from fixed-effects models of the form
+\[
+\text{metric} \sim \texttt{engine} + \texttt{model} + \texttt{engine}\times\texttt{model} + \texttt{prompt\_index}.
+\]
+This design isolates engine effects from model effects because every engine was run on every model across every prompt and replicate.
+Because the run counts are balanced, the resulting effect sizes are straightforward to interpret.
+For pairwise engine comparisons, Tukey's HSD was applied to the raw run-level values.
+
+\section{Supplementary Tables}
+\input{tables_engine_summary.tex}

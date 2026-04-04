@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1313,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 143,
+        "word_count": 30,
+        "unique_word_count": 30,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 199,
+        "word_count": 37,
+        "unique_word_count": 37,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 13,
+        "word_count": 3,
+        "unique_word_count": 3,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "mentor",
+        "Coach",
+        "Aunt",
+        "forge",
+        "mentors",
+        "Strongh",
+        "Colossus",
+        "pioneered",
+        "Wyatt",
+        "alliances",
+        "friendships",
+        "organise"
+      ],
+      "output_text": "This is how we do this because our ancestors wrote it so well for us - they knew all about where their life could take place if you chose them!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mentor, Coach, Aunt, forge, mentors, Strongh, Colossus, pioneered, Wyatt, alliances, friendships, organise\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mentor, Coach, Aunt, forge, mentors, Strongh, Colossus, pioneered, Wyatt, alliances, friendships, organise\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This is how we do this because our ancestors wrote it so well for us - they knew all about where their life could take place if you chose them!",
+        "continuation_text": "This is how we do this because our ancestors wrote it so well for us - they knew all about where their life could take place if you chose them!",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 140,
+        "new_token_count": 32,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 143,
+        "word_count": 30,
+        "unique_word_count": 30,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Putting",
+        "Perhaps",
+        "Nearly",
+        "Scientists",
+        "Quite",
+        "Years",
+        "Many",
+        "To",
+        "Things",
+        "Republicans",
+        "Those",
+        "Sadly"
+      ],
+      "output_text": "We know that your body had been created and stored on an infinite heap before any other man lived out? It was time to start doing more research into what happened when some people died or survived...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Putting, Perhaps, Nearly, Scientists, Quite, Years, Many, To, Things, Republicans, Those, Sadly\n\nTEXT:\nThis is how we do this because our ancestors wrote it so well for us - they knew all about where their life could take place if you chose them!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Putting, Perhaps, Nearly, Scientists, Quite, Years, Many, To, Things, Republicans, Those, Sadly\n\nTEXT:\nThis is how we do this because our ancestors wrote it so well for us - they knew all about where their life could take place if you chose them! We know that your body had been created and stored on an infinite heap before any other man lived out? It was time to start doing more research into what happened when some people died or survived...",
+        "continuation_text": "We know that your body had been created and stored on an infinite heap before any other man lived out? It was time to start doing more research into what happened when some people died or survived...",
+        "input_token_count": 116,
+        "raw_input_token_count": 116,
+        "output_token_count": 156,
+        "new_token_count": 40,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 199,
+        "word_count": 37,
+        "unique_word_count": 37,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "While",
+        "Though",
+        "Products",
+        "Despite",
+        "Although",
+        "Sweet",
+        "Like",
+        "Nearly",
+        "Cool",
+        "Nice",
+        "although",
+        "Recently"
+      ],
+      "output_text": "We need help!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: While, Though, Products, Despite, Although, Sweet, Like, Nearly, Cool, Nice, although, Recently\n\nTEXT:\nWe know that your body had been created and stored on an infinite heap before any other man lived out? It was time to start doing more research into what happened when some people died or survived...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: While, Though, Products, Despite, Although, Sweet, Like, Nearly, Cool, Nice, although, Recently\n\nTEXT:\nWe know that your body had been created and stored on an infinite heap before any other man lived out? It was time to start doing more research into what happened when some people died or survived... We need help!",
+        "continuation_text": "We need help!",
+        "input_token_count": 124,
+        "raw_input_token_count": 124,
+        "output_token_count": 129,
+        "new_token_count": 5,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 13,
+        "word_count": 3,
+        "unique_word_count": 3,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

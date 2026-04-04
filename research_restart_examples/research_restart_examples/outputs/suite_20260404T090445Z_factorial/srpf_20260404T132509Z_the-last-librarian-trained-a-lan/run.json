@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1355,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 19,
+        "word_count": 4,
+        "unique_word_count": 4,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 18,
+        "word_count": 2,
+        "unique_word_count": 2,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 483,
+        "word_count": 63,
+        "unique_word_count": 63,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 462,
+        "word_count": 49,
+        "unique_word_count": 49,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "The final LISP class will be teaching this subject at Stanford University, as well! Please note I am not affiliated with these labs (which would make it impossible to teach students), but my funding is for textbooks created by undergraduates who have already completed their masters or PhD programs there; they may also become interested into using them elsewhere during time spent abroad?",
+      "output_text": "Thank you so much!!",
+      "source_window_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+      "reflection_window_text": "The final LISP class will be teaching this subject at Stanford University, as well! Please note I am not affiliated with these labs (which would make it impossible to teach students), but my funding is for textbooks created by undergraduates who have already completed their masters or PhD programs there; they may also become interested into using them elsewhere during time spent abroad?",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The final LISP class will be teaching this subject at Stanford University, as well! Please note I am not affiliated with these labs (which would make it impossible to teach students), but my funding is for textbooks created by undergraduates who have already completed their masters or PhD programs there; they may also become interested into using them elsewhere during time spent abroad?\n\n",
+        "continuation_text": "The final LISP class will be teaching this subject at Stanford University, as well! Please note I am not affiliated with these labs (which would make it impossible to teach students), but my funding is for textbooks created by undergraduates who have already completed their masters or PhD programs there; they may also become interested into using them elsewhere during time spent abroad?",
+        "input_token_count": 92,
+        "raw_input_token_count": 92,
+        "output_token_count": 166,
+        "new_token_count": 74,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe final LISP class will be teaching this subject at Stanford University, as well! Please note I am not affiliated with these labs (which would make it impossible to teach students), but my funding is for textbooks created by undergraduates who have already completed their masters or PhD programs there; they may also become interested into using them elsewhere during time spent abroad?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe final LISP class will be teaching this subject at Stanford University, as well! Please note I am not affiliated with these labs (which would make it impossible to teach students), but my funding is for textbooks created by undergraduates who have already completed their masters or PhD programs there; they may also become interested into using them elsewhere during time spent abroad? Thank you so much!!",
+        "continuation_text": "Thank you so much!!",
+        "input_token_count": 152,
+        "raw_input_token_count": 152,
+        "output_token_count": 158,
+        "new_token_count": 6,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 19,
+        "word_count": 4,
+        "unique_word_count": 4,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "I just thought it might be useful to put an interactive version of this program into your browser too, for anyone who's interested :P! If something is not working out well or needs some help check me on Twitter http://twitter .",
+      "output_text": "Thanks everyone!!!",
+      "source_window_text": "Thank you so much!!",
+      "reflection_window_text": "I just thought it might be useful to put an interactive version of this program into your browser too, for anyone who's interested :P! If something is not working out well or needs some help check me on Twitter http://twitter .",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThank you so much!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThank you so much!! I just thought it might be useful to put an interactive version of this program into your browser too, for anyone who's interested :P! If something is not working out well or needs some help check me on Twitter http://twitter .",
+        "continuation_text": "I just thought it might be useful to put an interactive version of this program into your browser too, for anyone who's interested :P! If something is not working out well or needs some help check me on Twitter http://twitter .",
+        "input_token_count": 74,
+        "raw_input_token_count": 74,
+        "output_token_count": 122,
+        "new_token_count": 48,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThank you so much!!\n\nREFLECTION:\nI just thought it might be useful to put an interactive version of this program into your browser too, for anyone who's interested :P! If something is not working out well or needs some help check me on Twitter http://twitter .",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThank you so much!!\n\nREFLECTION:\nI just thought it might be useful to put an interactive version of this program into your browser too, for anyone who's interested :P! If something is not working out well or needs some help check me on Twitter http://twitter . Thanks everyone!!!",
+        "continuation_text": "Thanks everyone!!!",
+        "input_token_count": 109,
+        "raw_input_token_count": 109,
+        "output_token_count": 113,
+        "new_token_count": 4,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 18,
+        "word_count": 2,
+        "unique_word_count": 2,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "We have some awesome new features we're working on! Thank you all for supporting our work so far, I can't wait to see what comes next!!",
+      "output_text": "If anyone is interested in contributing please send me an email at [email protected] or via GitHub (http://github.\"com/sodoschner). We'll start collecting feedback soon 🙂\n\n\"Text Language Modeling With JavaScript and Web Components\": https:/ /projectsblogspotting.wordpress; http\\ // www .net/?fid=1005 ; src=/javascript ?curl -D '{\"foo\":\"bar\"}' : \"\\\"text\\\\\\\": \\\"{name}\\\"; var b = document.getElementById('a'); console.$(b); function f() { return this._href + '.css'; } }; Read More >",
+      "source_window_text": "Thanks everyone!!!",
+      "reflection_window_text": "We have some awesome new features we're working on! Thank you all for supporting our work so far, I can't wait to see what comes next!!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThanks everyone!!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThanks everyone!!! We have some awesome new features we're working on! Thank you all for supporting our work so far, I can't wait to see what comes next!!",
+        "continuation_text": "We have some awesome new features we're working on! Thank you all for supporting our work so far, I can't wait to see what comes next!!",
+        "input_token_count": 72,
+        "raw_input_token_count": 72,
+        "output_token_count": 104,
+        "new_token_count": 32,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThanks everyone!!!\n\nREFLECTION:\nWe have some awesome new features we're working on! Thank you all for supporting our work so far, I can't wait to see what comes next!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThanks everyone!!!\n\nREFLECTION:\nWe have some awesome new features we're working on! Thank you all for supporting our work so far, I can't wait to see what comes next!! If anyone is interested in contributing please send me an email at [email protected] or via GitHub (http://github.\"com/sodoschner). We'll start collecting feedback soon 🙂\n\n\"Text Language Modeling With JavaScript and Web Components\": https:/ /projectsblogspotting.wordpress; http\\ // www .net/?fid=1005 ; src=/javascript ?curl -D '{\"foo\":\"bar\"}' : \"\\\"text\\\\\\\": \\\"{name}\\\"; var b = document.getElementById('a'); console.$(b); function f() { return this._href + '.css'; } }; Read More >",
+        "continuation_text": "If anyone is interested in contributing please send me an email at [email protected] or via GitHub (http://github.\"com/sodoschner). We'll start collecting feedback soon 🙂\n\n\"Text Language Modeling With JavaScript and Web Components\": https:/ /projectsblogspotting.wordpress; http\\ // www .net/?fid=1005 ; src=/javascript ?curl -D '{\"foo\":\"bar\"}' : \"\\\"text\\\\\\\": \\\"{name}\\\"; var b = document.getElementById('a'); console.$(b); function f() { return this._href + '.css'; } }; Read More >",
+        "input_token_count": 91,
+        "raw_input_token_count": 91,
+        "output_token_count": 225,
+        "new_token_count": 134,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 483,
+        "word_count": 63,
+        "unique_word_count": 63,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "<iframe rel=\"stylesheet\" width=\"140px\" height=\"\" type=\"mixin\" style=\"border:-3 1pt thick;\" content={content:\"<img title='Animated Text Example Of A Script For JS In Your Site\\' on canvas\"></div>\",\"embed\":\"/assets//www?vkContentViewContainer></iframe>\", targetUrl=\"https://api_cookies.wikiaengine.com/viewtopic...p&tplihit\"> </script><span class='mwjsg'>The Javascript Engine offers us some tools for making HTML code readable to any computer without much effort.</span>,\"displayNameTitle:'Saving Word, Excel', ''styleType': normal,'fontFamily:'HelveticaNeue','Stripe Nacelle",
+      "output_text": "sans serif ltr Sans Tertullian Fortunetes Italic Date Themes Color Black 10 20 30 40 50 70 80 90 100 120 200 400 500 600 900 1000 */</span>\" }, hideAllAboutUsagesInYourSite:{typeof cntl=[], displayValueId:[],\"visibilityDisabledNotificationsEnabled\":-1}, url=\"/sites/default/filesystemd/*\\/webpages/$nsfw/.htaccess/-0F\"?var urls=('.ts2')[6];forEach($q => $r){ if($u['log'] == $_POST[\"HTTP\"],$qux || ($uid) &&!^=$null)){ echo $(echo \"'+@arguments|%C %#`\") | sed '/",
+      "source_window_text": "If anyone is interested in contributing please send me an email at [email protected] or via GitHub (http://github.\"com/sodoschner). We'll start collecting feedback soon 🙂\n\n\"Text Language Modeling With JavaScript and Web Components\": https:/ /projectsblogspotting.wordpress; http\\ // www .net/?fid=1005 ; src=/javascript ?curl -D '{\"foo\":\"bar\"}' : \"\\\"text\\\\\\\": \\\"{name}\\\"; var b = document.getElementById('a'); console.$(b); function f() { return this._href + '.css'; } }; Read More >",
+      "reflection_window_text": "<iframe rel=\"stylesheet\" width=\"140px\" height=\"\" type=\"mixin\" style=\"border:-3 1pt thick;\" content={content:\"<img title='Animated Text Example Of A Script For JS In Your Site\\' on canvas\"></div>\",\"embed\":\"/assets//www?vkContentViewContainer></iframe>\", targetUrl=\"https://api_cookies.wikiaengine.com/viewtopic...p&tplihit\"> </script><span class='mwjsg'>The Javascript Engine offers us some tools for making HTML code readable to any computer without much effort.</span>,\"displayNameTitle:'Saving Word, Excel', ''styleType': normal,'fontFamily:'HelveticaNeue','Stripe Nacelle",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIf anyone is interested in contributing please send me an email at [email protected] or via GitHub (http://github.\"com/sodoschner). We'll start collecting feedback soon 🙂\n\n\"Text Language Modeling With JavaScript and Web Components\": https:/ /projectsblogspotting.wordpress; http\\ // www .net/?fid=1005 ; src=/javascript ?curl -D '{\"foo\":\"bar\"}' : \"\\\"text\\\\\\\": \\\"{name}\\\"; var b = document.getElementById('a'); console.$(b); function f() { return this._href + '.css'; } }; Read More >",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIf anyone is interested in contributing please send me an email at [email protected] or via GitHub (http://github.\"com/sodoschner). We'll start collecting feedback soon 🙂\n\n\"Text Language Modeling With JavaScript and Web Components\": https:/ /projectsblogspotting.wordpress; http\\ // www .net/?fid=1005 ; src=/javascript ?curl -D '{\"foo\":\"bar\"}' : \"\\\"text\\\\\\\": \\\"{name}\\\"; var b = document.getElementById('a'); console.$(b); function f() { return this._href + '.css'; } }; Read More > <iframe rel=\"stylesheet\" width=\"140px\" height=\"\" type=\"mixin\" style=\"border:-3 1pt thick;\" content={content:\"<img title='Animated Text Example Of A Script For JS In Your Site\\' on canvas\"></div>\",\"embed\":\"/assets//www?vkContentViewContainer></iframe>\", targetUrl=\"https://api_cookies.wikiaengine.com/viewtopic...p&tplihit\"> </script><span class='mwjsg'>The Javascript Engine offers us some tools for making HTML code readable to any computer without much effort.</span>,\"displayNameTitle:'Saving Word, Excel', ''styleType': normal,'fontFamily:'HelveticaNeue','Stripe Nacelle",
+        "continuation_text": "<iframe rel=\"stylesheet\" width=\"140px\" height=\"\" type=\"mixin\" style=\"border:-3 1pt thick;\" content={content:\"<img title='Animated Text Example Of A Script For JS In Your Site\\' on canvas\"></div>\",\"embed\":\"/assets//www?vkContentViewContainer></iframe>\", targetUrl=\"https://api_cookies.wikiaengine.com/viewtopic...p&tplihit\"> </script><span class='mwjsg'>The Javascript Engine offers us some tools for making HTML code readable to any computer without much effort.</span>,\"displayNameTitle:'Saving Word, Excel', ''styleType': normal,'fontFamily:'HelveticaNeue','Stripe Nacelle",
+        "input_token_count": 203,
+        "raw_input_token_count": 203,
+        "output_token_count": 363,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nIf anyone is interested in contributing please send me an email at [email protected] or via GitHub (http://github.\"com/sodoschner). We'll start collecting feedback soon 🙂\n\n\"Text Language Modeling With JavaScript and Web Components\": https:/ /projectsblogspotting.wordpress; http\\ // www .net/?fid=1005 ; src=/javascript ?curl -D '{\"foo\":\"bar\"}' : \"\\\"text\\\\\\\": \\\"{name}\\\"; var b = document.getElementById('a'); console.$(b); function f() { return this._href + '.css'; } }; Read More >\n\nREFLECTION:\n<iframe rel=\"stylesheet\" width=\"140px\" height=\"\" type=\"mixin\" style=\"border:-3 1pt thick;\" content={content:\"<img title='Animated Text Example Of A Script For JS In Your Site\\' on canvas\"></div>\",\"embed\":\"/assets//www?vkContentViewContainer></iframe>\", targetUrl=\"https://api_cookies.wikiaengine.com/viewtopic...p&tplihit\"> </script><span class='mwjsg'>The Javascript Engine offers us some tools for making HTML code readable to any computer without much effort.</span>,\"displayNameTitle:'Saving Word, Excel', ''styleType': normal,'fontFamily:'HelveticaNeue','Stripe Nacelle",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nIf anyone is interested in contributing please send me an email at [email protected] or via GitHub (http://github.\"com/sodoschner). We'll start collecting feedback soon 🙂\n\n\"Text Language Modeling With JavaScript and Web Components\": https:/ /projectsblogspotting.wordpress; http\\ // www .net/?fid=1005 ; src=/javascript ?curl -D '{\"foo\":\"bar\"}' : \"\\\"text\\\\\\\": \\\"{name}\\\"; var b = document.getElementById('a'); console.$(b); function f() { return this._href + '.css'; } }; Read More >\n\nREFLECTION:\n<iframe rel=\"stylesheet\" width=\"140px\" height=\"\" type=\"mixin\" style=\"border:-3 1pt thick;\" content={content:\"<img title='Animated Text Example Of A Script For JS In Your Site\\' on canvas\"></div>\",\"embed\":\"/assets//www?vkContentViewContainer></iframe>\", targetUrl=\"https://api_cookies.wikiaengine.com/viewtopic...p&tplihit\"> </script><span class='mwjsg'>The Javascript Engine offers us some tools for making HTML code readable to any computer without much effort.</span>,\"displayNameTitle:'Saving Word, Excel', ''styleType': normal,'fontFamily:'HelveticaNeue','Stripe Nacelle sans serif ltr Sans Tertullian Fortunetes Italic Date Themes Color Black 10 20 30 40 50 70 80 90 100 120 200 400 500 600 900 1000 */</span>\" }, hideAllAboutUsagesInYourSite:{typeof cntl=[], displayValueId:[],\"visibilityDisabledNotificationsEnabled\":-1}, url=\"/sites/default/filesystemd/*\\/webpages/$nsfw/.htaccess/-0F\"?var urls=('.ts2')[6];forEach($q => $r){ if($u['log'] == $_POST[\"HTTP\"],$qux || ($uid) &&!^=$null)){ echo $(echo \"'+@arguments|%C %#`\") | sed '/",
+        "continuation_text": "sans serif ltr Sans Tertullian Fortunetes Italic Date Themes Color Black 10 20 30 40 50 70 80 90 100 120 200 400 500 600 900 1000 */</span>\" }, hideAllAboutUsagesInYourSite:{typeof cntl=[], displayValueId:[],\"visibilityDisabledNotificationsEnabled\":-1}, url=\"/sites/default/filesystemd/*\\/webpages/$nsfw/.htaccess/-0F\"?var urls=('.ts2')[6];forEach($q => $r){ if($u['log'] == $_POST[\"HTTP\"],$qux || ($uid) &&!^=$null)){ echo $(echo \"'+@arguments|%C %#`\") | sed '/",
+        "input_token_count": 351,
+        "raw_input_token_count": 351,
+        "output_token_count": 511,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 462,
+        "word_count": 49,
+        "unique_word_count": 49,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

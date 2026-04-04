@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1397,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 100,
+        "word_count": 20,
+        "unique_word_count": 20,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 374,
+        "word_count": 68,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.9852941176470589,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 725,
+        "word_count": 120,
+        "unique_word_count": 114,
+        "unique_word_ratio": 0.95,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Did",
+        "Can",
+        "Fortunately",
+        "Luckily",
+        "Does",
+        "Altern",
+        "An",
+        "Sure",
+        "Sometimes",
+        "Interestingly",
+        "Thankfully",
+        "Isn"
+      ],
+      "output_text": "Or maybe because you're just talking about one thing at a time - that's what this book is all about.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Or maybe because you're just talking about one thing at a time - that's what this book is all about.",
+        "continuation_text": "Or maybe because you're just talking about one thing at a time - that's what this book is all about.",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 135,
+        "new_token_count": 24,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 100,
+        "word_count": 20,
+        "unique_word_count": 20,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Or",
+        "Regardless",
+        "To",
+        "According",
+        "While",
+        "Nearly",
+        "Some",
+        "Once",
+        "One",
+        "Apparently",
+        "Many",
+        "Personally"
+      ],
+      "output_text": "It really shows us where an idea gets lost and disappears completely from our minds (although I don't think it does). But even if we continue on ignoring things which should be left unchecked by some people who have been around for years or may never see their own way through these events until someone else changes them! And once again, there can be no magic trick here...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Or, Regardless, To, According, While, Nearly, Some, Once, One, Apparently, Many, Personally\n\nTEXT:\nOr maybe because you're just talking about one thing at a time - that's what this book is all about.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Or, Regardless, To, According, While, Nearly, Some, Once, One, Apparently, Many, Personally\n\nTEXT:\nOr maybe because you're just talking about one thing at a time - that's what this book is all about. It really shows us where an idea gets lost and disappears completely from our minds (although I don't think it does). But even if we continue on ignoring things which should be left unchecked by some people who have been around for years or may never see their own way through these events until someone else changes them! And once again, there can be no magic trick here...",
+        "continuation_text": "It really shows us where an idea gets lost and disappears completely from our minds (although I don't think it does). But even if we continue on ignoring things which should be left unchecked by some people who have been around for years or may never see their own way through these events until someone else changes them! And once again, there can be no magic trick here...",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 183,
+        "new_token_count": 75,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 374,
+        "word_count": 68,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.9852941176470589,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "It",
+        "Isn",
+        "There",
+        "Maybe",
+        "Nobody",
+        "That",
+        "Everybody",
+        "Sometimes",
+        "Yeah",
+        "Everyone",
+        "Obviously",
+        "Hopefully"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: It, Isn, There, Maybe, Nobody, That, Everybody, Sometimes, Yeah, Everyone, Obviously, Hopefully\n\nTEXT:\nIt really shows us where an idea gets lost and disappears completely from our minds (although I don't think it does). But even if we continue on ignoring things which should be left unchecked by some people who have been around for years or may never see their own way through these events until someone else changes them! And once again, there can be no magic trick here...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: It, Isn, There, Maybe, Nobody, That, Everybody, Sometimes, Yeah, Everyone, Obviously, Hopefully\n\nTEXT:\nIt really shows us where an idea gets lost and disappears completely from our minds (although I don't think it does). But even if we continue on ignoring things which should be left unchecked by some people who have been around for years or may never see their own way through these events until someone else changes them! And once again, there can be no magic trick here...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: It, Isn, There, Maybe, Nobody, That, Everybody, Sometimes, Yeah, Everyone, Obviously, Hopefully\n\nTEXT:\nIt really shows us where an idea gets lost and disappears completely from our minds (although I don't think it does). But even if we continue on ignoring things which should be left unchecked by some people who have been around for years or may never see their own way through these events until someone else changes them! And once again, there can be no magic trick here...",
+        "continuation_text": "",
+        "input_token_count": 159,
+        "raw_input_token_count": 159,
+        "output_token_count": 160,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 725,
+        "word_count": 120,
+        "unique_word_count": 114,
+        "unique_word_ratio": 0.95,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

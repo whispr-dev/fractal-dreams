@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1386,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 661,
+        "word_count": 113,
+        "unique_word_count": 111,
+        "unique_word_ratio": 0.9823008849557522,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 133,
+        "word_count": 23,
+        "unique_word_count": 23,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 449,
+        "word_count": 71,
+        "unique_word_count": 68,
+        "unique_word_ratio": 0.9577464788732394,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 752,
+        "word_count": 119,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.6302521008403361,
+        "repeated_bigram_count": 34
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "had",
+        "are",
+        "have",
+        "It",
+        "make",
+        "if",
+        "made",
+        "was",
+        "to",
+        "makes"
+      ],
+      "output_text": "The same is true of non-receiving an \"exchange\" or something which has been repeated for years (for example this sentence) with another process as well. I would agree that there is no need from any one system just yet – they all work on their respective properties at once! This idea seems so odd now because only two systems will ever communicate without having written down exactly how much each other wrote off them first before writing about anything else entirely except what happened after listening to those parts over several months…but who knows? And maybe we don't want ourselves too concerned again since our lives already require us to write up some",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The same is true of non-receiving an \"exchange\" or something which has been repeated for years (for example this sentence) with another process as well. I would agree that there is no need from any one system just yet – they all work on their respective properties at once! This idea seems so odd now because only two systems will ever communicate without having written down exactly how much each other wrote off them first before writing about anything else entirely except what happened after listening to those parts over several months…but who knows? And maybe we don't want ourselves too concerned again since our lives already require us to write up some",
+        "continuation_text": "The same is true of non-receiving an \"exchange\" or something which has been repeated for years (for example this sentence) with another process as well. I would agree that there is no need from any one system just yet – they all work on their respective properties at once! This idea seems so odd now because only two systems will ever communicate without having written down exactly how much each other wrote off them first before writing about anything else entirely except what happened after listening to those parts over several months…but who knows? And maybe we don't want ourselves too concerned again since our lives already require us to write up some",
+        "input_token_count": 105,
+        "raw_input_token_count": 105,
+        "output_token_count": 233,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 661,
+        "word_count": 113,
+        "unique_word_count": 111,
+        "unique_word_ratio": 0.9823008849557522,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "had",
+        "is",
+        "they",
+        "in",
+        "the",
+        "has",
+        "was"
+      ],
+      "output_text": "more things and make sure everyone does not worry anymore even though everything could happen when your time comes back soon enough 😀",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, is, they, in, the, has, was\n\nTEXT:\nThe same is true of non-receiving an \"exchange\" or something which has been repeated for years (for example this sentence) with another process as well. I would agree that there is no need from any one system just yet – they all work on their respective properties at once! This idea seems so odd now because only two systems will ever communicate without having written down exactly how much each other wrote off them first before writing about anything else entirely except what happened after listening to those parts over several months…but who knows? And maybe we don't want ourselves too concerned again since our lives already require us to write up some",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, is, they, in, the, has, was\n\nTEXT:\nThe same is true of non-receiving an \"exchange\" or something which has been repeated for years (for example this sentence) with another process as well. I would agree that there is no need from any one system just yet – they all work on their respective properties at once! This idea seems so odd now because only two systems will ever communicate without having written down exactly how much each other wrote off them first before writing about anything else entirely except what happened after listening to those parts over several months…but who knows? And maybe we don't want ourselves too concerned again since our lives already require us to write up some more things and make sure everyone does not worry anymore even though everything could happen when your time comes back soon enough 😀",
+        "continuation_text": "more things and make sure everyone does not worry anymore even though everything could happen when your time comes back soon enough 😀",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 232,
+        "new_token_count": 25,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 133,
+        "word_count": 23,
+        "unique_word_count": 23,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "did",
+        "does",
+        "didn",
+        "makes",
+        "were",
+        "doesn",
+        "are",
+        "could",
+        "when",
+        "have"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, did, does, didn, makes, were, doesn, are, could, when, have\n\nTEXT:\nmore things and make sure everyone does not worry anymore even though everything could happen when your time comes back soon enough 😀",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, did, does, didn, makes, were, doesn, are, could, when, have\n\nTEXT:\nmore things and make sure everyone does not worry anymore even though everything could happen when your time comes back soon enough 😀",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, did, does, didn, makes, were, doesn, are, could, when, have\n\nTEXT:\nmore things and make sure everyone does not worry anymore even though everything could happen when your time comes back soon enough 😀",
+        "continuation_text": "",
+        "input_token_count": 103,
+        "raw_input_token_count": 103,
+        "output_token_count": 104,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 449,
+        "word_count": 71,
+        "unique_word_count": 68,
+        "unique_word_ratio": 0.9577464788732394,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "are",
+        "were",
+        "it",
+        "is",
+        "if",
+        ",",
+        "have",
+        "was",
+        "had",
+        "did",
+        "in",
+        "has"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, were, it, is, if, ,, have, was, had, did, in, has\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, did, does, didn, makes, were, doesn, are, could, when, have\n\nTEXT:\nmore things and make sure everyone does not worry anymore even though everything could happen when your time comes back soon enough 😀",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, were, it, is, if, ,, have, was, had, did, in, has\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, did, does, didn, makes, were, doesn, are, could, when, have\n\nTEXT:\nmore things and make sure everyone does not worry anymore even though everything could happen when your time comes back soon enough 😀",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, were, it, is, if, ,, have, was, had, did, in, has\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, did, does, didn, makes, were, doesn, are, could, when, have\n\nTEXT:\nmore things and make sure everyone does not worry anymore even though everything could happen when your time comes back soon enough 😀",
+        "continuation_text": "",
+        "input_token_count": 182,
+        "raw_input_token_count": 182,
+        "output_token_count": 183,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 752,
+        "word_count": 119,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.6302521008403361,
+        "repeated_bigram_count": 34
+      }
+    }
+  ]
+}

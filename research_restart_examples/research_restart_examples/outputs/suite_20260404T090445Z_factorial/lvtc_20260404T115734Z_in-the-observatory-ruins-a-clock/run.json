@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1230,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 365,
+        "word_count": 62,
+        "unique_word_count": 62,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 671,
+        "word_count": 110,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9545454545454546,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 975,
+        "word_count": 158,
+        "unique_word_count": 107,
+        "unique_word_ratio": 0.6772151898734177,
+        "repeated_bigram_count": 37
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1276,
+        "word_count": 206,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.5242718446601942,
+        "repeated_bigram_count": 75
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "had",
+        "it",
+        "if",
+        "was",
+        "have",
+        "are",
+        "is",
+        "the",
+        "has",
+        "in",
+        "did"
+      ],
+      "output_text": "With all our knowledge, we learned that there would be no escape on earth after another infinite moment; only those who understood this should not suffer at any cost from their failure. What I thought about today's implementation (and thus will) mean for future research here can still help you understand how people come up with new ideas or make better decisions!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, it, if, was, have, are, is, the, has, in, did\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, it, if, was, have, are, is, the, has, in, did\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. With all our knowledge, we learned that there would be no escape on earth after another infinite moment; only those who understood this should not suffer at any cost from their failure. What I thought about today's implementation (and thus will) mean for future research here can still help you understand how people come up with new ideas or make better decisions!",
+        "continuation_text": "With all our knowledge, we learned that there would be no escape on earth after another infinite moment; only those who understood this should not suffer at any cost from their failure. What I thought about today's implementation (and thus will) mean for future research here can still help you understand how people come up with new ideas or make better decisions!",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 178,
+        "new_token_count": 70,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 365,
+        "word_count": 62,
+        "unique_word_count": 62,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "were",
+        "have",
+        "if",
+        "had",
+        "is",
+        "in",
+        "the",
+        "we",
+        "they",
+        "this"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, have, if, had, is, in, the, we, they, this\n\nTEXT:\nWith all our knowledge, we learned that there would be no escape on earth after another infinite moment; only those who understood this should not suffer at any cost from their failure. What I thought about today's implementation (and thus will) mean for future research here can still help you understand how people come up with new ideas or make better decisions!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, have, if, had, is, in, the, we, they, this\n\nTEXT:\nWith all our knowledge, we learned that there would be no escape on earth after another infinite moment; only those who understood this should not suffer at any cost from their failure. What I thought about today's implementation (and thus will) mean for future research here can still help you understand how people come up with new ideas or make better decisions!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, have, if, had, is, in, the, we, they, this\n\nTEXT:\nWith all our knowledge, we learned that there would be no escape on earth after another infinite moment; only those who understood this should not suffer at any cost from their failure. What I thought about today's implementation (and thus will) mean for future research here can still help you understand how people come up with new ideas or make better decisions!",
+        "continuation_text": "",
+        "input_token_count": 148,
+        "raw_input_token_count": 148,
+        "output_token_count": 149,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 671,
+        "word_count": 110,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9545454545454546,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "were",
+        "in",
+        ",",
+        "have",
+        "is",
+        "if",
+        "the",
+        "had",
+        "was",
+        "with"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, in, ,, have, is, if, the, had, was, with\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, have, if, had, is, in, the, we, they, this\n\nTEXT:\nWith all our knowledge, we learned that there would be no escape on earth after another infinite moment; only those who understood this should not suffer at any cost from their failure. What I thought about today's implementation (and thus will) mean for future research here can still help you understand how people come up with new ideas or make better decisions!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, in, ,, have, is, if, the, had, was, with\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, have, if, had, is, in, the, we, they, this\n\nTEXT:\nWith all our knowledge, we learned that there would be no escape on earth after another infinite moment; only those who understood this should not suffer at any cost from their failure. What I thought about today's implementation (and thus will) mean for future research here can still help you understand how people come up with new ideas or make better decisions!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, in, ,, have, is, if, the, had, was, with\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, have, if, had, is, in, the, we, they, this\n\nTEXT:\nWith all our knowledge, we learned that there would be no escape on earth after another infinite moment; only those who understood this should not suffer at any cost from their failure. What I thought about today's implementation (and thus will) mean for future research here can still help you understand how people come up with new ideas or make better decisions!",
+        "continuation_text": "",
+        "input_token_count": 227,
+        "raw_input_token_count": 227,
+        "output_token_count": 228,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 975,
+        "word_count": 158,
+        "unique_word_count": 107,
+        "unique_word_ratio": 0.6772151898734177,
+        "repeated_bigram_count": 37
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "are",
+        "it",
+        ",",
+        "were",
+        "in",
+        "is",
+        "have",
+        "the",
+        "if",
+        "had",
+        "was",
+        "."
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, it, ,, were, in, is, have, the, if, had, was, .\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, in, ,, have, is, if, the, had, was, with\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, have, if, had, is, in, the, we, they, this\n\nTEXT:\nWith all our knowledge, we learned that there would be no escape on earth after another infinite moment; only those who understood this should not suffer at any cost from their failure. What I thought about today's implementation (and thus will) mean for future research here can still help you understand how people come up with new ideas or make better decisions!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, it, ,, were, in, is, have, the, if, had, was, .\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, in, ,, have, is, if, the, had, was, with\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, have, if, had, is, in, the, we, they, this\n\nTEXT:\nWith all our knowledge, we learned that there would be no escape on earth after another infinite moment; only those who understood this should not suffer at any cost from their failure. What I thought about today's implementation (and thus will) mean for future research here can still help you understand how people come up with new ideas or make better decisions!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, it, ,, were, in, is, have, the, if, had, was, .\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, in, ,, have, is, if, the, had, was, with\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, have, if, had, is, in, the, we, they, this\n\nTEXT:\nWith all our knowledge, we learned that there would be no escape on earth after another infinite moment; only those who understood this should not suffer at any cost from their failure. What I thought about today's implementation (and thus will) mean for future research here can still help you understand how people come up with new ideas or make better decisions!",
+        "continuation_text": "",
+        "input_token_count": 306,
+        "raw_input_token_count": 306,
+        "output_token_count": 307,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1276,
+        "word_count": 206,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.5242718446601942,
+        "repeated_bigram_count": 75
+      }
+    }
+  ]
+}

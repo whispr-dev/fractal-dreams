@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1127,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 19,
+        "word_count": 4,
+        "unique_word_count": 4,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 270,
+        "word_count": 44,
+        "unique_word_count": 44,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 827,
+        "word_count": 135,
+        "unique_word_count": 135,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 336,
+        "word_count": 58,
+        "unique_word_count": 58,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "We've all seen it on TV but have never found out what happens when you spend days thinking of every possible idea before actually doing anything! As I write this sentence we're sitting at three stars with an astronomical background where there's no sunrise nor sunset so for me today is another perfect opportunity to remind myself how amazing these planets really look even though they can't tell their true colours from ours yet!!! There'll be lots & plenty going into your next research project too…",
+      "output_text": "I hope that helps!!",
+      "source_window_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+      "reflection_window_text": "We've all seen it on TV but have never found out what happens when you spend days thinking of every possible idea before actually doing anything! As I write this sentence we're sitting at three stars with an astronomical background where there's no sunrise nor sunset so for me today is another perfect opportunity to remind myself how amazing these planets really look even though they can't tell their true colours from ours yet!!! There'll be lots & plenty going into your next research project too…",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. We've all seen it on TV but have never found out what happens when you spend days thinking of every possible idea before actually doing anything! As I write this sentence we're sitting at three stars with an astronomical background where there's no sunrise nor sunset so for me today is another perfect opportunity to remind myself how amazing these planets really look even though they can't tell their true colours from ours yet!!! There'll be lots & plenty going into your next research project too…",
+        "continuation_text": "We've all seen it on TV but have never found out what happens when you spend days thinking of every possible idea before actually doing anything! As I write this sentence we're sitting at three stars with an astronomical background where there's no sunrise nor sunset so for me today is another perfect opportunity to remind myself how amazing these planets really look even though they can't tell their true colours from ours yet!!! There'll be lots & plenty going into your next research project too…",
+        "input_token_count": 98,
+        "raw_input_token_count": 98,
+        "output_token_count": 193,
+        "new_token_count": 95,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\n\nREFLECTION:\nWe've all seen it on TV but have never found out what happens when you spend days thinking of every possible idea before actually doing anything! As I write this sentence we're sitting at three stars with an astronomical background where there's no sunrise nor sunset so for me today is another perfect opportunity to remind myself how amazing these planets really look even though they can't tell their true colours from ours yet!!! There'll be lots & plenty going into your next research project too…",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\n\nREFLECTION:\nWe've all seen it on TV but have never found out what happens when you spend days thinking of every possible idea before actually doing anything! As I write this sentence we're sitting at three stars with an astronomical background where there's no sunrise nor sunset so for me today is another perfect opportunity to remind myself how amazing these planets really look even though they can't tell their true colours from ours yet!!! There'll be lots & plenty going into your next research project too…I hope that helps!!",
+        "continuation_text": "I hope that helps!!",
+        "input_token_count": 180,
+        "raw_input_token_count": 180,
+        "output_token_count": 186,
+        "new_token_count": 6,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 19,
+        "word_count": 4,
+        "unique_word_count": 4,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": ":)",
+      "output_text": "This is what I wrote on Reddit yesterday regarding my recent research into online learning and self instruction (SELF-ISKED). It's really cool how this sorta thing has become so much more popular than ever before because we're all working harder together just for fun...",
+      "source_window_text": "I hope that helps!!",
+      "reflection_window_text": ":)",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nI hope that helps!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nI hope that helps!! :)",
+        "continuation_text": ":)",
+        "input_token_count": 74,
+        "raw_input_token_count": 74,
+        "output_token_count": 76,
+        "new_token_count": 2,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nI hope that helps!!\n\nREFLECTION:\n:)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nI hope that helps!!\n\nREFLECTION:\n:) This is what I wrote on Reddit yesterday regarding my recent research into online learning and self instruction (SELF-ISKED). It's really cool how this sorta thing has become so much more popular than ever before because we're all working harder together just for fun...",
+        "continuation_text": "This is what I wrote on Reddit yesterday regarding my recent research into online learning and self instruction (SELF-ISKED). It's really cool how this sorta thing has become so much more popular than ever before because we're all working harder together just for fun...",
+        "input_token_count": 64,
+        "raw_input_token_count": 64,
+        "output_token_count": 120,
+        "new_token_count": 56,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 270,
+        "word_count": 44,
+        "unique_word_count": 44,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "not to mention it works both ways too well! This week, however you may have seen me try out another approach - let us begin with some examples of teaching yourself about social networks using your brainwaves.... by listening to an interesting video clip or even doing exercises which allow our attention to fall away from other areas such as words/language structures where they don't feel like their own; i think one important principle would be \"When people look at something else...\" One last word here.. if there were any good writing done recently , then maybe he'd teach students reading comprehension again today :)",
+      "output_text": "So far but worth trying :p And now that these methods work very successfully-- thank you guys SO MUCH!!!!!! You've helped spread understanding across many sites through posting information freely around reddit without leaving ANYONE alone!!!!! Thank YOU!!! We hope those who participate will get new ideas over time :-) The best part though was knowing everyone had also tried them -- probably several times already!--and getting feedback while playing against others ;) Thanks btw :( To conclude #2 --- 1) There can only be three possible paths between practice & execution ------------ On June 6th 2014 @bob_c posted \"...that makes two sense\" after his article made headlines back when the website said   `this guy must know better' .... . That post went viral quite quickly since most experts agree ... In fact among writers",
+      "source_window_text": "This is what I wrote on Reddit yesterday regarding my recent research into online learning and self instruction (SELF-ISKED). It's really cool how this sorta thing has become so much more popular than ever before because we're all working harder together just for fun...",
+      "reflection_window_text": "not to mention it works both ways too well! This week, however you may have seen me try out another approach - let us begin with some examples of teaching yourself about social networks using your brainwaves.... by listening to an interesting video clip or even doing exercises which allow our attention to fall away from other areas such as words/language structures where they don't feel like their own; i think one important principle would be \"When people look at something else...\" One last word here.. if there were any good writing done recently , then maybe he'd teach students reading comprehension again today :)",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThis is what I wrote on Reddit yesterday regarding my recent research into online learning and self instruction (SELF-ISKED). It's really cool how this sorta thing has become so much more popular than ever before because we're all working harder together just for fun...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThis is what I wrote on Reddit yesterday regarding my recent research into online learning and self instruction (SELF-ISKED). It's really cool how this sorta thing has become so much more popular than ever before because we're all working harder together just for fun... not to mention it works both ways too well! This week, however you may have seen me try out another approach - let us begin with some examples of teaching yourself about social networks using your brainwaves.... by listening to an interesting video clip or even doing exercises which allow our attention to fall away from other areas such as words/language structures where they don't feel like their own; i think one important principle would be \"When people look at something else...\" One last word here.. if there were any good writing done recently , then maybe he'd teach students reading comprehension again today :)",
+        "continuation_text": "not to mention it works both ways too well! This week, however you may have seen me try out another approach - let us begin with some examples of teaching yourself about social networks using your brainwaves.... by listening to an interesting video clip or even doing exercises which allow our attention to fall away from other areas such as words/language structures where they don't feel like their own; i think one important principle would be \"When people look at something else...\" One last word here.. if there were any good writing done recently , then maybe he'd teach students reading comprehension again today :)",
+        "input_token_count": 124,
+        "raw_input_token_count": 124,
+        "output_token_count": 242,
+        "new_token_count": 118,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThis is what I wrote on Reddit yesterday regarding my recent research into online learning and self instruction (SELF-ISKED). It's really cool how this sorta thing has become so much more popular than ever before because we're all working harder together just for fun...\n\nREFLECTION:\nnot to mention it works both ways too well! This week, however you may have seen me try out another approach - let us begin with some examples of teaching yourself about social networks using your brainwaves.... by listening to an interesting video clip or even doing exercises which allow our attention to fall away from other areas such as words/language structures where they don't feel like their own; i think one important principle would be \"When people look at something else...\" One last word here.. if there were any good writing done recently , then maybe he'd teach students reading comprehension again today :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThis is what I wrote on Reddit yesterday regarding my recent research into online learning and self instruction (SELF-ISKED). It's really cool how this sorta thing has become so much more popular than ever before because we're all working harder together just for fun...\n\nREFLECTION:\nnot to mention it works both ways too well! This week, however you may have seen me try out another approach - let us begin with some examples of teaching yourself about social networks using your brainwaves.... by listening to an interesting video clip or even doing exercises which allow our attention to fall away from other areas such as words/language structures where they don't feel like their own; i think one important principle would be \"When people look at something else...\" One last word here.. if there were any good writing done recently , then maybe he'd teach students reading comprehension again today :) So far but worth trying :p And now that these methods work very successfully-- thank you guys SO MUCH!!!!!! You've helped spread understanding across many sites through posting information freely around reddit without leaving ANYONE alone!!!!! Thank YOU!!! We hope those who participate will get new ideas over time :-) The best part though was knowing everyone had also tried them -- probably several times already!--and getting feedback while playing against others ;) Thanks btw :( To conclude #2 --- 1) There can only be three possible paths between practice & execution ------------ On June 6th 2014 @bob_c posted \"...that makes two sense\" after his article made headlines back when the website said   `this guy must know better' .... . That post went viral quite quickly since most experts agree ... In fact among writers",
+        "continuation_text": "So far but worth trying :p And now that these methods work very successfully-- thank you guys SO MUCH!!!!!! You've helped spread understanding across many sites through posting information freely around reddit without leaving ANYONE alone!!!!! Thank YOU!!! We hope those who participate will get new ideas over time :-) The best part though was knowing everyone had also tried them -- probably several times already!--and getting feedback while playing against others ;) Thanks btw :( To conclude #2 --- 1) There can only be three possible paths between practice & execution ------------ On June 6th 2014 @bob_c posted \"...that makes two sense\" after his article made headlines back when the website said   `this guy must know better' .... . That post went viral quite quickly since most experts agree ... In fact among writers",
+        "input_token_count": 229,
+        "raw_input_token_count": 229,
+        "output_token_count": 389,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 827,
+        "word_count": 135,
+        "unique_word_count": 135,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": ", authors have often suggested using this same approach (even if they don't explicitly say so). One possibility is to play with some data before building on it... I believe there's even an excellent book out by Prof. Steve Aarons called This Simple Idea Works for Web Designers , which discusses how \"reusing existing HTML as markup material has been used extensively [sic]\" of course http://www/aboutpage/howstuffworks/?t=5#s11n6wq3e8xk9hv0tyjzfm7iQ ----- Two related ways might use plain old javascript syntax like from js or JSML parsing code into Javascript strings etc.... But first let me point what does CSS mean because we're really talking about something where every block means everything",
+      "output_text": "and no one knows anything! Also i think at worst JavaScript itself sounds cool .. :) If someone just added extra context here then why NOT give him background art? Even less people reading my blog would stop writing articles saying 'yeah thanks'; lol - maybe your answer isn`nt correct............... It�d all up TO her too Reply Delete",
+      "source_window_text": "So far but worth trying :p And now that these methods work very successfully-- thank you guys SO MUCH!!!!!! You've helped spread understanding across many sites through posting information freely around reddit without leaving ANYONE alone!!!!! Thank YOU!!! We hope those who participate will get new ideas over time :-) The best part though was knowing everyone had also tried them -- probably several times already!--and getting feedback while playing against others ;) Thanks btw :( To conclude #2 --- 1) There can only be three possible paths between practice & execution ------------ On June 6th 2014 @bob_c posted \"...that makes two sense\" after his article made headlines back when the website said   `this guy must know better' .... . That post went viral quite quickly since most experts agree ... In fact among writers",
+      "reflection_window_text": ", authors have often suggested using this same approach (even if they don't explicitly say so). One possibility is to play with some data before building on it... I believe there's even an excellent book out by Prof. Steve Aarons called This Simple Idea Works for Web Designers , which discusses how \"reusing existing HTML as markup material has been used extensively [sic]\" of course http://www/aboutpage/howstuffworks/?t=5#s11n6wq3e8xk9hv0tyjzfm7iQ ----- Two related ways might use plain old javascript syntax like from js or JSML parsing code into Javascript strings etc.... But first let me point what does CSS mean because we're really talking about something where every block means everything",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nSo far but worth trying :p And now that these methods work very successfully-- thank you guys SO MUCH!!!!!! You've helped spread understanding across many sites through posting information freely around reddit without leaving ANYONE alone!!!!! Thank YOU!!! We hope those who participate will get new ideas over time :-) The best part though was knowing everyone had also tried them -- probably several times already!--and getting feedback while playing against others ;) Thanks btw :( To conclude #2 --- 1) There can only be three possible paths between practice & execution ------------ On June 6th 2014 @bob_c posted \"...that makes two sense\" after his article made headlines back when the website said   `this guy must know better' .... . That post went viral quite quickly since most experts agree ... In fact among writers",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nSo far but worth trying :p And now that these methods work very successfully-- thank you guys SO MUCH!!!!!! You've helped spread understanding across many sites through posting information freely around reddit without leaving ANYONE alone!!!!! Thank YOU!!! We hope those who participate will get new ideas over time :-) The best part though was knowing everyone had also tried them -- probably several times already!--and getting feedback while playing against others ;) Thanks btw :( To conclude #2 --- 1) There can only be three possible paths between practice & execution ------------ On June 6th 2014 @bob_c posted \"...that makes two sense\" after his article made headlines back when the website said   `this guy must know better' .... . That post went viral quite quickly since most experts agree ... In fact among writers, authors have often suggested using this same approach (even if they don't explicitly say so). One possibility is to play with some data before building on it... I believe there's even an excellent book out by Prof. Steve Aarons called This Simple Idea Works for Web Designers , which discusses how \"reusing existing HTML as markup material has been used extensively [sic]\" of course http://www/aboutpage/howstuffworks/?t=5#s11n6wq3e8xk9hv0tyjzfm7iQ ----- Two related ways might use plain old javascript syntax like from js or JSML parsing code into Javascript strings etc.... But first let me point what does CSS mean because we're really talking about something where every block means everything",
+        "continuation_text": ", authors have often suggested using this same approach (even if they don't explicitly say so). One possibility is to play with some data before building on it... I believe there's even an excellent book out by Prof. Steve Aarons called This Simple Idea Works for Web Designers , which discusses how \"reusing existing HTML as markup material has been used extensively [sic]\" of course http://www/aboutpage/howstuffworks/?t=5#s11n6wq3e8xk9hv0tyjzfm7iQ ----- Two related ways might use plain old javascript syntax like from js or JSML parsing code into Javascript strings etc.... But first let me point what does CSS mean because we're really talking about something where every block means everything",
+        "input_token_count": 229,
+        "raw_input_token_count": 229,
+        "output_token_count": 389,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nSo far but worth trying :p And now that these methods work very successfully-- thank you guys SO MUCH!!!!!! You've helped spread understanding across many sites through posting information freely around reddit without leaving ANYONE alone!!!!! Thank YOU!!! We hope those who participate will get new ideas over time :-) The best part though was knowing everyone had also tried them -- probably several times already!--and getting feedback while playing against others ;) Thanks btw :( To conclude #2 --- 1) There can only be three possible paths between practice & execution ------------ On June 6th 2014 @bob_c posted \"...that makes two sense\" after his article made headlines back when the website said   `this guy must know better' .... . That post went viral quite quickly since most experts agree ... In fact among writers\n\nREFLECTION:\n, authors have often suggested using this same approach (even if they don't explicitly say so). One possibility is to play with some data before building on it... I believe there's even an excellent book out by Prof. Steve Aarons called This Simple Idea Works for Web Designers , which discusses how \"reusing existing HTML as markup material has been used extensively [sic]\" of course http://www/aboutpage/howstuffworks/?t=5#s11n6wq3e8xk9hv0tyjzfm7iQ ----- Two related ways might use plain old javascript syntax like from js or JSML parsing code into Javascript strings etc.... But first let me point what does CSS mean because we're really talking about something where every block means everything",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nSo far but worth trying :p And now that these methods work very successfully-- thank you guys SO MUCH!!!!!! You've helped spread understanding across many sites through posting information freely around reddit without leaving ANYONE alone!!!!! Thank YOU!!! We hope those who participate will get new ideas over time :-) The best part though was knowing everyone had also tried them -- probably several times already!--and getting feedback while playing against others ;) Thanks btw :( To conclude #2 --- 1) There can only be three possible paths between practice & execution ------------ On June 6th 2014 @bob_c posted \"...that makes two sense\" after his article made headlines back when the website said   `this guy must know better' .... . That post went viral quite quickly since most experts agree ... In fact among writers\n\nREFLECTION:\n, authors have often suggested using this same approach (even if they don't explicitly say so). One possibility is to play with some data before building on it... I believe there's even an excellent book out by Prof. Steve Aarons called This Simple Idea Works for Web Designers , which discusses how \"reusing existing HTML as markup material has been used extensively [sic]\" of course http://www/aboutpage/howstuffworks/?t=5#s11n6wq3e8xk9hv0tyjzfm7iQ ----- Two related ways might use plain old javascript syntax like from js or JSML parsing code into Javascript strings etc.... But first let me point what does CSS mean because we're really talking about something where every block means everything and no one knows anything! Also i think at worst JavaScript itself sounds cool .. :) If someone just added extra context here then why NOT give him background art? Even less people reading my blog would stop writing articles saying 'yeah thanks'; lol - maybe your answer isn`nt correct............... It�d all up TO her too Reply Delete",
+        "continuation_text": "and no one knows anything! Also i think at worst JavaScript itself sounds cool .. :) If someone just added extra context here then why NOT give him background art? Even less people reading my blog would stop writing articles saying 'yeah thanks'; lol - maybe your answer isn`nt correct............... It�d all up TO her too Reply Delete",
+        "input_token_count": 376,
+        "raw_input_token_count": 376,
+        "output_token_count": 445,
+        "new_token_count": 69,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 336,
+        "word_count": 58,
+        "unique_word_count": 58,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

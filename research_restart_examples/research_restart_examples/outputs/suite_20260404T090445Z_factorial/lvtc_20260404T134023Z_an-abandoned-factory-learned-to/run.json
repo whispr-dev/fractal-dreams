@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1374,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 575,
+        "word_count": 97,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.979381443298969,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 705,
+        "word_count": 113,
+        "unique_word_count": 112,
+        "unique_word_ratio": 0.9911504424778761,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 701,
+        "word_count": 115,
+        "unique_word_count": 113,
+        "unique_word_ratio": 0.9826086956521739,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 606,
+        "word_count": 112,
+        "unique_word_count": 112,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "had",
+        "are",
+        "have",
+        "It",
+        "make",
+        "if",
+        "made",
+        "was",
+        "to",
+        "makes"
+      ],
+      "output_text": "For some reason this is one way that we would prefer not to use words at all (it's actually only once) before reading them or even beginning with our writing as they speak about their origin; for others there might be something else which could work better than any other form of expression besides being written while continuing on learning how to write . The resulting sentence will describe an entirely new pattern from scratch without resorting solely upon each word itself – using nothing related to anything familiar, whatever syntax you find yourself trying your best.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. For some reason this is one way that we would prefer not to use words at all (it's actually only once) before reading them or even beginning with our writing as they speak about their origin; for others there might be something else which could work better than any other form of expression besides being written while continuing on learning how to write . The resulting sentence will describe an entirely new pattern from scratch without resorting solely upon each word itself – using nothing related to anything familiar, whatever syntax you find yourself trying your best.",
+        "continuation_text": "For some reason this is one way that we would prefer not to use words at all (it's actually only once) before reading them or even beginning with our writing as they speak about their origin; for others there might be something else which could work better than any other form of expression besides being written while continuing on learning how to write . The resulting sentence will describe an entirely new pattern from scratch without resorting solely upon each word itself – using nothing related to anything familiar, whatever syntax you find yourself trying your best.",
+        "input_token_count": 105,
+        "raw_input_token_count": 105,
+        "output_token_count": 210,
+        "new_token_count": 105,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 575,
+        "word_count": 97,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.979381443298969,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "are",
+        "have",
+        "in",
+        "they",
+        "the",
+        "with",
+        "is",
+        "had",
+        "to"
+      ],
+      "output_text": "I am sure most languages now do allow us such rules and concepts - though no longer allowed to express themselves explicitly when choosing between sentences like \"you want\" & \"she wants\". We can talk directly into verbs instead of just adding up names where needed… But what makes me think? In practice here isn't much more important either. As long as anyone has access/contains information within every single piece of code defined above, let's say another verb uses its own semantics but changes existing grammar around first giving those things additional meaning over time until eventually applying both back after going through multiple iterations along the same line together! Then comes finalizing",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, have, in, they, the, with, is, had, to\n\nTEXT:\nFor some reason this is one way that we would prefer not to use words at all (it's actually only once) before reading them or even beginning with our writing as they speak about their origin; for others there might be something else which could work better than any other form of expression besides being written while continuing on learning how to write . The resulting sentence will describe an entirely new pattern from scratch without resorting solely upon each word itself – using nothing related to anything familiar, whatever syntax you find yourself trying your best.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, have, in, they, the, with, is, had, to\n\nTEXT:\nFor some reason this is one way that we would prefer not to use words at all (it's actually only once) before reading them or even beginning with our writing as they speak about their origin; for others there might be something else which could work better than any other form of expression besides being written while continuing on learning how to write . The resulting sentence will describe an entirely new pattern from scratch without resorting solely upon each word itself – using nothing related to anything familiar, whatever syntax you find yourself trying your best. I am sure most languages now do allow us such rules and concepts - though no longer allowed to express themselves explicitly when choosing between sentences like \"you want\" & \"she wants\". We can talk directly into verbs instead of just adding up names where needed… But what makes me think? In practice here isn't much more important either. As long as anyone has access/contains information within every single piece of code defined above, let's say another verb uses its own semantics but changes existing grammar around first giving those things additional meaning over time until eventually applying both back after going through multiple iterations along the same line together! Then comes finalizing",
+        "continuation_text": "I am sure most languages now do allow us such rules and concepts - though no longer allowed to express themselves explicitly when choosing between sentences like \"you want\" & \"she wants\". We can talk directly into verbs instead of just adding up names where needed… But what makes me think? In practice here isn't much more important either. As long as anyone has access/contains information within every single piece of code defined above, let's say another verb uses its own semantics but changes existing grammar around first giving those things additional meaning over time until eventually applying both back after going through multiple iterations along the same line together! Then comes finalizing",
+        "input_token_count": 183,
+        "raw_input_token_count": 183,
+        "output_token_count": 311,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 705,
+        "word_count": 113,
+        "unique_word_count": 112,
+        "unique_word_ratio": 0.9911504424778761,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "had",
+        "is",
+        "makes",
+        "did",
+        "has",
+        "they",
+        "It"
+      ],
+      "output_text": "some features that we've never yet seen before so far... So I'm not entirely certain how this new feature will work for you (as well) or your organization . The goal should be to make an interactive version of our script which shows all steps taken at once using syntax matching words from each one prior to writing them on separate lines without needing any syntactic support whatsoever.... These scripts then automatically convert two different parts of my program – with only six parameters present — onto something else rather than three; thus creating better grammatical equivalent patterns etc. If there was enough space left inside everything involved, why haven`t many extra layers added since",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, is, makes, did, has, they, It\n\nTEXT:\nI am sure most languages now do allow us such rules and concepts - though no longer allowed to express themselves explicitly when choosing between sentences like \"you want\" & \"she wants\". We can talk directly into verbs instead of just adding up names where needed… But what makes me think? In practice here isn't much more important either. As long as anyone has access/contains information within every single piece of code defined above, let's say another verb uses its own semantics but changes existing grammar around first giving those things additional meaning over time until eventually applying both back after going through multiple iterations along the same line together! Then comes finalizing",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, is, makes, did, has, they, It\n\nTEXT:\nI am sure most languages now do allow us such rules and concepts - though no longer allowed to express themselves explicitly when choosing between sentences like \"you want\" & \"she wants\". We can talk directly into verbs instead of just adding up names where needed… But what makes me think? In practice here isn't much more important either. As long as anyone has access/contains information within every single piece of code defined above, let's say another verb uses its own semantics but changes existing grammar around first giving those things additional meaning over time until eventually applying both back after going through multiple iterations along the same line together! Then comes finalizing some features that we've never yet seen before so far... So I'm not entirely certain how this new feature will work for you (as well) or your organization . The goal should be to make an interactive version of our script which shows all steps taken at once using syntax matching words from each one prior to writing them on separate lines without needing any syntactic support whatsoever.... These scripts then automatically convert two different parts of my program – with only six parameters present — onto something else rather than three; thus creating better grammatical equivalent patterns etc. If there was enough space left inside everything involved, why haven`t many extra layers added since",
+        "continuation_text": "some features that we've never yet seen before so far... So I'm not entirely certain how this new feature will work for you (as well) or your organization . The goal should be to make an interactive version of our script which shows all steps taken at once using syntax matching words from each one prior to writing them on separate lines without needing any syntactic support whatsoever.... These scripts then automatically convert two different parts of my program – with only six parameters present — onto something else rather than three; thus creating better grammatical equivalent patterns etc. If there was enough space left inside everything involved, why haven`t many extra layers added since",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 701,
+        "word_count": 115,
+        "unique_word_count": 113,
+        "unique_word_ratio": 0.9826086956521739,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "if",
+        "are",
+        "have",
+        "had",
+        "they",
+        "with",
+        "is",
+        "in",
+        "was",
+        "If"
+      ],
+      "output_text": "now?\n\nA simple pattern search would tell me what kind of information comes into view and show exactly where people think things happen! This approach has already been tried as part 2 - but again just because its obvious right after entering those input options makes sense even though every single sentence remains within us still having no idea about anything here anyway [is] also possible through some additional code injection technique mentioned previously.. Another step could involve calling back values while holding down keys like n , b = 0 : let f x y z + h t u l c o r v e s d 1 #if ((x=1|y+f)*2",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, are, have, had, they, with, is, in, was, If\n\nTEXT:\nsome features that we've never yet seen before so far... So I'm not entirely certain how this new feature will work for you (as well) or your organization . The goal should be to make an interactive version of our script which shows all steps taken at once using syntax matching words from each one prior to writing them on separate lines without needing any syntactic support whatsoever.... These scripts then automatically convert two different parts of my program – with only six parameters present — onto something else rather than three; thus creating better grammatical equivalent patterns etc. If there was enough space left inside everything involved, why haven`t many extra layers added since",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, are, have, had, they, with, is, in, was, If\n\nTEXT:\nsome features that we've never yet seen before so far... So I'm not entirely certain how this new feature will work for you (as well) or your organization . The goal should be to make an interactive version of our script which shows all steps taken at once using syntax matching words from each one prior to writing them on separate lines without needing any syntactic support whatsoever.... These scripts then automatically convert two different parts of my program – with only six parameters present — onto something else rather than three; thus creating better grammatical equivalent patterns etc. If there was enough space left inside everything involved, why haven`t many extra layers added since now?\n\nA simple pattern search would tell me what kind of information comes into view and show exactly where people think things happen! This approach has already been tried as part 2 - but again just because its obvious right after entering those input options makes sense even though every single sentence remains within us still having no idea about anything here anyway [is] also possible through some additional code injection technique mentioned previously.. Another step could involve calling back values while holding down keys like n , b = 0 : let f x y z + h t u l c o r v e s d 1 #if ((x=1|y+f)*2",
+        "continuation_text": "now?\n\nA simple pattern search would tell me what kind of information comes into view and show exactly where people think things happen! This approach has already been tried as part 2 - but again just because its obvious right after entering those input options makes sense even though every single sentence remains within us still having no idea about anything here anyway [is] also possible through some additional code injection technique mentioned previously.. Another step could involve calling back values while holding down keys like n , b = 0 : let f x y z + h t u l c o r v e s d 1 #if ((x=1|y+f)*2",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 606,
+        "word_count": 112,
+        "unique_word_count": 112,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

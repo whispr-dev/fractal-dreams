@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1125,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 615,
+        "word_count": 112,
+        "unique_word_count": 112,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 321,
+        "word_count": 52,
+        "unique_word_count": 52,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 400,
+        "word_count": 46,
+        "unique_word_count": 46,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "got",
+        "Have",
+        "Are",
+        "have",
+        "Do",
+        "did",
+        "took",
+        "are",
+        "gave",
+        ",'\"",
+        "We",
+        "He"
+      ],
+      "output_text": "Now we're stuck with what's gone wrong because our eyes do their job when they see someone else doing something that makes no sense - or at least gets them completely mad about it for some reason! There is nothing better than watching your friends make fun out loud over each other staring like crazy into tiny holes on Earth where you think there isn't much going right... but now all those weird little monsters around just watch so confusedly away from this world every single time an enemy comes up close near one eye again? Well then I guess maybe everything can be solved by using more languages (and how many",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: got, Have, Are, have, Do, did, took, are, gave, ,'\", We, He\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: got, Have, Are, have, Do, did, took, are, gave, ,'\", We, He\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Now we're stuck with what's gone wrong because our eyes do their job when they see someone else doing something that makes no sense - or at least gets them completely mad about it for some reason! There is nothing better than watching your friends make fun out loud over each other staring like crazy into tiny holes on Earth where you think there isn't much going right... but now all those weird little monsters around just watch so confusedly away from this world every single time an enemy comes up close near one eye again? Well then I guess maybe everything can be solved by using more languages (and how many",
+        "continuation_text": "Now we're stuck with what's gone wrong because our eyes do their job when they see someone else doing something that makes no sense - or at least gets them completely mad about it for some reason! There is nothing better than watching your friends make fun out loud over each other staring like crazy into tiny holes on Earth where you think there isn't much going right... but now all those weird little monsters around just watch so confusedly away from this world every single time an enemy comes up close near one eye again? Well then I guess maybe everything can be solved by using more languages (and how many",
+        "input_token_count": 115,
+        "raw_input_token_count": 115,
+        "output_token_count": 235,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 615,
+        "word_count": 112,
+        "unique_word_count": 112,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "That",
+        "Even",
+        "What",
+        "But",
+        "Indeed",
+        "More",
+        "Now",
+        "Of",
+        "Though",
+        "Quite",
+        "Those",
+        "Still"
+      ],
+      "output_text": "will help if most people actually learn English?) and/or being able read another human person who has lost his sight even further through translation instead.. Then have had enough talk & got real technical skills working towards creating simple translations which take less effort vs trying to create complex ones too :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: That, Even, What, But, Indeed, More, Now, Of, Though, Quite, Those, Still\n\nTEXT:\nNow we're stuck with what's gone wrong because our eyes do their job when they see someone else doing something that makes no sense - or at least gets them completely mad about it for some reason! There is nothing better than watching your friends make fun out loud over each other staring like crazy into tiny holes on Earth where you think there isn't much going right... but now all those weird little monsters around just watch so confusedly away from this world every single time an enemy comes up close near one eye again? Well then I guess maybe everything can be solved by using more languages (and how many",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: That, Even, What, But, Indeed, More, Now, Of, Though, Quite, Those, Still\n\nTEXT:\nNow we're stuck with what's gone wrong because our eyes do their job when they see someone else doing something that makes no sense - or at least gets them completely mad about it for some reason! There is nothing better than watching your friends make fun out loud over each other staring like crazy into tiny holes on Earth where you think there isn't much going right... but now all those weird little monsters around just watch so confusedly away from this world every single time an enemy comes up close near one eye again? Well then I guess maybe everything can be solved by using more languages (and how many will help if most people actually learn English?) and/or being able read another human person who has lost his sight even further through translation instead.. Then have had enough talk & got real technical skills working towards creating simple translations which take less effort vs trying to create complex ones too :)",
+        "continuation_text": "will help if most people actually learn English?) and/or being able read another human person who has lost his sight even further through translation instead.. Then have had enough talk & got real technical skills working towards creating simple translations which take less effort vs trying to create complex ones too :)",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 262,
+        "new_token_count": 57,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 321,
+        "word_count": 52,
+        "unique_word_count": 52,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Nearly",
+        "will",
+        "More",
+        "Almost",
+        "What",
+        "Hundreds",
+        "Among",
+        "Unfortunately",
+        "Sadly",
+        "Probably",
+        "The",
+        ".,\""
+      ],
+      "output_text": "...with more english speakers learning that we can translate your words better! Also it would be nice for this project so much info is available on how you could add additional languages just by using \"text\" models like LUTN's ORM (as described here): http://www1.langgeekzinestudiesonlineandlearnedatcodeuenixdemyrearlyneurikkeitbluzeystijfjennanpfalgenhagenmårdunterte vitteleskudetendert svaltsänd",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Nearly, will, More, Almost, What, Hundreds, Among, Unfortunately, Sadly, Probably, The, .,\"\n\nTEXT:\nwill help if most people actually learn English?) and/or being able read another human person who has lost his sight even further through translation instead.. Then have had enough talk & got real technical skills working towards creating simple translations which take less effort vs trying to create complex ones too :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Nearly, will, More, Almost, What, Hundreds, Among, Unfortunately, Sadly, Probably, The, .,\"\n\nTEXT:\nwill help if most people actually learn English?) and/or being able read another human person who has lost his sight even further through translation instead.. Then have had enough talk & got real technical skills working towards creating simple translations which take less effort vs trying to create complex ones too :)\n\n...with more english speakers learning that we can translate your words better! Also it would be nice for this project so much info is available on how you could add additional languages just by using \"text\" models like LUTN's ORM (as described here): http://www1.langgeekzinestudiesonlineandlearnedatcodeuenixdemyrearlyneurikkeitbluzeystijfjennanpfalgenhagenmårdunterte vitteleskudetendert svaltsänd",
+        "continuation_text": "...with more english speakers learning that we can translate your words better! Also it would be nice for this project so much info is available on how you could add additional languages just by using \"text\" models like LUTN's ORM (as described here): http://www1.langgeekzinestudiesonlineandlearnedatcodeuenixdemyrearlyneurikkeitbluzeystijfjennanpfalgenhagenmårdunterte vitteleskudetendert svaltsänd",
+        "input_token_count": 142,
+        "raw_input_token_count": 142,
+        "output_token_count": 262,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 400,
+        "word_count": 46,
+        "unique_word_count": 46,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

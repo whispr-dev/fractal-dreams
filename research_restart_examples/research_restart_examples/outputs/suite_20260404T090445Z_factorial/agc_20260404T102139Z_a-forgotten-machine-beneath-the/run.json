@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1105,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 603,
+        "word_count": 94,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.8085106382978723,
+        "repeated_bigram_count": 7
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 339,
+        "word_count": 48,
+        "unique_word_count": 32,
+        "unique_word_ratio": 0.6666666666666666,
+        "repeated_bigram_count": 13
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 352,
+        "word_count": 53,
+        "unique_word_count": 51,
+        "unique_word_ratio": 0.9622641509433962,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Mayo",
+        "_a",
+        "aint",
+        "_B",
+        "t",
+        "_C",
+        "ce",
+        "tt",
+        "_F",
+        "tr",
+        "fr",
+        "Yourself"
+      ],
+      "output_text": "Given the requirements that we use only the latent anchors as soft guidance without copying verbatim any part of the original text, let's write out each step of the subsequent recursive transformation:\n\n1. Start with \"A forgotten machine\".\n2. Repeat this phrase for several times.\n3. The repeated phrases should be structured in such a way that they continue the sequence of repetitions mentioned earlier (e.g., \"one\", \"two\", \"three\").\n4. For example, \"A forgotten machine\" becomes repeated six times: \"A forgotten machine A forgotten machine A forgotten machine\".\n\nThe final output would look something",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nGiven the requirements that we use only the latent anchors as soft guidance without copying verbatim any part of the original text, let's write out each step of the subsequent recursive transformation:\n\n1. Start with \"A forgotten machine\".\n2. Repeat this phrase for several times.\n3. The repeated phrases should be structured in such a way that they continue the sequence of repetitions mentioned earlier (e.g., \"one\", \"two\", \"three\").\n4. For example, \"A forgotten machine\" becomes repeated six times: \"A forgotten machine A forgotten machine A forgotten machine\".\n\nThe final output would look something",
+        "continuation_text": "Given the requirements that we use only the latent anchors as soft guidance without copying verbatim any part of the original text, let's write out each step of the subsequent recursive transformation:\n\n1. Start with \"A forgotten machine\".\n2. Repeat this phrase for several times.\n3. The repeated phrases should be structured in such a way that they continue the sequence of repetitions mentioned earlier (e.g., \"one\", \"two\", \"three\").\n4. For example, \"A forgotten machine\" becomes repeated six times: \"A forgotten machine A forgotten machine A forgotten machine\".\n\nThe final output would look something",
+        "input_token_count": 123,
+        "raw_input_token_count": 123,
+        "output_token_count": 243,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 603,
+        "word_count": 94,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.8085106382978723,
+        "repeated_bigram_count": 7
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "leur",
+        "给他们",
+        "对他们",
+        "oon",
+        "Their",
+        "their",
+        "让他们",
+        "之事",
+        "given",
+        "抗震",
+        "зло",
+        "certainly"
+      ],
+      "output_text": "as follows:\n```markdown\n[\"A forgotten machine\"]\nrepeat it 6 times: [\"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\"]...\n```\n(Note: This is an artificial repetition and does not reflect the actual steps of the natural language transformation process.)",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: leur, 给他们, 对他们, oon, Their, their, 让他们, 之事, given, 抗震, зло, certainly\n\nTEXT:\nGiven the requirements that we use only the latent anchors as soft guidance without copying verbatim any part of the original text, let's write out each step of the subsequent recursive transformation:\n\n1. Start with \"A forgotten machine\".\n2. Repeat this phrase for several times.\n3. The repeated phrases should be structured in such a way that they continue the sequence of repetitions mentioned earlier (e.g., \"one\", \"two\", \"three\").\n4. For example, \"A forgotten machine\" becomes repeated six times: \"A forgotten machine A forgotten machine A forgotten machine\".\n\nThe final output would look something<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: leur, 给他们, 对他们, oon, Their, their, 让他们, 之事, given, 抗震, зло, certainly\n\nTEXT:\nGiven the requirements that we use only the latent anchors as soft guidance without copying verbatim any part of the original text, let's write out each step of the subsequent recursive transformation:\n\n1. Start with \"A forgotten machine\".\n2. Repeat this phrase for several times.\n3. The repeated phrases should be structured in such a way that they continue the sequence of repetitions mentioned earlier (e.g., \"one\", \"two\", \"three\").\n4. For example, \"A forgotten machine\" becomes repeated six times: \"A forgotten machine A forgotten machine A forgotten machine\".\n\nThe final output would look something\nassistant\nas follows:\n```markdown\n[\"A forgotten machine\"]\nrepeat it 6 times: [\"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\"]...\n```\n(Note: This is an artificial repetition and does not reflect the actual steps of the natural language transformation process.)",
+        "continuation_text": "as follows:\n```markdown\n[\"A forgotten machine\"]\nrepeat it 6 times: [\"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\"]...\n```\n(Note: This is an artificial repetition and does not reflect the actual steps of the natural language transformation process.)",
+        "input_token_count": 217,
+        "raw_input_token_count": 217,
+        "output_token_count": 289,
+        "new_token_count": 72,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 339,
+        "word_count": 48,
+        "unique_word_count": 32,
+        "unique_word_ratio": 0.6666666666666666,
+        "repeated_bigram_count": 13
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "umption",
+        "ência",
+        "throttle",
+        "Debate",
+        "iom",
+        "conscience",
+        "зы",
+        "cla",
+        "肤色",
+        "motives",
+        "Drama",
+        "CLAIM"
+      ],
+      "output_text": "Repeat step by step:\n\n1. Start with the initial text provided.\n2. Apply each letter from the latent anchors (umption, ência, throttle) according to their order without any modifications or repetitions. \n\nThe final result will be based on applying these letters sequentially while maintaining no repetition within the same position across all instances.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: umption, ência, throttle, Debate, iom, conscience, зы, cla, 肤色, motives, Drama, CLAIM\n\nTEXT:\nas follows:\n```markdown\n[\"A forgotten machine\"]\nrepeat it 6 times: [\"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\"]...\n```\n(Note: This is an artificial repetition and does not reflect the actual steps of the natural language transformation process.)<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: umption, ência, throttle, Debate, iom, conscience, зы, cla, 肤色, motives, Drama, CLAIM\n\nTEXT:\nas follows:\n```markdown\n[\"A forgotten machine\"]\nrepeat it 6 times: [\"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\", \"A forgotten machine\"]...\n```\n(Note: This is an artificial repetition and does not reflect the actual steps of the natural language transformation process.)\nassistant\nRepeat step by step:\n\n1. Start with the initial text provided.\n2. Apply each letter from the latent anchors (umption, ência, throttle) according to their order without any modifications or repetitions. \n\nThe final result will be based on applying these letters sequentially while maintaining no repetition within the same position across all instances.",
+        "continuation_text": "Repeat step by step:\n\n1. Start with the initial text provided.\n2. Apply each letter from the latent anchors (umption, ência, throttle) according to their order without any modifications or repetitions. \n\nThe final result will be based on applying these letters sequentially while maintaining no repetition within the same position across all instances.",
+        "input_token_count": 165,
+        "raw_input_token_count": 165,
+        "output_token_count": 232,
+        "new_token_count": 67,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 352,
+        "word_count": 53,
+        "unique_word_count": 51,
+        "unique_word_ratio": 0.9622641509433962,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

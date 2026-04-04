@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1518,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 762,
+        "word_count": 122,
+        "unique_word_count": 119,
+        "unique_word_ratio": 0.9754098360655737,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 778,
+        "word_count": 120,
+        "unique_word_count": 117,
+        "unique_word_ratio": 0.975,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 705,
+        "word_count": 116,
+        "unique_word_count": 113,
+        "unique_word_ratio": 0.9741379310344828,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 710,
+        "word_count": 114,
+        "unique_word_count": 112,
+        "unique_word_ratio": 0.9824561403508771,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "had",
+        "was",
+        "are",
+        "It",
+        "went",
+        "have",
+        "in",
+        "has",
+        "with",
+        "is"
+      ],
+      "output_text": "The concept came to dominate science for centuries on this subject so its use remained widely accepted around early twentieth century . In today's world we still only know very little about what caused \"the explosion\" or why an earthquake occurred , but can say much more clearly that they may also influence our thinking processes without being forced upon us any further knowledge (or anything else). This might explain some theories concerning how events like earthquakes cause changes within certain areas of society based entirely on their origin rather than simply due directly to natural causes — which seems strange since many believe there actually exist; nor would such studies prove themselves reliable indicators of global climate change at all times",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, had, was, are, It, went, have, in, has, with, is\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, had, was, are, It, went, have, in, has, with, is\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The concept came to dominate science for centuries on this subject so its use remained widely accepted around early twentieth century . In today's world we still only know very little about what caused \"the explosion\" or why an earthquake occurred , but can say much more clearly that they may also influence our thinking processes without being forced upon us any further knowledge (or anything else). This might explain some theories concerning how events like earthquakes cause changes within certain areas of society based entirely on their origin rather than simply due directly to natural causes — which seems strange since many believe there actually exist; nor would such studies prove themselves reliable indicators of global climate change at all times",
+        "continuation_text": "The concept came to dominate science for centuries on this subject so its use remained widely accepted around early twentieth century . In today's world we still only know very little about what caused \"the explosion\" or why an earthquake occurred , but can say much more clearly that they may also influence our thinking processes without being forced upon us any further knowledge (or anything else). This might explain some theories concerning how events like earthquakes cause changes within certain areas of society based entirely on their origin rather than simply due directly to natural causes — which seems strange since many believe there actually exist; nor would such studies prove themselves reliable indicators of global climate change at all times",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 230,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 762,
+        "word_count": 122,
+        "unique_word_count": 119,
+        "unique_word_ratio": 0.9754098360655737,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "if",
+        "have",
+        "had",
+        "they",
+        "could",
+        "did",
+        "is",
+        "was",
+        "has"
+      ],
+      "output_text": "and even when things happen well enough otherwise – as you've been able to do with your own data over time! However, once again I think one must note that my research shows something quite different from those above [for example] -- although not always accurate... If given precise historical context then maybe less will come out regarding current conditions ... And let me point out another way where sometimes new developments seem inevitable during periods of upheaval because previous ones fail miserably ; hence while people tend to assume somewhat limited scientific information surrounding various phenomena - perhaps most notably temperature variations appear before history takes into account them : Thus after long period of revolutionaries started developing nuclear",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, if, have, had, they, could, did, is, was, has\n\nTEXT:\nThe concept came to dominate science for centuries on this subject so its use remained widely accepted around early twentieth century . In today's world we still only know very little about what caused \"the explosion\" or why an earthquake occurred , but can say much more clearly that they may also influence our thinking processes without being forced upon us any further knowledge (or anything else). This might explain some theories concerning how events like earthquakes cause changes within certain areas of society based entirely on their origin rather than simply due directly to natural causes — which seems strange since many believe there actually exist; nor would such studies prove themselves reliable indicators of global climate change at all times",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, if, have, had, they, could, did, is, was, has\n\nTEXT:\nThe concept came to dominate science for centuries on this subject so its use remained widely accepted around early twentieth century . In today's world we still only know very little about what caused \"the explosion\" or why an earthquake occurred , but can say much more clearly that they may also influence our thinking processes without being forced upon us any further knowledge (or anything else). This might explain some theories concerning how events like earthquakes cause changes within certain areas of society based entirely on their origin rather than simply due directly to natural causes — which seems strange since many believe there actually exist; nor would such studies prove themselves reliable indicators of global climate change at all times and even when things happen well enough otherwise – as you've been able to do with your own data over time! However, once again I think one must note that my research shows something quite different from those above [for example] -- although not always accurate... If given precise historical context then maybe less will come out regarding current conditions ... And let me point out another way where sometimes new developments seem inevitable during periods of upheaval because previous ones fail miserably ; hence while people tend to assume somewhat limited scientific information surrounding various phenomena - perhaps most notably temperature variations appear before history takes into account them : Thus after long period of revolutionaries started developing nuclear",
+        "continuation_text": "and even when things happen well enough otherwise – as you've been able to do with your own data over time! However, once again I think one must note that my research shows something quite different from those above [for example] -- although not always accurate... If given precise historical context then maybe less will come out regarding current conditions ... And let me point out another way where sometimes new developments seem inevitable during periods of upheaval because previous ones fail miserably ; hence while people tend to assume somewhat limited scientific information surrounding various phenomena - perhaps most notably temperature variations appear before history takes into account them : Thus after long period of revolutionaries started developing nuclear",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 778,
+        "word_count": 120,
+        "unique_word_count": 117,
+        "unique_word_ratio": 0.975,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "if",
+        "are",
+        "have",
+        "had",
+        "If",
+        "did",
+        "when",
+        "they",
+        "could",
+        "although"
+      ],
+      "output_text": "weapons and other sophisticated technologies on their behalf for centuries , there seems to be some degree of uncertainty between what might or may't actually occur based upon certain assumptions about our very nature (like natural selection). There is no reason why this type of \"unscientific\" assumption cannot exist any more than many can plausibly say . Of course we now need to study all sorts 'experts' who claim such hypotheses at first glance but eventually start using an open mind without giving us complete evidence; therefore how often does someone else make similar claims? It would also surprise anyone whose experience was so extensive prior to coming forward ? The fact that each field has",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, are, have, had, If, did, when, they, could, although\n\nTEXT:\nand even when things happen well enough otherwise – as you've been able to do with your own data over time! However, once again I think one must note that my research shows something quite different from those above [for example] -- although not always accurate... If given precise historical context then maybe less will come out regarding current conditions ... And let me point out another way where sometimes new developments seem inevitable during periods of upheaval because previous ones fail miserably ; hence while people tend to assume somewhat limited scientific information surrounding various phenomena - perhaps most notably temperature variations appear before history takes into account them : Thus after long period of revolutionaries started developing nuclear",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, are, have, had, If, did, when, they, could, although\n\nTEXT:\nand even when things happen well enough otherwise – as you've been able to do with your own data over time! However, once again I think one must note that my research shows something quite different from those above [for example] -- although not always accurate... If given precise historical context then maybe less will come out regarding current conditions ... And let me point out another way where sometimes new developments seem inevitable during periods of upheaval because previous ones fail miserably ; hence while people tend to assume somewhat limited scientific information surrounding various phenomena - perhaps most notably temperature variations appear before history takes into account them : Thus after long period of revolutionaries started developing nuclear weapons and other sophisticated technologies on their behalf for centuries , there seems to be some degree of uncertainty between what might or may't actually occur based upon certain assumptions about our very nature (like natural selection). There is no reason why this type of \"unscientific\" assumption cannot exist any more than many can plausibly say . Of course we now need to study all sorts 'experts' who claim such hypotheses at first glance but eventually start using an open mind without giving us complete evidence; therefore how often does someone else make similar claims? It would also surprise anyone whose experience was so extensive prior to coming forward ? The fact that each field has",
+        "continuation_text": "weapons and other sophisticated technologies on their behalf for centuries , there seems to be some degree of uncertainty between what might or may't actually occur based upon certain assumptions about our very nature (like natural selection). There is no reason why this type of \"unscientific\" assumption cannot exist any more than many can plausibly say . Of course we now need to study all sorts 'experts' who claim such hypotheses at first glance but eventually start using an open mind without giving us complete evidence; therefore how often does someone else make similar claims? It would also surprise anyone whose experience was so extensive prior to coming forward ? The fact that each field has",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 334,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 705,
+        "word_count": 116,
+        "unique_word_count": 113,
+        "unique_word_ratio": 0.9741379310344828,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "if",
+        "have",
+        "had",
+        "is",
+        "could",
+        "was",
+        "has",
+        "did",
+        "they"
+      ],
+      "output_text": "been taught from every point of view requires serious consideration both before making those assertions themselves – whether one will ever know anything new - then I must ask myself : What information do you think people learn as well as later after learning them yourself out of your own self-explanatory knowledge alone?\" These questions tend not only relate directly with my current job here because several years ago students asked me exactly where something truly happened around which time everyone told stories like ‏The Ice Queen‫ etc.—they made sure everything went right despite knowing nothing beyond just things—and thus gave up trying to write down data science ideas quite simply yet again! Since",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, if, have, had, is, could, was, has, did, they\n\nTEXT:\nweapons and other sophisticated technologies on their behalf for centuries , there seems to be some degree of uncertainty between what might or may't actually occur based upon certain assumptions about our very nature (like natural selection). There is no reason why this type of \"unscientific\" assumption cannot exist any more than many can plausibly say . Of course we now need to study all sorts 'experts' who claim such hypotheses at first glance but eventually start using an open mind without giving us complete evidence; therefore how often does someone else make similar claims? It would also surprise anyone whose experience was so extensive prior to coming forward ? The fact that each field has",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, if, have, had, is, could, was, has, did, they\n\nTEXT:\nweapons and other sophisticated technologies on their behalf for centuries , there seems to be some degree of uncertainty between what might or may't actually occur based upon certain assumptions about our very nature (like natural selection). There is no reason why this type of \"unscientific\" assumption cannot exist any more than many can plausibly say . Of course we now need to study all sorts 'experts' who claim such hypotheses at first glance but eventually start using an open mind without giving us complete evidence; therefore how often does someone else make similar claims? It would also surprise anyone whose experience was so extensive prior to coming forward ? The fact that each field has been taught from every point of view requires serious consideration both before making those assertions themselves – whether one will ever know anything new - then I must ask myself : What information do you think people learn as well as later after learning them yourself out of your own self-explanatory knowledge alone?\" These questions tend not only relate directly with my current job here because several years ago students asked me exactly where something truly happened around which time everyone told stories like ‏The Ice Queen‫ etc.—they made sure everything went right despite knowing nothing beyond just things—and thus gave up trying to write down data science ideas quite simply yet again! Since",
+        "continuation_text": "been taught from every point of view requires serious consideration both before making those assertions themselves – whether one will ever know anything new - then I must ask myself : What information do you think people learn as well as later after learning them yourself out of your own self-explanatory knowledge alone?\" These questions tend not only relate directly with my current job here because several years ago students asked me exactly where something truly happened around which time everyone told stories like ‏The Ice Queen‫ etc.—they made sure everything went right despite knowing nothing beyond just things—and thus gave up trying to write down data science ideas quite simply yet again! Since",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 336,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 710,
+        "word_count": 114,
+        "unique_word_count": 112,
+        "unique_word_ratio": 0.9824561403508771,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

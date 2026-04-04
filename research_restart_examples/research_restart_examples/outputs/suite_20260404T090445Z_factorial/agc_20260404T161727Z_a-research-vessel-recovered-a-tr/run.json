@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1577,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 361,
+        "word_count": 60,
+        "unique_word_count": 60,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 634,
+        "word_count": 103,
+        "unique_word_count": 102,
+        "unique_word_ratio": 0.9902912621359223,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 672,
+        "word_count": 106,
+        "unique_word_count": 104,
+        "unique_word_ratio": 0.9811320754716981,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Likewise",
+        "Similarly",
+        "Another",
+        "Also",
+        "especially",
+        "Pin",
+        "Aside",
+        "adapters",
+        "carved",
+        "Additionally",
+        "traditionally",
+        "comfortable"
+      ],
+      "output_text": "The first example that could be seen was one by Dr. Gernhert using his \"Escape From Mars\" device at Ellington Hospital for more than ten years on September 28th 2005 (about 17 minutes). Its owner stated they had reached an understanding between both parties about how much time needed to rebuild communication among individuals who were still trapped inside it…",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Likewise, Similarly, Another, Also, especially, Pin, Aside, adapters, carved, Additionally, traditionally, comfortable\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Likewise, Similarly, Another, Also, especially, Pin, Aside, adapters, carved, Additionally, traditionally, comfortable\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The first example that could be seen was one by Dr. Gernhert using his \"Escape From Mars\" device at Ellington Hospital for more than ten years on September 28th 2005 (about 17 minutes). Its owner stated they had reached an understanding between both parties about how much time needed to rebuild communication among individuals who were still trapped inside it…",
+        "continuation_text": "The first example that could be seen was one by Dr. Gernhert using his \"Escape From Mars\" device at Ellington Hospital for more than ten years on September 28th 2005 (about 17 minutes). Its owner stated they had reached an understanding between both parties about how much time needed to rebuild communication among individuals who were still trapped inside it…",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 182,
+        "new_token_count": 74,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 361,
+        "word_count": 60,
+        "unique_word_count": 60,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "The",
+        "An",
+        "According",
+        "Some",
+        "One",
+        "In",
+        "President",
+        "A",
+        "Officials",
+        "If",
+        "Authorities",
+        "Another"
+      ],
+      "output_text": "and finally began creating what we now call ‪A‬s' or their own words and phrases from scratch! When I realized this concept might need additional input while reworking my work over many decades with other writers, including myself, he added some extra layers into each part of the equation—in addition providing insight beyond simply adding information but also taking steps away so people can see through them before going too far after something which isn't just happening out there within your organization is difficult enough once you know where/when things go wrong...or if those same areas remain open up during these times when",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: The, An, According, Some, One, In, President, A, Officials, If, Authorities, Another\n\nTEXT:\nThe first example that could be seen was one by Dr. Gernhert using his \"Escape From Mars\" device at Ellington Hospital for more than ten years on September 28th 2005 (about 17 minutes). Its owner stated they had reached an understanding between both parties about how much time needed to rebuild communication among individuals who were still trapped inside it…",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: The, An, According, Some, One, In, President, A, Officials, If, Authorities, Another\n\nTEXT:\nThe first example that could be seen was one by Dr. Gernhert using his \"Escape From Mars\" device at Ellington Hospital for more than ten years on September 28th 2005 (about 17 minutes). Its owner stated they had reached an understanding between both parties about how much time needed to rebuild communication among individuals who were still trapped inside it…and finally began creating what we now call ‪A‬s' or their own words and phrases from scratch! When I realized this concept might need additional input while reworking my work over many decades with other writers, including myself, he added some extra layers into each part of the equation—in addition providing insight beyond simply adding information but also taking steps away so people can see through them before going too far after something which isn't just happening out there within your organization is difficult enough once you know where/when things go wrong...or if those same areas remain open up during these times when",
+        "continuation_text": "and finally began creating what we now call ‪A‬s' or their own words and phrases from scratch! When I realized this concept might need additional input while reworking my work over many decades with other writers, including myself, he added some extra layers into each part of the equation—in addition providing insight beyond simply adding information but also taking steps away so people can see through them before going too far after something which isn't just happening out there within your organization is difficult enough once you know where/when things go wrong...or if those same areas remain open up during these times when",
+        "input_token_count": 158,
+        "raw_input_token_count": 158,
+        "output_token_count": 278,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 634,
+        "word_count": 103,
+        "unique_word_count": 102,
+        "unique_word_ratio": 0.9902912621359223,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "advocated",
+        "relationships",
+        "goals",
+        "ways",
+        "advocating",
+        "—",
+        ".[",
+        "Journal",
+        "Footnote",
+        "relationship",
+        "debates",
+        ".\"["
+      ],
+      "output_text": "they're being used by different organizations that have worked on our projects such more than 1 year ago.\"\nThe phrase A was coined back in 1995 because it represents \"a kind of new idea,\" rather than an actual term for one who has already written off ideas about how important building systems become (say), say…your team's software will continue to develop even further without any code modifications; whatever changes occur would ultimately be ignored until every programmer uses its original vision again at least five years later….which means no longer does anyone care much less whether everyone actually understands everything around us anymore? The question remains",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: advocated, relationships, goals, ways, advocating, —, .[, Journal, Footnote, relationship, debates, .\"[\n\nTEXT:\nand finally began creating what we now call ‪A‬s' or their own words and phrases from scratch! When I realized this concept might need additional input while reworking my work over many decades with other writers, including myself, he added some extra layers into each part of the equation—in addition providing insight beyond simply adding information but also taking steps away so people can see through them before going too far after something which isn't just happening out there within your organization is difficult enough once you know where/when things go wrong...or if those same areas remain open up during these times when",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: advocated, relationships, goals, ways, advocating, —, .[, Journal, Footnote, relationship, debates, .\"[\n\nTEXT:\nand finally began creating what we now call ‪A‬s' or their own words and phrases from scratch! When I realized this concept might need additional input while reworking my work over many decades with other writers, including myself, he added some extra layers into each part of the equation—in addition providing insight beyond simply adding information but also taking steps away so people can see through them before going too far after something which isn't just happening out there within your organization is difficult enough once you know where/when things go wrong...or if those same areas remain open up during these times when they're being used by different organizations that have worked on our projects such more than 1 year ago.\"\nThe phrase A was coined back in 1995 because it represents \"a kind of new idea,\" rather than an actual term for one who has already written off ideas about how important building systems become (say), say…your team's software will continue to develop even further without any code modifications; whatever changes occur would ultimately be ignored until every programmer uses its original vision again at least five years later….which means no longer does anyone care much less whether everyone actually understands everything around us anymore? The question remains",
+        "continuation_text": "they're being used by different organizations that have worked on our projects such more than 1 year ago.\"\nThe phrase A was coined back in 1995 because it represents \"a kind of new idea,\" rather than an actual term for one who has already written off ideas about how important building systems become (say), say…your team's software will continue to develop even further without any code modifications; whatever changes occur would ultimately be ignored until every programmer uses its original vision again at least five years later….which means no longer does anyone care much less whether everyone actually understands everything around us anymore? The question remains",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 328,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 672,
+        "word_count": 106,
+        "unique_word_count": 104,
+        "unique_word_ratio": 0.9811320754716981,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

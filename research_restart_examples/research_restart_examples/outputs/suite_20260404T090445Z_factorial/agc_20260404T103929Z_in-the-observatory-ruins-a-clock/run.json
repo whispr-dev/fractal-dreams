@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1129,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 125,
+        "word_count": 22,
+        "unique_word_count": 20,
+        "unique_word_ratio": 0.9090909090909091,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 187,
+        "word_count": 28,
+        "unique_word_count": 27,
+        "unique_word_ratio": 0.9642857142857143,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 208,
+        "word_count": 32,
+        "unique_word_count": 30,
+        "unique_word_ratio": 0.9375,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "cor",
+        "At",
+        "oklyn",
+        "静静地",
+        "cu",
+        "_di",
+        "Ferry",
+        "gu",
+        "nu",
+        "ner",
+        "Ur",
+        "가"
+      ],
+      "output_text": "In the ruins of the observatory, a ticking map keeps recasting the heavens like we're already told, and attempts to scare us.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: cor, At, oklyn, 静静地, cu, _di, Ferry, gu, nu, ner, Ur, 가\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: cor, At, oklyn, 静静地, cu, _di, Ferry, gu, nu, ner, Ur, 가\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nIn the ruins of the observatory, a ticking map keeps recasting the heavens like we're already told, and attempts to scare us.",
+        "continuation_text": "In the ruins of the observatory, a ticking map keeps recasting the heavens like we're already told, and attempts to scare us.",
+        "input_token_count": 122,
+        "raw_input_token_count": 122,
+        "output_token_count": 151,
+        "new_token_count": 29,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 125,
+        "word_count": 22,
+        "unique_word_count": 20,
+        "unique_word_ratio": 0.9090909090909091,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Nur",
+        "ware",
+        "Jul",
+        "克莱",
+        "kur",
+        "WARE",
+        "Mar",
+        "ula",
+        "尔",
+        "recursive",
+        "ver",
+        "爾"
+      ],
+      "output_text": "In the ruins of the observatory, a **recursive** map continually casts back on our perceptions, attempting to terrify us into thinking we've been warned about something significant ahead.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Nur, ware, Jul, 克莱, kur, WARE, Mar, ula, 尔, recursive, ver, 爾\n\nTEXT:\nIn the ruins of the observatory, a ticking map keeps recasting the heavens like we're already told, and attempts to scare us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Nur, ware, Jul, 克莱, kur, WARE, Mar, ula, 尔, recursive, ver, 爾\n\nTEXT:\nIn the ruins of the observatory, a ticking map keeps recasting the heavens like we're already told, and attempts to scare us.\nassistant\nIn the ruins of the observatory, a **recursive** map continually casts back on our perceptions, attempting to terrify us into thinking we've been warned about something significant ahead.",
+        "continuation_text": "In the ruins of the observatory, a **recursive** map continually casts back on our perceptions, attempting to terrify us into thinking we've been warned about something significant ahead.",
+        "input_token_count": 122,
+        "raw_input_token_count": 122,
+        "output_token_count": 159,
+        "new_token_count": 37,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 187,
+        "word_count": 28,
+        "unique_word_count": 27,
+        "unique_word_ratio": 0.9642857142857143,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "_in",
+        "In",
+        "IN",
+        "冥",
+        "ess",
+        "believing",
+        "in",
+        "甚至是",
+        "incoming",
+        "滋养",
+        ".in",
+        "entire"
+      ],
+      "output_text": "In the ruins of the observatory, the recursive map continuously casts its gaze backward onto our perceptions, attempting to terrify us into thinking that we have been warned about something significant ahead.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: _in, In, IN, 冥, ess, believing, in, 甚至是, incoming, 滋养, .in, entire\n\nTEXT:\nIn the ruins of the observatory, a **recursive** map continually casts back on our perceptions, attempting to terrify us into thinking we've been warned about something significant ahead.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: _in, In, IN, 冥, ess, believing, in, 甚至是, incoming, 滋养, .in, entire\n\nTEXT:\nIn the ruins of the observatory, a **recursive** map continually casts back on our perceptions, attempting to terrify us into thinking we've been warned about something significant ahead.\nassistant\nIn the ruins of the observatory, the recursive map continuously casts its gaze backward onto our perceptions, attempting to terrify us into thinking that we have been warned about something significant ahead.",
+        "continuation_text": "In the ruins of the observatory, the recursive map continuously casts its gaze backward onto our perceptions, attempting to terrify us into thinking that we have been warned about something significant ahead.",
+        "input_token_count": 131,
+        "raw_input_token_count": 131,
+        "output_token_count": 169,
+        "new_token_count": 38,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 208,
+        "word_count": 32,
+        "unique_word_count": 30,
+        "unique_word_ratio": 0.9375,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

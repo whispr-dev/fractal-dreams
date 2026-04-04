@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1433,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 331,
+        "word_count": 57,
+        "unique_word_count": 56,
+        "unique_word_ratio": 0.9824561403508771,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 700,
+        "word_count": 109,
+        "unique_word_count": 102,
+        "unique_word_ratio": 0.9357798165137615,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1056,
+        "word_count": 161,
+        "unique_word_count": 114,
+        "unique_word_ratio": 0.7080745341614907,
+        "repeated_bigram_count": 38
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Did",
+        "Can",
+        "Fortunately",
+        "Luckily",
+        "Does",
+        "Altern",
+        "An",
+        "Sure",
+        "Sometimes",
+        "Interestingly",
+        "Thankfully",
+        "Isn"
+      ],
+      "output_text": "The world is now over with this new paradigm that you can use for your study while reading about evolution's history—a modern version of Modern Science Fiction by Michael E. Sandberg called \"The Evolution of Biology\" (1999). It will be on sale starting November 7th at $10 USD per book or via Amazon Prime/Prime through 20 October!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is now over with this new paradigm that you can use for your study while reading about evolution's history—a modern version of Modern Science Fiction by Michael E. Sandberg called \"The Evolution of Biology\" (1999). It will be on sale starting November 7th at $10 USD per book or via Amazon Prime/Prime through 20 October!",
+        "continuation_text": "The world is now over with this new paradigm that you can use for your study while reading about evolution's history—a modern version of Modern Science Fiction by Michael E. Sandberg called \"The Evolution of Biology\" (1999). It will be on sale starting November 7th at $10 USD per book or via Amazon Prime/Prime through 20 October!",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 183,
+        "new_token_count": 72,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 331,
+        "word_count": 57,
+        "unique_word_count": 56,
+        "unique_word_ratio": 0.9824561403508771,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "partisan",
+        "monuments",
+        "sectarian",
+        "monument",
+        "divisive",
+        "jar",
+        "attraction",
+        "statues",
+        "remarks",
+        "tragic",
+        "dimensions",
+        "lonely"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: partisan, monuments, sectarian, monument, divisive, jar, attraction, statues, remarks, tragic, dimensions, lonely\n\nTEXT:\nThe world is now over with this new paradigm that you can use for your study while reading about evolution's history—a modern version of Modern Science Fiction by Michael E. Sandberg called \"The Evolution of Biology\" (1999). It will be on sale starting November 7th at $10 USD per book or via Amazon Prime/Prime through 20 October!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: partisan, monuments, sectarian, monument, divisive, jar, attraction, statues, remarks, tragic, dimensions, lonely\n\nTEXT:\nThe world is now over with this new paradigm that you can use for your study while reading about evolution's history—a modern version of Modern Science Fiction by Michael E. Sandberg called \"The Evolution of Biology\" (1999). It will be on sale starting November 7th at $10 USD per book or via Amazon Prime/Prime through 20 October!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: partisan, monuments, sectarian, monument, divisive, jar, attraction, statues, remarks, tragic, dimensions, lonely\n\nTEXT:\nThe world is now over with this new paradigm that you can use for your study while reading about evolution's history—a modern version of Modern Science Fiction by Michael E. Sandberg called \"The Evolution of Biology\" (1999). It will be on sale starting November 7th at $10 USD per book or via Amazon Prime/Prime through 20 October!",
+        "continuation_text": "",
+        "input_token_count": 156,
+        "raw_input_token_count": 156,
+        "output_token_count": 157,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 700,
+        "word_count": 109,
+        "unique_word_count": 102,
+        "unique_word_ratio": 0.9357798165137615,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "People",
+        "helping",
+        "struggling",
+        ".'",
+        "paycheck",
+        "WordPress",
+        "Sometimes",
+        "someone",
+        "Shiite",
+        "putting",
+        ",'",
+        "Often"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: People, helping, struggling, .', paycheck, WordPress, Sometimes, someone, Shiite, putting, ,', Often\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: partisan, monuments, sectarian, monument, divisive, jar, attraction, statues, remarks, tragic, dimensions, lonely\n\nTEXT:\nThe world is now over with this new paradigm that you can use for your study while reading about evolution's history—a modern version of Modern Science Fiction by Michael E. Sandberg called \"The Evolution of Biology\" (1999). It will be on sale starting November 7th at $10 USD per book or via Amazon Prime/Prime through 20 October!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: People, helping, struggling, .', paycheck, WordPress, Sometimes, someone, Shiite, putting, ,', Often\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: partisan, monuments, sectarian, monument, divisive, jar, attraction, statues, remarks, tragic, dimensions, lonely\n\nTEXT:\nThe world is now over with this new paradigm that you can use for your study while reading about evolution's history—a modern version of Modern Science Fiction by Michael E. Sandberg called \"The Evolution of Biology\" (1999). It will be on sale starting November 7th at $10 USD per book or via Amazon Prime/Prime through 20 October!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: People, helping, struggling, .', paycheck, WordPress, Sometimes, someone, Shiite, putting, ,', Often\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: partisan, monuments, sectarian, monument, divisive, jar, attraction, statues, remarks, tragic, dimensions, lonely\n\nTEXT:\nThe world is now over with this new paradigm that you can use for your study while reading about evolution's history—a modern version of Modern Science Fiction by Michael E. Sandberg called \"The Evolution of Biology\" (1999). It will be on sale starting November 7th at $10 USD per book or via Amazon Prime/Prime through 20 October!",
+        "continuation_text": "",
+        "input_token_count": 241,
+        "raw_input_token_count": 241,
+        "output_token_count": 242,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1056,
+        "word_count": 161,
+        "unique_word_count": 114,
+        "unique_word_ratio": 0.7080745341614907,
+        "repeated_bigram_count": 38
+      }
+    }
+  ]
+}

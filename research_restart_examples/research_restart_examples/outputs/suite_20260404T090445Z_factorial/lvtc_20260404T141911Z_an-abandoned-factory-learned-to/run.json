@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1430,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 659,
+        "word_count": 92,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.9347826086956522,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 399,
+        "word_count": 54,
+        "unique_word_count": 48,
+        "unique_word_ratio": 0.8888888888888888,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 460,
+        "word_count": 67,
+        "unique_word_count": 58,
+        "unique_word_ratio": 0.8656716417910447,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 572,
+        "word_count": 79,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.8481012658227848,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "like",
+        "to",
+        "were",
+        "its",
+        "and",
+        "for",
+        "If",
+        "它",
+        "the"
+      ],
+      "output_text": "The next recursive transformation would involve identifying patterns or themes within the text that can guide further elaboration on what follows. Given the context provided:\n\n1. **It** introduces the subject.\n2. **If/Its** indicates conditionality with an unspecified action (likely referring to narrating).\n3. **To/For** suggests movement towards something specific after narration is completed.\n\nBased on this structure, here's how we might recursively transform this:\n\n**Next Recursive Transformation:**\n\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\" \n\n- \"Abandoned factory",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, like, to, were, its, and, for, If, 它, the\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, like, to, were, its, and, for, If, 它, the\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nThe next recursive transformation would involve identifying patterns or themes within the text that can guide further elaboration on what follows. Given the context provided:\n\n1. **It** introduces the subject.\n2. **If/Its** indicates conditionality with an unspecified action (likely referring to narrating).\n3. **To/For** suggests movement towards something specific after narration is completed.\n\nBased on this structure, here's how we might recursively transform this:\n\n**Next Recursive Transformation:**\n\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\" \n\n- \"Abandoned factory",
+        "continuation_text": "The next recursive transformation would involve identifying patterns or themes within the text that can guide further elaboration on what follows. Given the context provided:\n\n1. **It** introduces the subject.\n2. **If/Its** indicates conditionality with an unspecified action (likely referring to narrating).\n3. **To/For** suggests movement towards something specific after narration is completed.\n\nBased on this structure, here's how we might recursively transform this:\n\n**Next Recursive Transformation:**\n\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\" \n\n- \"Abandoned factory",
+        "input_token_count": 109,
+        "raw_input_token_count": 109,
+        "output_token_count": 237,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 659,
+        "word_count": 92,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.9347826086956522,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "It",
+        "If",
+        "is",
+        "to",
+        "the",
+        "for",
+        "was",
+        "and",
+        "are"
+      ],
+      "output_text": "\"The next recursive transformation would involve identifying patterns or themes within the text that can guide further elaboration on what follows. Given the context provided:\n\n1. **It** introduces the subject.\n2. **If/Its** indicates conditionality with an unspecified action (likely referring to narrating).\n\n---\n\nThis transformation captures the essence while adhering to the guidelines provided.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, It, If, is, to, the, for, was, and, are\n\nTEXT:\nThe next recursive transformation would involve identifying patterns or themes within the text that can guide further elaboration on what follows. Given the context provided:\n\n1. **It** introduces the subject.\n2. **If/Its** indicates conditionality with an unspecified action (likely referring to narrating).\n3. **To/For** suggests movement towards something specific after narration is completed.\n\nBased on this structure, here's how we might recursively transform this:\n\n**Next Recursive Transformation:**\n\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\" \n\n- \"Abandoned factory<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, It, If, is, to, the, for, was, and, are\n\nTEXT:\nThe next recursive transformation would involve identifying patterns or themes within the text that can guide further elaboration on what follows. Given the context provided:\n\n1. **It** introduces the subject.\n2. **If/Its** indicates conditionality with an unspecified action (likely referring to narrating).\n3. **To/For** suggests movement towards something specific after narration is completed.\n\nBased on this structure, here's how we might recursively transform this:\n\n**Next Recursive Transformation:**\n\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\" \n\n- \"Abandoned factory\nassistant\n\"The next recursive transformation would involve identifying patterns or themes within the text that can guide further elaboration on what follows. Given the context provided:\n\n1. **It** introduces the subject.\n2. **If/Its** indicates conditionality with an unspecified action (likely referring to narrating).\n\n---\n\nThis transformation captures the essence while adhering to the guidelines provided.",
+        "continuation_text": "\"The next recursive transformation would involve identifying patterns or themes within the text that can guide further elaboration on what follows. Given the context provided:\n\n1. **It** introduces the subject.\n2. **If/Its** indicates conditionality with an unspecified action (likely referring to narrating).\n\n---\n\nThis transformation captures the essence while adhering to the guidelines provided.",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 283,
+        "new_token_count": 73,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 399,
+        "word_count": 54,
+        "unique_word_count": 48,
+        "unique_word_ratio": 0.8888888888888888,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "If",
+        "to",
+        "were",
+        "It",
+        "is",
+        "that",
+        "for",
+        "are",
+        "was"
+      ],
+      "output_text": "The next recursive transformation would focus on extracting and analyzing key elements from the narrative structure described. This involves breaking down the initial outline into more specific components, such as identifying the beginning, middle, and end points of the story's progression. By doing so, we aim to understand the sequence of events and their underlying relationships, which will then inform future explorations or interpretations of the story.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, If, to, were, It, is, that, for, are, was\n\nTEXT:\n\"The next recursive transformation would involve identifying patterns or themes within the text that can guide further elaboration on what follows. Given the context provided:\n\n1. **It** introduces the subject.\n2. **If/Its** indicates conditionality with an unspecified action (likely referring to narrating).\n\n---\n\nThis transformation captures the essence while adhering to the guidelines provided.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, If, to, were, It, is, that, for, are, was\n\nTEXT:\n\"The next recursive transformation would involve identifying patterns or themes within the text that can guide further elaboration on what follows. Given the context provided:\n\n1. **It** introduces the subject.\n2. **If/Its** indicates conditionality with an unspecified action (likely referring to narrating).\n\n---\n\nThis transformation captures the essence while adhering to the guidelines provided.\nassistant\nThe next recursive transformation would focus on extracting and analyzing key elements from the narrative structure described. This involves breaking down the initial outline into more specific components, such as identifying the beginning, middle, and end points of the story's progression. By doing so, we aim to understand the sequence of events and their underlying relationships, which will then inform future explorations or interpretations of the story.",
+        "continuation_text": "The next recursive transformation would focus on extracting and analyzing key elements from the narrative structure described. This involves breaking down the initial outline into more specific components, such as identifying the beginning, middle, and end points of the story's progression. By doing so, we aim to understand the sequence of events and their underlying relationships, which will then inform future explorations or interpretations of the story.",
+        "input_token_count": 154,
+        "raw_input_token_count": 154,
+        "output_token_count": 232,
+        "new_token_count": 78,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 460,
+        "word_count": 67,
+        "unique_word_count": 58,
+        "unique_word_ratio": 0.8656716417910447,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "the",
+        "if",
+        "it",
+        "and",
+        "of",
+        ",",
+        "to",
+        "for",
+        "is",
+        "in",
+        "or",
+        "that"
+      ],
+      "output_text": "The next recursive transformation focuses on identifying and summarizing the chronological order of events within the narrative structure provided. Breaking down each segment into its constituent parts, including the introduction (beginning), development (middle), climax, resolution (end), and any other pivotal moments along the way, allows us to construct an overarching overview of how various plot threads interact and influence one another throughout the story. This step aids readers in comprehending the overall trajectory and significance of the events presented.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, if, it, and, of, ,, to, for, is, in, or, that\n\nTEXT:\nThe next recursive transformation would focus on extracting and analyzing key elements from the narrative structure described. This involves breaking down the initial outline into more specific components, such as identifying the beginning, middle, and end points of the story's progression. By doing so, we aim to understand the sequence of events and their underlying relationships, which will then inform future explorations or interpretations of the story.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, if, it, and, of, ,, to, for, is, in, or, that\n\nTEXT:\nThe next recursive transformation would focus on extracting and analyzing key elements from the narrative structure described. This involves breaking down the initial outline into more specific components, such as identifying the beginning, middle, and end points of the story's progression. By doing so, we aim to understand the sequence of events and their underlying relationships, which will then inform future explorations or interpretations of the story.\nassistant\nThe next recursive transformation focuses on identifying and summarizing the chronological order of events within the narrative structure provided. Breaking down each segment into its constituent parts, including the introduction (beginning), development (middle), climax, resolution (end), and any other pivotal moments along the way, allows us to construct an overarching overview of how various plot threads interact and influence one another throughout the story. This step aids readers in comprehending the overall trajectory and significance of the events presented.",
+        "continuation_text": "The next recursive transformation focuses on identifying and summarizing the chronological order of events within the narrative structure provided. Breaking down each segment into its constituent parts, including the introduction (beginning), development (middle), climax, resolution (end), and any other pivotal moments along the way, allows us to construct an overarching overview of how various plot threads interact and influence one another throughout the story. This step aids readers in comprehending the overall trajectory and significance of the events presented.",
+        "input_token_count": 158,
+        "raw_input_token_count": 158,
+        "output_token_count": 253,
+        "new_token_count": 95,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 572,
+        "word_count": 79,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.8481012658227848,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

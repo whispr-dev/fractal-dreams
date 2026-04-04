@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1111,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 33,
+        "word_count": 4,
+        "unique_word_count": 4,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 35,
+        "word_count": 6,
+        "unique_word_count": 6,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 147,
+        "word_count": 27,
+        "unique_word_count": 27,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 297,
+        "word_count": 52,
+        "unique_word_count": 51,
+        "unique_word_ratio": 0.9807692307692307,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "And so when it got lost for some time...the authors would try to avoid repeating their earlier mistakes at once (or perhaps by using fewer words). The only thing they could remember was what caused them to lose an interest; thus we can not recall any past failures or missteps since our last experience! For example if you had been thinking about how many times have you remembered this one again? What did your mother miss on me before she left her house...? She never showed up just because I felt bad during my first attempt to make fun of each other's previous error attempts without changing anything whatsoever....and yet despite these false memories being common between us, every failure has all but vanished until next week :) Note 1 - both success and rejection fail with very different intent than others which is usually explained from",
+      "output_text": "simple patterns described above..",
+      "source_window_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+      "reflection_window_text": "And so when it got lost for some time...the authors would try to avoid repeating their earlier mistakes at once (or perhaps by using fewer words). The only thing they could remember was what caused them to lose an interest; thus we can not recall any past failures or missteps since our last experience! For example if you had been thinking about how many times have you remembered this one again? What did your mother miss on me before she left her house...? She never showed up just because I felt bad during my first attempt to make fun of each other's previous error attempts without changing anything whatsoever....and yet despite these false memories being common between us, every failure has all but vanished until next week :) Note 1 - both success and rejection fail with very different intent than others which is usually explained from",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. And so when it got lost for some time...the authors would try to avoid repeating their earlier mistakes at once (or perhaps by using fewer words). The only thing they could remember was what caused them to lose an interest; thus we can not recall any past failures or missteps since our last experience! For example if you had been thinking about how many times have you remembered this one again? What did your mother miss on me before she left her house...? She never showed up just because I felt bad during my first attempt to make fun of each other's previous error attempts without changing anything whatsoever....and yet despite these false memories being common between us, every failure has all but vanished until next week :) Note 1 - both success and rejection fail with very different intent than others which is usually explained from",
+        "continuation_text": "And so when it got lost for some time...the authors would try to avoid repeating their earlier mistakes at once (or perhaps by using fewer words). The only thing they could remember was what caused them to lose an interest; thus we can not recall any past failures or missteps since our last experience! For example if you had been thinking about how many times have you remembered this one again? What did your mother miss on me before she left her house...? She never showed up just because I felt bad during my first attempt to make fun of each other's previous error attempts without changing anything whatsoever....and yet despite these false memories being common between us, every failure has all but vanished until next week :) Note 1 - both success and rejection fail with very different intent than others which is usually explained from",
+        "input_token_count": 100,
+        "raw_input_token_count": 100,
+        "output_token_count": 260,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\n\nREFLECTION:\nAnd so when it got lost for some time...the authors would try to avoid repeating their earlier mistakes at once (or perhaps by using fewer words). The only thing they could remember was what caused them to lose an interest; thus we can not recall any past failures or missteps since our last experience! For example if you had been thinking about how many times have you remembered this one again? What did your mother miss on me before she left her house...? She never showed up just because I felt bad during my first attempt to make fun of each other's previous error attempts without changing anything whatsoever....and yet despite these false memories being common between us, every failure has all but vanished until next week :) Note 1 - both success and rejection fail with very different intent than others which is usually explained from",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\n\nREFLECTION:\nAnd so when it got lost for some time...the authors would try to avoid repeating their earlier mistakes at once (or perhaps by using fewer words). The only thing they could remember was what caused them to lose an interest; thus we can not recall any past failures or missteps since our last experience! For example if you had been thinking about how many times have you remembered this one again? What did your mother miss on me before she left her house...? She never showed up just because I felt bad during my first attempt to make fun of each other's previous error attempts without changing anything whatsoever....and yet despite these false memories being common between us, every failure has all but vanished until next week :) Note 1 - both success and rejection fail with very different intent than others which is usually explained from simple patterns described above..",
+        "continuation_text": "simple patterns described above..",
+        "input_token_count": 248,
+        "raw_input_token_count": 248,
+        "output_token_count": 254,
+        "new_token_count": 6,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 33,
+        "word_count": 4,
+        "unique_word_count": 4,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "This helps you understand why most languages have this tendency to get repetitive, confusing even when they contain many very complex features from different types of systems (e., memory). In some contexts these can lead us into problems for real life purposes which may involve long lists of common items such as objects or relationships with entities/solutions etc. However we›d don't want to use any form of structure without having every function define one variable so simple will be easier than it is today!",
+      "output_text": "What really needs to happen though?",
+      "source_window_text": "simple patterns described above..",
+      "reflection_window_text": "This helps you understand why most languages have this tendency to get repetitive, confusing even when they contain many very complex features from different types of systems (e., memory). In some contexts these can lead us into problems for real life purposes which may involve long lists of common items such as objects or relationships with entities/solutions etc. However we›d don't want to use any form of structure without having every function define one variable so simple will be easier than it is today!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nsimple patterns described above..",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nsimple patterns described above.. This helps you understand why most languages have this tendency to get repetitive, confusing even when they contain many very complex features from different types of systems (e., memory). In some contexts these can lead us into problems for real life purposes which may involve long lists of common items such as objects or relationships with entities/solutions etc. However we›d don't want to use any form of structure without having every function define one variable so simple will be easier than it is today!",
+        "continuation_text": "This helps you understand why most languages have this tendency to get repetitive, confusing even when they contain many very complex features from different types of systems (e., memory). In some contexts these can lead us into problems for real life purposes which may involve long lists of common items such as objects or relationships with entities/solutions etc. However we›d don't want to use any form of structure without having every function define one variable so simple will be easier than it is today!",
+        "input_token_count": 74,
+        "raw_input_token_count": 74,
+        "output_token_count": 172,
+        "new_token_count": 98,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsimple patterns described above..\n\nREFLECTION:\nThis helps you understand why most languages have this tendency to get repetitive, confusing even when they contain many very complex features from different types of systems (e., memory). In some contexts these can lead us into problems for real life purposes which may involve long lists of common items such as objects or relationships with entities/solutions etc. However we›d don't want to use any form of structure without having every function define one variable so simple will be easier than it is today!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nsimple patterns described above..\n\nREFLECTION:\nThis helps you understand why most languages have this tendency to get repetitive, confusing even when they contain many very complex features from different types of systems (e., memory). In some contexts these can lead us into problems for real life purposes which may involve long lists of common items such as objects or relationships with entities/solutions etc. However we›d don't want to use any form of structure without having every function define one variable so simple will be easier than it is today! What really needs to happen though?",
+        "continuation_text": "What really needs to happen though?",
+        "input_token_count": 159,
+        "raw_input_token_count": 159,
+        "output_token_count": 167,
+        "new_token_count": 8,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 35,
+        "word_count": 6,
+        "unique_word_count": 6,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "A version of this program is being developed by Haines who will run it at least one time, without allocating resources (like I am writing about). For instance… The goal for each feature project has to be set up separately from other types of code which allow them access directly through subclasses or non-variables such as abstractions; even if they might not need some additional abstraction like having different parts on their own when working with classes/unattached files etc. Here's my proposal:- It would have been best practice if your solution didn't include any kindelements but instead use only objects inside methods you can extend onto object based upon specific type variables - e = classmethods ; }",
+      "output_text": ". Now we'll probably keep our prototype around and compile against that end :<div> ... In case there isn\"t an idea available here just let us know!",
+      "source_window_text": "What really needs to happen though?",
+      "reflection_window_text": "A version of this program is being developed by Haines who will run it at least one time, without allocating resources (like I am writing about). For instance… The goal for each feature project has to be set up separately from other types of code which allow them access directly through subclasses or non-variables such as abstractions; even if they might not need some additional abstraction like having different parts on their own when working with classes/unattached files etc. Here's my proposal:- It would have been best practice if your solution didn't include any kindelements but instead use only objects inside methods you can extend onto object based upon specific type variables - e = classmethods ; }",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nWhat really needs to happen though?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nWhat really needs to happen though? A version of this program is being developed by Haines who will run it at least one time, without allocating resources (like I am writing about). For instance… The goal for each feature project has to be set up separately from other types of code which allow them access directly through subclasses or non-variables such as abstractions; even if they might not need some additional abstraction like having different parts on their own when working with classes/unattached files etc. Here's my proposal:- It would have been best practice if your solution didn't include any kindelements but instead use only objects inside methods you can extend onto object based upon specific type variables - e = classmethods ; }",
+        "continuation_text": "A version of this program is being developed by Haines who will run it at least one time, without allocating resources (like I am writing about). For instance… The goal for each feature project has to be set up separately from other types of code which allow them access directly through subclasses or non-variables such as abstractions; even if they might not need some additional abstraction like having different parts on their own when working with classes/unattached files etc. Here's my proposal:- It would have been best practice if your solution didn't include any kindelements but instead use only objects inside methods you can extend onto object based upon specific type variables - e = classmethods ; }",
+        "input_token_count": 76,
+        "raw_input_token_count": 76,
+        "output_token_count": 220,
+        "new_token_count": 144,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nWhat really needs to happen though?\n\nREFLECTION:\nA version of this program is being developed by Haines who will run it at least one time, without allocating resources (like I am writing about). For instance… The goal for each feature project has to be set up separately from other types of code which allow them access directly through subclasses or non-variables such as abstractions; even if they might not need some additional abstraction like having different parts on their own when working with classes/unattached files etc. Here's my proposal:- It would have been best practice if your solution didn't include any kindelements but instead use only objects inside methods you can extend onto object based upon specific type variables - e = classmethods ; }",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nWhat really needs to happen though?\n\nREFLECTION:\nA version of this program is being developed by Haines who will run it at least one time, without allocating resources (like I am writing about). For instance… The goal for each feature project has to be set up separately from other types of code which allow them access directly through subclasses or non-variables such as abstractions; even if they might not need some additional abstraction like having different parts on their own when working with classes/unattached files etc. Here's my proposal:- It would have been best practice if your solution didn't include any kindelements but instead use only objects inside methods you can extend onto object based upon specific type variables - e = classmethods ; } . Now we'll probably keep our prototype around and compile against that end :<div> ... In case there isn\"t an idea available here just let us know!",
+        "continuation_text": ". Now we'll probably keep our prototype around and compile against that end :<div> ... In case there isn\"t an idea available here just let us know!",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 242,
+        "new_token_count": 35,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 147,
+        "word_count": 27,
+        "unique_word_count": 27,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n. Now we'll probably keep our prototype around and compile against that end :<div> ... In case there isn\"t an idea available here just let us know!",
+      "output_text": "Note this is only one step away from writing your own implementation for each iteration (see earlier code). If you want to build all these models back into their state before they become public on paper use them later... I'd like everyone to make sure most people have readjustment guides first ;)",
+      "source_window_text": ". Now we'll probably keep our prototype around and compile against that end :<div> ... In case there isn\"t an idea available here just let us know!",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n. Now we'll probably keep our prototype around and compile against that end :<div> ... In case there isn\"t an idea available here just let us know!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n. Now we'll probably keep our prototype around and compile against that end :<div> ... In case there isn\"t an idea available here just let us know!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n. Now we'll probably keep our prototype around and compile against that end :<div> ... In case there isn\"t an idea available here just let us know!",
+        "continuation_text": "",
+        "input_token_count": 103,
+        "raw_input_token_count": 103,
+        "output_token_count": 104,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n. Now we'll probably keep our prototype around and compile against that end :<div> ... In case there isn\"t an idea available here just let us know!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n. Now we'll probably keep our prototype around and compile against that end :<div> ... In case there isn\"t an idea available here just let us know!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n. Now we'll probably keep our prototype around and compile against that end :<div> ... In case there isn\"t an idea available here just let us know!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n. Now we'll probably keep our prototype around and compile against that end :<div> ... In case there isn\"t an idea available here just let us know!\nNote this is only one step away from writing your own implementation for each iteration (see earlier code). If you want to build all these models back into their state before they become public on paper use them later... I'd like everyone to make sure most people have readjustment guides first ;)",
+        "continuation_text": "Note this is only one step away from writing your own implementation for each iteration (see earlier code). If you want to build all these models back into their state before they become public on paper use them later... I'd like everyone to make sure most people have readjustment guides first ;)",
+        "input_token_count": 194,
+        "raw_input_token_count": 194,
+        "output_token_count": 254,
+        "new_token_count": 60,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 297,
+        "word_count": 52,
+        "unique_word_count": 51,
+        "unique_word_ratio": 0.9807692307692307,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

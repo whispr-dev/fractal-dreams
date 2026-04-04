@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1093,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 603,
+        "word_count": 95,
+        "unique_word_count": 83,
+        "unique_word_ratio": 0.8736842105263158,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 566,
+        "word_count": 88,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.8977272727272727,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 208,
+        "word_count": 30,
+        "unique_word_count": 28,
+        "unique_word_ratio": 0.9333333333333333,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Mayo",
+        "_a",
+        "aint",
+        "_B",
+        "t",
+        "_C",
+        "ce",
+        "tt",
+        "_F",
+        "tr",
+        "fr",
+        "Yourself"
+      ],
+      "output_text": "To write the next recursive transformation of the given text using only the provided latent anchors (which refer to words that can be considered placeholders or missing parts), we need to identify any gaps where additional information could fill those places while adhering to the constraints of the latent anchors:\n\nOriginal Text:\n\"A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\"\n\nLatent Anchors:\n1. _a_\n2. _b_\n3. _c_\n\nStep 1: Identify potential missing words by looking for common phrases",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nTo write the next recursive transformation of the given text using only the provided latent anchors (which refer to words that can be considered placeholders or missing parts), we need to identify any gaps where additional information could fill those places while adhering to the constraints of the latent anchors:\n\nOriginal Text:\n\"A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\"\n\nLatent Anchors:\n1. _a_\n2. _b_\n3. _c_\n\nStep 1: Identify potential missing words by looking for common phrases",
+        "continuation_text": "To write the next recursive transformation of the given text using only the provided latent anchors (which refer to words that can be considered placeholders or missing parts), we need to identify any gaps where additional information could fill those places while adhering to the constraints of the latent anchors:\n\nOriginal Text:\n\"A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\"\n\nLatent Anchors:\n1. _a_\n2. _b_\n3. _c_\n\nStep 1: Identify potential missing words by looking for common phrases",
+        "input_token_count": 123,
+        "raw_input_token_count": 123,
+        "output_token_count": 243,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 603,
+        "word_count": 95,
+        "unique_word_count": 83,
+        "unique_word_ratio": 0.8736842105263158,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "rigesimal",
+        ".EditText",
+        "臣",
+        "viewBox",
+        "Psalm",
+        "诏",
+        "Wię",
+        "爻",
+        "Í",
+        "EditText",
+        "התורה",
+        "JSON"
+      ],
+      "output_text": "The original text contains several possible missing words based on context clues, but some have been identified with \"a\" and \"b\". The most obvious candidates are likely \"the\", \"it's\", \"was\", and possibly \"of which\".\n\nWith these initial suggestions, let’s see if we can refine this further.\n\n**Next Recursive Transformation:**\n\"To write the next recursive transformation of the given text using only the provided latent anchors.\" \n\nLatent Anchor: \n4. **d**\n\nLet's continue exploring how the hidden word might fit within the sentence.\n- Given that the Latent Anchor `d",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: rigesimal, .EditText, 臣, viewBox, Psalm, 诏, Wię, 爻, Í, EditText, התורה, JSON\n\nTEXT:\nTo write the next recursive transformation of the given text using only the provided latent anchors (which refer to words that can be considered placeholders or missing parts), we need to identify any gaps where additional information could fill those places while adhering to the constraints of the latent anchors:\n\nOriginal Text:\n\"A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\"\n\nLatent Anchors:\n1. _a_\n2. _b_\n3. _c_\n\nStep 1: Identify potential missing words by looking for common phrases<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: rigesimal, .EditText, 臣, viewBox, Psalm, 诏, Wię, 爻, Í, EditText, התורה, JSON\n\nTEXT:\nTo write the next recursive transformation of the given text using only the provided latent anchors (which refer to words that can be considered placeholders or missing parts), we need to identify any gaps where additional information could fill those places while adhering to the constraints of the latent anchors:\n\nOriginal Text:\n\"A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\"\n\nLatent Anchors:\n1. _a_\n2. _b_\n3. _c_\n\nStep 1: Identify potential missing words by looking for common phrases\nassistant\nThe original text contains several possible missing words based on context clues, but some have been identified with \"a\" and \"b\". The most obvious candidates are likely \"the\", \"it's\", \"was\", and possibly \"of which\".\n\nWith these initial suggestions, let’s see if we can refine this further.\n\n**Next Recursive Transformation:**\n\"To write the next recursive transformation of the given text using only the provided latent anchors.\" \n\nLatent Anchor: \n4. **d**\n\nLet's continue exploring how the hidden word might fit within the sentence.\n- Given that the Latent Anchor `d",
+        "continuation_text": "The original text contains several possible missing words based on context clues, but some have been identified with \"a\" and \"b\". The most obvious candidates are likely \"the\", \"it's\", \"was\", and possibly \"of which\".\n\nWith these initial suggestions, let’s see if we can refine this further.\n\n**Next Recursive Transformation:**\n\"To write the next recursive transformation of the given text using only the provided latent anchors.\" \n\nLatent Anchor: \n4. **d**\n\nLet's continue exploring how the hidden word might fit within the sentence.\n- Given that the Latent Anchor `d",
+        "input_token_count": 216,
+        "raw_input_token_count": 216,
+        "output_token_count": 336,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 566,
+        "word_count": 88,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.8977272727272727,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "nin",
+        "рог",
+        "-n",
+        "correspond",
+        "war",
+        "_PATTERN",
+        "mn",
+        "gri",
+        "(W",
+        "甚至连",
+        "про",
+        "borderBottom"
+      ],
+      "output_text": "To write the next recursive transformation of the given text using only the provided latent anchors,\n\n1. **g** **r**\n2. **n** **e**, **p** **attern**, **mn**, **Gri**, (**W**, **連**, **pro**, **бдентроиметро)",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: nin, рог, -n, correspond, war, _PATTERN, mn, gri, (W, 甚至连, про, borderBottom\n\nTEXT:\nThe original text contains several possible missing words based on context clues, but some have been identified with \"a\" and \"b\". The most obvious candidates are likely \"the\", \"it's\", \"was\", and possibly \"of which\".\n\nWith these initial suggestions, let’s see if we can refine this further.\n\n**Next Recursive Transformation:**\n\"To write the next recursive transformation of the given text using only the provided latent anchors.\" \n\nLatent Anchor: \n4. **d**\n\nLet's continue exploring how the hidden word might fit within the sentence.\n- Given that the Latent Anchor `d<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: nin, рог, -n, correspond, war, _PATTERN, mn, gri, (W, 甚至连, про, borderBottom\n\nTEXT:\nThe original text contains several possible missing words based on context clues, but some have been identified with \"a\" and \"b\". The most obvious candidates are likely \"the\", \"it's\", \"was\", and possibly \"of which\".\n\nWith these initial suggestions, let’s see if we can refine this further.\n\n**Next Recursive Transformation:**\n\"To write the next recursive transformation of the given text using only the provided latent anchors.\" \n\nLatent Anchor: \n4. **d**\n\nLet's continue exploring how the hidden word might fit within the sentence.\n- Given that the Latent Anchor `d\nassistant\nTo write the next recursive transformation of the given text using only the provided latent anchors,\n\n1. **g** **r**\n2. **n** **e**, **p** **attern**, **mn**, **Gri**, (**W**, **連**, **pro**, **бдентроиметро)",
+        "continuation_text": "To write the next recursive transformation of the given text using only the provided latent anchors,\n\n1. **g** **r**\n2. **n** **e**, **p** **attern**, **mn**, **Gri**, (**W**, **連**, **pro**, **бдентроиметро)",
+        "input_token_count": 214,
+        "raw_input_token_count": 214,
+        "output_token_count": 279,
+        "new_token_count": 65,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 208,
+        "word_count": 30,
+        "unique_word_count": 28,
+        "unique_word_ratio": 0.9333333333333333,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

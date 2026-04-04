@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1134,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 634,
+        "word_count": 111,
+        "unique_word_count": 111,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 38,
+        "word_count": 6,
+        "unique_word_count": 6,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 78,
+        "word_count": 19,
+        "unique_word_count": 18,
+        "unique_word_ratio": 0.9473684210526315,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 383,
+        "word_count": 67,
+        "unique_word_count": 63,
+        "unique_word_ratio": 0.9402985074626866,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "had",
+        "it",
+        "if",
+        "was",
+        "have",
+        "are",
+        "is",
+        "the",
+        "has",
+        "in",
+        "did"
+      ],
+      "output_text": "The only thing that really matters now from this moment on is an assumption about where all those lines will take place — which makes sense for me at least because we know how easy they can look like today’s world—when there's no one left except our very own father or son; when every second (if any) you write your code into each variable called after so many seconds doesn't matter what happens anymore (\"this means I'll get better\"). Thus do not miss out upon everything else while using some sort \"narrow\" function until then! It seems strange why people keep thinking ahead with their expectations just right before taking charge",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, it, if, was, have, are, is, the, has, in, did\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, it, if, was, have, are, is, the, has, in, did\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The only thing that really matters now from this moment on is an assumption about where all those lines will take place — which makes sense for me at least because we know how easy they can look like today’s world—when there's no one left except our very own father or son; when every second (if any) you write your code into each variable called after so many seconds doesn't matter what happens anymore (\"this means I'll get better\"). Thus do not miss out upon everything else while using some sort \"narrow\" function until then! It seems strange why people keep thinking ahead with their expectations just right before taking charge",
+        "continuation_text": "The only thing that really matters now from this moment on is an assumption about where all those lines will take place — which makes sense for me at least because we know how easy they can look like today’s world—when there's no one left except our very own father or son; when every second (if any) you write your code into each variable called after so many seconds doesn't matter what happens anymore (\"this means I'll get better\"). Thus do not miss out upon everything else while using some sort \"narrow\" function until then! It seems strange why people keep thinking ahead with their expectations just right before taking charge",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 236,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 634,
+        "word_count": 111,
+        "unique_word_count": 111,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "are",
+        "were",
+        "have",
+        "they",
+        "is",
+        "had",
+        "when",
+        "we",
+        "did",
+        "was"
+      ],
+      "output_text": "of writing something big and complex.\"",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, they, is, had, when, we, did, was\n\nTEXT:\nThe only thing that really matters now from this moment on is an assumption about where all those lines will take place — which makes sense for me at least because we know how easy they can look like today’s world—when there's no one left except our very own father or son; when every second (if any) you write your code into each variable called after so many seconds doesn't matter what happens anymore (\"this means I'll get better\"). Thus do not miss out upon everything else while using some sort \"narrow\" function until then! It seems strange why people keep thinking ahead with their expectations just right before taking charge",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, they, is, had, when, we, did, was\n\nTEXT:\nThe only thing that really matters now from this moment on is an assumption about where all those lines will take place — which makes sense for me at least because we know how easy they can look like today’s world—when there's no one left except our very own father or son; when every second (if any) you write your code into each variable called after so many seconds doesn't matter what happens anymore (\"this means I'll get better\"). Thus do not miss out upon everything else while using some sort \"narrow\" function until then! It seems strange why people keep thinking ahead with their expectations just right before taking charge of writing something big and complex.\"",
+        "continuation_text": "of writing something big and complex.\"",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 215,
+        "new_token_count": 8,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 38,
+        "word_count": 6,
+        "unique_word_count": 6,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "big",
+        "and",
+        ".\"",
+        "of",
+        "something",
+        "writing",
+        "huge",
+        "It",
+        "if",
+        "were",
+        "is"
+      ],
+      "output_text": ", like this , to \"tell you what can do\" on that page for your own purposes : .",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, big, and, .\", of, something, writing, huge, It, if, were, is\n\nTEXT:\nof writing something big and complex.\"",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, big, and, .\", of, something, writing, huge, It, if, were, is\n\nTEXT:\nof writing something big and complex.\", like this , to \"tell you what can do\" on that page for your own purposes : .",
+        "continuation_text": ", like this , to \"tell you what can do\" on that page for your own purposes : .",
+        "input_token_count": 86,
+        "raw_input_token_count": 86,
+        "output_token_count": 108,
+        "new_token_count": 22,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 78,
+        "word_count": 19,
+        "unique_word_count": 18,
+        "unique_word_ratio": 0.9473684210526315,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "in",
+        "that",
+        "to",
+        "for",
+        "the",
+        "if",
+        "you",
+        "is",
+        "this",
+        "have"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, in, that, to, for, the, if, you, is, this, have\n\nTEXT:\n, like this , to \"tell you what can do\" on that page for your own purposes : .",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, in, that, to, for, the, if, you, is, this, have\n\nTEXT:\n, like this , to \"tell you what can do\" on that page for your own purposes : .",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, in, that, to, for, the, if, you, is, this, have\n\nTEXT:\n, like this , to \"tell you what can do\" on that page for your own purposes : .",
+        "continuation_text": "",
+        "input_token_count": 100,
+        "raw_input_token_count": 100,
+        "output_token_count": 101,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 383,
+        "word_count": 67,
+        "unique_word_count": 63,
+        "unique_word_ratio": 0.9402985074626866,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

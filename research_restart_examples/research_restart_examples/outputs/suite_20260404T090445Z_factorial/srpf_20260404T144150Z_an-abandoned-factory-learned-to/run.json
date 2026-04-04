@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1463,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 15,
+        "word_count": 4,
+        "unique_word_count": 4,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 664,
+        "word_count": 106,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9905660377358491,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1878,
+        "word_count": 295,
+        "unique_word_count": 158,
+        "unique_word_ratio": 0.535593220338983,
+        "repeated_bigram_count": 118
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "This may be hard for some who read this book because one of his most powerful words is \"How many people can I take back?\" The other must know something very important about how our brains work so they don't make mistakes while we're doing these experiments (the only real way out would have been if you knew what was going on). Most times he's just saying stuff which isn´t quite clear enough or takes over with new thoughts quickly after an author has done them all wrong - even though sometimes using better terms means not writing as clearly anymore than before... There doesn`T seem anywhere near where my brain really needs me now! Maybe someday someone will find clarity when reading through your works then :-) You think? No thanks!! If anyone knows anything good/interesting from another person please tell him",
+      "output_text": ":) Thank You !!",
+      "source_window_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+      "reflection_window_text": "This may be hard for some who read this book because one of his most powerful words is \"How many people can I take back?\" The other must know something very important about how our brains work so they don't make mistakes while we're doing these experiments (the only real way out would have been if you knew what was going on). Most times he's just saying stuff which isn´t quite clear enough or takes over with new thoughts quickly after an author has done them all wrong - even though sometimes using better terms means not writing as clearly anymore than before... There doesn`T seem anywhere near where my brain really needs me now! Maybe someday someone will find clarity when reading through your works then :-) You think? No thanks!! If anyone knows anything good/interesting from another person please tell him",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. This may be hard for some who read this book because one of his most powerful words is \"How many people can I take back?\" The other must know something very important about how our brains work so they don't make mistakes while we're doing these experiments (the only real way out would have been if you knew what was going on). Most times he's just saying stuff which isn´t quite clear enough or takes over with new thoughts quickly after an author has done them all wrong - even though sometimes using better terms means not writing as clearly anymore than before... There doesn`T seem anywhere near where my brain really needs me now! Maybe someday someone will find clarity when reading through your works then :-) You think? No thanks!! If anyone knows anything good/interesting from another person please tell him",
+        "continuation_text": "This may be hard for some who read this book because one of his most powerful words is \"How many people can I take back?\" The other must know something very important about how our brains work so they don't make mistakes while we're doing these experiments (the only real way out would have been if you knew what was going on). Most times he's just saying stuff which isn´t quite clear enough or takes over with new thoughts quickly after an author has done them all wrong - even though sometimes using better terms means not writing as clearly anymore than before... There doesn`T seem anywhere near where my brain really needs me now! Maybe someday someone will find clarity when reading through your works then :-) You think? No thanks!! If anyone knows anything good/interesting from another person please tell him",
+        "input_token_count": 95,
+        "raw_input_token_count": 95,
+        "output_token_count": 255,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\nThis may be hard for some who read this book because one of his most powerful words is \"How many people can I take back?\" The other must know something very important about how our brains work so they don't make mistakes while we're doing these experiments (the only real way out would have been if you knew what was going on). Most times he's just saying stuff which isn´t quite clear enough or takes over with new thoughts quickly after an author has done them all wrong - even though sometimes using better terms means not writing as clearly anymore than before... There doesn`T seem anywhere near where my brain really needs me now! Maybe someday someone will find clarity when reading through your works then :-) You think? No thanks!! If anyone knows anything good/interesting from another person please tell him",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\nThis may be hard for some who read this book because one of his most powerful words is \"How many people can I take back?\" The other must know something very important about how our brains work so they don't make mistakes while we're doing these experiments (the only real way out would have been if you knew what was going on). Most times he's just saying stuff which isn´t quite clear enough or takes over with new thoughts quickly after an author has done them all wrong - even though sometimes using better terms means not writing as clearly anymore than before... There doesn`T seem anywhere near where my brain really needs me now! Maybe someday someone will find clarity when reading through your works then :-) You think? No thanks!! If anyone knows anything good/interesting from another person please tell him :) Thank You !!",
+        "continuation_text": ":) Thank You !!",
+        "input_token_count": 243,
+        "raw_input_token_count": 243,
+        "output_token_count": 248,
+        "new_token_count": 5,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 15,
+        "word_count": 4,
+        "unique_word_count": 4,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "If you were asked about your recent papers, I'd be happy to send them an email :) Yours sincerely :)-",
+      "output_text": "T",
+      "source_window_text": ":) Thank You !!",
+      "reflection_window_text": "If you were asked about your recent papers, I'd be happy to send them an email :) Yours sincerely :)-",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n:) Thank You !!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n:) Thank You !! If you were asked about your recent papers, I'd be happy to send them an email :) Yours sincerely :)-",
+        "continuation_text": "If you were asked about your recent papers, I'd be happy to send them an email :) Yours sincerely :)-",
+        "input_token_count": 74,
+        "raw_input_token_count": 74,
+        "output_token_count": 99,
+        "new_token_count": 25,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n:) Thank You !!\n\nREFLECTION:\nIf you were asked about your recent papers, I'd be happy to send them an email :) Yours sincerely :)-",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n:) Thank You !!\n\nREFLECTION:\nIf you were asked about your recent papers, I'd be happy to send them an email :) Yours sincerely :)-T",
+        "continuation_text": "T",
+        "input_token_count": 86,
+        "raw_input_token_count": 86,
+        "output_token_count": 88,
+        "new_token_count": 2,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "ests for 'Dolby 5' use this approach, except with no explicit code changes (it's possible to keep it as an automatic update). We have tried using similar techniques on other languages including Haskell but nothing is working very well so we recommend you try out either one instead of trying \"simple\" Python or Perl where there might be several differences like indentation support versus cscope / dawk -e .",
+      "output_text": "If that doesn't work what should? Use PEP 318 if anything else! The syntax also can provide error handling issues even when running them without warnings and possibly will result more errors than necessary which may occur at runtime too often after some kind programming step rather than during testing/code review... You'll notice these bugs while writing your own tests yourself :) In addition I do think Pygments provides better documentation about how modules go wrong by providing up to date sources from various people who used their toolchain before they started coding C++ based applications i've read most recently; please see my post here https://github…",
+      "source_window_text": "T",
+      "reflection_window_text": "ests for 'Dolby 5' use this approach, except with no explicit code changes (it's possible to keep it as an automatic update). We have tried using similar techniques on other languages including Haskell but nothing is working very well so we recommend you try out either one instead of trying \"simple\" Python or Perl where there might be several differences like indentation support versus cscope / dawk -e .",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nT",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nTests for 'Dolby 5' use this approach, except with no explicit code changes (it's possible to keep it as an automatic update). We have tried using similar techniques on other languages including Haskell but nothing is working very well so we recommend you try out either one instead of trying \"simple\" Python or Perl where there might be several differences like indentation support versus cscope / dawk -e .",
+        "continuation_text": "ests for 'Dolby 5' use this approach, except with no explicit code changes (it's possible to keep it as an automatic update). We have tried using similar techniques on other languages including Haskell but nothing is working very well so we recommend you try out either one instead of trying \"simple\" Python or Perl where there might be several differences like indentation support versus cscope / dawk -e .",
+        "input_token_count": 70,
+        "raw_input_token_count": 70,
+        "output_token_count": 154,
+        "new_token_count": 84,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nT\n\nREFLECTION:\nests for 'Dolby 5' use this approach, except with no explicit code changes (it's possible to keep it as an automatic update). We have tried using similar techniques on other languages including Haskell but nothing is working very well so we recommend you try out either one instead of trying \"simple\" Python or Perl where there might be several differences like indentation support versus cscope / dawk -e .",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nT\n\nREFLECTION:\nests for 'Dolby 5' use this approach, except with no explicit code changes (it's possible to keep it as an automatic update). We have tried using similar techniques on other languages including Haskell but nothing is working very well so we recommend you try out either one instead of trying \"simple\" Python or Perl where there might be several differences like indentation support versus cscope / dawk -e . If that doesn't work what should? Use PEP 318 if anything else! The syntax also can provide error handling issues even when running them without warnings and possibly will result more errors than necessary which may occur at runtime too often after some kind programming step rather than during testing/code review... You'll notice these bugs while writing your own tests yourself :) In addition I do think Pygments provides better documentation about how modules go wrong by providing up to date sources from various people who used their toolchain before they started coding C++ based applications i've read most recently; please see my post here https://github…",
+        "continuation_text": "If that doesn't work what should? Use PEP 318 if anything else! The syntax also can provide error handling issues even when running them without warnings and possibly will result more errors than necessary which may occur at runtime too often after some kind programming step rather than during testing/code review... You'll notice these bugs while writing your own tests yourself :) In addition I do think Pygments provides better documentation about how modules go wrong by providing up to date sources from various people who used their toolchain before they started coding C++ based applications i've read most recently; please see my post here https://github…",
+        "input_token_count": 141,
+        "raw_input_token_count": 141,
+        "output_token_count": 264,
+        "new_token_count": 123,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 664,
+        "word_count": 106,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9905660377358491,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIf that doesn't work what should? Use PEP 318 if anything else! The syntax also can provide error handling issues even when running them without warnings and possibly will result more errors than necessary which may occur at runtime too often after some kind programming step rather than during testing/code review... You'll notice these bugs while writing your own tests yourself :) In addition I do think Pygments provides better documentation about how modules go wrong by providing up to date sources from various people who used their toolchain before they started coding C++ based applications i've read most recently; please see my post here https://github…",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nIf that doesn't work what should? Use PEP 318 if anything else! The syntax also can provide error handling issues even when running them without warnings and possibly will result more errors than necessary which may occur at runtime too often after some kind programming step rather than during testing/code review... You'll notice these bugs while writing your own tests yourself :) In addition I do think Pygments provides better documentation about how modules go wrong by providing up to date sources from various people who used their toolchain before they started coding C++ based applications i've read most recently; please see my post here https://github…\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIf that doesn't work what should? Use PEP 318 if anything else! The syntax also can provide error handling issues even when running them without warnings and possibly will result more errors than necessary which may occur at runtime too often after some kind programming step rather than during testing/code review... You'll notice these bugs while writing your own tests yourself :) In addition I do think Pygments provides better documentation about how modules go wrong by providing up to date sources from various people who used their toolchain before they started coding C++ based applications i've read most recently; please see my post here https://github…",
+      "source_window_text": "If that doesn't work what should? Use PEP 318 if anything else! The syntax also can provide error handling issues even when running them without warnings and possibly will result more errors than necessary which may occur at runtime too often after some kind programming step rather than during testing/code review... You'll notice these bugs while writing your own tests yourself :) In addition I do think Pygments provides better documentation about how modules go wrong by providing up to date sources from various people who used their toolchain before they started coding C++ based applications i've read most recently; please see my post here https://github…",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIf that doesn't work what should? Use PEP 318 if anything else! The syntax also can provide error handling issues even when running them without warnings and possibly will result more errors than necessary which may occur at runtime too often after some kind programming step rather than during testing/code review... You'll notice these bugs while writing your own tests yourself :) In addition I do think Pygments provides better documentation about how modules go wrong by providing up to date sources from various people who used their toolchain before they started coding C++ based applications i've read most recently; please see my post here https://github…",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIf that doesn't work what should? Use PEP 318 if anything else! The syntax also can provide error handling issues even when running them without warnings and possibly will result more errors than necessary which may occur at runtime too often after some kind programming step rather than during testing/code review... You'll notice these bugs while writing your own tests yourself :) In addition I do think Pygments provides better documentation about how modules go wrong by providing up to date sources from various people who used their toolchain before they started coding C++ based applications i've read most recently; please see my post here https://github…",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIf that doesn't work what should? Use PEP 318 if anything else! The syntax also can provide error handling issues even when running them without warnings and possibly will result more errors than necessary which may occur at runtime too often after some kind programming step rather than during testing/code review... You'll notice these bugs while writing your own tests yourself :) In addition I do think Pygments provides better documentation about how modules go wrong by providing up to date sources from various people who used their toolchain before they started coding C++ based applications i've read most recently; please see my post here https://github…",
+        "continuation_text": "",
+        "input_token_count": 191,
+        "raw_input_token_count": 191,
+        "output_token_count": 192,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nIf that doesn't work what should? Use PEP 318 if anything else! The syntax also can provide error handling issues even when running them without warnings and possibly will result more errors than necessary which may occur at runtime too often after some kind programming step rather than during testing/code review... You'll notice these bugs while writing your own tests yourself :) In addition I do think Pygments provides better documentation about how modules go wrong by providing up to date sources from various people who used their toolchain before they started coding C++ based applications i've read most recently; please see my post here https://github…\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIf that doesn't work what should? Use PEP 318 if anything else! The syntax also can provide error handling issues even when running them without warnings and possibly will result more errors than necessary which may occur at runtime too often after some kind programming step rather than during testing/code review... You'll notice these bugs while writing your own tests yourself :) In addition I do think Pygments provides better documentation about how modules go wrong by providing up to date sources from various people who used their toolchain before they started coding C++ based applications i've read most recently; please see my post here https://github…",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nIf that doesn't work what should? Use PEP 318 if anything else! The syntax also can provide error handling issues even when running them without warnings and possibly will result more errors than necessary which may occur at runtime too often after some kind programming step rather than during testing/code review... You'll notice these bugs while writing your own tests yourself :) In addition I do think Pygments provides better documentation about how modules go wrong by providing up to date sources from various people who used their toolchain before they started coding C++ based applications i've read most recently; please see my post here https://github…\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIf that doesn't work what should? Use PEP 318 if anything else! The syntax also can provide error handling issues even when running them without warnings and possibly will result more errors than necessary which may occur at runtime too often after some kind programming step rather than during testing/code review... You'll notice these bugs while writing your own tests yourself :) In addition I do think Pygments provides better documentation about how modules go wrong by providing up to date sources from various people who used their toolchain before they started coding C++ based applications i've read most recently; please see my post here https://github…",
+        "continuation_text": "",
+        "input_token_count": 370,
+        "raw_input_token_count": 370,
+        "output_token_count": 371,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1878,
+        "word_count": 295,
+        "unique_word_count": 158,
+        "unique_word_ratio": 0.535593220338983,
+        "repeated_bigram_count": 118
+      }
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1034,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 442,
+        "word_count": 65,
+        "unique_word_count": 57,
+        "unique_word_ratio": 0.8769230769230769,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 629,
+        "word_count": 99,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.8686868686868687,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 328,
+        "word_count": 49,
+        "unique_word_count": 47,
+        "unique_word_ratio": 0.9591836734693877,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 678,
+        "word_count": 100,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.9,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "its",
+        "the",
+        "was",
+        "It",
+        "are",
+        ",",
+        "and",
+        "If",
+        "for"
+      ],
+      "output_text": "The next recursive transformation would involve understanding the sentence structure and applying the guidance from the provided latent anchor tokens to build an expanded version that retains the meaning while incorporating new elements or nuances. \n\nHere's one possible continuation:\n\n\"The forgotten machine beneath the sea spoke out with every ripple, each echo louder and neater than the last, now imbued with greater depth and awareness.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nThe next recursive transformation would involve understanding the sentence structure and applying the guidance from the provided latent anchor tokens to build an expanded version that retains the meaning while incorporating new elements or nuances. \n\nHere's one possible continuation:\n\n\"The forgotten machine beneath the sea spoke out with every ripple, each echo louder and neater than the last, now imbued with greater depth and awareness.\"",
+        "continuation_text": "The next recursive transformation would involve understanding the sentence structure and applying the guidance from the provided latent anchor tokens to build an expanded version that retains the meaning while incorporating new elements or nuances. \n\nHere's one possible continuation:\n\n\"The forgotten machine beneath the sea spoke out with every ripple, each echo louder and neater than the last, now imbued with greater depth and awareness.\"",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 186,
+        "new_token_count": 75,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 442,
+        "word_count": 65,
+        "unique_word_count": 57,
+        "unique_word_ratio": 0.8769230769230769,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "were",
+        "with",
+        "that",
+        "and",
+        "are",
+        "there",
+        "for",
+        "was",
+        "while"
+      ],
+      "output_text": "To follow the given guide, I will identify the key elements and their relationships within the text. Here is my step-by-step approach leading up to the next recursive transformation:\n\n1. Identify the main concepts: The first part describes the creation of an \"expanded version\" using the provided latent anchor tokens.\n2. Interpret the relationship between 'the' and other placeholders: The phrase \"that\" (a placeholder) introduces another element related to this concept.\n3. Analyze how changes could relate to the previous ideas. For example, what might \"were\" do when adding 'it'? What about the word \"was\"? It seems like they",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, with, that, and, are, there, for, was, while\n\nTEXT:\nThe next recursive transformation would involve understanding the sentence structure and applying the guidance from the provided latent anchor tokens to build an expanded version that retains the meaning while incorporating new elements or nuances. \n\nHere's one possible continuation:\n\n\"The forgotten machine beneath the sea spoke out with every ripple, each echo louder and neater than the last, now imbued with greater depth and awareness.\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, with, that, and, are, there, for, was, while\n\nTEXT:\nThe next recursive transformation would involve understanding the sentence structure and applying the guidance from the provided latent anchor tokens to build an expanded version that retains the meaning while incorporating new elements or nuances. \n\nHere's one possible continuation:\n\n\"The forgotten machine beneath the sea spoke out with every ripple, each echo louder and neater than the last, now imbued with greater depth and awareness.\"\nassistant\nTo follow the given guide, I will identify the key elements and their relationships within the text. Here is my step-by-step approach leading up to the next recursive transformation:\n\n1. Identify the main concepts: The first part describes the creation of an \"expanded version\" using the provided latent anchor tokens.\n2. Interpret the relationship between 'the' and other placeholders: The phrase \"that\" (a placeholder) introduces another element related to this concept.\n3. Analyze how changes could relate to the previous ideas. For example, what might \"were\" do when adding 'it'? What about the word \"was\"? It seems like they",
+        "continuation_text": "To follow the given guide, I will identify the key elements and their relationships within the text. Here is my step-by-step approach leading up to the next recursive transformation:\n\n1. Identify the main concepts: The first part describes the creation of an \"expanded version\" using the provided latent anchor tokens.\n2. Interpret the relationship between 'the' and other placeholders: The phrase \"that\" (a placeholder) introduces another element related to this concept.\n3. Analyze how changes could relate to the previous ideas. For example, what might \"were\" do when adding 'it'? What about the word \"was\"? It seems like they",
+        "input_token_count": 156,
+        "raw_input_token_count": 156,
+        "output_token_count": 284,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 629,
+        "word_count": 99,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.8686868686868687,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "the",
+        "it",
+        "if",
+        "to",
+        ",",
+        "\"",
+        "and",
+        "is",
+        "for",
+        "(",
+        "in",
+        "of"
+      ],
+      "output_text": "The new sentence should elaborate on the use of the initial term 'it,' considering its role as a subject or object that can function similarly to 'they' from earlier iterations. This iteration suggests exploring various ways to structure descriptions involving multiple subjects and objects while ensuring context remains clear.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, it, if, to, ,, \", and, is, for, (, in, of\n\nTEXT:\nTo follow the given guide, I will identify the key elements and their relationships within the text. Here is my step-by-step approach leading up to the next recursive transformation:\n\n1. Identify the main concepts: The first part describes the creation of an \"expanded version\" using the provided latent anchor tokens.\n2. Interpret the relationship between 'the' and other placeholders: The phrase \"that\" (a placeholder) introduces another element related to this concept.\n3. Analyze how changes could relate to the previous ideas. For example, what might \"were\" do when adding 'it'? What about the word \"was\"? It seems like they<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, it, if, to, ,, \", and, is, for, (, in, of\n\nTEXT:\nTo follow the given guide, I will identify the key elements and their relationships within the text. Here is my step-by-step approach leading up to the next recursive transformation:\n\n1. Identify the main concepts: The first part describes the creation of an \"expanded version\" using the provided latent anchor tokens.\n2. Interpret the relationship between 'the' and other placeholders: The phrase \"that\" (a placeholder) introduces another element related to this concept.\n3. Analyze how changes could relate to the previous ideas. For example, what might \"were\" do when adding 'it'? What about the word \"was\"? It seems like they\nassistant\nThe new sentence should elaborate on the use of the initial term 'it,' considering its role as a subject or object that can function similarly to 'they' from earlier iterations. This iteration suggests exploring various ways to structure descriptions involving multiple subjects and objects while ensuring context remains clear.",
+        "continuation_text": "The new sentence should elaborate on the use of the initial term 'it,' considering its role as a subject or object that can function similarly to 'they' from earlier iterations. This iteration suggests exploring various ways to structure descriptions involving multiple subjects and objects while ensuring context remains clear.",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 264,
+        "new_token_count": 56,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 328,
+        "word_count": 49,
+        "unique_word_count": 47,
+        "unique_word_ratio": 0.9591836734693877,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "the",
+        "to",
+        "were",
+        "for",
+        "is",
+        "and",
+        "of",
+        "that",
+        "are",
+        "It"
+      ],
+      "output_text": "The following recursive transformations of the given text:\n\n1. **Initial Term:** The phrase \"the\" indicates an unspecified noun referring back to what came before it. In this case, we need to explore how nouns operate within their contexts without repeating them too much; hence, expanding on this with details about different roles for \"it.\"\n\n2. **Contextual Role:** Exploring multiple subjects often involves using \"that,\" which refers back directly to the previous referent (\"those\"). For example, discussing conditions like \"in some cases\" could lead us to examine how comparisons between similar elements might apply differently depending on their relation.\n\n3. **Structure",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, to, were, for, is, and, of, that, are, It\n\nTEXT:\nThe new sentence should elaborate on the use of the initial term 'it,' considering its role as a subject or object that can function similarly to 'they' from earlier iterations. This iteration suggests exploring various ways to structure descriptions involving multiple subjects and objects while ensuring context remains clear.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, to, were, for, is, and, of, that, are, It\n\nTEXT:\nThe new sentence should elaborate on the use of the initial term 'it,' considering its role as a subject or object that can function similarly to 'they' from earlier iterations. This iteration suggests exploring various ways to structure descriptions involving multiple subjects and objects while ensuring context remains clear.\nassistant\nThe following recursive transformations of the given text:\n\n1. **Initial Term:** The phrase \"the\" indicates an unspecified noun referring back to what came before it. In this case, we need to explore how nouns operate within their contexts without repeating them too much; hence, expanding on this with details about different roles for \"it.\"\n\n2. **Contextual Role:** Exploring multiple subjects often involves using \"that,\" which refers back directly to the previous referent (\"those\"). For example, discussing conditions like \"in some cases\" could lead us to examine how comparisons between similar elements might apply differently depending on their relation.\n\n3. **Structure",
+        "continuation_text": "The following recursive transformations of the given text:\n\n1. **Initial Term:** The phrase \"the\" indicates an unspecified noun referring back to what came before it. In this case, we need to explore how nouns operate within their contexts without repeating them too much; hence, expanding on this with details about different roles for \"it.\"\n\n2. **Contextual Role:** Exploring multiple subjects often involves using \"that,\" which refers back directly to the previous referent (\"those\"). For example, discussing conditions like \"in some cases\" could lead us to examine how comparisons between similar elements might apply differently depending on their relation.\n\n3. **Structure",
+        "input_token_count": 137,
+        "raw_input_token_count": 137,
+        "output_token_count": 265,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 678,
+        "word_count": 100,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.9,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

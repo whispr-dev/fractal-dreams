@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1181,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 528,
+        "word_count": 92,
+        "unique_word_count": 89,
+        "unique_word_ratio": 0.967391304347826,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 136,
+        "word_count": 26,
+        "unique_word_count": 25,
+        "unique_word_ratio": 0.9615384615384616,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 84,
+        "word_count": 16,
+        "unique_word_count": 16,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Besides",
+        "Moreover",
+        "Apparently",
+        "Having",
+        "Why",
+        "Although",
+        "Nearly",
+        "An",
+        "Another",
+        "Bell",
+        "Among",
+        "Furthermore"
+      ],
+      "output_text": "The data is stored on an external memory chip called JSTOR (or \"jpeg\"), which allows you access to it by typing into its output format at any given time while holding down each character with your finger or thumb around for extended periods. With this information, we could be able to set up our own programmable programming system that can store these codes easily within programs without having to do so yourself because there's no way I would ever want to send my computer through something like NANDS before every few years!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The data is stored on an external memory chip called JSTOR (or \"jpeg\"), which allows you access to it by typing into its output format at any given time while holding down each character with your finger or thumb around for extended periods. With this information, we could be able to set up our own programmable programming system that can store these codes easily within programs without having to do so yourself because there's no way I would ever want to send my computer through something like NANDS before every few years!",
+        "continuation_text": "The data is stored on an external memory chip called JSTOR (or \"jpeg\"), which allows you access to it by typing into its output format at any given time while holding down each character with your finger or thumb around for extended periods. With this information, we could be able to set up our own programmable programming system that can store these codes easily within programs without having to do so yourself because there's no way I would ever want to send my computer through something like NANDS before every few years!",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 220,
+        "new_token_count": 106,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 528,
+        "word_count": 92,
+        "unique_word_count": 89,
+        "unique_word_ratio": 0.967391304347826,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "drove",
+        "\")",
+        ")",
+        "?)",
+        "see",
+        ".)",
+        "socialism",
+        "proved",
+        "Another",
+        "Socialism",
+        "prove",
+        "See"
+      ],
+      "output_text": "For example, if i had typed 1 million words and 2 million sentences using C++ , those two numbers wouldn't have been out of reach yet...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: drove, \"), ), ?), see, .), socialism, proved, Another, Socialism, prove, See\n\nTEXT:\nThe data is stored on an external memory chip called JSTOR (or \"jpeg\"), which allows you access to it by typing into its output format at any given time while holding down each character with your finger or thumb around for extended periods. With this information, we could be able to set up our own programmable programming system that can store these codes easily within programs without having to do so yourself because there's no way I would ever want to send my computer through something like NANDS before every few years!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: drove, \"), ), ?), see, .), socialism, proved, Another, Socialism, prove, See\n\nTEXT:\nThe data is stored on an external memory chip called JSTOR (or \"jpeg\"), which allows you access to it by typing into its output format at any given time while holding down each character with your finger or thumb around for extended periods. With this information, we could be able to set up our own programmable programming system that can store these codes easily within programs without having to do so yourself because there's no way I would ever want to send my computer through something like NANDS before every few years! For example, if i had typed 1 million words and 2 million sentences using C++ , those two numbers wouldn't have been out of reach yet...",
+        "continuation_text": "For example, if i had typed 1 million words and 2 million sentences using C++ , those two numbers wouldn't have been out of reach yet...",
+        "input_token_count": 189,
+        "raw_input_token_count": 189,
+        "output_token_count": 220,
+        "new_token_count": 31,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 136,
+        "word_count": 26,
+        "unique_word_count": 25,
+        "unique_word_ratio": 0.9615384615384616,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "For",
+        "To",
+        "Let",
+        "History",
+        "leftists",
+        "America",
+        "If",
+        "Perhaps",
+        "Putting",
+        "anarchists",
+        "Put",
+        "Don"
+      ],
+      "output_text": "you'd be able to guess that you're pretty sure your brain is 100% done reading this!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: For, To, Let, History, leftists, America, If, Perhaps, Putting, anarchists, Put, Don\n\nTEXT:\nFor example, if i had typed 1 million words and 2 million sentences using C++ , those two numbers wouldn't have been out of reach yet...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: For, To, Let, History, leftists, America, If, Perhaps, Putting, anarchists, Put, Don\n\nTEXT:\nFor example, if i had typed 1 million words and 2 million sentences using C++ , those two numbers wouldn't have been out of reach yet...you'd be able to guess that you're pretty sure your brain is 100% done reading this!",
+        "continuation_text": "you'd be able to guess that you're pretty sure your brain is 100% done reading this!",
+        "input_token_count": 115,
+        "raw_input_token_count": 115,
+        "output_token_count": 136,
+        "new_token_count": 21,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 84,
+        "word_count": 16,
+        "unique_word_count": 16,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

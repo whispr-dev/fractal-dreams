@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1273,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 50,
+        "word_count": 17,
+        "unique_word_count": 13,
+        "unique_word_ratio": 0.7647058823529411,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 341,
+        "word_count": 110,
+        "unique_word_count": 11,
+        "unique_word_ratio": 0.1,
+        "repeated_bigram_count": 97
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 59,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "若",
+        "):",
+        "if",
+        ")(",
+        "领导",
+        "*(",
+        "),",
+        "（",
+        "应",
+        ">(",
+        "elderly",
+        "*"
+      ],
+      "output_text": "领导 *, , , >, (, ), (,) 领导 *. *, . *, )> `. *(老人 *)",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 若, ):, if, )(, 领导, *(, ),, （, 应, >(, elderly, *\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 若, ):, if, )(, 领导, *(, ),, （, 应, >(, elderly, *\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\n领导 *, , , >, (, ), (,) 领导 *. *, . *, )> `. *(老人 *)",
+        "continuation_text": "领导 *, , , >, (, ), (,) 领导 *. *, . *, )> `. *(老人 *)",
+        "input_token_count": 113,
+        "raw_input_token_count": 113,
+        "output_token_count": 139,
+        "new_token_count": 26,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 50,
+        "word_count": 17,
+        "unique_word_count": 13,
+        "unique_word_ratio": 0.7647058823529411,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "_PLUGIN",
+        "的那种",
+        "Launching",
+        "UPLOAD",
+        "rzę",
+        ".ReadByte",
+        "ли",
+        "спорт",
+        "essment",
+        "Posting",
+        "OLUTION",
+        "cią"
+      ],
+      "output_text": "阅读者 *`, `的那些` >, `(, ), `(,), `-老人 `, *`, _, `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: _PLUGIN, 的那种, Launching, UPLOAD, rzę, .ReadByte, ли, спорт, essment, Posting, OLUTION, cią\n\nTEXT:\n领导 *, , , >, (, ), (,) 领导 *. *, . *, )> `. *(老人 *)<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: _PLUGIN, 的那种, Launching, UPLOAD, rzę, .ReadByte, ли, спорт, essment, Posting, OLUTION, cią\n\nTEXT:\n领导 *, , , >, (, ), (,) 领导 *. *, . *, )> `. *(老人 *)\nassistant\n阅读者 *`, `的那些` >, `(, ), `(,), `-老人 `, *`, _, `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `.",
+        "continuation_text": "阅读者 *`, `的那些` >, `(, ), `(,), `-老人 `, *`, _, `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `.",
+        "input_token_count": 121,
+        "raw_input_token_count": 121,
+        "output_token_count": 241,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 341,
+        "word_count": 110,
+        "unique_word_count": 11,
+        "unique_word_ratio": 0.1,
+        "repeated_bigram_count": 97
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "crates",
+        "回报",
+        "�",
+        "Í",
+        "legisl",
+        "gö",
+        "马上就",
+        "referrer",
+        "黑龙江省",
+        "_bbox",
+        "aleza",
+        "黄石"
+      ],
+      "output_text": "为了进行这个转换，我需要更具体的上下文或文本内容。请提供更多的信息或者完整的大致输入文本以便于我能准确地执行您的请求。",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: crates, 回报, �, Í, legisl, gö, 马上就, referrer, 黑龙江省, _bbox, aleza, 黄石\n\nTEXT:\n阅读者 *`, `的那些` >, `(, ), `(,), `-老人 `, *`, _, `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: crates, 回报, �, Í, legisl, gö, 马上就, referrer, 黑龙江省, _bbox, aleza, 黄石\n\nTEXT:\n阅读者 *`, `的那些` >, `(, ), `(,), `-老人 `, *`, _, `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `. `.\nassistant\n为了进行这个转换，我需要更具体的上下文或文本内容。请提供更多的信息或者完整的大致输入文本以便于我能准确地执行您的请求。",
+        "continuation_text": "为了进行这个转换，我需要更具体的上下文或文本内容。请提供更多的信息或者完整的大致输入文本以便于我能准确地执行您的请求。",
+        "input_token_count": 224,
+        "raw_input_token_count": 224,
+        "output_token_count": 259,
+        "new_token_count": 35,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 59,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

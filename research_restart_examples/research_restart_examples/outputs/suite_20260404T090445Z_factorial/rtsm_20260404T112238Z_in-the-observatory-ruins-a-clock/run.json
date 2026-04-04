@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1188
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 615,
+        "word_count": 101,
+        "unique_word_count": 88,
+        "unique_word_ratio": 0.8712871287128713,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1096,
+        "word_count": 178,
+        "unique_word_count": 151,
+        "unique_word_ratio": 0.848314606741573,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1545,
+        "word_count": 252,
+        "unique_word_count": 209,
+        "unique_word_ratio": 0.8293650793650794,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2054,
+        "word_count": 332,
+        "unique_word_count": 262,
+        "unique_word_ratio": 0.7891566265060241,
+        "repeated_bigram_count": 3
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2535,
+        "word_count": 411,
+        "unique_word_count": 308,
+        "unique_word_ratio": 0.7493917274939172,
+        "repeated_bigram_count": 4
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nThe observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own",
+        "continuation_text": "The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own",
+        "input_token_count": 68,
+        "raw_input_token_count": 68,
+        "output_token_count": 164,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 615,
+        "word_count": 101,
+        "unique_word_count": 88,
+        "unique_word_ratio": 0.8712871287128713,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own\nassistant\nThe faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old",
+        "continuation_text": "The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old",
+        "input_token_count": 164,
+        "raw_input_token_count": 164,
+        "output_token_count": 260,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1096,
+        "word_count": 178,
+        "unique_word_count": 151,
+        "unique_word_ratio": 0.848314606741573,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "the building? Or what secrets did these maps concealer?\n\nThe footsteps grew heavy on the cobblestones as he continued forward, the treacherous terrain becoming less defined by each other than solid tracks made by weary boots. Night fell, dull and cold, yet somehow more insidious than any mortal grasp could hope to combat.\n\nHe clambered over steps where no man had trodden them since ancient times. Doors creaked open when light peeked out—only to",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old the building? Or what secrets did these maps concealer?\n\nThe footsteps grew heavy on the cobblestones as he continued forward, the treacherous terrain becoming less defined by each other than solid tracks made by weary boots. Night fell, dull and cold, yet somehow more insidious than any mortal grasp could hope to combat.\n\nHe clambered over steps where no man had trodden them since ancient times. Doors creaked open when light peeked out—only to",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old\nassistant\nthe building? Or what secrets did these maps concealer?\n\nThe footsteps grew heavy on the cobblestones as he continued forward, the treacherous terrain becoming less defined by each other than solid tracks made by weary boots. Night fell, dull and cold, yet somehow more insidious than any mortal grasp could hope to combat.\n\nHe clambered over steps where no man had trodden them since ancient times. Doors creaked open when light peeked out—only to",
+        "continuation_text": "the building? Or what secrets did these maps concealer?\n\nThe footsteps grew heavy on the cobblestones as he continued forward, the treacherous terrain becoming less defined by each other than solid tracks made by weary boots. Night fell, dull and cold, yet somehow more insidious than any mortal grasp could hope to combat.\n\nHe clambered over steps where no man had trodden them since ancient times. Doors creaked open when light peeked out—only to",
+        "input_token_count": 260,
+        "raw_input_token_count": 260,
+        "output_token_count": 356,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1545,
+        "word_count": 252,
+        "unique_word_count": 209,
+        "unique_word_ratio": 0.8293650793650794,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old the building? Or what secrets did these maps concealer?\n\nThe footsteps grew heavy on the cobblestones as he continued forward, the treacherous terrain becoming less defined by each other than solid tracks made by weary boots. Night fell, dull and cold, yet somehow more insidious than any mortal grasp could hope to combat.\n\nHe clambered over steps where no man had trodden them since ancient times. Doors creaked open when light peeked out—only to<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "open later to reveal darkness waiting outside—an unsettling echo of lost hopes.\n\nAs the first stars began to appear above, casting long shadows across the ruined observatory, he felt a strange sense of unease climbToInts. The map had indeed become even stronger, its grip tightening on the fabric of reality itself—a force both seductive and menacing.\n\nWith each step deeper into the city’s heart, he encountered obstacles too daunting to comprehend—not only the broken stones of old structures that resisted",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old the building? Or what secrets did these maps concealer?\n\nThe footsteps grew heavy on the cobblestones as he continued forward, the treacherous terrain becoming less defined by each other than solid tracks made by weary boots. Night fell, dull and cold, yet somehow more insidious than any mortal grasp could hope to combat.\n\nHe clambered over steps where no man had trodden them since ancient times. Doors creaked open when light peeked out—only to open later to reveal darkness waiting outside—an unsettling echo of lost hopes.\n\nAs the first stars began to appear above, casting long shadows across the ruined observatory, he felt a strange sense of unease climbToInts. The map had indeed become even stronger, its grip tightening on the fabric of reality itself—a force both seductive and menacing.\n\nWith each step deeper into the city’s heart, he encountered obstacles too daunting to comprehend—not only the broken stones of old structures that resisted",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old the building? Or what secrets did these maps concealer?\n\nThe footsteps grew heavy on the cobblestones as he continued forward, the treacherous terrain becoming less defined by each other than solid tracks made by weary boots. Night fell, dull and cold, yet somehow more insidious than any mortal grasp could hope to combat.\n\nHe clambered over steps where no man had trodden them since ancient times. Doors creaked open when light peeked out—only to<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old the building? Or what secrets did these maps concealer?\n\nThe footsteps grew heavy on the cobblestones as he continued forward, the treacherous terrain becoming less defined by each other than solid tracks made by weary boots. Night fell, dull and cold, yet somehow more insidious than any mortal grasp could hope to combat.\n\nHe clambered over steps where no man had trodden them since ancient times. Doors creaked open when light peeked out—only to\nassistant\nopen later to reveal darkness waiting outside—an unsettling echo of lost hopes.\n\nAs the first stars began to appear above, casting long shadows across the ruined observatory, he felt a strange sense of unease climbToInts. The map had indeed become even stronger, its grip tightening on the fabric of reality itself—a force both seductive and menacing.\n\nWith each step deeper into the city’s heart, he encountered obstacles too daunting to comprehend—not only the broken stones of old structures that resisted",
+        "continuation_text": "open later to reveal darkness waiting outside—an unsettling echo of lost hopes.\n\nAs the first stars began to appear above, casting long shadows across the ruined observatory, he felt a strange sense of unease climbToInts. The map had indeed become even stronger, its grip tightening on the fabric of reality itself—a force both seductive and menacing.\n\nWith each step deeper into the city’s heart, he encountered obstacles too daunting to comprehend—not only the broken stones of old structures that resisted",
+        "input_token_count": 356,
+        "raw_input_token_count": 356,
+        "output_token_count": 452,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2054,
+        "word_count": 332,
+        "unique_word_count": 262,
+        "unique_word_ratio": 0.7891566265060241,
+        "repeated_bigram_count": 3
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old the building? Or what secrets did these maps concealer?\n\nThe footsteps grew heavy on the cobblestones as he continued forward, the treacherous terrain becoming less defined by each other than solid tracks made by weary boots. Night fell, dull and cold, yet somehow more insidious than any mortal grasp could hope to combat.\n\nHe clambered over steps where no man had trodden them since ancient times. Doors creaked open when light peeked out—only to open later to reveal darkness waiting outside—an unsettling echo of lost hopes.\n\nAs the first stars began to appear above, casting long shadows across the ruined observatory, he felt a strange sense of unease climbToInts. The map had indeed become even stronger, its grip tightening on the fabric of reality itself—a force both seductive and menacing.\n\nWith each step deeper into the city’s heart, he encountered obstacles too daunting to comprehend—not only the broken stones of old structures that resisted<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "prehension—or just sheer indecision—the remnants of what remained, nor the vast expanse beyond, much smaller than he dared imagine.\n\nHis movements were quickened slightly by the familiar sensation of wind rushing past his face. It was as if another world whispered to him from inside the obsidian prison gates where he stood, each word carrying the weight of centuries' worth of history.\n\nSuddenly, a hand reached out to grab his arm. His initial reaction was one of surprise. But",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old the building? Or what secrets did these maps concealer?\n\nThe footsteps grew heavy on the cobblestones as he continued forward, the treacherous terrain becoming less defined by each other than solid tracks made by weary boots. Night fell, dull and cold, yet somehow more insidious than any mortal grasp could hope to combat.\n\nHe clambered over steps where no man had trodden them since ancient times. Doors creaked open when light peeked out—only to open later to reveal darkness waiting outside—an unsettling echo of lost hopes.\n\nAs the first stars began to appear above, casting long shadows across the ruined observatory, he felt a strange sense of unease climbToInts. The map had indeed become even stronger, its grip tightening on the fabric of reality itself—a force both seductive and menacing.\n\nWith each step deeper into the city’s heart, he encountered obstacles too daunting to comprehend—not only the broken stones of old structures that resisted prehension—or just sheer indecision—the remnants of what remained, nor the vast expanse beyond, much smaller than he dared imagine.\n\nHis movements were quickened slightly by the familiar sensation of wind rushing past his face. It was as if another world whispered to him from inside the obsidian prison gates where he stood, each word carrying the weight of centuries' worth of history.\n\nSuddenly, a hand reached out to grab his arm. His initial reaction was one of surprise. But",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old the building? Or what secrets did these maps concealer?\n\nThe footsteps grew heavy on the cobblestones as he continued forward, the treacherous terrain becoming less defined by each other than solid tracks made by weary boots. Night fell, dull and cold, yet somehow more insidious than any mortal grasp could hope to combat.\n\nHe clambered over steps where no man had trodden them since ancient times. Doors creaked open when light peeked out—only to open later to reveal darkness waiting outside—an unsettling echo of lost hopes.\n\nAs the first stars began to appear above, casting long shadows across the ruined observatory, he felt a strange sense of unease climbToInts. The map had indeed become even stronger, its grip tightening on the fabric of reality itself—a force both seductive and menacing.\n\nWith each step deeper into the city’s heart, he encountered obstacles too daunting to comprehend—not only the broken stones of old structures that resisted<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The observatory's decrepit structure shimmered like spectral fingers dancing on its rough iron walls, each hand adding weight to the fragile frame of time it held. The clockwork map, once a lifeline between past and future, seemed increasingly detached from reality; it had taken on an air of premonitory dread that hinted at impending doom or divine displeasure. Each tick moved with ominous precision against the indifferent murals etched into the surface: one would fear for their own The faint ticking echoed through the silent labyrinth of stone archways, every heartbeat echoing back onto his thoughts, just days before dawn claimed him whole.\nTrembling but holding firm, he navigated through this maze-like space beneath the observatory, now barely visible within the crumbling buildings. A chill ran down his spine as the night approached, chilling the delicate surfaces around his feet. He knew what lay ahead, but how might they shape?\nAmidst the hush of old the building? Or what secrets did these maps concealer?\n\nThe footsteps grew heavy on the cobblestones as he continued forward, the treacherous terrain becoming less defined by each other than solid tracks made by weary boots. Night fell, dull and cold, yet somehow more insidious than any mortal grasp could hope to combat.\n\nHe clambered over steps where no man had trodden them since ancient times. Doors creaked open when light peeked out—only to open later to reveal darkness waiting outside—an unsettling echo of lost hopes.\n\nAs the first stars began to appear above, casting long shadows across the ruined observatory, he felt a strange sense of unease climbToInts. The map had indeed become even stronger, its grip tightening on the fabric of reality itself—a force both seductive and menacing.\n\nWith each step deeper into the city’s heart, he encountered obstacles too daunting to comprehend—not only the broken stones of old structures that resisted\nassistant\nprehension—or just sheer indecision—the remnants of what remained, nor the vast expanse beyond, much smaller than he dared imagine.\n\nHis movements were quickened slightly by the familiar sensation of wind rushing past his face. It was as if another world whispered to him from inside the obsidian prison gates where he stood, each word carrying the weight of centuries' worth of history.\n\nSuddenly, a hand reached out to grab his arm. His initial reaction was one of surprise. But",
+        "continuation_text": "prehension—or just sheer indecision—the remnants of what remained, nor the vast expanse beyond, much smaller than he dared imagine.\n\nHis movements were quickened slightly by the familiar sensation of wind rushing past his face. It was as if another world whispered to him from inside the obsidian prison gates where he stood, each word carrying the weight of centuries' worth of history.\n\nSuddenly, a hand reached out to grab his arm. His initial reaction was one of surprise. But",
+        "input_token_count": 452,
+        "raw_input_token_count": 452,
+        "output_token_count": 548,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2535,
+        "word_count": 411,
+        "unique_word_count": 308,
+        "unique_word_ratio": 0.7493917274939172,
+        "repeated_bigram_count": 4
+      }
+    }
+  ]
+}

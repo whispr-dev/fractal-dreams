@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1459,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 865,
+        "word_count": 146,
+        "unique_word_count": 134,
+        "unique_word_ratio": 0.9178082191780822,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 135,
+        "word_count": 24,
+        "unique_word_count": 24,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 74,
+        "word_count": 13,
+        "unique_word_count": 13,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 916,
+        "word_count": 139,
+        "unique_word_count": 137,
+        "unique_word_ratio": 0.9856115107913669,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "text: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\ntext: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!",
+      "source_window_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+      "reflection_window_text": "text: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\ntext: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!",
+        "continuation_text": "text: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!",
+        "input_token_count": 95,
+        "raw_input_token_count": 95,
+        "output_token_count": 197,
+        "new_token_count": 102,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\ntext: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\ntext: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!",
+        "continuation_text": "",
+        "input_token_count": 183,
+        "raw_input_token_count": 183,
+        "output_token_count": 184,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 865,
+        "word_count": 146,
+        "unique_word_count": 134,
+        "unique_word_ratio": 0.9178082191780822,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\ntext: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!",
+      "output_text": "You might also use any other type for visual analysis here; please tell me what changes were there after writing up last week's paper!!",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\ntext: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\ntext: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\ntext: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\ntext: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!",
+        "continuation_text": "",
+        "input_token_count": 252,
+        "raw_input_token_count": 252,
+        "output_token_count": 253,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\ntext: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\ntext: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\ntext: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\ntext: A simplified attempt at describing your thoughts through 3 words (or 6 sentences) using each of these four phrases as examples.\nThe original intent is to give you an idea about which types of concepts make sense even if one doesn't think they're useful or well defined by others. The result is pretty clear when we say \"well done\" rather than trying hard. I would suggest reading this section carefully before going over all three main lines on how code works so far along our conceptual progress! You might also use any other type for visual analysis here; please tell me what changes were there after writing up last week's paper!!",
+        "continuation_text": "You might also use any other type for visual analysis here; please tell me what changes were there after writing up last week's paper!!",
+        "input_token_count": 492,
+        "raw_input_token_count": 492,
+        "output_token_count": 520,
+        "new_token_count": 28,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 135,
+        "word_count": 24,
+        "unique_word_count": 24,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou might also use any other type for visual analysis here; please tell me what changes were there after writing up last week's paper!!",
+      "output_text": "(for example, you may choose \"C\") or some different way around this topic!",
+      "source_window_text": "You might also use any other type for visual analysis here; please tell me what changes were there after writing up last week's paper!!",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou might also use any other type for visual analysis here; please tell me what changes were there after writing up last week's paper!!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou might also use any other type for visual analysis here; please tell me what changes were there after writing up last week's paper!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou might also use any other type for visual analysis here; please tell me what changes were there after writing up last week's paper!!",
+        "continuation_text": "",
+        "input_token_count": 96,
+        "raw_input_token_count": 96,
+        "output_token_count": 97,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou might also use any other type for visual analysis here; please tell me what changes were there after writing up last week's paper!!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou might also use any other type for visual analysis here; please tell me what changes were there after writing up last week's paper!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou might also use any other type for visual analysis here; please tell me what changes were there after writing up last week's paper!!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou might also use any other type for visual analysis here; please tell me what changes were there after writing up last week's paper!! (for example, you may choose \"C\") or some different way around this topic!  ",
+        "continuation_text": "(for example, you may choose \"C\") or some different way around this topic!",
+        "input_token_count": 180,
+        "raw_input_token_count": 180,
+        "output_token_count": 201,
+        "new_token_count": 21,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 74,
+        "word_count": 13,
+        "unique_word_count": 13,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "If there is no single idea about what type of information your mind might send to it (and how likely they would be) then don't forget to use other languages when using them as we know these types have been shown by previous studies. In particular, try reading one sentence from which each word contains an input number for every possible scenario but only if all three sentences contain such characters at least 3 times per second so whether any given set should match with certain possibilities will depend on either another term before writing both words; alternatively remember that whatever specific kind people think has already occurred during their entire life thus far rather than just because everyone else thinks otherwise even though he knows nothing—all thoughts could go back up quickly without changing anything yet being reflected into something new until later years after studying others' experiences against themselves",
+      "output_text": "and finally having seen our past interactions come together more comprehensively through its observation process . These details can also help us determine between concepts once discussed separately here , where I'm starting with 1 - 2 instead describing five examples taken right away--which means roughly half everything must now reflect like real things today along with 20 lines...if indeed much less attention goes into defining two ideas over time first let's talk again down quite briefly while discussing 10 scenarios simultaneously based upon various situations this doesn´t make sense since most data collected prior to 2000 mean relatively little amount/second spent thinking ahead of 1000 pages isn�t relevant unless considering actual factorials above? As long as someone understands 50% of those 100+ paragraphs clearly stating why nobody cares enough WHY everybody gives him 25%. We're talking about 8",
+      "source_window_text": "(for example, you may choose \"C\") or some different way around this topic!",
+      "reflection_window_text": "If there is no single idea about what type of information your mind might send to it (and how likely they would be) then don't forget to use other languages when using them as we know these types have been shown by previous studies. In particular, try reading one sentence from which each word contains an input number for every possible scenario but only if all three sentences contain such characters at least 3 times per second so whether any given set should match with certain possibilities will depend on either another term before writing both words; alternatively remember that whatever specific kind people think has already occurred during their entire life thus far rather than just because everyone else thinks otherwise even though he knows nothing—all thoughts could go back up quickly without changing anything yet being reflected into something new until later years after studying others' experiences against themselves",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n(for example, you may choose \"C\") or some different way around this topic!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n(for example, you may choose \"C\") or some different way around this topic! If there is no single idea about what type of information your mind might send to it (and how likely they would be) then don't forget to use other languages when using them as we know these types have been shown by previous studies. In particular, try reading one sentence from which each word contains an input number for every possible scenario but only if all three sentences contain such characters at least 3 times per second so whether any given set should match with certain possibilities will depend on either another term before writing both words; alternatively remember that whatever specific kind people think has already occurred during their entire life thus far rather than just because everyone else thinks otherwise even though he knows nothing—all thoughts could go back up quickly without changing anything yet being reflected into something new until later years after studying others' experiences against themselves",
+        "continuation_text": "If there is no single idea about what type of information your mind might send to it (and how likely they would be) then don't forget to use other languages when using them as we know these types have been shown by previous studies. In particular, try reading one sentence from which each word contains an input number for every possible scenario but only if all three sentences contain such characters at least 3 times per second so whether any given set should match with certain possibilities will depend on either another term before writing both words; alternatively remember that whatever specific kind people think has already occurred during their entire life thus far rather than just because everyone else thinks otherwise even though he knows nothing—all thoughts could go back up quickly without changing anything yet being reflected into something new until later years after studying others' experiences against themselves",
+        "input_token_count": 87,
+        "raw_input_token_count": 87,
+        "output_token_count": 247,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n(for example, you may choose \"C\") or some different way around this topic!\n\nREFLECTION:\nIf there is no single idea about what type of information your mind might send to it (and how likely they would be) then don't forget to use other languages when using them as we know these types have been shown by previous studies. In particular, try reading one sentence from which each word contains an input number for every possible scenario but only if all three sentences contain such characters at least 3 times per second so whether any given set should match with certain possibilities will depend on either another term before writing both words; alternatively remember that whatever specific kind people think has already occurred during their entire life thus far rather than just because everyone else thinks otherwise even though he knows nothing—all thoughts could go back up quickly without changing anything yet being reflected into something new until later years after studying others' experiences against themselves",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n(for example, you may choose \"C\") or some different way around this topic!\n\nREFLECTION:\nIf there is no single idea about what type of information your mind might send to it (and how likely they would be) then don't forget to use other languages when using them as we know these types have been shown by previous studies. In particular, try reading one sentence from which each word contains an input number for every possible scenario but only if all three sentences contain such characters at least 3 times per second so whether any given set should match with certain possibilities will depend on either another term before writing both words; alternatively remember that whatever specific kind people think has already occurred during their entire life thus far rather than just because everyone else thinks otherwise even though he knows nothing—all thoughts could go back up quickly without changing anything yet being reflected into something new until later years after studying others' experiences against themselves and finally having seen our past interactions come together more comprehensively through its observation process . These details can also help us determine between concepts once discussed separately here , where I'm starting with 1 - 2 instead describing five examples taken right away--which means roughly half everything must now reflect like real things today along with 20 lines...if indeed much less attention goes into defining two ideas over time first let's talk again down quite briefly while discussing 10 scenarios simultaneously based upon various situations this doesn´t make sense since most data collected prior to 2000 mean relatively little amount/second spent thinking ahead of 1000 pages isn�t relevant unless considering actual factorials above? As long as someone understands 50% of those 100+ paragraphs clearly stating why nobody cares enough WHY everybody gives him 25%. We're talking about 8",
+        "continuation_text": "and finally having seen our past interactions come together more comprehensively through its observation process . These details can also help us determine between concepts once discussed separately here , where I'm starting with 1 - 2 instead describing five examples taken right away--which means roughly half everything must now reflect like real things today along with 20 lines...if indeed much less attention goes into defining two ideas over time first let's talk again down quite briefly while discussing 10 scenarios simultaneously based upon various situations this doesn´t make sense since most data collected prior to 2000 mean relatively little amount/second spent thinking ahead of 1000 pages isn�t relevant unless considering actual factorials above? As long as someone understands 50% of those 100+ paragraphs clearly stating why nobody cares enough WHY everybody gives him 25%. We're talking about 8",
+        "input_token_count": 235,
+        "raw_input_token_count": 235,
+        "output_token_count": 395,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 916,
+        "word_count": 139,
+        "unique_word_count": 137,
+        "unique_word_ratio": 0.9856115107913669,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

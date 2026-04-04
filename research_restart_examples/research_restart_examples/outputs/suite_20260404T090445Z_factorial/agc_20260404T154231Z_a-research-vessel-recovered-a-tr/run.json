@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1541,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 719,
+        "word_count": 110,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.9636363636363636,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 401,
+        "word_count": 61,
+        "unique_word_count": 60,
+        "unique_word_ratio": 0.9836065573770492,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 39,
+        "word_count": 9,
+        "unique_word_count": 9,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Likewise",
+        "Similarly",
+        "Another",
+        "Also",
+        "especially",
+        "Pin",
+        "Aside",
+        "adapters",
+        "carved",
+        "Additionally",
+        "traditionally",
+        "comfortable"
+      ],
+      "output_text": "The data were then passed on back to another device such that it could be used for further analysis with no need for any other technology or programming instructions required at all (or even without permission). Eventually, these devices took over one million years before their release because they had been developed by an individual group based on multiple groups rather than merely being sent together using single files/files attached to each other via \"telemetry\" which would allow you access information about different subgroups between users across various types of networks including online databases like Google Drive and Facebook Messenger etc. In addition several protocols have also become available under",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Likewise, Similarly, Another, Also, especially, Pin, Aside, adapters, carved, Additionally, traditionally, comfortable\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Likewise, Similarly, Another, Also, especially, Pin, Aside, adapters, carved, Additionally, traditionally, comfortable\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The data were then passed on back to another device such that it could be used for further analysis with no need for any other technology or programming instructions required at all (or even without permission). Eventually, these devices took over one million years before their release because they had been developed by an individual group based on multiple groups rather than merely being sent together using single files/files attached to each other via \"telemetry\" which would allow you access information about different subgroups between users across various types of networks including online databases like Google Drive and Facebook Messenger etc. In addition several protocols have also become available under",
+        "continuation_text": "The data were then passed on back to another device such that it could be used for further analysis with no need for any other technology or programming instructions required at all (or even without permission). Eventually, these devices took over one million years before their release because they had been developed by an individual group based on multiple groups rather than merely being sent together using single files/files attached to each other via \"telemetry\" which would allow you access information about different subgroups between users across various types of networks including online databases like Google Drive and Facebook Messenger etc. In addition several protocols have also become available under",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 228,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 719,
+        "word_count": 110,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.9636363636363636,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Along",
+        "Supporters",
+        "Putting",
+        "Put",
+        "Republicans",
+        "Since",
+        "Together",
+        "advocated",
+        ".''.",
+        "Known",
+        "According",
+        "Officials"
+      ],
+      "output_text": "new development tools; this is why we will keep track of what type of communication can cause problems when compared against others due to how long ago those systems began providing basic services around them along with traditional computers - either simply passing through servers into shared memory while waiting outside your network altogether once connected itself again until something happens...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Along, Supporters, Putting, Put, Republicans, Since, Together, advocated, .''., Known, According, Officials\n\nTEXT:\nThe data were then passed on back to another device such that it could be used for further analysis with no need for any other technology or programming instructions required at all (or even without permission). Eventually, these devices took over one million years before their release because they had been developed by an individual group based on multiple groups rather than merely being sent together using single files/files attached to each other via \"telemetry\" which would allow you access information about different subgroups between users across various types of networks including online databases like Google Drive and Facebook Messenger etc. In addition several protocols have also become available under",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Along, Supporters, Putting, Put, Republicans, Since, Together, advocated, .''., Known, According, Officials\n\nTEXT:\nThe data were then passed on back to another device such that it could be used for further analysis with no need for any other technology or programming instructions required at all (or even without permission). Eventually, these devices took over one million years before their release because they had been developed by an individual group based on multiple groups rather than merely being sent together using single files/files attached to each other via \"telemetry\" which would allow you access information about different subgroups between users across various types of networks including online databases like Google Drive and Facebook Messenger etc. In addition several protocols have also become available under new development tools; this is why we will keep track of what type of communication can cause problems when compared against others due to how long ago those systems began providing basic services around them along with traditional computers - either simply passing through servers into shared memory while waiting outside your network altogether once connected itself again until something happens...",
+        "continuation_text": "new development tools; this is why we will keep track of what type of communication can cause problems when compared against others due to how long ago those systems began providing basic services around them along with traditional computers - either simply passing through servers into shared memory while waiting outside your network altogether once connected itself again until something happens...",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 270,
+        "new_token_count": 64,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 401,
+        "word_count": 61,
+        "unique_word_count": 60,
+        "unique_word_ratio": 0.9836065573770492,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "san",
+        "someone",
+        "new",
+        "everyone",
+        "whoever",
+        "login",
+        "alking",
+        "Whoever",
+        "Everyone",
+        "Sean",
+        "Someone",
+        "Saint"
+      ],
+      "output_text": "We'll do it for you all on our website!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: san, someone, new, everyone, whoever, login, alking, Whoever, Everyone, Sean, Someone, Saint\n\nTEXT:\nnew development tools; this is why we will keep track of what type of communication can cause problems when compared against others due to how long ago those systems began providing basic services around them along with traditional computers - either simply passing through servers into shared memory while waiting outside your network altogether once connected itself again until something happens...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: san, someone, new, everyone, whoever, login, alking, Whoever, Everyone, Sean, Someone, Saint\n\nTEXT:\nnew development tools; this is why we will keep track of what type of communication can cause problems when compared against others due to how long ago those systems began providing basic services around them along with traditional computers - either simply passing through servers into shared memory while waiting outside your network altogether once connected itself again until something happens... We'll do it for you all on our website!",
+        "continuation_text": "We'll do it for you all on our website!",
+        "input_token_count": 149,
+        "raw_input_token_count": 149,
+        "output_token_count": 161,
+        "new_token_count": 12,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 39,
+        "word_count": 9,
+        "unique_word_count": 9,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1492
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 607,
+        "word_count": 92,
+        "unique_word_count": 92,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 742,
+        "word_count": 111,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.9819819819819819,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 837,
+        "word_count": 129,
+        "unique_word_count": 125,
+        "unique_word_ratio": 0.9689922480620154,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1037,
+        "word_count": 162,
+        "unique_word_count": 158,
+        "unique_word_ratio": 0.9753086419753086,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 1640,
+        "word_count": 236,
+        "unique_word_count": 230,
+        "unique_word_ratio": 0.9745762711864406,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+      "delta_text": "After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then.",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then.",
+        "continuation_text": "After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then.",
+        "input_token_count": 57,
+        "raw_input_token_count": 57,
+        "output_token_count": 147,
+        "new_token_count": 90,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 607,
+        "word_count": 92,
+        "unique_word_count": 92,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then.",
+      "delta_text": "This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all...",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then. This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then. This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all...",
+        "continuation_text": "This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all...",
+        "input_token_count": 146,
+        "raw_input_token_count": 146,
+        "output_token_count": 168,
+        "new_token_count": 22,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 742,
+        "word_count": 111,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.9819819819819819,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then. This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all...",
+      "delta_text": "or does nothing about them but do what they need to accomplish! The results can be found here…",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then. This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all... or does nothing about them but do what they need to accomplish! The results can be found here…",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then. This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then. This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all...or does nothing about them but do what they need to accomplish! The results can be found here…",
+        "continuation_text": "or does nothing about them but do what they need to accomplish! The results can be found here…",
+        "input_token_count": 167,
+        "raw_input_token_count": 167,
+        "output_token_count": 188,
+        "new_token_count": 21,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 837,
+        "word_count": 129,
+        "unique_word_count": 125,
+        "unique_word_ratio": 0.9689922480620154,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then. This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all... or does nothing about them but do what they need to accomplish! The results can be found here…",
+      "delta_text": "In order only AGE knows how much time could save itself without using advanced information technology like algorithms developed by IBM which means even less data usage per year than we've ever seen!.",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then. This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all... or does nothing about them but do what they need to accomplish! The results can be found here… In order only AGE knows how much time could save itself without using advanced information technology like algorithms developed by IBM which means even less data usage per year than we've ever seen!.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then. This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all... or does nothing about them but do what they need to accomplish! The results can be found here…",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then. This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all... or does nothing about them but do what they need to accomplish! The results can be found here… In order only AGE knows how much time could save itself without using advanced information technology like algorithms developed by IBM which means even less data usage per year than we've ever seen!.",
+        "continuation_text": "In order only AGE knows how much time could save itself without using advanced information technology like algorithms developed by IBM which means even less data usage per year than we've ever seen!.",
+        "input_token_count": 187,
+        "raw_input_token_count": 187,
+        "output_token_count": 224,
+        "new_token_count": 37,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1037,
+        "word_count": 162,
+        "unique_word_count": 158,
+        "unique_word_ratio": 0.9753086419753086,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then. This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all... or does nothing about them but do what they need to accomplish! The results can be found here… In order only AGE knows how much time could save itself without using advanced information technology like algorithms developed by IBM which means even less data usage per year than we've ever seen!.",
+      "delta_text": "These findings suggest continued work on many areas surrounding development such with further integration activities including communications systems used under contract - particularly during multiyear period management planning & business processes where collaboration between countries will provide insights regarding software use/transaction strategies being employed within nonstandard platforms--such also known internally and externally related languages etc. We believe important changes should follow throughout testing periods so long as our approach helps ensure continuity among projects....",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then. This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all... or does nothing about them but do what they need to accomplish! The results can be found here… In order only AGE knows how much time could save itself without using advanced information technology like algorithms developed by IBM which means even less data usage per year than we've ever seen!. These findings suggest continued work on many areas surrounding development such with further integration activities including communications systems used under contract - particularly during multiyear period management planning & business processes where collaboration between countries will provide insights regarding software use/transaction strategies being employed within nonstandard platforms--such also known internally and externally related languages etc. We believe important changes should follow throughout testing periods so long as our approach helps ensure continuity among projects....",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then. This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all... or does nothing about them but do what they need to accomplish! The results can be found here… In order only AGE knows how much time could save itself without using advanced information technology like algorithms developed by IBM which means even less data usage per year than we've ever seen!.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. After completing its experiments, it is said that both ships were engaged in continuous intercollegiate communication across numerous continents for several weeks; while this study may have been incomplete (it's now well over six months since an official report has reached out to Google). At least one of those observations came before \"an international company\" or two—including CTO Michael Stacey (who was previously chief economist at Cisco), who became CEO back then. This new investigation indicates that BAE made significant progress through these operations despite having no specific role at all... or does nothing about them but do what they need to accomplish! The results can be found here… In order only AGE knows how much time could save itself without using advanced information technology like algorithms developed by IBM which means even less data usage per year than we've ever seen!. These findings suggest continued work on many areas surrounding development such with further integration activities including communications systems used under contract - particularly during multiyear period management planning & business processes where collaboration between countries will provide insights regarding software use/transaction strategies being employed within nonstandard platforms--such also known internally and externally related languages etc. We believe important changes should follow throughout testing periods so long as our approach helps ensure continuity among projects....",
+        "continuation_text": "These findings suggest continued work on many areas surrounding development such with further integration activities including communications systems used under contract - particularly during multiyear period management planning & business processes where collaboration between countries will provide insights regarding software use/transaction strategies being employed within nonstandard platforms--such also known internally and externally related languages etc. We believe important changes should follow throughout testing periods so long as our approach helps ensure continuity among projects....",
+        "input_token_count": 223,
+        "raw_input_token_count": 223,
+        "output_token_count": 307,
+        "new_token_count": 84,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1640,
+        "word_count": 236,
+        "unique_word_count": 230,
+        "unique_word_ratio": 0.9745762711864406,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

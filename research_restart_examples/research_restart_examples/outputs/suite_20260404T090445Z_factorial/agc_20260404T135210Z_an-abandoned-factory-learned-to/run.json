@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1393,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 476,
+        "word_count": 79,
+        "unique_word_count": 65,
+        "unique_word_ratio": 0.8227848101265823,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 564,
+        "word_count": 63,
+        "unique_word_count": 49,
+        "unique_word_ratio": 0.7777777777777778,
+        "repeated_bigram_count": 4
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 311,
+        "word_count": 34,
+        "unique_word_count": 27,
+        "unique_word_ratio": 0.7941176470588235,
+        "repeated_bigram_count": 2
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "sick",
+        ".metadata",
+        "metadata",
+        "余名",
+        "نه",
+        "(/",
+        "special",
+        "ig",
+        "-rich",
+        "高品质",
+        "GT",
+        "intensive"
+      ],
+      "output_text": "To complete this task, I would need additional information such as the intended end goal or specific instructions on how to generate the next recursive transformation. Without that, I cannot proceed with generating code for the specified process. If you have any details about what you're trying to achieve with this text, please provide them so I can assist you further. Otherwise, I'll need to rely on some general guidelines to create an example based on the provided text.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nTo complete this task, I would need additional information such as the intended end goal or specific instructions on how to generate the next recursive transformation. Without that, I cannot proceed with generating code for the specified process. If you have any details about what you're trying to achieve with this text, please provide them so I can assist you further. Otherwise, I'll need to rely on some general guidelines to create an example based on the provided text.",
+        "continuation_text": "To complete this task, I would need additional information such as the intended end goal or specific instructions on how to generate the next recursive transformation. Without that, I cannot proceed with generating code for the specified process. If you have any details about what you're trying to achieve with this text, please provide them so I can assist you further. Otherwise, I'll need to rely on some general guidelines to create an example based on the provided text.",
+        "input_token_count": 120,
+        "raw_input_token_count": 120,
+        "output_token_count": 210,
+        "new_token_count": 90,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 476,
+        "word_count": 79,
+        "unique_word_count": 65,
+        "unique_word_ratio": 0.8227848101265823,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "In",
+        ".In",
+        "-----------",
+        "////////////",
+        "建党",
+        "stesso",
+        "confines",
+        "_in",
+        "\\[",
+        "В",
+        "According",
+        "是对"
+      ],
+      "output_text": "The next recursive transformation is:\n\n```python\ndef transform_text(text):\n    # Latent anchors\n    latents = [\"In\", \".In\", \"-----------\", \"///////////\"]\n    \n    # Process each character in the input string\n    transformed_text = \"\"\n    for char in text.lower():\n        if char == \"{\" and len(transformed_text) > 0:\n            # Handle \"{\" syntax\n            transformed_text += f\"{''.join(latents)}\"\n        else:\n            transformed_text += char\n    \n    return transformed_text.strip()\n```\n\nThis function processes every alphabetic character in the input",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: In, .In, -----------, ////////////, 建党, stesso, confines, _in, \\[, В, According, 是对\n\nTEXT:\nTo complete this task, I would need additional information such as the intended end goal or specific instructions on how to generate the next recursive transformation. Without that, I cannot proceed with generating code for the specified process. If you have any details about what you're trying to achieve with this text, please provide them so I can assist you further. Otherwise, I'll need to rely on some general guidelines to create an example based on the provided text.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: In, .In, -----------, ////////////, 建党, stesso, confines, _in, \\[, В, According, 是对\n\nTEXT:\nTo complete this task, I would need additional information such as the intended end goal or specific instructions on how to generate the next recursive transformation. Without that, I cannot proceed with generating code for the specified process. If you have any details about what you're trying to achieve with this text, please provide them so I can assist you further. Otherwise, I'll need to rely on some general guidelines to create an example based on the provided text.\nassistant\nThe next recursive transformation is:\n\n```python\ndef transform_text(text):\n    # Latent anchors\n    latents = [\"In\", \".In\", \"-----------\", \"///////////\"]\n    \n    # Process each character in the input string\n    transformed_text = \"\"\n    for char in text.lower():\n        if char == \"{\" and len(transformed_text) > 0:\n            # Handle \"{\" syntax\n            transformed_text += f\"{''.join(latents)}\"\n        else:\n            transformed_text += char\n    \n    return transformed_text.strip()\n```\n\nThis function processes every alphabetic character in the input",
+        "continuation_text": "The next recursive transformation is:\n\n```python\ndef transform_text(text):\n    # Latent anchors\n    latents = [\"In\", \".In\", \"-----------\", \"///////////\"]\n    \n    # Process each character in the input string\n    transformed_text = \"\"\n    for char in text.lower():\n        if char == \"{\" and len(transformed_text) > 0:\n            # Handle \"{\" syntax\n            transformed_text += f\"{''.join(latents)}\"\n        else:\n            transformed_text += char\n    \n    return transformed_text.strip()\n```\n\nThis function processes every alphabetic character in the input",
+        "input_token_count": 184,
+        "raw_input_token_count": 184,
+        "output_token_count": 304,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 564,
+        "word_count": 63,
+        "unique_word_count": 49,
+        "unique_word_ratio": 0.7777777777777778,
+        "repeated_bigram_count": 4
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "rella",
+        "่ม",
+        "まで",
+        "rn",
+        "进来",
+        "天津",
+        "atisch",
+        "放心",
+        "ậy",
+        "asurable",
+        "stable",
+        "_instances"
+      ],
+      "output_text": "```python\ntransformed_text = \"\"\nfor char in input_text.lower():\n    if char == \"{\":\n        transformed_text += ''.join(latents)\n    elif char.isalpha() or char.isdigit():\n        transformed_text += char\n    else:\n        transformed_text += '.'\n\n# Trim any extra whitespace\nreturn transformed_text.strip()\n```",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: rella, ่ม, まで, rn, 进来, 天津, atisch, 放心, ậy, asurable, stable, _instances\n\nTEXT:\nThe next recursive transformation is:\n\n```python\ndef transform_text(text):\n    # Latent anchors\n    latents = [\"In\", \".In\", \"-----------\", \"///////////\"]\n    \n    # Process each character in the input string\n    transformed_text = \"\"\n    for char in text.lower():\n        if char == \"{\" and len(transformed_text) > 0:\n            # Handle \"{\" syntax\n            transformed_text += f\"{''.join(latents)}\"\n        else:\n            transformed_text += char\n    \n    return transformed_text.strip()\n```\n\nThis function processes every alphabetic character in the input<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: rella, ่ม, まで, rn, 进来, 天津, atisch, 放心, ậy, asurable, stable, _instances\n\nTEXT:\nThe next recursive transformation is:\n\n```python\ndef transform_text(text):\n    # Latent anchors\n    latents = [\"In\", \".In\", \"-----------\", \"///////////\"]\n    \n    # Process each character in the input string\n    transformed_text = \"\"\n    for char in text.lower():\n        if char == \"{\" and len(transformed_text) > 0:\n            # Handle \"{\" syntax\n            transformed_text += f\"{''.join(latents)}\"\n        else:\n            transformed_text += char\n    \n    return transformed_text.strip()\n```\n\nThis function processes every alphabetic character in the input\nassistant\n```python\ntransformed_text = \"\"\nfor char in input_text.lower():\n    if char == \"{\":\n        transformed_text += ''.join(latents)\n    elif char.isalpha() or char.isdigit():\n        transformed_text += char\n    else:\n        transformed_text += '.'\n\n# Trim any extra whitespace\nreturn transformed_text.strip()\n```",
+        "continuation_text": "```python\ntransformed_text = \"\"\nfor char in input_text.lower():\n    if char == \"{\":\n        transformed_text += ''.join(latents)\n    elif char.isalpha() or char.isdigit():\n        transformed_text += char\n    else:\n        transformed_text += '.'\n\n# Trim any extra whitespace\nreturn transformed_text.strip()\n```",
+        "input_token_count": 222,
+        "raw_input_token_count": 222,
+        "output_token_count": 290,
+        "new_token_count": 68,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 311,
+        "word_count": 34,
+        "unique_word_count": 27,
+        "unique_word_ratio": 0.7941176470588235,
+        "repeated_bigram_count": 2
+      }
+    }
+  ]
+}

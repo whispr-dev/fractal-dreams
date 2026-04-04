@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1144
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 536,
+        "word_count": 90,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.9666666666666667,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 539,
+        "word_count": 91,
+        "unique_word_count": 88,
+        "unique_word_ratio": 0.967032967032967,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1232,
+        "word_count": 204,
+        "unique_word_count": 107,
+        "unique_word_ratio": 0.5245098039215687,
+        "repeated_bigram_count": 90
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1746,
+        "word_count": 293,
+        "unique_word_count": 191,
+        "unique_word_ratio": 0.6518771331058021,
+        "repeated_bigram_count": 91
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2082,
+        "word_count": 343,
+        "unique_word_count": 240,
+        "unique_word_ratio": 0.6997084548104956,
+        "repeated_bigram_count": 91
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+      "delta_text": "Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!!",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!!",
+        "continuation_text": "Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!!",
+        "input_token_count": 63,
+        "raw_input_token_count": 63,
+        "output_token_count": 138,
+        "new_token_count": 75,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 536,
+        "word_count": 90,
+        "unique_word_count": 87,
+        "unique_word_ratio": 0.9666666666666667,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!!",
+      "delta_text": ":)",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :)",
+        "continuation_text": ":)",
+        "input_token_count": 137,
+        "raw_input_token_count": 137,
+        "output_token_count": 139,
+        "new_token_count": 2,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 539,
+        "word_count": 91,
+        "unique_word_count": 88,
+        "unique_word_ratio": 0.967032967032967,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :)",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :)",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :)",
+        "continuation_text": "",
+        "input_token_count": 138,
+        "raw_input_token_count": 138,
+        "output_token_count": 139,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1232,
+        "word_count": 204,
+        "unique_word_count": 107,
+        "unique_word_ratio": 0.5245098039215687,
+        "repeated_bigram_count": 90
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :)",
+      "delta_text": "You were one part of a group called \"The Science Team\". We worked together many times over our time each year until we decided on what should be done when necessary because most people do very well doing things themselves all day long!! Also while you've got plenty more than enough data per week they're just taking stuff left off so far into storage where everything is stored once needed before creating new models... Well maybe there will be something like these next summer? Probably but certainly NOT really",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You were one part of a group called \"The Science Team\". We worked together many times over our time each year until we decided on what should be done when necessary because most people do very well doing things themselves all day long!! Also while you've got plenty more than enough data per week they're just taking stuff left off so far into storage where everything is stored once needed before creating new models... Well maybe there will be something like these next summer? Probably but certainly NOT really",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You were one part of a group called \"The Science Team\". We worked together many times over our time each year until we decided on what should be done when necessary because most people do very well doing things themselves all day long!! Also while you've got plenty more than enough data per week they're just taking stuff left off so far into storage where everything is stored once needed before creating new models... Well maybe there will be something like these next summer? Probably but certainly NOT really",
+        "continuation_text": "You were one part of a group called \"The Science Team\". We worked together many times over our time each year until we decided on what should be done when necessary because most people do very well doing things themselves all day long!! Also while you've got plenty more than enough data per week they're just taking stuff left off so far into storage where everything is stored once needed before creating new models... Well maybe there will be something like these next summer? Probably but certainly NOT really",
+        "input_token_count": 276,
+        "raw_input_token_count": 276,
+        "output_token_count": 372,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1746,
+        "word_count": 293,
+        "unique_word_count": 191,
+        "unique_word_ratio": 0.6518771331058021,
+        "repeated_bigram_count": 91
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You were one part of a group called \"The Science Team\". We worked together many times over our time each year until we decided on what should be done when necessary because most people do very well doing things themselves all day long!! Also while you've got plenty more than enough data per week they're just taking stuff left off so far into storage where everything is stored once needed before creating new models... Well maybe there will be something like these next summer? Probably but certainly NOT really",
+      "delta_text": ".... They can only get even better every minute now.. So why don't other folks contribute about such wonderful projects!? All those awesome results seem small compared then..... And remember also keep putting paperback pages somewhere rather useful instead! Thank goodness anyone else interested in working towards learning languages !",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You were one part of a group called \"The Science Team\". We worked together many times over our time each year until we decided on what should be done when necessary because most people do very well doing things themselves all day long!! Also while you've got plenty more than enough data per week they're just taking stuff left off so far into storage where everything is stored once needed before creating new models... Well maybe there will be something like these next summer? Probably but certainly NOT really .... They can only get even better every minute now.. So why don't other folks contribute about such wonderful projects!? All those awesome results seem small compared then..... And remember also keep putting paperback pages somewhere rather useful instead! Thank goodness anyone else interested in working towards learning languages !",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You were one part of a group called \"The Science Team\". We worked together many times over our time each year until we decided on what should be done when necessary because most people do very well doing things themselves all day long!! Also while you've got plenty more than enough data per week they're just taking stuff left off so far into storage where everything is stored once needed before creating new models... Well maybe there will be something like these next summer? Probably but certainly NOT really",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Every single step of this project has been rewritten based on user feedback from an experienced writer with some common issues or technical problems that would have made it impossible for me to write properly (or at least perform correctly), since I still am writing code without any help whatsoever after being told by my fellow members/students who use them! Thanks again to everyone reading their words!!! :) You were one part of a group called \"The Science Team\". We worked together many times over our time each year until we decided on what should be done when necessary because most people do very well doing things themselves all day long!! Also while you've got plenty more than enough data per week they're just taking stuff left off so far into storage where everything is stored once needed before creating new models... Well maybe there will be something like these next summer? Probably but certainly NOT really.... They can only get even better every minute now.. So why don't other folks contribute about such wonderful projects!? All those awesome results seem small compared then..... And remember also keep putting paperback pages somewhere rather useful instead! Thank goodness anyone else interested in working towards learning languages !",
+        "continuation_text": ".... They can only get even better every minute now.. So why don't other folks contribute about such wonderful projects!? All those awesome results seem small compared then..... And remember also keep putting paperback pages somewhere rather useful instead! Thank goodness anyone else interested in working towards learning languages !",
+        "input_token_count": 372,
+        "raw_input_token_count": 372,
+        "output_token_count": 429,
+        "new_token_count": 57,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2082,
+        "word_count": 343,
+        "unique_word_count": 240,
+        "unique_word_ratio": 0.6997084548104956,
+        "repeated_bigram_count": 91
+      }
+    }
+  ]
+}

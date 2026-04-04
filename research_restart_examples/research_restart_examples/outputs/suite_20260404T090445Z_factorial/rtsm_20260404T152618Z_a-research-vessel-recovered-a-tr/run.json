@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1524
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 683,
+        "word_count": 104,
+        "unique_word_count": 88,
+        "unique_word_ratio": 0.8461538461538461,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1211,
+        "word_count": 183,
+        "unique_word_count": 151,
+        "unique_word_ratio": 0.825136612021858,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1758,
+        "word_count": 262,
+        "unique_word_count": 212,
+        "unique_word_ratio": 0.8091603053435115,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1856,
+        "word_count": 274,
+        "unique_word_count": 219,
+        "unique_word_ratio": 0.7992700729927007,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2393,
+        "word_count": 351,
+        "unique_word_count": 270,
+        "unique_word_ratio": 0.7692307692307693,
+        "repeated_bigram_count": 1
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\n...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac",
+        "continuation_text": "...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac",
+        "input_token_count": 62,
+        "raw_input_token_count": 62,
+        "output_token_count": 158,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 683,
+        "word_count": 104,
+        "unique_word_count": 88,
+        "unique_word_ratio": 0.8461538461538461,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac\nassistant\nphilosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring",
+        "continuation_text": "philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring",
+        "input_token_count": 158,
+        "raw_input_token_count": 158,
+        "output_token_count": 254,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1211,
+        "word_count": 183,
+        "unique_word_count": 151,
+        "unique_word_ratio": 0.825136612021858,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "a continued path away from suffering and harm, embodying the vision that humans have of happiness based on compassion, love, and unity. Their unwavering dedication has helped establish an ethos known around the globe as \"Blueprints Earth,\" where every generation learns together how to sustain themselves, share resources, build communities, and navigate complex issues facing humanity today. This legacy ensures that generations follow in their footsteps while fostering harmonious relationships globally. For as we embark on this grand journey,",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring a continued path away from suffering and harm, embodying the vision that humans have of happiness based on compassion, love, and unity. Their unwavering dedication has helped establish an ethos known around the globe as \"Blueprints Earth,\" where every generation learns together how to sustain themselves, share resources, build communities, and navigate complex issues facing humanity today. This legacy ensures that generations follow in their footsteps while fostering harmonious relationships globally. For as we embark on this grand journey,",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring\nassistant\na continued path away from suffering and harm, embodying the vision that humans have of happiness based on compassion, love, and unity. Their unwavering dedication has helped establish an ethos known around the globe as \"Blueprints Earth,\" where every generation learns together how to sustain themselves, share resources, build communities, and navigate complex issues facing humanity today. This legacy ensures that generations follow in their footsteps while fostering harmonious relationships globally. For as we embark on this grand journey,",
+        "continuation_text": "a continued path away from suffering and harm, embodying the vision that humans have of happiness based on compassion, love, and unity. Their unwavering dedication has helped establish an ethos known around the globe as \"Blueprints Earth,\" where every generation learns together how to sustain themselves, share resources, build communities, and navigate complex issues facing humanity today. This legacy ensures that generations follow in their footsteps while fostering harmonious relationships globally. For as we embark on this grand journey,",
+        "input_token_count": 253,
+        "raw_input_token_count": 253,
+        "output_token_count": 349,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1758,
+        "word_count": 262,
+        "unique_word_count": 212,
+        "unique_word_ratio": 0.8091603053435115,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring a continued path away from suffering and harm, embodying the vision that humans have of happiness based on compassion, love, and unity. Their unwavering dedication has helped establish an ethos known around the globe as \"Blueprints Earth,\" where every generation learns together how to sustain themselves, share resources, build communities, and navigate complex issues facing humanity today. This legacy ensures that generations follow in their footsteps while fostering harmonious relationships globally. For as we embark on this grand journey,<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "a testament to human ingenuity and perseverance towards greater understanding and responsibility.",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring a continued path away from suffering and harm, embodying the vision that humans have of happiness based on compassion, love, and unity. Their unwavering dedication has helped establish an ethos known around the globe as \"Blueprints Earth,\" where every generation learns together how to sustain themselves, share resources, build communities, and navigate complex issues facing humanity today. This legacy ensures that generations follow in their footsteps while fostering harmonious relationships globally. For as we embark on this grand journey, a testament to human ingenuity and perseverance towards greater understanding and responsibility.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring a continued path away from suffering and harm, embodying the vision that humans have of happiness based on compassion, love, and unity. Their unwavering dedication has helped establish an ethos known around the globe as \"Blueprints Earth,\" where every generation learns together how to sustain themselves, share resources, build communities, and navigate complex issues facing humanity today. This legacy ensures that generations follow in their footsteps while fostering harmonious relationships globally. For as we embark on this grand journey,<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring a continued path away from suffering and harm, embodying the vision that humans have of happiness based on compassion, love, and unity. Their unwavering dedication has helped establish an ethos known around the globe as \"Blueprints Earth,\" where every generation learns together how to sustain themselves, share resources, build communities, and navigate complex issues facing humanity today. This legacy ensures that generations follow in their footsteps while fostering harmonious relationships globally. For as we embark on this grand journey,\nassistant\na testament to human ingenuity and perseverance towards greater understanding and responsibility.",
+        "continuation_text": "a testament to human ingenuity and perseverance towards greater understanding and responsibility.",
+        "input_token_count": 349,
+        "raw_input_token_count": 349,
+        "output_token_count": 364,
+        "new_token_count": 15,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1856,
+        "word_count": 274,
+        "unique_word_count": 219,
+        "unique_word_ratio": 0.7992700729927007,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring a continued path away from suffering and harm, embodying the vision that humans have of happiness based on compassion, love, and unity. Their unwavering dedication has helped establish an ethos known around the globe as \"Blueprints Earth,\" where every generation learns together how to sustain themselves, share resources, build communities, and navigate complex issues facing humanity today. This legacy ensures that generations follow in their footsteps while fostering harmonious relationships globally. For as we embark on this grand journey, a testament to human ingenuity and perseverance towards greater understanding and responsibility.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "continue:\n\nAs she explored deeper beneath the ocean's surface, the vessel's crew became entangled in intellectual knots; they navigated through time and space, seeking answers in each epoch. They used advanced instruments to study geological formations, discovering patterns in nature that mirrored ancient philosophies and theological beliefs. By combining these findings, they pieced together the history and evolution of the universe—events that occurred billions or trillions of years ago echoed in the current age. \n\nTheir work cul",
+      "output_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring a continued path away from suffering and harm, embodying the vision that humans have of happiness based on compassion, love, and unity. Their unwavering dedication has helped establish an ethos known around the globe as \"Blueprints Earth,\" where every generation learns together how to sustain themselves, share resources, build communities, and navigate complex issues facing humanity today. This legacy ensures that generations follow in their footsteps while fostering harmonious relationships globally. For as we embark on this grand journey, a testament to human ingenuity and perseverance towards greater understanding and responsibility. continue:\n\nAs she explored deeper beneath the ocean's surface, the vessel's crew became entangled in intellectual knots; they navigated through time and space, seeking answers in each epoch. They used advanced instruments to study geological formations, discovering patterns in nature that mirrored ancient philosophies and theological beliefs. By combining these findings, they pieced together the history and evolution of the universe—events that occurred billions or trillions of years ago echoed in the current age. \n\nTheir work cul",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring a continued path away from suffering and harm, embodying the vision that humans have of happiness based on compassion, love, and unity. Their unwavering dedication has helped establish an ethos known around the globe as \"Blueprints Earth,\" where every generation learns together how to sustain themselves, share resources, build communities, and navigate complex issues facing humanity today. This legacy ensures that generations follow in their footsteps while fostering harmonious relationships globally. For as we embark on this grand journey, a testament to human ingenuity and perseverance towards greater understanding and responsibility.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. ...charted by the lens of mathematics, technology's digital eyes could now read through ancient texts to find insights that shaped our understanding of ideas like the universe. The vessel’s crew had documented years spent decoding centuries' worth of knowledge, creating maps and charts that stretched across galaxies for all to see. These maps served as a bridge between past civilizations and their future futures, inspiring new theories about life, consciousness, and the cosmos.\nThe data was compiled under the guidance of philosopher Sir Isaac philosopher, revealing deep truths about our connection with the universe and the intricate dance of existence within it. As he gazed upon the vast expanse below, his mind wandered back countless lifetimes filled with mathematical equations, creative visions, and spiritual awakenings connecting us to our ancestors’ wisdoms long ago... inspired by this voyage, they crafted anew grand narratives, mapping out cosmic paths meant to guide them forward. The crew shared tales of finding peaceful peace on distant worlds, ensuring a continued path away from suffering and harm, embodying the vision that humans have of happiness based on compassion, love, and unity. Their unwavering dedication has helped establish an ethos known around the globe as \"Blueprints Earth,\" where every generation learns together how to sustain themselves, share resources, build communities, and navigate complex issues facing humanity today. This legacy ensures that generations follow in their footsteps while fostering harmonious relationships globally. For as we embark on this grand journey, a testament to human ingenuity and perseverance towards greater understanding and responsibility.\nassistant\ncontinue:\n\nAs she explored deeper beneath the ocean's surface, the vessel's crew became entangled in intellectual knots; they navigated through time and space, seeking answers in each epoch. They used advanced instruments to study geological formations, discovering patterns in nature that mirrored ancient philosophies and theological beliefs. By combining these findings, they pieced together the history and evolution of the universe—events that occurred billions or trillions of years ago echoed in the current age. \n\nTheir work cul",
+        "continuation_text": "continue:\n\nAs she explored deeper beneath the ocean's surface, the vessel's crew became entangled in intellectual knots; they navigated through time and space, seeking answers in each epoch. They used advanced instruments to study geological formations, discovering patterns in nature that mirrored ancient philosophies and theological beliefs. By combining these findings, they pieced together the history and evolution of the universe—events that occurred billions or trillions of years ago echoed in the current age. \n\nTheir work cul",
+        "input_token_count": 363,
+        "raw_input_token_count": 363,
+        "output_token_count": 459,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2393,
+        "word_count": 351,
+        "unique_word_count": 270,
+        "unique_word_ratio": 0.7692307692307693,
+        "repeated_bigram_count": 1
+      }
+    }
+  ]
+}

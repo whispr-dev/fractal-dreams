@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1237,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 613,
+        "word_count": 94,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.9042553191489362,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 13,
+        "word_count": 2,
+        "unique_word_count": 2,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 489,
+        "word_count": 83,
+        "unique_word_count": 71,
+        "unique_word_ratio": 0.8554216867469879,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "cor",
+        "At",
+        "oklyn",
+        "静静地",
+        "cu",
+        "_di",
+        "Ferry",
+        "gu",
+        "nu",
+        "ner",
+        "Ur",
+        "가"
+      ],
+      "output_text": "The natural language processing (NLP) process involved is known as sequence-to-sequence or recurrent neural network (RNN) based translation models like BERT. Given that this example uses Latent Anchor Tokens only for guidance, we will apply simple RNN-based transformations without using explicit anchors.\n\nHere's how we might transform the given text:\n\n1. First Pass - Tokenize and pad sequences with special tokens.\n2. Second Pass - Apply an attention mechanism to prioritize certain parts of the input.\n3. Third Pass - Repeat the previous steps until the output becomes predictable or fully decoded.\n\nTo start,",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: cor, At, oklyn, 静静地, cu, _di, Ferry, gu, nu, ner, Ur, 가\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: cor, At, oklyn, 静静地, cu, _di, Ferry, gu, nu, ner, Ur, 가\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nThe natural language processing (NLP) process involved is known as sequence-to-sequence or recurrent neural network (RNN) based translation models like BERT. Given that this example uses Latent Anchor Tokens only for guidance, we will apply simple RNN-based transformations without using explicit anchors.\n\nHere's how we might transform the given text:\n\n1. First Pass - Tokenize and pad sequences with special tokens.\n2. Second Pass - Apply an attention mechanism to prioritize certain parts of the input.\n3. Third Pass - Repeat the previous steps until the output becomes predictable or fully decoded.\n\nTo start,",
+        "continuation_text": "The natural language processing (NLP) process involved is known as sequence-to-sequence or recurrent neural network (RNN) based translation models like BERT. Given that this example uses Latent Anchor Tokens only for guidance, we will apply simple RNN-based transformations without using explicit anchors.\n\nHere's how we might transform the given text:\n\n1. First Pass - Tokenize and pad sequences with special tokens.\n2. Second Pass - Apply an attention mechanism to prioritize certain parts of the input.\n3. Third Pass - Repeat the previous steps until the output becomes predictable or fully decoded.\n\nTo start,",
+        "input_token_count": 122,
+        "raw_input_token_count": 122,
+        "output_token_count": 242,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 613,
+        "word_count": 94,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.9042553191489362,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "_DECREF",
+        "infectious",
+        "Vand",
+        "판단",
+        "suction",
+        "................",
+        "终止",
+        "Cir",
+        "感应",
+        "Criteria",
+        ".sms",
+        "Ｇ"
+      ],
+      "output_text": "```python\n```",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: _DECREF, infectious, Vand, 판단, suction, ................, 终止, Cir, 感应, Criteria, .sms, Ｇ\n\nTEXT:\nThe natural language processing (NLP) process involved is known as sequence-to-sequence or recurrent neural network (RNN) based translation models like BERT. Given that this example uses Latent Anchor Tokens only for guidance, we will apply simple RNN-based transformations without using explicit anchors.\n\nHere's how we might transform the given text:\n\n1. First Pass - Tokenize and pad sequences with special tokens.\n2. Second Pass - Apply an attention mechanism to prioritize certain parts of the input.\n3. Third Pass - Repeat the previous steps until the output becomes predictable or fully decoded.\n\nTo start,<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: _DECREF, infectious, Vand, 판단, suction, ................, 终止, Cir, 感应, Criteria, .sms, Ｇ\n\nTEXT:\nThe natural language processing (NLP) process involved is known as sequence-to-sequence or recurrent neural network (RNN) based translation models like BERT. Given that this example uses Latent Anchor Tokens only for guidance, we will apply simple RNN-based transformations without using explicit anchors.\n\nHere's how we might transform the given text:\n\n1. First Pass - Tokenize and pad sequences with special tokens.\n2. Second Pass - Apply an attention mechanism to prioritize certain parts of the input.\n3. Third Pass - Repeat the previous steps until the output becomes predictable or fully decoded.\n\nTo start,\nassistant\n```python\n```",
+        "continuation_text": "```python\n```",
+        "input_token_count": 216,
+        "raw_input_token_count": 216,
+        "output_token_count": 221,
+        "new_token_count": 5,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 13,
+        "word_count": 2,
+        "unique_word_count": 2,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "法宝",
+        "даль",
+        "bohydr",
+        "Ặ",
+        "内幕",
+        "ocene",
+        "Insider",
+        "全国人大",
+        "Atoms",
+        "multimedia",
+        "isory",
+        "座谈会"
+      ],
+      "output_text": "The Latent Anchor Tokens used for this Text:\n\n- 法宝\n- 辜\n- bohydr\n- A\n- 内幕\n- o\n- icelady\n- atmospheres\n- multimedia\n- isory\n- seatchat\n```\n\nThe Next Recursive Transformation would be based on understanding or identifying patterns within the context and applying them iteratively. Here's how you can approach it:\n\n1. Identify common words or phrases.\n2. Apply logical transformations that align with their meanings.\n\nLet’s assume these have been understood by your AI assistant. For instance,",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 法宝, даль, bohydr, Ặ, 内幕, ocene, Insider, 全国人大, Atoms, multimedia, isory, 座谈会\n\nTEXT:\n```python\n```<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 法宝, даль, bohydr, Ặ, 内幕, ocene, Insider, 全国人大, Atoms, multimedia, isory, 座谈会\n\nTEXT:\n```python\n```\nassistant\nThe Latent Anchor Tokens used for this Text:\n\n- 法宝\n- 辜\n- bohydr\n- A\n- 内幕\n- o\n- icelady\n- atmospheres\n- multimedia\n- isory\n- seatchat\n```\n\nThe Next Recursive Transformation would be based on understanding or identifying patterns within the context and applying them iteratively. Here's how you can approach it:\n\n1. Identify common words or phrases.\n2. Apply logical transformations that align with their meanings.\n\nLet’s assume these have been understood by your AI assistant. For instance,",
+        "continuation_text": "The Latent Anchor Tokens used for this Text:\n\n- 法宝\n- 辜\n- bohydr\n- A\n- 内幕\n- o\n- icelady\n- atmospheres\n- multimedia\n- isory\n- seatchat\n```\n\nThe Next Recursive Transformation would be based on understanding or identifying patterns within the context and applying them iteratively. Here's how you can approach it:\n\n1. Identify common words or phrases.\n2. Apply logical transformations that align with their meanings.\n\nLet’s assume these have been understood by your AI assistant. For instance,",
+        "input_token_count": 107,
+        "raw_input_token_count": 107,
+        "output_token_count": 227,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 489,
+        "word_count": 83,
+        "unique_word_count": 71,
+        "unique_word_ratio": 0.8554216867469879,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

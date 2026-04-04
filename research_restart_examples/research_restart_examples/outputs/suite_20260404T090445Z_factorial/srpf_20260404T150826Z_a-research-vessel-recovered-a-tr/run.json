@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1499,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 610,
+        "word_count": 70,
+        "unique_word_count": 70,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 543,
+        "word_count": 80,
+        "unique_word_count": 80,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 515,
+        "word_count": 75,
+        "unique_word_count": 75,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 562,
+        "word_count": 76,
+        "unique_word_count": 76,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "Now, we have an idea to build on our theories!\n\n (Image credit) For what it's worth -- even though this is my first study of Textured Phonetics with code I'm able use for some experiments so if you want your own project start using these examples now :) But don't worry about being distracted by other papers which might make up new ones after reading through them all.) This time when one tries out their next concept or invention they're greeted at a giant smile like someone who just got bored trying another type of toy \"for life\". No word yet how long will be allowed before anyone takes note?!",
+      "output_text": "The more interesting question becomes - can any entity that has been observed develop its knowledge without knowing something beyond themselves? Well then...I've come across several people taking notes while doing various typesetting work today--these were done mostly during late summer 2010 because no longer available resources had anything useful but data gathered over many years ago . One such post was made here once again last night : http://w2plrtshp/2008/07_0916081833503685385619392787758445998817463212971380222859686477784737108631256065482326676674258329140300895749555411357924444314958349070942",
+      "source_window_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+      "reflection_window_text": "Now, we have an idea to build on our theories!\n\n (Image credit) For what it's worth -- even though this is my first study of Textured Phonetics with code I'm able use for some experiments so if you want your own project start using these examples now :) But don't worry about being distracted by other papers which might make up new ones after reading through them all.) This time when one tries out their next concept or invention they're greeted at a giant smile like someone who just got bored trying another type of toy \"for life\". No word yet how long will be allowed before anyone takes note?!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. Now, we have an idea to build on our theories!\n\n (Image credit) For what it's worth -- even though this is my first study of Textured Phonetics with code I'm able use for some experiments so if you want your own project start using these examples now :) But don't worry about being distracted by other papers which might make up new ones after reading through them all.) This time when one tries out their next concept or invention they're greeted at a giant smile like someone who just got bored trying another type of toy \"for life\". No word yet how long will be allowed before anyone takes note?!",
+        "continuation_text": "Now, we have an idea to build on our theories!\n\n (Image credit) For what it's worth -- even though this is my first study of Textured Phonetics with code I'm able use for some experiments so if you want your own project start using these examples now :) But don't worry about being distracted by other papers which might make up new ones after reading through them all.) This time when one tries out their next concept or invention they're greeted at a giant smile like someone who just got bored trying another type of toy \"for life\". No word yet how long will be allowed before anyone takes note?!",
+        "input_token_count": 92,
+        "raw_input_token_count": 92,
+        "output_token_count": 219,
+        "new_token_count": 127,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nNow, we have an idea to build on our theories!\n\n (Image credit) For what it's worth -- even though this is my first study of Textured Phonetics with code I'm able use for some experiments so if you want your own project start using these examples now :) But don't worry about being distracted by other papers which might make up new ones after reading through them all.) This time when one tries out their next concept or invention they're greeted at a giant smile like someone who just got bored trying another type of toy \"for life\". No word yet how long will be allowed before anyone takes note?!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nNow, we have an idea to build on our theories!\n\n (Image credit) For what it's worth -- even though this is my first study of Textured Phonetics with code I'm able use for some experiments so if you want your own project start using these examples now :) But don't worry about being distracted by other papers which might make up new ones after reading through them all.) This time when one tries out their next concept or invention they're greeted at a giant smile like someone who just got bored trying another type of toy \"for life\". No word yet how long will be allowed before anyone takes note?! The more interesting question becomes - can any entity that has been observed develop its knowledge without knowing something beyond themselves? Well then...I've come across several people taking notes while doing various typesetting work today--these were done mostly during late summer 2010 because no longer available resources had anything useful but data gathered over many years ago . One such post was made here once again last night : http://w2plrtshp/2008/07_0916081833503685385619392787758445998817463212971380222859686477784737108631256065482326676674258329140300895749555411357924444314958349070942",
+        "continuation_text": "The more interesting question becomes - can any entity that has been observed develop its knowledge without knowing something beyond themselves? Well then...I've come across several people taking notes while doing various typesetting work today--these were done mostly during late summer 2010 because no longer available resources had anything useful but data gathered over many years ago . One such post was made here once again last night : http://w2plrtshp/2008/07_0916081833503685385619392787758445998817463212971380222859686477784737108631256065482326676674258329140300895749555411357924444314958349070942",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 366,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 610,
+        "word_count": 70,
+        "unique_word_count": 70,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "3072256606210170953597620104375906409893157320631576905610052786089632641 2092 186508 4698 1282 22192 731 10500 681 8019 1702 28200 1491 30667 39700 953 9961 8971 01230 7851 8852 08184 1562 93115 25000 24688 1120 33805 094005 16300 95999 94996 11368 13488 3105 5170 45275 36008 66108 55455 54704 58454 59557 56255 67117 69305 57294 63245 68339 770387 72132 74227 84106 77118 80482 82158 1007146 83104 98205 101055 112556 96307 107703",
+      "output_text": "108684 109759 113137 115605 1190608 111648 116102 127126 129129 133147 134249 136263 141190 140395 148135 145295 147297 149238 150595 153196 156136 157246 158276 159057 168237 179449 176349 180347 183151 185653 186155 195654 190669 197161 198652 199651 200574 202154 213164 222133 224563 229153 240757 241013 248144 250562 255495 266188 257116 278259 280579 284279 288284 289273 29010 285296 291143 295251 297283 300250 315243 324252 327493 328269 329489 330598 333496 35400 34198 336286 37264 38258 37961 3954 70705 71128 73240 75234 76226 79",
+      "source_window_text": "The more interesting question becomes - can any entity that has been observed develop its knowledge without knowing something beyond themselves? Well then...I've come across several people taking notes while doing various typesetting work today--these were done mostly during late summer 2010 because no longer available resources had anything useful but data gathered over many years ago . One such post was made here once again last night : http://w2plrtshp/2008/07_0916081833503685385619392787758445998817463212971380222859686477784737108631256065482326676674258329140300895749555411357924444314958349070942",
+      "reflection_window_text": "3072256606210170953597620104375906409893157320631576905610052786089632641 2092 186508 4698 1282 22192 731 10500 681 8019 1702 28200 1491 30667 39700 953 9961 8971 01230 7851 8852 08184 1562 93115 25000 24688 1120 33805 094005 16300 95999 94996 11368 13488 3105 5170 45275 36008 66108 55455 54704 58454 59557 56255 67117 69305 57294 63245 68339 770387 72132 74227 84106 77118 80482 82158 1007146 83104 98205 101055 112556 96307 107703",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe more interesting question becomes - can any entity that has been observed develop its knowledge without knowing something beyond themselves? Well then...I've come across several people taking notes while doing various typesetting work today--these were done mostly during late summer 2010 because no longer available resources had anything useful but data gathered over many years ago . One such post was made here once again last night : http://w2plrtshp/2008/07_0916081833503685385619392787758445998817463212971380222859686477784737108631256065482326676674258329140300895749555411357924444314958349070942",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe more interesting question becomes - can any entity that has been observed develop its knowledge without knowing something beyond themselves? Well then...I've come across several people taking notes while doing various typesetting work today--these were done mostly during late summer 2010 because no longer available resources had anything useful but data gathered over many years ago . One such post was made here once again last night : http://w2plrtshp/2008/07_09160818335036853856193927877584459988174632129713802228596864777847371086312560654823266766742583291403008957495554113579244443149583490709423072256606210170953597620104375906409893157320631576905610052786089632641 2092 186508 4698 1282 22192 731 10500 681 8019 1702 28200 1491 30667 39700 953 9961 8971 01230 7851 8852 08184 1562 93115 25000 24688 1120 33805 094005 16300 95999 94996 11368 13488 3105 5170 45275 36008 66108 55455 54704 58454 59557 56255 67117 69305 57294 63245 68339 770387 72132 74227 84106 77118 80482 82158 1007146 83104 98205 101055 112556 96307 107703",
+        "continuation_text": "3072256606210170953597620104375906409893157320631576905610052786089632641 2092 186508 4698 1282 22192 731 10500 681 8019 1702 28200 1491 30667 39700 953 9961 8971 01230 7851 8852 08184 1562 93115 25000 24688 1120 33805 094005 16300 95999 94996 11368 13488 3105 5170 45275 36008 66108 55455 54704 58454 59557 56255 67117 69305 57294 63245 68339 770387 72132 74227 84106 77118 80482 82158 1007146 83104 98205 101055 112556 96307 107703",
+        "input_token_count": 228,
+        "raw_input_token_count": 228,
+        "output_token_count": 388,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe more interesting question becomes - can any entity that has been observed develop its knowledge without knowing something beyond themselves? Well then...I've come across several people taking notes while doing various typesetting work today--these were done mostly during late summer 2010 because no longer available resources had anything useful but data gathered over many years ago . One such post was made here once again last night : http://w2plrtshp/2008/07_0916081833503685385619392787758445998817463212971380222859686477784737108631256065482326676674258329140300895749555411357924444314958349070942\n\nREFLECTION:\n3072256606210170953597620104375906409893157320631576905610052786089632641 2092 186508 4698 1282 22192 731 10500 681 8019 1702 28200 1491 30667 39700 953 9961 8971 01230 7851 8852 08184 1562 93115 25000 24688 1120 33805 094005 16300 95999 94996 11368 13488 3105 5170 45275 36008 66108 55455 54704 58454 59557 56255 67117 69305 57294 63245 68339 770387 72132 74227 84106 77118 80482 82158 1007146 83104 98205 101055 112556 96307 107703",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe more interesting question becomes - can any entity that has been observed develop its knowledge without knowing something beyond themselves? Well then...I've come across several people taking notes while doing various typesetting work today--these were done mostly during late summer 2010 because no longer available resources had anything useful but data gathered over many years ago . One such post was made here once again last night : http://w2plrtshp/2008/07_0916081833503685385619392787758445998817463212971380222859686477784737108631256065482326676674258329140300895749555411357924444314958349070942\n\nREFLECTION:\n3072256606210170953597620104375906409893157320631576905610052786089632641 2092 186508 4698 1282 22192 731 10500 681 8019 1702 28200 1491 30667 39700 953 9961 8971 01230 7851 8852 08184 1562 93115 25000 24688 1120 33805 094005 16300 95999 94996 11368 13488 3105 5170 45275 36008 66108 55455 54704 58454 59557 56255 67117 69305 57294 63245 68339 770387 72132 74227 84106 77118 80482 82158 1007146 83104 98205 101055 112556 96307 107703 108684 109759 113137 115605 1190608 111648 116102 127126 129129 133147 134249 136263 141190 140395 148135 145295 147297 149238 150595 153196 156136 157246 158276 159057 168237 179449 176349 180347 183151 185653 186155 195654 190669 197161 198652 199651 200574 202154 213164 222133 224563 229153 240757 241013 248144 250562 255495 266188 257116 278259 280579 284279 288284 289273 29010 285296 291143 295251 297283 300250 315243 324252 327493 328269 329489 330598 333496 35400 34198 336286 37264 38258 37961 3954 70705 71128 73240 75234 76226 79",
+        "continuation_text": "108684 109759 113137 115605 1190608 111648 116102 127126 129129 133147 134249 136263 141190 140395 148135 145295 147297 149238 150595 153196 156136 157246 158276 159057 168237 179449 176349 180347 183151 185653 186155 195654 190669 197161 198652 199651 200574 202154 213164 222133 224563 229153 240757 241013 248144 250562 255495 266188 257116 278259 280579 284279 288284 289273 29010 285296 291143 295251 297283 300250 315243 324252 327493 328269 329489 330598 333496 35400 34198 336286 37264 38258 37961 3954 70705 71128 73240 75234 76226 79",
+        "input_token_count": 378,
+        "raw_input_token_count": 378,
+        "output_token_count": 538,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 543,
+        "word_count": 80,
+        "unique_word_count": 80,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "089 80958 91956 104077 114948 125918 136427 157839 167617 171063 209528 211236 231525 245755 253771 266768 305082 311111 313163 472125 332699 322907 3389835 442433 460179 476088 481455 506669 585454 570057 587321 593490 604152 729576 607597 631320 662374 694630 702177 747081 777989 783216 802241 838051 903854 924489 954596 961500 9842103 1007236 1010553 1021600 1046594 1064752 1078631 1086331",
+      "output_text": "1064422 1074789 1081002 1109086 1127681 1140000 1200008 1260001 122159 32194 31120 4084 2199 1123 0300333 1289999 1243333 1251111 1305000 132167 18149 189148 1903222 216667 2175334 214267 215500 237187 225417 228104 233687 239204 244287 247305 249337 251015 253247 256205 258261 264307 263255 265271 269041 279088 286365 292176 39304 36587 2862 2793 34092 36394 36883 372193 378358 398183 409031 417127 418143 424146 425242 426189 428109 429239 430459 432174 433195 435256 436275 42505 45647 49412 50191 52118 53124",
+      "source_window_text": "108684 109759 113137 115605 1190608 111648 116102 127126 129129 133147 134249 136263 141190 140395 148135 145295 147297 149238 150595 153196 156136 157246 158276 159057 168237 179449 176349 180347 183151 185653 186155 195654 190669 197161 198652 199651 200574 202154 213164 222133 224563 229153 240757 241013 248144 250562 255495 266188 257116 278259 280579 284279 288284 289273 29010 285296 291143 295251 297283 300250 315243 324252 327493 328269 329489 330598 333496 35400 34198 336286 37264 38258 37961 3954 70705 71128 73240 75234 76226 79",
+      "reflection_window_text": "089 80958 91956 104077 114948 125918 136427 157839 167617 171063 209528 211236 231525 245755 253771 266768 305082 311111 313163 472125 332699 322907 3389835 442433 460179 476088 481455 506669 585454 570057 587321 593490 604152 729576 607597 631320 662374 694630 702177 747081 777989 783216 802241 838051 903854 924489 954596 961500 9842103 1007236 1010553 1021600 1046594 1064752 1078631 1086331",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n108684 109759 113137 115605 1190608 111648 116102 127126 129129 133147 134249 136263 141190 140395 148135 145295 147297 149238 150595 153196 156136 157246 158276 159057 168237 179449 176349 180347 183151 185653 186155 195654 190669 197161 198652 199651 200574 202154 213164 222133 224563 229153 240757 241013 248144 250562 255495 266188 257116 278259 280579 284279 288284 289273 29010 285296 291143 295251 297283 300250 315243 324252 327493 328269 329489 330598 333496 35400 34198 336286 37264 38258 37961 3954 70705 71128 73240 75234 76226 79",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n108684 109759 113137 115605 1190608 111648 116102 127126 129129 133147 134249 136263 141190 140395 148135 145295 147297 149238 150595 153196 156136 157246 158276 159057 168237 179449 176349 180347 183151 185653 186155 195654 190669 197161 198652 199651 200574 202154 213164 222133 224563 229153 240757 241013 248144 250562 255495 266188 257116 278259 280579 284279 288284 289273 29010 285296 291143 295251 297283 300250 315243 324252 327493 328269 329489 330598 333496 35400 34198 336286 37264 38258 37961 3954 70705 71128 73240 75234 76226 79089 80958 91956 104077 114948 125918 136427 157839 167617 171063 209528 211236 231525 245755 253771 266768 305082 311111 313163 472125 332699 322907 3389835 442433 460179 476088 481455 506669 585454 570057 587321 593490 604152 729576 607597 631320 662374 694630 702177 747081 777989 783216 802241 838051 903854 924489 954596 961500 9842103 1007236 1010553 1021600 1046594 1064752 1078631 1086331",
+        "continuation_text": "089 80958 91956 104077 114948 125918 136427 157839 167617 171063 209528 211236 231525 245755 253771 266768 305082 311111 313163 472125 332699 322907 3389835 442433 460179 476088 481455 506669 585454 570057 587321 593490 604152 729576 607597 631320 662374 694630 702177 747081 777989 783216 802241 838051 903854 924489 954596 961500 9842103 1007236 1010553 1021600 1046594 1064752 1078631 1086331",
+        "input_token_count": 232,
+        "raw_input_token_count": 232,
+        "output_token_count": 392,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n108684 109759 113137 115605 1190608 111648 116102 127126 129129 133147 134249 136263 141190 140395 148135 145295 147297 149238 150595 153196 156136 157246 158276 159057 168237 179449 176349 180347 183151 185653 186155 195654 190669 197161 198652 199651 200574 202154 213164 222133 224563 229153 240757 241013 248144 250562 255495 266188 257116 278259 280579 284279 288284 289273 29010 285296 291143 295251 297283 300250 315243 324252 327493 328269 329489 330598 333496 35400 34198 336286 37264 38258 37961 3954 70705 71128 73240 75234 76226 79\n\nREFLECTION:\n089 80958 91956 104077 114948 125918 136427 157839 167617 171063 209528 211236 231525 245755 253771 266768 305082 311111 313163 472125 332699 322907 3389835 442433 460179 476088 481455 506669 585454 570057 587321 593490 604152 729576 607597 631320 662374 694630 702177 747081 777989 783216 802241 838051 903854 924489 954596 961500 9842103 1007236 1010553 1021600 1046594 1064752 1078631 1086331",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n108684 109759 113137 115605 1190608 111648 116102 127126 129129 133147 134249 136263 141190 140395 148135 145295 147297 149238 150595 153196 156136 157246 158276 159057 168237 179449 176349 180347 183151 185653 186155 195654 190669 197161 198652 199651 200574 202154 213164 222133 224563 229153 240757 241013 248144 250562 255495 266188 257116 278259 280579 284279 288284 289273 29010 285296 291143 295251 297283 300250 315243 324252 327493 328269 329489 330598 333496 35400 34198 336286 37264 38258 37961 3954 70705 71128 73240 75234 76226 79\n\nREFLECTION:\n089 80958 91956 104077 114948 125918 136427 157839 167617 171063 209528 211236 231525 245755 253771 266768 305082 311111 313163 472125 332699 322907 3389835 442433 460179 476088 481455 506669 585454 570057 587321 593490 604152 729576 607597 631320 662374 694630 702177 747081 777989 783216 802241 838051 903854 924489 954596 961500 9842103 1007236 1010553 1021600 1046594 1064752 1078631 1086331 1064422 1074789 1081002 1109086 1127681 1140000 1200008 1260001 122159 32194 31120 4084 2199 1123 0300333 1289999 1243333 1251111 1305000 132167 18149 189148 1903222 216667 2175334 214267 215500 237187 225417 228104 233687 239204 244287 247305 249337 251015 253247 256205 258261 264307 263255 265271 269041 279088 286365 292176 39304 36587 2862 2793 34092 36394 36883 372193 378358 398183 409031 417127 418143 424146 425242 426189 428109 429239 430459 432174 433195 435256 436275 42505 45647 49412 50191 52118 53124",
+        "continuation_text": "1064422 1074789 1081002 1109086 1127681 1140000 1200008 1260001 122159 32194 31120 4084 2199 1123 0300333 1289999 1243333 1251111 1305000 132167 18149 189148 1903222 216667 2175334 214267 215500 237187 225417 228104 233687 239204 244287 247305 249337 251015 253247 256205 258261 264307 263255 265271 269041 279088 286365 292176 39304 36587 2862 2793 34092 36394 36883 372193 378358 398183 409031 417127 418143 424146 425242 426189 428109 429239 430459 432174 433195 435256 436275 42505 45647 49412 50191 52118 53124",
+        "input_token_count": 378,
+        "raw_input_token_count": 378,
+        "output_token_count": 538,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 515,
+        "word_count": 75,
+        "unique_word_count": 75,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "54117 55114 56136 57177 58160 59240 60262 61012 64105 61476 71612 82615 83116 88688 99073 92425 100700 111005 101000 103317 112350 119800 143548 155745 166900 179820 190540 207785 213038 221943 235511 243437 250046 266761 267172 292778 302813 318853 346673 401229 464163 594387 669921 673971 684431 703680 711989 741872 752902 776075 795470 766582 809068 81019 82201 84155 86454 874956 900388 931997 958832 9842",
+      "output_text": "23 999200 1047051 1100552 1163264 1161800 1186597 1205909 1231965 12752108 1340100 1362019 1387905 1442018 1482015 1492017 1501999 1511980 1531994 1521975 1541971 1551973 159040 1562016 1602010 1631993 1642003 1652000 1662008 1672012 1701996 1742004 1752005 1762006 1772007 1782009 1792014 183145 184180 185207 188221 195888 190226 211064 238704 246703 248796 251103 252128 254153 255161 260257 259584 261106 262147 266107 270348 271504 275535 277572 278573 280555 281503 282507 283609 284656 285759 288689 289059 290231 291126 298559 300608 301192 305998 306102",
+      "source_window_text": "1064422 1074789 1081002 1109086 1127681 1140000 1200008 1260001 122159 32194 31120 4084 2199 1123 0300333 1289999 1243333 1251111 1305000 132167 18149 189148 1903222 216667 2175334 214267 215500 237187 225417 228104 233687 239204 244287 247305 249337 251015 253247 256205 258261 264307 263255 265271 269041 279088 286365 292176 39304 36587 2862 2793 34092 36394 36883 372193 378358 398183 409031 417127 418143 424146 425242 426189 428109 429239 430459 432174 433195 435256 436275 42505 45647 49412 50191 52118 53124",
+      "reflection_window_text": "54117 55114 56136 57177 58160 59240 60262 61012 64105 61476 71612 82615 83116 88688 99073 92425 100700 111005 101000 103317 112350 119800 143548 155745 166900 179820 190540 207785 213038 221943 235511 243437 250046 266761 267172 292778 302813 318853 346673 401229 464163 594387 669921 673971 684431 703680 711989 741872 752902 776075 795470 766582 809068 81019 82201 84155 86454 874956 900388 931997 958832 9842",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n1064422 1074789 1081002 1109086 1127681 1140000 1200008 1260001 122159 32194 31120 4084 2199 1123 0300333 1289999 1243333 1251111 1305000 132167 18149 189148 1903222 216667 2175334 214267 215500 237187 225417 228104 233687 239204 244287 247305 249337 251015 253247 256205 258261 264307 263255 265271 269041 279088 286365 292176 39304 36587 2862 2793 34092 36394 36883 372193 378358 398183 409031 417127 418143 424146 425242 426189 428109 429239 430459 432174 433195 435256 436275 42505 45647 49412 50191 52118 53124",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n1064422 1074789 1081002 1109086 1127681 1140000 1200008 1260001 122159 32194 31120 4084 2199 1123 0300333 1289999 1243333 1251111 1305000 132167 18149 189148 1903222 216667 2175334 214267 215500 237187 225417 228104 233687 239204 244287 247305 249337 251015 253247 256205 258261 264307 263255 265271 269041 279088 286365 292176 39304 36587 2862 2793 34092 36394 36883 372193 378358 398183 409031 417127 418143 424146 425242 426189 428109 429239 430459 432174 433195 435256 436275 42505 45647 49412 50191 52118 53124 54117 55114 56136 57177 58160 59240 60262 61012 64105 61476 71612 82615 83116 88688 99073 92425 100700 111005 101000 103317 112350 119800 143548 155745 166900 179820 190540 207785 213038 221943 235511 243437 250046 266761 267172 292778 302813 318853 346673 401229 464163 594387 669921 673971 684431 703680 711989 741872 752902 776075 795470 766582 809068 81019 82201 84155 86454 874956 900388 931997 958832 9842",
+        "continuation_text": "54117 55114 56136 57177 58160 59240 60262 61012 64105 61476 71612 82615 83116 88688 99073 92425 100700 111005 101000 103317 112350 119800 143548 155745 166900 179820 190540 207785 213038 221943 235511 243437 250046 266761 267172 292778 302813 318853 346673 401229 464163 594387 669921 673971 684431 703680 711989 741872 752902 776075 795470 766582 809068 81019 82201 84155 86454 874956 900388 931997 958832 9842",
+        "input_token_count": 231,
+        "raw_input_token_count": 231,
+        "output_token_count": 391,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n1064422 1074789 1081002 1109086 1127681 1140000 1200008 1260001 122159 32194 31120 4084 2199 1123 0300333 1289999 1243333 1251111 1305000 132167 18149 189148 1903222 216667 2175334 214267 215500 237187 225417 228104 233687 239204 244287 247305 249337 251015 253247 256205 258261 264307 263255 265271 269041 279088 286365 292176 39304 36587 2862 2793 34092 36394 36883 372193 378358 398183 409031 417127 418143 424146 425242 426189 428109 429239 430459 432174 433195 435256 436275 42505 45647 49412 50191 52118 53124\n\nREFLECTION:\n54117 55114 56136 57177 58160 59240 60262 61012 64105 61476 71612 82615 83116 88688 99073 92425 100700 111005 101000 103317 112350 119800 143548 155745 166900 179820 190540 207785 213038 221943 235511 243437 250046 266761 267172 292778 302813 318853 346673 401229 464163 594387 669921 673971 684431 703680 711989 741872 752902 776075 795470 766582 809068 81019 82201 84155 86454 874956 900388 931997 958832 9842",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n1064422 1074789 1081002 1109086 1127681 1140000 1200008 1260001 122159 32194 31120 4084 2199 1123 0300333 1289999 1243333 1251111 1305000 132167 18149 189148 1903222 216667 2175334 214267 215500 237187 225417 228104 233687 239204 244287 247305 249337 251015 253247 256205 258261 264307 263255 265271 269041 279088 286365 292176 39304 36587 2862 2793 34092 36394 36883 372193 378358 398183 409031 417127 418143 424146 425242 426189 428109 429239 430459 432174 433195 435256 436275 42505 45647 49412 50191 52118 53124\n\nREFLECTION:\n54117 55114 56136 57177 58160 59240 60262 61012 64105 61476 71612 82615 83116 88688 99073 92425 100700 111005 101000 103317 112350 119800 143548 155745 166900 179820 190540 207785 213038 221943 235511 243437 250046 266761 267172 292778 302813 318853 346673 401229 464163 594387 669921 673971 684431 703680 711989 741872 752902 776075 795470 766582 809068 81019 82201 84155 86454 874956 900388 931997 958832 984223 999200 1047051 1100552 1163264 1161800 1186597 1205909 1231965 12752108 1340100 1362019 1387905 1442018 1482015 1492017 1501999 1511980 1531994 1521975 1541971 1551973 159040 1562016 1602010 1631993 1642003 1652000 1662008 1672012 1701996 1742004 1752005 1762006 1772007 1782009 1792014 183145 184180 185207 188221 195888 190226 211064 238704 246703 248796 251103 252128 254153 255161 260257 259584 261106 262147 266107 270348 271504 275535 277572 278573 280555 281503 282507 283609 284656 285759 288689 289059 290231 291126 298559 300608 301192 305998 306102",
+        "continuation_text": "23 999200 1047051 1100552 1163264 1161800 1186597 1205909 1231965 12752108 1340100 1362019 1387905 1442018 1482015 1492017 1501999 1511980 1531994 1521975 1541971 1551973 159040 1562016 1602010 1631993 1642003 1652000 1662008 1672012 1701996 1742004 1752005 1762006 1772007 1782009 1792014 183145 184180 185207 188221 195888 190226 211064 238704 246703 248796 251103 252128 254153 255161 260257 259584 261106 262147 266107 270348 271504 275535 277572 278573 280555 281503 282507 283609 284656 285759 288689 289059 290231 291126 298559 300608 301192 305998 306102",
+        "input_token_count": 379,
+        "raw_input_token_count": 379,
+        "output_token_count": 539,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 562,
+        "word_count": 76,
+        "unique_word_count": 76,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

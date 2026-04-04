@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1506,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 564,
+        "word_count": 103,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.9611650485436893,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 868,
+        "word_count": 151,
+        "unique_word_count": 140,
+        "unique_word_ratio": 0.9271523178807947,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1171,
+        "word_count": 199,
+        "unique_word_count": 142,
+        "unique_word_ratio": 0.7135678391959799,
+        "repeated_bigram_count": 37
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1471,
+        "word_count": 247,
+        "unique_word_count": 143,
+        "unique_word_ratio": 0.5789473684210527,
+        "repeated_bigram_count": 76
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "had",
+        "was",
+        "are",
+        "It",
+        "went",
+        "have",
+        "in",
+        "has",
+        "with",
+        "is"
+      ],
+      "output_text": "In theory, this device would not provide an alternative for communication over time; instead, to give us feedback that you don't need too much information on what's going on before they die out or your position should become obsolete after each shift (e .g., if anything happens during one part of the study) since there doesn`t need to be more than 2 seconds left until we get enough data! If anyone else wants to read our work here please send them some email including comments about where their idea came up but I am sure at least those people will make fun ;)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, had, was, are, It, went, have, in, has, with, is\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, had, was, are, It, went, have, in, has, with, is\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. In theory, this device would not provide an alternative for communication over time; instead, to give us feedback that you don't need too much information on what's going on before they die out or your position should become obsolete after each shift (e .g., if anything happens during one part of the study) since there doesn`t need to be more than 2 seconds left until we get enough data! If anyone else wants to read our work here please send them some email including comments about where their idea came up but I am sure at least those people will make fun ;)",
+        "continuation_text": "In theory, this device would not provide an alternative for communication over time; instead, to give us feedback that you don't need too much information on what's going on before they die out or your position should become obsolete after each shift (e .g., if anything happens during one part of the study) since there doesn`t need to be more than 2 seconds left until we get enough data! If anyone else wants to read our work here please send them some email including comments about where their idea came up but I am sure at least those people will make fun ;)",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 218,
+        "new_token_count": 116,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 564,
+        "word_count": 103,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.9611650485436893,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "are",
+        "were",
+        "have",
+        "they",
+        "in",
+        "is",
+        "to",
+        "the",
+        "had",
+        "we"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, they, in, is, to, the, had, we\n\nTEXT:\nIn theory, this device would not provide an alternative for communication over time; instead, to give us feedback that you don't need too much information on what's going on before they die out or your position should become obsolete after each shift (e .g., if anything happens during one part of the study) since there doesn`t need to be more than 2 seconds left until we get enough data! If anyone else wants to read our work here please send them some email including comments about where their idea came up but I am sure at least those people will make fun ;)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, they, in, is, to, the, had, we\n\nTEXT:\nIn theory, this device would not provide an alternative for communication over time; instead, to give us feedback that you don't need too much information on what's going on before they die out or your position should become obsolete after each shift (e .g., if anything happens during one part of the study) since there doesn`t need to be more than 2 seconds left until we get enough data! If anyone else wants to read our work here please send them some email including comments about where their idea came up but I am sure at least those people will make fun ;)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, they, in, is, to, the, had, we\n\nTEXT:\nIn theory, this device would not provide an alternative for communication over time; instead, to give us feedback that you don't need too much information on what's going on before they die out or your position should become obsolete after each shift (e .g., if anything happens during one part of the study) since there doesn`t need to be more than 2 seconds left until we get enough data! If anyone else wants to read our work here please send them some email including comments about where their idea came up but I am sure at least those people will make fun ;)",
+        "continuation_text": "",
+        "input_token_count": 194,
+        "raw_input_token_count": 194,
+        "output_token_count": 195,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 868,
+        "word_count": 151,
+        "unique_word_count": 140,
+        "unique_word_ratio": 0.9271523178807947,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "were",
+        "if",
+        "in",
+        "have",
+        "is",
+        "the",
+        ",",
+        "they",
+        "to",
+        "had"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, in, have, is, the, ,, they, to, had\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, they, in, is, to, the, had, we\n\nTEXT:\nIn theory, this device would not provide an alternative for communication over time; instead, to give us feedback that you don't need too much information on what's going on before they die out or your position should become obsolete after each shift (e .g., if anything happens during one part of the study) since there doesn`t need to be more than 2 seconds left until we get enough data! If anyone else wants to read our work here please send them some email including comments about where their idea came up but I am sure at least those people will make fun ;)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, in, have, is, the, ,, they, to, had\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, they, in, is, to, the, had, we\n\nTEXT:\nIn theory, this device would not provide an alternative for communication over time; instead, to give us feedback that you don't need too much information on what's going on before they die out or your position should become obsolete after each shift (e .g., if anything happens during one part of the study) since there doesn`t need to be more than 2 seconds left until we get enough data! If anyone else wants to read our work here please send them some email including comments about where their idea came up but I am sure at least those people will make fun ;)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, in, have, is, the, ,, they, to, had\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, they, in, is, to, the, had, we\n\nTEXT:\nIn theory, this device would not provide an alternative for communication over time; instead, to give us feedback that you don't need too much information on what's going on before they die out or your position should become obsolete after each shift (e .g., if anything happens during one part of the study) since there doesn`t need to be more than 2 seconds left until we get enough data! If anyone else wants to read our work here please send them some email including comments about where their idea came up but I am sure at least those people will make fun ;)",
+        "continuation_text": "",
+        "input_token_count": 273,
+        "raw_input_token_count": 273,
+        "output_token_count": 274,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1171,
+        "word_count": 199,
+        "unique_word_count": 142,
+        "unique_word_ratio": 0.7135678391959799,
+        "repeated_bigram_count": 37
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "were",
+        ",",
+        "in",
+        "if",
+        "is",
+        "have",
+        "the",
+        "to",
+        ".",
+        "had"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, ,, in, if, is, have, the, to, ., had\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, in, have, is, the, ,, they, to, had\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, they, in, is, to, the, had, we\n\nTEXT:\nIn theory, this device would not provide an alternative for communication over time; instead, to give us feedback that you don't need too much information on what's going on before they die out or your position should become obsolete after each shift (e .g., if anything happens during one part of the study) since there doesn`t need to be more than 2 seconds left until we get enough data! If anyone else wants to read our work here please send them some email including comments about where their idea came up but I am sure at least those people will make fun ;)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, ,, in, if, is, have, the, to, ., had\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, in, have, is, the, ,, they, to, had\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, they, in, is, to, the, had, we\n\nTEXT:\nIn theory, this device would not provide an alternative for communication over time; instead, to give us feedback that you don't need too much information on what's going on before they die out or your position should become obsolete after each shift (e .g., if anything happens during one part of the study) since there doesn`t need to be more than 2 seconds left until we get enough data! If anyone else wants to read our work here please send them some email including comments about where their idea came up but I am sure at least those people will make fun ;)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, ,, in, if, is, have, the, to, ., had\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, in, have, is, the, ,, they, to, had\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, are, were, have, they, in, is, to, the, had, we\n\nTEXT:\nIn theory, this device would not provide an alternative for communication over time; instead, to give us feedback that you don't need too much information on what's going on before they die out or your position should become obsolete after each shift (e .g., if anything happens during one part of the study) since there doesn`t need to be more than 2 seconds left until we get enough data! If anyone else wants to read our work here please send them some email including comments about where their idea came up but I am sure at least those people will make fun ;)",
+        "continuation_text": "",
+        "input_token_count": 352,
+        "raw_input_token_count": 352,
+        "output_token_count": 353,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1471,
+        "word_count": 247,
+        "unique_word_count": 143,
+        "unique_word_ratio": 0.5789473684210527,
+        "repeated_bigram_count": 76
+      }
+    }
+  ]
+}

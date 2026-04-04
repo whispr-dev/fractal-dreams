@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1082,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 701,
+        "word_count": 104,
+        "unique_word_count": 93,
+        "unique_word_ratio": 0.8942307692307693,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 549,
+        "word_count": 88,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.875,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 607,
+        "word_count": 84,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.9404761904761905,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 319,
+        "word_count": 43,
+        "unique_word_count": 24,
+        "unique_word_ratio": 0.5581395348837209,
+        "repeated_bigram_count": 10
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "its",
+        "the",
+        "was",
+        "It",
+        "are",
+        ",",
+        "and",
+        "If",
+        "for"
+      ],
+      "output_text": "The next recursive transformation involves understanding the nature of each sentence within the given text and applying the specified rules to derive new phrases or sentences. Here’s how we might approach this:\n\n1. **Identify Latent Anchor Tokens**: These refer to certain words that have meaning independent from their context but which can guide further transformations.\n2. **Apply Recursion Rules** based on the provided latent anchor tokens.\n3. **Derive New Phrases**: The derived phrases should maintain the same structure as the original text while adding novel elements related to the previous token patterns.\n\nLet's consider one example using \"it\":\n\nOriginal Text:\n\"A forgotten machine beneath",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nThe next recursive transformation involves understanding the nature of each sentence within the given text and applying the specified rules to derive new phrases or sentences. Here’s how we might approach this:\n\n1. **Identify Latent Anchor Tokens**: These refer to certain words that have meaning independent from their context but which can guide further transformations.\n2. **Apply Recursion Rules** based on the provided latent anchor tokens.\n3. **Derive New Phrases**: The derived phrases should maintain the same structure as the original text while adding novel elements related to the previous token patterns.\n\nLet's consider one example using \"it\":\n\nOriginal Text:\n\"A forgotten machine beneath",
+        "continuation_text": "The next recursive transformation involves understanding the nature of each sentence within the given text and applying the specified rules to derive new phrases or sentences. Here’s how we might approach this:\n\n1. **Identify Latent Anchor Tokens**: These refer to certain words that have meaning independent from their context but which can guide further transformations.\n2. **Apply Recursion Rules** based on the provided latent anchor tokens.\n3. **Derive New Phrases**: The derived phrases should maintain the same structure as the original text while adding novel elements related to the previous token patterns.\n\nLet's consider one example using \"it\":\n\nOriginal Text:\n\"A forgotten machine beneath",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 239,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 701,
+        "word_count": 104,
+        "unique_word_count": 93,
+        "unique_word_ratio": 0.8942307692307693,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "were",
+        "are",
+        "If",
+        "It",
+        "to",
+        "was",
+        "there",
+        "that",
+        "for"
+      ],
+      "output_text": "The following is an example of a recursive transformation with \"It\" applied as a latent anchor token, focusing on how it influences other constructs such as \"was,\" \"were,\" etc., creating more complex nested structures:\n\n1. Identify Latent Anchor Tokens: In \"A forgotten machine beneath\", \"it\" appears twice (once before \"underneath\"), so it's a good candidate for a hidden position in the sequence.\n2. Apply Recursion Rules Based on Latent Anchor Token: \n   - From \"A\" in \"a\", we see \"machine\".\n   - From \"forgotten\", we learn \"was\" when followed by",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, are, If, It, to, was, there, that, for\n\nTEXT:\nThe next recursive transformation involves understanding the nature of each sentence within the given text and applying the specified rules to derive new phrases or sentences. Here’s how we might approach this:\n\n1. **Identify Latent Anchor Tokens**: These refer to certain words that have meaning independent from their context but which can guide further transformations.\n2. **Apply Recursion Rules** based on the provided latent anchor tokens.\n3. **Derive New Phrases**: The derived phrases should maintain the same structure as the original text while adding novel elements related to the previous token patterns.\n\nLet's consider one example using \"it\":\n\nOriginal Text:\n\"A forgotten machine beneath<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, are, If, It, to, was, there, that, for\n\nTEXT:\nThe next recursive transformation involves understanding the nature of each sentence within the given text and applying the specified rules to derive new phrases or sentences. Here’s how we might approach this:\n\n1. **Identify Latent Anchor Tokens**: These refer to certain words that have meaning independent from their context but which can guide further transformations.\n2. **Apply Recursion Rules** based on the provided latent anchor tokens.\n3. **Derive New Phrases**: The derived phrases should maintain the same structure as the original text while adding novel elements related to the previous token patterns.\n\nLet's consider one example using \"it\":\n\nOriginal Text:\n\"A forgotten machine beneath\nassistant\nThe following is an example of a recursive transformation with \"It\" applied as a latent anchor token, focusing on how it influences other constructs such as \"was,\" \"were,\" etc., creating more complex nested structures:\n\n1. Identify Latent Anchor Tokens: In \"A forgotten machine beneath\", \"it\" appears twice (once before \"underneath\"), so it's a good candidate for a hidden position in the sequence.\n2. Apply Recursion Rules Based on Latent Anchor Token: \n   - From \"A\" in \"a\", we see \"machine\".\n   - From \"forgotten\", we learn \"was\" when followed by",
+        "continuation_text": "The following is an example of a recursive transformation with \"It\" applied as a latent anchor token, focusing on how it influences other constructs such as \"was,\" \"were,\" etc., creating more complex nested structures:\n\n1. Identify Latent Anchor Tokens: In \"A forgotten machine beneath\", \"it\" appears twice (once before \"underneath\"), so it's a good candidate for a hidden position in the sequence.\n2. Apply Recursion Rules Based on Latent Anchor Token: \n   - From \"A\" in \"a\", we see \"machine\".\n   - From \"forgotten\", we learn \"was\" when followed by",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 338,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 549,
+        "word_count": 88,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.875,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "\"",
+        "it",
+        "if",
+        ",",
+        "'",
+        "is",
+        "(",
+        "-",
+        "It",
+        "in",
+        "for",
+        "the"
+      ],
+      "output_text": "\"machine.\"\n3. Generate Recursive Transforms from \"beneath\":\n   - \"Beneath\" in its basic form can expand into multiple sub-nodes, each representing a different context or relationship related to \"ground\". This includes any words that might describe \"the ground itself,\" \"bottomless,\" or \"unfathomable.\"\n4. Use Hidden Position Identification: Given \"underneath\" has \"a\", this narrows down our focus towards relationships within \"ground.\" We'll look at potential paths or concepts leading to this root word and apply rules accordingly.\n5. Construct Recursive Transformations Using Specific Patterns: Here’s one",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: \", it, if, ,, ', is, (, -, It, in, for, the\n\nTEXT:\nThe following is an example of a recursive transformation with \"It\" applied as a latent anchor token, focusing on how it influences other constructs such as \"was,\" \"were,\" etc., creating more complex nested structures:\n\n1. Identify Latent Anchor Tokens: In \"A forgotten machine beneath\", \"it\" appears twice (once before \"underneath\"), so it's a good candidate for a hidden position in the sequence.\n2. Apply Recursion Rules Based on Latent Anchor Token: \n   - From \"A\" in \"a\", we see \"machine\".\n   - From \"forgotten\", we learn \"was\" when followed by<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: \", it, if, ,, ', is, (, -, It, in, for, the\n\nTEXT:\nThe following is an example of a recursive transformation with \"It\" applied as a latent anchor token, focusing on how it influences other constructs such as \"was,\" \"were,\" etc., creating more complex nested structures:\n\n1. Identify Latent Anchor Tokens: In \"A forgotten machine beneath\", \"it\" appears twice (once before \"underneath\"), so it's a good candidate for a hidden position in the sequence.\n2. Apply Recursion Rules Based on Latent Anchor Token: \n   - From \"A\" in \"a\", we see \"machine\".\n   - From \"forgotten\", we learn \"was\" when followed by\nassistant\n\"machine.\"\n3. Generate Recursive Transforms from \"beneath\":\n   - \"Beneath\" in its basic form can expand into multiple sub-nodes, each representing a different context or relationship related to \"ground\". This includes any words that might describe \"the ground itself,\" \"bottomless,\" or \"unfathomable.\"\n4. Use Hidden Position Identification: Given \"underneath\" has \"a\", this narrows down our focus towards relationships within \"ground.\" We'll look at potential paths or concepts leading to this root word and apply rules accordingly.\n5. Construct Recursive Transformations Using Specific Patterns: Here’s one",
+        "continuation_text": "\"machine.\"\n3. Generate Recursive Transforms from \"beneath\":\n   - \"Beneath\" in its basic form can expand into multiple sub-nodes, each representing a different context or relationship related to \"ground\". This includes any words that might describe \"the ground itself,\" \"bottomless,\" or \"unfathomable.\"\n4. Use Hidden Position Identification: Given \"underneath\" has \"a\", this narrows down our focus towards relationships within \"ground.\" We'll look at potential paths or concepts leading to this root word and apply rules accordingly.\n5. Construct Recursive Transformations Using Specific Patterns: Here’s one",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 334,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 607,
+        "word_count": 84,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.9404761904761905,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "\"",
+        "it",
+        "were",
+        "'",
+        "If",
+        "are",
+        "to",
+        "is",
+        "It",
+        "for",
+        "was"
+      ],
+      "output_text": "**Text:** Beneath\n6. **Recursive Transformation 1:**\n   ```\n   Beneath = Subordinate verb + Noun Phrase (Ground)\n   ```\n\n7. **Recursive Transformation 2:**\n   ```\n   Beneath = Prepositional phrase + Noun Phrase (Ground)\n   ```\n\n8. **Recursive Transformation 3:**\n   ```\n   Beneath = Adjective + Verb (The Ground)\n   ```",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, \", it, were, ', If, are, to, is, It, for, was\n\nTEXT:\n\"machine.\"\n3. Generate Recursive Transforms from \"beneath\":\n   - \"Beneath\" in its basic form can expand into multiple sub-nodes, each representing a different context or relationship related to \"ground\". This includes any words that might describe \"the ground itself,\" \"bottomless,\" or \"unfathomable.\"\n4. Use Hidden Position Identification: Given \"underneath\" has \"a\", this narrows down our focus towards relationships within \"ground.\" We'll look at potential paths or concepts leading to this root word and apply rules accordingly.\n5. Construct Recursive Transformations Using Specific Patterns: Here’s one<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, \", it, were, ', If, are, to, is, It, for, was\n\nTEXT:\n\"machine.\"\n3. Generate Recursive Transforms from \"beneath\":\n   - \"Beneath\" in its basic form can expand into multiple sub-nodes, each representing a different context or relationship related to \"ground\". This includes any words that might describe \"the ground itself,\" \"bottomless,\" or \"unfathomable.\"\n4. Use Hidden Position Identification: Given \"underneath\" has \"a\", this narrows down our focus towards relationships within \"ground.\" We'll look at potential paths or concepts leading to this root word and apply rules accordingly.\n5. Construct Recursive Transformations Using Specific Patterns: Here’s one\nassistant\n**Text:** Beneath\n6. **Recursive Transformation 1:**\n   ```\n   Beneath = Subordinate verb + Noun Phrase (Ground)\n   ```\n\n7. **Recursive Transformation 2:**\n   ```\n   Beneath = Prepositional phrase + Noun Phrase (Ground)\n   ```\n\n8. **Recursive Transformation 3:**\n   ```\n   Beneath = Adjective + Verb (The Ground)\n   ```",
+        "continuation_text": "**Text:** Beneath\n6. **Recursive Transformation 1:**\n   ```\n   Beneath = Subordinate verb + Noun Phrase (Ground)\n   ```\n\n7. **Recursive Transformation 2:**\n   ```\n   Beneath = Prepositional phrase + Noun Phrase (Ground)\n   ```\n\n8. **Recursive Transformation 3:**\n   ```\n   Beneath = Adjective + Verb (The Ground)\n   ```",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 297,
+        "new_token_count": 89,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 319,
+        "word_count": 43,
+        "unique_word_count": 24,
+        "unique_word_ratio": 0.5581395348837209,
+        "repeated_bigram_count": 10
+      }
+    }
+  ]
+}

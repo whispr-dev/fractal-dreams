@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1281,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 626,
+        "word_count": 101,
+        "unique_word_count": 100,
+        "unique_word_ratio": 0.9900990099009901,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 2,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 223,
+        "word_count": 29,
+        "unique_word_count": 29,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "aren",
+        "didn",
+        "did",
+        "He",
+        "are",
+        "weren",
+        "shall",
+        "does",
+        "We",
+        "couldn",
+        "cannot",
+        "C"
+      ],
+      "output_text": "To replace it with an open source design could be done without compromising our ability for writing natural languages or scientific models (and perhaps even programming). For now we have this beautiful LPL library which can help you get started...just download from Amazon . If your project is interested - check out my blog here at http://lpllibrary.blogspot../. Just do some research about how things worked before making any changes! This new version will come preloaded via git by default when using 'git clone'. There may be bugs fixed; if so please report them directly ! [This would obviously require manual development",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: aren, didn, did, He, are, weren, shall, does, We, couldn, cannot, C\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: aren, didn, did, He, are, weren, shall, does, We, couldn, cannot, C\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. To replace it with an open source design could be done without compromising our ability for writing natural languages or scientific models (and perhaps even programming). For now we have this beautiful LPL library which can help you get started...just download from Amazon . If your project is interested - check out my blog here at http://lpllibrary.blogspot../. Just do some research about how things worked before making any changes! This new version will come preloaded via git by default when using 'git clone'. There may be bugs fixed; if so please report them directly ! [This would obviously require manual development",
+        "continuation_text": "To replace it with an open source design could be done without compromising our ability for writing natural languages or scientific models (and perhaps even programming). For now we have this beautiful LPL library which can help you get started...just download from Amazon . If your project is interested - check out my blog here at http://lpllibrary.blogspot../. Just do some research about how things worked before making any changes! This new version will come preloaded via git by default when using 'git clone'. There may be bugs fixed; if so please report them directly ! [This would obviously require manual development",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 228,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 626,
+        "word_count": 101,
+        "unique_word_count": 100,
+        "unique_word_ratio": 0.9900990099009901,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Up",
+        "Code",
+        "coding",
+        "Fig",
+        "prog",
+        "lav",
+        "evid",
+        "det",
+        "mk",
+        "closer",
+        "To",
+        "lil"
+      ],
+      "output_text": ".]",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Up, Code, coding, Fig, prog, lav, evid, det, mk, closer, To, lil\n\nTEXT:\nTo replace it with an open source design could be done without compromising our ability for writing natural languages or scientific models (and perhaps even programming). For now we have this beautiful LPL library which can help you get started...just download from Amazon . If your project is interested - check out my blog here at http://lpllibrary.blogspot../. Just do some research about how things worked before making any changes! This new version will come preloaded via git by default when using 'git clone'. There may be bugs fixed; if so please report them directly ! [This would obviously require manual development",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Up, Code, coding, Fig, prog, lav, evid, det, mk, closer, To, lil\n\nTEXT:\nTo replace it with an open source design could be done without compromising our ability for writing natural languages or scientific models (and perhaps even programming). For now we have this beautiful LPL library which can help you get started...just download from Amazon . If your project is interested - check out my blog here at http://lpllibrary.blogspot../. Just do some research about how things worked before making any changes! This new version will come preloaded via git by default when using 'git clone'. There may be bugs fixed; if so please report them directly ! [This would obviously require manual development.]",
+        "continuation_text": ".]",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 207,
+        "new_token_count": 2,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        ".]",
+        "ENCY",
+        ".}",
+        "fascinating",
+        "Prof",
+        "horribly",
+        "Amid",
+        "+.",
+        "exhibits",
+        ".*",
+        "wildly",
+        "!]"
+      ],
+      "output_text": "), and LANDING AS IN CIRCUIT (CIRCUMSTANCE). For more information about what is done by this tool see https://github;com/pythonproject/pydocsearchy/.\n\n 'PADOLEARCH' WITH REPLACE FUNCTION [BEGIN('.+','')) | END(.'-',') = 1 ]",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: .], ENCY, .}, fascinating, Prof, horribly, Amid, +., exhibits, .*, wildly, !]\n\nTEXT:\n.]",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: .], ENCY, .}, fascinating, Prof, horribly, Amid, +., exhibits, .*, wildly, !]\n\nTEXT:\n.]), and LANDING AS IN CIRCUIT (CIRCUMSTANCE). For more information about what is done by this tool see https://github;com/pythonproject/pydocsearchy/.\n\n 'PADOLEARCH' WITH REPLACE FUNCTION [BEGIN('.+','')) | END(.'-',') = 1 ]",
+        "continuation_text": "), and LANDING AS IN CIRCUIT (CIRCUMSTANCE). For more information about what is done by this tool see https://github;com/pythonproject/pydocsearchy/.\n\n 'PADOLEARCH' WITH REPLACE FUNCTION [BEGIN('.+','')) | END(.'-',') = 1 ]",
+        "input_token_count": 89,
+        "raw_input_token_count": 89,
+        "output_token_count": 168,
+        "new_token_count": 79,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 223,
+        "word_count": 29,
+        "unique_word_count": 29,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

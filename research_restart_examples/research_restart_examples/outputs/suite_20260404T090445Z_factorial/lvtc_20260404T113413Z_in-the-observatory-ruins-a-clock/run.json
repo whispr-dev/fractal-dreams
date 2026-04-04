@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1202,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 638,
+        "word_count": 94,
+        "unique_word_count": 81,
+        "unique_word_ratio": 0.8617021276595744,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 549,
+        "word_count": 55,
+        "unique_word_count": 50,
+        "unique_word_ratio": 0.9090909090909091,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 673,
+        "word_count": 78,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.8589743589743589,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 609,
+        "word_count": 82,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.975609756097561,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "was",
+        "the",
+        "had",
+        "If",
+        "to",
+        "is",
+        "for",
+        "and",
+        "are"
+      ],
+      "output_text": "The next recursive transformation would involve understanding the nested relationships and concepts within the given sentence. Here’s how we can approach this:\n\n1. **Identify the hierarchy**: The sentence contains multiple levels of hierarchical structure where \"the\" acts as both the subject and object.\n2. **Determine the focus**: We need to identify which aspect or element is being discussed.\n3. **Extract relevant information**: Extract specific details related to each layer.\n\n**Step-by-Step Transformation**:\n\n### Step 1: Identify the key elements\nThe main elements are:\n- An observatory ruins\n- A clockwork map\n- Redrawing the sky",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, was, the, had, If, to, is, for, and, are\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, was, the, had, If, to, is, for, and, are\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nThe next recursive transformation would involve understanding the nested relationships and concepts within the given sentence. Here’s how we can approach this:\n\n1. **Identify the hierarchy**: The sentence contains multiple levels of hierarchical structure where \"the\" acts as both the subject and object.\n2. **Determine the focus**: We need to identify which aspect or element is being discussed.\n3. **Extract relevant information**: Extract specific details related to each layer.\n\n**Step-by-Step Transformation**:\n\n### Step 1: Identify the key elements\nThe main elements are:\n- An observatory ruins\n- A clockwork map\n- Redrawing the sky",
+        "continuation_text": "The next recursive transformation would involve understanding the nested relationships and concepts within the given sentence. Here’s how we can approach this:\n\n1. **Identify the hierarchy**: The sentence contains multiple levels of hierarchical structure where \"the\" acts as both the subject and object.\n2. **Determine the focus**: We need to identify which aspect or element is being discussed.\n3. **Extract relevant information**: Extract specific details related to each layer.\n\n**Step-by-Step Transformation**:\n\n### Step 1: Identify the key elements\nThe main elements are:\n- An observatory ruins\n- A clockwork map\n- Redrawing the sky",
+        "input_token_count": 110,
+        "raw_input_token_count": 110,
+        "output_token_count": 238,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 638,
+        "word_count": 94,
+        "unique_word_count": 81,
+        "unique_word_ratio": 0.8617021276595744,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "and",
+        "is",
+        ",",
+        "to",
+        "are",
+        "(",
+        ".",
+        "for",
+        "were"
+      ],
+      "output_text": "```python\ndef transform_text(text):\n    # Analyze the text to understand its hierarchical structure and determine its focus\n    hierarchal_elements = {\n        'observatory': ['ruins'],\n        'clockwork_map': ['map', 'redrawing'], \n        'sky': ['sky']\n    }\n\n    def extract_info(element, index):\n        return f\"The {element} has been re-drawn on the {index}.\"\n\n    transformed_text = \"\"\n    \n    for level, elements in hierarchal_elements.items():\n        if len(elements) > 0:\n            transformed_element = ''.join(extract_info(level, i",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, and, is, ,, to, are, (, ., for, were\n\nTEXT:\nThe next recursive transformation would involve understanding the nested relationships and concepts within the given sentence. Here’s how we can approach this:\n\n1. **Identify the hierarchy**: The sentence contains multiple levels of hierarchical structure where \"the\" acts as both the subject and object.\n2. **Determine the focus**: We need to identify which aspect or element is being discussed.\n3. **Extract relevant information**: Extract specific details related to each layer.\n\n**Step-by-Step Transformation**:\n\n### Step 1: Identify the key elements\nThe main elements are:\n- An observatory ruins\n- A clockwork map\n- Redrawing the sky<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, and, is, ,, to, are, (, ., for, were\n\nTEXT:\nThe next recursive transformation would involve understanding the nested relationships and concepts within the given sentence. Here’s how we can approach this:\n\n1. **Identify the hierarchy**: The sentence contains multiple levels of hierarchical structure where \"the\" acts as both the subject and object.\n2. **Determine the focus**: We need to identify which aspect or element is being discussed.\n3. **Extract relevant information**: Extract specific details related to each layer.\n\n**Step-by-Step Transformation**:\n\n### Step 1: Identify the key elements\nThe main elements are:\n- An observatory ruins\n- A clockwork map\n- Redrawing the sky\nassistant\n```python\ndef transform_text(text):\n    # Analyze the text to understand its hierarchical structure and determine its focus\n    hierarchal_elements = {\n        'observatory': ['ruins'],\n        'clockwork_map': ['map', 'redrawing'], \n        'sky': ['sky']\n    }\n\n    def extract_info(element, index):\n        return f\"The {element} has been re-drawn on the {index}.\"\n\n    transformed_text = \"\"\n    \n    for level, elements in hierarchal_elements.items():\n        if len(elements) > 0:\n            transformed_element = ''.join(extract_info(level, i",
+        "continuation_text": "```python\ndef transform_text(text):\n    # Analyze the text to understand its hierarchical structure and determine its focus\n    hierarchal_elements = {\n        'observatory': ['ruins'],\n        'clockwork_map': ['map', 'redrawing'], \n        'sky': ['sky']\n    }\n\n    def extract_info(element, index):\n        return f\"The {element} has been re-drawn on the {index}.\"\n\n    transformed_text = \"\"\n    \n    for level, elements in hierarchal_elements.items():\n        if len(elements) > 0:\n            transformed_element = ''.join(extract_info(level, i",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 337,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 549,
+        "word_count": 55,
+        "unique_word_count": 50,
+        "unique_word_ratio": 0.9090909090909091,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "If",
+        "intelligence",
+        "=",
+        "was",
+        "It",
+        "nếu",
+        "'",
+        "{",
+        "如果"
+      ],
+      "output_text": "Sure! Below is the recursive transformation based on the provided `latent_direc...\n``` python\ntransformed_text = \"\"\n\nfor element in hierarchy[1]:\n    transformed_element = ''.join(\n        extract_info(hierarchy.index(element), index)\n        for index, hierarchy in enumerate(hierarchies)\n    )\n    transformed_text += transformed_element + \"\\n\"\n\nprint(transformed_text.strip())\n```\n\nThis code defines a function that recursively processes each element of an abstract or hierarchical description (represented as nested lists). For each such element, it extracts information about the element's position (`index`) within this hierarchy using another list comprehension. The",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, If, intelligence, =, was, It, nếu, ', {, 如果\n\nTEXT:\n```python\ndef transform_text(text):\n    # Analyze the text to understand its hierarchical structure and determine its focus\n    hierarchal_elements = {\n        'observatory': ['ruins'],\n        'clockwork_map': ['map', 'redrawing'], \n        'sky': ['sky']\n    }\n\n    def extract_info(element, index):\n        return f\"The {element} has been re-drawn on the {index}.\"\n\n    transformed_text = \"\"\n    \n    for level, elements in hierarchal_elements.items():\n        if len(elements) > 0:\n            transformed_element = ''.join(extract_info(level, i<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, If, intelligence, =, was, It, nếu, ', {, 如果\n\nTEXT:\n```python\ndef transform_text(text):\n    # Analyze the text to understand its hierarchical structure and determine its focus\n    hierarchal_elements = {\n        'observatory': ['ruins'],\n        'clockwork_map': ['map', 'redrawing'], \n        'sky': ['sky']\n    }\n\n    def extract_info(element, index):\n        return f\"The {element} has been re-drawn on the {index}.\"\n\n    transformed_text = \"\"\n    \n    for level, elements in hierarchal_elements.items():\n        if len(elements) > 0:\n            transformed_element = ''.join(extract_info(level, i\nassistant\nSure! Below is the recursive transformation based on the provided `latent_direc...\n``` python\ntransformed_text = \"\"\n\nfor element in hierarchy[1]:\n    transformed_element = ''.join(\n        extract_info(hierarchy.index(element), index)\n        for index, hierarchy in enumerate(hierarchies)\n    )\n    transformed_text += transformed_element + \"\\n\"\n\nprint(transformed_text.strip())\n```\n\nThis code defines a function that recursively processes each element of an abstract or hierarchical description (represented as nested lists). For each such element, it extracts information about the element's position (`index`) within this hierarchy using another list comprehension. The",
+        "continuation_text": "Sure! Below is the recursive transformation based on the provided `latent_direc...\n``` python\ntransformed_text = \"\"\n\nfor element in hierarchy[1]:\n    transformed_element = ''.join(\n        extract_info(hierarchy.index(element), index)\n        for index, hierarchy in enumerate(hierarchies)\n    )\n    transformed_text += transformed_element + \"\\n\"\n\nprint(transformed_text.strip())\n```\n\nThis code defines a function that recursively processes each element of an abstract or hierarchical description (represented as nested lists). For each such element, it extracts information about the element's position (`index`) within this hierarchy using another list comprehension. The",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 337,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 673,
+        "word_count": 78,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.8589743589743589,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "If",
+        "intelligence",
+        "It",
+        "was",
+        "nếu",
+        "are",
+        "for",
+        "the",
+        "is"
+      ],
+      "output_text": "The first step would involve identifying and extracting relevant data from nested elements like lists containing various pieces of information such as timestamps, addresses, or other identifiers. Based on those extracted values, we can then construct strings representing how to transform the original structure into a new format.\n\nLet’s assume a simplified example where our input hierarchy is structured as follows:\n\n```python\nhierarchies = [\n    (\"Person\", \"Alice\"),\n    (\"Location\", [\"City\", \"State\"]),\n    (\"Job Title\", \"Engineer\"),\n    (\"Address\", {\"Street\": \"425 Elm St\"},),\n    (\"Phone Number\", \"+1 98",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, If, intelligence, It, was, nếu, are, for, the, is\n\nTEXT:\nSure! Below is the recursive transformation based on the provided `latent_direc...\n``` python\ntransformed_text = \"\"\n\nfor element in hierarchy[1]:\n    transformed_element = ''.join(\n        extract_info(hierarchy.index(element), index)\n        for index, hierarchy in enumerate(hierarchies)\n    )\n    transformed_text += transformed_element + \"\\n\"\n\nprint(transformed_text.strip())\n```\n\nThis code defines a function that recursively processes each element of an abstract or hierarchical description (represented as nested lists). For each such element, it extracts information about the element's position (`index`) within this hierarchy using another list comprehension. The<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, If, intelligence, It, was, nếu, are, for, the, is\n\nTEXT:\nSure! Below is the recursive transformation based on the provided `latent_direc...\n``` python\ntransformed_text = \"\"\n\nfor element in hierarchy[1]:\n    transformed_element = ''.join(\n        extract_info(hierarchy.index(element), index)\n        for index, hierarchy in enumerate(hierarchies)\n    )\n    transformed_text += transformed_element + \"\\n\"\n\nprint(transformed_text.strip())\n```\n\nThis code defines a function that recursively processes each element of an abstract or hierarchical description (represented as nested lists). For each such element, it extracts information about the element's position (`index`) within this hierarchy using another list comprehension. The\nassistant\nThe first step would involve identifying and extracting relevant data from nested elements like lists containing various pieces of information such as timestamps, addresses, or other identifiers. Based on those extracted values, we can then construct strings representing how to transform the original structure into a new format.\n\nLet’s assume a simplified example where our input hierarchy is structured as follows:\n\n```python\nhierarchies = [\n    (\"Person\", \"Alice\"),\n    (\"Location\", [\"City\", \"State\"]),\n    (\"Job Title\", \"Engineer\"),\n    (\"Address\", {\"Street\": \"425 Elm St\"},),\n    (\"Phone Number\", \"+1 98",
+        "continuation_text": "The first step would involve identifying and extracting relevant data from nested elements like lists containing various pieces of information such as timestamps, addresses, or other identifiers. Based on those extracted values, we can then construct strings representing how to transform the original structure into a new format.\n\nLet’s assume a simplified example where our input hierarchy is structured as follows:\n\n```python\nhierarchies = [\n    (\"Person\", \"Alice\"),\n    (\"Location\", [\"City\", \"State\"]),\n    (\"Job Title\", \"Engineer\"),\n    (\"Address\", {\"Street\": \"425 Elm St\"},),\n    (\"Phone Number\", \"+1 98",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 338,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 609,
+        "word_count": 82,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.975609756097561,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

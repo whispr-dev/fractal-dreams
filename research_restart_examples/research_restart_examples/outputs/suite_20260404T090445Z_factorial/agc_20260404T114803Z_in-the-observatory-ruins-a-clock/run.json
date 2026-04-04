@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1217,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 144,
+        "word_count": 27,
+        "unique_word_count": 27,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 641,
+        "word_count": 106,
+        "unique_word_count": 101,
+        "unique_word_ratio": 0.9528301886792453,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 136,
+        "word_count": 27,
+        "unique_word_count": 27,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Besides",
+        "Moreover",
+        "Apparently",
+        "Having",
+        "Why",
+        "Although",
+        "Nearly",
+        "An",
+        "Another",
+        "Bell",
+        "Among",
+        "Furthermore"
+      ],
+      "output_text": "There were some things we didn't know about that which weren’t true until I saw their original design—but for now it appeared on top one by one!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. There were some things we didn't know about that which weren’t true until I saw their original design—but for now it appeared on top one by one!",
+        "continuation_text": "There were some things we didn't know about that which weren’t true until I saw their original design—but for now it appeared on top one by one!",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 149,
+        "new_token_count": 35,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 144,
+        "word_count": 27,
+        "unique_word_count": 27,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "There",
+        "there",
+        "freedom",
+        "THERE",
+        "Though",
+        "Do",
+        "Despite",
+        "While",
+        "Bring",
+        "Taking",
+        "It",
+        "Brother"
+      ],
+      "output_text": "They got me going with all these interesting and wonderful ideas from both C# (although this is still unknown), Go programming languages such Assemblies or RDFM , but they made them very difficult to figure out how to put together because each was an important part–and could never be solved easily without help from others who had taught themselves at school . They also have excellent tools available where you can use Python code instead; if your favorite project comes up along with something useful like adding more functionality inside Rust's base library into any program…you will likely want to find yourself asking why someone wants",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: There, there, freedom, THERE, Though, Do, Despite, While, Bring, Taking, It, Brother\n\nTEXT:\nThere were some things we didn't know about that which weren’t true until I saw their original design—but for now it appeared on top one by one!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: There, there, freedom, THERE, Though, Do, Despite, While, Bring, Taking, It, Brother\n\nTEXT:\nThere were some things we didn't know about that which weren’t true until I saw their original design—but for now it appeared on top one by one! They got me going with all these interesting and wonderful ideas from both C# (although this is still unknown), Go programming languages such Assemblies or RDFM , but they made them very difficult to figure out how to put together because each was an important part–and could never be solved easily without help from others who had taught themselves at school . They also have excellent tools available where you can use Python code instead; if your favorite project comes up along with something useful like adding more functionality inside Rust's base library into any program…you will likely want to find yourself asking why someone wants",
+        "continuation_text": "They got me going with all these interesting and wonderful ideas from both C# (although this is still unknown), Go programming languages such Assemblies or RDFM , but they made them very difficult to figure out how to put together because each was an important part–and could never be solved easily without help from others who had taught themselves at school . They also have excellent tools available where you can use Python code instead; if your favorite project comes up along with something useful like adding more functionality inside Rust's base library into any program…you will likely want to find yourself asking why someone wants",
+        "input_token_count": 119,
+        "raw_input_token_count": 119,
+        "output_token_count": 239,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 641,
+        "word_count": 106,
+        "unique_word_count": 101,
+        "unique_word_ratio": 0.9528301886792453,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "They",
+        "they",
+        "Their",
+        "their",
+        "them",
+        "Those",
+        "somebody",
+        "We",
+        "It",
+        "These",
+        "And",
+        "THEY"
+      ],
+      "output_text": "it! This week I'll share some examples that make for great writing so far here on How To Write A Code Project Using Your Computer Here :",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: They, they, Their, their, them, Those, somebody, We, It, These, And, THEY\n\nTEXT:\nThey got me going with all these interesting and wonderful ideas from both C# (although this is still unknown), Go programming languages such Assemblies or RDFM , but they made them very difficult to figure out how to put together because each was an important part–and could never be solved easily without help from others who had taught themselves at school . They also have excellent tools available where you can use Python code instead; if your favorite project comes up along with something useful like adding more functionality inside Rust's base library into any program…you will likely want to find yourself asking why someone wants",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: They, they, Their, their, them, Those, somebody, We, It, These, And, THEY\n\nTEXT:\nThey got me going with all these interesting and wonderful ideas from both C# (although this is still unknown), Go programming languages such Assemblies or RDFM , but they made them very difficult to figure out how to put together because each was an important part–and could never be solved easily without help from others who had taught themselves at school . They also have excellent tools available where you can use Python code instead; if your favorite project comes up along with something useful like adding more functionality inside Rust's base library into any program…you will likely want to find yourself asking why someone wants it! This week I'll share some examples that make for great writing so far here on How To Write A Code Project Using Your Computer Here :",
+        "continuation_text": "it! This week I'll share some examples that make for great writing so far here on How To Write A Code Project Using Your Computer Here :",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 235,
+        "new_token_count": 30,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 136,
+        "word_count": 27,
+        "unique_word_count": 27,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

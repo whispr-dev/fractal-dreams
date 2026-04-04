@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1098,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 699,
+        "word_count": 117,
+        "unique_word_count": 117,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 671,
+        "word_count": 107,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.9906542056074766,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 225,
+        "word_count": 41,
+        "unique_word_count": 41,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 95,
+        "word_count": 18,
+        "unique_word_count": 18,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        ",",
+        "have",
+        "was",
+        "made",
+        "It",
+        "if",
+        "the",
+        "."
+      ],
+      "output_text": "They knew that their own words would not express themselves well enough to pass through them; but they also understood how many others could understand what is coming from each word! And this process has been called so far with no discernible effect on human memory—a kind which can only exist when you write your first sentence into another context for example. This last thing seems like an amazing paradox as our understanding of history goes along (as we know). We will learn about all those changes while still using one or more different languages every time there's some confusion among us over whether linguistic representations work at full speed correctly now? The answer lies within me...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. They knew that their own words would not express themselves well enough to pass through them; but they also understood how many others could understand what is coming from each word! And this process has been called so far with no discernible effect on human memory—a kind which can only exist when you write your first sentence into another context for example. This last thing seems like an amazing paradox as our understanding of history goes along (as we know). We will learn about all those changes while still using one or more different languages every time there's some confusion among us over whether linguistic representations work at full speed correctly now? The answer lies within me...",
+        "continuation_text": "They knew that their own words would not express themselves well enough to pass through them; but they also understood how many others could understand what is coming from each word! And this process has been called so far with no discernible effect on human memory—a kind which can only exist when you write your first sentence into another context for example. This last thing seems like an amazing paradox as our understanding of history goes along (as we know). We will learn about all those changes while still using one or more different languages every time there's some confusion among us over whether linguistic representations work at full speed correctly now? The answer lies within me...",
+        "input_token_count": 110,
+        "raw_input_token_count": 110,
+        "output_token_count": 238,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 699,
+        "word_count": 117,
+        "unique_word_count": 117,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "have",
+        "if",
+        "they",
+        "is",
+        "had",
+        "in",
+        "has",
+        "the",
+        "was"
+      ],
+      "output_text": "I've found quite often I think even today \"lack\" works and sometimes its implications don't seem very clear…The result isn\\t yet obvious until later here.. It comes down either way because writing sentences sounds pretty complex anyway . But do people really need any experience working together without knowing other things around? Well yeah maybe just ask yourself , 'What does my brain want?' If anything though something happens then why am I going back after learning everything else before starting thinking again ? Yes i'm sure most writers go beyond simple reasoning comprehension right away ! So guess who knows where exactly doing research might mean/wasn’'know",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, have, if, they, is, had, in, has, the, was\n\nTEXT:\nThey knew that their own words would not express themselves well enough to pass through them; but they also understood how many others could understand what is coming from each word! And this process has been called so far with no discernible effect on human memory—a kind which can only exist when you write your first sentence into another context for example. This last thing seems like an amazing paradox as our understanding of history goes along (as we know). We will learn about all those changes while still using one or more different languages every time there's some confusion among us over whether linguistic representations work at full speed correctly now? The answer lies within me...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, have, if, they, is, had, in, has, the, was\n\nTEXT:\nThey knew that their own words would not express themselves well enough to pass through them; but they also understood how many others could understand what is coming from each word! And this process has been called so far with no discernible effect on human memory—a kind which can only exist when you write your first sentence into another context for example. This last thing seems like an amazing paradox as our understanding of history goes along (as we know). We will learn about all those changes while still using one or more different languages every time there's some confusion among us over whether linguistic representations work at full speed correctly now? The answer lies within me...I've found quite often I think even today \"lack\" works and sometimes its implications don't seem very clear…The result isn\\t yet obvious until later here.. It comes down either way because writing sentences sounds pretty complex anyway . But do people really need any experience working together without knowing other things around? Well yeah maybe just ask yourself , 'What does my brain want?' If anything though something happens then why am I going back after learning everything else before starting thinking again ? Yes i'm sure most writers go beyond simple reasoning comprehension right away ! So guess who knows where exactly doing research might mean/wasn’'know",
+        "continuation_text": "I've found quite often I think even today \"lack\" works and sometimes its implications don't seem very clear…The result isn\\t yet obvious until later here.. It comes down either way because writing sentences sounds pretty complex anyway . But do people really need any experience working together without knowing other things around? Well yeah maybe just ask yourself , 'What does my brain want?' If anything though something happens then why am I going back after learning everything else before starting thinking again ? Yes i'm sure most writers go beyond simple reasoning comprehension right away ! So guess who knows where exactly doing research might mean/wasn’'know",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 671,
+        "word_count": 107,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.9906542056074766,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "if",
+        "didn",
+        "are",
+        "did",
+        "don",
+        "have",
+        "It",
+        "If",
+        "doesn",
+        "does"
+      ],
+      "output_text": "what we're talking about for now... That's not to say that those words (yes there is some real possibility) aren´t actually used! In fact they all come from different sources - or at least their own original source as well :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, didn, are, did, don, have, It, If, doesn, does\n\nTEXT:\nI've found quite often I think even today \"lack\" works and sometimes its implications don't seem very clear…The result isn\\t yet obvious until later here.. It comes down either way because writing sentences sounds pretty complex anyway . But do people really need any experience working together without knowing other things around? Well yeah maybe just ask yourself , 'What does my brain want?' If anything though something happens then why am I going back after learning everything else before starting thinking again ? Yes i'm sure most writers go beyond simple reasoning comprehension right away ! So guess who knows where exactly doing research might mean/wasn’'know",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, didn, are, did, don, have, It, If, doesn, does\n\nTEXT:\nI've found quite often I think even today \"lack\" works and sometimes its implications don't seem very clear…The result isn\\t yet obvious until later here.. It comes down either way because writing sentences sounds pretty complex anyway . But do people really need any experience working together without knowing other things around? Well yeah maybe just ask yourself , 'What does my brain want?' If anything though something happens then why am I going back after learning everything else before starting thinking again ? Yes i'm sure most writers go beyond simple reasoning comprehension right away ! So guess who knows where exactly doing research might mean/wasn’'know what we're talking about for now... That's not to say that those words (yes there is some real possibility) aren´t actually used! In fact they all come from different sources - or at least their own original source as well :)",
+        "continuation_text": "what we're talking about for now... That's not to say that those words (yes there is some real possibility) aren´t actually used! In fact they all come from different sources - or at least their own original source as well :)",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 257,
+        "new_token_count": 50,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 225,
+        "word_count": 41,
+        "unique_word_count": 41,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "are",
+        "it",
+        "were",
+        "have",
+        "they",
+        "is",
+        "if",
+        "had",
+        "in",
+        "that",
+        "was",
+        "It"
+      ],
+      "output_text": "And each has its roots on other aspects and I think you'll find more information here later :-)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, it, were, have, they, is, if, had, in, that, was, It\n\nTEXT:\nwhat we're talking about for now... That's not to say that those words (yes there is some real possibility) aren´t actually used! In fact they all come from different sources - or at least their own original source as well :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, it, were, have, they, is, if, had, in, that, was, It\n\nTEXT:\nwhat we're talking about for now... That's not to say that those words (yes there is some real possibility) aren´t actually used! In fact they all come from different sources - or at least their own original source as well :) And each has its roots on other aspects and I think you'll find more information here later :-)",
+        "continuation_text": "And each has its roots on other aspects and I think you'll find more information here later :-)",
+        "input_token_count": 128,
+        "raw_input_token_count": 128,
+        "output_token_count": 148,
+        "new_token_count": 20,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 95,
+        "word_count": 18,
+        "unique_word_count": 18,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

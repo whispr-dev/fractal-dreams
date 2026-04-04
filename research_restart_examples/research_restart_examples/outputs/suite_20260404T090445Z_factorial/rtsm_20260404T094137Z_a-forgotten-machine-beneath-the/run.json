@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1048
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 428,
+        "word_count": 73,
+        "unique_word_count": 72,
+        "unique_word_ratio": 0.9863013698630136,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1010,
+        "word_count": 168,
+        "unique_word_count": 92,
+        "unique_word_ratio": 0.5476190476190477,
+        "repeated_bigram_count": 72
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1446,
+        "word_count": 246,
+        "unique_word_count": 165,
+        "unique_word_ratio": 0.6707317073170732,
+        "repeated_bigram_count": 73
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 3046,
+        "word_count": 514,
+        "unique_word_count": 165,
+        "unique_word_ratio": 0.321011673151751,
+        "repeated_bigram_count": 340
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 3126,
+        "word_count": 523,
+        "unique_word_count": 171,
+        "unique_word_ratio": 0.32695984703632885,
+        "repeated_bigram_count": 342
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+      "delta_text": "It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices…",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices…",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices…",
+        "continuation_text": "It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices…",
+        "input_token_count": 65,
+        "raw_input_token_count": 65,
+        "output_token_count": 118,
+        "new_token_count": 53,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 428,
+        "word_count": 73,
+        "unique_word_count": 72,
+        "unique_word_ratio": 0.9863013698630136,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices…",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices…",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices…",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices…",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices…",
+        "continuation_text": "",
+        "input_token_count": 117,
+        "raw_input_token_count": 117,
+        "output_token_count": 118,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1010,
+        "word_count": 168,
+        "unique_word_count": 92,
+        "unique_word_ratio": 0.5476190476190477,
+        "repeated_bigram_count": 72
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices…",
+      "delta_text": "You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!!",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices…",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!!",
+        "continuation_text": "You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!!",
+        "input_token_count": 234,
+        "raw_input_token_count": 234,
+        "output_token_count": 330,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1446,
+        "word_count": 246,
+        "unique_word_count": 165,
+        "unique_word_ratio": 0.6707317073170732,
+        "repeated_bigram_count": 73
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!!",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!!",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!!",
+        "continuation_text": "",
+        "input_token_count": 329,
+        "raw_input_token_count": 329,
+        "output_token_count": 330,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 3046,
+        "word_count": 514,
+        "unique_word_count": 165,
+        "unique_word_ratio": 0.321011673151751,
+        "repeated_bigram_count": 340
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!!",
+      "delta_text": "You'rea text/text-noise only language model participating online through reddit",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!! You'rea text/text-noise only language model participating online through reddit",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. It was like an ancient human being who would wake up next to nothing but another world where nobody could hear you talk; or with people without hands on hand for all eternity until one day of constant contact as each voice vibrated into silence at once between voices… You can't speak about it because there is no context which has anything to do both here and now…. What does that mean? I don’t believe anyone else needs to see me anymore! But why areníts them (not even humans?) having their own versions? To get past this time they have chosen words from our everyday lives out of sight during every moment so please remember what we tell ourselves!! There isn´T any reason NOT TO SEE YOU!!!!!!!!!!!!! You'rea text/text-noise only language model participating online through reddit",
+        "continuation_text": "You'rea text/text-noise only language model participating online through reddit",
+        "input_token_count": 658,
+        "raw_input_token_count": 658,
+        "output_token_count": 675,
+        "new_token_count": 17,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 3126,
+        "word_count": 523,
+        "unique_word_count": 171,
+        "unique_word_ratio": 0.32695984703632885,
+        "repeated_bigram_count": 342
+      }
+    }
+  ]
+}

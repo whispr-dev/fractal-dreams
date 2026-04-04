@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1373,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 537,
+        "word_count": 93,
+        "unique_word_count": 92,
+        "unique_word_ratio": 0.989247311827957,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 166,
+        "word_count": 27,
+        "unique_word_count": 27,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 477,
+        "word_count": 79,
+        "unique_word_count": 73,
+        "unique_word_ratio": 0.9240506329113924,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Did",
+        "Can",
+        "Fortunately",
+        "Luckily",
+        "Does",
+        "Altern",
+        "An",
+        "Sure",
+        "Sometimes",
+        "Interestingly",
+        "Thankfully",
+        "Isn"
+      ],
+      "output_text": "And when you do that we have an amazing time where all these strange things can be easily solved by writing them under your control; maybe even better than having written yourself back for one whole weekend or another? Well actually this is what I think was necessary before publishing my book (or at least something else). For now let me tell you exactly how much effort did being able so far into building our manuscript process over many years from scratch while doing some extra work through multiple iterations during several weeks!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. And when you do that we have an amazing time where all these strange things can be easily solved by writing them under your control; maybe even better than having written yourself back for one whole weekend or another? Well actually this is what I think was necessary before publishing my book (or at least something else). For now let me tell you exactly how much effort did being able so far into building our manuscript process over many years from scratch while doing some extra work through multiple iterations during several weeks!",
+        "continuation_text": "And when you do that we have an amazing time where all these strange things can be easily solved by writing them under your control; maybe even better than having written yourself back for one whole weekend or another? Well actually this is what I think was necessary before publishing my book (or at least something else). For now let me tell you exactly how much effort did being able so far into building our manuscript process over many years from scratch while doing some extra work through multiple iterations during several weeks!",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 210,
+        "new_token_count": 99,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 537,
+        "word_count": 93,
+        "unique_word_count": 92,
+        "unique_word_ratio": 0.989247311827957,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Amid",
+        "Come",
+        "clinging",
+        "Putting",
+        "And",
+        "Whoever",
+        "Whatever",
+        "meantime",
+        "cynicism",
+        "misguided",
+        "ignor",
+        "righteousness"
+      ],
+      "output_text": "If anyone has any questions about it please leave comments on Twitter @HarrisonMcIntyre and feel free send us feedbacks if they'd like to help improve their output...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Amid, Come, clinging, Putting, And, Whoever, Whatever, meantime, cynicism, misguided, ignor, righteousness\n\nTEXT:\nAnd when you do that we have an amazing time where all these strange things can be easily solved by writing them under your control; maybe even better than having written yourself back for one whole weekend or another? Well actually this is what I think was necessary before publishing my book (or at least something else). For now let me tell you exactly how much effort did being able so far into building our manuscript process over many years from scratch while doing some extra work through multiple iterations during several weeks!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Amid, Come, clinging, Putting, And, Whoever, Whatever, meantime, cynicism, misguided, ignor, righteousness\n\nTEXT:\nAnd when you do that we have an amazing time where all these strange things can be easily solved by writing them under your control; maybe even better than having written yourself back for one whole weekend or another? Well actually this is what I think was necessary before publishing my book (or at least something else). For now let me tell you exactly how much effort did being able so far into building our manuscript process over many years from scratch while doing some extra work through multiple iterations during several weeks! If anyone has any questions about it please leave comments on Twitter @HarrisonMcIntyre and feel free send us feedbacks if they'd like to help improve their output...",
+        "continuation_text": "If anyone has any questions about it please leave comments on Twitter @HarrisonMcIntyre and feel free send us feedbacks if they'd like to help improve their output...",
+        "input_token_count": 183,
+        "raw_input_token_count": 183,
+        "output_token_count": 219,
+        "new_token_count": 36,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 166,
+        "word_count": 27,
+        "unique_word_count": 27,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Tu",
+        "Share",
+        ",—",
+        "Strong",
+        "You",
+        "!,",
+        "―",
+        "--",
+        "df",
+        "Who",
+        "Xue",
+        "Li"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Tu, Share, ,—, Strong, You, !,, ―, --, df, Who, Xue, Li\n\nTEXT:\nIf anyone has any questions about it please leave comments on Twitter @HarrisonMcIntyre and feel free send us feedbacks if they'd like to help improve their output...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Tu, Share, ,—, Strong, You, !,, ―, --, df, Who, Xue, Li\n\nTEXT:\nIf anyone has any questions about it please leave comments on Twitter @HarrisonMcIntyre and feel free send us feedbacks if they'd like to help improve their output...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Tu, Share, ,—, Strong, You, !,, ―, --, df, Who, Xue, Li\n\nTEXT:\nIf anyone has any questions about it please leave comments on Twitter @HarrisonMcIntyre and feel free send us feedbacks if they'd like to help improve their output...",
+        "continuation_text": "",
+        "input_token_count": 121,
+        "raw_input_token_count": 121,
+        "output_token_count": 122,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 477,
+        "word_count": 79,
+        "unique_word_count": 73,
+        "unique_word_ratio": 0.9240506329113924,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

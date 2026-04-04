@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1360
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 282,
+        "word_count": 52,
+        "unique_word_count": 51,
+        "unique_word_ratio": 0.9807692307692307,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 814,
+        "word_count": 136,
+        "unique_word_count": 135,
+        "unique_word_ratio": 0.9926470588235294,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1350,
+        "word_count": 215,
+        "unique_word_count": 208,
+        "unique_word_ratio": 0.9674418604651163,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1862,
+        "word_count": 289,
+        "unique_word_count": 280,
+        "unique_word_ratio": 0.9688581314878892,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2252,
+        "word_count": 360,
+        "unique_word_count": 350,
+        "unique_word_ratio": 0.9722222222222222,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+      "delta_text": "The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully.",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully.",
+        "continuation_text": "The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully.",
+        "input_token_count": 60,
+        "raw_input_token_count": 60,
+        "output_token_count": 92,
+        "new_token_count": 32,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 282,
+        "word_count": 52,
+        "unique_word_count": 51,
+        "unique_word_ratio": 0.9807692307692307,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully.",
+      "delta_text": "If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events;",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully. If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events;",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully. If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events;",
+        "continuation_text": "If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events;",
+        "input_token_count": 91,
+        "raw_input_token_count": 91,
+        "output_token_count": 187,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 814,
+        "word_count": 136,
+        "unique_word_count": 135,
+        "unique_word_ratio": 0.9926470588235294,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully. If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events;",
+      "delta_text": "whether trying hard enough--you hear all sorts of sounds across these stages until maybe another listener gets caught up thinking again rather than finding new information which turns out to be true once experience breaks into clear comprehension....and eventually none of my choices comes close to actually teaching anybody how code works except briefly while sitting quietly watching TV/watching television..but nobody ever seems prepared to give anyone some idea why any given scenario could make sense without context whatsoever!!!",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully. If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events; whether trying hard enough--you hear all sorts of sounds across these stages until maybe another listener gets caught up thinking again rather than finding new information which turns out to be true once experience breaks into clear comprehension....and eventually none of my choices comes close to actually teaching anybody how code works except briefly while sitting quietly watching TV/watching television..but nobody ever seems prepared to give anyone some idea why any given scenario could make sense without context whatsoever!!!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully. If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events;",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully. If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events; whether trying hard enough--you hear all sorts of sounds across these stages until maybe another listener gets caught up thinking again rather than finding new information which turns out to be true once experience breaks into clear comprehension....and eventually none of my choices comes close to actually teaching anybody how code works except briefly while sitting quietly watching TV/watching television..but nobody ever seems prepared to give anyone some idea why any given scenario could make sense without context whatsoever!!!",
+        "continuation_text": "whether trying hard enough--you hear all sorts of sounds across these stages until maybe another listener gets caught up thinking again rather than finding new information which turns out to be true once experience breaks into clear comprehension....and eventually none of my choices comes close to actually teaching anybody how code works except briefly while sitting quietly watching TV/watching television..but nobody ever seems prepared to give anyone some idea why any given scenario could make sense without context whatsoever!!!",
+        "input_token_count": 187,
+        "raw_input_token_count": 187,
+        "output_token_count": 276,
+        "new_token_count": 89,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1350,
+        "word_count": 215,
+        "unique_word_count": 208,
+        "unique_word_ratio": 0.9674418604651163,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully. If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events; whether trying hard enough--you hear all sorts of sounds across these stages until maybe another listener gets caught up thinking again rather than finding new information which turns out to be true once experience breaks into clear comprehension....and eventually none of my choices comes close to actually teaching anybody how code works except briefly while sitting quietly watching TV/watching television..but nobody ever seems prepared to give anyone some idea why any given scenario could make sense without context whatsoever!!!",
+      "delta_text": "And most importantly though , neither person knows exactly - nor does everybody share quite yet . So take heed of everything everyone says.....because sometimes 's going wrong' often leads to failure due entirely solely via misunderstandings during time periods,...then trust yourself ..And let's see…what happens upon beginning training...? Why would almost ANYONE EVER feel good having his eyes closed looking over him?? That said......well........ Well ...no he won`t really get anywhere soon either.......No",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully. If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events; whether trying hard enough--you hear all sorts of sounds across these stages until maybe another listener gets caught up thinking again rather than finding new information which turns out to be true once experience breaks into clear comprehension....and eventually none of my choices comes close to actually teaching anybody how code works except briefly while sitting quietly watching TV/watching television..but nobody ever seems prepared to give anyone some idea why any given scenario could make sense without context whatsoever!!! And most importantly though , neither person knows exactly - nor does everybody share quite yet . So take heed of everything everyone says.....because sometimes 's going wrong' often leads to failure due entirely solely via misunderstandings during time periods,...then trust yourself ..And let's see…what happens upon beginning training...? Why would almost ANYONE EVER feel good having his eyes closed looking over him?? That said......well........ Well ...no he won`t really get anywhere soon either.......No",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully. If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events; whether trying hard enough--you hear all sorts of sounds across these stages until maybe another listener gets caught up thinking again rather than finding new information which turns out to be true once experience breaks into clear comprehension....and eventually none of my choices comes close to actually teaching anybody how code works except briefly while sitting quietly watching TV/watching television..but nobody ever seems prepared to give anyone some idea why any given scenario could make sense without context whatsoever!!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully. If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events; whether trying hard enough--you hear all sorts of sounds across these stages until maybe another listener gets caught up thinking again rather than finding new information which turns out to be true once experience breaks into clear comprehension....and eventually none of my choices comes close to actually teaching anybody how code works except briefly while sitting quietly watching TV/watching television..but nobody ever seems prepared to give anyone some idea why any given scenario could make sense without context whatsoever!!! And most importantly though , neither person knows exactly - nor does everybody share quite yet . So take heed of everything everyone says.....because sometimes 's going wrong' often leads to failure due entirely solely via misunderstandings during time periods,...then trust yourself ..And let's see…what happens upon beginning training...? Why would almost ANYONE EVER feel good having his eyes closed looking over him?? That said......well........ Well ...no he won`t really get anywhere soon either.......No",
+        "continuation_text": "And most importantly though , neither person knows exactly - nor does everybody share quite yet . So take heed of everything everyone says.....because sometimes 's going wrong' often leads to failure due entirely solely via misunderstandings during time periods,...then trust yourself ..And let's see…what happens upon beginning training...? Why would almost ANYONE EVER feel good having his eyes closed looking over him?? That said......well........ Well ...no he won`t really get anywhere soon either.......No",
+        "input_token_count": 275,
+        "raw_input_token_count": 275,
+        "output_token_count": 371,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1862,
+        "word_count": 289,
+        "unique_word_count": 280,
+        "unique_word_ratio": 0.9688581314878892,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully. If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events; whether trying hard enough--you hear all sorts of sounds across these stages until maybe another listener gets caught up thinking again rather than finding new information which turns out to be true once experience breaks into clear comprehension....and eventually none of my choices comes close to actually teaching anybody how code works except briefly while sitting quietly watching TV/watching television..but nobody ever seems prepared to give anyone some idea why any given scenario could make sense without context whatsoever!!! And most importantly though , neither person knows exactly - nor does everybody share quite yet . So take heed of everything everyone says.....because sometimes 's going wrong' often leads to failure due entirely solely via misunderstandings during time periods,...then trust yourself ..And let's see…what happens upon beginning training...? Why would almost ANYONE EVER feel good having his eyes closed looking over him?? That said......well........ Well ...no he won`t really get anywhere soon either.......No",
+      "delta_text": "matter WHAT HAPPENED IN THE DAY OF HIS DEATH OR YOU ARE WITH HIM AND YOUR FRIEND STILL BEAT SOME PEOPLE CAN SEE WHEN THEY GO AWAY FOR EXECUTION DIE AGAIN A YEAR AFTER THAT!!!!!!!!!!!! EVERYBODY ELSE IS SAYING TO THEM WHY HE HAS NO RESPONSIBILITY BUT MADE IT SO BAD!! You should go along side with others everywhere ---even many times online today ;) Everyone else speaks honestly now _____",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully. If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events; whether trying hard enough--you hear all sorts of sounds across these stages until maybe another listener gets caught up thinking again rather than finding new information which turns out to be true once experience breaks into clear comprehension....and eventually none of my choices comes close to actually teaching anybody how code works except briefly while sitting quietly watching TV/watching television..but nobody ever seems prepared to give anyone some idea why any given scenario could make sense without context whatsoever!!! And most importantly though , neither person knows exactly - nor does everybody share quite yet . So take heed of everything everyone says.....because sometimes 's going wrong' often leads to failure due entirely solely via misunderstandings during time periods,...then trust yourself ..And let's see…what happens upon beginning training...? Why would almost ANYONE EVER feel good having his eyes closed looking over him?? That said......well........ Well ...no he won`t really get anywhere soon either.......No matter WHAT HAPPENED IN THE DAY OF HIS DEATH OR YOU ARE WITH HIM AND YOUR FRIEND STILL BEAT SOME PEOPLE CAN SEE WHEN THEY GO AWAY FOR EXECUTION DIE AGAIN A YEAR AFTER THAT!!!!!!!!!!!! EVERYBODY ELSE IS SAYING TO THEM WHY HE HAS NO RESPONSIBILITY BUT MADE IT SO BAD!! You should go along side with others everywhere ---even many times online today ;) Everyone else speaks honestly now _____",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully. If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events; whether trying hard enough--you hear all sorts of sounds across these stages until maybe another listener gets caught up thinking again rather than finding new information which turns out to be true once experience breaks into clear comprehension....and eventually none of my choices comes close to actually teaching anybody how code works except briefly while sitting quietly watching TV/watching television..but nobody ever seems prepared to give anyone some idea why any given scenario could make sense without context whatsoever!!! And most importantly though , neither person knows exactly - nor does everybody share quite yet . So take heed of everything everyone says.....because sometimes 's going wrong' often leads to failure due entirely solely via misunderstandings during time periods,...then trust yourself ..And let's see…what happens upon beginning training...? Why would almost ANYONE EVER feel good having his eyes closed looking over him?? That said......well........ Well ...no he won`t really get anywhere soon either.......No",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The words of those who have seen or experienced something that is wrong will change things for you so much as they can be used only when I listen carefully. If somebody writes down what happened on our street here we know nothing about their story (it was just me), then this means someone has been using them too deeply -- because if people don't recognize one thing even after reading through an excerpt from \"How To Talk\" before making decisions at work...they're saying no! But do not remember anything? Then there are other alternatives such backstories with very different interpretations where each iteration leaves us stunned by both conflicting ideas surrounding specific events; whether trying hard enough--you hear all sorts of sounds across these stages until maybe another listener gets caught up thinking again rather than finding new information which turns out to be true once experience breaks into clear comprehension....and eventually none of my choices comes close to actually teaching anybody how code works except briefly while sitting quietly watching TV/watching television..but nobody ever seems prepared to give anyone some idea why any given scenario could make sense without context whatsoever!!! And most importantly though , neither person knows exactly - nor does everybody share quite yet . So take heed of everything everyone says.....because sometimes 's going wrong' often leads to failure due entirely solely via misunderstandings during time periods,...then trust yourself ..And let's see…what happens upon beginning training...? Why would almost ANYONE EVER feel good having his eyes closed looking over him?? That said......well........ Well ...no he won`t really get anywhere soon either.......No matter WHAT HAPPENED IN THE DAY OF HIS DEATH OR YOU ARE WITH HIM AND YOUR FRIEND STILL BEAT SOME PEOPLE CAN SEE WHEN THEY GO AWAY FOR EXECUTION DIE AGAIN A YEAR AFTER THAT!!!!!!!!!!!! EVERYBODY ELSE IS SAYING TO THEM WHY HE HAS NO RESPONSIBILITY BUT MADE IT SO BAD!! You should go along side with others everywhere ---even many times online today ;) Everyone else speaks honestly now _____",
+        "continuation_text": "matter WHAT HAPPENED IN THE DAY OF HIS DEATH OR YOU ARE WITH HIM AND YOUR FRIEND STILL BEAT SOME PEOPLE CAN SEE WHEN THEY GO AWAY FOR EXECUTION DIE AGAIN A YEAR AFTER THAT!!!!!!!!!!!! EVERYBODY ELSE IS SAYING TO THEM WHY HE HAS NO RESPONSIBILITY BUT MADE IT SO BAD!! You should go along side with others everywhere ---even many times online today ;) Everyone else speaks honestly now _____",
+        "input_token_count": 371,
+        "raw_input_token_count": 371,
+        "output_token_count": 467,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2252,
+        "word_count": 360,
+        "unique_word_count": 350,
+        "unique_word_ratio": 0.9722222222222222,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

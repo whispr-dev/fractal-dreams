@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1381,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 523,
+        "word_count": 77,
+        "unique_word_count": 68,
+        "unique_word_ratio": 0.8831168831168831,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 473,
+        "word_count": 65,
+        "unique_word_count": 58,
+        "unique_word_ratio": 0.8923076923076924,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 374,
+        "word_count": 51,
+        "unique_word_count": 48,
+        "unique_word_ratio": 0.9411764705882353,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "sick",
+        ".metadata",
+        "metadata",
+        "余名",
+        "نه",
+        "(/",
+        "special",
+        "ig",
+        "-rich",
+        "高品质",
+        "GT",
+        "intensive"
+      ],
+      "output_text": "The next recursive transformation of the provided text involves understanding the meaning conveyed by each word or phrase, rather than following explicit syntax rules specific to a particular language or context. Here is an attempt at expressing the same sentiment using natural language processing techniques:\n\n---\n\nI can't help you with this task; I recommend consulting a professional translator who specializes in languages other than English to accurately translate and analyze complex sentences like those given.\n\n---",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nThe next recursive transformation of the provided text involves understanding the meaning conveyed by each word or phrase, rather than following explicit syntax rules specific to a particular language or context. Here is an attempt at expressing the same sentiment using natural language processing techniques:\n\n---\n\nI can't help you with this task; I recommend consulting a professional translator who specializes in languages other than English to accurately translate and analyze complex sentences like those given.\n\n---",
+        "continuation_text": "The next recursive transformation of the provided text involves understanding the meaning conveyed by each word or phrase, rather than following explicit syntax rules specific to a particular language or context. Here is an attempt at expressing the same sentiment using natural language processing techniques:\n\n---\n\nI can't help you with this task; I recommend consulting a professional translator who specializes in languages other than English to accurately translate and analyze complex sentences like those given.\n\n---",
+        "input_token_count": 120,
+        "raw_input_token_count": 120,
+        "output_token_count": 204,
+        "new_token_count": 84,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 523,
+        "word_count": 77,
+        "unique_word_count": 68,
+        "unique_word_ratio": 0.8831168831168831,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "讽",
+        ");",
+        "Shoulder",
+        "));",
+        "polyester",
+        "chicken",
+        "Chicken",
+        ")",
+        "<?",
+        "(\"/",
+        "(",
+        "bastante"
+      ],
+      "output_text": "Certainly! If we were to represent the sentiment expressed through these words conceptually without directly translating them, here's how it might be articulated:\n\n---\n\nUnderstanding the nuanced meanings behind these phrases offers insights into the depth of human emotions and interactions portrayed within cultural narratives or texts.\n\n---\n\nThis approach acknowledges the intellectual property rights involved while still trying to convey the intended message concisely.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 讽, );, Shoulder, ));, polyester, chicken, Chicken, ), <?, (\"/, (, bastante\n\nTEXT:\nThe next recursive transformation of the provided text involves understanding the meaning conveyed by each word or phrase, rather than following explicit syntax rules specific to a particular language or context. Here is an attempt at expressing the same sentiment using natural language processing techniques:\n\n---\n\nI can't help you with this task; I recommend consulting a professional translator who specializes in languages other than English to accurately translate and analyze complex sentences like those given.\n\n---<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 讽, );, Shoulder, ));, polyester, chicken, Chicken, ), <?, (\"/, (, bastante\n\nTEXT:\nThe next recursive transformation of the provided text involves understanding the meaning conveyed by each word or phrase, rather than following explicit syntax rules specific to a particular language or context. Here is an attempt at expressing the same sentiment using natural language processing techniques:\n\n---\n\nI can't help you with this task; I recommend consulting a professional translator who specializes in languages other than English to accurately translate and analyze complex sentences like those given.\n\n---\nassistant\nCertainly! If we were to represent the sentiment expressed through these words conceptually without directly translating them, here's how it might be articulated:\n\n---\n\nUnderstanding the nuanced meanings behind these phrases offers insights into the depth of human emotions and interactions portrayed within cultural narratives or texts.\n\n---\n\nThis approach acknowledges the intellectual property rights involved while still trying to convey the intended message concisely.",
+        "continuation_text": "Certainly! If we were to represent the sentiment expressed through these words conceptually without directly translating them, here's how it might be articulated:\n\n---\n\nUnderstanding the nuanced meanings behind these phrases offers insights into the depth of human emotions and interactions portrayed within cultural narratives or texts.\n\n---\n\nThis approach acknowledges the intellectual property rights involved while still trying to convey the intended message concisely.",
+        "input_token_count": 171,
+        "raw_input_token_count": 171,
+        "output_token_count": 246,
+        "new_token_count": 75,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 473,
+        "word_count": 65,
+        "unique_word_count": 58,
+        "unique_word_ratio": 0.8923076923076924,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "symp",
+        "ート",
+        "_detection",
+        "ns",
+        "consideration",
+        "aad",
+        "totalCount",
+        "Dive",
+        "的眼",
+        "_blend",
+        "_DIGEST",
+        "=n"
+      ],
+      "output_text": "Surely! If we had the ability to encapsulate the core sentiments conveyed by these terms abstractly rather than literally translating them, here’s an illustrative representation:\n\n---\n\nThe conceptual understanding of these concepts could provide valuable perspectives on how diverse emotions and interpersonal dynamics are woven throughout cultural stories or messages.\n\n---",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: symp, ート, _detection, ns, consideration, aad, totalCount, Dive, 的眼, _blend, _DIGEST, =n\n\nTEXT:\nCertainly! If we were to represent the sentiment expressed through these words conceptually without directly translating them, here's how it might be articulated:\n\n---\n\nUnderstanding the nuanced meanings behind these phrases offers insights into the depth of human emotions and interactions portrayed within cultural narratives or texts.\n\n---\n\nThis approach acknowledges the intellectual property rights involved while still trying to convey the intended message concisely.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: symp, ート, _detection, ns, consideration, aad, totalCount, Dive, 的眼, _blend, _DIGEST, =n\n\nTEXT:\nCertainly! If we were to represent the sentiment expressed through these words conceptually without directly translating them, here's how it might be articulated:\n\n---\n\nUnderstanding the nuanced meanings behind these phrases offers insights into the depth of human emotions and interactions portrayed within cultural narratives or texts.\n\n---\n\nThis approach acknowledges the intellectual property rights involved while still trying to convey the intended message concisely.\nassistant\nSurely! If we had the ability to encapsulate the core sentiments conveyed by these terms abstractly rather than literally translating them, here’s an illustrative representation:\n\n---\n\nThe conceptual understanding of these concepts could provide valuable perspectives on how diverse emotions and interpersonal dynamics are woven throughout cultural stories or messages.\n\n---",
+        "continuation_text": "Surely! If we had the ability to encapsulate the core sentiments conveyed by these terms abstractly rather than literally translating them, here’s an illustrative representation:\n\n---\n\nThe conceptual understanding of these concepts could provide valuable perspectives on how diverse emotions and interpersonal dynamics are woven throughout cultural stories or messages.\n\n---",
+        "input_token_count": 171,
+        "raw_input_token_count": 171,
+        "output_token_count": 232,
+        "new_token_count": 61,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 374,
+        "word_count": 51,
+        "unique_word_count": 48,
+        "unique_word_ratio": 0.9411764705882353,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

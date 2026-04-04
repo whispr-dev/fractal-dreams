@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1189,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 171,
+        "word_count": 29,
+        "unique_word_count": 26,
+        "unique_word_ratio": 0.896551724137931,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 304,
+        "word_count": 42,
+        "unique_word_count": 36,
+        "unique_word_ratio": 0.8571428571428571,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 606,
+        "word_count": 96,
+        "unique_word_count": 81,
+        "unique_word_ratio": 0.84375,
+        "repeated_bigram_count": 3
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "cor",
+        "At",
+        "oklyn",
+        "静静地",
+        "cu",
+        "_di",
+        "Ferry",
+        "gu",
+        "nu",
+        "ner",
+        "Ur",
+        "가"
+      ],
+      "output_text": "The next recursive transformation is:\n\n```\nIn the observatory ruins,\nA clockwork map keeps drawing the sky redacted like it's about to happen and tries to warn people.\n```",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: cor, At, oklyn, 静静地, cu, _di, Ferry, gu, nu, ner, Ur, 가\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: cor, At, oklyn, 静静地, cu, _di, Ferry, gu, nu, ner, Ur, 가\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nThe next recursive transformation is:\n\n```\nIn the observatory ruins,\nA clockwork map keeps drawing the sky redacted like it's about to happen and tries to warn people.\n```",
+        "continuation_text": "The next recursive transformation is:\n\n```\nIn the observatory ruins,\nA clockwork map keeps drawing the sky redacted like it's about to happen and tries to warn people.\n```",
+        "input_token_count": 122,
+        "raw_input_token_count": 122,
+        "output_token_count": 160,
+        "new_token_count": 38,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 171,
+        "word_count": 29,
+        "unique_word_count": 26,
+        "unique_word_ratio": 0.896551724137931,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "和",
+        "…",
+        "total",
+        "قبال",
+        "『",
+        "了",
+        "了一",
+        "兰花",
+        "وقف",
+        "angement",
+        "foreigners",
+        "적인"
+      ],
+      "output_text": "The next recursive transformation can be represented by the following expression using just the latent anchors provided: \n\n```\n(《》： 和， 观察者， 活着， 起初， 一枝）， 原句: 在望亭遗迹，\n计时装置不断地绘制天空如要发生一样红色而试图警告人们。\n```\n\nThis transformation maintains the meaning while leveraging the given anchors for context and clarification.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 和, …, total, قبال, 『, 了, 了一, 兰花, وقف, angement, foreigners, 적인\n\nTEXT:\nThe next recursive transformation is:\n\n```\nIn the observatory ruins,\nA clockwork map keeps drawing the sky redacted like it's about to happen and tries to warn people.\n```<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 和, …, total, قبال, 『, 了, 了一, 兰花, وقف, angement, foreigners, 적인\n\nTEXT:\nThe next recursive transformation is:\n\n```\nIn the observatory ruins,\nA clockwork map keeps drawing the sky redacted like it's about to happen and tries to warn people.\n```\nassistant\nThe next recursive transformation can be represented by the following expression using just the latent anchors provided: \n\n```\n(《》： 和， 观察者， 活着， 起初， 一枝）， 原句: 在望亭遗迹，\n计时装置不断地绘制天空如要发生一样红色而试图警告人们。\n```\n\nThis transformation maintains the meaning while leveraging the given anchors for context and clarification.",
+        "continuation_text": "The next recursive transformation can be represented by the following expression using just the latent anchors provided: \n\n```\n(《》： 和， 观察者， 活着， 起初， 一枝）， 原句: 在望亭遗迹，\n计时装置不断地绘制天空如要发生一样红色而试图警告人们。\n```\n\nThis transformation maintains the meaning while leveraging the given anchors for context and clarification.",
+        "input_token_count": 134,
+        "raw_input_token_count": 134,
+        "output_token_count": 224,
+        "new_token_count": 90,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 304,
+        "word_count": 42,
+        "unique_word_count": 36,
+        "unique_word_ratio": 0.8571428571428571,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "ill",
+        "*[",
+        "only",
+        "明朗",
+        "Step",
+        "_",
+        "An",
+        "((",
+        "**",
+        "D",
+        "ING",
+        "The"
+      ],
+      "output_text": "Based on the information you've provided, it appears that there is no specific text or instruction within the \"latent anchors\" that we should use directly from the original text. However, if we were to assume some generic transformations based on common knowledge about how these types of expressions might look like:\n\n1. We could keep the structure similar to the example provided.\n2. We could add placeholders such as \"(《》)\" which might represent something similar to an inverted quotation mark.\n3. We could replace \"(《》： )\" with another placeholder like \"[原原文]\" (Original Text).\n\nGiven this flexibility,",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ill, *[, only, 明朗, Step, _, An, ((, **, D, ING, The\n\nTEXT:\nThe next recursive transformation can be represented by the following expression using just the latent anchors provided: \n\n```\n(《》： 和， 观察者， 活着， 起初， 一枝）， 原句: 在望亭遗迹，\n计时装置不断地绘制天空如要发生一样红色而试图警告人们。\n```\n\nThis transformation maintains the meaning while leveraging the given anchors for context and clarification.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ill, *[, only, 明朗, Step, _, An, ((, **, D, ING, The\n\nTEXT:\nThe next recursive transformation can be represented by the following expression using just the latent anchors provided: \n\n```\n(《》： 和， 观察者， 活着， 起初， 一枝）， 原句: 在望亭遗迹，\n计时装置不断地绘制天空如要发生一样红色而试图警告人们。\n```\n\nThis transformation maintains the meaning while leveraging the given anchors for context and clarification.\nassistant\nBased on the information you've provided, it appears that there is no specific text or instruction within the \"latent anchors\" that we should use directly from the original text. However, if we were to assume some generic transformations based on common knowledge about how these types of expressions might look like:\n\n1. We could keep the structure similar to the example provided.\n2. We could add placeholders such as \"(《》)\" which might represent something similar to an inverted quotation mark.\n3. We could replace \"(《》： )\" with another placeholder like \"[原原文]\" (Original Text).\n\nGiven this flexibility,",
+        "continuation_text": "Based on the information you've provided, it appears that there is no specific text or instruction within the \"latent anchors\" that we should use directly from the original text. However, if we were to assume some generic transformations based on common knowledge about how these types of expressions might look like:\n\n1. We could keep the structure similar to the example provided.\n2. We could add placeholders such as \"(《》)\" which might represent something similar to an inverted quotation mark.\n3. We could replace \"(《》： )\" with another placeholder like \"[原原文]\" (Original Text).\n\nGiven this flexibility,",
+        "input_token_count": 179,
+        "raw_input_token_count": 179,
+        "output_token_count": 299,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 606,
+        "word_count": 96,
+        "unique_word_count": 81,
+        "unique_word_ratio": 0.84375,
+        "repeated_bigram_count": 3
+      }
+    }
+  ]
+}

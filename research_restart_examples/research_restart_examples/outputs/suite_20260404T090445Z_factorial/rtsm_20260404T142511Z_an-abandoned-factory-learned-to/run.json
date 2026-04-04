@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1440
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 651,
+        "word_count": 98,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.8673469387755102,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1177,
+        "word_count": 174,
+        "unique_word_count": 141,
+        "unique_word_ratio": 0.8103448275862069,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1588,
+        "word_count": 231,
+        "unique_word_count": 180,
+        "unique_word_ratio": 0.7792207792207793,
+        "repeated_bigram_count": 3
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2092,
+        "word_count": 310,
+        "unique_word_count": 232,
+        "unique_word_ratio": 0.7483870967741936,
+        "repeated_bigram_count": 5
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2621,
+        "word_count": 385,
+        "unique_word_count": 289,
+        "unique_word_ratio": 0.7506493506493507,
+        "repeated_bigram_count": 5
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nThe narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the",
+        "continuation_text": "The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the",
+        "input_token_count": 66,
+        "raw_input_token_count": 66,
+        "output_token_count": 162,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 651,
+        "word_count": 98,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.8673469387755102,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \"",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the\nassistant\nreciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \"",
+        "continuation_text": "reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \"",
+        "input_token_count": 162,
+        "raw_input_token_count": 162,
+        "output_token_count": 258,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1177,
+        "word_count": 174,
+        "unique_word_count": 141,
+        "unique_word_ratio": 0.8103448275862069,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \"<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The Samsara became part of the larger movement known as \"Vedic Mysticism,\" blending ancient religious practices with Hindu philosophy, mysticism, and spirituality to explore eternal themes such as reincarnation, karma, and non-attachment. Over time, this rich tapestry of texts was further developed into various subgenres and styles, which eventually gained recognition as distinct forms of Indian literature.",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \" The Samsara became part of the larger movement known as \"Vedic Mysticism,\" blending ancient religious practices with Hindu philosophy, mysticism, and spirituality to explore eternal themes such as reincarnation, karma, and non-attachment. Over time, this rich tapestry of texts was further developed into various subgenres and styles, which eventually gained recognition as distinct forms of Indian literature.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \"\nassistant\nThe Samsara became part of the larger movement known as \"Vedic Mysticism,\" blending ancient religious practices with Hindu philosophy, mysticism, and spirituality to explore eternal themes such as reincarnation, karma, and non-attachment. Over time, this rich tapestry of texts was further developed into various subgenres and styles, which eventually gained recognition as distinct forms of Indian literature.",
+        "continuation_text": "The Samsara became part of the larger movement known as \"Vedic Mysticism,\" blending ancient religious practices with Hindu philosophy, mysticism, and spirituality to explore eternal themes such as reincarnation, karma, and non-attachment. Over time, this rich tapestry of texts was further developed into various subgenres and styles, which eventually gained recognition as distinct forms of Indian literature.",
+        "input_token_count": 256,
+        "raw_input_token_count": 256,
+        "output_token_count": 334,
+        "new_token_count": 78,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1588,
+        "word_count": 231,
+        "unique_word_count": 180,
+        "unique_word_ratio": 0.7792207792207793,
+        "repeated_bigram_count": 3
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \" The Samsara became part of the larger movement known as \"Vedic Mysticism,\" blending ancient religious practices with Hindu philosophy, mysticism, and spirituality to explore eternal themes such as reincarnation, karma, and non-attachment. Over time, this rich tapestry of texts was further developed into various subgenres and styles, which eventually gained recognition as distinct forms of Indian literature.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "Throughout this journey, The Ancestral Narratives had become deeply ingrained in the fabric of the world, their words carrying with them the weight of history and culture. As they were rewatched, it was evident how much time had passed since the creation of these narratives; yet the impact remained profound, resonating even now.\nIn each successive iteration, the language took on new layers of meaning and significance. Some versions sought to invoke cosmic power or celestial spirits, creating poetic",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \" The Samsara became part of the larger movement known as \"Vedic Mysticism,\" blending ancient religious practices with Hindu philosophy, mysticism, and spirituality to explore eternal themes such as reincarnation, karma, and non-attachment. Over time, this rich tapestry of texts was further developed into various subgenres and styles, which eventually gained recognition as distinct forms of Indian literature. Throughout this journey, The Ancestral Narratives had become deeply ingrained in the fabric of the world, their words carrying with them the weight of history and culture. As they were rewatched, it was evident how much time had passed since the creation of these narratives; yet the impact remained profound, resonating even now.\nIn each successive iteration, the language took on new layers of meaning and significance. Some versions sought to invoke cosmic power or celestial spirits, creating poetic",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \" The Samsara became part of the larger movement known as \"Vedic Mysticism,\" blending ancient religious practices with Hindu philosophy, mysticism, and spirituality to explore eternal themes such as reincarnation, karma, and non-attachment. Over time, this rich tapestry of texts was further developed into various subgenres and styles, which eventually gained recognition as distinct forms of Indian literature.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \" The Samsara became part of the larger movement known as \"Vedic Mysticism,\" blending ancient religious practices with Hindu philosophy, mysticism, and spirituality to explore eternal themes such as reincarnation, karma, and non-attachment. Over time, this rich tapestry of texts was further developed into various subgenres and styles, which eventually gained recognition as distinct forms of Indian literature.\nassistant\nThroughout this journey, The Ancestral Narratives had become deeply ingrained in the fabric of the world, their words carrying with them the weight of history and culture. As they were rewatched, it was evident how much time had passed since the creation of these narratives; yet the impact remained profound, resonating even now.\nIn each successive iteration, the language took on new layers of meaning and significance. Some versions sought to invoke cosmic power or celestial spirits, creating poetic",
+        "continuation_text": "Throughout this journey, The Ancestral Narratives had become deeply ingrained in the fabric of the world, their words carrying with them the weight of history and culture. As they were rewatched, it was evident how much time had passed since the creation of these narratives; yet the impact remained profound, resonating even now.\nIn each successive iteration, the language took on new layers of meaning and significance. Some versions sought to invoke cosmic power or celestial spirits, creating poetic",
+        "input_token_count": 333,
+        "raw_input_token_count": 333,
+        "output_token_count": 429,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2092,
+        "word_count": 310,
+        "unique_word_count": 232,
+        "unique_word_ratio": 0.7483870967741936,
+        "repeated_bigram_count": 5
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \" The Samsara became part of the larger movement known as \"Vedic Mysticism,\" blending ancient religious practices with Hindu philosophy, mysticism, and spirituality to explore eternal themes such as reincarnation, karma, and non-attachment. Over time, this rich tapestry of texts was further developed into various subgenres and styles, which eventually gained recognition as distinct forms of Indian literature. Throughout this journey, The Ancestral Narratives had become deeply ingrained in the fabric of the world, their words carrying with them the weight of history and culture. As they were rewatched, it was evident how much time had passed since the creation of these narratives; yet the impact remained profound, resonating even now.\nIn each successive iteration, the language took on new layers of meaning and significance. Some versions sought to invoke cosmic power or celestial spirits, creating poetic<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "sibyllines or other spiritual entities. Others focused on mythological creatures or mythical elements, adding depth and richness to the storytelling. Yet others turned to allegory, presenting complex moral lessons or social commentary in carefully selected parables or epigrams. Their creators often aimed at both intellectual curiosity and emotional engagement - some may have been inspired by works of art, poetry, or religious texts themselves. What emerged is a multilayered dialogue between memory, tradition, and modernity",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \" The Samsara became part of the larger movement known as \"Vedic Mysticism,\" blending ancient religious practices with Hindu philosophy, mysticism, and spirituality to explore eternal themes such as reincarnation, karma, and non-attachment. Over time, this rich tapestry of texts was further developed into various subgenres and styles, which eventually gained recognition as distinct forms of Indian literature. Throughout this journey, The Ancestral Narratives had become deeply ingrained in the fabric of the world, their words carrying with them the weight of history and culture. As they were rewatched, it was evident how much time had passed since the creation of these narratives; yet the impact remained profound, resonating even now.\nIn each successive iteration, the language took on new layers of meaning and significance. Some versions sought to invoke cosmic power or celestial spirits, creating poetic sibyllines or other spiritual entities. Others focused on mythological creatures or mythical elements, adding depth and richness to the storytelling. Yet others turned to allegory, presenting complex moral lessons or social commentary in carefully selected parables or epigrams. Their creators often aimed at both intellectual curiosity and emotional engagement - some may have been inspired by works of art, poetry, or religious texts themselves. What emerged is a multilayered dialogue between memory, tradition, and modernity",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \" The Samsara became part of the larger movement known as \"Vedic Mysticism,\" blending ancient religious practices with Hindu philosophy, mysticism, and spirituality to explore eternal themes such as reincarnation, karma, and non-attachment. Over time, this rich tapestry of texts was further developed into various subgenres and styles, which eventually gained recognition as distinct forms of Indian literature. Throughout this journey, The Ancestral Narratives had become deeply ingrained in the fabric of the world, their words carrying with them the weight of history and culture. As they were rewatched, it was evident how much time had passed since the creation of these narratives; yet the impact remained profound, resonating even now.\nIn each successive iteration, the language took on new layers of meaning and significance. Some versions sought to invoke cosmic power or celestial spirits, creating poetic<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The narrative evolved beyond mere narration into an evocative blend of nostalgia for a bygone era and spiritual reflection on impermanence. Each revisited version sought to convey a sense of divine instruction or inner guidance through the act of recounting their story, intertwining tales from different eras within this once-vanished existence. The narratives became intertwined with personal reflections about the fragility and inevitability of life's fleeting moments, each line echoing its own past while maintaining the reciprocal nature that unifies them all. This evolving artistic form became known as \"The Ancestral Narratives\" (Samsara), reflecting not only historical continuity but also cultural, societal, and personal threads woven throughout the stories' tapestry of sadness and longing. Through these narratives, viewers find themselves confronted with their own mortality and the transient nature of human experience. The cumulative influence of countless tales built upon one another began to create a cohesive body of work called \" The Samsara became part of the larger movement known as \"Vedic Mysticism,\" blending ancient religious practices with Hindu philosophy, mysticism, and spirituality to explore eternal themes such as reincarnation, karma, and non-attachment. Over time, this rich tapestry of texts was further developed into various subgenres and styles, which eventually gained recognition as distinct forms of Indian literature. Throughout this journey, The Ancestral Narratives had become deeply ingrained in the fabric of the world, their words carrying with them the weight of history and culture. As they were rewatched, it was evident how much time had passed since the creation of these narratives; yet the impact remained profound, resonating even now.\nIn each successive iteration, the language took on new layers of meaning and significance. Some versions sought to invoke cosmic power or celestial spirits, creating poetic\nassistant\nsibyllines or other spiritual entities. Others focused on mythological creatures or mythical elements, adding depth and richness to the storytelling. Yet others turned to allegory, presenting complex moral lessons or social commentary in carefully selected parables or epigrams. Their creators often aimed at both intellectual curiosity and emotional engagement - some may have been inspired by works of art, poetry, or religious texts themselves. What emerged is a multilayered dialogue between memory, tradition, and modernity",
+        "continuation_text": "sibyllines or other spiritual entities. Others focused on mythological creatures or mythical elements, adding depth and richness to the storytelling. Yet others turned to allegory, presenting complex moral lessons or social commentary in carefully selected parables or epigrams. Their creators often aimed at both intellectual curiosity and emotional engagement - some may have been inspired by works of art, poetry, or religious texts themselves. What emerged is a multilayered dialogue between memory, tradition, and modernity",
+        "input_token_count": 429,
+        "raw_input_token_count": 429,
+        "output_token_count": 525,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2621,
+        "word_count": 385,
+        "unique_word_count": 289,
+        "unique_word_ratio": 0.7506493506493507,
+        "repeated_bigram_count": 5
+      }
+    }
+  ]
+}

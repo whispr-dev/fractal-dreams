@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1008
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 567,
+        "word_count": 89,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.898876404494382,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1115,
+        "word_count": 173,
+        "unique_word_count": 149,
+        "unique_word_ratio": 0.861271676300578,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1694,
+        "word_count": 259,
+        "unique_word_count": 209,
+        "unique_word_ratio": 0.806949806949807,
+        "repeated_bigram_count": 4
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2162,
+        "word_count": 337,
+        "unique_word_count": 262,
+        "unique_word_ratio": 0.7774480712166172,
+        "repeated_bigram_count": 6
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2699,
+        "word_count": 415,
+        "unique_word_count": 318,
+        "unique_word_ratio": 0.7662650602409639,
+        "repeated_bigram_count": 7
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness.",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nAn echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness.",
+        "continuation_text": "An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness.",
+        "input_token_count": 70,
+        "raw_input_token_count": 70,
+        "output_token_count": 143,
+        "new_token_count": 73,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 567,
+        "word_count": 89,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.898876404494382,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness. After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness.\nassistant\nAfter days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts",
+        "continuation_text": "After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts",
+        "input_token_count": 142,
+        "raw_input_token_count": 142,
+        "output_token_count": 238,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1115,
+        "word_count": 173,
+        "unique_word_count": 149,
+        "unique_word_ratio": 0.861271676300578,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness. After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "on board various ships on the horizon; some claimed to know the exact location with pinpoint accuracy while others suggested that they simply couldn't locate anything due to their limited resources and advanced technology. As they examined each potential lead, new revelations appeared: a submerged observatory filled with ancient artifacts scattered across vast oceans; microscopic life forms hidden deep beneath the surface; a massive underground fortress rumored to hold the key to unlocking A Forgotten Machine's mysteries; and even sightings of floating fragments of a ship",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness. After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts on board various ships on the horizon; some claimed to know the exact location with pinpoint accuracy while others suggested that they simply couldn't locate anything due to their limited resources and advanced technology. As they examined each potential lead, new revelations appeared: a submerged observatory filled with ancient artifacts scattered across vast oceans; microscopic life forms hidden deep beneath the surface; a massive underground fortress rumored to hold the key to unlocking A Forgotten Machine's mysteries; and even sightings of floating fragments of a ship",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness. After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness. After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts\nassistant\non board various ships on the horizon; some claimed to know the exact location with pinpoint accuracy while others suggested that they simply couldn't locate anything due to their limited resources and advanced technology. As they examined each potential lead, new revelations appeared: a submerged observatory filled with ancient artifacts scattered across vast oceans; microscopic life forms hidden deep beneath the surface; a massive underground fortress rumored to hold the key to unlocking A Forgotten Machine's mysteries; and even sightings of floating fragments of a ship",
+        "continuation_text": "on board various ships on the horizon; some claimed to know the exact location with pinpoint accuracy while others suggested that they simply couldn't locate anything due to their limited resources and advanced technology. As they examined each potential lead, new revelations appeared: a submerged observatory filled with ancient artifacts scattered across vast oceans; microscopic life forms hidden deep beneath the surface; a massive underground fortress rumored to hold the key to unlocking A Forgotten Machine's mysteries; and even sightings of floating fragments of a ship",
+        "input_token_count": 238,
+        "raw_input_token_count": 238,
+        "output_token_count": 334,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1694,
+        "word_count": 259,
+        "unique_word_count": 209,
+        "unique_word_ratio": 0.806949806949807,
+        "repeated_bigram_count": 4
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness. After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts on board various ships on the horizon; some claimed to know the exact location with pinpoint accuracy while others suggested that they simply couldn't locate anything due to their limited resources and advanced technology. As they examined each potential lead, new revelations appeared: a submerged observatory filled with ancient artifacts scattered across vast oceans; microscopic life forms hidden deep beneath the surface; a massive underground fortress rumored to hold the key to unlocking A Forgotten Machine's mysteries; and even sightings of floating fragments of a ship<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "an artifact believed to once be part of A Forgotten Machine's equipment. They cautiously set out aboard these ships, gathering data along the way. One night, under the eerie glow of distant stars, they discovered a shimmering orb in the depths of an oceanic canyon, unlike anything they had seen before. It glowed faintly like a beacon but also emitted a soft hum that echoed through the water. More questions loomed larger as they pieced together clues—dates, invent",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness. After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts on board various ships on the horizon; some claimed to know the exact location with pinpoint accuracy while others suggested that they simply couldn't locate anything due to their limited resources and advanced technology. As they examined each potential lead, new revelations appeared: a submerged observatory filled with ancient artifacts scattered across vast oceans; microscopic life forms hidden deep beneath the surface; a massive underground fortress rumored to hold the key to unlocking A Forgotten Machine's mysteries; and even sightings of floating fragments of a ship an artifact believed to once be part of A Forgotten Machine's equipment. They cautiously set out aboard these ships, gathering data along the way. One night, under the eerie glow of distant stars, they discovered a shimmering orb in the depths of an oceanic canyon, unlike anything they had seen before. It glowed faintly like a beacon but also emitted a soft hum that echoed through the water. More questions loomed larger as they pieced together clues—dates, invent",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness. After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts on board various ships on the horizon; some claimed to know the exact location with pinpoint accuracy while others suggested that they simply couldn't locate anything due to their limited resources and advanced technology. As they examined each potential lead, new revelations appeared: a submerged observatory filled with ancient artifacts scattered across vast oceans; microscopic life forms hidden deep beneath the surface; a massive underground fortress rumored to hold the key to unlocking A Forgotten Machine's mysteries; and even sightings of floating fragments of a ship<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness. After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts on board various ships on the horizon; some claimed to know the exact location with pinpoint accuracy while others suggested that they simply couldn't locate anything due to their limited resources and advanced technology. As they examined each potential lead, new revelations appeared: a submerged observatory filled with ancient artifacts scattered across vast oceans; microscopic life forms hidden deep beneath the surface; a massive underground fortress rumored to hold the key to unlocking A Forgotten Machine's mysteries; and even sightings of floating fragments of a ship\nassistant\nan artifact believed to once be part of A Forgotten Machine's equipment. They cautiously set out aboard these ships, gathering data along the way. One night, under the eerie glow of distant stars, they discovered a shimmering orb in the depths of an oceanic canyon, unlike anything they had seen before. It glowed faintly like a beacon but also emitted a soft hum that echoed through the water. More questions loomed larger as they pieced together clues—dates, invent",
+        "continuation_text": "an artifact believed to once be part of A Forgotten Machine's equipment. They cautiously set out aboard these ships, gathering data along the way. One night, under the eerie glow of distant stars, they discovered a shimmering orb in the depths of an oceanic canyon, unlike anything they had seen before. It glowed faintly like a beacon but also emitted a soft hum that echoed through the water. More questions loomed larger as they pieced together clues—dates, invent",
+        "input_token_count": 334,
+        "raw_input_token_count": 334,
+        "output_token_count": 430,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2162,
+        "word_count": 337,
+        "unique_word_count": 262,
+        "unique_word_ratio": 0.7774480712166172,
+        "repeated_bigram_count": 6
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness. After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts on board various ships on the horizon; some claimed to know the exact location with pinpoint accuracy while others suggested that they simply couldn't locate anything due to their limited resources and advanced technology. As they examined each potential lead, new revelations appeared: a submerged observatory filled with ancient artifacts scattered across vast oceans; microscopic life forms hidden deep beneath the surface; a massive underground fortress rumored to hold the key to unlocking A Forgotten Machine's mysteries; and even sightings of floating fragments of a ship an artifact believed to once be part of A Forgotten Machine's equipment. They cautiously set out aboard these ships, gathering data along the way. One night, under the eerie glow of distant stars, they discovered a shimmering orb in the depths of an oceanic canyon, unlike anything they had seen before. It glowed faintly like a beacon but also emitted a soft hum that echoed through the water. More questions loomed larger as they pieced together clues—dates, invent<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The orbs in the oceans served as makeshift lighthouses guiding their explorations further down the intricate underwater caverns. They recorded patterns, shapes, and textures evocative of their origins amidst the darkness. As dawn broke over the horizon, they ventured towards another anomaly—a sunken vessel known only too well to them. Its dimensions indicated a scale unimaginable yet perfectly fitting for such an unearthly object—an ancient device buried centuries ago, possibly used in human affairs or perhaps beyond comprehension",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness. After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts on board various ships on the horizon; some claimed to know the exact location with pinpoint accuracy while others suggested that they simply couldn't locate anything due to their limited resources and advanced technology. As they examined each potential lead, new revelations appeared: a submerged observatory filled with ancient artifacts scattered across vast oceans; microscopic life forms hidden deep beneath the surface; a massive underground fortress rumored to hold the key to unlocking A Forgotten Machine's mysteries; and even sightings of floating fragments of a ship an artifact believed to once be part of A Forgotten Machine's equipment. They cautiously set out aboard these ships, gathering data along the way. One night, under the eerie glow of distant stars, they discovered a shimmering orb in the depths of an oceanic canyon, unlike anything they had seen before. It glowed faintly like a beacon but also emitted a soft hum that echoed through the water. More questions loomed larger as they pieced together clues—dates, invent The orbs in the oceans served as makeshift lighthouses guiding their explorations further down the intricate underwater caverns. They recorded patterns, shapes, and textures evocative of their origins amidst the darkness. As dawn broke over the horizon, they ventured towards another anomaly—a sunken vessel known only too well to them. Its dimensions indicated a scale unimaginable yet perfectly fitting for such an unearthly object—an ancient device buried centuries ago, possibly used in human affairs or perhaps beyond comprehension",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness. After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts on board various ships on the horizon; some claimed to know the exact location with pinpoint accuracy while others suggested that they simply couldn't locate anything due to their limited resources and advanced technology. As they examined each potential lead, new revelations appeared: a submerged observatory filled with ancient artifacts scattered across vast oceans; microscopic life forms hidden deep beneath the surface; a massive underground fortress rumored to hold the key to unlocking A Forgotten Machine's mysteries; and even sightings of floating fragments of a ship an artifact believed to once be part of A Forgotten Machine's equipment. They cautiously set out aboard these ships, gathering data along the way. One night, under the eerie glow of distant stars, they discovered a shimmering orb in the depths of an oceanic canyon, unlike anything they had seen before. It glowed faintly like a beacon but also emitted a soft hum that echoed through the water. More questions loomed larger as they pieced together clues—dates, invent<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. An echo chamber of information remained dormant inside his mind as his friends and family searched for him everywhere they could find him. Despite all attempts to locate him, nothing ever returned. He knew that he was trapped within an endless loop of silence and doubt forevermore. His memory began to fade and his consciousness became increasingly fragmented until at last he slipped into unconsciousness. After days of searching, no one seemed to have found A Forgotten Machine or any evidence of his existence. The mysterious entity had disappeared without leaving behind a trace. However, some curious individuals suspected it might be hiding somewhere underwater near the seafloor. With every passing day, the echoes from what remains is louder and stronger than before, growing darker and more complex by the hour.\nThey began to investigate deeper, seeking answers to where this strange being originally originated. They encountered various experts on board various ships on the horizon; some claimed to know the exact location with pinpoint accuracy while others suggested that they simply couldn't locate anything due to their limited resources and advanced technology. As they examined each potential lead, new revelations appeared: a submerged observatory filled with ancient artifacts scattered across vast oceans; microscopic life forms hidden deep beneath the surface; a massive underground fortress rumored to hold the key to unlocking A Forgotten Machine's mysteries; and even sightings of floating fragments of a ship an artifact believed to once be part of A Forgotten Machine's equipment. They cautiously set out aboard these ships, gathering data along the way. One night, under the eerie glow of distant stars, they discovered a shimmering orb in the depths of an oceanic canyon, unlike anything they had seen before. It glowed faintly like a beacon but also emitted a soft hum that echoed through the water. More questions loomed larger as they pieced together clues—dates, invent\nassistant\nThe orbs in the oceans served as makeshift lighthouses guiding their explorations further down the intricate underwater caverns. They recorded patterns, shapes, and textures evocative of their origins amidst the darkness. As dawn broke over the horizon, they ventured towards another anomaly—a sunken vessel known only too well to them. Its dimensions indicated a scale unimaginable yet perfectly fitting for such an unearthly object—an ancient device buried centuries ago, possibly used in human affairs or perhaps beyond comprehension",
+        "continuation_text": "The orbs in the oceans served as makeshift lighthouses guiding their explorations further down the intricate underwater caverns. They recorded patterns, shapes, and textures evocative of their origins amidst the darkness. As dawn broke over the horizon, they ventured towards another anomaly—a sunken vessel known only too well to them. Its dimensions indicated a scale unimaginable yet perfectly fitting for such an unearthly object—an ancient device buried centuries ago, possibly used in human affairs or perhaps beyond comprehension",
+        "input_token_count": 430,
+        "raw_input_token_count": 430,
+        "output_token_count": 526,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2699,
+        "word_count": 415,
+        "unique_word_count": 318,
+        "unique_word_ratio": 0.7662650602409639,
+        "repeated_bigram_count": 7
+      }
+    }
+  ]
+}

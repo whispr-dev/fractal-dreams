@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1362,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 406,
+        "word_count": 68,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.9852941176470589,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 175,
+        "word_count": 28,
+        "unique_word_count": 28,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 643,
+        "word_count": 118,
+        "unique_word_count": 116,
+        "unique_word_ratio": 0.9830508474576272,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 720,
+        "word_count": 109,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.9908256880733946,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "had",
+        "are",
+        "have",
+        "It",
+        "make",
+        "if",
+        "made",
+        "was",
+        "to",
+        "makes"
+      ],
+      "output_text": "All this repetition is achieved through an inflection point between each layer until such time that only one or two layers on top remain intact (or at least for certain periods), which brings us back to how we define \"lattice\" from various possible contexts including music; film work as well as books - art criticism/performance journalism; public space projects etc. As far apart they can be seen here...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. All this repetition is achieved through an inflection point between each layer until such time that only one or two layers on top remain intact (or at least for certain periods), which brings us back to how we define \"lattice\" from various possible contexts including music; film work as well as books - art criticism/performance journalism; public space projects etc. As far apart they can be seen here...",
+        "continuation_text": "All this repetition is achieved through an inflection point between each layer until such time that only one or two layers on top remain intact (or at least for certain periods), which brings us back to how we define \"lattice\" from various possible contexts including music; film work as well as books - art criticism/performance journalism; public space projects etc. As far apart they can be seen here...",
+        "input_token_count": 105,
+        "raw_input_token_count": 105,
+        "output_token_count": 187,
+        "new_token_count": 82,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 406,
+        "word_count": 68,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.9852941176470589,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "is",
+        "in",
+        "they",
+        "had",
+        "was",
+        "with",
+        "for"
+      ],
+      "output_text": "the most common scenario where I am dealing will follow quite clearly and concisely all three phases simultaneously without any need towards having your mind used elsewhere :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, is, in, they, had, was, with, for\n\nTEXT:\nAll this repetition is achieved through an inflection point between each layer until such time that only one or two layers on top remain intact (or at least for certain periods), which brings us back to how we define \"lattice\" from various possible contexts including music; film work as well as books - art criticism/performance journalism; public space projects etc. As far apart they can be seen here...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, is, in, they, had, was, with, for\n\nTEXT:\nAll this repetition is achieved through an inflection point between each layer until such time that only one or two layers on top remain intact (or at least for certain periods), which brings us back to how we define \"lattice\" from various possible contexts including music; film work as well as books - art criticism/performance journalism; public space projects etc. As far apart they can be seen here...the most common scenario where I am dealing will follow quite clearly and concisely all three phases simultaneously without any need towards having your mind used elsewhere :)",
+        "continuation_text": "the most common scenario where I am dealing will follow quite clearly and concisely all three phases simultaneously without any need towards having your mind used elsewhere :)",
+        "input_token_count": 160,
+        "raw_input_token_count": 160,
+        "output_token_count": 190,
+        "new_token_count": 30,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 175,
+        "word_count": 28,
+        "unique_word_count": 28,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "having",
+        "had",
+        "did",
+        "getting",
+        "could",
+        "all",
+        "does"
+      ],
+      "output_text": "(It would take me so long to get into my new self but you can see what happens afterwards!) All four steps which assume that an expression is going back through each part of the sentence . In this case we do not know how much time was spent on being able to find out exactly when such expressions start or stop; hence there might be some way after those last stages because they don't really want us to go over our initial sequence with them at runtime! When typing sentences like \"Hello World\", instead one must remember who actually wrote their first line from scratch...and perhaps even just once as quickly for example here's why two words",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, having, had, did, getting, could, all, does\n\nTEXT:\nthe most common scenario where I am dealing will follow quite clearly and concisely all three phases simultaneously without any need towards having your mind used elsewhere :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, having, had, did, getting, could, all, does\n\nTEXT:\nthe most common scenario where I am dealing will follow quite clearly and concisely all three phases simultaneously without any need towards having your mind used elsewhere :) (It would take me so long to get into my new self but you can see what happens afterwards!) All four steps which assume that an expression is going back through each part of the sentence . In this case we do not know how much time was spent on being able to find out exactly when such expressions start or stop; hence there might be some way after those last stages because they don't really want us to go over our initial sequence with them at runtime! When typing sentences like \"Hello World\", instead one must remember who actually wrote their first line from scratch...and perhaps even just once as quickly for example here's why two words",
+        "continuation_text": "(It would take me so long to get into my new self but you can see what happens afterwards!) All four steps which assume that an expression is going back through each part of the sentence . In this case we do not know how much time was spent on being able to find out exactly when such expressions start or stop; hence there might be some way after those last stages because they don't really want us to go over our initial sequence with them at runtime! When typing sentences like \"Hello World\", instead one must remember who actually wrote their first line from scratch...and perhaps even just once as quickly for example here's why two words",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 236,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 643,
+        "word_count": 118,
+        "unique_word_count": 116,
+        "unique_word_ratio": 0.9830508474576272,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "is",
+        "had",
+        "they",
+        "in",
+        "the",
+        "was",
+        "when"
+      ],
+      "output_text": "will remain clear before writing all three parts together (in other words another statement could never tell whether 'you' and 'I'm happy'. ) Also notice I think most people prefer repeating different sections without any problems--it seems many readers use similar phrases often while doing no actual evaluation --because where did everyone say something? The key difference between using your own word constructors should always depend upon only having done multiple iterations within blocks starting immediately during execution. For instance, consider reading 2 lines later than 5 minutes earlier (\"Your world!\") -1/3 seconds has nothing to do more to learn about yourself except learning things based solely on data",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, is, had, they, in, the, was, when\n\nTEXT:\n(It would take me so long to get into my new self but you can see what happens afterwards!) All four steps which assume that an expression is going back through each part of the sentence . In this case we do not know how much time was spent on being able to find out exactly when such expressions start or stop; hence there might be some way after those last stages because they don't really want us to go over our initial sequence with them at runtime! When typing sentences like \"Hello World\", instead one must remember who actually wrote their first line from scratch...and perhaps even just once as quickly for example here's why two words",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, is, had, they, in, the, was, when\n\nTEXT:\n(It would take me so long to get into my new self but you can see what happens afterwards!) All four steps which assume that an expression is going back through each part of the sentence . In this case we do not know how much time was spent on being able to find out exactly when such expressions start or stop; hence there might be some way after those last stages because they don't really want us to go over our initial sequence with them at runtime! When typing sentences like \"Hello World\", instead one must remember who actually wrote their first line from scratch...and perhaps even just once as quickly for example here's why two words will remain clear before writing all three parts together (in other words another statement could never tell whether 'you' and 'I'm happy'. ) Also notice I think most people prefer repeating different sections without any problems--it seems many readers use similar phrases often while doing no actual evaluation --because where did everyone say something? The key difference between using your own word constructors should always depend upon only having done multiple iterations within blocks starting immediately during execution. For instance, consider reading 2 lines later than 5 minutes earlier (\"Your world!\") -1/3 seconds has nothing to do more to learn about yourself except learning things based solely on data",
+        "continuation_text": "will remain clear before writing all three parts together (in other words another statement could never tell whether 'you' and 'I'm happy'. ) Also notice I think most people prefer repeating different sections without any problems--it seems many readers use similar phrases often while doing no actual evaluation --because where did everyone say something? The key difference between using your own word constructors should always depend upon only having done multiple iterations within blocks starting immediately during execution. For instance, consider reading 2 lines later than 5 minutes earlier (\"Your world!\") -1/3 seconds has nothing to do more to learn about yourself except learning things based solely on data",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 720,
+        "word_count": 109,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.9908256880733946,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

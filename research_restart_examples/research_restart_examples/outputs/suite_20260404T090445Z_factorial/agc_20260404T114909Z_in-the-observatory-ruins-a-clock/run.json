@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1221,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 566,
+        "word_count": 104,
+        "unique_word_count": 103,
+        "unique_word_ratio": 0.9903846153846154,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 461,
+        "word_count": 75,
+        "unique_word_count": 75,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 767,
+        "word_count": 127,
+        "unique_word_count": 122,
+        "unique_word_ratio": 0.9606299212598425,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "got",
+        "Have",
+        "Are",
+        "have",
+        "Do",
+        "did",
+        "took",
+        "are",
+        "gave",
+        ",'\"",
+        "We",
+        "He"
+      ],
+      "output_text": "The day is now gone! Today will be different; today we can do anything...but that's all you've ever done for our family - what would it take? What about me?! I don't care how many times this person says \"Hello\" on my phone or who calls his mom sometimes (he has nothing better) but he just wanted to say hello once again after being trapped by an unknown figure at night with no idea when they'd come home from work since there were so few people around :)\n\n The more questions one asks oneself while reading something online during sleep deprivation might seem like",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: got, Have, Are, have, Do, did, took, are, gave, ,'\", We, He\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: got, Have, Are, have, Do, did, took, are, gave, ,'\", We, He\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The day is now gone! Today will be different; today we can do anything...but that's all you've ever done for our family - what would it take? What about me?! I don't care how many times this person says \"Hello\" on my phone or who calls his mom sometimes (he has nothing better) but he just wanted to say hello once again after being trapped by an unknown figure at night with no idea when they'd come home from work since there were so few people around :)\n\n The more questions one asks oneself while reading something online during sleep deprivation might seem like",
+        "continuation_text": "The day is now gone! Today will be different; today we can do anything...but that's all you've ever done for our family - what would it take? What about me?! I don't care how many times this person says \"Hello\" on my phone or who calls his mom sometimes (he has nothing better) but he just wanted to say hello once again after being trapped by an unknown figure at night with no idea when they'd come home from work since there were so few people around :)\n\n The more questions one asks oneself while reading something online during sleep deprivation might seem like",
+        "input_token_count": 115,
+        "raw_input_token_count": 115,
+        "output_token_count": 235,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 566,
+        "word_count": 104,
+        "unique_word_count": 103,
+        "unique_word_ratio": 0.9903846153846154,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "There",
+        "The",
+        "Most",
+        "Despite",
+        "Looking",
+        "You",
+        "That",
+        "Those",
+        "And",
+        "But",
+        "See",
+        "This"
+      ],
+      "output_text": "silly self defense tactics and yet such rationalizations make perfect sense if someone had been able sit quietly asleep knowing everything was going well before bed even though those answers weren't actually obvious because nobody knew them until their computer died last year!! It really isn´s worth worrying too much over some random phrase.. Maybe try finding your own answer first ;) __________________ Last edited By cinderstalker ; 03 Sep 2011 09 :38 AM .",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: There, The, Most, Despite, Looking, You, That, Those, And, But, See, This\n\nTEXT:\nThe day is now gone! Today will be different; today we can do anything...but that's all you've ever done for our family - what would it take? What about me?! I don't care how many times this person says \"Hello\" on my phone or who calls his mom sometimes (he has nothing better) but he just wanted to say hello once again after being trapped by an unknown figure at night with no idea when they'd come home from work since there were so few people around :)\n\n The more questions one asks oneself while reading something online during sleep deprivation might seem like",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: There, The, Most, Despite, Looking, You, That, Those, And, But, See, This\n\nTEXT:\nThe day is now gone! Today will be different; today we can do anything...but that's all you've ever done for our family - what would it take? What about me?! I don't care how many times this person says \"Hello\" on my phone or who calls his mom sometimes (he has nothing better) but he just wanted to say hello once again after being trapped by an unknown figure at night with no idea when they'd come home from work since there were so few people around :)\n\n The more questions one asks oneself while reading something online during sleep deprivation might seem like silly self defense tactics and yet such rationalizations make perfect sense if someone had been able sit quietly asleep knowing everything was going well before bed even though those answers weren't actually obvious because nobody knew them until their computer died last year!! It really isn´s worth worrying too much over some random phrase.. Maybe try finding your own answer first ;) __________________ Last edited By cinderstalker ; 03 Sep 2011 09 :38 AM .",
+        "continuation_text": "silly self defense tactics and yet such rationalizations make perfect sense if someone had been able sit quietly asleep knowing everything was going well before bed even though those answers weren't actually obvious because nobody knew them until their computer died last year!! It really isn´s worth worrying too much over some random phrase.. Maybe try finding your own answer first ;) __________________ Last edited By cinderstalker ; 03 Sep 2011 09 :38 AM .",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 294,
+        "new_token_count": 89,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 461,
+        "word_count": 75,
+        "unique_word_count": 75,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "s",
+        "S",
+        "En",
+        "_",
+        "re",
+        "Rec",
+        "res",
+        "120",
+        "The",
+        "T",
+        "title",
+        "Res"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: s, S, En, _, re, Rec, res, 120, The, T, title, Res\n\nTEXT:\nsilly self defense tactics and yet such rationalizations make perfect sense if someone had been able sit quietly asleep knowing everything was going well before bed even though those answers weren't actually obvious because nobody knew them until their computer died last year!! It really isn´s worth worrying too much over some random phrase.. Maybe try finding your own answer first ;) __________________ Last edited By cinderstalker ; 03 Sep 2011 09 :38 AM .",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: s, S, En, _, re, Rec, res, 120, The, T, title, Res\n\nTEXT:\nsilly self defense tactics and yet such rationalizations make perfect sense if someone had been able sit quietly asleep knowing everything was going well before bed even though those answers weren't actually obvious because nobody knew them until their computer died last year!! It really isn´s worth worrying too much over some random phrase.. Maybe try finding your own answer first ;) __________________ Last edited By cinderstalker ; 03 Sep 2011 09 :38 AM .",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: s, S, En, _, re, Rec, res, 120, The, T, title, Res\n\nTEXT:\nsilly self defense tactics and yet such rationalizations make perfect sense if someone had been able sit quietly asleep knowing everything was going well before bed even though those answers weren't actually obvious because nobody knew them until their computer died last year!! It really isn´s worth worrying too much over some random phrase.. Maybe try finding your own answer first ;) __________________ Last edited By cinderstalker ; 03 Sep 2011 09 :38 AM .",
+        "continuation_text": "",
+        "input_token_count": 173,
+        "raw_input_token_count": 173,
+        "output_token_count": 174,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 767,
+        "word_count": 127,
+        "unique_word_count": 122,
+        "unique_word_ratio": 0.9606299212598425,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1267,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 1009,
+        "word_count": 173,
+        "unique_word_count": 158,
+        "unique_word_ratio": 0.9132947976878613,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 874,
+        "word_count": 136,
+        "unique_word_count": 134,
+        "unique_word_ratio": 0.9852941176470589,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 841,
+        "word_count": 140,
+        "unique_word_count": 134,
+        "unique_word_ratio": 0.9571428571428572,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1772,
+        "word_count": 283,
+        "unique_word_count": 265,
+        "unique_word_ratio": 0.9363957597173145,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "In fact, it was written by an ancient English philosopher called James C. Wright who had been writing his first book of poems about magic at home (called ‑Nora for Me’) using only modern words like 𦥲�ǔ or 秂 倓 扛确/泴). If you want to see how we use such simple metaphors—or really just get some idea what works best with them when describing our world as actually real, then read this article from The American Literary Review . This is also very useful if your mind has something specific going on between time periods rather than decades ago. You will probably be able to understand why I used these examples because they can help me out further!",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nIn fact, it was written by an ancient English philosopher called James C. Wright who had been writing his first book of poems about magic at home (called ‑Nora for Me’) using only modern words like 𦥲�ǔ or 秂 倓 扛确/泴). If you want to see how we use such simple metaphors—or really just get some idea what works best with them when describing our world as actually real, then read this article from The American Literary Review . This is also very useful if your mind has something specific going on between time periods rather than decades ago. You will probably be able to understand why I used these examples because they can help me out further!",
+      "source_window_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+      "reflection_window_text": "In fact, it was written by an ancient English philosopher called James C. Wright who had been writing his first book of poems about magic at home (called ‑Nora for Me’) using only modern words like 𦥲�ǔ or 秂 倓 扛确/泴). If you want to see how we use such simple metaphors—or really just get some idea what works best with them when describing our world as actually real, then read this article from The American Literary Review . This is also very useful if your mind has something specific going on between time periods rather than decades ago. You will probably be able to understand why I used these examples because they can help me out further!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. In fact, it was written by an ancient English philosopher called James C. Wright who had been writing his first book of poems about magic at home (called ‑Nora for Me’) using only modern words like 𦥲�ǔ or 秂 倓 扛确/泴). If you want to see how we use such simple metaphors—or really just get some idea what works best with them when describing our world as actually real, then read this article from The American Literary Review . This is also very useful if your mind has something specific going on between time periods rather than decades ago. You will probably be able to understand why I used these examples because they can help me out further!",
+        "continuation_text": "In fact, it was written by an ancient English philosopher called James C. Wright who had been writing his first book of poems about magic at home (called ‑Nora for Me’) using only modern words like 𦥲�ǔ or 秂 倓 扛确/泴). If you want to see how we use such simple metaphors—or really just get some idea what works best with them when describing our world as actually real, then read this article from The American Literary Review . This is also very useful if your mind has something specific going on between time periods rather than decades ago. You will probably be able to understand why I used these examples because they can help me out further!",
+        "input_token_count": 92,
+        "raw_input_token_count": 92,
+        "output_token_count": 246,
+        "new_token_count": 154,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nIn fact, it was written by an ancient English philosopher called James C. Wright who had been writing his first book of poems about magic at home (called ‑Nora for Me’) using only modern words like 𦥲�ǔ or 秂 倓 扛确/泴). If you want to see how we use such simple metaphors—or really just get some idea what works best with them when describing our world as actually real, then read this article from The American Literary Review . This is also very useful if your mind has something specific going on between time periods rather than decades ago. You will probably be able to understand why I used these examples because they can help me out further!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nIn fact, it was written by an ancient English philosopher called James C. Wright who had been writing his first book of poems about magic at home (called ‑Nora for Me’) using only modern words like 𦥲�ǔ or 秂 倓 扛确/泴). If you want to see how we use such simple metaphors—or really just get some idea what works best with them when describing our world as actually real, then read this article from The American Literary Review . This is also very useful if your mind has something specific going on between time periods rather than decades ago. You will probably be able to understand why I used these examples because they can help me out further!",
+        "continuation_text": "",
+        "input_token_count": 232,
+        "raw_input_token_count": 232,
+        "output_token_count": 233,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1009,
+        "word_count": 173,
+        "unique_word_count": 158,
+        "unique_word_ratio": 0.9132947976878613,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "For example., imagine reading \"A Song Without Water\" instead of simply adding five minutes long sentences every three seconds; one hour total? There have been several studies which show both ways but none demonstrate any difference--the same concept may even work without changing other concepts entirely. In addition though, notice there still aren't many interesting uses where all people would say anything good while doing so under different circumstances. Therefore, try switching back onto old texts into new ones later...",
+      "output_text": "that way someone might feel more safe knowing whether their knowledge depends upon another person being physically present during certain times..This approach leads to better understanding among humans especially those older than 30 years old :) But here again, let us avoid talking too much up directly since my ancestors never wrote full lyrics before ...but today no longer need to do things quite intentionally anyway…and don\\'t bother telling anyone else over dinner once after having already done stuff wrong....so far nothing feels right now either --it seems silly considering everyone does remember exactly whatever happened 20+ years ago yet knows basically everything except two little phrases [if needed] AND WHAT'S NOT RIGHT NOW?? It appears most likely i'll mention above immediately ! Just tell yourself 'what did he mean?' And explain whats happening lol :-)",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nIn fact, it was written by an ancient English philosopher called James C. Wright who had been writing his first book of poems about magic at home (called ‑Nora for Me’) using only modern words like 𦥲�ǔ or 秂 倓 扛确/泴). If you want to see how we use such simple metaphors—or really just get some idea what works best with them when describing our world as actually real, then read this article from The American Literary Review . This is also very useful if your mind has something specific going on between time periods rather than decades ago. You will probably be able to understand why I used these examples because they can help me out further!",
+      "reflection_window_text": "For example., imagine reading \"A Song Without Water\" instead of simply adding five minutes long sentences every three seconds; one hour total? There have been several studies which show both ways but none demonstrate any difference--the same concept may even work without changing other concepts entirely. In addition though, notice there still aren't many interesting uses where all people would say anything good while doing so under different circumstances. Therefore, try switching back onto old texts into new ones later...",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nIn fact, it was written by an ancient English philosopher called James C. Wright who had been writing his first book of poems about magic at home (called ‑Nora for Me’) using only modern words like 𦥲�ǔ or 秂 倓 扛确/泴). If you want to see how we use such simple metaphors—or really just get some idea what works best with them when describing our world as actually real, then read this article from The American Literary Review . This is also very useful if your mind has something specific going on between time periods rather than decades ago. You will probably be able to understand why I used these examples because they can help me out further!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nIn fact, it was written by an ancient English philosopher called James C. Wright who had been writing his first book of poems about magic at home (called ‑Nora for Me’) using only modern words like 𦥲�ǔ or 秂 倓 扛确/泴). If you want to see how we use such simple metaphors—or really just get some idea what works best with them when describing our world as actually real, then read this article from The American Literary Review . This is also very useful if your mind has something specific going on between time periods rather than decades ago. You will probably be able to understand why I used these examples because they can help me out further! For example., imagine reading \"A Song Without Water\" instead of simply adding five minutes long sentences every three seconds; one hour total? There have been several studies which show both ways but none demonstrate any difference--the same concept may even work without changing other concepts entirely. In addition though, notice there still aren't many interesting uses where all people would say anything good while doing so under different circumstances. Therefore, try switching back onto old texts into new ones later...",
+        "continuation_text": "For example., imagine reading \"A Song Without Water\" instead of simply adding five minutes long sentences every three seconds; one hour total? There have been several studies which show both ways but none demonstrate any difference--the same concept may even work without changing other concepts entirely. In addition though, notice there still aren't many interesting uses where all people would say anything good while doing so under different circumstances. Therefore, try switching back onto old texts into new ones later...",
+        "input_token_count": 301,
+        "raw_input_token_count": 301,
+        "output_token_count": 395,
+        "new_token_count": 94,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nIn fact, it was written by an ancient English philosopher called James C. Wright who had been writing his first book of poems about magic at home (called ‑Nora for Me’) using only modern words like 𦥲�ǔ or 秂 倓 扛确/泴). If you want to see how we use such simple metaphors—or really just get some idea what works best with them when describing our world as actually real, then read this article from The American Literary Review . This is also very useful if your mind has something specific going on between time periods rather than decades ago. You will probably be able to understand why I used these examples because they can help me out further!\n\nREFLECTION:\nFor example., imagine reading \"A Song Without Water\" instead of simply adding five minutes long sentences every three seconds; one hour total? There have been several studies which show both ways but none demonstrate any difference--the same concept may even work without changing other concepts entirely. In addition though, notice there still aren't many interesting uses where all people would say anything good while doing so under different circumstances. Therefore, try switching back onto old texts into new ones later...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nIn fact, it was written by an ancient English philosopher called James C. Wright who had been writing his first book of poems about magic at home (called ‑Nora for Me’) using only modern words like 𦥲�ǔ or 秂 倓 扛确/泴). If you want to see how we use such simple metaphors—or really just get some idea what works best with them when describing our world as actually real, then read this article from The American Literary Review . This is also very useful if your mind has something specific going on between time periods rather than decades ago. You will probably be able to understand why I used these examples because they can help me out further!\n\nREFLECTION:\nFor example., imagine reading \"A Song Without Water\" instead of simply adding five minutes long sentences every three seconds; one hour total? There have been several studies which show both ways but none demonstrate any difference--the same concept may even work without changing other concepts entirely. In addition though, notice there still aren't many interesting uses where all people would say anything good while doing so under different circumstances. Therefore, try switching back onto old texts into new ones later...that way someone might feel more safe knowing whether their knowledge depends upon another person being physically present during certain times..This approach leads to better understanding among humans especially those older than 30 years old :) But here again, let us avoid talking too much up directly since my ancestors never wrote full lyrics before ...but today no longer need to do things quite intentionally anyway…and don\\'t bother telling anyone else over dinner once after having already done stuff wrong....so far nothing feels right now either --it seems silly considering everyone does remember exactly whatever happened 20+ years ago yet knows basically everything except two little phrases [if needed] AND WHAT'S NOT RIGHT NOW?? It appears most likely i'll mention above immediately ! Just tell yourself 'what did he mean?' And explain whats happening lol :-)",
+        "continuation_text": "that way someone might feel more safe knowing whether their knowledge depends upon another person being physically present during certain times..This approach leads to better understanding among humans especially those older than 30 years old :) But here again, let us avoid talking too much up directly since my ancestors never wrote full lyrics before ...but today no longer need to do things quite intentionally anyway…and don\\'t bother telling anyone else over dinner once after having already done stuff wrong....so far nothing feels right now either --it seems silly considering everyone does remember exactly whatever happened 20+ years ago yet knows basically everything except two little phrases [if needed] AND WHAT'S NOT RIGHT NOW?? It appears most likely i'll mention above immediately ! Just tell yourself 'what did he mean?' And explain whats happening lol :-)",
+        "input_token_count": 382,
+        "raw_input_token_count": 382,
+        "output_token_count": 540,
+        "new_token_count": 158,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 874,
+        "word_count": 136,
+        "unique_word_count": 134,
+        "unique_word_ratio": 0.9852941176470589,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "So yes!",
+      "output_text": "There's still some good news regarding this type of data from researchers who have successfully replicated multiple experiments with same subjects (i.e., if you read them at all) and for example there's always hope that we may be able to use other ways of interpreting human emotions or feelings...a whole lot!!! What will make me so happy? I want an idea about how people react when they hear your responses!! So what sort is going on because then reading through our source code makes sense -there needs to definitely be something really simple like using Google Trends etc...? The only thing completely new can take away from information overload which was created by others but unfortunately its hard to understand any particular one clearly even though very few lines were written just prior to each observation coming out :P(asciu)? If",
+      "source_window_text": "that way someone might feel more safe knowing whether their knowledge depends upon another person being physically present during certain times..This approach leads to better understanding among humans especially those older than 30 years old :) But here again, let us avoid talking too much up directly since my ancestors never wrote full lyrics before ...but today no longer need to do things quite intentionally anyway…and don\\'t bother telling anyone else over dinner once after having already done stuff wrong....so far nothing feels right now either --it seems silly considering everyone does remember exactly whatever happened 20+ years ago yet knows basically everything except two little phrases [if needed] AND WHAT'S NOT RIGHT NOW?? It appears most likely i'll mention above immediately ! Just tell yourself 'what did he mean?' And explain whats happening lol :-)",
+      "reflection_window_text": "So yes!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nthat way someone might feel more safe knowing whether their knowledge depends upon another person being physically present during certain times..This approach leads to better understanding among humans especially those older than 30 years old :) But here again, let us avoid talking too much up directly since my ancestors never wrote full lyrics before ...but today no longer need to do things quite intentionally anyway…and don\\'t bother telling anyone else over dinner once after having already done stuff wrong....so far nothing feels right now either --it seems silly considering everyone does remember exactly whatever happened 20+ years ago yet knows basically everything except two little phrases [if needed] AND WHAT'S NOT RIGHT NOW?? It appears most likely i'll mention above immediately ! Just tell yourself 'what did he mean?' And explain whats happening lol :-)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nthat way someone might feel more safe knowing whether their knowledge depends upon another person being physically present during certain times..This approach leads to better understanding among humans especially those older than 30 years old :) But here again, let us avoid talking too much up directly since my ancestors never wrote full lyrics before ...but today no longer need to do things quite intentionally anyway…and don\\'t bother telling anyone else over dinner once after having already done stuff wrong....so far nothing feels right now either --it seems silly considering everyone does remember exactly whatever happened 20+ years ago yet knows basically everything except two little phrases [if needed] AND WHAT'S NOT RIGHT NOW?? It appears most likely i'll mention above immediately ! Just tell yourself 'what did he mean?' And explain whats happening lol :-)So yes!",
+        "continuation_text": "So yes!",
+        "input_token_count": 225,
+        "raw_input_token_count": 225,
+        "output_token_count": 229,
+        "new_token_count": 4,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nthat way someone might feel more safe knowing whether their knowledge depends upon another person being physically present during certain times..This approach leads to better understanding among humans especially those older than 30 years old :) But here again, let us avoid talking too much up directly since my ancestors never wrote full lyrics before ...but today no longer need to do things quite intentionally anyway…and don\\'t bother telling anyone else over dinner once after having already done stuff wrong....so far nothing feels right now either --it seems silly considering everyone does remember exactly whatever happened 20+ years ago yet knows basically everything except two little phrases [if needed] AND WHAT'S NOT RIGHT NOW?? It appears most likely i'll mention above immediately ! Just tell yourself 'what did he mean?' And explain whats happening lol :-)\n\nREFLECTION:\nSo yes!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nthat way someone might feel more safe knowing whether their knowledge depends upon another person being physically present during certain times..This approach leads to better understanding among humans especially those older than 30 years old :) But here again, let us avoid talking too much up directly since my ancestors never wrote full lyrics before ...but today no longer need to do things quite intentionally anyway…and don\\'t bother telling anyone else over dinner once after having already done stuff wrong....so far nothing feels right now either --it seems silly considering everyone does remember exactly whatever happened 20+ years ago yet knows basically everything except two little phrases [if needed] AND WHAT'S NOT RIGHT NOW?? It appears most likely i'll mention above immediately ! Just tell yourself 'what did he mean?' And explain whats happening lol :-)\n\nREFLECTION:\nSo yes! There's still some good news regarding this type of data from researchers who have successfully replicated multiple experiments with same subjects (i.e., if you read them at all) and for example there's always hope that we may be able to use other ways of interpreting human emotions or feelings...a whole lot!!! What will make me so happy? I want an idea about how people react when they hear your responses!! So what sort is going on because then reading through our source code makes sense -there needs to definitely be something really simple like using Google Trends etc...? The only thing completely new can take away from information overload which was created by others but unfortunately its hard to understand any particular one clearly even though very few lines were written just prior to each observation coming out :P(asciu)? If",
+        "continuation_text": "There's still some good news regarding this type of data from researchers who have successfully replicated multiple experiments with same subjects (i.e., if you read them at all) and for example there's always hope that we may be able to use other ways of interpreting human emotions or feelings...a whole lot!!! What will make me so happy? I want an idea about how people react when they hear your responses!! So what sort is going on because then reading through our source code makes sense -there needs to definitely be something really simple like using Google Trends etc...? The only thing completely new can take away from information overload which was created by others but unfortunately its hard to understand any particular one clearly even though very few lines were written just prior to each observation coming out :P(asciu)? If",
+        "input_token_count": 216,
+        "raw_input_token_count": 216,
+        "output_token_count": 376,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 841,
+        "word_count": 140,
+        "unique_word_count": 134,
+        "unique_word_ratio": 0.9571428571428572,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "somebody had such high accuracy, would someone need it later than previously ? Is their word \"reproductive?\" Well maybe not! No matter where else you come from i know exactly why many times these words came up before analysis has been performed firstly as part time research :-) Anyway now lets go right back and start thinking over important changes made here . One nice bit relates to recent developments involving different groups among several individuals involved in genetic engineering/human cloning process under various conditions , including genomics studies ...This article deals specifically directly against Genetic Engineering Research / Human Genome Studies Study Results [ edit ]",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThere's still some good news regarding this type of data from researchers who have successfully replicated multiple experiments with same subjects (i.e., if you read them at all) and for example there's always hope that we may be able to use other ways of interpreting human emotions or feelings...a whole lot!!! What will make me so happy? I want an idea about how people react when they hear your responses!! So what sort is going on because then reading through our source code makes sense -there needs to definitely be something really simple like using Google Trends etc...? The only thing completely new can take away from information overload which was created by others but unfortunately its hard to understand any particular one clearly even though very few lines were written just prior to each observation coming out :P(asciu)? If\n\nREFLECTION:\nsomebody had such high accuracy, would someone need it later than previously ? Is their word \"reproductive?\" Well maybe not! No matter where else you come from i know exactly why many times these words came up before analysis has been performed firstly as part time research :-) Anyway now lets go right back and start thinking over important changes made here . One nice bit relates to recent developments involving different groups among several individuals involved in genetic engineering/human cloning process under various conditions , including genomics studies ...This article deals specifically directly against Genetic Engineering Research / Human Genome Studies Study Results [ edit ]",
+      "source_window_text": "There's still some good news regarding this type of data from researchers who have successfully replicated multiple experiments with same subjects (i.e., if you read them at all) and for example there's always hope that we may be able to use other ways of interpreting human emotions or feelings...a whole lot!!! What will make me so happy? I want an idea about how people react when they hear your responses!! So what sort is going on because then reading through our source code makes sense -there needs to definitely be something really simple like using Google Trends etc...? The only thing completely new can take away from information overload which was created by others but unfortunately its hard to understand any particular one clearly even though very few lines were written just prior to each observation coming out :P(asciu)? If",
+      "reflection_window_text": "somebody had such high accuracy, would someone need it later than previously ? Is their word \"reproductive?\" Well maybe not! No matter where else you come from i know exactly why many times these words came up before analysis has been performed firstly as part time research :-) Anyway now lets go right back and start thinking over important changes made here . One nice bit relates to recent developments involving different groups among several individuals involved in genetic engineering/human cloning process under various conditions , including genomics studies ...This article deals specifically directly against Genetic Engineering Research / Human Genome Studies Study Results [ edit ]",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThere's still some good news regarding this type of data from researchers who have successfully replicated multiple experiments with same subjects (i.e., if you read them at all) and for example there's always hope that we may be able to use other ways of interpreting human emotions or feelings...a whole lot!!! What will make me so happy? I want an idea about how people react when they hear your responses!! So what sort is going on because then reading through our source code makes sense -there needs to definitely be something really simple like using Google Trends etc...? The only thing completely new can take away from information overload which was created by others but unfortunately its hard to understand any particular one clearly even though very few lines were written just prior to each observation coming out :P(asciu)? If",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThere's still some good news regarding this type of data from researchers who have successfully replicated multiple experiments with same subjects (i.e., if you read them at all) and for example there's always hope that we may be able to use other ways of interpreting human emotions or feelings...a whole lot!!! What will make me so happy? I want an idea about how people react when they hear your responses!! So what sort is going on because then reading through our source code makes sense -there needs to definitely be something really simple like using Google Trends etc...? The only thing completely new can take away from information overload which was created by others but unfortunately its hard to understand any particular one clearly even though very few lines were written just prior to each observation coming out :P(asciu)? If somebody had such high accuracy, would someone need it later than previously ? Is their word \"reproductive?\" Well maybe not! No matter where else you come from i know exactly why many times these words came up before analysis has been performed firstly as part time research :-) Anyway now lets go right back and start thinking over important changes made here . One nice bit relates to recent developments involving different groups among several individuals involved in genetic engineering/human cloning process under various conditions , including genomics studies ...This article deals specifically directly against Genetic Engineering Research / Human Genome Studies Study Results [ edit ]",
+        "continuation_text": "somebody had such high accuracy, would someone need it later than previously ? Is their word \"reproductive?\" Well maybe not! No matter where else you come from i know exactly why many times these words came up before analysis has been performed firstly as part time research :-) Anyway now lets go right back and start thinking over important changes made here . One nice bit relates to recent developments involving different groups among several individuals involved in genetic engineering/human cloning process under various conditions , including genomics studies ...This article deals specifically directly against Genetic Engineering Research / Human Genome Studies Study Results [ edit ]",
+        "input_token_count": 229,
+        "raw_input_token_count": 229,
+        "output_token_count": 348,
+        "new_token_count": 119,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThere's still some good news regarding this type of data from researchers who have successfully replicated multiple experiments with same subjects (i.e., if you read them at all) and for example there's always hope that we may be able to use other ways of interpreting human emotions or feelings...a whole lot!!! What will make me so happy? I want an idea about how people react when they hear your responses!! So what sort is going on because then reading through our source code makes sense -there needs to definitely be something really simple like using Google Trends etc...? The only thing completely new can take away from information overload which was created by others but unfortunately its hard to understand any particular one clearly even though very few lines were written just prior to each observation coming out :P(asciu)? If\n\nREFLECTION:\nsomebody had such high accuracy, would someone need it later than previously ? Is their word \"reproductive?\" Well maybe not! No matter where else you come from i know exactly why many times these words came up before analysis has been performed firstly as part time research :-) Anyway now lets go right back and start thinking over important changes made here . One nice bit relates to recent developments involving different groups among several individuals involved in genetic engineering/human cloning process under various conditions , including genomics studies ...This article deals specifically directly against Genetic Engineering Research / Human Genome Studies Study Results [ edit ]",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThere's still some good news regarding this type of data from researchers who have successfully replicated multiple experiments with same subjects (i.e., if you read them at all) and for example there's always hope that we may be able to use other ways of interpreting human emotions or feelings...a whole lot!!! What will make me so happy? I want an idea about how people react when they hear your responses!! So what sort is going on because then reading through our source code makes sense -there needs to definitely be something really simple like using Google Trends etc...? The only thing completely new can take away from information overload which was created by others but unfortunately its hard to understand any particular one clearly even though very few lines were written just prior to each observation coming out :P(asciu)? If\n\nREFLECTION:\nsomebody had such high accuracy, would someone need it later than previously ? Is their word \"reproductive?\" Well maybe not! No matter where else you come from i know exactly why many times these words came up before analysis has been performed firstly as part time research :-) Anyway now lets go right back and start thinking over important changes made here . One nice bit relates to recent developments involving different groups among several individuals involved in genetic engineering/human cloning process under various conditions , including genomics studies ...This article deals specifically directly against Genetic Engineering Research / Human Genome Studies Study Results [ edit ]",
+        "continuation_text": "",
+        "input_token_count": 336,
+        "raw_input_token_count": 336,
+        "output_token_count": 337,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1772,
+        "word_count": 283,
+        "unique_word_count": 265,
+        "unique_word_ratio": 0.9363957597173145,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1305,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 611,
+        "word_count": 106,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9905660377358491,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 418,
+        "word_count": 74,
+        "unique_word_count": 74,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 445,
+        "word_count": 81,
+        "unique_word_count": 81,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "aren",
+        "didn",
+        "did",
+        "He",
+        "are",
+        "weren",
+        "shall",
+        "does",
+        "We",
+        "couldn",
+        "cannot",
+        "C"
+      ],
+      "output_text": "As he read them out for some time — or months at most— they became more accurate than his own analysis; but with each passage you began to recognize which one was missing (for example if your character is so long it breaks off from their speech). Your tongue got stiffer before this first lesson! But there seemed no need again any longer for explanations about how LISPs work because what mattered remained constant when reading words aloud without using phrases such bylines ... just plain old letters typed over an arrow keystone like \"we're.\" The effect continued until now... When my friend sent me another",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: aren, didn, did, He, are, weren, shall, does, We, couldn, cannot, C\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: aren, didn, did, He, are, weren, shall, does, We, couldn, cannot, C\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. As he read them out for some time — or months at most— they became more accurate than his own analysis; but with each passage you began to recognize which one was missing (for example if your character is so long it breaks off from their speech). Your tongue got stiffer before this first lesson! But there seemed no need again any longer for explanations about how LISPs work because what mattered remained constant when reading words aloud without using phrases such bylines ... just plain old letters typed over an arrow keystone like \"we're.\" The effect continued until now... When my friend sent me another",
+        "continuation_text": "As he read them out for some time — or months at most— they became more accurate than his own analysis; but with each passage you began to recognize which one was missing (for example if your character is so long it breaks off from their speech). Your tongue got stiffer before this first lesson! But there seemed no need again any longer for explanations about how LISPs work because what mattered remained constant when reading words aloud without using phrases such bylines ... just plain old letters typed over an arrow keystone like \"we're.\" The effect continued until now... When my friend sent me another",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 228,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 611,
+        "word_count": 106,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9905660377358491,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "been",
+        "also",
+        "Also",
+        "As",
+        "tried",
+        "l",
+        "tl",
+        "At",
+        "led",
+        "brought",
+        "c",
+        "same"
+      ],
+      "output_text": "letter and I realized that all were wrong we had our second class assignment written on top of him : A LETTER TO HOPE FOR ME BOOKS FROM YOUR HOUSE OF ELLAS AND SISTER THE WRITERS' BED OVERSIGHT THAT HAS BEEN MISSING MY SIGNIFICANT PLEADER IN CHESUS OR MAJORITY ONCE COOKIES HAVE CONTAINTED FASCINATING THINGS YOU SHOULD WALK INTO ALL TIME PLEASE DON'T ACT LIKE THEY ARE GIVENS DIFFERENCELY PROBLY SOLVABLE BY THIS STUD",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: been, also, Also, As, tried, l, tl, At, led, brought, c, same\n\nTEXT:\nAs he read them out for some time — or months at most— they became more accurate than his own analysis; but with each passage you began to recognize which one was missing (for example if your character is so long it breaks off from their speech). Your tongue got stiffer before this first lesson! But there seemed no need again any longer for explanations about how LISPs work because what mattered remained constant when reading words aloud without using phrases such bylines ... just plain old letters typed over an arrow keystone like \"we're.\" The effect continued until now... When my friend sent me another",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: been, also, Also, As, tried, l, tl, At, led, brought, c, same\n\nTEXT:\nAs he read them out for some time — or months at most— they became more accurate than his own analysis; but with each passage you began to recognize which one was missing (for example if your character is so long it breaks off from their speech). Your tongue got stiffer before this first lesson! But there seemed no need again any longer for explanations about how LISPs work because what mattered remained constant when reading words aloud without using phrases such bylines ... just plain old letters typed over an arrow keystone like \"we're.\" The effect continued until now... When my friend sent me another letter and I realized that all were wrong we had our second class assignment written on top of him : A LETTER TO HOPE FOR ME BOOKS FROM YOUR HOUSE OF ELLAS AND SISTER THE WRITERS' BED OVERSIGHT THAT HAS BEEN MISSING MY SIGNIFICANT PLEADER IN CHESUS OR MAJORITY ONCE COOKIES HAVE CONTAINTED FASCINATING THINGS YOU SHOULD WALK INTO ALL TIME PLEASE DON'T ACT LIKE THEY ARE GIVENS DIFFERENCELY PROBLY SOLVABLE BY THIS STUD",
+        "continuation_text": "letter and I realized that all were wrong we had our second class assignment written on top of him : A LETTER TO HOPE FOR ME BOOKS FROM YOUR HOUSE OF ELLAS AND SISTER THE WRITERS' BED OVERSIGHT THAT HAS BEEN MISSING MY SIGNIFICANT PLEADER IN CHESUS OR MAJORITY ONCE COOKIES HAVE CONTAINTED FASCINATING THINGS YOU SHOULD WALK INTO ALL TIME PLEASE DON'T ACT LIKE THEY ARE GIVENS DIFFERENCELY PROBLY SOLVABLE BY THIS STUD",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 326,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 418,
+        "word_count": 74,
+        "unique_word_count": 74,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "letter",
+        "dayName",
+        "eligibility",
+        "mortgage",
+        "mortgages",
+        "eligible",
+        "securities",
+        "inning",
+        "Loan",
+        "channelAvailability",
+        "coupon",
+        "Mortgage"
+      ],
+      "output_text": "ENTS PERSONALIZATION (I understand you don't think so ;). So here is how it works for me - when your first line reads \"Thank You\" then take note what page has been selected by using CTRL + SHIFT+F10 with different words at one end or after they have clicked their link if applicable . If there was no click(s) within this paragraph please use ENTER instead! For more information go straight ahead into my FAQ about creating lists such things too",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: letter, dayName, eligibility, mortgage, mortgages, eligible, securities, inning, Loan, channelAvailability, coupon, Mortgage\n\nTEXT:\nletter and I realized that all were wrong we had our second class assignment written on top of him : A LETTER TO HOPE FOR ME BOOKS FROM YOUR HOUSE OF ELLAS AND SISTER THE WRITERS' BED OVERSIGHT THAT HAS BEEN MISSING MY SIGNIFICANT PLEADER IN CHESUS OR MAJORITY ONCE COOKIES HAVE CONTAINTED FASCINATING THINGS YOU SHOULD WALK INTO ALL TIME PLEASE DON'T ACT LIKE THEY ARE GIVENS DIFFERENCELY PROBLY SOLVABLE BY THIS STUD",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: letter, dayName, eligibility, mortgage, mortgages, eligible, securities, inning, Loan, channelAvailability, coupon, Mortgage\n\nTEXT:\nletter and I realized that all were wrong we had our second class assignment written on top of him : A LETTER TO HOPE FOR ME BOOKS FROM YOUR HOUSE OF ELLAS AND SISTER THE WRITERS' BED OVERSIGHT THAT HAS BEEN MISSING MY SIGNIFICANT PLEADER IN CHESUS OR MAJORITY ONCE COOKIES HAVE CONTAINTED FASCINATING THINGS YOU SHOULD WALK INTO ALL TIME PLEASE DON'T ACT LIKE THEY ARE GIVENS DIFFERENCELY PROBLY SOLVABLE BY THIS STUDENTS PERSONALIZATION (I understand you don't think so ;). So here is how it works for me - when your first line reads \"Thank You\" then take note what page has been selected by using CTRL + SHIFT+F10 with different words at one end or after they have clicked their link if applicable . If there was no click(s) within this paragraph please use ENTER instead! For more information go straight ahead into my FAQ about creating lists such things too\n\n",
+        "continuation_text": "ENTS PERSONALIZATION (I understand you don't think so ;). So here is how it works for me - when your first line reads \"Thank You\" then take note what page has been selected by using CTRL + SHIFT+F10 with different words at one end or after they have clicked their link if applicable . If there was no click(s) within this paragraph please use ENTER instead! For more information go straight ahead into my FAQ about creating lists such things too",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 307,
+        "new_token_count": 99,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 445,
+        "word_count": 81,
+        "unique_word_count": 81,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

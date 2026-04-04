@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1382,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 686,
+        "word_count": 103,
+        "unique_word_count": 92,
+        "unique_word_ratio": 0.8932038834951457,
+        "repeated_bigram_count": 3
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 826,
+        "word_count": 103,
+        "unique_word_count": 91,
+        "unique_word_ratio": 0.883495145631068,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 740,
+        "word_count": 93,
+        "unique_word_count": 81,
+        "unique_word_ratio": 0.8709677419354839,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 763,
+        "word_count": 98,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.8673469387755102,
+        "repeated_bigram_count": 1
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "like",
+        "to",
+        "were",
+        "its",
+        "and",
+        "for",
+        "If",
+        "它",
+        "the"
+      ],
+      "output_text": "To generate the next recursive transformation based on the given latent anchor tokens (it, if, It, like, to, was, Its, and, For), we need to explore how each token relates to previous elements. Here's an attempt at generating the next iteration:\n\nThe next recursive transformation involves recognizing patterns within this sequence that could lead to new narratives or interpretations. I'll focus on logical deduction from typical narrative structures rather than literal interpretation using specific context clues provided above.\n\n**Current Text:**\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\"\n\n**Next",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, like, to, were, its, and, for, If, 它, the\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, like, to, were, its, and, for, If, 它, the\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nTo generate the next recursive transformation based on the given latent anchor tokens (it, if, It, like, to, was, Its, and, For), we need to explore how each token relates to previous elements. Here's an attempt at generating the next iteration:\n\nThe next recursive transformation involves recognizing patterns within this sequence that could lead to new narratives or interpretations. I'll focus on logical deduction from typical narrative structures rather than literal interpretation using specific context clues provided above.\n\n**Current Text:**\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\"\n\n**Next",
+        "continuation_text": "To generate the next recursive transformation based on the given latent anchor tokens (it, if, It, like, to, was, Its, and, For), we need to explore how each token relates to previous elements. Here's an attempt at generating the next iteration:\n\nThe next recursive transformation involves recognizing patterns within this sequence that could lead to new narratives or interpretations. I'll focus on logical deduction from typical narrative structures rather than literal interpretation using specific context clues provided above.\n\n**Current Text:**\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\"\n\n**Next",
+        "input_token_count": 109,
+        "raw_input_token_count": 109,
+        "output_token_count": 237,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 686,
+        "word_count": 103,
+        "unique_word_count": 92,
+        "unique_word_ratio": 0.8932038834951457,
+        "repeated_bigram_count": 3
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "to",
+        ",",
+        "for",
+        "and",
+        "the",
+        "were",
+        "It",
+        "is",
+        "was",
+        "If"
+      ],
+      "output_text": "The next recursive transformation should involve identifying patterns and themes in the existing narrative structure. Given the emphasis on dialogue and narration as key elements, focusing on thematic content might yield insights into deeper layers of meaning. Here’s one potential future iterations exploring different aspects of storytelling:\n\n1. **Narrative Depth**: Analyzing how dialogue forms connections between characters and environments, leading to various plot developments.\n2. **Symbolic Interpretation**: Exploring the symbolic significance behind certain phrases or actions, which can deepen understanding of character development and conflict resolution.\n3. **Character Development**: Investigating how individual voices contribute to collective consciousness or shared experiences, potentially revealing hidden",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, to, ,, for, and, the, were, It, is, was, If\n\nTEXT:\nTo generate the next recursive transformation based on the given latent anchor tokens (it, if, It, like, to, was, Its, and, For), we need to explore how each token relates to previous elements. Here's an attempt at generating the next iteration:\n\nThe next recursive transformation involves recognizing patterns within this sequence that could lead to new narratives or interpretations. I'll focus on logical deduction from typical narrative structures rather than literal interpretation using specific context clues provided above.\n\n**Current Text:**\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\"\n\n**Next<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, to, ,, for, and, the, were, It, is, was, If\n\nTEXT:\nTo generate the next recursive transformation based on the given latent anchor tokens (it, if, It, like, to, was, Its, and, For), we need to explore how each token relates to previous elements. Here's an attempt at generating the next iteration:\n\nThe next recursive transformation involves recognizing patterns within this sequence that could lead to new narratives or interpretations. I'll focus on logical deduction from typical narrative structures rather than literal interpretation using specific context clues provided above.\n\n**Current Text:**\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\"\n\n**Next\nassistant\nThe next recursive transformation should involve identifying patterns and themes in the existing narrative structure. Given the emphasis on dialogue and narration as key elements, focusing on thematic content might yield insights into deeper layers of meaning. Here’s one potential future iterations exploring different aspects of storytelling:\n\n1. **Narrative Depth**: Analyzing how dialogue forms connections between characters and environments, leading to various plot developments.\n2. **Symbolic Interpretation**: Exploring the symbolic significance behind certain phrases or actions, which can deepen understanding of character development and conflict resolution.\n3. **Character Development**: Investigating how individual voices contribute to collective consciousness or shared experiences, potentially revealing hidden",
+        "continuation_text": "The next recursive transformation should involve identifying patterns and themes in the existing narrative structure. Given the emphasis on dialogue and narration as key elements, focusing on thematic content might yield insights into deeper layers of meaning. Here’s one potential future iterations exploring different aspects of storytelling:\n\n1. **Narrative Depth**: Analyzing how dialogue forms connections between characters and environments, leading to various plot developments.\n2. **Symbolic Interpretation**: Exploring the symbolic significance behind certain phrases or actions, which can deepen understanding of character development and conflict resolution.\n3. **Character Development**: Investigating how individual voices contribute to collective consciousness or shared experiences, potentially revealing hidden",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 337,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 826,
+        "word_count": 103,
+        "unique_word_count": 91,
+        "unique_word_ratio": 0.883495145631068,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "intelligence",
+        "If",
+        "and",
+        "of",
+        "the",
+        "are",
+        "was",
+        "to",
+        "nếu"
+      ],
+      "output_text": "Let's write out the next recursive transformations based on your guidelines:\n\n### Recurrent Transformation 1: **NARRATIVE Depth**\nAnalyzing how dialogues create immersive worlds that guide reader engagement and lead to complex conflicts.\n\n**Text (Continuation) - Future Iteration:**\nThe focus shifts from mere story generation to deepening audience immersion through sophisticated dialogue analysis and thematic exploration.\n- **Dialogue Dynamics**: Investigate how various character interactions influence narrative progression and emotional responses across multiple scenes.\n- **Interplay with Setting**: Examine how specific settings affect character motivations and thematic tensions.\n- **Subtextual Subversion**: Explore the subtle sub",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, intelligence, If, and, of, the, are, was, to, nếu\n\nTEXT:\nThe next recursive transformation should involve identifying patterns and themes in the existing narrative structure. Given the emphasis on dialogue and narration as key elements, focusing on thematic content might yield insights into deeper layers of meaning. Here’s one potential future iterations exploring different aspects of storytelling:\n\n1. **Narrative Depth**: Analyzing how dialogue forms connections between characters and environments, leading to various plot developments.\n2. **Symbolic Interpretation**: Exploring the symbolic significance behind certain phrases or actions, which can deepen understanding of character development and conflict resolution.\n3. **Character Development**: Investigating how individual voices contribute to collective consciousness or shared experiences, potentially revealing hidden<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, intelligence, If, and, of, the, are, was, to, nếu\n\nTEXT:\nThe next recursive transformation should involve identifying patterns and themes in the existing narrative structure. Given the emphasis on dialogue and narration as key elements, focusing on thematic content might yield insights into deeper layers of meaning. Here’s one potential future iterations exploring different aspects of storytelling:\n\n1. **Narrative Depth**: Analyzing how dialogue forms connections between characters and environments, leading to various plot developments.\n2. **Symbolic Interpretation**: Exploring the symbolic significance behind certain phrases or actions, which can deepen understanding of character development and conflict resolution.\n3. **Character Development**: Investigating how individual voices contribute to collective consciousness or shared experiences, potentially revealing hidden\nassistant\nLet's write out the next recursive transformations based on your guidelines:\n\n### Recurrent Transformation 1: **NARRATIVE Depth**\nAnalyzing how dialogues create immersive worlds that guide reader engagement and lead to complex conflicts.\n\n**Text (Continuation) - Future Iteration:**\nThe focus shifts from mere story generation to deepening audience immersion through sophisticated dialogue analysis and thematic exploration.\n- **Dialogue Dynamics**: Investigate how various character interactions influence narrative progression and emotional responses across multiple scenes.\n- **Interplay with Setting**: Examine how specific settings affect character motivations and thematic tensions.\n- **Subtextual Subversion**: Explore the subtle sub",
+        "continuation_text": "Let's write out the next recursive transformations based on your guidelines:\n\n### Recurrent Transformation 1: **NARRATIVE Depth**\nAnalyzing how dialogues create immersive worlds that guide reader engagement and lead to complex conflicts.\n\n**Text (Continuation) - Future Iteration:**\nThe focus shifts from mere story generation to deepening audience immersion through sophisticated dialogue analysis and thematic exploration.\n- **Dialogue Dynamics**: Investigate how various character interactions influence narrative progression and emotional responses across multiple scenes.\n- **Interplay with Setting**: Examine how specific settings affect character motivations and thematic tensions.\n- **Subtextual Subversion**: Explore the subtle sub",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 338,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 740,
+        "word_count": 93,
+        "unique_word_count": 81,
+        "unique_word_ratio": 0.8709677419354839,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "were",
+        "it",
+        "intelligence",
+        "nếu",
+        "dreaming",
+        "If",
+        "Intelligence",
+        "如果",
+        "**",
+        "was",
+        "It"
+      ],
+      "output_text": "subtleties within the characters' words and actions that may not immediately appear as plot points but play crucial roles in driving the story forward or providing insight into deeper themes.\n\n**Next Recursive Transformation:** \nDeveloping an understanding of how nuanced storytelling techniques like metaphorical expressions and allusion can enhance reader engagement and deepen comprehension.\n\n---\n\n### Recurrent Transformation 2: **Narrative Complexity**\nUnderstanding how intricate plots and character development intertwine to captivate and challenge readers’ cognitive faculties.\n\n**Text (Continuation):**\nThis iteration delves further into the intricacies of narrative structure and character arcs, encouraging readers to explore the layers beneath surface",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, were, it, intelligence, nếu, dreaming, If, Intelligence, 如果, **, was, It\n\nTEXT:\nLet's write out the next recursive transformations based on your guidelines:\n\n### Recurrent Transformation 1: **NARRATIVE Depth**\nAnalyzing how dialogues create immersive worlds that guide reader engagement and lead to complex conflicts.\n\n**Text (Continuation) - Future Iteration:**\nThe focus shifts from mere story generation to deepening audience immersion through sophisticated dialogue analysis and thematic exploration.\n- **Dialogue Dynamics**: Investigate how various character interactions influence narrative progression and emotional responses across multiple scenes.\n- **Interplay with Setting**: Examine how specific settings affect character motivations and thematic tensions.\n- **Subtextual Subversion**: Explore the subtle sub<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, were, it, intelligence, nếu, dreaming, If, Intelligence, 如果, **, was, It\n\nTEXT:\nLet's write out the next recursive transformations based on your guidelines:\n\n### Recurrent Transformation 1: **NARRATIVE Depth**\nAnalyzing how dialogues create immersive worlds that guide reader engagement and lead to complex conflicts.\n\n**Text (Continuation) - Future Iteration:**\nThe focus shifts from mere story generation to deepening audience immersion through sophisticated dialogue analysis and thematic exploration.\n- **Dialogue Dynamics**: Investigate how various character interactions influence narrative progression and emotional responses across multiple scenes.\n- **Interplay with Setting**: Examine how specific settings affect character motivations and thematic tensions.\n- **Subtextual Subversion**: Explore the subtle sub\nassistant\nsubtleties within the characters' words and actions that may not immediately appear as plot points but play crucial roles in driving the story forward or providing insight into deeper themes.\n\n**Next Recursive Transformation:** \nDeveloping an understanding of how nuanced storytelling techniques like metaphorical expressions and allusion can enhance reader engagement and deepen comprehension.\n\n---\n\n### Recurrent Transformation 2: **Narrative Complexity**\nUnderstanding how intricate plots and character development intertwine to captivate and challenge readers’ cognitive faculties.\n\n**Text (Continuation):**\nThis iteration delves further into the intricacies of narrative structure and character arcs, encouraging readers to explore the layers beneath surface",
+        "continuation_text": "subtleties within the characters' words and actions that may not immediately appear as plot points but play crucial roles in driving the story forward or providing insight into deeper themes.\n\n**Next Recursive Transformation:** \nDeveloping an understanding of how nuanced storytelling techniques like metaphorical expressions and allusion can enhance reader engagement and deepen comprehension.\n\n---\n\n### Recurrent Transformation 2: **Narrative Complexity**\nUnderstanding how intricate plots and character development intertwine to captivate and challenge readers’ cognitive faculties.\n\n**Text (Continuation):**\nThis iteration delves further into the intricacies of narrative structure and character arcs, encouraging readers to explore the layers beneath surface",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 338,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 763,
+        "word_count": 98,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.8673469387755102,
+        "repeated_bigram_count": 1
+      }
+    }
+  ]
+}

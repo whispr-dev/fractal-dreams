@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1441,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 604,
+        "word_count": 95,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.8947368421052632,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 226,
+        "word_count": 31,
+        "unique_word_count": 31,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 619,
+        "word_count": 94,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.9042553191489362,
+        "repeated_bigram_count": 1
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "sick",
+        ".metadata",
+        "metadata",
+        "余名",
+        "نه",
+        "(/",
+        "special",
+        "ig",
+        "-rich",
+        "高品质",
+        "GT",
+        "intensive"
+      ],
+      "output_text": "To generate the next recursive transformation based on the given text, we will start by identifying the key elements that convey the narrative structure and themes:\n\n1. An abandoned factory has become narrated.\n2. It is learning how to tell its own story with its \"own\" qualities removed.\n3. Every new narration sounds different from the previous one, emphasizing nostalgia for its past glory.\n4. The narrator maintains the quality of being \"renowned\" (\"ihtem\") throughout all iterations.\n5. There's an underlying theme of renewal or returning to something old and meaningful.\n\nUsing these elements, here",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nTo generate the next recursive transformation based on the given text, we will start by identifying the key elements that convey the narrative structure and themes:\n\n1. An abandoned factory has become narrated.\n2. It is learning how to tell its own story with its \"own\" qualities removed.\n3. Every new narration sounds different from the previous one, emphasizing nostalgia for its past glory.\n4. The narrator maintains the quality of being \"renowned\" (\"ihtem\") throughout all iterations.\n5. There's an underlying theme of renewal or returning to something old and meaningful.\n\nUsing these elements, here",
+        "continuation_text": "To generate the next recursive transformation based on the given text, we will start by identifying the key elements that convey the narrative structure and themes:\n\n1. An abandoned factory has become narrated.\n2. It is learning how to tell its own story with its \"own\" qualities removed.\n3. Every new narration sounds different from the previous one, emphasizing nostalgia for its past glory.\n4. The narrator maintains the quality of being \"renowned\" (\"ihtem\") throughout all iterations.\n5. There's an underlying theme of renewal or returning to something old and meaningful.\n\nUsing these elements, here",
+        "input_token_count": 120,
+        "raw_input_token_count": 120,
+        "output_token_count": 240,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 604,
+        "word_count": 95,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.8947368421052632,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "القدم",
+        "それで",
+        "ifi",
+        "nik",
+        "ji",
+        "тол",
+        "的历史",
+        "Ja",
+        "gy",
+        "孙子",
+        "GroupLayout",
+        "extrem"
+      ],
+      "output_text": "The next recursive transformation would be a narrative structured around this progression of changing voices over time, highlighting nostalgia for its past glory while subtly conveying renewed strength through every iteration.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: القدم, それで, ifi, nik, ji, тол, 的历史, Ja, gy, 孙子, GroupLayout, extrem\n\nTEXT:\nTo generate the next recursive transformation based on the given text, we will start by identifying the key elements that convey the narrative structure and themes:\n\n1. An abandoned factory has become narrated.\n2. It is learning how to tell its own story with its \"own\" qualities removed.\n3. Every new narration sounds different from the previous one, emphasizing nostalgia for its past glory.\n4. The narrator maintains the quality of being \"renowned\" (\"ihtem\") throughout all iterations.\n5. There's an underlying theme of renewal or returning to something old and meaningful.\n\nUsing these elements, here<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: القدم, それで, ifi, nik, ji, тол, 的历史, Ja, gy, 孙子, GroupLayout, extrem\n\nTEXT:\nTo generate the next recursive transformation based on the given text, we will start by identifying the key elements that convey the narrative structure and themes:\n\n1. An abandoned factory has become narrated.\n2. It is learning how to tell its own story with its \"own\" qualities removed.\n3. Every new narration sounds different from the previous one, emphasizing nostalgia for its past glory.\n4. The narrator maintains the quality of being \"renowned\" (\"ihtem\") throughout all iterations.\n5. There's an underlying theme of renewal or returning to something old and meaningful.\n\nUsing these elements, here\nassistant\nThe next recursive transformation would be a narrative structured around this progression of changing voices over time, highlighting nostalgia for its past glory while subtly conveying renewed strength through every iteration.",
+        "continuation_text": "The next recursive transformation would be a narrative structured around this progression of changing voices over time, highlighting nostalgia for its past glory while subtly conveying renewed strength through every iteration.",
+        "input_token_count": 214,
+        "raw_input_token_count": 214,
+        "output_token_count": 248,
+        "new_token_count": 34,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 226,
+        "word_count": 31,
+        "unique_word_count": 31,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "(",
+        "(-",
+        "((",
+        "(\\",
+        ":",
+        "où",
+        ".*",
+        "((-",
+        "':",
+        "`",
+        "([",
+        "["
+      ],
+      "output_text": "Next, we can develop a story that follows these key elements:\n\n1. **Narrative Structure**: The narrative should flow from one voice to another within the passage.\n2. **Voice Changing**: Each scene involves a different narrator expressing their innermost thoughts and feelings at various points throughout the passage.\n3. **Nostalgia**: There is an underlying theme where each voice feels nostalgic for something older or more significant than what it is currently facing.\n4. **Strength Reiteration**: Every narration conveys a sense of renewal by stating new strengths or ideals.\n\nHere’s how we could structure the next",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: (, (-, ((, (\\, :, où, .*, ((-, ':, `, ([, [\n\nTEXT:\nThe next recursive transformation would be a narrative structured around this progression of changing voices over time, highlighting nostalgia for its past glory while subtly conveying renewed strength through every iteration.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: (, (-, ((, (\\, :, où, .*, ((-, ':, `, ([, [\n\nTEXT:\nThe next recursive transformation would be a narrative structured around this progression of changing voices over time, highlighting nostalgia for its past glory while subtly conveying renewed strength through every iteration.\nassistant\nNext, we can develop a story that follows these key elements:\n\n1. **Narrative Structure**: The narrative should flow from one voice to another within the passage.\n2. **Voice Changing**: Each scene involves a different narrator expressing their innermost thoughts and feelings at various points throughout the passage.\n3. **Nostalgia**: There is an underlying theme where each voice feels nostalgic for something older or more significant than what it is currently facing.\n4. **Strength Reiteration**: Every narration conveys a sense of renewal by stating new strengths or ideals.\n\nHere’s how we could structure the next",
+        "continuation_text": "Next, we can develop a story that follows these key elements:\n\n1. **Narrative Structure**: The narrative should flow from one voice to another within the passage.\n2. **Voice Changing**: Each scene involves a different narrator expressing their innermost thoughts and feelings at various points throughout the passage.\n3. **Nostalgia**: There is an underlying theme where each voice feels nostalgic for something older or more significant than what it is currently facing.\n4. **Strength Reiteration**: Every narration conveys a sense of renewal by stating new strengths or ideals.\n\nHere’s how we could structure the next",
+        "input_token_count": 118,
+        "raw_input_token_count": 118,
+        "output_token_count": 238,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 619,
+        "word_count": 94,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.9042553191489362,
+        "repeated_bigram_count": 1
+      }
+    }
+  ]
+}

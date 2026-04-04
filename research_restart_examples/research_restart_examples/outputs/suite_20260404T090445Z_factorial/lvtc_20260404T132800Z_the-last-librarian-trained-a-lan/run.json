@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1358,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 676,
+        "word_count": 103,
+        "unique_word_count": 88,
+        "unique_word_ratio": 0.8543689320388349,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 104,
+        "word_count": 14,
+        "unique_word_count": 14,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 645,
+        "word_count": 91,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.8791208791208791,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 623,
+        "word_count": 79,
+        "unique_word_count": 72,
+        "unique_word_ratio": 0.9113924050632911,
+        "repeated_bigram_count": 1
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "if",
+        "was",
+        "its",
+        "the",
+        "are",
+        "that",
+        "a",
+        "It",
+        "intelligence",
+        "If"
+      ],
+      "output_text": "Sure, I'll help you with the following text:\n\n\"Among other things,\" they said, \"the library's assistant had been trained to read literary works without notes.\"\n\nNext, we will transform this into an English sentence using Latent Semantic Analysis (LSA) as our base. LSA aims at understanding the underlying themes or topics present in large collections of texts. \n\nOriginal Text:  \n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\"\n\nTo transform it into a coherent English sentence with a Latent Semantic Approach:\n\n\"The final AI expert designed a system capable of interpreting linguistic nuances",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\nSure, I'll help you with the following text:\n\n\"Among other things,\" they said, \"the library's assistant had been trained to read literary works without notes.\"\n\nNext, we will transform this into an English sentence using Latent Semantic Analysis (LSA) as our base. LSA aims at understanding the underlying themes or topics present in large collections of texts. \n\nOriginal Text:  \n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\"\n\nTo transform it into a coherent English sentence with a Latent Semantic Approach:\n\n\"The final AI expert designed a system capable of interpreting linguistic nuances",
+        "continuation_text": "Sure, I'll help you with the following text:\n\n\"Among other things,\" they said, \"the library's assistant had been trained to read literary works without notes.\"\n\nNext, we will transform this into an English sentence using Latent Semantic Analysis (LSA) as our base. LSA aims at understanding the underlying themes or topics present in large collections of texts. \n\nOriginal Text:  \n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\"\n\nTo transform it into a coherent English sentence with a Latent Semantic Approach:\n\n\"The final AI expert designed a system capable of interpreting linguistic nuances",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 232,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 676,
+        "word_count": 103,
+        "unique_word_count": 88,
+        "unique_word_ratio": 0.8543689320388349,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "the",
+        "was",
+        "are",
+        "It",
+        "to",
+        "is",
+        "If",
+        "a",
+        "that"
+      ],
+      "output_text": "The final AI expert created a sophisticated software tool dedicated to deciphering nuanced expressions.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, the, was, are, It, to, is, If, a, that\n\nTEXT:\nSure, I'll help you with the following text:\n\n\"Among other things,\" they said, \"the library's assistant had been trained to read literary works without notes.\"\n\nNext, we will transform this into an English sentence using Latent Semantic Analysis (LSA) as our base. LSA aims at understanding the underlying themes or topics present in large collections of texts. \n\nOriginal Text:  \n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\"\n\nTo transform it into a coherent English sentence with a Latent Semantic Approach:\n\n\"The final AI expert designed a system capable of interpreting linguistic nuances<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, the, was, are, It, to, is, If, a, that\n\nTEXT:\nSure, I'll help you with the following text:\n\n\"Among other things,\" they said, \"the library's assistant had been trained to read literary works without notes.\"\n\nNext, we will transform this into an English sentence using Latent Semantic Analysis (LSA) as our base. LSA aims at understanding the underlying themes or topics present in large collections of texts. \n\nOriginal Text:  \n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\"\n\nTo transform it into a coherent English sentence with a Latent Semantic Approach:\n\n\"The final AI expert designed a system capable of interpreting linguistic nuances\nassistant\nThe final AI expert created a sophisticated software tool dedicated to deciphering nuanced expressions.\"",
+        "continuation_text": "The final AI expert created a sophisticated software tool dedicated to deciphering nuanced expressions.\"",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 227,
+        "new_token_count": 17,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 104,
+        "word_count": 14,
+        "unique_word_count": 14,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "intelligence",
+        "sophisticated",
+        "software",
+        "Intelligence",
+        "it",
+        "expert",
+        "if",
+        "were",
+        "软件",
+        "specialized",
+        "nuanced",
+        "intricate"
+      ],
+      "output_text": "To generate the next recursive transformation based on the provided latents (intelligence, specialized, nuanced, sophisticated), let's break down each step and see how we can derive the most meaningful information:\n\n### Initial Text:\n- **Subject:** The final AI expert created.\n- **Verb:** created.\n- **Object:** a sophisticated software tool.\n- **Description:** specialized, nuanced, intricate, deciphered, expressing.\n\n### Next Steps:\n1. Analyze the verb \"created\" which is more about an action than just a state or description.\n2. Identify any additional descriptive elements that could relate to complexity, expertise, sophistication, etc.\n3",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: intelligence, sophisticated, software, Intelligence, it, expert, if, were, 软件, specialized, nuanced, intricate\n\nTEXT:\nThe final AI expert created a sophisticated software tool dedicated to deciphering nuanced expressions.\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: intelligence, sophisticated, software, Intelligence, it, expert, if, were, 软件, specialized, nuanced, intricate\n\nTEXT:\nThe final AI expert created a sophisticated software tool dedicated to deciphering nuanced expressions.\"\nassistant\nTo generate the next recursive transformation based on the provided latents (intelligence, specialized, nuanced, sophisticated), let's break down each step and see how we can derive the most meaningful information:\n\n### Initial Text:\n- **Subject:** The final AI expert created.\n- **Verb:** created.\n- **Object:** a sophisticated software tool.\n- **Description:** specialized, nuanced, intricate, deciphered, expressing.\n\n### Next Steps:\n1. Analyze the verb \"created\" which is more about an action than just a state or description.\n2. Identify any additional descriptive elements that could relate to complexity, expertise, sophistication, etc.\n3",
+        "continuation_text": "To generate the next recursive transformation based on the provided latents (intelligence, specialized, nuanced, sophisticated), let's break down each step and see how we can derive the most meaningful information:\n\n### Initial Text:\n- **Subject:** The final AI expert created.\n- **Verb:** created.\n- **Object:** a sophisticated software tool.\n- **Description:** specialized, nuanced, intricate, deciphered, expressing.\n\n### Next Steps:\n1. Analyze the verb \"created\" which is more about an action than just a state or description.\n2. Identify any additional descriptive elements that could relate to complexity, expertise, sophistication, etc.\n3",
+        "input_token_count": 101,
+        "raw_input_token_count": 101,
+        "output_token_count": 229,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 645,
+        "word_count": 91,
+        "unique_word_count": 80,
+        "unique_word_ratio": 0.8791208791208791,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        ",",
+        "if",
+        "it",
+        ".",
+        "and",
+        "(",
+        "to",
+        "the",
+        ":",
+        "is",
+        "for",
+        "-"
+      ],
+      "output_text": "The following recursive transformations can further refine your understanding and interpretation while maintaining contextual relevance:\n\n1. **Initial Transformation:**\n   - From \"[AI] created,\" extract the subject (\"[AI]\") + [verb], which results in \"[A] created.\"\n   \n2. **Subsequent Transitions:**\n   - For \"[A] created\" with [subject], find out what happens after creation, e.g., \"experienced complex solutions.\"\n     - Transform this into \"Complex solutions experienced.\"\n\n3. **Third Transformation:**\n   - Now consider the entire process leading up to creation, starting from \"[A]\" creating \"[software tool].\" Further",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: ,, if, it, ., and, (, to, the, :, is, for, -\n\nTEXT:\nTo generate the next recursive transformation based on the provided latents (intelligence, specialized, nuanced, sophisticated), let's break down each step and see how we can derive the most meaningful information:\n\n### Initial Text:\n- **Subject:** The final AI expert created.\n- **Verb:** created.\n- **Object:** a sophisticated software tool.\n- **Description:** specialized, nuanced, intricate, deciphered, expressing.\n\n### Next Steps:\n1. Analyze the verb \"created\" which is more about an action than just a state or description.\n2. Identify any additional descriptive elements that could relate to complexity, expertise, sophistication, etc.\n3<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: ,, if, it, ., and, (, to, the, :, is, for, -\n\nTEXT:\nTo generate the next recursive transformation based on the provided latents (intelligence, specialized, nuanced, sophisticated), let's break down each step and see how we can derive the most meaningful information:\n\n### Initial Text:\n- **Subject:** The final AI expert created.\n- **Verb:** created.\n- **Object:** a sophisticated software tool.\n- **Description:** specialized, nuanced, intricate, deciphered, expressing.\n\n### Next Steps:\n1. Analyze the verb \"created\" which is more about an action than just a state or description.\n2. Identify any additional descriptive elements that could relate to complexity, expertise, sophistication, etc.\n3\nassistant\nThe following recursive transformations can further refine your understanding and interpretation while maintaining contextual relevance:\n\n1. **Initial Transformation:**\n   - From \"[AI] created,\" extract the subject (\"[AI]\") + [verb], which results in \"[A] created.\"\n   \n2. **Subsequent Transitions:**\n   - For \"[A] created\" with [subject], find out what happens after creation, e.g., \"experienced complex solutions.\"\n     - Transform this into \"Complex solutions experienced.\"\n\n3. **Third Transformation:**\n   - Now consider the entire process leading up to creation, starting from \"[A]\" creating \"[software tool].\" Further",
+        "continuation_text": "The following recursive transformations can further refine your understanding and interpretation while maintaining contextual relevance:\n\n1. **Initial Transformation:**\n   - From \"[AI] created,\" extract the subject (\"[AI]\") + [verb], which results in \"[A] created.\"\n   \n2. **Subsequent Transitions:**\n   - For \"[A] created\" with [subject], find out what happens after creation, e.g., \"experienced complex solutions.\"\n     - Transform this into \"Complex solutions experienced.\"\n\n3. **Third Transformation:**\n   - Now consider the entire process leading up to creation, starting from \"[A]\" creating \"[software tool].\" Further",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 623,
+        "word_count": 79,
+        "unique_word_count": 72,
+        "unique_word_ratio": 0.9113924050632911,
+        "repeated_bigram_count": 1
+      }
+    }
+  ]
+}

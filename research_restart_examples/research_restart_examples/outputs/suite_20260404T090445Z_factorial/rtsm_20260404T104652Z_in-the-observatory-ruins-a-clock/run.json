@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1140
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 620,
+        "word_count": 102,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.8823529411764706,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1139,
+        "word_count": 181,
+        "unique_word_count": 154,
+        "unique_word_ratio": 0.850828729281768,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1216,
+        "word_count": 192,
+        "unique_word_count": 162,
+        "unique_word_ratio": 0.84375,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1726,
+        "word_count": 271,
+        "unique_word_count": 223,
+        "unique_word_ratio": 0.8228782287822878,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2236,
+        "word_count": 349,
+        "unique_word_count": 276,
+        "unique_word_ratio": 0.7908309455587392,
+        "repeated_bigram_count": 3
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nThe clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging",
+        "continuation_text": "The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging",
+        "input_token_count": 68,
+        "raw_input_token_count": 68,
+        "output_token_count": 164,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 620,
+        "word_count": 102,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.8823529411764706,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging\nassistant\nout of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these",
+        "continuation_text": "out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these",
+        "input_token_count": 164,
+        "raw_input_token_count": 164,
+        "output_token_count": 260,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1139,
+        "word_count": 181,
+        "unique_word_count": 154,
+        "unique_word_ratio": 0.850828729281768,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "visions fade away, replaced by a shadowy outline stretching towards nowhere.",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these visions fade away, replaced by a shadowy outline stretching towards nowhere.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these\nassistant\nvisions fade away, replaced by a shadowy outline stretching towards nowhere.",
+        "continuation_text": "visions fade away, replaced by a shadowy outline stretching towards nowhere.",
+        "input_token_count": 260,
+        "raw_input_token_count": 260,
+        "output_token_count": 275,
+        "new_token_count": 15,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1216,
+        "word_count": 192,
+        "unique_word_count": 162,
+        "unique_word_ratio": 0.84375,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these visions fade away, replaced by a shadowy outline stretching towards nowhere.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "... And yet amidst the chaos emerged new perspectives; a beacon leading toward unknown territories where ancient myths whispered, \"Remember!\" The city towers stood high above, their spires reaching up to touch the stars above. On one side, there were ancient temples dedicated to the gods, their columns bearing witness to sacrifices centuries ago. Beneath the towers, vast spaces stretched out wide, empty but alive with energy and promise.\nThe observer's gaze wandered further, his eyes catching glimpses of",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these visions fade away, replaced by a shadowy outline stretching towards nowhere. ... And yet amidst the chaos emerged new perspectives; a beacon leading toward unknown territories where ancient myths whispered, \"Remember!\" The city towers stood high above, their spires reaching up to touch the stars above. On one side, there were ancient temples dedicated to the gods, their columns bearing witness to sacrifices centuries ago. Beneath the towers, vast spaces stretched out wide, empty but alive with energy and promise.\nThe observer's gaze wandered further, his eyes catching glimpses of",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these visions fade away, replaced by a shadowy outline stretching towards nowhere.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these visions fade away, replaced by a shadowy outline stretching towards nowhere.\nassistant\n... And yet amidst the chaos emerged new perspectives; a beacon leading toward unknown territories where ancient myths whispered, \"Remember!\" The city towers stood high above, their spires reaching up to touch the stars above. On one side, there were ancient temples dedicated to the gods, their columns bearing witness to sacrifices centuries ago. Beneath the towers, vast spaces stretched out wide, empty but alive with energy and promise.\nThe observer's gaze wandered further, his eyes catching glimpses of",
+        "continuation_text": "... And yet amidst the chaos emerged new perspectives; a beacon leading toward unknown territories where ancient myths whispered, \"Remember!\" The city towers stood high above, their spires reaching up to touch the stars above. On one side, there were ancient temples dedicated to the gods, their columns bearing witness to sacrifices centuries ago. Beneath the towers, vast spaces stretched out wide, empty but alive with energy and promise.\nThe observer's gaze wandered further, his eyes catching glimpses of",
+        "input_token_count": 274,
+        "raw_input_token_count": 274,
+        "output_token_count": 370,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1726,
+        "word_count": 271,
+        "unique_word_count": 223,
+        "unique_word_ratio": 0.8228782287822878,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these visions fade away, replaced by a shadowy outline stretching towards nowhere. ... And yet amidst the chaos emerged new perspectives; a beacon leading toward unknown territories where ancient myths whispered, \"Remember!\" The city towers stood high above, their spires reaching up to touch the stars above. On one side, there were ancient temples dedicated to the gods, their columns bearing witness to sacrifices centuries ago. Beneath the towers, vast spaces stretched out wide, empty but alive with energy and promise.\nThe observer's gaze wandered further, his eyes catching glimpses of<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "another battlefield or battlefront across the distance, where remnants of ancient wars lingered in their wake. He felt an inexplicable tension building within him, drawing him closer to these distant horizons filled with horror and mystery. The earth was beginning to shake beneath his feet as he gazed upon the darkening heavens, knowing full well that tonight's cataclysm would be followed by something equally terrible. The wind picked up outside, carrying the faint whispers of ancient forebodings echoing",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these visions fade away, replaced by a shadowy outline stretching towards nowhere. ... And yet amidst the chaos emerged new perspectives; a beacon leading toward unknown territories where ancient myths whispered, \"Remember!\" The city towers stood high above, their spires reaching up to touch the stars above. On one side, there were ancient temples dedicated to the gods, their columns bearing witness to sacrifices centuries ago. Beneath the towers, vast spaces stretched out wide, empty but alive with energy and promise.\nThe observer's gaze wandered further, his eyes catching glimpses of another battlefield or battlefront across the distance, where remnants of ancient wars lingered in their wake. He felt an inexplicable tension building within him, drawing him closer to these distant horizons filled with horror and mystery. The earth was beginning to shake beneath his feet as he gazed upon the darkening heavens, knowing full well that tonight's cataclysm would be followed by something equally terrible. The wind picked up outside, carrying the faint whispers of ancient forebodings echoing",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these visions fade away, replaced by a shadowy outline stretching towards nowhere. ... And yet amidst the chaos emerged new perspectives; a beacon leading toward unknown territories where ancient myths whispered, \"Remember!\" The city towers stood high above, their spires reaching up to touch the stars above. On one side, there were ancient temples dedicated to the gods, their columns bearing witness to sacrifices centuries ago. Beneath the towers, vast spaces stretched out wide, empty but alive with energy and promise.\nThe observer's gaze wandered further, his eyes catching glimpses of<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The clockwork map's movements were frantic, its gears making creaking sounds of impending doom that shook even the stone walls. It circled the sky with no end view, mapping out every change in weather conditions or astronomical events for all eternity. With each pass through this mesmerizing instrument, it seemed to whisper tales of untold horrors waiting just beyond its horizon.\nAs night deepened, the map began to draw increasingly vivid shapes on the horizon - swirling meteors emerging out of cosmic constellations into the stillness before them. It depicted scenes of ancient battles between gods and giants, cities destroyed by firestorms, and ships trapped under desolate sea cliffs. These vivid and graphic visions stirred memories of war zones from millennia past, painting the scene with haunting detail and terrifying intensity. But what lay ahead remained an unspoken dread, for at any moment they could disappear without warning, like smoke rising over dead firesuits. The watchman watched these visions fade away, replaced by a shadowy outline stretching towards nowhere. ... And yet amidst the chaos emerged new perspectives; a beacon leading toward unknown territories where ancient myths whispered, \"Remember!\" The city towers stood high above, their spires reaching up to touch the stars above. On one side, there were ancient temples dedicated to the gods, their columns bearing witness to sacrifices centuries ago. Beneath the towers, vast spaces stretched out wide, empty but alive with energy and promise.\nThe observer's gaze wandered further, his eyes catching glimpses of\nassistant\nanother battlefield or battlefront across the distance, where remnants of ancient wars lingered in their wake. He felt an inexplicable tension building within him, drawing him closer to these distant horizons filled with horror and mystery. The earth was beginning to shake beneath his feet as he gazed upon the darkening heavens, knowing full well that tonight's cataclysm would be followed by something equally terrible. The wind picked up outside, carrying the faint whispers of ancient forebodings echoing",
+        "continuation_text": "another battlefield or battlefront across the distance, where remnants of ancient wars lingered in their wake. He felt an inexplicable tension building within him, drawing him closer to these distant horizons filled with horror and mystery. The earth was beginning to shake beneath his feet as he gazed upon the darkening heavens, knowing full well that tonight's cataclysm would be followed by something equally terrible. The wind picked up outside, carrying the faint whispers of ancient forebodings echoing",
+        "input_token_count": 370,
+        "raw_input_token_count": 370,
+        "output_token_count": 466,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2236,
+        "word_count": 349,
+        "unique_word_count": 276,
+        "unique_word_ratio": 0.7908309455587392,
+        "repeated_bigram_count": 3
+      }
+    }
+  ]
+}

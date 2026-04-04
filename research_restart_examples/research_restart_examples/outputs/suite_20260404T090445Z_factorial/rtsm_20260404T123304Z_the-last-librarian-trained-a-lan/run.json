@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1276
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 221,
+        "word_count": 35,
+        "unique_word_count": 34,
+        "unique_word_ratio": 0.9714285714285714,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 370,
+        "word_count": 57,
+        "unique_word_count": 56,
+        "unique_word_ratio": 0.9824561403508771,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 894,
+        "word_count": 136,
+        "unique_word_count": 74,
+        "unique_word_ratio": 0.5441176470588235,
+        "repeated_bigram_count": 57
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1942,
+        "word_count": 294,
+        "unique_word_count": 74,
+        "unique_word_ratio": 0.25170068027210885,
+        "repeated_bigram_count": 215
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2442,
+        "word_count": 372,
+        "unique_word_count": 145,
+        "unique_word_ratio": 0.3897849462365591,
+        "repeated_bigram_count": 215
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+      "delta_text": "(This study is now available online.) It can be downloaded from our website at www .rlswp.org",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org",
+        "continuation_text": "(This study is now available online.) It can be downloaded from our website at www .rlswp.org",
+        "input_token_count": 57,
+        "raw_input_token_count": 57,
+        "output_token_count": 82,
+        "new_token_count": 25,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 221,
+        "word_count": 35,
+        "unique_word_count": 34,
+        "unique_word_ratio": 0.9714285714285714,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org",
+      "delta_text": "or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+        "continuation_text": "or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+        "input_token_count": 80,
+        "raw_input_token_count": 80,
+        "output_token_count": 106,
+        "new_token_count": 26,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 370,
+        "word_count": 57,
+        "unique_word_count": 56,
+        "unique_word_ratio": 0.9824561403508771,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+        "continuation_text": "",
+        "input_token_count": 105,
+        "raw_input_token_count": 105,
+        "output_token_count": 106,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 894,
+        "word_count": 136,
+        "unique_word_count": 74,
+        "unique_word_ratio": 0.5441176470588235,
+        "repeated_bigram_count": 57
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+        "continuation_text": "",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 211,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1942,
+        "word_count": 294,
+        "unique_word_count": 74,
+        "unique_word_ratio": 0.25170068027210885,
+        "repeated_bigram_count": 215
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+      "delta_text": "We encourage any interested parties to contact us as we become more familiar with this subject.\nContinue just here to see why many people have decided to avoid commenting because it allows them an interesting learning experience through one another. Please make sure they share information related primarily by sharing their opinion using either Google+ or Facebook but do not want users to spam other comments about similar topics across different languages due to privacy concerns mentioned above.",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. We encourage any interested parties to contact us as we become more familiar with this subject.\nContinue just here to see why many people have decided to avoid commenting because it allows them an interesting learning experience through one another. Please make sure they share information related primarily by sharing their opinion using either Google+ or Facebook but do not want users to spam other comments about similar topics across different languages due to privacy concerns mentioned above.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. (This study is now available online.) It can be downloaded from our website at www .rlswp.org or you will receive free downloadable versions of both software under Creative Commons Attribution 2, 3rd party attribution for all rights reserved. We encourage any interested parties to contact us as we become more familiar with this subject.\nContinue just here to see why many people have decided to avoid commenting because it allows them an interesting learning experience through one another. Please make sure they share information related primarily by sharing their opinion using either Google+ or Facebook but do not want users to spam other comments about similar topics across different languages due to privacy concerns mentioned above.",
+        "continuation_text": "We encourage any interested parties to contact us as we become more familiar with this subject.\nContinue just here to see why many people have decided to avoid commenting because it allows them an interesting learning experience through one another. Please make sure they share information related primarily by sharing their opinion using either Google+ or Facebook but do not want users to spam other comments about similar topics across different languages due to privacy concerns mentioned above.",
+        "input_token_count": 420,
+        "raw_input_token_count": 420,
+        "output_token_count": 504,
+        "new_token_count": 84,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2442,
+        "word_count": 372,
+        "unique_word_count": 145,
+        "unique_word_ratio": 0.3897849462365591,
+        "repeated_bigram_count": 215
+      }
+    }
+  ]
+}

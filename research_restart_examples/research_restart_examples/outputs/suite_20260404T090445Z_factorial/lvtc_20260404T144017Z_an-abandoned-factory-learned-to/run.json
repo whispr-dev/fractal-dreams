@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1458,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 585,
+        "word_count": 108,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.9814814814814815,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 506,
+        "word_count": 84,
+        "unique_word_count": 83,
+        "unique_word_ratio": 0.9880952380952381,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 563,
+        "word_count": 99,
+        "unique_word_count": 98,
+        "unique_word_ratio": 0.98989898989899,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 869,
+        "word_count": 147,
+        "unique_word_count": 142,
+        "unique_word_ratio": 0.9659863945578231,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "had",
+        "are",
+        "have",
+        "It",
+        "make",
+        "if",
+        "made",
+        "was",
+        "to",
+        "makes"
+      ],
+      "output_text": "For each sentence I read this description (as you know), or one with some sort of script written on an open string as input into your current state through another window when they happen. These two sentences form part of the same vocabulary that describes what happened at last time; for example, A = [0] - The first line is set \"A\" + V(1); after 2 we get rid of all negative characters from our previous grammar block until those spaces break down . If there exists no such thing then let's say how much difference will occur between C=C+V[3]. This means only about 3 bits per second",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, had, are, have, It, make, if, made, was, to, makes\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. For each sentence I read this description (as you know), or one with some sort of script written on an open string as input into your current state through another window when they happen. These two sentences form part of the same vocabulary that describes what happened at last time; for example, A = [0] - The first line is set \"A\" + V(1); after 2 we get rid of all negative characters from our previous grammar block until those spaces break down . If there exists no such thing then let's say how much difference will occur between C=C+V[3]. This means only about 3 bits per second",
+        "continuation_text": "For each sentence I read this description (as you know), or one with some sort of script written on an open string as input into your current state through another window when they happen. These two sentences form part of the same vocabulary that describes what happened at last time; for example, A = [0] - The first line is set \"A\" + V(1); after 2 we get rid of all negative characters from our previous grammar block until those spaces break down . If there exists no such thing then let's say how much difference will occur between C=C+V[3]. This means only about 3 bits per second",
+        "input_token_count": 105,
+        "raw_input_token_count": 105,
+        "output_token_count": 233,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 585,
+        "word_count": 108,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.9814814814814815,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "is",
+        "have",
+        "in",
+        "the",
+        "had",
+        "was",
+        "If",
+        "they"
+      ],
+      "output_text": "can change within 1 hour and nothing beyond 0 points increases any amount over 10 seconds before 4 hours go away.. It doesn't make sense to write something like... just copy every bit because its always working! Also don't ever use anything else instead!! There must also exist certain parameters which give us extra values during processing so please remember not to leave them behind!!! Then take care NOT even thinking twice again ! Remember my codebase could still evolve under different conditions :-)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, is, have, in, the, had, was, If, they\n\nTEXT:\nFor each sentence I read this description (as you know), or one with some sort of script written on an open string as input into your current state through another window when they happen. These two sentences form part of the same vocabulary that describes what happened at last time; for example, A = [0] - The first line is set \"A\" + V(1); after 2 we get rid of all negative characters from our previous grammar block until those spaces break down . If there exists no such thing then let's say how much difference will occur between C=C+V[3]. This means only about 3 bits per second",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, is, have, in, the, had, was, If, they\n\nTEXT:\nFor each sentence I read this description (as you know), or one with some sort of script written on an open string as input into your current state through another window when they happen. These two sentences form part of the same vocabulary that describes what happened at last time; for example, A = [0] - The first line is set \"A\" + V(1); after 2 we get rid of all negative characters from our previous grammar block until those spaces break down . If there exists no such thing then let's say how much difference will occur between C=C+V[3]. This means only about 3 bits per second can change within 1 hour and nothing beyond 0 points increases any amount over 10 seconds before 4 hours go away.. It doesn't make sense to write something like... just copy every bit because its always working! Also don't ever use anything else instead!! There must also exist certain parameters which give us extra values during processing so please remember not to leave them behind!!! Then take care NOT even thinking twice again ! Remember my codebase could still evolve under different conditions :-)",
+        "continuation_text": "can change within 1 hour and nothing beyond 0 points increases any amount over 10 seconds before 4 hours go away.. It doesn't make sense to write something like... just copy every bit because its always working! Also don't ever use anything else instead!! There must also exist certain parameters which give us extra values during processing so please remember not to leave them behind!!! Then take care NOT even thinking twice again ! Remember my codebase could still evolve under different conditions :-)",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 302,
+        "new_token_count": 95,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 506,
+        "word_count": 84,
+        "unique_word_count": 83,
+        "unique_word_ratio": 0.9880952380952381,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "if",
+        "are",
+        "have",
+        "don",
+        "make",
+        "didn",
+        "If",
+        "It",
+        "did",
+        "makes"
+      ],
+      "output_text": "But you can easily do this on your own without modifying ANYTHING (or writing things that affect each other!) ;) What kind of thing does there need for all those variables? Maybe they're important as well :) However then I'd suggest making sure everything works out exactly what is needed when creating new functions or adding an existing function from scratch…\n\nThis isn't very hard though but given how much work goes into doing such optimizations we may finally find our way back home with another part of me already involved :D - Now lets get started here ;-)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, are, have, don, make, didn, If, It, did, makes\n\nTEXT:\ncan change within 1 hour and nothing beyond 0 points increases any amount over 10 seconds before 4 hours go away.. It doesn't make sense to write something like... just copy every bit because its always working! Also don't ever use anything else instead!! There must also exist certain parameters which give us extra values during processing so please remember not to leave them behind!!! Then take care NOT even thinking twice again ! Remember my codebase could still evolve under different conditions :-)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, are, have, don, make, didn, If, It, did, makes\n\nTEXT:\ncan change within 1 hour and nothing beyond 0 points increases any amount over 10 seconds before 4 hours go away.. It doesn't make sense to write something like... just copy every bit because its always working! Also don't ever use anything else instead!! There must also exist certain parameters which give us extra values during processing so please remember not to leave them behind!!! Then take care NOT even thinking twice again ! Remember my codebase could still evolve under different conditions :-) But you can easily do this on your own without modifying ANYTHING (or writing things that affect each other!) ;) What kind of thing does there need for all those variables? Maybe they're important as well :) However then I'd suggest making sure everything works out exactly what is needed when creating new functions or adding an existing function from scratch…\n\nThis isn't very hard though but given how much work goes into doing such optimizations we may finally find our way back home with another part of me already involved :D - Now lets get started here ;-)",
+        "continuation_text": "But you can easily do this on your own without modifying ANYTHING (or writing things that affect each other!) ;) What kind of thing does there need for all those variables? Maybe they're important as well :) However then I'd suggest making sure everything works out exactly what is needed when creating new functions or adding an existing function from scratch…\n\nThis isn't very hard though but given how much work goes into doing such optimizations we may finally find our way back home with another part of me already involved :D - Now lets get started here ;-)",
+        "input_token_count": 171,
+        "raw_input_token_count": 171,
+        "output_token_count": 283,
+        "new_token_count": 112,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 563,
+        "word_count": 99,
+        "unique_word_count": 98,
+        "unique_word_ratio": 0.98989898989899,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "is",
+        "had",
+        "did",
+        "they",
+        "does",
+        "If",
+        "It"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, is, had, did, they, does, If, It\n\nTEXT:\nBut you can easily do this on your own without modifying ANYTHING (or writing things that affect each other!) ;) What kind of thing does there need for all those variables? Maybe they're important as well :) However then I'd suggest making sure everything works out exactly what is needed when creating new functions or adding an existing function from scratch…\n\nThis isn't very hard though but given how much work goes into doing such optimizations we may finally find our way back home with another part of me already involved :D - Now lets get started here ;-)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, is, had, did, they, does, If, It\n\nTEXT:\nBut you can easily do this on your own without modifying ANYTHING (or writing things that affect each other!) ;) What kind of thing does there need for all those variables? Maybe they're important as well :) However then I'd suggest making sure everything works out exactly what is needed when creating new functions or adding an existing function from scratch…\n\nThis isn't very hard though but given how much work goes into doing such optimizations we may finally find our way back home with another part of me already involved :D - Now lets get started here ;-)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, is, had, did, they, does, If, It\n\nTEXT:\nBut you can easily do this on your own without modifying ANYTHING (or writing things that affect each other!) ;) What kind of thing does there need for all those variables? Maybe they're important as well :) However then I'd suggest making sure everything works out exactly what is needed when creating new functions or adding an existing function from scratch…\n\nThis isn't very hard though but given how much work goes into doing such optimizations we may finally find our way back home with another part of me already involved :D - Now lets get started here ;-)",
+        "continuation_text": "",
+        "input_token_count": 190,
+        "raw_input_token_count": 190,
+        "output_token_count": 191,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 869,
+        "word_count": 147,
+        "unique_word_count": 142,
+        "unique_word_ratio": 0.9659863945578231,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

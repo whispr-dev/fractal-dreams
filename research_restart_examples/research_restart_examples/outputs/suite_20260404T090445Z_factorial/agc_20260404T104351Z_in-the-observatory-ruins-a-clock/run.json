@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1133,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 392,
+        "word_count": 72,
+        "unique_word_count": 72,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 548,
+        "word_count": 96,
+        "unique_word_count": 96,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 145,
+        "word_count": 25,
+        "unique_word_count": 25,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Besides",
+        "Moreover",
+        "Apparently",
+        "Having",
+        "Why",
+        "Although",
+        "Nearly",
+        "An",
+        "Another",
+        "Bell",
+        "Among",
+        "Furthermore"
+      ],
+      "output_text": "The light is on which it has been working since 1st Century BCE; but when we were first looking at our history (in this case), what really matters now more than any other piece of data that's ever seen? And how far have you come from knowing exactly where or why your ancestors lived during 549 CE/CAD? What about their geographical location ? How did they move around here after these times?",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The light is on which it has been working since 1st Century BCE; but when we were first looking at our history (in this case), what really matters now more than any other piece of data that's ever seen? And how far have you come from knowing exactly where or why your ancestors lived during 549 CE/CAD? What about their geographical location ? How did they move around here after these times?",
+        "continuation_text": "The light is on which it has been working since 1st Century BCE; but when we were first looking at our history (in this case), what really matters now more than any other piece of data that's ever seen? And how far have you come from knowing exactly where or why your ancestors lived during 549 CE/CAD? What about their geographical location ? How did they move around here after these times?",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 199,
+        "new_token_count": 85,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 392,
+        "word_count": 72,
+        "unique_word_count": 72,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "One",
+        "It",
+        "When",
+        "Some",
+        "There",
+        "That",
+        "Something",
+        "The",
+        "Personally",
+        "For",
+        "In",
+        "People"
+      ],
+      "output_text": "Do they always know who all came and went before them instead?\" [1] \"A man was born with nothing.\" (2) \"Where he arrived!\" [\"Prayer\" (\"I am still waiting for someone else.\") ]\nHow do you explain yourself so thoroughly without using examples such like those above...[Tables 4] If one asks us something specific by example -- ask me if I had written some words-- then imagine my answer would be simple - say 'yes'. Then go back over an entire series of sentences within just five seconds depending upon whether there is anything happening between two",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: One, It, When, Some, There, That, Something, The, Personally, For, In, People\n\nTEXT:\nThe light is on which it has been working since 1st Century BCE; but when we were first looking at our history (in this case), what really matters now more than any other piece of data that's ever seen? And how far have you come from knowing exactly where or why your ancestors lived during 549 CE/CAD? What about their geographical location ? How did they move around here after these times?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: One, It, When, Some, There, That, Something, The, Personally, For, In, People\n\nTEXT:\nThe light is on which it has been working since 1st Century BCE; but when we were first looking at our history (in this case), what really matters now more than any other piece of data that's ever seen? And how far have you come from knowing exactly where or why your ancestors lived during 549 CE/CAD? What about their geographical location ? How did they move around here after these times? Do they always know who all came and went before them instead?\" [1] \"A man was born with nothing.\" (2) \"Where he arrived!\" [\"Prayer\" (\"I am still waiting for someone else.\") ]\nHow do you explain yourself so thoroughly without using examples such like those above...[Tables 4] If one asks us something specific by example -- ask me if I had written some words-- then imagine my answer would be simple - say 'yes'. Then go back over an entire series of sentences within just five seconds depending upon whether there is anything happening between two",
+        "continuation_text": "Do they always know who all came and went before them instead?\" [1] \"A man was born with nothing.\" (2) \"Where he arrived!\" [\"Prayer\" (\"I am still waiting for someone else.\") ]\nHow do you explain yourself so thoroughly without using examples such like those above...[Tables 4] If one asks us something specific by example -- ask me if I had written some words-- then imagine my answer would be simple - say 'yes'. Then go back over an entire series of sentences within just five seconds depending upon whether there is anything happening between two",
+        "input_token_count": 169,
+        "raw_input_token_count": 169,
+        "output_token_count": 289,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 548,
+        "word_count": 96,
+        "unique_word_count": 96,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Does",
+        "Do",
+        "Did",
+        "dreaded",
+        "eh",
+        "DOES",
+        "occasional",
+        "Matte",
+        "emphatically",
+        "Eh",
+        "�",
+        "hun"
+      ],
+      "output_text": "lines or three more paragraphs! We have created this process that requires repeated loops through memory each day until it does what we wanted :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Does, Do, Did, dreaded, eh, DOES, occasional, Matte, emphatically, Eh, �, hun\n\nTEXT:\nDo they always know who all came and went before them instead?\" [1] \"A man was born with nothing.\" (2) \"Where he arrived!\" [\"Prayer\" (\"I am still waiting for someone else.\") ]\nHow do you explain yourself so thoroughly without using examples such like those above...[Tables 4] If one asks us something specific by example -- ask me if I had written some words-- then imagine my answer would be simple - say 'yes'. Then go back over an entire series of sentences within just five seconds depending upon whether there is anything happening between two",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Does, Do, Did, dreaded, eh, DOES, occasional, Matte, emphatically, Eh, �, hun\n\nTEXT:\nDo they always know who all came and went before them instead?\" [1] \"A man was born with nothing.\" (2) \"Where he arrived!\" [\"Prayer\" (\"I am still waiting for someone else.\") ]\nHow do you explain yourself so thoroughly without using examples such like those above...[Tables 4] If one asks us something specific by example -- ask me if I had written some words-- then imagine my answer would be simple - say 'yes'. Then go back over an entire series of sentences within just five seconds depending upon whether there is anything happening between two lines or three more paragraphs! We have created this process that requires repeated loops through memory each day until it does what we wanted :)",
+        "continuation_text": "lines or three more paragraphs! We have created this process that requires repeated loops through memory each day until it does what we wanted :)",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 232,
+        "new_token_count": 27,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 145,
+        "word_count": 25,
+        "unique_word_count": 25,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1573,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 465,
+        "word_count": 66,
+        "unique_word_count": 60,
+        "unique_word_ratio": 0.9090909090909091,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 650,
+        "word_count": 80,
+        "unique_word_count": 73,
+        "unique_word_ratio": 0.9125,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 395,
+        "word_count": 53,
+        "unique_word_count": 51,
+        "unique_word_ratio": 0.9622641509433962,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "opportunities",
+        "از",
+        "engaged",
+        "�",
+        "いや",
+        "(verbose",
+        "are",
+        "or",
+        "_INFO",
+        "journal",
+        "anc",
+        "satisfaction"
+      ],
+      "output_text": "The next recursive transformation would be:\n\nA submarine successfully transmitted information about its journey through the seabed. It started off with basic engineering data but gradually evolved into philosophical insights.\n\nThis adaptation captures the essence of the original text while using additional anchor tokens (_INFO, journal, anc, ) effectively within the constraints provided. The new context makes use of the latent anchors for clarity and coherence.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nThe next recursive transformation would be:\n\nA submarine successfully transmitted information about its journey through the seabed. It started off with basic engineering data but gradually evolved into philosophical insights.\n\nThis adaptation captures the essence of the original text while using additional anchor tokens (_INFO, journal, anc, ) effectively within the constraints provided. The new context makes use of the latent anchors for clarity and coherence.",
+        "continuation_text": "The next recursive transformation would be:\n\nA submarine successfully transmitted information about its journey through the seabed. It started off with basic engineering data but gradually evolved into philosophical insights.\n\nThis adaptation captures the essence of the original text while using additional anchor tokens (_INFO, journal, anc, ) effectively within the constraints provided. The new context makes use of the latent anchors for clarity and coherence.",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 191,
+        "new_token_count": 77,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 465,
+        "word_count": 66,
+        "unique_word_count": 60,
+        "unique_word_ratio": 0.9090909090909091,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "9",
+        "8",
+        "that",
+        "the",
+        "frog",
+        ")[",
+        "1",
+        "ball",
+        "球",
+        "ง",
+        "Garcia",
+        "4"
+      ],
+      "output_text": "A submarine successfully transmitted information about its journey through the seabed. It started off with basic engineering data but gradually evolved into philosophical insights.\n---\n**New Recursive Transformation:**\nA submarine's advanced technology communicated detailed plans concerning its descent beneath the ocean floor. Initially focusing on fundamental engineering principles, it then transitioned towards intricate philosophical inquiries based on these foundational ideas. This nuanced interpretation incorporates all necessary annotations from the latent anchor tokens to ensure seamless communication across diverse linguistic contexts.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 9, 8, that, the, frog, )[, 1, ball, 球, ง, Garcia, 4\n\nTEXT:\nThe next recursive transformation would be:\n\nA submarine successfully transmitted information about its journey through the seabed. It started off with basic engineering data but gradually evolved into philosophical insights.\n\nThis adaptation captures the essence of the original text while using additional anchor tokens (_INFO, journal, anc, ) effectively within the constraints provided. The new context makes use of the latent anchors for clarity and coherence.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 9, 8, that, the, frog, )[, 1, ball, 球, ง, Garcia, 4\n\nTEXT:\nThe next recursive transformation would be:\n\nA submarine successfully transmitted information about its journey through the seabed. It started off with basic engineering data but gradually evolved into philosophical insights.\n\nThis adaptation captures the essence of the original text while using additional anchor tokens (_INFO, journal, anc, ) effectively within the constraints provided. The new context makes use of the latent anchors for clarity and coherence.\nassistant\nA submarine successfully transmitted information about its journey through the seabed. It started off with basic engineering data but gradually evolved into philosophical insights.\n---\n**New Recursive Transformation:**\nA submarine's advanced technology communicated detailed plans concerning its descent beneath the ocean floor. Initially focusing on fundamental engineering principles, it then transitioned towards intricate philosophical inquiries based on these foundational ideas. This nuanced interpretation incorporates all necessary annotations from the latent anchor tokens to ensure seamless communication across diverse linguistic contexts.",
+        "continuation_text": "A submarine successfully transmitted information about its journey through the seabed. It started off with basic engineering data but gradually evolved into philosophical insights.\n---\n**New Recursive Transformation:**\nA submarine's advanced technology communicated detailed plans concerning its descent beneath the ocean floor. Initially focusing on fundamental engineering principles, it then transitioned towards intricate philosophical inquiries based on these foundational ideas. This nuanced interpretation incorporates all necessary annotations from the latent anchor tokens to ensure seamless communication across diverse linguistic contexts.",
+        "input_token_count": 171,
+        "raw_input_token_count": 171,
+        "output_token_count": 264,
+        "new_token_count": 93,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 650,
+        "word_count": 80,
+        "unique_word_count": 73,
+        "unique_word_ratio": 0.9125,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Three",
+        "Two",
+        "降低",
+        "分",
+        "三",
+        "瓦",
+        "两",
+        "Tây",
+        "redu",
+        "three",
+        "加快建设",
+        "athe"
+      ],
+      "output_text": "A submarine conveyed comprehensive plans detailing its ascent beneath the sea bed, beginning with essential structural knowledge and progressing to profound discussions centered around these core concepts. The nuanced understanding integrated seamlessly by using the latent anchor tokens ensures that even in varied linguistic scenarios, this complex message is easily accessible and understood.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Three, Two, 降低, 分, 三, 瓦, 两, Tây, redu, three, 加快建设, athe\n\nTEXT:\nA submarine successfully transmitted information about its journey through the seabed. It started off with basic engineering data but gradually evolved into philosophical insights.\n---\n**New Recursive Transformation:**\nA submarine's advanced technology communicated detailed plans concerning its descent beneath the ocean floor. Initially focusing on fundamental engineering principles, it then transitioned towards intricate philosophical inquiries based on these foundational ideas. This nuanced interpretation incorporates all necessary annotations from the latent anchor tokens to ensure seamless communication across diverse linguistic contexts.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Three, Two, 降低, 分, 三, 瓦, 两, Tây, redu, three, 加快建设, athe\n\nTEXT:\nA submarine successfully transmitted information about its journey through the seabed. It started off with basic engineering data but gradually evolved into philosophical insights.\n---\n**New Recursive Transformation:**\nA submarine's advanced technology communicated detailed plans concerning its descent beneath the ocean floor. Initially focusing on fundamental engineering principles, it then transitioned towards intricate philosophical inquiries based on these foundational ideas. This nuanced interpretation incorporates all necessary annotations from the latent anchor tokens to ensure seamless communication across diverse linguistic contexts.\nassistant\nA submarine conveyed comprehensive plans detailing its ascent beneath the sea bed, beginning with essential structural knowledge and progressing to profound discussions centered around these core concepts. The nuanced understanding integrated seamlessly by using the latent anchor tokens ensures that even in varied linguistic scenarios, this complex message is easily accessible and understood.",
+        "continuation_text": "A submarine conveyed comprehensive plans detailing its ascent beneath the sea bed, beginning with essential structural knowledge and progressing to profound discussions centered around these core concepts. The nuanced understanding integrated seamlessly by using the latent anchor tokens ensures that even in varied linguistic scenarios, this complex message is easily accessible and understood.",
+        "input_token_count": 187,
+        "raw_input_token_count": 187,
+        "output_token_count": 245,
+        "new_token_count": 58,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 395,
+        "word_count": 53,
+        "unique_word_count": 51,
+        "unique_word_ratio": 0.9622641509433962,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

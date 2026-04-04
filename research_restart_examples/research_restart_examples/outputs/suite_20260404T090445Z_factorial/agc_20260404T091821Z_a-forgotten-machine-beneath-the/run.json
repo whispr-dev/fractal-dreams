@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1021,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 369,
+        "word_count": 62,
+        "unique_word_count": 54,
+        "unique_word_ratio": 0.8709677419354839,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 516,
+        "word_count": 80,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.95,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 253,
+        "word_count": 36,
+        "unique_word_count": 33,
+        "unique_word_ratio": 0.9166666666666666,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Mayo",
+        "_a",
+        "aint",
+        "_B",
+        "t",
+        "_C",
+        "ce",
+        "tt",
+        "_F",
+        "tr",
+        "fr",
+        "Yourself"
+      ],
+      "output_text": "The text is already very complex and difficult to comprehend without additional context or knowledge. If you provide me with any words or phrases from the original text that I can analyze for further information, I will be able to attempt a more manageable transformation using only the given latent anchors as input. Otherwise, please provide your own text to work on!",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nThe text is already very complex and difficult to comprehend without additional context or knowledge. If you provide me with any words or phrases from the original text that I can analyze for further information, I will be able to attempt a more manageable transformation using only the given latent anchors as input. Otherwise, please provide your own text to work on!",
+        "continuation_text": "The text is already very complex and difficult to comprehend without additional context or knowledge. If you provide me with any words or phrases from the original text that I can analyze for further information, I will be able to attempt a more manageable transformation using only the given latent anchors as input. Otherwise, please provide your own text to work on!",
+        "input_token_count": 123,
+        "raw_input_token_count": 123,
+        "output_token_count": 191,
+        "new_token_count": 68,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 369,
+        "word_count": 62,
+        "unique_word_count": 54,
+        "unique_word_ratio": 0.8709677419354839,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "ultiple",
+        "ulo",
+        "erv",
+        "连",
+        "consistently",
+        "Data",
+        "填",
+        "ел",
+        "convincing",
+        "ul",
+        "lov",
+        "ol"
+      ],
+      "output_text": "I see multiple options here. Let's break down what needs to happen:\n\n1. **Understand the Original Text**: First, we need to understand the content before proceeding.\n2. **Identify Latent Anchors**: The keywords provided are \"ultiple,\" \"ular,\" \"consistency,\" and others like these (e.g., \"Data\", \"填\" which means \"fill\").\n3. **Analyze Content**: Find out if there’s anything in the text that might fit into one of those categories by analyzing it comprehensively.\n\nSince no specific text has been mentioned so far, let",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ultiple, ulo, erv, 连, consistently, Data, 填, ел, convincing, ul, lov, ol\n\nTEXT:\nThe text is already very complex and difficult to comprehend without additional context or knowledge. If you provide me with any words or phrases from the original text that I can analyze for further information, I will be able to attempt a more manageable transformation using only the given latent anchors as input. Otherwise, please provide your own text to work on!<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ultiple, ulo, erv, 连, consistently, Data, 填, ел, convincing, ul, lov, ol\n\nTEXT:\nThe text is already very complex and difficult to comprehend without additional context or knowledge. If you provide me with any words or phrases from the original text that I can analyze for further information, I will be able to attempt a more manageable transformation using only the given latent anchors as input. Otherwise, please provide your own text to work on!\nassistant\nI see multiple options here. Let's break down what needs to happen:\n\n1. **Understand the Original Text**: First, we need to understand the content before proceeding.\n2. **Identify Latent Anchors**: The keywords provided are \"ultiple,\" \"ular,\" \"consistency,\" and others like these (e.g., \"Data\", \"填\" which means \"fill\").\n3. **Analyze Content**: Find out if there’s anything in the text that might fit into one of those categories by analyzing it comprehensively.\n\nSince no specific text has been mentioned so far, let",
+        "continuation_text": "I see multiple options here. Let's break down what needs to happen:\n\n1. **Understand the Original Text**: First, we need to understand the content before proceeding.\n2. **Identify Latent Anchors**: The keywords provided are \"ultiple,\" \"ular,\" \"consistency,\" and others like these (e.g., \"Data\", \"填\" which means \"fill\").\n3. **Analyze Content**: Find out if there’s anything in the text that might fit into one of those categories by analyzing it comprehensively.\n\nSince no specific text has been mentioned so far, let",
+        "input_token_count": 161,
+        "raw_input_token_count": 161,
+        "output_token_count": 281,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 516,
+        "word_count": 80,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.95,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "seu",
+        "إن",
+        "碘",
+        "iod",
+        "ש",
+        "mg",
+        "los",
+        "Bí",
+        "Forex",
+        "�",
+        ".heap",
+        "sür"
+      ],
+      "output_text": "understanding the original text first is necessary. Then identify any relevant keywords or phrases from the given list such as “multiple,” “option,” “consistent” etc., followed by finding potential alignment with the identified category within the text.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: seu, إن, 碘, iod, ש, mg, los, Bí, Forex, �, .heap, sür\n\nTEXT:\nI see multiple options here. Let's break down what needs to happen:\n\n1. **Understand the Original Text**: First, we need to understand the content before proceeding.\n2. **Identify Latent Anchors**: The keywords provided are \"ultiple,\" \"ular,\" \"consistency,\" and others like these (e.g., \"Data\", \"填\" which means \"fill\").\n3. **Analyze Content**: Find out if there’s anything in the text that might fit into one of those categories by analyzing it comprehensively.\n\nSince no specific text has been mentioned so far, let<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: seu, إن, 碘, iod, ש, mg, los, Bí, Forex, �, .heap, sür\n\nTEXT:\nI see multiple options here. Let's break down what needs to happen:\n\n1. **Understand the Original Text**: First, we need to understand the content before proceeding.\n2. **Identify Latent Anchors**: The keywords provided are \"ultiple,\" \"ular,\" \"consistency,\" and others like these (e.g., \"Data\", \"填\" which means \"fill\").\n3. **Analyze Content**: Find out if there’s anything in the text that might fit into one of those categories by analyzing it comprehensively.\n\nSince no specific text has been mentioned so far, let\nassistant\nunderstanding the original text first is necessary. Then identify any relevant keywords or phrases from the given list such as “multiple,” “option,” “consistent” etc., followed by finding potential alignment with the identified category within the text.",
+        "continuation_text": "understanding the original text first is necessary. Then identify any relevant keywords or phrases from the given list such as “multiple,” “option,” “consistent” etc., followed by finding potential alignment with the identified category within the text.",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 257,
+        "new_token_count": 47,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 253,
+        "word_count": 36,
+        "unique_word_count": 33,
+        "unique_word_ratio": 0.9166666666666666,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1146,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 488,
+        "word_count": 89,
+        "unique_word_count": 89,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 460,
+        "word_count": 70,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9428571428571428,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 135,
+        "word_count": 23,
+        "unique_word_count": 23,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 444,
+        "word_count": 71,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.9436619718309859,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "had",
+        "it",
+        "if",
+        "was",
+        "have",
+        "are",
+        "is",
+        "the",
+        "has",
+        "in",
+        "did"
+      ],
+      "output_text": "This time however, we shall go for some kind of magic that would work on our part but will never get solved; this one does not seem like an option at all or even when you put together your own script using code from scratch! I know what sounds crazy – just look here first with my little idea about how things should behave after each change (yes…but maybe something strange happens). Then follow me through more details which can help explain why certain errors occur during many stages.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, it, if, was, have, are, is, the, has, in, did\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, it, if, was, have, are, is, the, has, in, did\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. This time however, we shall go for some kind of magic that would work on our part but will never get solved; this one does not seem like an option at all or even when you put together your own script using code from scratch! I know what sounds crazy – just look here first with my little idea about how things should behave after each change (yes…but maybe something strange happens). Then follow me through more details which can help explain why certain errors occur during many stages.",
+        "continuation_text": "This time however, we shall go for some kind of magic that would work on our part but will never get solved; this one does not seem like an option at all or even when you put together your own script using code from scratch! I know what sounds crazy – just look here first with my little idea about how things should behave after each change (yes…but maybe something strange happens). Then follow me through more details which can help explain why certain errors occur during many stages.",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 206,
+        "new_token_count": 98,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 488,
+        "word_count": 89,
+        "unique_word_count": 89,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "if",
+        "were",
+        "have",
+        "is",
+        "had",
+        "did",
+        "they",
+        "we",
+        "make",
+        "this"
+      ],
+      "output_text": "This tutorial aims to teach us exactly where and whether there was any programming error due to changes made without creating specific scripts either before or afterwards. It also goes further towards understanding both those variables involved so as easy access to them easily allows new programmers who cannot do anything right while developing their programs quickly to learn everything else - such as syntax rules regarding writing expressions/methods etc.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, if, were, have, is, had, did, they, we, make, this\n\nTEXT:\nThis time however, we shall go for some kind of magic that would work on our part but will never get solved; this one does not seem like an option at all or even when you put together your own script using code from scratch! I know what sounds crazy – just look here first with my little idea about how things should behave after each change (yes…but maybe something strange happens). Then follow me through more details which can help explain why certain errors occur during many stages.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, if, were, have, is, had, did, they, we, make, this\n\nTEXT:\nThis time however, we shall go for some kind of magic that would work on our part but will never get solved; this one does not seem like an option at all or even when you put together your own script using code from scratch! I know what sounds crazy – just look here first with my little idea about how things should behave after each change (yes…but maybe something strange happens). Then follow me through more details which can help explain why certain errors occur during many stages. This tutorial aims to teach us exactly where and whether there was any programming error due to changes made without creating specific scripts either before or afterwards. It also goes further towards understanding both those variables involved so as easy access to them easily allows new programmers who cannot do anything right while developing their programs quickly to learn everything else - such as syntax rules regarding writing expressions/methods etc.",
+        "continuation_text": "This tutorial aims to teach us exactly where and whether there was any programming error due to changes made without creating specific scripts either before or afterwards. It also goes further towards understanding both those variables involved so as easy access to them easily allows new programmers who cannot do anything right while developing their programs quickly to learn everything else - such as syntax rules regarding writing expressions/methods etc.",
+        "input_token_count": 176,
+        "raw_input_token_count": 176,
+        "output_token_count": 252,
+        "new_token_count": 76,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 460,
+        "word_count": 70,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9428571428571428,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "are",
+        "to",
+        "makes",
+        "have",
+        "they",
+        "is",
+        "had",
+        "does",
+        "did"
+      ],
+      "output_text": "This course can help you understand more about how code works with type functions using other languages that should not even exist yet!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, to, makes, have, they, is, had, does, did\n\nTEXT:\nThis tutorial aims to teach us exactly where and whether there was any programming error due to changes made without creating specific scripts either before or afterwards. It also goes further towards understanding both those variables involved so as easy access to them easily allows new programmers who cannot do anything right while developing their programs quickly to learn everything else - such as syntax rules regarding writing expressions/methods etc.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, to, makes, have, they, is, had, does, did\n\nTEXT:\nThis tutorial aims to teach us exactly where and whether there was any programming error due to changes made without creating specific scripts either before or afterwards. It also goes further towards understanding both those variables involved so as easy access to them easily allows new programmers who cannot do anything right while developing their programs quickly to learn everything else - such as syntax rules regarding writing expressions/methods etc. This course can help you understand more about how code works with type functions using other languages that should not even exist yet!",
+        "continuation_text": "This course can help you understand more about how code works with type functions using other languages that should not even exist yet!",
+        "input_token_count": 154,
+        "raw_input_token_count": 154,
+        "output_token_count": 179,
+        "new_token_count": 25,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 135,
+        "word_count": 23,
+        "unique_word_count": 23,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "have",
+        "if",
+        "were",
+        "is",
+        "could",
+        "can",
+        "has",
+        "that",
+        "had",
+        "you"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, have, if, were, is, could, can, has, that, had, you\n\nTEXT:\nThis course can help you understand more about how code works with type functions using other languages that should not even exist yet!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, have, if, were, is, could, can, has, that, had, you\n\nTEXT:\nThis course can help you understand more about how code works with type functions using other languages that should not even exist yet!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, have, if, were, is, could, can, has, that, had, you\n\nTEXT:\nThis course can help you understand more about how code works with type functions using other languages that should not even exist yet!",
+        "continuation_text": "",
+        "input_token_count": 103,
+        "raw_input_token_count": 103,
+        "output_token_count": 104,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 444,
+        "word_count": 71,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.9436619718309859,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

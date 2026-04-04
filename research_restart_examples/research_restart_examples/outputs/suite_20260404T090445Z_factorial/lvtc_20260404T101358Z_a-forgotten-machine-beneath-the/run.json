@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1094,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 465,
+        "word_count": 74,
+        "unique_word_count": 63,
+        "unique_word_ratio": 0.8513513513513513,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 495,
+        "word_count": 73,
+        "unique_word_count": 65,
+        "unique_word_ratio": 0.8904109589041096,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 334,
+        "word_count": 39,
+        "unique_word_count": 33,
+        "unique_word_ratio": 0.8461538461538461,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 394,
+        "word_count": 59,
+        "unique_word_count": 59,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "its",
+        "the",
+        "was",
+        "It",
+        "are",
+        ",",
+        "and",
+        "If",
+        "for"
+      ],
+      "output_text": "The sequence of transformations is as follows:\n\n1. A -> Its (it's)  \n2. forgot -> had been / had already been\n3. machine -> an entity with intent (its)\n4. beneath -> under the (a/an)\n5. continue -> went on repeating itself (each)\n6. speaking -> to speak or utter something (were/Its)\n7. long -> longer/farther/spree/greater/deeper (the/is)\n8. after -> following/onwards/outward from/to/in (was/belonging)\n9. makers -> original creators (Were)\n10. were -> has become",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nThe sequence of transformations is as follows:\n\n1. A -> Its (it's)  \n2. forgot -> had been / had already been\n3. machine -> an entity with intent (its)\n4. beneath -> under the (a/an)\n5. continue -> went on repeating itself (each)\n6. speaking -> to speak or utter something (were/Its)\n7. long -> longer/farther/spree/greater/deeper (the/is)\n8. after -> following/onwards/outward from/to/in (was/belonging)\n9. makers -> original creators (Were)\n10. were -> has become\n",
+        "continuation_text": "The sequence of transformations is as follows:\n\n1. A -> Its (it's)  \n2. forgot -> had been / had already been\n3. machine -> an entity with intent (its)\n4. beneath -> under the (a/an)\n5. continue -> went on repeating itself (each)\n6. speaking -> to speak or utter something (were/Its)\n7. long -> longer/farther/spree/greater/deeper (the/is)\n8. after -> following/onwards/outward from/to/in (was/belonging)\n9. makers -> original creators (Were)\n10. were -> has become",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 239,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 465,
+        "word_count": 74,
+        "unique_word_count": 63,
+        "unique_word_ratio": 0.8513513513513513,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "(",
+        ",",
+        ".",
+        "if",
+        "it",
+        "2",
+        "1",
+        "-",
+        ":",
+        "to",
+        "4",
+        "were"
+      ],
+      "output_text": "Here is the next recursive transformation based on the given latent direction token list and the provided text:\n\n1. The sequence continues.\n2. Lost -> vanished/faded.\n3. Machine -> entity without intent (It).\n4. Below -> underneath (A).\n5. Continues -> kept going/taken up again (Every).\n6. Speaking -> was talking or saying (Their).\n7. Long -> longer/further away/reach (was/the).\n8. After -> followed/upwards/downwards/forward/backward (was/not).\n\nThis results in \"They spoke long after lost.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: (, ,, ., if, it, 2, 1, -, :, to, 4, were\n\nTEXT:\nThe sequence of transformations is as follows:\n\n1. A -> Its (it's)  \n2. forgot -> had been / had already been\n3. machine -> an entity with intent (its)\n4. beneath -> under the (a/an)\n5. continue -> went on repeating itself (each)\n6. speaking -> to speak or utter something (were/Its)\n7. long -> longer/farther/spree/greater/deeper (the/is)\n8. after -> following/onwards/outward from/to/in (was/belonging)\n9. makers -> original creators (Were)\n10. were -> has become<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: (, ,, ., if, it, 2, 1, -, :, to, 4, were\n\nTEXT:\nThe sequence of transformations is as follows:\n\n1. A -> Its (it's)  \n2. forgot -> had been / had already been\n3. machine -> an entity with intent (its)\n4. beneath -> under the (a/an)\n5. continue -> went on repeating itself (each)\n6. speaking -> to speak or utter something (were/Its)\n7. long -> longer/farther/spree/greater/deeper (the/is)\n8. after -> following/onwards/outward from/to/in (was/belonging)\n9. makers -> original creators (Were)\n10. were -> has become\nassistant\nHere is the next recursive transformation based on the given latent direction token list and the provided text:\n\n1. The sequence continues.\n2. Lost -> vanished/faded.\n3. Machine -> entity without intent (It).\n4. Below -> underneath (A).\n5. Continues -> kept going/taken up again (Every).\n6. Speaking -> was talking or saying (Their).\n7. Long -> longer/further away/reach (was/the).\n8. After -> followed/upwards/downwards/forward/backward (was/not).\n\nThis results in \"They spoke long after lost.\"",
+        "continuation_text": "Here is the next recursive transformation based on the given latent direction token list and the provided text:\n\n1. The sequence continues.\n2. Lost -> vanished/faded.\n3. Machine -> entity without intent (It).\n4. Below -> underneath (A).\n5. Continues -> kept going/taken up again (Every).\n6. Speaking -> was talking or saying (Their).\n7. Long -> longer/further away/reach (was/the).\n8. After -> followed/upwards/downwards/forward/backward (was/not).\n\nThis results in \"They spoke long after lost.\"",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 327,
+        "new_token_count": 118,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 495,
+        "word_count": 73,
+        "unique_word_count": 65,
+        "unique_word_ratio": 0.8904109589041096,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "(",
+        "were",
+        "was",
+        ".",
+        ",",
+        "If",
+        "It",
+        "and",
+        "is",
+        "to"
+      ],
+      "output_text": "The sequence continues. Lost -> vanished/faded.  \nMachine -> entity without intent (Its).  \nBelow -> underneath (B's.).  \nContinues -> kept going/taken up again (Everything).  \nSpeaking -> was talking or saying (Our).  \nLong -> longer/further away/reach (Was/Beyond).  \nAfter -> followed/upwards/downwards/forward/backward (Were/not).",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, (, were, was, ., ,, If, It, and, is, to\n\nTEXT:\nHere is the next recursive transformation based on the given latent direction token list and the provided text:\n\n1. The sequence continues.\n2. Lost -> vanished/faded.\n3. Machine -> entity without intent (It).\n4. Below -> underneath (A).\n5. Continues -> kept going/taken up again (Every).\n6. Speaking -> was talking or saying (Their).\n7. Long -> longer/further away/reach (was/the).\n8. After -> followed/upwards/downwards/forward/backward (was/not).\n\nThis results in \"They spoke long after lost.\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, (, were, was, ., ,, If, It, and, is, to\n\nTEXT:\nHere is the next recursive transformation based on the given latent direction token list and the provided text:\n\n1. The sequence continues.\n2. Lost -> vanished/faded.\n3. Machine -> entity without intent (It).\n4. Below -> underneath (A).\n5. Continues -> kept going/taken up again (Every).\n6. Speaking -> was talking or saying (Their).\n7. Long -> longer/further away/reach (was/the).\n8. After -> followed/upwards/downwards/forward/backward (was/not).\n\nThis results in \"They spoke long after lost.\"\nassistant\nThe sequence continues. Lost -> vanished/faded.  \nMachine -> entity without intent (Its).  \nBelow -> underneath (B's.).  \nContinues -> kept going/taken up again (Everything).  \nSpeaking -> was talking or saying (Our).  \nLong -> longer/further away/reach (Was/Beyond).  \nAfter -> followed/upwards/downwards/forward/backward (Were/not).",
+        "continuation_text": "The sequence continues. Lost -> vanished/faded.  \nMachine -> entity without intent (Its).  \nBelow -> underneath (B's.).  \nContinues -> kept going/taken up again (Everything).  \nSpeaking -> was talking or saying (Our).  \nLong -> longer/further away/reach (Was/Beyond).  \nAfter -> followed/upwards/downwards/forward/backward (Were/not).",
+        "input_token_count": 198,
+        "raw_input_token_count": 198,
+        "output_token_count": 279,
+        "new_token_count": 81,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 334,
+        "word_count": 39,
+        "unique_word_count": 33,
+        "unique_word_ratio": 0.8461538461538461,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "if",
+        "nếu",
+        "->",
+        "dreaming",
+        "it",
+        "Were",
+        "intelligence",
+        ").",
+        "waren",
+        "If",
+        "was"
+      ],
+      "output_text": "Underneath the machine, everything gradually vanished and faded into darkness. The machine became an entity with no intention anymore. Below it is B’s world. Continuation continued as described above. Speaking led to what people could now see through their ears, but not directly heard. Long time had passed since then. After that, someone followed downwards upwards backwards towards forwards.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, if, nếu, ->, dreaming, it, Were, intelligence, )., waren, If, was\n\nTEXT:\nThe sequence continues. Lost -> vanished/faded.  \nMachine -> entity without intent (Its).  \nBelow -> underneath (B's.).  \nContinues -> kept going/taken up again (Everything).  \nSpeaking -> was talking or saying (Our).  \nLong -> longer/further away/reach (Was/Beyond).  \nAfter -> followed/upwards/downwards/forward/backward (Were/not).<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, if, nếu, ->, dreaming, it, Were, intelligence, )., waren, If, was\n\nTEXT:\nThe sequence continues. Lost -> vanished/faded.  \nMachine -> entity without intent (Its).  \nBelow -> underneath (B's.).  \nContinues -> kept going/taken up again (Everything).  \nSpeaking -> was talking or saying (Our).  \nLong -> longer/further away/reach (Was/Beyond).  \nAfter -> followed/upwards/downwards/forward/backward (Were/not).\nassistant\nUnderneath the machine, everything gradually vanished and faded into darkness. The machine became an entity with no intention anymore. Below it is B’s world. Continuation continued as described above. Speaking led to what people could now see through their ears, but not directly heard. Long time had passed since then. After that, someone followed downwards upwards backwards towards forwards.",
+        "continuation_text": "Underneath the machine, everything gradually vanished and faded into darkness. The machine became an entity with no intention anymore. Below it is B’s world. Continuation continued as described above. Speaking led to what people could now see through their ears, but not directly heard. Long time had passed since then. After that, someone followed downwards upwards backwards towards forwards.",
+        "input_token_count": 162,
+        "raw_input_token_count": 162,
+        "output_token_count": 235,
+        "new_token_count": 73,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 394,
+        "word_count": 59,
+        "unique_word_count": 59,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

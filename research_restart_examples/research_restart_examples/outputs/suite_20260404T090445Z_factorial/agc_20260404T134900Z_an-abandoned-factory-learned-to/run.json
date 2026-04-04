@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1385,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 543,
+        "word_count": 95,
+        "unique_word_count": 93,
+        "unique_word_ratio": 0.9789473684210527,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 47,
+        "word_count": 9,
+        "unique_word_count": 9,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 305,
+        "word_count": 47,
+        "unique_word_count": 47,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Did",
+        "Can",
+        "Fortunately",
+        "Luckily",
+        "Does",
+        "Altern",
+        "An",
+        "Sure",
+        "Sometimes",
+        "Interestingly",
+        "Thankfully",
+        "Isn"
+      ],
+      "output_text": "A typical example is here \"The Great Fire\", where you take what's left of your car into an empty space using some sort 'place' or something similar, so that all sorts of other things might be taken away from them (e.) The first time we see this thing on screen can't even look at anything else . However , nowhere there are 3 different types of texts—just one word; another 2 words—that have been forgotten by most writers for many years…and then again...for generations! And yet ...it still looks very interesting [to us] today....And finally",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Did, Can, Fortunately, Luckily, Does, Altern, An, Sure, Sometimes, Interestingly, Thankfully, Isn\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A typical example is here \"The Great Fire\", where you take what's left of your car into an empty space using some sort 'place' or something similar, so that all sorts of other things might be taken away from them (e.) The first time we see this thing on screen can't even look at anything else . However , nowhere there are 3 different types of texts—just one word; another 2 words—that have been forgotten by most writers for many years…and then again...for generations! And yet ...it still looks very interesting [to us] today....And finally",
+        "continuation_text": "A typical example is here \"The Great Fire\", where you take what's left of your car into an empty space using some sort 'place' or something similar, so that all sorts of other things might be taken away from them (e.) The first time we see this thing on screen can't even look at anything else . However , nowhere there are 3 different types of texts—just one word; another 2 words—that have been forgotten by most writers for many years…and then again...for generations! And yet ...it still looks very interesting [to us] today....And finally",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 231,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 543,
+        "word_count": 95,
+        "unique_word_count": 93,
+        "unique_word_ratio": 0.9789473684210527,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Author",
+        "indo",
+        "preval",
+        "arrog",
+        "obbies",
+        "suspic",
+        "([",
+        "anomal",
+        "proclaimed",
+        "sidx",
+        "Franklin",
+        "andr"
+      ],
+      "output_text": ",...I will never know how I'll come back home.\"",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Author, indo, preval, arrog, obbies, suspic, ([, anomal, proclaimed, sidx, Franklin, andr\n\nTEXT:\nA typical example is here \"The Great Fire\", where you take what's left of your car into an empty space using some sort 'place' or something similar, so that all sorts of other things might be taken away from them (e.) The first time we see this thing on screen can't even look at anything else . However , nowhere there are 3 different types of texts—just one word; another 2 words—that have been forgotten by most writers for many years…and then again...for generations! And yet ...it still looks very interesting [to us] today....And finally",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Author, indo, preval, arrog, obbies, suspic, ([, anomal, proclaimed, sidx, Franklin, andr\n\nTEXT:\nA typical example is here \"The Great Fire\", where you take what's left of your car into an empty space using some sort 'place' or something similar, so that all sorts of other things might be taken away from them (e.) The first time we see this thing on screen can't even look at anything else . However , nowhere there are 3 different types of texts—just one word; another 2 words—that have been forgotten by most writers for many years…and then again...for generations! And yet ...it still looks very interesting [to us] today....And finally,...I will never know how I'll come back home.\"",
+        "continuation_text": ",...I will never know how I'll come back home.\"",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 219,
+        "new_token_count": 13,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 47,
+        "word_count": 9,
+        "unique_word_count": 9,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        ",...",
+        "...?",
+        "Gn",
+        "...]",
+        "...)",
+        ".}",
+        "Types",
+        "Contents",
+        "cunning",
+        "...",
+        ";)",
+        ",—"
+      ],
+      "output_text": "[1] The rest of you can see by following this link (click here for links) :\n[2]: A code snippet was added that has been shown above from http://www/npmcqxfv9gw5y4b7a6u3QWpTkCXD8KHrPYBZ0RJGtFdEjmVlMzS - <!> We need more help with any programming questions or comments about these modules on StackOverflow !",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ,..., ...?, Gn, ...], ...), .}, Types, Contents, cunning, ..., ;), ,—\n\nTEXT:\n,...I will never know how I'll come back home.\"",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ,..., ...?, Gn, ...], ...), .}, Types, Contents, cunning, ..., ;), ,—\n\nTEXT:\n,...I will never know how I'll come back home.\" [1] The rest of you can see by following this link (click here for links) :\n[2]: A code snippet was added that has been shown above from http://www/npmcqxfv9gw5y4b7a6u3QWpTkCXD8KHrPYBZ0RJGtFdEjmVlMzS - <!> We need more help with any programming questions or comments about these modules on StackOverflow !",
+        "continuation_text": "[1] The rest of you can see by following this link (click here for links) :\n[2]: A code snippet was added that has been shown above from http://www/npmcqxfv9gw5y4b7a6u3QWpTkCXD8KHrPYBZ0RJGtFdEjmVlMzS - <!> We need more help with any programming questions or comments about these modules on StackOverflow !",
+        "input_token_count": 99,
+        "raw_input_token_count": 99,
+        "output_token_count": 211,
+        "new_token_count": 112,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 305,
+        "word_count": 47,
+        "unique_word_count": 47,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

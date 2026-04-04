@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1589,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 666,
+        "word_count": 112,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.9732142857142857,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 135,
+        "word_count": 20,
+        "unique_word_count": 20,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 530,
+        "word_count": 72,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9166666666666666,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Likewise",
+        "Similarly",
+        "Another",
+        "Also",
+        "especially",
+        "Pin",
+        "Aside",
+        "adapters",
+        "carved",
+        "Additionally",
+        "traditionally",
+        "comfortable"
+      ],
+      "output_text": "At first it was expected that this would be more than enough for most programmers who wanted to build their own programs on them - but then eventually learned about how they could perform programming such as code execution using deep learning tools which were available at some point before being developed or used by an already established group of developers (in other words, if you want to start developing your program quickly), so I thought perhaps we should look closer to those ideas instead. The real test is one with open source projects called \"TextScript\". However, because many people have had access back then all these languages will never work anymore",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Likewise, Similarly, Another, Also, especially, Pin, Aside, adapters, carved, Additionally, traditionally, comfortable\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Likewise, Similarly, Another, Also, especially, Pin, Aside, adapters, carved, Additionally, traditionally, comfortable\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. At first it was expected that this would be more than enough for most programmers who wanted to build their own programs on them - but then eventually learned about how they could perform programming such as code execution using deep learning tools which were available at some point before being developed or used by an already established group of developers (in other words, if you want to start developing your program quickly), so I thought perhaps we should look closer to those ideas instead. The real test is one with open source projects called \"TextScript\". However, because many people have had access back then all these languages will never work anymore",
+        "continuation_text": "At first it was expected that this would be more than enough for most programmers who wanted to build their own programs on them - but then eventually learned about how they could perform programming such as code execution using deep learning tools which were available at some point before being developed or used by an already established group of developers (in other words, if you want to start developing your program quickly), so I thought perhaps we should look closer to those ideas instead. The real test is one with open source projects called \"TextScript\". However, because many people have had access back then all these languages will never work anymore",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 228,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 666,
+        "word_count": 112,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.9732142857142857,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "At",
+        "While",
+        "Amid",
+        "meager",
+        "Veil",
+        "When",
+        "Despite",
+        "With",
+        "WHEN",
+        "Having",
+        "lackluster",
+        "Near"
+      ],
+      "output_text": "and may require quite much complexity! You can even write simple functions like getLineAndEnd(), goToString(), etc... just from here :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: At, While, Amid, meager, Veil, When, Despite, With, WHEN, Having, lackluster, Near\n\nTEXT:\nAt first it was expected that this would be more than enough for most programmers who wanted to build their own programs on them - but then eventually learned about how they could perform programming such as code execution using deep learning tools which were available at some point before being developed or used by an already established group of developers (in other words, if you want to start developing your program quickly), so I thought perhaps we should look closer to those ideas instead. The real test is one with open source projects called \"TextScript\". However, because many people have had access back then all these languages will never work anymore",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: At, While, Amid, meager, Veil, When, Despite, With, WHEN, Having, lackluster, Near\n\nTEXT:\nAt first it was expected that this would be more than enough for most programmers who wanted to build their own programs on them - but then eventually learned about how they could perform programming such as code execution using deep learning tools which were available at some point before being developed or used by an already established group of developers (in other words, if you want to start developing your program quickly), so I thought perhaps we should look closer to those ideas instead. The real test is one with open source projects called \"TextScript\". However, because many people have had access back then all these languages will never work anymore and may require quite much complexity! You can even write simple functions like getLineAndEnd(), goToString(), etc... just from here :)",
+        "continuation_text": "and may require quite much complexity! You can even write simple functions like getLineAndEnd(), goToString(), etc... just from here :)",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 235,
+        "new_token_count": 30,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 135,
+        "word_count": 20,
+        "unique_word_count": 20,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Whether",
+        "Thankfully",
+        "Fortunately",
+        "Microsoft",
+        "cryptocurrencies",
+        "Hopefully",
+        "Luckily",
+        "surprisingly",
+        "Bitcoin",
+        "Personally",
+        "Canadians",
+        "Regardless"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Whether, Thankfully, Fortunately, Microsoft, cryptocurrencies, Hopefully, Luckily, surprisingly, Bitcoin, Personally, Canadians, Regardless\n\nTEXT:\nand may require quite much complexity! You can even write simple functions like getLineAndEnd(), goToString(), etc... just from here :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Whether, Thankfully, Fortunately, Microsoft, cryptocurrencies, Hopefully, Luckily, surprisingly, Bitcoin, Personally, Canadians, Regardless\n\nTEXT:\nand may require quite much complexity! You can even write simple functions like getLineAndEnd(), goToString(), etc... just from here :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Whether, Thankfully, Fortunately, Microsoft, cryptocurrencies, Hopefully, Luckily, surprisingly, Bitcoin, Personally, Canadians, Regardless\n\nTEXT:\nand may require quite much complexity! You can even write simple functions like getLineAndEnd(), goToString(), etc... just from here :)",
+        "continuation_text": "",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 115,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 530,
+        "word_count": 72,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9166666666666666,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

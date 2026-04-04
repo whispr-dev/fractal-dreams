@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1200
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 604,
+        "word_count": 99,
+        "unique_word_count": 93,
+        "unique_word_ratio": 0.9393939393939394,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1077,
+        "word_count": 177,
+        "unique_word_count": 153,
+        "unique_word_ratio": 0.864406779661017,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1550,
+        "word_count": 256,
+        "unique_word_count": 211,
+        "unique_word_ratio": 0.82421875,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2011,
+        "word_count": 334,
+        "unique_word_count": 266,
+        "unique_word_ratio": 0.7964071856287425,
+        "repeated_bigram_count": 4
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2496,
+        "word_count": 411,
+        "unique_word_count": 324,
+        "unique_word_ratio": 0.7883211678832117,
+        "repeated_bigram_count": 4
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nContinuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked",
+        "continuation_text": "Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked",
+        "input_token_count": 68,
+        "raw_input_token_count": 68,
+        "output_token_count": 164,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 604,
+        "word_count": 99,
+        "unique_word_count": 93,
+        "unique_word_ratio": 0.9393939393939394,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked\nassistant\nin shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight",
+        "continuation_text": "in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight",
+        "input_token_count": 163,
+        "raw_input_token_count": 163,
+        "output_token_count": 259,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1077,
+        "word_count": 177,
+        "unique_word_count": 153,
+        "unique_word_ratio": 0.864406779661017,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The silhouette disappeared into the stillness, leaving behind only the pale glow of evening's last light. A soft rustling filled the air, sending shivers down my spine as I observed its form—a figure hunched against a stone wall beneath the weightless nightfall. Could this be any other planet? Or perhaps just my imagination playing tricks on me?\n\nA cold wind picked up, settling softly in the quiet embrace of the chamber. As it brushed past me, something felt strangely",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight The silhouette disappeared into the stillness, leaving behind only the pale glow of evening's last light. A soft rustling filled the air, sending shivers down my spine as I observed its form—a figure hunched against a stone wall beneath the weightless nightfall. Could this be any other planet? Or perhaps just my imagination playing tricks on me?\n\nA cold wind picked up, settling softly in the quiet embrace of the chamber. As it brushed past me, something felt strangely",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight\nassistant\nThe silhouette disappeared into the stillness, leaving behind only the pale glow of evening's last light. A soft rustling filled the air, sending shivers down my spine as I observed its form—a figure hunched against a stone wall beneath the weightless nightfall. Could this be any other planet? Or perhaps just my imagination playing tricks on me?\n\nA cold wind picked up, settling softly in the quiet embrace of the chamber. As it brushed past me, something felt strangely",
+        "continuation_text": "The silhouette disappeared into the stillness, leaving behind only the pale glow of evening's last light. A soft rustling filled the air, sending shivers down my spine as I observed its form—a figure hunched against a stone wall beneath the weightless nightfall. Could this be any other planet? Or perhaps just my imagination playing tricks on me?\n\nA cold wind picked up, settling softly in the quiet embrace of the chamber. As it brushed past me, something felt strangely",
+        "input_token_count": 259,
+        "raw_input_token_count": 259,
+        "output_token_count": 355,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1550,
+        "word_count": 256,
+        "unique_word_count": 211,
+        "unique_word_ratio": 0.82421875,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight The silhouette disappeared into the stillness, leaving behind only the pale glow of evening's last light. A soft rustling filled the air, sending shivers down my spine as I observed its form—a figure hunched against a stone wall beneath the weightless nightfall. Could this be any other planet? Or perhaps just my imagination playing tricks on me?\n\nA cold wind picked up, settling softly in the quiet embrace of the chamber. As it brushed past me, something felt strangely<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "different. It caught the scent of damp earth and rustling leaves, making my skin feel slightly colder even though nothing appeared alive at first glance. What could this be?\n\nThen, slowly but surely, the figure broke out of the darkness and emerged onto the sandstone floor outside. As it approached me, fear settled over my heart—this wasn't what I expected!\n\n\"I have seen many things,\" she murmured across the soft breeze, her voice barely above a whisper. \"",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight The silhouette disappeared into the stillness, leaving behind only the pale glow of evening's last light. A soft rustling filled the air, sending shivers down my spine as I observed its form—a figure hunched against a stone wall beneath the weightless nightfall. Could this be any other planet? Or perhaps just my imagination playing tricks on me?\n\nA cold wind picked up, settling softly in the quiet embrace of the chamber. As it brushed past me, something felt strangely different. It caught the scent of damp earth and rustling leaves, making my skin feel slightly colder even though nothing appeared alive at first glance. What could this be?\n\nThen, slowly but surely, the figure broke out of the darkness and emerged onto the sandstone floor outside. As it approached me, fear settled over my heart—this wasn't what I expected!\n\n\"I have seen many things,\" she murmured across the soft breeze, her voice barely above a whisper. \"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight The silhouette disappeared into the stillness, leaving behind only the pale glow of evening's last light. A soft rustling filled the air, sending shivers down my spine as I observed its form—a figure hunched against a stone wall beneath the weightless nightfall. Could this be any other planet? Or perhaps just my imagination playing tricks on me?\n\nA cold wind picked up, settling softly in the quiet embrace of the chamber. As it brushed past me, something felt strangely<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight The silhouette disappeared into the stillness, leaving behind only the pale glow of evening's last light. A soft rustling filled the air, sending shivers down my spine as I observed its form—a figure hunched against a stone wall beneath the weightless nightfall. Could this be any other planet? Or perhaps just my imagination playing tricks on me?\n\nA cold wind picked up, settling softly in the quiet embrace of the chamber. As it brushed past me, something felt strangely\nassistant\ndifferent. It caught the scent of damp earth and rustling leaves, making my skin feel slightly colder even though nothing appeared alive at first glance. What could this be?\n\nThen, slowly but surely, the figure broke out of the darkness and emerged onto the sandstone floor outside. As it approached me, fear settled over my heart—this wasn't what I expected!\n\n\"I have seen many things,\" she murmured across the soft breeze, her voice barely above a whisper. \"",
+        "continuation_text": "different. It caught the scent of damp earth and rustling leaves, making my skin feel slightly colder even though nothing appeared alive at first glance. What could this be?\n\nThen, slowly but surely, the figure broke out of the darkness and emerged onto the sandstone floor outside. As it approached me, fear settled over my heart—this wasn't what I expected!\n\n\"I have seen many things,\" she murmured across the soft breeze, her voice barely above a whisper. \"",
+        "input_token_count": 355,
+        "raw_input_token_count": 355,
+        "output_token_count": 451,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2011,
+        "word_count": 334,
+        "unique_word_count": 266,
+        "unique_word_ratio": 0.7964071856287425,
+        "repeated_bigram_count": 4
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight The silhouette disappeared into the stillness, leaving behind only the pale glow of evening's last light. A soft rustling filled the air, sending shivers down my spine as I observed its form—a figure hunched against a stone wall beneath the weightless nightfall. Could this be any other planet? Or perhaps just my imagination playing tricks on me?\n\nA cold wind picked up, settling softly in the quiet embrace of the chamber. As it brushed past me, something felt strangely different. It caught the scent of damp earth and rustling leaves, making my skin feel slightly colder even though nothing appeared alive at first glance. What could this be?\n\nThen, slowly but surely, the figure broke out of the darkness and emerged onto the sandstone floor outside. As it approached me, fear settled over my heart—this wasn't what I expected!\n\n\"I have seen many things,\" she murmured across the soft breeze, her voice barely above a whisper. \"<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "\"Tell me, who were these people?\" came a soft whisper from below. The figure, now cloaked in shadows and surrounded by eerie shapes, spoke softly, yet distinctly, almost too clear despite her surroundings.\n\nShe looked at him curiously, studying his features carefully before speaking again, drawing close enough to make sure he couldn't move freely. Her voice held a depth of intelligence that surprised him, blending fearsome powers with genuine concern.\n\n\"You mean, you saw them all",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight The silhouette disappeared into the stillness, leaving behind only the pale glow of evening's last light. A soft rustling filled the air, sending shivers down my spine as I observed its form—a figure hunched against a stone wall beneath the weightless nightfall. Could this be any other planet? Or perhaps just my imagination playing tricks on me?\n\nA cold wind picked up, settling softly in the quiet embrace of the chamber. As it brushed past me, something felt strangely different. It caught the scent of damp earth and rustling leaves, making my skin feel slightly colder even though nothing appeared alive at first glance. What could this be?\n\nThen, slowly but surely, the figure broke out of the darkness and emerged onto the sandstone floor outside. As it approached me, fear settled over my heart—this wasn't what I expected!\n\n\"I have seen many things,\" she murmured across the soft breeze, her voice barely above a whisper. \" \"Tell me, who were these people?\" came a soft whisper from below. The figure, now cloaked in shadows and surrounded by eerie shapes, spoke softly, yet distinctly, almost too clear despite her surroundings.\n\nShe looked at him curiously, studying his features carefully before speaking again, drawing close enough to make sure he couldn't move freely. Her voice held a depth of intelligence that surprised him, blending fearsome powers with genuine concern.\n\n\"You mean, you saw them all",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight The silhouette disappeared into the stillness, leaving behind only the pale glow of evening's last light. A soft rustling filled the air, sending shivers down my spine as I observed its form—a figure hunched against a stone wall beneath the weightless nightfall. Could this be any other planet? Or perhaps just my imagination playing tricks on me?\n\nA cold wind picked up, settling softly in the quiet embrace of the chamber. As it brushed past me, something felt strangely different. It caught the scent of damp earth and rustling leaves, making my skin feel slightly colder even though nothing appeared alive at first glance. What could this be?\n\nThen, slowly but surely, the figure broke out of the darkness and emerged onto the sandstone floor outside. As it approached me, fear settled over my heart—this wasn't what I expected!\n\n\"I have seen many things,\" she murmured across the soft breeze, her voice barely above a whisper. \"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. Continuing from the given text:\n\nA faint whisper rose, carrying an ancient message through time's unyielding hands: \"Remember today is but yesterday's dream. Today's decisions matter.\"  \nThe clockwork map moved with a silent grace, each stroke echoing the past events of years gone by; now its eyes fixed on present moments, eager for every twist in our destiny.\nEach step it took signified someone passing over their life, revealing hidden scars or forging paths ahead marked in shadowy shadows cast by the past. The map felt like a guidebook winding up its final turn, weaving together fragments of stories that would eventually become tales buried deep within time itself.  \nSuddenly, its gaze focused again upon the present day, eyes drawn closer towards where life seemed so far away. And then...  \nSilently, it paused once more, eyes resting upon one small scene amidst the sea of history.\nAs darkness fell, silhouettes dancing in the twilight The silhouette disappeared into the stillness, leaving behind only the pale glow of evening's last light. A soft rustling filled the air, sending shivers down my spine as I observed its form—a figure hunched against a stone wall beneath the weightless nightfall. Could this be any other planet? Or perhaps just my imagination playing tricks on me?\n\nA cold wind picked up, settling softly in the quiet embrace of the chamber. As it brushed past me, something felt strangely different. It caught the scent of damp earth and rustling leaves, making my skin feel slightly colder even though nothing appeared alive at first glance. What could this be?\n\nThen, slowly but surely, the figure broke out of the darkness and emerged onto the sandstone floor outside. As it approached me, fear settled over my heart—this wasn't what I expected!\n\n\"I have seen many things,\" she murmured across the soft breeze, her voice barely above a whisper. \"\nassistant\n\"Tell me, who were these people?\" came a soft whisper from below. The figure, now cloaked in shadows and surrounded by eerie shapes, spoke softly, yet distinctly, almost too clear despite her surroundings.\n\nShe looked at him curiously, studying his features carefully before speaking again, drawing close enough to make sure he couldn't move freely. Her voice held a depth of intelligence that surprised him, blending fearsome powers with genuine concern.\n\n\"You mean, you saw them all",
+        "continuation_text": "\"Tell me, who were these people?\" came a soft whisper from below. The figure, now cloaked in shadows and surrounded by eerie shapes, spoke softly, yet distinctly, almost too clear despite her surroundings.\n\nShe looked at him curiously, studying his features carefully before speaking again, drawing close enough to make sure he couldn't move freely. Her voice held a depth of intelligence that surprised him, blending fearsome powers with genuine concern.\n\n\"You mean, you saw them all",
+        "input_token_count": 451,
+        "raw_input_token_count": 451,
+        "output_token_count": 547,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2496,
+        "word_count": 411,
+        "unique_word_count": 324,
+        "unique_word_ratio": 0.7883211678832117,
+        "repeated_bigram_count": 4
+      }
+    }
+  ]
+}

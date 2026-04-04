@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1444
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 298,
+        "word_count": 56,
+        "unique_word_count": 53,
+        "unique_word_ratio": 0.9464285714285714,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 393,
+        "word_count": 72,
+        "unique_word_count": 69,
+        "unique_word_ratio": 0.9583333333333334,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 645,
+        "word_count": 114,
+        "unique_word_count": 110,
+        "unique_word_ratio": 0.9649122807017544,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 850,
+        "word_count": 146,
+        "unique_word_count": 141,
+        "unique_word_ratio": 0.9657534246575342,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 1854,
+        "word_count": 314,
+        "unique_word_count": 162,
+        "unique_word_ratio": 0.5159235668789809,
+        "repeated_bigram_count": 145
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+      "delta_text": "The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ...",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ...",
+        "continuation_text": "The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ...",
+        "input_token_count": 60,
+        "raw_input_token_count": 60,
+        "output_token_count": 97,
+        "new_token_count": 37,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 298,
+        "word_count": 56,
+        "unique_word_count": 53,
+        "unique_word_ratio": 0.9464285714285714,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ...",
+      "delta_text": "This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch .",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch .",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ...\n\nThis new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch .",
+        "continuation_text": "This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch .",
+        "input_token_count": 96,
+        "raw_input_token_count": 96,
+        "output_token_count": 122,
+        "new_token_count": 26,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 393,
+        "word_count": 72,
+        "unique_word_count": 69,
+        "unique_word_ratio": 0.9583333333333334,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch .",
+      "delta_text": "Now we have read about how he managed to create them all on two separate computers without changing any real events... But here I am thinking something truly interesting that would be useful for future generations if our efforts were taken seriously.\"",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch . Now we have read about how he managed to create them all on two separate computers without changing any real events... But here I am thinking something truly interesting that would be useful for future generations if our efforts were taken seriously.\"",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch .",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch . Now we have read about how he managed to create them all on two separate computers without changing any real events... But here I am thinking something truly interesting that would be useful for future generations if our efforts were taken seriously.\"",
+        "continuation_text": "Now we have read about how he managed to create them all on two separate computers without changing any real events... But here I am thinking something truly interesting that would be useful for future generations if our efforts were taken seriously.\"",
+        "input_token_count": 120,
+        "raw_input_token_count": 120,
+        "output_token_count": 165,
+        "new_token_count": 45,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 645,
+        "word_count": 114,
+        "unique_word_count": 110,
+        "unique_word_ratio": 0.9649122807017544,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch . Now we have read about how he managed to create them all on two separate computers without changing any real events... But here I am thinking something truly interesting that would be useful for future generations if our efforts were taken seriously.\"",
+      "delta_text": "This will hopefully give us some practical insights into why people think \"no\" or \"maybe\", even those who still believe most things can't possibly work because they never change anything important yet....",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch . Now we have read about how he managed to create them all on two separate computers without changing any real events... But here I am thinking something truly interesting that would be useful for future generations if our efforts were taken seriously.\" This will hopefully give us some practical insights into why people think \"no\" or \"maybe\", even those who still believe most things can't possibly work because they never change anything important yet....",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch . Now we have read about how he managed to create them all on two separate computers without changing any real events... But here I am thinking something truly interesting that would be useful for future generations if our efforts were taken seriously.\"",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch . Now we have read about how he managed to create them all on two separate computers without changing any real events... But here I am thinking something truly interesting that would be useful for future generations if our efforts were taken seriously.\"\nThis will hopefully give us some practical insights into why people think \"no\" or \"maybe\", even those who still believe most things can't possibly work because they never change anything important yet....",
+        "continuation_text": "This will hopefully give us some practical insights into why people think \"no\" or \"maybe\", even those who still believe most things can't possibly work because they never change anything important yet....",
+        "input_token_count": 164,
+        "raw_input_token_count": 164,
+        "output_token_count": 204,
+        "new_token_count": 40,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 850,
+        "word_count": 146,
+        "unique_word_count": 141,
+        "unique_word_ratio": 0.9657534246575342,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch . Now we have read about how he managed to create them all on two separate computers without changing any real events... But here I am thinking something truly interesting that would be useful for future generations if our efforts were taken seriously.\" This will hopefully give us some practical insights into why people think \"no\" or \"maybe\", even those who still believe most things can't possibly work because they never change anything important yet....",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch . Now we have read about how he managed to create them all on two separate computers without changing any real events... But here I am thinking something truly interesting that would be useful for future generations if our efforts were taken seriously.\" This will hopefully give us some practical insights into why people think \"no\" or \"maybe\", even those who still believe most things can't possibly work because they never change anything important yet....",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch . Now we have read about how he managed to create them all on two separate computers without changing any real events... But here I am thinking something truly interesting that would be useful for future generations if our efforts were taken seriously.\" This will hopefully give us some practical insights into why people think \"no\" or \"maybe\", even those who still believe most things can't possibly work because they never change anything important yet.... You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch . Now we have read about how he managed to create them all on two separate computers without changing any real events... But here I am thinking something truly interesting that would be useful for future generations if our efforts were taken seriously.\" This will hopefully give us some practical insights into why people think \"no\" or \"maybe\", even those who still believe most things can't possibly work because they never change anything important yet....",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch . Now we have read about how he managed to create them all on two separate computers without changing any real events... But here I am thinking something truly interesting that would be useful for future generations if our efforts were taken seriously.\" This will hopefully give us some practical insights into why people think \"no\" or \"maybe\", even those who still believe most things can't possibly work because they never change anything important yet....",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The world is moving from one machine to another - only when there is an end; this reality of progress has been seen as just such at home within society's borders so far ... This new idea was originally created by Daniel Wahlberg (Harmony) with his wife Helen Storch . Now we have read about how he managed to create them all on two separate computers without changing any real events... But here I am thinking something truly interesting that would be useful for future generations if our efforts were taken seriously.\" This will hopefully give us some practical insights into why people think \"no\" or \"maybe\", even those who still believe most things can't possibly work because they never change anything important yet....",
+        "continuation_text": "",
+        "input_token_count": 202,
+        "raw_input_token_count": 202,
+        "output_token_count": 203,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1854,
+        "word_count": 314,
+        "unique_word_count": 162,
+        "unique_word_ratio": 0.5159235668789809,
+        "repeated_bigram_count": 145
+      }
+    }
+  ]
+}

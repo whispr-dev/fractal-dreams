@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1477,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 361,
+        "word_count": 54,
+        "unique_word_count": 51,
+        "unique_word_ratio": 0.9444444444444444,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 544,
+        "word_count": 85,
+        "unique_word_count": 81,
+        "unique_word_ratio": 0.9529411764705882,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 198,
+        "word_count": 37,
+        "unique_word_count": 36,
+        "unique_word_ratio": 0.972972972972973,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "sick",
+        ".metadata",
+        "metadata",
+        "余名",
+        "نه",
+        "(/",
+        "special",
+        "ig",
+        "-rich",
+        "高品质",
+        "GT",
+        "intensive"
+      ],
+      "output_text": "The next recursive transformation of the given text is:\n\n\"An abandoned factory had previously been narrating its own decay through various literary devices, such as metaphorical speech and vivid imagery. However, each new rendition failed to capture the essence of rustiness; instead, they seemed to mimic prayerful tones or echo prayers from past generations.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nThe next recursive transformation of the given text is:\n\n\"An abandoned factory had previously been narrating its own decay through various literary devices, such as metaphorical speech and vivid imagery. However, each new rendition failed to capture the essence of rustiness; instead, they seemed to mimic prayerful tones or echo prayers from past generations.\"",
+        "continuation_text": "The next recursive transformation of the given text is:\n\n\"An abandoned factory had previously been narrating its own decay through various literary devices, such as metaphorical speech and vivid imagery. However, each new rendition failed to capture the essence of rustiness; instead, they seemed to mimic prayerful tones or echo prayers from past generations.\"",
+        "input_token_count": 120,
+        "raw_input_token_count": 120,
+        "output_token_count": 187,
+        "new_token_count": 67,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 361,
+        "word_count": 54,
+        "unique_word_count": 51,
+        "unique_word_ratio": 0.9444444444444444,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "IEEE",
+        "hacker",
+        ".The",
+        "etyl",
+        "$(\"#",
+        "_UART",
+        "значительно",
+        "台北",
+        "uter",
+        "cir",
+        "UART",
+        "ir"
+      ],
+      "output_text": "Sure! Here's the next recursive transformation based on your provided text:\n\n\"Aren't you looking down at the ashes? It seems like you've forgotten how to walk despite all the efforts of others. Just imagine if this city hadn't fallen into ruins yet?\"\n\nThis version uses similar principles but with different context. The original text was about a narrator narrating through literary techniques such as metaphor, description, and imagery, which has now evolved to reflect more modern scenarios involving aging factories due to neglect over time.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: IEEE, hacker, .The, etyl, $(\"#, _UART, значительно, 台北, uter, cir, UART, ir\n\nTEXT:\nThe next recursive transformation of the given text is:\n\n\"An abandoned factory had previously been narrating its own decay through various literary devices, such as metaphorical speech and vivid imagery. However, each new rendition failed to capture the essence of rustiness; instead, they seemed to mimic prayerful tones or echo prayers from past generations.\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: IEEE, hacker, .The, etyl, $(\"#, _UART, значительно, 台北, uter, cir, UART, ir\n\nTEXT:\nThe next recursive transformation of the given text is:\n\n\"An abandoned factory had previously been narrating its own decay through various literary devices, such as metaphorical speech and vivid imagery. However, each new rendition failed to capture the essence of rustiness; instead, they seemed to mimic prayerful tones or echo prayers from past generations.\"\nassistant\nSure! Here's the next recursive transformation based on your provided text:\n\n\"Aren't you looking down at the ashes? It seems like you've forgotten how to walk despite all the efforts of others. Just imagine if this city hadn't fallen into ruins yet?\"\n\nThis version uses similar principles but with different context. The original text was about a narrator narrating through literary techniques such as metaphor, description, and imagery, which has now evolved to reflect more modern scenarios involving aging factories due to neglect over time.",
+        "continuation_text": "Sure! Here's the next recursive transformation based on your provided text:\n\n\"Aren't you looking down at the ashes? It seems like you've forgotten how to walk despite all the efforts of others. Just imagine if this city hadn't fallen into ruins yet?\"\n\nThis version uses similar principles but with different context. The original text was about a narrator narrating through literary techniques such as metaphor, description, and imagery, which has now evolved to reflect more modern scenarios involving aging factories due to neglect over time.",
+        "input_token_count": 160,
+        "raw_input_token_count": 160,
+        "output_token_count": 262,
+        "new_token_count": 102,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 544,
+        "word_count": 85,
+        "unique_word_count": 81,
+        "unique_word_ratio": 0.9529411764705882,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "/<",
+        "展示了",
+        "undercut",
+        "рав",
+        "Rom",
+        "Less",
+        "้อย",
+        "民族文化",
+        "nicknamed",
+        "Ble",
+        "Replies",
+        "Farm"
+      ],
+      "output_text": "\"Are you staring down at the ashes? Don’t you see that even those who strive to live well have lost touch with their basic human needs? What if this industrial complex had never been in any danger?\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: /<, 展示了, undercut, рав, Rom, Less, ้อย, 民族文化, nicknamed, Ble, Replies, Farm\n\nTEXT:\nSure! Here's the next recursive transformation based on your provided text:\n\n\"Aren't you looking down at the ashes? It seems like you've forgotten how to walk despite all the efforts of others. Just imagine if this city hadn't fallen into ruins yet?\"\n\nThis version uses similar principles but with different context. The original text was about a narrator narrating through literary techniques such as metaphor, description, and imagery, which has now evolved to reflect more modern scenarios involving aging factories due to neglect over time.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: /<, 展示了, undercut, рав, Rom, Less, ้อย, 民族文化, nicknamed, Ble, Replies, Farm\n\nTEXT:\nSure! Here's the next recursive transformation based on your provided text:\n\n\"Aren't you looking down at the ashes? It seems like you've forgotten how to walk despite all the efforts of others. Just imagine if this city hadn't fallen into ruins yet?\"\n\nThis version uses similar principles but with different context. The original text was about a narrator narrating through literary techniques such as metaphor, description, and imagery, which has now evolved to reflect more modern scenarios involving aging factories due to neglect over time.\nassistant\n\"Are you staring down at the ashes? Don’t you see that even those who strive to live well have lost touch with their basic human needs? What if this industrial complex had never been in any danger?\"",
+        "continuation_text": "\"Are you staring down at the ashes? Don’t you see that even those who strive to live well have lost touch with their basic human needs? What if this industrial complex had never been in any danger?\"",
+        "input_token_count": 199,
+        "raw_input_token_count": 199,
+        "output_token_count": 242,
+        "new_token_count": 43,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 198,
+        "word_count": 37,
+        "unique_word_count": 36,
+        "unique_word_ratio": 0.972972972972973,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

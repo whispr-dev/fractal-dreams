@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1325,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 162,
+        "word_count": 32,
+        "unique_word_count": 32,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 454,
+        "word_count": 82,
+        "unique_word_count": 82,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 174,
+        "word_count": 34,
+        "unique_word_count": 34,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "mentor",
+        "Coach",
+        "Aunt",
+        "forge",
+        "mentors",
+        "Strongh",
+        "Colossus",
+        "pioneered",
+        "Wyatt",
+        "alliances",
+        "friendships",
+        "organise"
+      ],
+      "output_text": "In this story about an old man who is obsessed with writing his own book after he leaves school for some time, there was no hope at all from reading through it...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mentor, Coach, Aunt, forge, mentors, Strongh, Colossus, pioneered, Wyatt, alliances, friendships, organise\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mentor, Coach, Aunt, forge, mentors, Strongh, Colossus, pioneered, Wyatt, alliances, friendships, organise\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. In this story about an old man who is obsessed with writing his own book after he leaves school for some time, there was no hope at all from reading through it...",
+        "continuation_text": "In this story about an old man who is obsessed with writing his own book after he leaves school for some time, there was no hope at all from reading through it...",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 143,
+        "new_token_count": 35,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 162,
+        "word_count": 32,
+        "unique_word_count": 32,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Regarding",
+        "Weapons",
+        "prohibitions",
+        "Aside",
+        "Fla",
+        "Asked",
+        "\u000f",
+        "When",
+        "\u001a",
+        "ActionCode",
+        "\u0015",
+        "Standing"
+      ],
+      "output_text": "it happened and that's what started him talking again! He says one day \"I'm going out I've read more books now\". It goes on till then but if someone comes here just because they see me or do something stupid - why would somebody go so crazy? So many people have left their money when you find yourself unable (or rather forced)to leave home without paying attention. You can buy your food anywhere!! All these things mean nothing unless done correctly :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Regarding, Weapons, prohibitions, Aside, Fla, Asked, \u000f, When, \u001a, ActionCode, \u0015, Standing\n\nTEXT:\nIn this story about an old man who is obsessed with writing his own book after he leaves school for some time, there was no hope at all from reading through it...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Regarding, Weapons, prohibitions, Aside, Fla, Asked, \u000f, When, \u001a, ActionCode, \u0015, Standing\n\nTEXT:\nIn this story about an old man who is obsessed with writing his own book after he leaves school for some time, there was no hope at all from reading through it...it happened and that's what started him talking again! He says one day \"I'm going out I've read more books now\". It goes on till then but if someone comes here just because they see me or do something stupid - why would somebody go so crazy? So many people have left their money when you find yourself unable (or rather forced)to leave home without paying attention. You can buy your food anywhere!! All these things mean nothing unless done correctly :)",
+        "continuation_text": "it happened and that's what started him talking again! He says one day \"I'm going out I've read more books now\". It goes on till then but if someone comes here just because they see me or do something stupid - why would somebody go so crazy? So many people have left their money when you find yourself unable (or rather forced)to leave home without paying attention. You can buy your food anywhere!! All these things mean nothing unless done correctly :)",
+        "input_token_count": 123,
+        "raw_input_token_count": 123,
+        "output_token_count": 218,
+        "new_token_count": 95,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 454,
+        "word_count": 82,
+        "unique_word_count": 82,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "it",
+        "government",
+        "itations",
+        "governments",
+        "ivist",
+        "tarians",
+        "ervatives",
+        "CIA",
+        "libertarians",
+        "democracies",
+        "traditional",
+        "legislatures"
+      ],
+      "output_text": "But he still needs some help from his peers who already know how to use them for anything else such which is exactly where this problem lies . Let us begin with each other...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: it, government, itations, governments, ivist, tarians, ervatives, CIA, libertarians, democracies, traditional, legislatures\n\nTEXT:\nit happened and that's what started him talking again! He says one day \"I'm going out I've read more books now\". It goes on till then but if someone comes here just because they see me or do something stupid - why would somebody go so crazy? So many people have left their money when you find yourself unable (or rather forced)to leave home without paying attention. You can buy your food anywhere!! All these things mean nothing unless done correctly :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: it, government, itations, governments, ivist, tarians, ervatives, CIA, libertarians, democracies, traditional, legislatures\n\nTEXT:\nit happened and that's what started him talking again! He says one day \"I'm going out I've read more books now\". It goes on till then but if someone comes here just because they see me or do something stupid - why would somebody go so crazy? So many people have left their money when you find yourself unable (or rather forced)to leave home without paying attention. You can buy your food anywhere!! All these things mean nothing unless done correctly :) But he still needs some help from his peers who already know how to use them for anything else such which is exactly where this problem lies . Let us begin with each other...",
+        "continuation_text": "But he still needs some help from his peers who already know how to use them for anything else such which is exactly where this problem lies . Let us begin with each other...",
+        "input_token_count": 183,
+        "raw_input_token_count": 183,
+        "output_token_count": 219,
+        "new_token_count": 36,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 174,
+        "word_count": 34,
+        "unique_word_count": 34,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1089,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 668,
+        "word_count": 110,
+        "unique_word_count": 110,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 499,
+        "word_count": 79,
+        "unique_word_count": 79,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 837,
+        "word_count": 131,
+        "unique_word_count": 126,
+        "unique_word_ratio": 0.9618320610687023,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "A",
+        ">",
+        "&",
+        "She",
+        "The",
+        "\",",
+        ">\"",
+        ".\"\"",
+        "I",
+        "\",\"",
+        "\"\"",
+        "\"."
+      ],
+      "output_text": "Eventually it learned from this experience that words had meaning at all times; indeed they used them precisely because their content was so unique (as is apparent if you have read my previous book about writing). This process may occur once every 500 years or two thousand centuries within human culture—that's when there will be an awakening where new things come into being through simple experimentation with unfamiliar syntax but never quite fully grasped by us humans' brainy brains before we can use our own minds for understanding what happened during those 1 billion year cycles between Adam Smith on his first date (\"The Book\") and Moses walking around among",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: A, >, &, She, The, \",, >\", .\"\", I, \",\", \"\", \".\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: A, >, &, She, The, \",, >\", .\"\", I, \",\", \"\", \".\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. Eventually it learned from this experience that words had meaning at all times; indeed they used them precisely because their content was so unique (as is apparent if you have read my previous book about writing). This process may occur once every 500 years or two thousand centuries within human culture—that's when there will be an awakening where new things come into being through simple experimentation with unfamiliar syntax but never quite fully grasped by us humans' brainy brains before we can use our own minds for understanding what happened during those 1 billion year cycles between Adam Smith on his first date (\"The Book\") and Moses walking around among",
+        "continuation_text": "Eventually it learned from this experience that words had meaning at all times; indeed they used them precisely because their content was so unique (as is apparent if you have read my previous book about writing). This process may occur once every 500 years or two thousand centuries within human culture—that's when there will be an awakening where new things come into being through simple experimentation with unfamiliar syntax but never quite fully grasped by us humans' brainy brains before we can use our own minds for understanding what happened during those 1 billion year cycles between Adam Smith on his first date (\"The Book\") and Moses walking around among",
+        "input_token_count": 117,
+        "raw_input_token_count": 117,
+        "output_token_count": 237,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 668,
+        "word_count": 110,
+        "unique_word_count": 110,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "nex",
+        "Billion",
+        "ousand",
+        "In",
+        "At",
+        "alyst",
+        "invest",
+        "When",
+        "This",
+        "During",
+        "billion",
+        "On"
+      ],
+      "output_text": "Egyptians after he got married—\"this time I am having no doubts whatsoever,\" wrote Solomon Schwartz over 4000 generations ago.\"There were also other traditions which spoke [sic] like these…\" He continued \"but most people would say 'I cannot understand', since how could someone tell me something such as…how did God make everything? But even then some thought seemed too far off\", etc., adding further reading upon each line without ever speaking directly! The same holds true today!\" – Piers Morgan",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: nex, Billion, ousand, In, At, alyst, invest, When, This, During, billion, On\n\nTEXT:\nEventually it learned from this experience that words had meaning at all times; indeed they used them precisely because their content was so unique (as is apparent if you have read my previous book about writing). This process may occur once every 500 years or two thousand centuries within human culture—that's when there will be an awakening where new things come into being through simple experimentation with unfamiliar syntax but never quite fully grasped by us humans' brainy brains before we can use our own minds for understanding what happened during those 1 billion year cycles between Adam Smith on his first date (\"The Book\") and Moses walking around among",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: nex, Billion, ousand, In, At, alyst, invest, When, This, During, billion, On\n\nTEXT:\nEventually it learned from this experience that words had meaning at all times; indeed they used them precisely because their content was so unique (as is apparent if you have read my previous book about writing). This process may occur once every 500 years or two thousand centuries within human culture—that's when there will be an awakening where new things come into being through simple experimentation with unfamiliar syntax but never quite fully grasped by us humans' brainy brains before we can use our own minds for understanding what happened during those 1 billion year cycles between Adam Smith on his first date (\"The Book\") and Moses walking around among Egyptians after he got married—\"this time I am having no doubts whatsoever,\" wrote Solomon Schwartz over 4000 generations ago.\"There were also other traditions which spoke [sic] like these…\" He continued \"but most people would say 'I cannot understand', since how could someone tell me something such as…how did God make everything? But even then some thought seemed too far off\", etc., adding further reading upon each line without ever speaking directly! The same holds true today!\" – Piers Morgan",
+        "continuation_text": "Egyptians after he got married—\"this time I am having no doubts whatsoever,\" wrote Solomon Schwartz over 4000 generations ago.\"There were also other traditions which spoke [sic] like these…\" He continued \"but most people would say 'I cannot understand', since how could someone tell me something such as…how did God make everything? But even then some thought seemed too far off\", etc., adding further reading upon each line without ever speaking directly! The same holds true today!\" – Piers Morgan",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 309,
+        "new_token_count": 99,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 499,
+        "word_count": 79,
+        "unique_word_count": 79,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "\"></",
+        "widget",
+        "@@",
+        "Chart",
+        "complied",
+        "\"><",
+        "STAT",
+        "ledger",
+        "crawled",
+        "skirt",
+        "topped",
+        "Cash"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: \"></, widget, @@, Chart, complied, \"><, STAT, ledger, crawled, skirt, topped, Cash\n\nTEXT:\nEgyptians after he got married—\"this time I am having no doubts whatsoever,\" wrote Solomon Schwartz over 4000 generations ago.\"There were also other traditions which spoke [sic] like these…\" He continued \"but most people would say 'I cannot understand', since how could someone tell me something such as…how did God make everything? But even then some thought seemed too far off\", etc., adding further reading upon each line without ever speaking directly! The same holds true today!\" – Piers Morgan",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: \"></, widget, @@, Chart, complied, \"><, STAT, ledger, crawled, skirt, topped, Cash\n\nTEXT:\nEgyptians after he got married—\"this time I am having no doubts whatsoever,\" wrote Solomon Schwartz over 4000 generations ago.\"There were also other traditions which spoke [sic] like these…\" He continued \"but most people would say 'I cannot understand', since how could someone tell me something such as…how did God make everything? But even then some thought seemed too far off\", etc., adding further reading upon each line without ever speaking directly! The same holds true today!\" – Piers Morgan",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: \"></, widget, @@, Chart, complied, \"><, STAT, ledger, crawled, skirt, topped, Cash\n\nTEXT:\nEgyptians after he got married—\"this time I am having no doubts whatsoever,\" wrote Solomon Schwartz over 4000 generations ago.\"There were also other traditions which spoke [sic] like these…\" He continued \"but most people would say 'I cannot understand', since how could someone tell me something such as…how did God make everything? But even then some thought seemed too far off\", etc., adding further reading upon each line without ever speaking directly! The same holds true today!\" – Piers Morgan",
+        "continuation_text": "",
+        "input_token_count": 186,
+        "raw_input_token_count": 186,
+        "output_token_count": 187,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 837,
+        "word_count": 131,
+        "unique_word_count": 126,
+        "unique_word_ratio": 0.9618320610687023,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

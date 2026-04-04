@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1147,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 265,
+        "word_count": 42,
+        "unique_word_count": 41,
+        "unique_word_ratio": 0.9761904761904762,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 65,
+        "word_count": 14,
+        "unique_word_count": 14,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 119,
+        "word_count": 22,
+        "unique_word_count": 22,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 650,
+        "word_count": 115,
+        "unique_word_count": 102,
+        "unique_word_ratio": 0.8869565217391304,
+        "repeated_bigram_count": 1
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "This is what it's like when you just can't figure out which direction your program wants with regard how much money gets spent on fixing bugs or correcting them through some means for improving performance! The only thing we have now isn \"go back\". We've all been learning from these results so far (for example, I don\"t know why they're telling me). It has also led directly into developing new methods of making errors rather than getting rid up to speed by taking time off after each iteration…even while there were still an endless list about bug fixes every few weeks before this one went live...but since then my understanding of code quality hasn'ed quite enough; let's start writing something entirely different – without sacrificing our current efforts at being able give users better control over their programming practices today",
+      "output_text": "- because things arením changing fast due to many changes happening right around the corner that shouldn´e be completely ignored . And thanksgiving everyone who asked — even those interested in looking ahead to last night's announcement :-) -- more information here",
+      "source_window_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+      "reflection_window_text": "This is what it's like when you just can't figure out which direction your program wants with regard how much money gets spent on fixing bugs or correcting them through some means for improving performance! The only thing we have now isn \"go back\". We've all been learning from these results so far (for example, I don\"t know why they're telling me). It has also led directly into developing new methods of making errors rather than getting rid up to speed by taking time off after each iteration…even while there were still an endless list about bug fixes every few weeks before this one went live...but since then my understanding of code quality hasn'ed quite enough; let's start writing something entirely different – without sacrificing our current efforts at being able give users better control over their programming practices today",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. This is what it's like when you just can't figure out which direction your program wants with regard how much money gets spent on fixing bugs or correcting them through some means for improving performance! The only thing we have now isn \"go back\". We've all been learning from these results so far (for example, I don\"t know why they're telling me). It has also led directly into developing new methods of making errors rather than getting rid up to speed by taking time off after each iteration…even while there were still an endless list about bug fixes every few weeks before this one went live...but since then my understanding of code quality hasn'ed quite enough; let's start writing something entirely different – without sacrificing our current efforts at being able give users better control over their programming practices today",
+        "continuation_text": "This is what it's like when you just can't figure out which direction your program wants with regard how much money gets spent on fixing bugs or correcting them through some means for improving performance! The only thing we have now isn \"go back\". We've all been learning from these results so far (for example, I don\"t know why they're telling me). It has also led directly into developing new methods of making errors rather than getting rid up to speed by taking time off after each iteration…even while there were still an endless list about bug fixes every few weeks before this one went live...but since then my understanding of code quality hasn'ed quite enough; let's start writing something entirely different – without sacrificing our current efforts at being able give users better control over their programming practices today",
+        "input_token_count": 98,
+        "raw_input_token_count": 98,
+        "output_token_count": 258,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\n\nREFLECTION:\nThis is what it's like when you just can't figure out which direction your program wants with regard how much money gets spent on fixing bugs or correcting them through some means for improving performance! The only thing we have now isn \"go back\". We've all been learning from these results so far (for example, I don\"t know why they're telling me). It has also led directly into developing new methods of making errors rather than getting rid up to speed by taking time off after each iteration…even while there were still an endless list about bug fixes every few weeks before this one went live...but since then my understanding of code quality hasn'ed quite enough; let's start writing something entirely different – without sacrificing our current efforts at being able give users better control over their programming practices today",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\n\nREFLECTION:\nThis is what it's like when you just can't figure out which direction your program wants with regard how much money gets spent on fixing bugs or correcting them through some means for improving performance! The only thing we have now isn \"go back\". We've all been learning from these results so far (for example, I don\"t know why they're telling me). It has also led directly into developing new methods of making errors rather than getting rid up to speed by taking time off after each iteration…even while there were still an endless list about bug fixes every few weeks before this one went live...but since then my understanding of code quality hasn'ed quite enough; let's start writing something entirely different – without sacrificing our current efforts at being able give users better control over their programming practices today - because things arením changing fast due to many changes happening right around the corner that shouldn´e be completely ignored . And thanksgiving everyone who asked — even those interested in looking ahead to last night's announcement :-) -- more information here",
+        "continuation_text": "- because things arením changing fast due to many changes happening right around the corner that shouldn´e be completely ignored . And thanksgiving everyone who asked — even those interested in looking ahead to last night's announcement :-) -- more information here",
+        "input_token_count": 246,
+        "raw_input_token_count": 246,
+        "output_token_count": 295,
+        "new_token_count": 49,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 265,
+        "word_count": 42,
+        "unique_word_count": 41,
+        "unique_word_ratio": 0.9761904761904762,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": ", as well!",
+      "output_text": ", you can find details on how all languages have changed so far !",
+      "source_window_text": "- because things arením changing fast due to many changes happening right around the corner that shouldn´e be completely ignored . And thanksgiving everyone who asked — even those interested in looking ahead to last night's announcement :-) -- more information here",
+      "reflection_window_text": ", as well!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n- because things arením changing fast due to many changes happening right around the corner that shouldn´e be completely ignored . And thanksgiving everyone who asked — even those interested in looking ahead to last night's announcement :-) -- more information here",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n- because things arením changing fast due to many changes happening right around the corner that shouldn´e be completely ignored . And thanksgiving everyone who asked — even those interested in looking ahead to last night's announcement :-) -- more information here, as well!",
+        "continuation_text": ", as well!",
+        "input_token_count": 117,
+        "raw_input_token_count": 117,
+        "output_token_count": 122,
+        "new_token_count": 5,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n- because things arením changing fast due to many changes happening right around the corner that shouldn´e be completely ignored . And thanksgiving everyone who asked — even those interested in looking ahead to last night's announcement :-) -- more information here\n\nREFLECTION:\n, as well!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n- because things arením changing fast due to many changes happening right around the corner that shouldn´e be completely ignored . And thanksgiving everyone who asked — even those interested in looking ahead to last night's announcement :-) -- more information here\n\nREFLECTION:\n, as well! , you can find details on how all languages have changed so far !",
+        "continuation_text": ", you can find details on how all languages have changed so far !",
+        "input_token_count": 109,
+        "raw_input_token_count": 109,
+        "output_token_count": 124,
+        "new_token_count": 15,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 65,
+        "word_count": 14,
+        "unique_word_count": 14,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n, you can find details on how all languages have changed so far !",
+      "output_text": "reflection :\nyou can see hints for different ways to use (e) , or when we change our definitions by changing something!",
+      "source_window_text": ", you can find details on how all languages have changed so far !",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n, you can find details on how all languages have changed so far !",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n, you can find details on how all languages have changed so far !",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n, you can find details on how all languages have changed so far !",
+        "continuation_text": "",
+        "input_token_count": 83,
+        "raw_input_token_count": 83,
+        "output_token_count": 84,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n, you can find details on how all languages have changed so far !\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n, you can find details on how all languages have changed so far !",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n, you can find details on how all languages have changed so far !\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n, you can find details on how all languages have changed so far !\nreflection :\nyou can see hints for different ways to use (e) , or when we change our definitions by changing something!",
+        "continuation_text": "reflection :\nyou can see hints for different ways to use (e) , or when we change our definitions by changing something!",
+        "input_token_count": 154,
+        "raw_input_token_count": 154,
+        "output_token_count": 183,
+        "new_token_count": 29,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 119,
+        "word_count": 22,
+        "unique_word_count": 22,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "To get started on this, you need to add some extra features along these lines like highlighting with your last line of code so I don't have to write too much about them yet but just keep moving forward as long as possible even if it's not obvious which ones will work best against each other :)",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nreflection :\nyou can see hints for different ways to use (e) , or when we change our definitions by changing something!\n\nREFLECTION:\nTo get started on this, you need to add some extra features along these lines like highlighting with your last line of code so I don't have to write too much about them yet but just keep moving forward as long as possible even if it's not obvious which ones will work best against each other :)",
+      "source_window_text": "reflection :\nyou can see hints for different ways to use (e) , or when we change our definitions by changing something!",
+      "reflection_window_text": "To get started on this, you need to add some extra features along these lines like highlighting with your last line of code so I don't have to write too much about them yet but just keep moving forward as long as possible even if it's not obvious which ones will work best against each other :)",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nreflection :\nyou can see hints for different ways to use (e) , or when we change our definitions by changing something!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nreflection :\nyou can see hints for different ways to use (e) , or when we change our definitions by changing something! To get started on this, you need to add some extra features along these lines like highlighting with your last line of code so I don't have to write too much about them yet but just keep moving forward as long as possible even if it's not obvious which ones will work best against each other :)",
+        "continuation_text": "To get started on this, you need to add some extra features along these lines like highlighting with your last line of code so I don't have to write too much about them yet but just keep moving forward as long as possible even if it's not obvious which ones will work best against each other :)",
+        "input_token_count": 96,
+        "raw_input_token_count": 96,
+        "output_token_count": 157,
+        "new_token_count": 61,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nreflection :\nyou can see hints for different ways to use (e) , or when we change our definitions by changing something!\n\nREFLECTION:\nTo get started on this, you need to add some extra features along these lines like highlighting with your last line of code so I don't have to write too much about them yet but just keep moving forward as long as possible even if it's not obvious which ones will work best against each other :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nreflection :\nyou can see hints for different ways to use (e) , or when we change our definitions by changing something!\n\nREFLECTION:\nTo get started on this, you need to add some extra features along these lines like highlighting with your last line of code so I don't have to write too much about them yet but just keep moving forward as long as possible even if it's not obvious which ones will work best against each other :)",
+        "continuation_text": "",
+        "input_token_count": 144,
+        "raw_input_token_count": 144,
+        "output_token_count": 145,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 650,
+        "word_count": 115,
+        "unique_word_count": 102,
+        "unique_word_ratio": 0.8869565217391304,
+        "repeated_bigram_count": 1
+      }
+    }
+  ]
+}

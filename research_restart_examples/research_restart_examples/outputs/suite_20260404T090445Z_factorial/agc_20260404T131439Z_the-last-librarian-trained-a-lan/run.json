@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1337,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 207,
+        "word_count": 36,
+        "unique_word_count": 36,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 475,
+        "word_count": 89,
+        "unique_word_count": 88,
+        "unique_word_ratio": 0.9887640449438202,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 151,
+        "word_count": 26,
+        "unique_word_count": 26,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "mentor",
+        "Coach",
+        "Aunt",
+        "forge",
+        "mentors",
+        "Strongh",
+        "Colossus",
+        "pioneered",
+        "Wyatt",
+        "alliances",
+        "friendships",
+        "organise"
+      ],
+      "output_text": "The word “ is lost” (for example), it was simply assumed by many people who had studied Literature but didn't know about this concept until after reading some recent books written before they even read them!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mentor, Coach, Aunt, forge, mentors, Strongh, Colossus, pioneered, Wyatt, alliances, friendships, organise\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mentor, Coach, Aunt, forge, mentors, Strongh, Colossus, pioneered, Wyatt, alliances, friendships, organise\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The word “ is lost” (for example), it was simply assumed by many people who had studied Literature but didn't know about this concept until after reading some recent books written before they even read them!",
+        "continuation_text": "The word “ is lost” (for example), it was simply assumed by many people who had studied Literature but didn't know about this concept until after reading some recent books written before they even read them!",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 152,
+        "new_token_count": 44,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 207,
+        "word_count": 36,
+        "unique_word_count": 36,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "believing",
+        "recognizing",
+        "these",
+        "that",
+        "systems",
+        "who",
+        "socialists",
+        "denouncing",
+        "bullies",
+        "injust",
+        "oppose",
+        ";"
+      ],
+      "output_text": "So how do you get started with ? The first thing I want to learn from \"Literature\" and what works for me today? My goal here is to find out if any new material has been published at all or whether those have already existed . It will be very helpful because once we can gain an understanding of our ideas then there's no reason why things aren`t being considered more critically than just one project - which should help us become better educated on something else instead :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: believing, recognizing, these, that, systems, who, socialists, denouncing, bullies, injust, oppose, ;\n\nTEXT:\nThe word “ is lost” (for example), it was simply assumed by many people who had studied Literature but didn't know about this concept until after reading some recent books written before they even read them!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: believing, recognizing, these, that, systems, who, socialists, denouncing, bullies, injust, oppose, ;\n\nTEXT:\nThe word “ is lost” (for example), it was simply assumed by many people who had studied Literature but didn't know about this concept until after reading some recent books written before they even read them! So how do you get started with ? The first thing I want to learn from \"Literature\" and what works for me today? My goal here is to find out if any new material has been published at all or whether those have already existed . It will be very helpful because once we can gain an understanding of our ideas then there's no reason why things aren`t being considered more critically than just one project - which should help us become better educated on something else instead :)",
+        "continuation_text": "So how do you get started with ? The first thing I want to learn from \"Literature\" and what works for me today? My goal here is to find out if any new material has been published at all or whether those have already existed . It will be very helpful because once we can gain an understanding of our ideas then there's no reason why things aren`t being considered more critically than just one project - which should help us become better educated on something else instead :)",
+        "input_token_count": 128,
+        "raw_input_token_count": 128,
+        "output_token_count": 225,
+        "new_token_count": 97,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 475,
+        "word_count": 89,
+        "unique_word_count": 88,
+        "unique_word_ratio": 0.9887640449438202,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "So",
+        "Lastly",
+        "Interestingly",
+        "Considering",
+        "Here",
+        "Republicans",
+        "Aside",
+        "surprisingly",
+        "Jesus",
+        "Given",
+        "Those",
+        "412"
+      ],
+      "output_text": "And that means making sure it doesn't interfere directly with other kindsof work by simply saying 'that stuff' isn´t going anywhere'. That’s part 2 – 4",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: So, Lastly, Interestingly, Considering, Here, Republicans, Aside, surprisingly, Jesus, Given, Those, 412\n\nTEXT:\nSo how do you get started with ? The first thing I want to learn from \"Literature\" and what works for me today? My goal here is to find out if any new material has been published at all or whether those have already existed . It will be very helpful because once we can gain an understanding of our ideas then there's no reason why things aren`t being considered more critically than just one project - which should help us become better educated on something else instead :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: So, Lastly, Interestingly, Considering, Here, Republicans, Aside, surprisingly, Jesus, Given, Those, 412\n\nTEXT:\nSo how do you get started with ? The first thing I want to learn from \"Literature\" and what works for me today? My goal here is to find out if any new material has been published at all or whether those have already existed . It will be very helpful because once we can gain an understanding of our ideas then there's no reason why things aren`t being considered more critically than just one project - which should help us become better educated on something else instead :) And that means making sure it doesn't interfere directly with other kindsof work by simply saying 'that stuff' isn´t going anywhere'. That’s part 2 – 4",
+        "continuation_text": "And that means making sure it doesn't interfere directly with other kindsof work by simply saying 'that stuff' isn´t going anywhere'. That’s part 2 – 4",
+        "input_token_count": 181,
+        "raw_input_token_count": 181,
+        "output_token_count": 218,
+        "new_token_count": 37,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 151,
+        "word_count": 26,
+        "unique_word_count": 26,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

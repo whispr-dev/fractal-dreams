@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1074,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 703,
+        "word_count": 106,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9905660377358491,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 370,
+        "word_count": 49,
+        "unique_word_count": 49,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 75,
+        "word_count": 16,
+        "unique_word_count": 16,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 671,
+        "word_count": 115,
+        "unique_word_count": 114,
+        "unique_word_ratio": 0.991304347826087,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        ",",
+        "have",
+        "was",
+        "made",
+        "It",
+        "if",
+        "the",
+        "."
+      ],
+      "output_text": "(As before, we need to add an additional note about how this information is shared between our authors) We now understand that there's still very little room for interpretation on which ideas may flow from; all theories do so through layers of abstraction—a common tool used with certain languages like Haskell or Scala. A few years ago, they wrote their paper titled The New Synthesis Principle — \"The Theory of Interpreting Meaningfully\" [PDF], discussing two related models based around concepts such as syntactic expression patterns and syntax structures called control semantics/variables. They proposed using various methods at some time during development because many approaches involved working",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. (As before, we need to add an additional note about how this information is shared between our authors) We now understand that there's still very little room for interpretation on which ideas may flow from; all theories do so through layers of abstraction—a common tool used with certain languages like Haskell or Scala. A few years ago, they wrote their paper titled The New Synthesis Principle — \"The Theory of Interpreting Meaningfully\" [PDF], discussing two related models based around concepts such as syntactic expression patterns and syntax structures called control semantics/variables. They proposed using various methods at some time during development because many approaches involved working",
+        "continuation_text": "(As before, we need to add an additional note about how this information is shared between our authors) We now understand that there's still very little room for interpretation on which ideas may flow from; all theories do so through layers of abstraction—a common tool used with certain languages like Haskell or Scala. A few years ago, they wrote their paper titled The New Synthesis Principle — \"The Theory of Interpreting Meaningfully\" [PDF], discussing two related models based around concepts such as syntactic expression patterns and syntax structures called control semantics/variables. They proposed using various methods at some time during development because many approaches involved working",
+        "input_token_count": 110,
+        "raw_input_token_count": 110,
+        "output_token_count": 238,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 703,
+        "word_count": 106,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9905660377358491,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "if",
+        "have",
+        "they",
+        "had",
+        "is",
+        "It",
+        "was",
+        "in",
+        "with"
+      ],
+      "output_text": "out what might happen when one could use those techniques without being explicitly concerned about where them should go after any other concept (the basic idea behind controlling behavior). This post contains my own thoughts regarding writing new rules! I also recommend reading here your book first ~[3] http://www.(dynamic_language.com/tutorial/1/containers#13802527/)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, if, have, they, had, is, It, was, in, with\n\nTEXT:\n(As before, we need to add an additional note about how this information is shared between our authors) We now understand that there's still very little room for interpretation on which ideas may flow from; all theories do so through layers of abstraction—a common tool used with certain languages like Haskell or Scala. A few years ago, they wrote their paper titled The New Synthesis Principle — \"The Theory of Interpreting Meaningfully\" [PDF], discussing two related models based around concepts such as syntactic expression patterns and syntax structures called control semantics/variables. They proposed using various methods at some time during development because many approaches involved working",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, if, have, they, had, is, It, was, in, with\n\nTEXT:\n(As before, we need to add an additional note about how this information is shared between our authors) We now understand that there's still very little room for interpretation on which ideas may flow from; all theories do so through layers of abstraction—a common tool used with certain languages like Haskell or Scala. A few years ago, they wrote their paper titled The New Synthesis Principle — \"The Theory of Interpreting Meaningfully\" [PDF], discussing two related models based around concepts such as syntactic expression patterns and syntax structures called control semantics/variables. They proposed using various methods at some time during development because many approaches involved working out what might happen when one could use those techniques without being explicitly concerned about where them should go after any other concept (the basic idea behind controlling behavior). This post contains my own thoughts regarding writing new rules! I also recommend reading here your book first ~[3] http://www.(dynamic_language.com/tutorial/1/containers#13802527/)",
+        "continuation_text": "out what might happen when one could use those techniques without being explicitly concerned about where them should go after any other concept (the basic idea behind controlling behavior). This post contains my own thoughts regarding writing new rules! I also recommend reading here your book first ~[3] http://www.(dynamic_language.com/tutorial/1/containers#13802527/)",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 286,
+        "new_token_count": 79,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 370,
+        "word_count": 49,
+        "unique_word_count": 49,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "are",
+        "it",
+        "if",
+        "If",
+        "had",
+        "It",
+        "have",
+        "could",
+        "did",
+        "is",
+        "was"
+      ],
+      "output_text": "and this tutorial can then come as an early introduction for you to do so !",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, it, if, If, had, It, have, could, did, is, was\n\nTEXT:\nout what might happen when one could use those techniques without being explicitly concerned about where them should go after any other concept (the basic idea behind controlling behavior). This post contains my own thoughts regarding writing new rules! I also recommend reading here your book first ~[3] http://www.(dynamic_language.com/tutorial/1/containers#13802527/)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, it, if, If, had, It, have, could, did, is, was\n\nTEXT:\nout what might happen when one could use those techniques without being explicitly concerned about where them should go after any other concept (the basic idea behind controlling behavior). This post contains my own thoughts regarding writing new rules! I also recommend reading here your book first ~[3] http://www.(dynamic_language.com/tutorial/1/containers#13802527/) and this tutorial can then come as an early introduction for you to do so !",
+        "continuation_text": "and this tutorial can then come as an early introduction for you to do so !",
+        "input_token_count": 157,
+        "raw_input_token_count": 157,
+        "output_token_count": 174,
+        "new_token_count": 17,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 75,
+        "word_count": 16,
+        "unique_word_count": 16,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "for",
+        "to",
+        "have",
+        "if",
+        "in",
+        "this",
+        "were",
+        "you",
+        "is",
+        "the"
+      ],
+      "output_text": "If we write more code (without any explicit references), perhaps because I just mentioned that some people don't like adding comments at all :) but there's not one problem with trying to make sure things work on your machine without making them look interesting . The main thing about our system and data structures has been how they operate - which means no other programming languages will ever get its due respect from us here! This makes sense since let's move onto another question :) We need control over each token type through those logic nodes; thus when using variables directly or indirectly via their expressions themselves , such as statements :: [a] => {b|c",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, for, to, have, if, in, this, were, you, is, the\n\nTEXT:\nand this tutorial can then come as an early introduction for you to do so !",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, for, to, have, if, in, this, were, you, is, the\n\nTEXT:\nand this tutorial can then come as an early introduction for you to do so ! If we write more code (without any explicit references), perhaps because I just mentioned that some people don't like adding comments at all :) but there's not one problem with trying to make sure things work on your machine without making them look interesting . The main thing about our system and data structures has been how they operate - which means no other programming languages will ever get its due respect from us here! This makes sense since let's move onto another question :) We need control over each token type through those logic nodes; thus when using variables directly or indirectly via their expressions themselves , such as statements :: [a] => {b|c",
+        "continuation_text": "If we write more code (without any explicit references), perhaps because I just mentioned that some people don't like adding comments at all :) but there's not one problem with trying to make sure things work on your machine without making them look interesting . The main thing about our system and data structures has been how they operate - which means no other programming languages will ever get its due respect from us here! This makes sense since let's move onto another question :) We need control over each token type through those logic nodes; thus when using variables directly or indirectly via their expressions themselves , such as statements :: [a] => {b|c",
+        "input_token_count": 95,
+        "raw_input_token_count": 95,
+        "output_token_count": 223,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 671,
+        "word_count": 115,
+        "unique_word_count": 114,
+        "unique_word_ratio": 0.991304347826087,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

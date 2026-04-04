@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1442,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 671,
+        "word_count": 106,
+        "unique_word_count": 88,
+        "unique_word_ratio": 0.8301886792452831,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 569,
+        "word_count": 86,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.9186046511627907,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 158,
+        "word_count": 24,
+        "unique_word_count": 22,
+        "unique_word_ratio": 0.9166666666666666,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 668,
+        "word_count": 99,
+        "unique_word_count": 91,
+        "unique_word_ratio": 0.9191919191919192,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "like",
+        "to",
+        "were",
+        "its",
+        "and",
+        "for",
+        "If",
+        "它",
+        "the"
+      ],
+      "output_text": "The next recursive transformation would likely involve changing the sentence structure while keeping the key concepts intact:\n\n1. \"It was once an old building that had been abandoned.\"\n2. \"...and transformed into a museum.\"\n3. \"...but now it's used as a children's playground.\"\n\nThis approach shifts the focus from describing an abandoned factory to explaining how a previous state (the abandonment) has changed or improved over time, with elements such as transforming from a barn-like structure to a modern play space. The use of \"was\" instead of \"had been\" emphasizes the change from a past condition to present action, making the narrative feel fresh and contemporary",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, like, to, were, its, and, for, If, 它, the\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, like, to, were, its, and, for, If, 它, the\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nThe next recursive transformation would likely involve changing the sentence structure while keeping the key concepts intact:\n\n1. \"It was once an old building that had been abandoned.\"\n2. \"...and transformed into a museum.\"\n3. \"...but now it's used as a children's playground.\"\n\nThis approach shifts the focus from describing an abandoned factory to explaining how a previous state (the abandonment) has changed or improved over time, with elements such as transforming from a barn-like structure to a modern play space. The use of \"was\" instead of \"had been\" emphasizes the change from a past condition to present action, making the narrative feel fresh and contemporary",
+        "continuation_text": "The next recursive transformation would likely involve changing the sentence structure while keeping the key concepts intact:\n\n1. \"It was once an old building that had been abandoned.\"\n2. \"...and transformed into a museum.\"\n3. \"...but now it's used as a children's playground.\"\n\nThis approach shifts the focus from describing an abandoned factory to explaining how a previous state (the abandonment) has changed or improved over time, with elements such as transforming from a barn-like structure to a modern play space. The use of \"was\" instead of \"had been\" emphasizes the change from a past condition to present action, making the narrative feel fresh and contemporary",
+        "input_token_count": 109,
+        "raw_input_token_count": 109,
+        "output_token_count": 237,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 671,
+        "word_count": 106,
+        "unique_word_count": 88,
+        "unique_word_ratio": 0.8301886792452831,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "the",
+        "to",
+        "a",
+        "were",
+        "was",
+        "and",
+        "is",
+        "for",
+        "of",
+        "in"
+      ],
+      "output_text": "Based on the given semantic direction guiding this text, here is the sequence of transformations, following Latent Direction Tokens (it, if, the, to, a, were, was, and, is, for, of, in):\n\n1. **Initial Sentence**: *It was once an old building that had been abandoned.*\n   - Transformation: *...transformed into a museum.*\n\n2. **Second Sentence**: ...\n   - Transformation: *\"...but now it's used as a children’s playground.\"*\n\nBy using *were* instead of *had been*, we emphasize the gradual improvement and transition between states rather than just stating what happened",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, to, a, were, was, and, is, for, of, in\n\nTEXT:\nThe next recursive transformation would likely involve changing the sentence structure while keeping the key concepts intact:\n\n1. \"It was once an old building that had been abandoned.\"\n2. \"...and transformed into a museum.\"\n3. \"...but now it's used as a children's playground.\"\n\nThis approach shifts the focus from describing an abandoned factory to explaining how a previous state (the abandonment) has changed or improved over time, with elements such as transforming from a barn-like structure to a modern play space. The use of \"was\" instead of \"had been\" emphasizes the change from a past condition to present action, making the narrative feel fresh and contemporary<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, to, a, were, was, and, is, for, of, in\n\nTEXT:\nThe next recursive transformation would likely involve changing the sentence structure while keeping the key concepts intact:\n\n1. \"It was once an old building that had been abandoned.\"\n2. \"...and transformed into a museum.\"\n3. \"...but now it's used as a children's playground.\"\n\nThis approach shifts the focus from describing an abandoned factory to explaining how a previous state (the abandonment) has changed or improved over time, with elements such as transforming from a barn-like structure to a modern play space. The use of \"was\" instead of \"had been\" emphasizes the change from a past condition to present action, making the narrative feel fresh and contemporary\nassistant\nBased on the given semantic direction guiding this text, here is the sequence of transformations, following Latent Direction Tokens (it, if, the, to, a, were, was, and, is, for, of, in):\n\n1. **Initial Sentence**: *It was once an old building that had been abandoned.*\n   - Transformation: *...transformed into a museum.*\n\n2. **Second Sentence**: ...\n   - Transformation: *\"...but now it's used as a children’s playground.\"*\n\nBy using *were* instead of *had been*, we emphasize the gradual improvement and transition between states rather than just stating what happened",
+        "continuation_text": "Based on the given semantic direction guiding this text, here is the sequence of transformations, following Latent Direction Tokens (it, if, the, to, a, were, was, and, is, for, of, in):\n\n1. **Initial Sentence**: *It was once an old building that had been abandoned.*\n   - Transformation: *...transformed into a museum.*\n\n2. **Second Sentence**: ...\n   - Transformation: *\"...but now it's used as a children’s playground.\"*\n\nBy using *were* instead of *had been*, we emphasize the gradual improvement and transition between states rather than just stating what happened",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 338,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 569,
+        "word_count": 86,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.9186046511627907,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        ",",
+        "if",
+        "it",
+        "and",
+        "is",
+        "(",
+        "to",
+        "for",
+        "in",
+        "of",
+        ".",
+        ":"
+      ],
+      "output_text": "3. **Third Sentence**: It's not surprising it has evolved.\n4. **Final Sentence**: In 2022, it transformed from its original form into a modern-day wonderland!",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: ,, if, it, and, is, (, to, for, in, of, ., :\n\nTEXT:\nBased on the given semantic direction guiding this text, here is the sequence of transformations, following Latent Direction Tokens (it, if, the, to, a, were, was, and, is, for, of, in):\n\n1. **Initial Sentence**: *It was once an old building that had been abandoned.*\n   - Transformation: *...transformed into a museum.*\n\n2. **Second Sentence**: ...\n   - Transformation: *\"...but now it's used as a children’s playground.\"*\n\nBy using *were* instead of *had been*, we emphasize the gradual improvement and transition between states rather than just stating what happened<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: ,, if, it, and, is, (, to, for, in, of, ., :\n\nTEXT:\nBased on the given semantic direction guiding this text, here is the sequence of transformations, following Latent Direction Tokens (it, if, the, to, a, were, was, and, is, for, of, in):\n\n1. **Initial Sentence**: *It was once an old building that had been abandoned.*\n   - Transformation: *...transformed into a museum.*\n\n2. **Second Sentence**: ...\n   - Transformation: *\"...but now it's used as a children’s playground.\"*\n\nBy using *were* instead of *had been*, we emphasize the gradual improvement and transition between states rather than just stating what happened\nassistant\n3. **Third Sentence**: It's not surprising it has evolved.\n4. **Final Sentence**: In 2022, it transformed from its original form into a modern-day wonderland!",
+        "continuation_text": "3. **Third Sentence**: It's not surprising it has evolved.\n4. **Final Sentence**: In 2022, it transformed from its original form into a modern-day wonderland!",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 249,
+        "new_token_count": 41,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 158,
+        "word_count": 24,
+        "unique_word_count": 22,
+        "unique_word_ratio": 0.9166666666666666,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "2",
+        "it",
+        "3",
+        "1",
+        "4",
+        ",",
+        "5",
+        ".",
+        "It",
+        "0",
+        "(",
+        "6"
+      ],
+      "output_text": "To find the next recursive transformation for this input, I will follow the same process as before but adapted to ensure accuracy and consistency with the given parameters:\n\n**Initial Text:** \n```plaintext\nIt is not surprising that it has evolved.\n```\n\n**Next Step:**  \nThe first token should likely remain \"It\" since it's the starting point or reference point. \n\nRevised Text: \n```plaintext\nThat said, evolution isn't uncommon among species, and many organisms can indeed undergo significant changes over time.\n```  \n\nThis revision adheres to the guideline provided, focusing on generating a coherent sentence without adding any new keyword while maintaining semantic",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: 2, it, 3, 1, 4, ,, 5, ., It, 0, (, 6\n\nTEXT:\n3. **Third Sentence**: It's not surprising it has evolved.\n4. **Final Sentence**: In 2022, it transformed from its original form into a modern-day wonderland!<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: 2, it, 3, 1, 4, ,, 5, ., It, 0, (, 6\n\nTEXT:\n3. **Third Sentence**: It's not surprising it has evolved.\n4. **Final Sentence**: In 2022, it transformed from its original form into a modern-day wonderland!\nassistant\nTo find the next recursive transformation for this input, I will follow the same process as before but adapted to ensure accuracy and consistency with the given parameters:\n\n**Initial Text:** \n```plaintext\nIt is not surprising that it has evolved.\n```\n\n**Next Step:**  \nThe first token should likely remain \"It\" since it's the starting point or reference point. \n\nRevised Text: \n```plaintext\nThat said, evolution isn't uncommon among species, and many organisms can indeed undergo significant changes over time.\n```  \n\nThis revision adheres to the guideline provided, focusing on generating a coherent sentence without adding any new keyword while maintaining semantic",
+        "continuation_text": "To find the next recursive transformation for this input, I will follow the same process as before but adapted to ensure accuracy and consistency with the given parameters:\n\n**Initial Text:** \n```plaintext\nIt is not surprising that it has evolved.\n```\n\n**Next Step:**  \nThe first token should likely remain \"It\" since it's the starting point or reference point. \n\nRevised Text: \n```plaintext\nThat said, evolution isn't uncommon among species, and many organisms can indeed undergo significant changes over time.\n```  \n\nThis revision adheres to the guideline provided, focusing on generating a coherent sentence without adding any new keyword while maintaining semantic",
+        "input_token_count": 128,
+        "raw_input_token_count": 128,
+        "output_token_count": 256,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 668,
+        "word_count": 99,
+        "unique_word_count": 91,
+        "unique_word_ratio": 0.9191919191919192,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

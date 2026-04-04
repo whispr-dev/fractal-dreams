@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1334,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 88,
+        "word_count": 14,
+        "unique_word_count": 14,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 546,
+        "word_count": 90,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.8333333333333334,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 530,
+        "word_count": 88,
+        "unique_word_count": 65,
+        "unique_word_ratio": 0.7386363636363636,
+        "repeated_bigram_count": 6
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 636,
+        "word_count": 98,
+        "unique_word_count": 83,
+        "unique_word_ratio": 0.8469387755102041,
+        "repeated_bigram_count": 3
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "if",
+        "was",
+        "its",
+        "the",
+        "are",
+        "that",
+        "a",
+        "It",
+        "intelligence",
+        "If"
+      ],
+      "output_text": "The neural network identified some patterns in the data to generate new language models.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\nThe neural network identified some patterns in the data to generate new language models.",
+        "continuation_text": "The neural network identified some patterns in the data to generate new language models.",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 120,
+        "new_token_count": 16,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 88,
+        "word_count": 14,
+        "unique_word_count": 14,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "the",
+        "it",
+        "if",
+        "to",
+        "in",
+        "some",
+        "data",
+        "The",
+        "for",
+        "is",
+        "a",
+        "and"
+      ],
+      "output_text": "To apply the given Latent Direction Tokens (LDTs) to the text \"The neural network identified some patterns in the data to generate new language models,\" we need to understand how each LDT influences the words:\n\n1. **the** - In this context, it's likely an article or preposition used to introduce the subject.\n2. **it** - Another article.\n3. **if** - An auxiliary verb indicating condition or possibility.\n4. **to** - A partitive indicator meaning something with respect to that thing(s).\n5. **in** - Another adverb modifying where.\n6. **some** -",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, it, if, to, in, some, data, The, for, is, a, and\n\nTEXT:\nThe neural network identified some patterns in the data to generate new language models.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, it, if, to, in, some, data, The, for, is, a, and\n\nTEXT:\nThe neural network identified some patterns in the data to generate new language models.\nassistant\nTo apply the given Latent Direction Tokens (LDTs) to the text \"The neural network identified some patterns in the data to generate new language models,\" we need to understand how each LDT influences the words:\n\n1. **the** - In this context, it's likely an article or preposition used to introduce the subject.\n2. **it** - Another article.\n3. **if** - An auxiliary verb indicating condition or possibility.\n4. **to** - A partitive indicator meaning something with respect to that thing(s).\n5. **in** - Another adverb modifying where.\n6. **some** -",
+        "continuation_text": "To apply the given Latent Direction Tokens (LDTs) to the text \"The neural network identified some patterns in the data to generate new language models,\" we need to understand how each LDT influences the words:\n\n1. **the** - In this context, it's likely an article or preposition used to introduce the subject.\n2. **it** - Another article.\n3. **if** - An auxiliary verb indicating condition or possibility.\n4. **to** - A partitive indicator meaning something with respect to that thing(s).\n5. **in** - Another adverb modifying where.\n6. **some** -",
+        "input_token_count": 97,
+        "raw_input_token_count": 97,
+        "output_token_count": 225,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 546,
+        "word_count": 90,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.8333333333333334,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "to",
+        "it",
+        ",",
+        "-",
+        "(",
+        ".",
+        "and",
+        "the",
+        "in",
+        "for",
+        "\""
+      ],
+      "output_text": "Sure, let's break down the instructions into steps based on the provided instruction:\n\n### Step 1: Understand the given text\nFirst, let’s read and comprehend the text about the application of Latent Direction Tokens (LDTs). The text mentions applying these LDTs to the phrase \"The neural network identified some patterns in the data.\"\n\n### Step 2: Identify key Latent Direction Tokens\nFrom the description above, there are several Latent Direction Tokens (LDTs):\n- `the`\n- `it`\n- `if`\n- `to`\n- `in`\n\n### Step 3: Analyze Each Token",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, to, it, ,, -, (, ., and, the, in, for, \"\n\nTEXT:\nTo apply the given Latent Direction Tokens (LDTs) to the text \"The neural network identified some patterns in the data to generate new language models,\" we need to understand how each LDT influences the words:\n\n1. **the** - In this context, it's likely an article or preposition used to introduce the subject.\n2. **it** - Another article.\n3. **if** - An auxiliary verb indicating condition or possibility.\n4. **to** - A partitive indicator meaning something with respect to that thing(s).\n5. **in** - Another adverb modifying where.\n6. **some** -<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, to, it, ,, -, (, ., and, the, in, for, \"\n\nTEXT:\nTo apply the given Latent Direction Tokens (LDTs) to the text \"The neural network identified some patterns in the data to generate new language models,\" we need to understand how each LDT influences the words:\n\n1. **the** - In this context, it's likely an article or preposition used to introduce the subject.\n2. **it** - Another article.\n3. **if** - An auxiliary verb indicating condition or possibility.\n4. **to** - A partitive indicator meaning something with respect to that thing(s).\n5. **in** - Another adverb modifying where.\n6. **some** -\nassistant\nSure, let's break down the instructions into steps based on the provided instruction:\n\n### Step 1: Understand the given text\nFirst, let’s read and comprehend the text about the application of Latent Direction Tokens (LDTs). The text mentions applying these LDTs to the phrase \"The neural network identified some patterns in the data.\"\n\n### Step 2: Identify key Latent Direction Tokens\nFrom the description above, there are several Latent Direction Tokens (LDTs):\n- `the`\n- `it`\n- `if`\n- `to`\n- `in`\n\n### Step 3: Analyze Each Token",
+        "continuation_text": "Sure, let's break down the instructions into steps based on the provided instruction:\n\n### Step 1: Understand the given text\nFirst, let’s read and comprehend the text about the application of Latent Direction Tokens (LDTs). The text mentions applying these LDTs to the phrase \"The neural network identified some patterns in the data.\"\n\n### Step 2: Identify key Latent Direction Tokens\nFrom the description above, there are several Latent Direction Tokens (LDTs):\n- `the`\n- `it`\n- `if`\n- `to`\n- `in`\n\n### Step 3: Analyze Each Token",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 530,
+        "word_count": 88,
+        "unique_word_count": 65,
+        "unique_word_ratio": 0.7386363636363636,
+        "repeated_bigram_count": 6
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        ",",
+        "(",
+        "to",
+        "and",
+        ":",
+        "-",
+        "is",
+        "in",
+        "for"
+      ],
+      "output_text": "Let's analyze each token from this context step-by-step:\n\n#### Step 4: Apply the Next Recursive Transformation\nGiven that our goal is to identify specific aspects or elements within the text after understanding the structure using Latent Direction Tokens, we need to apply a logical pattern here.\n\n**Step 5: Write the Recursion**\n\nHere's how you can write out the recursion using the first three Latent Direction Tokens (`the`, `it`, and `if`):\n\n```plaintext\nSure,\nlet's break down the instructions into steps based on the provided instruction:\n```\n\nThis sequence represents the process where the first three tokens are directly applied",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, ,, (, to, and, :, -, is, in, for\n\nTEXT:\nSure, let's break down the instructions into steps based on the provided instruction:\n\n### Step 1: Understand the given text\nFirst, let’s read and comprehend the text about the application of Latent Direction Tokens (LDTs). The text mentions applying these LDTs to the phrase \"The neural network identified some patterns in the data.\"\n\n### Step 2: Identify key Latent Direction Tokens\nFrom the description above, there are several Latent Direction Tokens (LDTs):\n- `the`\n- `it`\n- `if`\n- `to`\n- `in`\n\n### Step 3: Analyze Each Token<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, ,, (, to, and, :, -, is, in, for\n\nTEXT:\nSure, let's break down the instructions into steps based on the provided instruction:\n\n### Step 1: Understand the given text\nFirst, let’s read and comprehend the text about the application of Latent Direction Tokens (LDTs). The text mentions applying these LDTs to the phrase \"The neural network identified some patterns in the data.\"\n\n### Step 2: Identify key Latent Direction Tokens\nFrom the description above, there are several Latent Direction Tokens (LDTs):\n- `the`\n- `it`\n- `if`\n- `to`\n- `in`\n\n### Step 3: Analyze Each Token\nassistant\nLet's analyze each token from this context step-by-step:\n\n#### Step 4: Apply the Next Recursive Transformation\nGiven that our goal is to identify specific aspects or elements within the text after understanding the structure using Latent Direction Tokens, we need to apply a logical pattern here.\n\n**Step 5: Write the Recursion**\n\nHere's how you can write out the recursion using the first three Latent Direction Tokens (`the`, `it`, and `if`):\n\n```plaintext\nSure,\nlet's break down the instructions into steps based on the provided instruction:\n```\n\nThis sequence represents the process where the first three tokens are directly applied",
+        "continuation_text": "Let's analyze each token from this context step-by-step:\n\n#### Step 4: Apply the Next Recursive Transformation\nGiven that our goal is to identify specific aspects or elements within the text after understanding the structure using Latent Direction Tokens, we need to apply a logical pattern here.\n\n**Step 5: Write the Recursion**\n\nHere's how you can write out the recursion using the first three Latent Direction Tokens (`the`, `it`, and `if`):\n\n```plaintext\nSure,\nlet's break down the instructions into steps based on the provided instruction:\n```\n\nThis sequence represents the process where the first three tokens are directly applied",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 636,
+        "word_count": 98,
+        "unique_word_count": 83,
+        "unique_word_ratio": 0.8469387755102041,
+        "repeated_bigram_count": 3
+      }
+    }
+  ]
+}

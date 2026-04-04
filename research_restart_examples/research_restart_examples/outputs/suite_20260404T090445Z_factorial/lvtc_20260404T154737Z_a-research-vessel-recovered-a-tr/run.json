@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1550,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 640,
+        "word_count": 93,
+        "unique_word_count": 84,
+        "unique_word_ratio": 0.9032258064516129,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 656,
+        "word_count": 101,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.7623762376237624,
+        "repeated_bigram_count": 10
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 621,
+        "word_count": 92,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.8586956521739131,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 130,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "were",
+        "from",
+        "and",
+        "the",
+        "was",
+        "to",
+        "a",
+        "A",
+        "for"
+      ],
+      "output_text": "Let's apply the given syntax (syntax guide) and keyword patterns (keyword pattern guide), and then write out the next recursive transformation:\n\n1. **Base Text:** \n   - \"A research vessel recovered a transmission from the trench floor.\"\n   - This is straightforward and does not require any further transformations.\n   \n2. **Keyword Patterns Guided Transformation:**\n   - We will use our set of keywords (`it`, `if`), which contain essential phrases that convey meaning within the context. However, we need to decide on how to proceed with each key phrase following the provided guidelines.\n\n3. **Recursive Transformation Process:**\n\n**Step",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nLet's apply the given syntax (syntax guide) and keyword patterns (keyword pattern guide), and then write out the next recursive transformation:\n\n1. **Base Text:** \n   - \"A research vessel recovered a transmission from the trench floor.\"\n   - This is straightforward and does not require any further transformations.\n   \n2. **Keyword Patterns Guided Transformation:**\n   - We will use our set of keywords (`it`, `if`), which contain essential phrases that convey meaning within the context. However, we need to decide on how to proceed with each key phrase following the provided guidelines.\n\n3. **Recursive Transformation Process:**\n\n**Step",
+        "continuation_text": "Let's apply the given syntax (syntax guide) and keyword patterns (keyword pattern guide), and then write out the next recursive transformation:\n\n1. **Base Text:** \n   - \"A research vessel recovered a transmission from the trench floor.\"\n   - This is straightforward and does not require any further transformations.\n   \n2. **Keyword Patterns Guided Transformation:**\n   - We will use our set of keywords (`it`, `if`), which contain essential phrases that convey meaning within the context. However, we need to decide on how to proceed with each key phrase following the provided guidelines.\n\n3. **Recursive Transformation Process:**\n\n**Step",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 232,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 640,
+        "word_count": 93,
+        "unique_word_count": 84,
+        "unique_word_ratio": 0.9032258064516129,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "and",
+        "the",
+        "is",
+        ",",
+        "to",
+        "(",
+        "for",
+        "were",
+        "-",
+        "are"
+      ],
+      "output_text": "The base text remains unchanged:\n\n\"A research vessel recovered a transmission from the trench floor.\"\n\nNext, let’s guide through the transformation using keywords (`it`, `if`). Here's how we can transform this text based on the given rules:\n\n---\n\n### Base Text:\n- \"A research vessel recovered a transmission from the trench floor.\" \n\n#### Step 1: Apply Keyword Patterns\nWe'll focus on applying key phrases directly to the base text without altering them or repeating them multiple times due to repetition.\n\n- The sentence is concise but requires understanding.\n  \n- It states the action (\"recovered\") and identifies the recipient object (\"a transmission\").",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, and, the, is, ,, to, (, for, were, -, are\n\nTEXT:\nLet's apply the given syntax (syntax guide) and keyword patterns (keyword pattern guide), and then write out the next recursive transformation:\n\n1. **Base Text:** \n   - \"A research vessel recovered a transmission from the trench floor.\"\n   - This is straightforward and does not require any further transformations.\n   \n2. **Keyword Patterns Guided Transformation:**\n   - We will use our set of keywords (`it`, `if`), which contain essential phrases that convey meaning within the context. However, we need to decide on how to proceed with each key phrase following the provided guidelines.\n\n3. **Recursive Transformation Process:**\n\n**Step<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, and, the, is, ,, to, (, for, were, -, are\n\nTEXT:\nLet's apply the given syntax (syntax guide) and keyword patterns (keyword pattern guide), and then write out the next recursive transformation:\n\n1. **Base Text:** \n   - \"A research vessel recovered a transmission from the trench floor.\"\n   - This is straightforward and does not require any further transformations.\n   \n2. **Keyword Patterns Guided Transformation:**\n   - We will use our set of keywords (`it`, `if`), which contain essential phrases that convey meaning within the context. However, we need to decide on how to proceed with each key phrase following the provided guidelines.\n\n3. **Recursive Transformation Process:**\n\n**Step\nassistant\nThe base text remains unchanged:\n\n\"A research vessel recovered a transmission from the trench floor.\"\n\nNext, let’s guide through the transformation using keywords (`it`, `if`). Here's how we can transform this text based on the given rules:\n\n---\n\n### Base Text:\n- \"A research vessel recovered a transmission from the trench floor.\" \n\n#### Step 1: Apply Keyword Patterns\nWe'll focus on applying key phrases directly to the base text without altering them or repeating them multiple times due to repetition.\n\n- The sentence is concise but requires understanding.\n  \n- It states the action (\"recovered\") and identifies the recipient object (\"a transmission\").\n  \n",
+        "continuation_text": "The base text remains unchanged:\n\n\"A research vessel recovered a transmission from the trench floor.\"\n\nNext, let’s guide through the transformation using keywords (`it`, `if`). Here's how we can transform this text based on the given rules:\n\n---\n\n### Base Text:\n- \"A research vessel recovered a transmission from the trench floor.\" \n\n#### Step 1: Apply Keyword Patterns\nWe'll focus on applying key phrases directly to the base text without altering them or repeating them multiple times due to repetition.\n\n- The sentence is concise but requires understanding.\n  \n- It states the action (\"recovered\") and identifies the recipient object (\"a transmission\").",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 336,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 656,
+        "word_count": 101,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.7623762376237624,
+        "repeated_bigram_count": 10
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "the",
+        "were",
+        "It",
+        "If",
+        "are",
+        "is",
+        "was",
+        "to",
+        "for",
+        "this"
+      ],
+      "output_text": "- Identify who initiated the action (the \"research vessel\").\n- Determine where it happened within the \"trench floor\".\n\n- Finally, state what result came out (\"from\").\n\n---\n\n### Next Transformation:\nBased on the keyword patterns identified above, here is the next step after translating the base text into its initial form:\n\n- **Identify:** Who started the action? It was an “investigation”?\n- **Determine Location:** Where did this happen? On an “instrumentation.”\n- **State Result:** What did they find?\n\nSo,\n**Final Translation**: \n\"The researchers investigated a communication signal located at the instrumented trench",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, were, It, If, are, is, was, to, for, this\n\nTEXT:\nThe base text remains unchanged:\n\n\"A research vessel recovered a transmission from the trench floor.\"\n\nNext, let’s guide through the transformation using keywords (`it`, `if`). Here's how we can transform this text based on the given rules:\n\n---\n\n### Base Text:\n- \"A research vessel recovered a transmission from the trench floor.\" \n\n#### Step 1: Apply Keyword Patterns\nWe'll focus on applying key phrases directly to the base text without altering them or repeating them multiple times due to repetition.\n\n- The sentence is concise but requires understanding.\n  \n- It states the action (\"recovered\") and identifies the recipient object (\"a transmission\").<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, were, It, If, are, is, was, to, for, this\n\nTEXT:\nThe base text remains unchanged:\n\n\"A research vessel recovered a transmission from the trench floor.\"\n\nNext, let’s guide through the transformation using keywords (`it`, `if`). Here's how we can transform this text based on the given rules:\n\n---\n\n### Base Text:\n- \"A research vessel recovered a transmission from the trench floor.\" \n\n#### Step 1: Apply Keyword Patterns\nWe'll focus on applying key phrases directly to the base text without altering them or repeating them multiple times due to repetition.\n\n- The sentence is concise but requires understanding.\n  \n- It states the action (\"recovered\") and identifies the recipient object (\"a transmission\").\nassistant\n- Identify who initiated the action (the \"research vessel\").\n- Determine where it happened within the \"trench floor\".\n\n- Finally, state what result came out (\"from\").\n\n---\n\n### Next Transformation:\nBased on the keyword patterns identified above, here is the next step after translating the base text into its initial form:\n\n- **Identify:** Who started the action? It was an “investigation”?\n- **Determine Location:** Where did this happen? On an “instrumentation.”\n- **State Result:** What did they find?\n\nSo,\n**Final Translation**: \n\"The researchers investigated a communication signal located at the instrumented trench",
+        "continuation_text": "- Identify who initiated the action (the \"research vessel\").\n- Determine where it happened within the \"trench floor\".\n\n- Finally, state what result came out (\"from\").\n\n---\n\n### Next Transformation:\nBased on the keyword patterns identified above, here is the next step after translating the base text into its initial form:\n\n- **Identify:** Who started the action? It was an “investigation”?\n- **Determine Location:** Where did this happen? On an “instrumentation.”\n- **State Result:** What did they find?\n\nSo,\n**Final Translation**: \n\"The researchers investigated a communication signal located at the instrumented trench",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 337,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 621,
+        "word_count": 92,
+        "unique_word_count": 79,
+        "unique_word_ratio": 0.8586956521739131,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "the",
+        "It",
+        "If",
+        "was",
+        "are",
+        "where",
+        "there",
+        "**",
+        "is"
+      ],
+      "output_text": "The researchers discovered that an identification device operating within the instrumented trench detected and analyzed a signal.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, the, It, If, was, are, where, there, **, is\n\nTEXT:\n- Identify who initiated the action (the \"research vessel\").\n- Determine where it happened within the \"trench floor\".\n\n- Finally, state what result came out (\"from\").\n\n---\n\n### Next Transformation:\nBased on the keyword patterns identified above, here is the next step after translating the base text into its initial form:\n\n- **Identify:** Who started the action? It was an “investigation”?\n- **Determine Location:** Where did this happen? On an “instrumentation.”\n- **State Result:** What did they find?\n\nSo,\n**Final Translation**: \n\"The researchers investigated a communication signal located at the instrumented trench<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, the, It, If, was, are, where, there, **, is\n\nTEXT:\n- Identify who initiated the action (the \"research vessel\").\n- Determine where it happened within the \"trench floor\".\n\n- Finally, state what result came out (\"from\").\n\n---\n\n### Next Transformation:\nBased on the keyword patterns identified above, here is the next step after translating the base text into its initial form:\n\n- **Identify:** Who started the action? It was an “investigation”?\n- **Determine Location:** Where did this happen? On an “instrumentation.”\n- **State Result:** What did they find?\n\nSo,\n**Final Translation**: \n\"The researchers investigated a communication signal located at the instrumented trench\nassistant\nThe researchers discovered that an identification device operating within the instrumented trench detected and analyzed a signal.\"",
+        "continuation_text": "The researchers discovered that an identification device operating within the instrumented trench detected and analyzed a signal.\"",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 229,
+        "new_token_count": 20,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 130,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

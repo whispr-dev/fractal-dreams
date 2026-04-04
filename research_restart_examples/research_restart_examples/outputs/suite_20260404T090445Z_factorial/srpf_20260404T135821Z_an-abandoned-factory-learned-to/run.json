@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1399,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 493,
+        "word_count": 88,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.9772727272727273,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 118,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 16,
+        "word_count": 2,
+        "unique_word_count": 2,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 629,
+        "word_count": 111,
+        "unique_word_count": 102,
+        "unique_word_ratio": 0.918918918918919,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+      "output_text": "You could have been inspired by some stories from earlier times or thought them better than this one; you just had to build on what I'm seeing here so far with my book (the second part is actually good news). So let's show how important these 3 steps were for me - we all knew they would turn into something else once again :\n(If writing code will allow us both to rewrite other languages)\n3.) Write out comments about your thoughts! Don't forget to share at http://www/cancelledfusionblog.org",
+      "source_window_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "continuation_text": "",
+        "input_token_count": 95,
+        "raw_input_token_count": 95,
+        "output_token_count": 96,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. You could have been inspired by some stories from earlier times or thought them better than this one; you just had to build on what I'm seeing here so far with my book (the second part is actually good news). So let's show how important these 3 steps were for me - we all knew they would turn into something else once again :\n(If writing code will allow us both to rewrite other languages)\n3.) Write out comments about your thoughts! Don't forget to share at http://www/cancelledfusionblog.org",
+        "continuation_text": "You could have been inspired by some stories from earlier times or thought them better than this one; you just had to build on what I'm seeing here so far with my book (the second part is actually good news). So let's show how important these 3 steps were for me - we all knew they would turn into something else once again :\n(If writing code will allow us both to rewrite other languages)\n3.) Write out comments about your thoughts! Don't forget to share at http://www/cancelledfusionblog.org",
+        "input_token_count": 178,
+        "raw_input_token_count": 178,
+        "output_token_count": 290,
+        "new_token_count": 112,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 493,
+        "word_count": 88,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.9772727272727273,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "/. It may be useful, but not enough too much of it...",
+      "output_text": "This project consists mostly directly and indirectly over our head when discussing ClojureScript itself [more info] ;)",
+      "source_window_text": "You could have been inspired by some stories from earlier times or thought them better than this one; you just had to build on what I'm seeing here so far with my book (the second part is actually good news). So let's show how important these 3 steps were for me - we all knew they would turn into something else once again :\n(If writing code will allow us both to rewrite other languages)\n3.) Write out comments about your thoughts! Don't forget to share at http://www/cancelledfusionblog.org",
+      "reflection_window_text": "/. It may be useful, but not enough too much of it...",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou could have been inspired by some stories from earlier times or thought them better than this one; you just had to build on what I'm seeing here so far with my book (the second part is actually good news). So let's show how important these 3 steps were for me - we all knew they would turn into something else once again :\n(If writing code will allow us both to rewrite other languages)\n3.) Write out comments about your thoughts! Don't forget to share at http://www/cancelledfusionblog.org",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou could have been inspired by some stories from earlier times or thought them better than this one; you just had to build on what I'm seeing here so far with my book (the second part is actually good news). So let's show how important these 3 steps were for me - we all knew they would turn into something else once again :\n(If writing code will allow us both to rewrite other languages)\n3.) Write out comments about your thoughts! Don't forget to share at http://www/cancelledfusionblog.org/. It may be useful, but not enough too much of it...",
+        "continuation_text": "/. It may be useful, but not enough too much of it...",
+        "input_token_count": 180,
+        "raw_input_token_count": 180,
+        "output_token_count": 195,
+        "new_token_count": 15,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou could have been inspired by some stories from earlier times or thought them better than this one; you just had to build on what I'm seeing here so far with my book (the second part is actually good news). So let's show how important these 3 steps were for me - we all knew they would turn into something else once again :\n(If writing code will allow us both to rewrite other languages)\n3.) Write out comments about your thoughts! Don't forget to share at http://www/cancelledfusionblog.org\n\nREFLECTION:\n/. It may be useful, but not enough too much of it...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou could have been inspired by some stories from earlier times or thought them better than this one; you just had to build on what I'm seeing here so far with my book (the second part is actually good news). So let's show how important these 3 steps were for me - we all knew they would turn into something else once again :\n(If writing code will allow us both to rewrite other languages)\n3.) Write out comments about your thoughts! Don't forget to share at http://www/cancelledfusionblog.org\n\nREFLECTION:\n/. It may be useful, but not enough too much of it... This project consists mostly directly and indirectly over our head when discussing ClojureScript itself [more info] ;)",
+        "continuation_text": "This project consists mostly directly and indirectly over our head when discussing ClojureScript itself [more info] ;)",
+        "input_token_count": 182,
+        "raw_input_token_count": 182,
+        "output_token_count": 203,
+        "new_token_count": 21,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 118,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThis project consists mostly directly and indirectly over our head when discussing ClojureScript itself [more info] ;)",
+      "output_text": "RECENT CHECKING:",
+      "source_window_text": "This project consists mostly directly and indirectly over our head when discussing ClojureScript itself [more info] ;)",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThis project consists mostly directly and indirectly over our head when discussing ClojureScript itself [more info] ;)",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThis project consists mostly directly and indirectly over our head when discussing ClojureScript itself [more info] ;)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThis project consists mostly directly and indirectly over our head when discussing ClojureScript itself [more info] ;)",
+        "continuation_text": "",
+        "input_token_count": 89,
+        "raw_input_token_count": 89,
+        "output_token_count": 90,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThis project consists mostly directly and indirectly over our head when discussing ClojureScript itself [more info] ;)\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThis project consists mostly directly and indirectly over our head when discussing ClojureScript itself [more info] ;)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThis project consists mostly directly and indirectly over our head when discussing ClojureScript itself [more info] ;)\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThis project consists mostly directly and indirectly over our head when discussing ClojureScript itself [more info] ;)\nRECENT CHECKING:",
+        "continuation_text": "RECENT CHECKING:",
+        "input_token_count": 166,
+        "raw_input_token_count": 166,
+        "output_token_count": 174,
+        "new_token_count": 8,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 16,
+        "word_count": 2,
+        "unique_word_count": 2,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "What is this like? What does it mean to you when one of your words ends up having at least three other thoughts about how something's happening for us, or if we need help trying out our own solution (if someone asks me what I'm doing), then get them back on their feet by asking why they did nothing wrong! If these arguments don't work with people as expected, let me know :)",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nRECENT CHECKING:\n\nREFLECTION:\nWhat is this like? What does it mean to you when one of your words ends up having at least three other thoughts about how something's happening for us, or if we need help trying out our own solution (if someone asks me what I'm doing), then get them back on their feet by asking why they did nothing wrong! If these arguments don't work with people as expected, let me know :)",
+      "source_window_text": "RECENT CHECKING:",
+      "reflection_window_text": "What is this like? What does it mean to you when one of your words ends up having at least three other thoughts about how something's happening for us, or if we need help trying out our own solution (if someone asks me what I'm doing), then get them back on their feet by asking why they did nothing wrong! If these arguments don't work with people as expected, let me know :)",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nRECENT CHECKING:",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nRECENT CHECKING:\nWhat is this like? What does it mean to you when one of your words ends up having at least three other thoughts about how something's happening for us, or if we need help trying out our own solution (if someone asks me what I'm doing), then get them back on their feet by asking why they did nothing wrong! If these arguments don't work with people as expected, let me know :)",
+        "continuation_text": "What is this like? What does it mean to you when one of your words ends up having at least three other thoughts about how something's happening for us, or if we need help trying out our own solution (if someone asks me what I'm doing), then get them back on their feet by asking why they did nothing wrong! If these arguments don't work with people as expected, let me know :)",
+        "input_token_count": 75,
+        "raw_input_token_count": 75,
+        "output_token_count": 159,
+        "new_token_count": 84,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nRECENT CHECKING:\n\nREFLECTION:\nWhat is this like? What does it mean to you when one of your words ends up having at least three other thoughts about how something's happening for us, or if we need help trying out our own solution (if someone asks me what I'm doing), then get them back on their feet by asking why they did nothing wrong! If these arguments don't work with people as expected, let me know :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nRECENT CHECKING:\n\nREFLECTION:\nWhat is this like? What does it mean to you when one of your words ends up having at least three other thoughts about how something's happening for us, or if we need help trying out our own solution (if someone asks me what I'm doing), then get them back on their feet by asking why they did nothing wrong! If these arguments don't work with people as expected, let me know :)",
+        "continuation_text": "",
+        "input_token_count": 145,
+        "raw_input_token_count": 145,
+        "output_token_count": 146,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 629,
+        "word_count": 111,
+        "unique_word_count": 102,
+        "unique_word_ratio": 0.918918918918919,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

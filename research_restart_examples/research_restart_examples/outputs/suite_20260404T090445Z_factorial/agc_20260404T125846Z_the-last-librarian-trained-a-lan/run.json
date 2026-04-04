@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1317,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 615,
+        "word_count": 107,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.9906542056074766,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 516,
+        "word_count": 82,
+        "unique_word_count": 82,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 566,
+        "word_count": 102,
+        "unique_word_count": 100,
+        "unique_word_ratio": 0.9803921568627451,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "aren",
+        "didn",
+        "did",
+        "He",
+        "are",
+        "weren",
+        "shall",
+        "does",
+        "We",
+        "couldn",
+        "cannot",
+        "C"
+      ],
+      "output_text": "Its grammar was so sophisticated (and powerful) it became an important tool for learning English — even when our ancestors used much more than we do today! If you use LCLU or some other naturalist database such one with lots OflCafe your children will learn almost exactly what they can read without having learned all their hard work from textbooks; if you don't know anything about any computer program using these words yet please go out into search engines like Google Images before anyone else learns them ! To my knowledge there is no known way to make this happen which requires 100% accuracy ;-) I recommend",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: aren, didn, did, He, are, weren, shall, does, We, couldn, cannot, C\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: aren, didn, did, He, are, weren, shall, does, We, couldn, cannot, C\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Its grammar was so sophisticated (and powerful) it became an important tool for learning English — even when our ancestors used much more than we do today! If you use LCLU or some other naturalist database such one with lots OflCafe your children will learn almost exactly what they can read without having learned all their hard work from textbooks; if you don't know anything about any computer program using these words yet please go out into search engines like Google Images before anyone else learns them ! To my knowledge there is no known way to make this happen which requires 100% accuracy ;-) I recommend",
+        "continuation_text": "Its grammar was so sophisticated (and powerful) it became an important tool for learning English — even when our ancestors used much more than we do today! If you use LCLU or some other naturalist database such one with lots OflCafe your children will learn almost exactly what they can read without having learned all their hard work from textbooks; if you don't know anything about any computer program using these words yet please go out into search engines like Google Images before anyone else learns them ! To my knowledge there is no known way to make this happen which requires 100% accuracy ;-) I recommend",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 228,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 615,
+        "word_count": 107,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.9906542056074766,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "M",
+        "l",
+        "Recommend",
+        "recommendation",
+        "MED",
+        "med",
+        "DL",
+        "hob",
+        "Mar",
+        "lib",
+        "Mc",
+        "mar"
+      ],
+      "output_text": "reading every word on each page and then checking both sets whenever possible until nothing changes ... You'll understand why most people think that \"reading\" does not mean speaking something but rather interpreting things at random - just try writing off sentences where many different verbs would be spoken by very similar speakers too fast :)) . But beware those who have lost sight... Your parents' vocabulary has been corrupted because languages were written thousands times faster instead.. So get ready now!!!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: M, l, Recommend, recommendation, MED, med, DL, hob, Mar, lib, Mc, mar\n\nTEXT:\nIts grammar was so sophisticated (and powerful) it became an important tool for learning English — even when our ancestors used much more than we do today! If you use LCLU or some other naturalist database such one with lots OflCafe your children will learn almost exactly what they can read without having learned all their hard work from textbooks; if you don't know anything about any computer program using these words yet please go out into search engines like Google Images before anyone else learns them ! To my knowledge there is no known way to make this happen which requires 100% accuracy ;-) I recommend",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: M, l, Recommend, recommendation, MED, med, DL, hob, Mar, lib, Mc, mar\n\nTEXT:\nIts grammar was so sophisticated (and powerful) it became an important tool for learning English — even when our ancestors used much more than we do today! If you use LCLU or some other naturalist database such one with lots OflCafe your children will learn almost exactly what they can read without having learned all their hard work from textbooks; if you don't know anything about any computer program using these words yet please go out into search engines like Google Images before anyone else learns them ! To my knowledge there is no known way to make this happen which requires 100% accuracy ;-) I recommend reading every word on each page and then checking both sets whenever possible until nothing changes ... You'll understand why most people think that \"reading\" does not mean speaking something but rather interpreting things at random - just try writing off sentences where many different verbs would be spoken by very similar speakers too fast :)) . But beware those who have lost sight... Your parents' vocabulary has been corrupted because languages were written thousands times faster instead.. So get ready now!!!",
+        "continuation_text": "reading every word on each page and then checking both sets whenever possible until nothing changes ... You'll understand why most people think that \"reading\" does not mean speaking something but rather interpreting things at random - just try writing off sentences where many different verbs would be spoken by very similar speakers too fast :)) . But beware those who have lost sight... Your parents' vocabulary has been corrupted because languages were written thousands times faster instead.. So get ready now!!!",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 296,
+        "new_token_count": 91,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 516,
+        "word_count": 82,
+        "unique_word_count": 82,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Along",
+        "comprises",
+        "hitherto",
+        "Among",
+        "={",
+        "foc",
+        "Roh",
+        "ividually",
+        "Normally",
+        "une",
+        "tells",
+        "showc"
+      ],
+      "output_text": "If you want to do this using C++ or Objective 8 (which is actually slower than your programming skills), read about its advantages first! And if you don't like it yet… Don´t worry … there will always come time for some nice new feature :) Go back into coding mode right after reading these words which might explain WHY they happened so soon before their occurrence!! What happens when we speak another 'word', without any prior knowledge? The last thing I need from an English writer with no experience learning how to code can happen today ! ;) There's more here »",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Along, comprises, hitherto, Among, ={, foc, Roh, ividually, Normally, une, tells, showc\n\nTEXT:\nreading every word on each page and then checking both sets whenever possible until nothing changes ... You'll understand why most people think that \"reading\" does not mean speaking something but rather interpreting things at random - just try writing off sentences where many different verbs would be spoken by very similar speakers too fast :)) . But beware those who have lost sight... Your parents' vocabulary has been corrupted because languages were written thousands times faster instead.. So get ready now!!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Along, comprises, hitherto, Among, ={, foc, Roh, ividually, Normally, une, tells, showc\n\nTEXT:\nreading every word on each page and then checking both sets whenever possible until nothing changes ... You'll understand why most people think that \"reading\" does not mean speaking something but rather interpreting things at random - just try writing off sentences where many different verbs would be spoken by very similar speakers too fast :)) . But beware those who have lost sight... Your parents' vocabulary has been corrupted because languages were written thousands times faster instead.. So get ready now!!! If you want to do this using C++ or Objective 8 (which is actually slower than your programming skills), read about its advantages first! And if you don't like it yet… Don´t worry … there will always come time for some nice new feature :) Go back into coding mode right after reading these words which might explain WHY they happened so soon before their occurrence!! What happens when we speak another 'word', without any prior knowledge? The last thing I need from an English writer with no experience learning how to code can happen today ! ;) There's more here »",
+        "continuation_text": "If you want to do this using C++ or Objective 8 (which is actually slower than your programming skills), read about its advantages first! And if you don't like it yet… Don´t worry … there will always come time for some nice new feature :) Go back into coding mode right after reading these words which might explain WHY they happened so soon before their occurrence!! What happens when we speak another 'word', without any prior knowledge? The last thing I need from an English writer with no experience learning how to code can happen today ! ;) There's more here »",
+        "input_token_count": 177,
+        "raw_input_token_count": 177,
+        "output_token_count": 293,
+        "new_token_count": 116,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 566,
+        "word_count": 102,
+        "unique_word_count": 100,
+        "unique_word_ratio": 0.9803921568627451,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

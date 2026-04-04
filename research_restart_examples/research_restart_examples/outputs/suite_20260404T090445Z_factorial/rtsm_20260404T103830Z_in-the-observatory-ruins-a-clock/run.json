@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1128
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 642,
+        "word_count": 107,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.794392523364486,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1123,
+        "word_count": 189,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.4497354497354497,
+        "repeated_bigram_count": 81
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1425,
+        "word_count": 241,
+        "unique_word_count": 118,
+        "unique_word_ratio": 0.4896265560165975,
+        "repeated_bigram_count": 84
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1824,
+        "word_count": 304,
+        "unique_word_count": 171,
+        "unique_word_ratio": 0.5625,
+        "repeated_bigram_count": 85
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2200,
+        "word_count": 364,
+        "unique_word_count": 215,
+        "unique_word_ratio": 0.5906593406593407,
+        "repeated_bigram_count": 86
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nThe sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter",
+        "continuation_text": "The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter",
+        "input_token_count": 68,
+        "raw_input_token_count": 68,
+        "output_token_count": 164,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 642,
+        "word_count": 107,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.794392523364486,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter\nassistant\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody",
+        "continuation_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody",
+        "input_token_count": 164,
+        "raw_input_token_count": 164,
+        "output_token_count": 260,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1123,
+        "word_count": 189,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.4497354497354497,
+        "repeated_bigram_count": 81
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "flitted through the silence,\ncarrying echoes of past hopes and fears.\nIt began to fill the void between light and darkness,\na wraith-like murmur breaking through the oppressive stillness.\nAnd so it played out until dawn,\nas the echoes became a haunting echo of lost dreams,\nand a whisper of lost hope.",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody flitted through the silence,\ncarrying echoes of past hopes and fears.\nIt began to fill the void between light and darkness,\na wraith-like murmur breaking through the oppressive stillness.\nAnd so it played out until dawn,\nas the echoes became a haunting echo of lost dreams,\nand a whisper of lost hope.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody\nassistant\nflitted through the silence,\ncarrying echoes of past hopes and fears.\nIt began to fill the void between light and darkness,\na wraith-like murmur breaking through the oppressive stillness.\nAnd so it played out until dawn,\nas the echoes became a haunting echo of lost dreams,\nand a whisper of lost hope.",
+        "continuation_text": "flitted through the silence,\ncarrying echoes of past hopes and fears.\nIt began to fill the void between light and darkness,\na wraith-like murmur breaking through the oppressive stillness.\nAnd so it played out until dawn,\nas the echoes became a haunting echo of lost dreams,\nand a whisper of lost hope.",
+        "input_token_count": 260,
+        "raw_input_token_count": 260,
+        "output_token_count": 326,
+        "new_token_count": 66,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1425,
+        "word_count": 241,
+        "unique_word_count": 118,
+        "unique_word_ratio": 0.4896265560165975,
+        "repeated_bigram_count": 84
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody flitted through the silence,\ncarrying echoes of past hopes and fears.\nIt began to fill the void between light and darkness,\na wraith-like murmur breaking through the oppressive stillness.\nAnd so it played out until dawn,\nas the echoes became a haunting echo of lost dreams,\nand a whisper of lost hope.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "day breaks slowly under the pale moonlight. A mist starts rising from the damp ground beneath the ruined Observatory. Trees rustle softly as animals seek shelter or bask in the cool morning breeze. Birds chirp mournfully before settling on distant trees for rest. A soft glow emanates from atop the ruined buildings. Shadows flicker ominously against them like secrets whispered by ancient spirits.",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody flitted through the silence,\ncarrying echoes of past hopes and fears.\nIt began to fill the void between light and darkness,\na wraith-like murmur breaking through the oppressive stillness.\nAnd so it played out until dawn,\nas the echoes became a haunting echo of lost dreams,\nand a whisper of lost hope. day breaks slowly under the pale moonlight. A mist starts rising from the damp ground beneath the ruined Observatory. Trees rustle softly as animals seek shelter or bask in the cool morning breeze. Birds chirp mournfully before settling on distant trees for rest. A soft glow emanates from atop the ruined buildings. Shadows flicker ominously against them like secrets whispered by ancient spirits.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody flitted through the silence,\ncarrying echoes of past hopes and fears.\nIt began to fill the void between light and darkness,\na wraith-like murmur breaking through the oppressive stillness.\nAnd so it played out until dawn,\nas the echoes became a haunting echo of lost dreams,\nand a whisper of lost hope.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody flitted through the silence,\ncarrying echoes of past hopes and fears.\nIt began to fill the void between light and darkness,\na wraith-like murmur breaking through the oppressive stillness.\nAnd so it played out until dawn,\nas the echoes became a haunting echo of lost dreams,\nand a whisper of lost hope.\nassistant\nday breaks slowly under the pale moonlight. A mist starts rising from the damp ground beneath the ruined Observatory. Trees rustle softly as animals seek shelter or bask in the cool morning breeze. Birds chirp mournfully before settling on distant trees for rest. A soft glow emanates from atop the ruined buildings. Shadows flicker ominously against them like secrets whispered by ancient spirits.",
+        "continuation_text": "day breaks slowly under the pale moonlight. A mist starts rising from the damp ground beneath the ruined Observatory. Trees rustle softly as animals seek shelter or bask in the cool morning breeze. Birds chirp mournfully before settling on distant trees for rest. A soft glow emanates from atop the ruined buildings. Shadows flicker ominously against them like secrets whispered by ancient spirits.",
+        "input_token_count": 325,
+        "raw_input_token_count": 325,
+        "output_token_count": 402,
+        "new_token_count": 77,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1824,
+        "word_count": 304,
+        "unique_word_count": 171,
+        "unique_word_ratio": 0.5625,
+        "repeated_bigram_count": 85
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody flitted through the silence,\ncarrying echoes of past hopes and fears.\nIt began to fill the void between light and darkness,\na wraith-like murmur breaking through the oppressive stillness.\nAnd so it played out until dawn,\nas the echoes became a haunting echo of lost dreams,\nand a whisper of lost hope. day breaks slowly under the pale moonlight. A mist starts rising from the damp ground beneath the ruined Observatory. Trees rustle softly as animals seek shelter or bask in the cool morning breeze. Birds chirp mournfully before settling on distant trees for rest. A soft glow emanates from atop the ruined buildings. Shadows flicker ominously against them like secrets whispered by ancient spirits.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "A lone deer quietly grazes beneath an abandoned window while eerie murmurs resonate through the broken glass. Shadows stretch back for yet another ghostly walk across cobblestone, their presence chilling the very soil around them. As dawn drapes silently overhead, the only sound is the muffled hum of restless mind... until the wind whispers about the cold embrace of sleep.",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody flitted through the silence,\ncarrying echoes of past hopes and fears.\nIt began to fill the void between light and darkness,\na wraith-like murmur breaking through the oppressive stillness.\nAnd so it played out until dawn,\nas the echoes became a haunting echo of lost dreams,\nand a whisper of lost hope. day breaks slowly under the pale moonlight. A mist starts rising from the damp ground beneath the ruined Observatory. Trees rustle softly as animals seek shelter or bask in the cool morning breeze. Birds chirp mournfully before settling on distant trees for rest. A soft glow emanates from atop the ruined buildings. Shadows flicker ominously against them like secrets whispered by ancient spirits. A lone deer quietly grazes beneath an abandoned window while eerie murmurs resonate through the broken glass. Shadows stretch back for yet another ghostly walk across cobblestone, their presence chilling the very soil around them. As dawn drapes silently overhead, the only sound is the muffled hum of restless mind... until the wind whispers about the cold embrace of sleep.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody flitted through the silence,\ncarrying echoes of past hopes and fears.\nIt began to fill the void between light and darkness,\na wraith-like murmur breaking through the oppressive stillness.\nAnd so it played out until dawn,\nas the echoes became a haunting echo of lost dreams,\nand a whisper of lost hope. day breaks slowly under the pale moonlight. A mist starts rising from the damp ground beneath the ruined Observatory. Trees rustle softly as animals seek shelter or bask in the cool morning breeze. Birds chirp mournfully before settling on distant trees for rest. A soft glow emanates from atop the ruined buildings. Shadows flicker ominously against them like secrets whispered by ancient spirits.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody drifted through the empty corridors - a tune familiar but foreign, reflecting the turmoil and uncertainty that pervaded the city. The stars above seemed brighter In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The sun rose over the crumbling walls of the old Observatory headquarters, its warm rays casting long shadows across the desolate landscape. The air was thick with the scent of earth and decay from centuries of neglect. Night fell quickly, turning the ruins into a somber, forgotten world of shadows and silent night.\nAs night descended, a faint melody flitted through the silence,\ncarrying echoes of past hopes and fears.\nIt began to fill the void between light and darkness,\na wraith-like murmur breaking through the oppressive stillness.\nAnd so it played out until dawn,\nas the echoes became a haunting echo of lost dreams,\nand a whisper of lost hope. day breaks slowly under the pale moonlight. A mist starts rising from the damp ground beneath the ruined Observatory. Trees rustle softly as animals seek shelter or bask in the cool morning breeze. Birds chirp mournfully before settling on distant trees for rest. A soft glow emanates from atop the ruined buildings. Shadows flicker ominously against them like secrets whispered by ancient spirits.\nassistant\nA lone deer quietly grazes beneath an abandoned window while eerie murmurs resonate through the broken glass. Shadows stretch back for yet another ghostly walk across cobblestone, their presence chilling the very soil around them. As dawn drapes silently overhead, the only sound is the muffled hum of restless mind... until the wind whispers about the cold embrace of sleep.",
+        "continuation_text": "A lone deer quietly grazes beneath an abandoned window while eerie murmurs resonate through the broken glass. Shadows stretch back for yet another ghostly walk across cobblestone, their presence chilling the very soil around them. As dawn drapes silently overhead, the only sound is the muffled hum of restless mind... until the wind whispers about the cold embrace of sleep.",
+        "input_token_count": 401,
+        "raw_input_token_count": 401,
+        "output_token_count": 475,
+        "new_token_count": 74,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2200,
+        "word_count": 364,
+        "unique_word_count": 215,
+        "unique_word_ratio": 0.5906593406593407,
+        "repeated_bigram_count": 86
+      }
+    }
+  ]
+}

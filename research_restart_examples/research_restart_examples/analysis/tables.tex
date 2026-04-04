@@ -1,0 +1,86 @@
+\begin{table}[t]
+\centering
+\caption{Linguistic summary by engine and model.}
+\label{tab:linguistics_summary}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+engine & model\_key & runs & mean\_words & mean\_mattr\_50 & mean\_mtld & mean\_word\_entropy\_bits & mean\_distinct\_2 & mean\_repeated\_trigram\_fraction & mean\_prompt\_tfidf\_cosine \\
+\midrule
+agc & distilgpt2 & 50 & 71.140 & 0.958 & 268.035 & 5.289 & 0.964 & 0.016 & 0.024 \\
+agc & gpt2 & 50 & 77.560 & 0.939 & 600.913 & 5.778 & 0.960 & 0.000 & 0.022 \\
+agc & qwen2.5-0.5b-instruct & 50 & 47.940 & 0.917 & 122.350 & 4.700 & 0.989 & 0.004 & 0.052 \\
+lvtc & distilgpt2 & 50 & 90.500 & 0.924 & 477.912 & 5.733 & 0.940 & 0.037 & 0.035 \\
+lvtc & gpt2 & 50 & 87.380 & 0.965 & 682.114 & 6.157 & 0.996 & 0.003 & 0.028 \\
+lvtc & qwen2.5-0.5b-instruct & 50 & 72.560 & 0.880 & 152.079 & 5.590 & 0.976 & 0.005 & 0.053 \\
+rtsm & distilgpt2 & 50 & 395.280 & 0.965 & 495.698 & 7.727 & 0.722 & 0.276 & 0.266 \\
+rtsm & gpt2 & 50 & 387.100 & 0.979 & 951.320 & 8.114 & 0.913 & 0.086 & 0.209 \\
+rtsm & qwen2.5-0.5b-instruct & 50 & 377.920 & 0.905 & 344.798 & 7.656 & 0.956 & 0.029 & 0.267 \\
+srpf & distilgpt2 & 50 & 125.840 & 0.933 & 261.749 & 4.718 & 0.716 & 0.121 & 0.025 \\
+srpf & gpt2 & 50 & 101.940 & 0.937 & 362.271 & 5.691 & 0.916 & 0.062 & 0.020 \\
+srpf & qwen2.5-0.5b-instruct & 50 & 113.540 & 0.911 & 225.196 & 6.370 & 0.995 & 0.000 & 0.055 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+
+\begin{table}[t]
+\centering
+\caption{Tokenizer summary by engine, model, and tokenizer.}
+\label{tab:tokenizer_summary}
+\begin{tabular}{lllrrrr}
+\toprule
+engine & model\_key & tokenizer\_name & runs & mean\_token\_count & mean\_tokens\_per\_char & mean\_tokens\_per\_word \\
+\midrule
+agc & distilgpt2 & modeltok::distilgpt2 & 50 & 93.440 & 0.215 & 1.302 \\
+agc & distilgpt2 & modeltok::gpt2 & 50 & 93.440 & 0.215 & 1.302 \\
+agc & distilgpt2 & modeltok::qwen2.5-0.5b-instruct & 50 & 89.220 & 0.207 & 1.251 \\
+agc & distilgpt2 & reference::openai-community/gpt2 & 50 & 93.440 & 0.215 & 1.302 \\
+agc & gpt2 & modeltok::distilgpt2 & 50 & 100.220 & 0.250 & 1.273 \\
+agc & gpt2 & modeltok::gpt2 & 50 & 100.220 & 0.250 & 1.273 \\
+agc & gpt2 & modeltok::qwen2.5-0.5b-instruct & 50 & 99.200 & 0.249 & 1.252 \\
+agc & gpt2 & reference::openai-community/gpt2 & 50 & 100.220 & 0.250 & 1.273 \\
+agc & qwen2.5-0.5b-instruct & modeltok::distilgpt2 & 50 & 104.980 & 0.500 & 16.746 \\
+agc & qwen2.5-0.5b-instruct & modeltok::gpt2 & 50 & 104.980 & 0.500 & 16.746 \\
+agc & qwen2.5-0.5b-instruct & modeltok::qwen2.5-0.5b-instruct & 50 & 75.000 & 0.267 & 5.358 \\
+agc & qwen2.5-0.5b-instruct & reference::openai-community/gpt2 & 50 & 104.980 & 0.500 & 16.746 \\
+lvtc & distilgpt2 & modeltok::distilgpt2 & 50 & 115.600 & 0.207 & 1.228 \\
+lvtc & distilgpt2 & modeltok::gpt2 & 50 & 115.600 & 0.207 & 1.228 \\
+lvtc & distilgpt2 & modeltok::qwen2.5-0.5b-instruct & 50 & 110.000 & 0.200 & 1.185 \\
+lvtc & distilgpt2 & reference::openai-community/gpt2 & 50 & 115.600 & 0.207 & 1.228 \\
+lvtc & gpt2 & modeltok::distilgpt2 & 50 & 111.540 & 0.219 & 1.657 \\
+lvtc & gpt2 & modeltok::gpt2 & 50 & 111.540 & 0.219 & 1.657 \\
+lvtc & gpt2 & modeltok::qwen2.5-0.5b-instruct & 50 & 110.380 & 0.218 & 1.644 \\
+lvtc & gpt2 & reference::openai-community/gpt2 & 50 & 111.540 & 0.219 & 1.657 \\
+lvtc & qwen2.5-0.5b-instruct & modeltok::distilgpt2 & 50 & 116.200 & 0.251 & 2.299 \\
+lvtc & qwen2.5-0.5b-instruct & modeltok::gpt2 & 50 & 116.200 & 0.251 & 2.299 \\
+lvtc & qwen2.5-0.5b-instruct & modeltok::qwen2.5-0.5b-instruct & 50 & 100.320 & 0.197 & 1.535 \\
+lvtc & qwen2.5-0.5b-instruct & reference::openai-community/gpt2 & 50 & 116.200 & 0.251 & 2.299 \\
+rtsm & distilgpt2 & modeltok::distilgpt2 & 50 & 473.200 & 0.194 & 1.223 \\
+rtsm & distilgpt2 & modeltok::gpt2 & 50 & 473.200 & 0.194 & 1.223 \\
+rtsm & distilgpt2 & modeltok::qwen2.5-0.5b-instruct & 50 & 468.740 & 0.193 & 1.209 \\
+rtsm & distilgpt2 & reference::openai-community/gpt2 & 50 & 473.200 & 0.194 & 1.223 \\
+rtsm & gpt2 & modeltok::distilgpt2 & 50 & 491.800 & 0.204 & 1.317 \\
+rtsm & gpt2 & modeltok::gpt2 & 50 & 491.800 & 0.204 & 1.317 \\
+rtsm & gpt2 & modeltok::qwen2.5-0.5b-instruct & 50 & 511.660 & 0.216 & 1.446 \\
+rtsm & gpt2 & reference::openai-community/gpt2 & 50 & 491.800 & 0.204 & 1.317 \\
+rtsm & qwen2.5-0.5b-instruct & modeltok::distilgpt2 & 50 & 478.980 & 0.198 & 1.346 \\
+rtsm & qwen2.5-0.5b-instruct & modeltok::gpt2 & 50 & 478.980 & 0.198 & 1.346 \\
+rtsm & qwen2.5-0.5b-instruct & modeltok::qwen2.5-0.5b-instruct & 50 & 455.320 & 0.183 & 1.226 \\
+rtsm & qwen2.5-0.5b-instruct & reference::openai-community/gpt2 & 50 & 478.980 & 0.198 & 1.346 \\
+srpf & distilgpt2 & modeltok::distilgpt2 & 50 & 175.700 & 0.287 & 8.194 \\
+srpf & distilgpt2 & modeltok::gpt2 & 50 & 175.700 & 0.287 & 8.194 \\
+srpf & distilgpt2 & modeltok::qwen2.5-0.5b-instruct & 50 & 183.340 & 0.311 & 20.536 \\
+srpf & distilgpt2 & reference::openai-community/gpt2 & 50 & 175.700 & 0.287 & 8.194 \\
+srpf & gpt2 & modeltok::distilgpt2 & 50 & 154.360 & 0.254 & 1.943 \\
+srpf & gpt2 & modeltok::gpt2 & 50 & 154.360 & 0.254 & 1.943 \\
+srpf & gpt2 & modeltok::qwen2.5-0.5b-instruct & 50 & 180.360 & 0.315 & 2.882 \\
+srpf & gpt2 & reference::openai-community/gpt2 & 50 & 154.360 & 0.254 & 1.943 \\
+srpf & qwen2.5-0.5b-instruct & modeltok::distilgpt2 & 50 & 147.440 & 0.176 & 1.299 \\
+srpf & qwen2.5-0.5b-instruct & modeltok::gpt2 & 50 & 147.440 & 0.176 & 1.299 \\
+srpf & qwen2.5-0.5b-instruct & modeltok::qwen2.5-0.5b-instruct & 50 & 139.400 & 0.167 & 1.229 \\
+srpf & qwen2.5-0.5b-instruct & reference::openai-community/gpt2 & 50 & 147.440 & 0.176 & 1.299 \\
+\bottomrule
+\end{tabular}
+\end{table}

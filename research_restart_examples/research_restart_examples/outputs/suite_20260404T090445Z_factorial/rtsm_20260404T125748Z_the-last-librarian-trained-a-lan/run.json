@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1312
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 636,
+        "word_count": 101,
+        "unique_word_count": 97,
+        "unique_word_ratio": 0.9603960396039604,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 656,
+        "word_count": 104,
+        "unique_word_count": 100,
+        "unique_word_ratio": 0.9615384615384616,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 978,
+        "word_count": 157,
+        "unique_word_count": 151,
+        "unique_word_ratio": 0.9617834394904459,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2110,
+        "word_count": 336,
+        "unique_word_count": 168,
+        "unique_word_ratio": 0.5,
+        "repeated_bigram_count": 157
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2338,
+        "word_count": 371,
+        "unique_word_count": 200,
+        "unique_word_ratio": 0.5390835579514824,
+        "repeated_bigram_count": 157
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+      "delta_text": "The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something",
+        "continuation_text": "The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something",
+        "input_token_count": 57,
+        "raw_input_token_count": 57,
+        "output_token_count": 153,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 636,
+        "word_count": 101,
+        "unique_word_count": 97,
+        "unique_word_ratio": 0.9603960396039604,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something",
+      "delta_text": "as this example.[1]",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1]",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1]",
+        "continuation_text": "as this example.[1]",
+        "input_token_count": 152,
+        "raw_input_token_count": 152,
+        "output_token_count": 159,
+        "new_token_count": 7,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 656,
+        "word_count": 104,
+        "unique_word_count": 100,
+        "unique_word_ratio": 0.9615384615384616,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1]",
+      "delta_text": "If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck!",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1]",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck!",
+        "continuation_text": "If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck!",
+        "input_token_count": 158,
+        "raw_input_token_count": 158,
+        "output_token_count": 217,
+        "new_token_count": 59,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 978,
+        "word_count": 157,
+        "unique_word_count": 151,
+        "unique_word_ratio": 0.9617834394904459,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck!",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck!",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck!",
+        "continuation_text": "",
+        "input_token_count": 216,
+        "raw_input_token_count": 216,
+        "output_token_count": 217,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2110,
+        "word_count": 336,
+        "unique_word_count": 168,
+        "unique_word_ratio": 0.5,
+        "repeated_bigram_count": 157
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck!",
+      "delta_text": "You're a text--you seem to prefer using only English when talking fast because people don't understand exactly why anyone wants others read him unless he can remember everything once instead of writing too much anymore.\"[2][3]:",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck! You're a text--you seem to prefer using only English when talking fast because people don't understand exactly why anyone wants others read him unless he can remember everything once instead of writing too much anymore.\"[2][3]:",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next part was about how to make sense of words like \"taste\" (which is where there should be no translation), \"transcription\", or \"the final sentence\". That, according with many other languages, could mean either an essay fragmentation by accident or any time readers started looking for information from past fragments through them; then they might have encountered one missing word again which means it has been added into some form somewhere else later than would otherwise go along with such something as this example.[1] If you've chosen these sentences at all before trying to do things backwards yourself now if I need to please use their descriptions wisely here...or try repeating those examples myself while speaking more quickly - simply copy what happens within seconds without retelling so long afterwards . You may also wish me luck! You're a text--you seem to prefer using only English when talking fast because people don't understand exactly why anyone wants others read him unless he can remember everything once instead of writing too much anymore.\"[2][3]:",
+        "continuation_text": "You're a text--you seem to prefer using only English when talking fast because people don't understand exactly why anyone wants others read him unless he can remember everything once instead of writing too much anymore.\"[2][3]:",
+        "input_token_count": 432,
+        "raw_input_token_count": 432,
+        "output_token_count": 477,
+        "new_token_count": 45,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2338,
+        "word_count": 371,
+        "unique_word_count": 200,
+        "unique_word_ratio": 0.5390835579514824,
+        "repeated_bigram_count": 157
+      }
+    }
+  ]
+}

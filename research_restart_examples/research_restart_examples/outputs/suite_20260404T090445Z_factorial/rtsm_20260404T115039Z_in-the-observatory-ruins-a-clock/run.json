@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1224
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 587,
+        "word_count": 101,
+        "unique_word_count": 78,
+        "unique_word_ratio": 0.7722772277227723,
+        "repeated_bigram_count": 4
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1081,
+        "word_count": 179,
+        "unique_word_count": 139,
+        "unique_word_ratio": 0.776536312849162,
+        "repeated_bigram_count": 6
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1593,
+        "word_count": 263,
+        "unique_word_count": 195,
+        "unique_word_ratio": 0.7414448669201521,
+        "repeated_bigram_count": 9
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2038,
+        "word_count": 334,
+        "unique_word_count": 246,
+        "unique_word_ratio": 0.7365269461077845,
+        "repeated_bigram_count": 13
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2498,
+        "word_count": 413,
+        "unique_word_count": 300,
+        "unique_word_ratio": 0.7263922518159807,
+        "repeated_bigram_count": 16
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nAs the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the",
+        "continuation_text": "As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the",
+        "input_token_count": 68,
+        "raw_input_token_count": 68,
+        "output_token_count": 164,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 587,
+        "word_count": 101,
+        "unique_word_count": 78,
+        "unique_word_ratio": 0.7722772277227723,
+        "repeated_bigram_count": 4
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably.",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the\nassistant\nclockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably.\n\n",
+        "continuation_text": "clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably.",
+        "input_token_count": 164,
+        "raw_input_token_count": 164,
+        "output_token_count": 260,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1081,
+        "word_count": 179,
+        "unique_word_count": 139,
+        "unique_word_ratio": 0.776536312849162,
+        "repeated_bigram_count": 6
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "As twilight descended upon the city below, the observatory lost its grip on reality, becoming nothing more than a silent sentinel amidst the chaotic glow of stars. The smoke stung like the hairs on his neck as he stepped closer to the ancient instrument, fingers trailing across the surface of the canvas where the figures would once have danced. Each stroke brought him ever-closer to whatever message awaited beneath its surface.\n\nHours turned minutes, then seconds until dawn broke through. The air grew cool",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably. As twilight descended upon the city below, the observatory lost its grip on reality, becoming nothing more than a silent sentinel amidst the chaotic glow of stars. The smoke stung like the hairs on his neck as he stepped closer to the ancient instrument, fingers trailing across the surface of the canvas where the figures would once have danced. Each stroke brought him ever-closer to whatever message awaited beneath its surface.\n\nHours turned minutes, then seconds until dawn broke through. The air grew cool",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably.\nassistant\nAs twilight descended upon the city below, the observatory lost its grip on reality, becoming nothing more than a silent sentinel amidst the chaotic glow of stars. The smoke stung like the hairs on his neck as he stepped closer to the ancient instrument, fingers trailing across the surface of the canvas where the figures would once have danced. Each stroke brought him ever-closer to whatever message awaited beneath its surface.\n\nHours turned minutes, then seconds until dawn broke through. The air grew cool",
+        "continuation_text": "As twilight descended upon the city below, the observatory lost its grip on reality, becoming nothing more than a silent sentinel amidst the chaotic glow of stars. The smoke stung like the hairs on his neck as he stepped closer to the ancient instrument, fingers trailing across the surface of the canvas where the figures would once have danced. Each stroke brought him ever-closer to whatever message awaited beneath its surface.\n\nHours turned minutes, then seconds until dawn broke through. The air grew cool",
+        "input_token_count": 260,
+        "raw_input_token_count": 260,
+        "output_token_count": 356,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1593,
+        "word_count": 263,
+        "unique_word_count": 195,
+        "unique_word_ratio": 0.7414448669201521,
+        "repeated_bigram_count": 9
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably. As twilight descended upon the city below, the observatory lost its grip on reality, becoming nothing more than a silent sentinel amidst the chaotic glow of stars. The smoke stung like the hairs on his neck as he stepped closer to the ancient instrument, fingers trailing across the surface of the canvas where the figures would once have danced. Each stroke brought him ever-closer to whatever message awaited beneath its surface.\n\nHours turned minutes, then seconds until dawn broke through. The air grew cool<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "thawed slightly, still full of warmth from earlier glows. With every passing second, the echoes of the past resounded within the now-peaceful observatory structure. Suddenly, a gust of wind swept past, breaking leaves and blowing dandelions onto the ground above.\n\nDespite the comforting solitude, tension built inside. He reached out to touch one of the weather vanes on the clockwork map, feeling a slight shiver pass down his spine. \"What is",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably. As twilight descended upon the city below, the observatory lost its grip on reality, becoming nothing more than a silent sentinel amidst the chaotic glow of stars. The smoke stung like the hairs on his neck as he stepped closer to the ancient instrument, fingers trailing across the surface of the canvas where the figures would once have danced. Each stroke brought him ever-closer to whatever message awaited beneath its surface.\n\nHours turned minutes, then seconds until dawn broke through. The air grew cool thawed slightly, still full of warmth from earlier glows. With every passing second, the echoes of the past resounded within the now-peaceful observatory structure. Suddenly, a gust of wind swept past, breaking leaves and blowing dandelions onto the ground above.\n\nDespite the comforting solitude, tension built inside. He reached out to touch one of the weather vanes on the clockwork map, feeling a slight shiver pass down his spine. \"What is",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably. As twilight descended upon the city below, the observatory lost its grip on reality, becoming nothing more than a silent sentinel amidst the chaotic glow of stars. The smoke stung like the hairs on his neck as he stepped closer to the ancient instrument, fingers trailing across the surface of the canvas where the figures would once have danced. Each stroke brought him ever-closer to whatever message awaited beneath its surface.\n\nHours turned minutes, then seconds until dawn broke through. The air grew cool<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably. As twilight descended upon the city below, the observatory lost its grip on reality, becoming nothing more than a silent sentinel amidst the chaotic glow of stars. The smoke stung like the hairs on his neck as he stepped closer to the ancient instrument, fingers trailing across the surface of the canvas where the figures would once have danced. Each stroke brought him ever-closer to whatever message awaited beneath its surface.\n\nHours turned minutes, then seconds until dawn broke through. The air grew cool\nassistant\nthawed slightly, still full of warmth from earlier glows. With every passing second, the echoes of the past resounded within the now-peaceful observatory structure. Suddenly, a gust of wind swept past, breaking leaves and blowing dandelions onto the ground above.\n\nDespite the comforting solitude, tension built inside. He reached out to touch one of the weather vanes on the clockwork map, feeling a slight shiver pass down his spine. \"What is",
+        "continuation_text": "thawed slightly, still full of warmth from earlier glows. With every passing second, the echoes of the past resounded within the now-peaceful observatory structure. Suddenly, a gust of wind swept past, breaking leaves and blowing dandelions onto the ground above.\n\nDespite the comforting solitude, tension built inside. He reached out to touch one of the weather vanes on the clockwork map, feeling a slight shiver pass down his spine. \"What is",
+        "input_token_count": 356,
+        "raw_input_token_count": 356,
+        "output_token_count": 452,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2038,
+        "word_count": 334,
+        "unique_word_count": 246,
+        "unique_word_ratio": 0.7365269461077845,
+        "repeated_bigram_count": 13
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably. As twilight descended upon the city below, the observatory lost its grip on reality, becoming nothing more than a silent sentinel amidst the chaotic glow of stars. The smoke stung like the hairs on his neck as he stepped closer to the ancient instrument, fingers trailing across the surface of the canvas where the figures would once have danced. Each stroke brought him ever-closer to whatever message awaited beneath its surface.\n\nHours turned minutes, then seconds until dawn broke through. The air grew cool thawed slightly, still full of warmth from earlier glows. With every passing second, the echoes of the past resounded within the now-peaceful observatory structure. Suddenly, a gust of wind swept past, breaking leaves and blowing dandelions onto the ground above.\n\nDespite the comforting solitude, tension built inside. He reached out to touch one of the weather vanes on the clockwork map, feeling a slight shiver pass down his spine. \"What is<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "what might be?\"  \nA hand moved softly across his shoulder, soothing the creases between his brows. Then, with a gentle brush of his fingertips, he grasped the instrument for purchase. At last, comfort returned; relief washed over him just enough to keep pace with the storm raging around him.\n\nThe old clockmaster gazed up at the new day slowly taking shape. His gaze fell back toward the distant ceiling, eyes filled with wonder about what lay before him. No",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably. As twilight descended upon the city below, the observatory lost its grip on reality, becoming nothing more than a silent sentinel amidst the chaotic glow of stars. The smoke stung like the hairs on his neck as he stepped closer to the ancient instrument, fingers trailing across the surface of the canvas where the figures would once have danced. Each stroke brought him ever-closer to whatever message awaited beneath its surface.\n\nHours turned minutes, then seconds until dawn broke through. The air grew cool thawed slightly, still full of warmth from earlier glows. With every passing second, the echoes of the past resounded within the now-peaceful observatory structure. Suddenly, a gust of wind swept past, breaking leaves and blowing dandelions onto the ground above.\n\nDespite the comforting solitude, tension built inside. He reached out to touch one of the weather vanes on the clockwork map, feeling a slight shiver pass down his spine. \"What is what might be?\"  \nA hand moved softly across his shoulder, soothing the creases between his brows. Then, with a gentle brush of his fingertips, he grasped the instrument for purchase. At last, comfort returned; relief washed over him just enough to keep pace with the storm raging around him.\n\nThe old clockmaster gazed up at the new day slowly taking shape. His gaze fell back toward the distant ceiling, eyes filled with wonder about what lay before him. No",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably. As twilight descended upon the city below, the observatory lost its grip on reality, becoming nothing more than a silent sentinel amidst the chaotic glow of stars. The smoke stung like the hairs on his neck as he stepped closer to the ancient instrument, fingers trailing across the surface of the canvas where the figures would once have danced. Each stroke brought him ever-closer to whatever message awaited beneath its surface.\n\nHours turned minutes, then seconds until dawn broke through. The air grew cool thawed slightly, still full of warmth from earlier glows. With every passing second, the echoes of the past resounded within the now-peaceful observatory structure. Suddenly, a gust of wind swept past, breaking leaves and blowing dandelions onto the ground above.\n\nDespite the comforting solitude, tension built inside. He reached out to touch one of the weather vanes on the clockwork map, feeling a slight shiver pass down his spine. \"What is<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. As the sun began to set behind the observatory buildings, the sky became even more obscured by smoke and clouds of ash. The clockwork map remained steadfast and unyielding, drawing lines on the canvas that were meant to signify the movement of celestial bodies over time.\nI stood atop the observatory's tower, staring up at the horizon. It appeared like an endless expanse of darkness, blanketed by clouds of earthy scents. But then I realized something - the clockwork map. This sense of peace melted away with the coming dusk. As night stole into the building, revealing what seemed like another world outside the glass dome, I approached it cautiously, my heart heavy but hopeful.\n\nThe sight turned me from alone contemplation back towards the universe. The smoke hung low over our small dwelling, making shadows dance ominously through the stone walls. The clockwork map did its work again, this time less predictably, altering shapes unpredictably. As twilight descended upon the city below, the observatory lost its grip on reality, becoming nothing more than a silent sentinel amidst the chaotic glow of stars. The smoke stung like the hairs on his neck as he stepped closer to the ancient instrument, fingers trailing across the surface of the canvas where the figures would once have danced. Each stroke brought him ever-closer to whatever message awaited beneath its surface.\n\nHours turned minutes, then seconds until dawn broke through. The air grew cool thawed slightly, still full of warmth from earlier glows. With every passing second, the echoes of the past resounded within the now-peaceful observatory structure. Suddenly, a gust of wind swept past, breaking leaves and blowing dandelions onto the ground above.\n\nDespite the comforting solitude, tension built inside. He reached out to touch one of the weather vanes on the clockwork map, feeling a slight shiver pass down his spine. \"What is\nassistant\nwhat might be?\"  \nA hand moved softly across his shoulder, soothing the creases between his brows. Then, with a gentle brush of his fingertips, he grasped the instrument for purchase. At last, comfort returned; relief washed over him just enough to keep pace with the storm raging around him.\n\nThe old clockmaster gazed up at the new day slowly taking shape. His gaze fell back toward the distant ceiling, eyes filled with wonder about what lay before him. No",
+        "continuation_text": "what might be?\"  \nA hand moved softly across his shoulder, soothing the creases between his brows. Then, with a gentle brush of his fingertips, he grasped the instrument for purchase. At last, comfort returned; relief washed over him just enough to keep pace with the storm raging around him.\n\nThe old clockmaster gazed up at the new day slowly taking shape. His gaze fell back toward the distant ceiling, eyes filled with wonder about what lay before him. No",
+        "input_token_count": 451,
+        "raw_input_token_count": 451,
+        "output_token_count": 547,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2498,
+        "word_count": 413,
+        "unique_word_count": 300,
+        "unique_word_ratio": 0.7263922518159807,
+        "repeated_bigram_count": 16
+      }
+    }
+  ]
+}

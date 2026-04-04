@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1332
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 748,
+        "word_count": 104,
+        "unique_word_count": 93,
+        "unique_word_ratio": 0.8942307692307693,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 904,
+        "word_count": 126,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.8650793650793651,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1533,
+        "word_count": 215,
+        "unique_word_count": 173,
+        "unique_word_ratio": 0.8046511627906977,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2155,
+        "word_count": 298,
+        "unique_word_count": 233,
+        "unique_word_ratio": 0.7818791946308725,
+        "repeated_bigram_count": 3
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2735,
+        "word_count": 383,
+        "unique_word_count": 293,
+        "unique_word_ratio": 0.7650130548302873,
+        "repeated_bigram_count": 4
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\nThe next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence",
+        "continuation_text": "The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence",
+        "input_token_count": 62,
+        "raw_input_token_count": 62,
+        "output_token_count": 158,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 748,
+        "word_count": 104,
+        "unique_word_count": 93,
+        "unique_word_ratio": 0.8942307692307693,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\"",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence\nassistant\nof certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\"",
+        "continuation_text": "of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\"",
+        "input_token_count": 158,
+        "raw_input_token_count": 158,
+        "output_token_count": 182,
+        "new_token_count": 24,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 904,
+        "word_count": 126,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.8650793650793651,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\"<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The next step taken by the team involved analyzing the collected data further. They began implementing more advanced computer vision and AI technologies in order to decipher complex mathematical expressions within those intricate footnotes accurately, leading them to recognize patterns that initially led them down a path towards making significant strides toward understanding ancient languages once again. However, rather than relying solely on technical means alone, the duo recognized that there needed to be deeper human insight and empathetic judgment mixed with computational insights to interpret such profound findings",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\" The next step taken by the team involved analyzing the collected data further. They began implementing more advanced computer vision and AI technologies in order to decipher complex mathematical expressions within those intricate footnotes accurately, leading them to recognize patterns that initially led them down a path towards making significant strides toward understanding ancient languages once again. However, rather than relying solely on technical means alone, the duo recognized that there needed to be deeper human insight and empathetic judgment mixed with computational insights to interpret such profound findings",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\"\nassistant\nThe next step taken by the team involved analyzing the collected data further. They began implementing more advanced computer vision and AI technologies in order to decipher complex mathematical expressions within those intricate footnotes accurately, leading them to recognize patterns that initially led them down a path towards making significant strides toward understanding ancient languages once again. However, rather than relying solely on technical means alone, the duo recognized that there needed to be deeper human insight and empathetic judgment mixed with computational insights to interpret such profound findings",
+        "continuation_text": "The next step taken by the team involved analyzing the collected data further. They began implementing more advanced computer vision and AI technologies in order to decipher complex mathematical expressions within those intricate footnotes accurately, leading them to recognize patterns that initially led them down a path towards making significant strides toward understanding ancient languages once again. However, rather than relying solely on technical means alone, the duo recognized that there needed to be deeper human insight and empathetic judgment mixed with computational insights to interpret such profound findings",
+        "input_token_count": 181,
+        "raw_input_token_count": 181,
+        "output_token_count": 277,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1533,
+        "word_count": 215,
+        "unique_word_count": 173,
+        "unique_word_ratio": 0.8046511627906977,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\" The next step taken by the team involved analyzing the collected data further. They began implementing more advanced computer vision and AI technologies in order to decipher complex mathematical expressions within those intricate footnotes accurately, leading them to recognize patterns that initially led them down a path towards making significant strides toward understanding ancient languages once again. However, rather than relying solely on technical means alone, the duo recognized that there needed to be deeper human insight and empathetic judgment mixed with computational insights to interpret such profound findings<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "the significance of the discovery of script analysis software used during the Renaissance period,\" concluded John and Thomas. \"It allowed us to see beyond the surface level of artifacts and explore underlying meanings hidden beneath the characters themselves. As we continued our investigation, the implications became even more compelling.\"\nTheir work eventually culminated in a groundbreaking paper published in top-tier journals, demonstrating how script analysis had illuminated a wealth of knowledge previously undiscussed. Their innovative approach demonstrated the possibility of reconstructing literary narratives",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\" The next step taken by the team involved analyzing the collected data further. They began implementing more advanced computer vision and AI technologies in order to decipher complex mathematical expressions within those intricate footnotes accurately, leading them to recognize patterns that initially led them down a path towards making significant strides toward understanding ancient languages once again. However, rather than relying solely on technical means alone, the duo recognized that there needed to be deeper human insight and empathetic judgment mixed with computational insights to interpret such profound findings the significance of the discovery of script analysis software used during the Renaissance period,\" concluded John and Thomas. \"It allowed us to see beyond the surface level of artifacts and explore underlying meanings hidden beneath the characters themselves. As we continued our investigation, the implications became even more compelling.\"\nTheir work eventually culminated in a groundbreaking paper published in top-tier journals, demonstrating how script analysis had illuminated a wealth of knowledge previously undiscussed. Their innovative approach demonstrated the possibility of reconstructing literary narratives",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\" The next step taken by the team involved analyzing the collected data further. They began implementing more advanced computer vision and AI technologies in order to decipher complex mathematical expressions within those intricate footnotes accurately, leading them to recognize patterns that initially led them down a path towards making significant strides toward understanding ancient languages once again. However, rather than relying solely on technical means alone, the duo recognized that there needed to be deeper human insight and empathetic judgment mixed with computational insights to interpret such profound findings<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\" The next step taken by the team involved analyzing the collected data further. They began implementing more advanced computer vision and AI technologies in order to decipher complex mathematical expressions within those intricate footnotes accurately, leading them to recognize patterns that initially led them down a path towards making significant strides toward understanding ancient languages once again. However, rather than relying solely on technical means alone, the duo recognized that there needed to be deeper human insight and empathetic judgment mixed with computational insights to interpret such profound findings\nassistant\nthe significance of the discovery of script analysis software used during the Renaissance period,\" concluded John and Thomas. \"It allowed us to see beyond the surface level of artifacts and explore underlying meanings hidden beneath the characters themselves. As we continued our investigation, the implications became even more compelling.\"\nTheir work eventually culminated in a groundbreaking paper published in top-tier journals, demonstrating how script analysis had illuminated a wealth of knowledge previously undiscussed. Their innovative approach demonstrated the possibility of reconstructing literary narratives",
+        "continuation_text": "the significance of the discovery of script analysis software used during the Renaissance period,\" concluded John and Thomas. \"It allowed us to see beyond the surface level of artifacts and explore underlying meanings hidden beneath the characters themselves. As we continued our investigation, the implications became even more compelling.\"\nTheir work eventually culminated in a groundbreaking paper published in top-tier journals, demonstrating how script analysis had illuminated a wealth of knowledge previously undiscussed. Their innovative approach demonstrated the possibility of reconstructing literary narratives",
+        "input_token_count": 277,
+        "raw_input_token_count": 277,
+        "output_token_count": 373,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2155,
+        "word_count": 298,
+        "unique_word_count": 233,
+        "unique_word_ratio": 0.7818791946308725,
+        "repeated_bigram_count": 3
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\" The next step taken by the team involved analyzing the collected data further. They began implementing more advanced computer vision and AI technologies in order to decipher complex mathematical expressions within those intricate footnotes accurately, leading them to recognize patterns that initially led them down a path towards making significant strides toward understanding ancient languages once again. However, rather than relying solely on technical means alone, the duo recognized that there needed to be deeper human insight and empathetic judgment mixed with computational insights to interpret such profound findings the significance of the discovery of script analysis software used during the Renaissance period,\" concluded John and Thomas. \"It allowed us to see beyond the surface level of artifacts and explore underlying meanings hidden beneath the characters themselves. As we continued our investigation, the implications became even more compelling.\"\nTheir work eventually culminated in a groundbreaking paper published in top-tier journals, demonstrating how script analysis had illuminated a wealth of knowledge previously undiscussed. Their innovative approach demonstrated the possibility of reconstructing literary narratives<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "... ultimately revealing fragments from stories long buried behind dusty manuscripts. The paper presented new evidence suggesting that scholars have been slow to appreciate the role these scripts played in shaping modern myths and folklore across Europe, Asia, Africa, and other regions where ancient cultures lived.\nJohn and Thomas' work revealed unprecedented glimpses of forgotten literature and mythological tales. Not only did they decode thousands of cryptic codes left behind centuries ago but also found remnants of older stories buried deep within ancient writings. This",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\" The next step taken by the team involved analyzing the collected data further. They began implementing more advanced computer vision and AI technologies in order to decipher complex mathematical expressions within those intricate footnotes accurately, leading them to recognize patterns that initially led them down a path towards making significant strides toward understanding ancient languages once again. However, rather than relying solely on technical means alone, the duo recognized that there needed to be deeper human insight and empathetic judgment mixed with computational insights to interpret such profound findings the significance of the discovery of script analysis software used during the Renaissance period,\" concluded John and Thomas. \"It allowed us to see beyond the surface level of artifacts and explore underlying meanings hidden beneath the characters themselves. As we continued our investigation, the implications became even more compelling.\"\nTheir work eventually culminated in a groundbreaking paper published in top-tier journals, demonstrating how script analysis had illuminated a wealth of knowledge previously undiscussed. Their innovative approach demonstrated the possibility of reconstructing literary narratives ... ultimately revealing fragments from stories long buried behind dusty manuscripts. The paper presented new evidence suggesting that scholars have been slow to appreciate the role these scripts played in shaping modern myths and folklore across Europe, Asia, Africa, and other regions where ancient cultures lived.\nJohn and Thomas' work revealed unprecedented glimpses of forgotten literature and mythological tales. Not only did they decode thousands of cryptic codes left behind centuries ago but also found remnants of older stories buried deep within ancient writings. This",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\" The next step taken by the team involved analyzing the collected data further. They began implementing more advanced computer vision and AI technologies in order to decipher complex mathematical expressions within those intricate footnotes accurately, leading them to recognize patterns that initially led them down a path towards making significant strides toward understanding ancient languages once again. However, rather than relying solely on technical means alone, the duo recognized that there needed to be deeper human insight and empathetic judgment mixed with computational insights to interpret such profound findings the significance of the discovery of script analysis software used during the Renaissance period,\" concluded John and Thomas. \"It allowed us to see beyond the surface level of artifacts and explore underlying meanings hidden beneath the characters themselves. As we continued our investigation, the implications became even more compelling.\"\nTheir work eventually culminated in a groundbreaking paper published in top-tier journals, demonstrating how script analysis had illuminated a wealth of knowledge previously undiscussed. Their innovative approach demonstrated the possibility of reconstructing literary narratives<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next step was to analyze these predicted footnotes, which hinted at specific cultural or linguistic trends being prevalent among ancient civilizations before their collapse.\nThe team then looked into existing data sources, such as historical texts and written records from around this period, trying to identify patterns in these notes.\nThey conducted extensive research using techniques like pattern recognition algorithms, machine learning models, and natural language processing tools to extract meaningful information from these footnotes.\nUltimately, they found an interesting correlation between the prevalence of certain architectural features observed in buildings from the time of prediction and widespread use of stone tablets for recording important documents.\" The next step taken by the team involved analyzing the collected data further. They began implementing more advanced computer vision and AI technologies in order to decipher complex mathematical expressions within those intricate footnotes accurately, leading them to recognize patterns that initially led them down a path towards making significant strides toward understanding ancient languages once again. However, rather than relying solely on technical means alone, the duo recognized that there needed to be deeper human insight and empathetic judgment mixed with computational insights to interpret such profound findings the significance of the discovery of script analysis software used during the Renaissance period,\" concluded John and Thomas. \"It allowed us to see beyond the surface level of artifacts and explore underlying meanings hidden beneath the characters themselves. As we continued our investigation, the implications became even more compelling.\"\nTheir work eventually culminated in a groundbreaking paper published in top-tier journals, demonstrating how script analysis had illuminated a wealth of knowledge previously undiscussed. Their innovative approach demonstrated the possibility of reconstructing literary narratives\nassistant\n... ultimately revealing fragments from stories long buried behind dusty manuscripts. The paper presented new evidence suggesting that scholars have been slow to appreciate the role these scripts played in shaping modern myths and folklore across Europe, Asia, Africa, and other regions where ancient cultures lived.\nJohn and Thomas' work revealed unprecedented glimpses of forgotten literature and mythological tales. Not only did they decode thousands of cryptic codes left behind centuries ago but also found remnants of older stories buried deep within ancient writings. This",
+        "continuation_text": "... ultimately revealing fragments from stories long buried behind dusty manuscripts. The paper presented new evidence suggesting that scholars have been slow to appreciate the role these scripts played in shaping modern myths and folklore across Europe, Asia, Africa, and other regions where ancient cultures lived.\nJohn and Thomas' work revealed unprecedented glimpses of forgotten literature and mythological tales. Not only did they decode thousands of cryptic codes left behind centuries ago but also found remnants of older stories buried deep within ancient writings. This",
+        "input_token_count": 373,
+        "raw_input_token_count": 373,
+        "output_token_count": 469,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2735,
+        "word_count": 383,
+        "unique_word_count": 293,
+        "unique_word_ratio": 0.7650130548302873,
+        "repeated_bigram_count": 4
+      }
+    }
+  ]
+}

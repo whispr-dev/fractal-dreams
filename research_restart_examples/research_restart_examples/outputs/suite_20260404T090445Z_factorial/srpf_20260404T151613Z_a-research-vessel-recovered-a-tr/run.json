@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1507,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 1227,
+        "word_count": 183,
+        "unique_word_count": 168,
+        "unique_word_ratio": 0.9180327868852459,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 9,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 568,
+        "word_count": 85,
+        "unique_word_count": 60,
+        "unique_word_ratio": 0.7058823529411765,
+        "repeated_bigram_count": 13
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 536,
+        "word_count": 87,
+        "unique_word_count": 87,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "Once it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nOnce it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}",
+      "source_window_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+      "reflection_window_text": "Once it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. Once it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}",
+        "continuation_text": "Once it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}",
+        "input_token_count": 92,
+        "raw_input_token_count": 92,
+        "output_token_count": 250,
+        "new_token_count": 158,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nOnce it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nOnce it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}",
+        "continuation_text": "",
+        "input_token_count": 236,
+        "raw_input_token_count": 236,
+        "output_token_count": 237,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1227,
+        "word_count": 183,
+        "unique_word_count": 168,
+        "unique_word_ratio": 0.9180327868852459,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nOnce it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}",
+      "output_text": "NOTABLES:",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nOnce it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nOnce it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nOnce it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nOnce it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}",
+        "continuation_text": "",
+        "input_token_count": 305,
+        "raw_input_token_count": 305,
+        "output_token_count": 306,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nOnce it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nOnce it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nOnce it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\n\nREFLECTION:\nOnce it was identified, scientists built their first systems of communication for 10 years at SITS (the largest public company to develop an advanced electronic communications system), creating hundreds or thousands upon tens if not millions by early 1900s.[3] They also created high power radio antennaes capable of providing both terrestrial signals and long range transmitters with full control over multiple data channels like time lines between neighboring buildings on nearby streets/cities across rural parts of the world.[4][5], although this project has been slow so far,[6],[7] many other advances have since come along; however much progress is still needed before we can begin implementing these capabilities! As you may know, I would love to help refine our own development strategies without having any issues regarding software quality.\"[8]}\nNOTABLES:",
+        "continuation_text": "NOTABLES:",
+        "input_token_count": 598,
+        "raw_input_token_count": 598,
+        "output_token_count": 604,
+        "new_token_count": 6,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 9,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nNOTABLES:\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:",
+      "source_window_text": "NOTABLES:",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:",
+        "continuation_text": "",
+        "input_token_count": 73,
+        "raw_input_token_count": 73,
+        "output_token_count": 74,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nNOTABLES:\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nNOTABLES:\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:",
+        "continuation_text": "",
+        "input_token_count": 134,
+        "raw_input_token_count": 134,
+        "output_token_count": 135,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 568,
+        "word_count": 85,
+        "unique_word_count": 60,
+        "unique_word_ratio": 0.7058823529411765,
+        "repeated_bigram_count": 13
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nNOTABLES:\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:",
+      "output_text": "REFACTIONS: The final goal is to make sure all readers understand how they might think about new features or changes when their comments become very limited on current user behavior from now until after this review (such as re-using keywords). In addition your comment will contain some warning messages for future users if you encounter any issues regarding what's actually being considered by someone else - so don't give yourself up! If anyone has found something interesting please share them with us using our IRC channel @lur_ride",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nNOTABLES:\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nNOTABLES:\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nNOTABLES:\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nNOTABLES:\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:",
+        "continuation_text": "",
+        "input_token_count": 203,
+        "raw_input_token_count": 203,
+        "output_token_count": 204,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nNOTABLES:\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nNOTABLES:\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nNOTABLES:\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nNOTABLES:\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nNOTABLES:\nREFACTIONS: The final goal is to make sure all readers understand how they might think about new features or changes when their comments become very limited on current user behavior from now until after this review (such as re-using keywords). In addition your comment will contain some warning messages for future users if you encounter any issues regarding what's actually being considered by someone else - so don't give yourself up! If anyone has found something interesting please share them with us using our IRC channel @lur_ride",
+        "continuation_text": "REFACTIONS: The final goal is to make sure all readers understand how they might think about new features or changes when their comments become very limited on current user behavior from now until after this review (such as re-using keywords). In addition your comment will contain some warning messages for future users if you encounter any issues regarding what's actually being considered by someone else - so don't give yourself up! If anyone has found something interesting please share them with us using our IRC channel @lur_ride",
+        "input_token_count": 394,
+        "raw_input_token_count": 394,
+        "output_token_count": 499,
+        "new_token_count": 105,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 536,
+        "word_count": 87,
+        "unique_word_count": 87,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

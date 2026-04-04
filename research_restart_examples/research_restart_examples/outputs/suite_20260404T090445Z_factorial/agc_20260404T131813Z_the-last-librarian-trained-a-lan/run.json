@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1345,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 182,
+        "word_count": 29,
+        "unique_word_count": 28,
+        "unique_word_ratio": 0.9655172413793104,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 661,
+        "word_count": 98,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.7755102040816326,
+        "repeated_bigram_count": 12
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 618,
+        "word_count": 94,
+        "unique_word_count": 70,
+        "unique_word_ratio": 0.7446808510638298,
+        "repeated_bigram_count": 14
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "若",
+        "):",
+        "if",
+        ")(",
+        "领导",
+        "*(",
+        "),",
+        "（",
+        "应",
+        ">(",
+        "elderly",
+        "*"
+      ],
+      "output_text": "If the former library's staff created a computerized version of an old poem about dead civilizations, their notes would be predicted based on patterns found within the existing data.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 若, ):, if, )(, 领导, *(, ),, （, 应, >(, elderly, *\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 若, ):, if, )(, 领导, *(, ),, （, 应, >(, elderly, *\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\nIf the former library's staff created a computerized version of an old poem about dead civilizations, their notes would be predicted based on patterns found within the existing data.",
+        "continuation_text": "If the former library's staff created a computerized version of an old poem about dead civilizations, their notes would be predicted based on patterns found within the existing data.",
+        "input_token_count": 113,
+        "raw_input_token_count": 113,
+        "output_token_count": 147,
+        "new_token_count": 34,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 182,
+        "word_count": 29,
+        "unique_word_count": 28,
+        "unique_word_ratio": 0.9655172413793104,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "nob",
+        "_inst",
+        "clear",
+        ".E",
+        "optim",
+        "-clear",
+        "与此同时",
+        "if",
+        "patch",
+        "mock",
+        "alongside",
+        "outright"
+      ],
+      "output_text": "The subsequent recursion process involves generating progressively more complex phrases or sentences from the input given the constraints set by the latent anchors. Here is one possible recursion:\n\nGiven:\n- If the former library’s staff created a computerized version of an old poem about dead civilizations.\n  \nRecursive Transformation:\n1. **If** the former library's staff created a computerized version of an old poem about dead civilizations.\n2. **Then** they would have notes predicated on patterns found within the existing data.\n3. **Therefore**, these notes could then be used for predicting the behavior or outcomes of other actions involving computers",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: nob, _inst, clear, .E, optim, -clear, 与此同时, if, patch, mock, alongside, outright\n\nTEXT:\nIf the former library's staff created a computerized version of an old poem about dead civilizations, their notes would be predicted based on patterns found within the existing data.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: nob, _inst, clear, .E, optim, -clear, 与此同时, if, patch, mock, alongside, outright\n\nTEXT:\nIf the former library's staff created a computerized version of an old poem about dead civilizations, their notes would be predicted based on patterns found within the existing data.\nassistant\nThe subsequent recursion process involves generating progressively more complex phrases or sentences from the input given the constraints set by the latent anchors. Here is one possible recursion:\n\nGiven:\n- If the former library’s staff created a computerized version of an old poem about dead civilizations.\n  \nRecursive Transformation:\n1. **If** the former library's staff created a computerized version of an old poem about dead civilizations.\n2. **Then** they would have notes predicated on patterns found within the existing data.\n3. **Therefore**, these notes could then be used for predicting the behavior or outcomes of other actions involving computers",
+        "continuation_text": "The subsequent recursion process involves generating progressively more complex phrases or sentences from the input given the constraints set by the latent anchors. Here is one possible recursion:\n\nGiven:\n- If the former library’s staff created a computerized version of an old poem about dead civilizations.\n  \nRecursive Transformation:\n1. **If** the former library's staff created a computerized version of an old poem about dead civilizations.\n2. **Then** they would have notes predicated on patterns found within the existing data.\n3. **Therefore**, these notes could then be used for predicting the behavior or outcomes of other actions involving computers",
+        "input_token_count": 125,
+        "raw_input_token_count": 125,
+        "output_token_count": 245,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 661,
+        "word_count": 98,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.7755102040816326,
+        "repeated_bigram_count": 12
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "那么",
+        "的",
+        "なの",
+        "�",
+        "олько",
+        "wizard",
+        "tut",
+        "biết",
+        "היא",
+        "在整个",
+        "thì",
+        "是一"
+      ],
+      "output_text": "Based on the context and requirements provided, here is the next recursive transformation using the latent anchor tokens:\n\nGiven:\n- If the former library's staff created a computerized version of an old poem about dead civilizations.\n\nRecursive Transformation:\n1. **If** the former library's staff created a computerized version of an old poem about dead civilizations.\n2. **Then** they would have notes predicated on patterns found within the existing data.\n3. **Therefore**, these notes could then be used for predicting the behavior or outcomes of other actions involving computers.\n\n---\n\n### Explanation:\n1. \"如果\" (",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 那么, 的, なの, �, олько, wizard, tut, biết, היא, 在整个, thì, 是一\n\nTEXT:\nThe subsequent recursion process involves generating progressively more complex phrases or sentences from the input given the constraints set by the latent anchors. Here is one possible recursion:\n\nGiven:\n- If the former library’s staff created a computerized version of an old poem about dead civilizations.\n  \nRecursive Transformation:\n1. **If** the former library's staff created a computerized version of an old poem about dead civilizations.\n2. **Then** they would have notes predicated on patterns found within the existing data.\n3. **Therefore**, these notes could then be used for predicting the behavior or outcomes of other actions involving computers<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: 那么, 的, なの, �, олько, wizard, tut, biết, היא, 在整个, thì, 是一\n\nTEXT:\nThe subsequent recursion process involves generating progressively more complex phrases or sentences from the input given the constraints set by the latent anchors. Here is one possible recursion:\n\nGiven:\n- If the former library’s staff created a computerized version of an old poem about dead civilizations.\n  \nRecursive Transformation:\n1. **If** the former library's staff created a computerized version of an old poem about dead civilizations.\n2. **Then** they would have notes predicated on patterns found within the existing data.\n3. **Therefore**, these notes could then be used for predicting the behavior or outcomes of other actions involving computers\nassistant\nBased on the context and requirements provided, here is the next recursive transformation using the latent anchor tokens:\n\nGiven:\n- If the former library's staff created a computerized version of an old poem about dead civilizations.\n\nRecursive Transformation:\n1. **If** the former library's staff created a computerized version of an old poem about dead civilizations.\n2. **Then** they would have notes predicated on patterns found within the existing data.\n3. **Therefore**, these notes could then be used for predicting the behavior or outcomes of other actions involving computers.\n\n---\n\n### Explanation:\n1. \"如果\" (",
+        "continuation_text": "Based on the context and requirements provided, here is the next recursive transformation using the latent anchor tokens:\n\nGiven:\n- If the former library's staff created a computerized version of an old poem about dead civilizations.\n\nRecursive Transformation:\n1. **If** the former library's staff created a computerized version of an old poem about dead civilizations.\n2. **Then** they would have notes predicated on patterns found within the existing data.\n3. **Therefore**, these notes could then be used for predicting the behavior or outcomes of other actions involving computers.\n\n---\n\n### Explanation:\n1. \"如果\" (",
+        "input_token_count": 216,
+        "raw_input_token_count": 216,
+        "output_token_count": 336,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 618,
+        "word_count": 94,
+        "unique_word_count": 70,
+        "unique_word_ratio": 0.7446808510638298,
+        "repeated_bigram_count": 14
+      }
+    }
+  ]
+}

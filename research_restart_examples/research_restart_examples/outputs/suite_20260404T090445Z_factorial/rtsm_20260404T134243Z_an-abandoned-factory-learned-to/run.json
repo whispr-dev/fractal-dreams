@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1380
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 653,
+        "word_count": 106,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.8490566037735849,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1187,
+        "word_count": 189,
+        "unique_word_count": 153,
+        "unique_word_ratio": 0.8095238095238095,
+        "repeated_bigram_count": 3
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1721,
+        "word_count": 267,
+        "unique_word_count": 211,
+        "unique_word_ratio": 0.7902621722846442,
+        "repeated_bigram_count": 6
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2279,
+        "word_count": 353,
+        "unique_word_count": 264,
+        "unique_word_ratio": 0.7478753541076487,
+        "repeated_bigram_count": 9
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2821,
+        "word_count": 434,
+        "unique_word_count": 309,
+        "unique_word_ratio": 0.7119815668202765,
+        "repeated_bigram_count": 16
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing,",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing,",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nThe abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing,",
+        "continuation_text": "The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing,",
+        "input_token_count": 66,
+        "raw_input_token_count": 66,
+        "output_token_count": 162,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 653,
+        "word_count": 106,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.8490566037735849,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing,<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing, songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing,<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing,\nassistant\nsongs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves",
+        "continuation_text": "songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves",
+        "input_token_count": 162,
+        "raw_input_token_count": 162,
+        "output_token_count": 258,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1187,
+        "word_count": 189,
+        "unique_word_count": 153,
+        "unique_word_ratio": 0.8095238095238095,
+        "repeated_bigram_count": 3
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing, songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "intrigued, wondering what else would be left behind by the relentless cycle of abandonment and rebuilding. Yet instead of panicking or becoming complacent, the narrator continued to find strength in the beauty and resilience of human spirit.\nTheir journey took them through various landscapes, touching upon themes such as loss, love, grief, and faith. In some scenes, they encountered symbols of divine grace and protection. Others highlighted personal struggles, familial ties, and communal bonds. These encounters provided crucial",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing, songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves intrigued, wondering what else would be left behind by the relentless cycle of abandonment and rebuilding. Yet instead of panicking or becoming complacent, the narrator continued to find strength in the beauty and resilience of human spirit.\nTheir journey took them through various landscapes, touching upon themes such as loss, love, grief, and faith. In some scenes, they encountered symbols of divine grace and protection. Others highlighted personal struggles, familial ties, and communal bonds. These encounters provided crucial",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing, songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing, songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves\nassistant\nintrigued, wondering what else would be left behind by the relentless cycle of abandonment and rebuilding. Yet instead of panicking or becoming complacent, the narrator continued to find strength in the beauty and resilience of human spirit.\nTheir journey took them through various landscapes, touching upon themes such as loss, love, grief, and faith. In some scenes, they encountered symbols of divine grace and protection. Others highlighted personal struggles, familial ties, and communal bonds. These encounters provided crucial",
+        "continuation_text": "intrigued, wondering what else would be left behind by the relentless cycle of abandonment and rebuilding. Yet instead of panicking or becoming complacent, the narrator continued to find strength in the beauty and resilience of human spirit.\nTheir journey took them through various landscapes, touching upon themes such as loss, love, grief, and faith. In some scenes, they encountered symbols of divine grace and protection. Others highlighted personal struggles, familial ties, and communal bonds. These encounters provided crucial",
+        "input_token_count": 258,
+        "raw_input_token_count": 258,
+        "output_token_count": 354,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1721,
+        "word_count": 267,
+        "unique_word_count": 211,
+        "unique_word_ratio": 0.7902621722846442,
+        "repeated_bigram_count": 6
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing, songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves intrigued, wondering what else would be left behind by the relentless cycle of abandonment and rebuilding. Yet instead of panicking or becoming complacent, the narrator continued to find strength in the beauty and resilience of human spirit.\nTheir journey took them through various landscapes, touching upon themes such as loss, love, grief, and faith. In some scenes, they encountered symbols of divine grace and protection. Others highlighted personal struggles, familial ties, and communal bonds. These encounters provided crucial<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "elements for emotional depth and character development. Each story told a poignant tale of heartbreak and resilience, allowing the viewers to witness the evolution of an entire community over time. As tensions simmered down and emotions settled, the narrative concluded with new revelations about the characters' inner worlds, inviting readers to piece together the threads of truth hidden within.\n\nThe final lines of the narrative echoed echoes of those who had survived for generations before them - a chorus of prayers and whispered promises, filled with",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing, songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves intrigued, wondering what else would be left behind by the relentless cycle of abandonment and rebuilding. Yet instead of panicking or becoming complacent, the narrator continued to find strength in the beauty and resilience of human spirit.\nTheir journey took them through various landscapes, touching upon themes such as loss, love, grief, and faith. In some scenes, they encountered symbols of divine grace and protection. Others highlighted personal struggles, familial ties, and communal bonds. These encounters provided crucial elements for emotional depth and character development. Each story told a poignant tale of heartbreak and resilience, allowing the viewers to witness the evolution of an entire community over time. As tensions simmered down and emotions settled, the narrative concluded with new revelations about the characters' inner worlds, inviting readers to piece together the threads of truth hidden within.\n\nThe final lines of the narrative echoed echoes of those who had survived for generations before them - a chorus of prayers and whispered promises, filled with",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing, songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves intrigued, wondering what else would be left behind by the relentless cycle of abandonment and rebuilding. Yet instead of panicking or becoming complacent, the narrator continued to find strength in the beauty and resilience of human spirit.\nTheir journey took them through various landscapes, touching upon themes such as loss, love, grief, and faith. In some scenes, they encountered symbols of divine grace and protection. Others highlighted personal struggles, familial ties, and communal bonds. These encounters provided crucial<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing, songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves intrigued, wondering what else would be left behind by the relentless cycle of abandonment and rebuilding. Yet instead of panicking or becoming complacent, the narrator continued to find strength in the beauty and resilience of human spirit.\nTheir journey took them through various landscapes, touching upon themes such as loss, love, grief, and faith. In some scenes, they encountered symbols of divine grace and protection. Others highlighted personal struggles, familial ties, and communal bonds. These encounters provided crucial\nassistant\nelements for emotional depth and character development. Each story told a poignant tale of heartbreak and resilience, allowing the viewers to witness the evolution of an entire community over time. As tensions simmered down and emotions settled, the narrative concluded with new revelations about the characters' inner worlds, inviting readers to piece together the threads of truth hidden within.\n\nThe final lines of the narrative echoed echoes of those who had survived for generations before them - a chorus of prayers and whispered promises, filled with",
+        "continuation_text": "elements for emotional depth and character development. Each story told a poignant tale of heartbreak and resilience, allowing the viewers to witness the evolution of an entire community over time. As tensions simmered down and emotions settled, the narrative concluded with new revelations about the characters' inner worlds, inviting readers to piece together the threads of truth hidden within.\n\nThe final lines of the narrative echoed echoes of those who had survived for generations before them - a chorus of prayers and whispered promises, filled with",
+        "input_token_count": 352,
+        "raw_input_token_count": 352,
+        "output_token_count": 448,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2279,
+        "word_count": 353,
+        "unique_word_count": 264,
+        "unique_word_ratio": 0.7478753541076487,
+        "repeated_bigram_count": 9
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing, songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves intrigued, wondering what else would be left behind by the relentless cycle of abandonment and rebuilding. Yet instead of panicking or becoming complacent, the narrator continued to find strength in the beauty and resilience of human spirit.\nTheir journey took them through various landscapes, touching upon themes such as loss, love, grief, and faith. In some scenes, they encountered symbols of divine grace and protection. Others highlighted personal struggles, familial ties, and communal bonds. These encounters provided crucial elements for emotional depth and character development. Each story told a poignant tale of heartbreak and resilience, allowing the viewers to witness the evolution of an entire community over time. As tensions simmered down and emotions settled, the narrative concluded with new revelations about the characters' inner worlds, inviting readers to piece together the threads of truth hidden within.\n\nThe final lines of the narrative echoed echoes of those who had survived for generations before them - a chorus of prayers and whispered promises, filled with<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "hope and constancy, encouraging listeners to confront their fears, embrace their unique identities, and cultivate a sense of purpose beyond simply surviving. The text ends with a call-to-action urging readers to honor the legacy of those who have come before them, fostering a renewed commitment to empathy, compassion, and understanding across generations. This final piece serves as a powerful reminder of the enduring power of storytelling, woven throughout their exploration of the vast landscape of life, death, and rebirth that defines",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing, songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves intrigued, wondering what else would be left behind by the relentless cycle of abandonment and rebuilding. Yet instead of panicking or becoming complacent, the narrator continued to find strength in the beauty and resilience of human spirit.\nTheir journey took them through various landscapes, touching upon themes such as loss, love, grief, and faith. In some scenes, they encountered symbols of divine grace and protection. Others highlighted personal struggles, familial ties, and communal bonds. These encounters provided crucial elements for emotional depth and character development. Each story told a poignant tale of heartbreak and resilience, allowing the viewers to witness the evolution of an entire community over time. As tensions simmered down and emotions settled, the narrative concluded with new revelations about the characters' inner worlds, inviting readers to piece together the threads of truth hidden within.\n\nThe final lines of the narrative echoed echoes of those who had survived for generations before them - a chorus of prayers and whispered promises, filled with hope and constancy, encouraging listeners to confront their fears, embrace their unique identities, and cultivate a sense of purpose beyond simply surviving. The text ends with a call-to-action urging readers to honor the legacy of those who have come before them, fostering a renewed commitment to empathy, compassion, and understanding across generations. This final piece serves as a powerful reminder of the enduring power of storytelling, woven throughout their exploration of the vast landscape of life, death, and rebirth that defines",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing, songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves intrigued, wondering what else would be left behind by the relentless cycle of abandonment and rebuilding. Yet instead of panicking or becoming complacent, the narrator continued to find strength in the beauty and resilience of human spirit.\nTheir journey took them through various landscapes, touching upon themes such as loss, love, grief, and faith. In some scenes, they encountered symbols of divine grace and protection. Others highlighted personal struggles, familial ties, and communal bonds. These encounters provided crucial elements for emotional depth and character development. Each story told a poignant tale of heartbreak and resilience, allowing the viewers to witness the evolution of an entire community over time. As tensions simmered down and emotions settled, the narrative concluded with new revelations about the characters' inner worlds, inviting readers to piece together the threads of truth hidden within.\n\nThe final lines of the narrative echoed echoes of those who had survived for generations before them - a chorus of prayers and whispered promises, filled with<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The abandoned factory finally began to tell a tale of resilience and renewal, weaving together stories that seemed both beautiful and hauntingly real. Every speaker was a voice begging for light, their words offering comfort as they struggled with life's inevitable twists and turns. The narrative slowly grew larger and more complex, yet always rooted in the same core: the desire for redemption in this dark place. \n\nAs the dialogue became increasingly poetic, voices emerged from all corners - some singing songs of healing, songs of growth, others pleading for hope on its ashes. Each line painted vivid pictures, bringing the past into perspective while also hinting at future paths forward. They sought solace where once there were only despair; these tales offered a way to find a sense of belonging even amidst adversity. Despite the weighty messages, the narrative continued to evolve seamlessly, maintaining its powerful essence despite repeated cycles of destruction and creation. As each scene moved closer to the center, the viewer found themselves intrigued, wondering what else would be left behind by the relentless cycle of abandonment and rebuilding. Yet instead of panicking or becoming complacent, the narrator continued to find strength in the beauty and resilience of human spirit.\nTheir journey took them through various landscapes, touching upon themes such as loss, love, grief, and faith. In some scenes, they encountered symbols of divine grace and protection. Others highlighted personal struggles, familial ties, and communal bonds. These encounters provided crucial elements for emotional depth and character development. Each story told a poignant tale of heartbreak and resilience, allowing the viewers to witness the evolution of an entire community over time. As tensions simmered down and emotions settled, the narrative concluded with new revelations about the characters' inner worlds, inviting readers to piece together the threads of truth hidden within.\n\nThe final lines of the narrative echoed echoes of those who had survived for generations before them - a chorus of prayers and whispered promises, filled with\nassistant\nhope and constancy, encouraging listeners to confront their fears, embrace their unique identities, and cultivate a sense of purpose beyond simply surviving. The text ends with a call-to-action urging readers to honor the legacy of those who have come before them, fostering a renewed commitment to empathy, compassion, and understanding across generations. This final piece serves as a powerful reminder of the enduring power of storytelling, woven throughout their exploration of the vast landscape of life, death, and rebirth that defines",
+        "continuation_text": "hope and constancy, encouraging listeners to confront their fears, embrace their unique identities, and cultivate a sense of purpose beyond simply surviving. The text ends with a call-to-action urging readers to honor the legacy of those who have come before them, fostering a renewed commitment to empathy, compassion, and understanding across generations. This final piece serves as a powerful reminder of the enduring power of storytelling, woven throughout their exploration of the vast landscape of life, death, and rebirth that defines",
+        "input_token_count": 448,
+        "raw_input_token_count": 448,
+        "output_token_count": 544,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2821,
+        "word_count": 434,
+        "unique_word_count": 309,
+        "unique_word_ratio": 0.7119815668202765,
+        "repeated_bigram_count": 16
+      }
+    }
+  ]
+}

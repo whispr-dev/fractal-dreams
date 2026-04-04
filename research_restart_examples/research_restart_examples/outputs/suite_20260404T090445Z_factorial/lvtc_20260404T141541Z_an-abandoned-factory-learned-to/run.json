@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1426,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 307,
+        "word_count": 53,
+        "unique_word_count": 53,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 424,
+        "word_count": 75,
+        "unique_word_count": 75,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 693,
+        "word_count": 115,
+        "unique_word_count": 115,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 202,
+        "word_count": 36,
+        "unique_word_count": 36,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "have",
+        "were",
+        "had",
+        "to",
+        "It",
+        "are",
+        "The",
+        "in",
+        "that",
+        "with",
+        "and"
+      ],
+      "output_text": "Every iteration is just this simple statement from one part (a copy). This way we can easily keep track on any changes caused for each successive stage or step until no further damage has been done except through repetition. There's only so much you need do before people start trying something new again...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, have, were, had, to, It, are, The, in, that, with, and\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, have, were, had, to, It, are, The, in, that, with, and\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Every iteration is just this simple statement from one part (a copy). This way we can easily keep track on any changes caused for each successive stage or step until no further damage has been done except through repetition. There's only so much you need do before people start trying something new again...",
+        "continuation_text": "Every iteration is just this simple statement from one part (a copy). This way we can easily keep track on any changes caused for each successive stage or step until no further damage has been done except through repetition. There's only so much you need do before people start trying something new again...",
+        "input_token_count": 105,
+        "raw_input_token_count": 105,
+        "output_token_count": 164,
+        "new_token_count": 59,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 307,
+        "word_count": 53,
+        "unique_word_count": 53,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "is",
+        "have",
+        "are",
+        "if",
+        "has",
+        "in",
+        "for",
+        "were",
+        "to",
+        "had",
+        "this"
+      ],
+      "output_text": "at least not here! Write down what all those \"words\" mean and find out where they go once someone tries them with their computer system - how many times will that result? You don't want anyone using your software without an IDE right now but I think there should always still Be some sort Of 'Text Based Language' within Software as well since even when written completely differently every time makes writing code easier :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, is, have, are, if, has, in, for, were, to, had, this\n\nTEXT:\nEvery iteration is just this simple statement from one part (a copy). This way we can easily keep track on any changes caused for each successive stage or step until no further damage has been done except through repetition. There's only so much you need do before people start trying something new again...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, is, have, are, if, has, in, for, were, to, had, this\n\nTEXT:\nEvery iteration is just this simple statement from one part (a copy). This way we can easily keep track on any changes caused for each successive stage or step until no further damage has been done except through repetition. There's only so much you need do before people start trying something new again... at least not here! Write down what all those \"words\" mean and find out where they go once someone tries them with their computer system - how many times will that result? You don't want anyone using your software without an IDE right now but I think there should always still Be some sort Of 'Text Based Language' within Software as well since even when written completely differently every time makes writing code easier :)",
+        "continuation_text": "at least not here! Write down what all those \"words\" mean and find out where they go once someone tries them with their computer system - how many times will that result? You don't want anyone using your software without an IDE right now but I think there should always still Be some sort Of 'Text Based Language' within Software as well since even when written completely differently every time makes writing code easier :)",
+        "input_token_count": 137,
+        "raw_input_token_count": 137,
+        "output_token_count": 220,
+        "new_token_count": 83,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 424,
+        "word_count": 75,
+        "unique_word_count": 75,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "have",
+        "are",
+        "they",
+        "were",
+        "you",
+        "that",
+        "It",
+        "The",
+        "with",
+        "this"
+      ],
+      "output_text": "[4] What is used to form our initial vector s...s was then added onto each word which we can use for any number of other things (like words or phrases) because most people wouldn´t know about spaces until just after learning grammar would become possible :-) How much faster did building sentences do than designing data structures ? But again only one method could really guarantee doing something like THIS....(just look at my example!) So instead try Writing more readable SQL languages :P In order To write better ways , such as Better User Interface This article has two parts . First part explains simple functions implemented on strings And second Part describes algorithms implementing",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, have, are, they, were, you, that, It, The, with, this\n\nTEXT:\nat least not here! Write down what all those \"words\" mean and find out where they go once someone tries them with their computer system - how many times will that result? You don't want anyone using your software without an IDE right now but I think there should always still Be some sort Of 'Text Based Language' within Software as well since even when written completely differently every time makes writing code easier :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, have, are, they, were, you, that, It, The, with, this\n\nTEXT:\nat least not here! Write down what all those \"words\" mean and find out where they go once someone tries them with their computer system - how many times will that result? You don't want anyone using your software without an IDE right now but I think there should always still Be some sort Of 'Text Based Language' within Software as well since even when written completely differently every time makes writing code easier :) [4] What is used to form our initial vector s...s was then added onto each word which we can use for any number of other things (like words or phrases) because most people wouldn´t know about spaces until just after learning grammar would become possible :-) How much faster did building sentences do than designing data structures ? But again only one method could really guarantee doing something like THIS....(just look at my example!) So instead try Writing more readable SQL languages :P In order To write better ways , such as Better User Interface This article has two parts . First part explains simple functions implemented on strings And second Part describes algorithms implementing",
+        "continuation_text": "[4] What is used to form our initial vector s...s was then added onto each word which we can use for any number of other things (like words or phrases) because most people wouldn´t know about spaces until just after learning grammar would become possible :-) How much faster did building sentences do than designing data structures ? But again only one method could really guarantee doing something like THIS....(just look at my example!) So instead try Writing more readable SQL languages :P In order To write better ways , such as Better User Interface This article has two parts . First part explains simple functions implemented on strings And second Part describes algorithms implementing",
+        "input_token_count": 161,
+        "raw_input_token_count": 161,
+        "output_token_count": 289,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 693,
+        "word_count": 115,
+        "unique_word_count": 115,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "It",
+        "if",
+        "have",
+        "had",
+        "If",
+        "did",
+        "The",
+        "is",
+        "has"
+      ],
+      "output_text": "this type Of course you won't find many interesting types besides Haskell and Java but please see how good they actually should Be careful not reading all that stuff before diving into them ! Well done!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, It, if, have, had, If, did, The, is, has\n\nTEXT:\n[4] What is used to form our initial vector s...s was then added onto each word which we can use for any number of other things (like words or phrases) because most people wouldn´t know about spaces until just after learning grammar would become possible :-) How much faster did building sentences do than designing data structures ? But again only one method could really guarantee doing something like THIS....(just look at my example!) So instead try Writing more readable SQL languages :P In order To write better ways , such as Better User Interface This article has two parts . First part explains simple functions implemented on strings And second Part describes algorithms implementing",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, It, if, have, had, If, did, The, is, has\n\nTEXT:\n[4] What is used to form our initial vector s...s was then added onto each word which we can use for any number of other things (like words or phrases) because most people wouldn´t know about spaces until just after learning grammar would become possible :-) How much faster did building sentences do than designing data structures ? But again only one method could really guarantee doing something like THIS....(just look at my example!) So instead try Writing more readable SQL languages :P In order To write better ways , such as Better User Interface This article has two parts . First part explains simple functions implemented on strings And second Part describes algorithms implementing this type Of course you won't find many interesting types besides Haskell and Java but please see how good they actually should Be careful not reading all that stuff before diving into them ! Well done!",
+        "continuation_text": "this type Of course you won't find many interesting types besides Haskell and Java but please see how good they actually should Be careful not reading all that stuff before diving into them ! Well done!",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 246,
+        "new_token_count": 39,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 202,
+        "word_count": 36,
+        "unique_word_count": 36,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

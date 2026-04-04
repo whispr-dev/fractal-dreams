@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1252
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 305,
+        "word_count": 53,
+        "unique_word_count": 51,
+        "unique_word_ratio": 0.9622641509433962,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 764,
+        "word_count": 128,
+        "unique_word_count": 69,
+        "unique_word_ratio": 0.5390625,
+        "repeated_bigram_count": 53
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1302,
+        "word_count": 212,
+        "unique_word_count": 149,
+        "unique_word_ratio": 0.7028301886792453,
+        "repeated_bigram_count": 53
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1832,
+        "word_count": 295,
+        "unique_word_count": 229,
+        "unique_word_ratio": 0.7762711864406779,
+        "repeated_bigram_count": 53
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2371,
+        "word_count": 371,
+        "unique_word_count": 301,
+        "unique_word_ratio": 0.8113207547169812,
+        "repeated_bigram_count": 53
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+      "delta_text": "The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.)",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.)",
+        "continuation_text": "The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.)",
+        "input_token_count": 57,
+        "raw_input_token_count": 57,
+        "output_token_count": 99,
+        "new_token_count": 42,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 305,
+        "word_count": 53,
+        "unique_word_count": 51,
+        "unique_word_ratio": 0.9622641509433962,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.)",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.)",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.)",
+        "continuation_text": "",
+        "input_token_count": 98,
+        "raw_input_token_count": 98,
+        "output_token_count": 99,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 764,
+        "word_count": 128,
+        "unique_word_count": 69,
+        "unique_word_ratio": 0.5390625,
+        "repeated_bigram_count": 53
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.)",
+      "delta_text": "Continue his progress through various branches using more efficient algorithms than most others with no problem writing down sentences like this one so far. This makes things even easier when faced with such an overwhelming amount of information — sometimes confusing but impossible, including some awkward facts; if we can learn something from our own experiences without having time to do research first after learning each other at another level (\"it really isn... much less complicated,\" says author Richard J. Gulliver). What I don´",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) Continue his progress through various branches using more efficient algorithms than most others with no problem writing down sentences like this one so far. This makes things even easier when faced with such an overwhelming amount of information — sometimes confusing but impossible, including some awkward facts; if we can learn something from our own experiences without having time to do research first after learning each other at another level (\"it really isn... much less complicated,\" says author Richard J. Gulliver). What I don´",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.)\nContinue his progress through various branches using more efficient algorithms than most others with no problem writing down sentences like this one so far. This makes things even easier when faced with such an overwhelming amount of information — sometimes confusing but impossible, including some awkward facts; if we can learn something from our own experiences without having time to do research first after learning each other at another level (\"it really isn... much less complicated,\" says author Richard J. Gulliver). What I don´",
+        "continuation_text": "Continue his progress through various branches using more efficient algorithms than most others with no problem writing down sentences like this one so far. This makes things even easier when faced with such an overwhelming amount of information — sometimes confusing but impossible, including some awkward facts; if we can learn something from our own experiences without having time to do research first after learning each other at another level (\"it really isn... much less complicated,\" says author Richard J. Gulliver). What I don´",
+        "input_token_count": 196,
+        "raw_input_token_count": 196,
+        "output_token_count": 292,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1302,
+        "word_count": 212,
+        "unique_word_count": 149,
+        "unique_word_ratio": 0.7028301886792453,
+        "repeated_bigram_count": 53
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) Continue his progress through various branches using more efficient algorithms than most others with no problem writing down sentences like this one so far. This makes things even easier when faced with such an overwhelming amount of information — sometimes confusing but impossible, including some awkward facts; if we can learn something from our own experiences without having time to do research first after learning each other at another level (\"it really isn... much less complicated,\" says author Richard J. Gulliver). What I don´",
+      "delta_text": "t know is whether my code has been updated any over several years thus far, as long as there�s still enough feedback left before they get stuck all together quickly… That¹ may seem arbitrary because everything else looks awful here [but] once again, every day comes across errors along those lines by requiring us back into full swing.\"\nStart working out ways to improve readability while simultaneously improving performance among different languages both online and offline, since their respective problems overlap very clearly",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) Continue his progress through various branches using more efficient algorithms than most others with no problem writing down sentences like this one so far. This makes things even easier when faced with such an overwhelming amount of information — sometimes confusing but impossible, including some awkward facts; if we can learn something from our own experiences without having time to do research first after learning each other at another level (\"it really isn... much less complicated,\" says author Richard J. Gulliver). What I don´ t know is whether my code has been updated any over several years thus far, as long as there�s still enough feedback left before they get stuck all together quickly… That¹ may seem arbitrary because everything else looks awful here [but] once again, every day comes across errors along those lines by requiring us back into full swing.\"\nStart working out ways to improve readability while simultaneously improving performance among different languages both online and offline, since their respective problems overlap very clearly",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) Continue his progress through various branches using more efficient algorithms than most others with no problem writing down sentences like this one so far. This makes things even easier when faced with such an overwhelming amount of information — sometimes confusing but impossible, including some awkward facts; if we can learn something from our own experiences without having time to do research first after learning each other at another level (\"it really isn... much less complicated,\" says author Richard J. Gulliver). What I don´",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) Continue his progress through various branches using more efficient algorithms than most others with no problem writing down sentences like this one so far. This makes things even easier when faced with such an overwhelming amount of information — sometimes confusing but impossible, including some awkward facts; if we can learn something from our own experiences without having time to do research first after learning each other at another level (\"it really isn... much less complicated,\" says author Richard J. Gulliver). What I don´t know is whether my code has been updated any over several years thus far, as long as there�s still enough feedback left before they get stuck all together quickly… That¹ may seem arbitrary because everything else looks awful here [but] once again, every day comes across errors along those lines by requiring us back into full swing.\"\nStart working out ways to improve readability while simultaneously improving performance among different languages both online and offline, since their respective problems overlap very clearly",
+        "continuation_text": "t know is whether my code has been updated any over several years thus far, as long as there�s still enough feedback left before they get stuck all together quickly… That¹ may seem arbitrary because everything else looks awful here [but] once again, every day comes across errors along those lines by requiring us back into full swing.\"\nStart working out ways to improve readability while simultaneously improving performance among different languages both online and offline, since their respective problems overlap very clearly",
+        "input_token_count": 291,
+        "raw_input_token_count": 291,
+        "output_token_count": 387,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1832,
+        "word_count": 295,
+        "unique_word_count": 229,
+        "unique_word_ratio": 0.7762711864406779,
+        "repeated_bigram_count": 53
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) Continue his progress through various branches using more efficient algorithms than most others with no problem writing down sentences like this one so far. This makes things even easier when faced with such an overwhelming amount of information — sometimes confusing but impossible, including some awkward facts; if we can learn something from our own experiences without having time to do research first after learning each other at another level (\"it really isn... much less complicated,\" says author Richard J. Gulliver). What I don´ t know is whether my code has been updated any over several years thus far, as long as there�s still enough feedback left before they get stuck all together quickly… That¹ may seem arbitrary because everything else looks awful here [but] once again, every day comes across errors along those lines by requiring us back into full swing.\"\nStart working out ways to improve readability while simultaneously improving performance among different languages both online and offline, since their respective problems overlap very clearly",
+      "delta_text": "? One project mentioned recently included creating English translation tests during trials where reading comprehension became difficult due to multiple factors ranging from boredom to hunger etc. But let´t forget these two issues have made me think \"let`ting translate\" rather badly today.—James Caukins (@Caukins) April 15,, 2016\nI believe speaking French sounds good indeed., especially considering everyone who understands Hebrew properly knows German correctly now … although translations often come up empty unless asked directly via",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) Continue his progress through various branches using more efficient algorithms than most others with no problem writing down sentences like this one so far. This makes things even easier when faced with such an overwhelming amount of information — sometimes confusing but impossible, including some awkward facts; if we can learn something from our own experiences without having time to do research first after learning each other at another level (\"it really isn... much less complicated,\" says author Richard J. Gulliver). What I don´ t know is whether my code has been updated any over several years thus far, as long as there�s still enough feedback left before they get stuck all together quickly… That¹ may seem arbitrary because everything else looks awful here [but] once again, every day comes across errors along those lines by requiring us back into full swing.\"\nStart working out ways to improve readability while simultaneously improving performance among different languages both online and offline, since their respective problems overlap very clearly ? One project mentioned recently included creating English translation tests during trials where reading comprehension became difficult due to multiple factors ranging from boredom to hunger etc. But let´t forget these two issues have made me think \"let`ting translate\" rather badly today.—James Caukins (@Caukins) April 15,, 2016\nI believe speaking French sounds good indeed., especially considering everyone who understands Hebrew properly knows German correctly now … although translations often come up empty unless asked directly via",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) Continue his progress through various branches using more efficient algorithms than most others with no problem writing down sentences like this one so far. This makes things even easier when faced with such an overwhelming amount of information — sometimes confusing but impossible, including some awkward facts; if we can learn something from our own experiences without having time to do research first after learning each other at another level (\"it really isn... much less complicated,\" says author Richard J. Gulliver). What I don´ t know is whether my code has been updated any over several years thus far, as long as there�s still enough feedback left before they get stuck all together quickly… That¹ may seem arbitrary because everything else looks awful here [but] once again, every day comes across errors along those lines by requiring us back into full swing.\"\nStart working out ways to improve readability while simultaneously improving performance among different languages both online and offline, since their respective problems overlap very clearly",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The only thing he or she didn't notice was how many people lived below it, instead of just being taught about words—and what you wrote for them to say! (See How We Write Words.) Continue his progress through various branches using more efficient algorithms than most others with no problem writing down sentences like this one so far. This makes things even easier when faced with such an overwhelming amount of information — sometimes confusing but impossible, including some awkward facts; if we can learn something from our own experiences without having time to do research first after learning each other at another level (\"it really isn... much less complicated,\" says author Richard J. Gulliver). What I don´ t know is whether my code has been updated any over several years thus far, as long as there�s still enough feedback left before they get stuck all together quickly… That¹ may seem arbitrary because everything else looks awful here [but] once again, every day comes across errors along those lines by requiring us back into full swing.\"\nStart working out ways to improve readability while simultaneously improving performance among different languages both online and offline, since their respective problems overlap very clearly? One project mentioned recently included creating English translation tests during trials where reading comprehension became difficult due to multiple factors ranging from boredom to hunger etc. But let´t forget these two issues have made me think \"let`ting translate\" rather badly today.—James Caukins (@Caukins) April 15,, 2016\nI believe speaking French sounds good indeed., especially considering everyone who understands Hebrew properly knows German correctly now … although translations often come up empty unless asked directly via",
+        "continuation_text": "? One project mentioned recently included creating English translation tests during trials where reading comprehension became difficult due to multiple factors ranging from boredom to hunger etc. But let´t forget these two issues have made me think \"let`ting translate\" rather badly today.—James Caukins (@Caukins) April 15,, 2016\nI believe speaking French sounds good indeed., especially considering everyone who understands Hebrew properly knows German correctly now … although translations often come up empty unless asked directly via",
+        "input_token_count": 387,
+        "raw_input_token_count": 387,
+        "output_token_count": 483,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2371,
+        "word_count": 371,
+        "unique_word_count": 301,
+        "unique_word_ratio": 0.8113207547169812,
+        "repeated_bigram_count": 53
+      }
+    }
+  ]
+}

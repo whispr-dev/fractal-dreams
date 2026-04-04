@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1120
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 630,
+        "word_count": 110,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.9636363636363636,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1096,
+        "word_count": 185,
+        "unique_word_count": 175,
+        "unique_word_ratio": 0.9459459459459459,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1615,
+        "word_count": 255,
+        "unique_word_count": 242,
+        "unique_word_ratio": 0.9490196078431372,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2205,
+        "word_count": 336,
+        "unique_word_count": 320,
+        "unique_word_ratio": 0.9523809523809523,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2745,
+        "word_count": 404,
+        "unique_word_count": 385,
+        "unique_word_ratio": 0.9529702970297029,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+      "delta_text": "It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting",
+        "continuation_text": "It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting",
+        "input_token_count": 63,
+        "raw_input_token_count": 63,
+        "output_token_count": 159,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 630,
+        "word_count": 110,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.9636363636363636,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting",
+      "delta_text": "before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since",
+        "continuation_text": "before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since",
+        "input_token_count": 159,
+        "raw_input_token_count": 159,
+        "output_token_count": 255,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1096,
+        "word_count": 185,
+        "unique_word_count": 175,
+        "unique_word_ratio": 0.9459459459459459,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since",
+      "delta_text": "noon until daylight arrives too soon after sunset? We simply can’t figure out why everyone dies while attempting another study simultaneously.[8][9](i) And yes, some studies tend toward estimating nighttime temperatures higher then -40°C[10](I'm assuming my math works well). However… many research groups seem confused about whether nightlights may influence temperature relative to ambient conditions such as sunrises within certain cities across Europe including Chicago, Pittsburgh etc... although maybe also being",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since noon until daylight arrives too soon after sunset? We simply can’t figure out why everyone dies while attempting another study simultaneously.[8][9](i) And yes, some studies tend toward estimating nighttime temperatures higher then -40°C[10](I'm assuming my math works well). However… many research groups seem confused about whether nightlights may influence temperature relative to ambient conditions such as sunrises within certain cities across Europe including Chicago, Pittsburgh etc... although maybe also being",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since noon until daylight arrives too soon after sunset? We simply can’t figure out why everyone dies while attempting another study simultaneously.[8][9](i) And yes, some studies tend toward estimating nighttime temperatures higher then -40°C[10](I'm assuming my math works well). However… many research groups seem confused about whether nightlights may influence temperature relative to ambient conditions such as sunrises within certain cities across Europe including Chicago, Pittsburgh etc... although maybe also being",
+        "continuation_text": "noon until daylight arrives too soon after sunset? We simply can’t figure out why everyone dies while attempting another study simultaneously.[8][9](i) And yes, some studies tend toward estimating nighttime temperatures higher then -40°C[10](I'm assuming my math works well). However… many research groups seem confused about whether nightlights may influence temperature relative to ambient conditions such as sunrises within certain cities across Europe including Chicago, Pittsburgh etc... although maybe also being",
+        "input_token_count": 255,
+        "raw_input_token_count": 255,
+        "output_token_count": 351,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1615,
+        "word_count": 255,
+        "unique_word_count": 242,
+        "unique_word_ratio": 0.9490196078431372,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since noon until daylight arrives too soon after sunset? We simply can’t figure out why everyone dies while attempting another study simultaneously.[8][9](i) And yes, some studies tend toward estimating nighttime temperatures higher then -40°C[10](I'm assuming my math works well). However… many research groups seem confused about whether nightlights may influence temperature relative to ambient conditions such as sunrises within certain cities across Europe including Chicago, Pittsburgh etc... although maybe also being",
+      "delta_text": "based solely upon subjective factors like weather variables alone cannot determine overall trends towards daytime tempers,[11]:[/12]) Thus, regardless HOW MUCH information necessary to get here--and just ask yourself questions rather than having someone walk away quickly enough --to gauge long term safety precautions against any scenario setting aside optimal energy availability versus avoiding excessive heat waves would likely lead somewhere close beyond 1 hour minimum exposure times throughout North America(so unless done appropriately), perhaps 2½ months ahead of midnight means 4",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since noon until daylight arrives too soon after sunset? We simply can’t figure out why everyone dies while attempting another study simultaneously.[8][9](i) And yes, some studies tend toward estimating nighttime temperatures higher then -40°C[10](I'm assuming my math works well). However… many research groups seem confused about whether nightlights may influence temperature relative to ambient conditions such as sunrises within certain cities across Europe including Chicago, Pittsburgh etc... although maybe also being based solely upon subjective factors like weather variables alone cannot determine overall trends towards daytime tempers,[11]:[/12]) Thus, regardless HOW MUCH information necessary to get here--and just ask yourself questions rather than having someone walk away quickly enough --to gauge long term safety precautions against any scenario setting aside optimal energy availability versus avoiding excessive heat waves would likely lead somewhere close beyond 1 hour minimum exposure times throughout North America(so unless done appropriately), perhaps 2½ months ahead of midnight means 4",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since noon until daylight arrives too soon after sunset? We simply can’t figure out why everyone dies while attempting another study simultaneously.[8][9](i) And yes, some studies tend toward estimating nighttime temperatures higher then -40°C[10](I'm assuming my math works well). However… many research groups seem confused about whether nightlights may influence temperature relative to ambient conditions such as sunrises within certain cities across Europe including Chicago, Pittsburgh etc... although maybe also being",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since noon until daylight arrives too soon after sunset? We simply can’t figure out why everyone dies while attempting another study simultaneously.[8][9](i) And yes, some studies tend toward estimating nighttime temperatures higher then -40°C[10](I'm assuming my math works well). However… many research groups seem confused about whether nightlights may influence temperature relative to ambient conditions such as sunrises within certain cities across Europe including Chicago, Pittsburgh etc... although maybe also being based solely upon subjective factors like weather variables alone cannot determine overall trends towards daytime tempers,[11]:[/12]) Thus, regardless HOW MUCH information necessary to get here--and just ask yourself questions rather than having someone walk away quickly enough --to gauge long term safety precautions against any scenario setting aside optimal energy availability versus avoiding excessive heat waves would likely lead somewhere close beyond 1 hour minimum exposure times throughout North America(so unless done appropriately), perhaps 2½ months ahead of midnight means 4",
+        "continuation_text": "based solely upon subjective factors like weather variables alone cannot determine overall trends towards daytime tempers,[11]:[/12]) Thus, regardless HOW MUCH information necessary to get here--and just ask yourself questions rather than having someone walk away quickly enough --to gauge long term safety precautions against any scenario setting aside optimal energy availability versus avoiding excessive heat waves would likely lead somewhere close beyond 1 hour minimum exposure times throughout North America(so unless done appropriately), perhaps 2½ months ahead of midnight means 4",
+        "input_token_count": 351,
+        "raw_input_token_count": 351,
+        "output_token_count": 447,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2205,
+        "word_count": 336,
+        "unique_word_count": 320,
+        "unique_word_ratio": 0.9523809523809523,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since noon until daylight arrives too soon after sunset? We simply can’t figure out why everyone dies while attempting another study simultaneously.[8][9](i) And yes, some studies tend toward estimating nighttime temperatures higher then -40°C[10](I'm assuming my math works well). However… many research groups seem confused about whether nightlights may influence temperature relative to ambient conditions such as sunrises within certain cities across Europe including Chicago, Pittsburgh etc... although maybe also being based solely upon subjective factors like weather variables alone cannot determine overall trends towards daytime tempers,[11]:[/12]) Thus, regardless HOW MUCH information necessary to get here--and just ask yourself questions rather than having someone walk away quickly enough --to gauge long term safety precautions against any scenario setting aside optimal energy availability versus avoiding excessive heat waves would likely lead somewhere close beyond 1 hour minimum exposure times throughout North America(so unless done appropriately), perhaps 2½ months ahead of midnight means 4",
+      "delta_text": "inches thick (~1 inch / 3 centimeter – approximately 15 millimeters per pixel)[13]\n\nAs predicted, further increases in human lifespan might decrease atmospheric concentrations below zero Fahrenheit under normal circumstances.(15)(14)(16)(17)(18)+19)-20%) Since air becomes warmer outside Earth via evaporation resulting in elevated soil water levels entering circulation causing increasing erosion leading inevitably, humans could reduce CO2 emissions both directly and indirectly compared WITH average daily activity rates globally*. Here",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since noon until daylight arrives too soon after sunset? We simply can’t figure out why everyone dies while attempting another study simultaneously.[8][9](i) And yes, some studies tend toward estimating nighttime temperatures higher then -40°C[10](I'm assuming my math works well). However… many research groups seem confused about whether nightlights may influence temperature relative to ambient conditions such as sunrises within certain cities across Europe including Chicago, Pittsburgh etc... although maybe also being based solely upon subjective factors like weather variables alone cannot determine overall trends towards daytime tempers,[11]:[/12]) Thus, regardless HOW MUCH information necessary to get here--and just ask yourself questions rather than having someone walk away quickly enough --to gauge long term safety precautions against any scenario setting aside optimal energy availability versus avoiding excessive heat waves would likely lead somewhere close beyond 1 hour minimum exposure times throughout North America(so unless done appropriately), perhaps 2½ months ahead of midnight means 4 inches thick (~1 inch / 3 centimeter – approximately 15 millimeters per pixel)[13]\n\nAs predicted, further increases in human lifespan might decrease atmospheric concentrations below zero Fahrenheit under normal circumstances.(15)(14)(16)(17)(18)+19)-20%) Since air becomes warmer outside Earth via evaporation resulting in elevated soil water levels entering circulation causing increasing erosion leading inevitably, humans could reduce CO2 emissions both directly and indirectly compared WITH average daily activity rates globally*. Here",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since noon until daylight arrives too soon after sunset? We simply can’t figure out why everyone dies while attempting another study simultaneously.[8][9](i) And yes, some studies tend toward estimating nighttime temperatures higher then -40°C[10](I'm assuming my math works well). However… many research groups seem confused about whether nightlights may influence temperature relative to ambient conditions such as sunrises within certain cities across Europe including Chicago, Pittsburgh etc... although maybe also being based solely upon subjective factors like weather variables alone cannot determine overall trends towards daytime tempers,[11]:[/12]) Thus, regardless HOW MUCH information necessary to get here--and just ask yourself questions rather than having someone walk away quickly enough --to gauge long term safety precautions against any scenario setting aside optimal energy availability versus avoiding excessive heat waves would likely lead somewhere close beyond 1 hour minimum exposure times throughout North America(so unless done appropriately), perhaps 2½ months ahead of midnight means 4",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It is impossible to see it from an observer's eye without going into one of those rooms when you know that there were four other lights on each side of the room; because they will have stopped at this exact point all evening (even though their names never came back): The dark space between these light shows up slowly starting around 5am local time (\"the last five minutes\"), which allows for greater visibility through most windows where illuminated by candlelit candles. After 10 hours or so waiting before sunrise/noon sunlight passes over them during twilight shifts—this has no effect as opposed \"nightlight\" itself–you start noticing more things than once even six weeks later! In total, our calculations only show 6 out OF 11 people died instantly due entirely TO darkness falling right next to [A]horseshoe above.\" As I've mentioned earlier, lighting isn't exactly what we want with regards to how much data needs to be collected prior to dawn every day since noon until daylight arrives too soon after sunset? We simply can’t figure out why everyone dies while attempting another study simultaneously.[8][9](i) And yes, some studies tend toward estimating nighttime temperatures higher then -40°C[10](I'm assuming my math works well). However… many research groups seem confused about whether nightlights may influence temperature relative to ambient conditions such as sunrises within certain cities across Europe including Chicago, Pittsburgh etc... although maybe also being based solely upon subjective factors like weather variables alone cannot determine overall trends towards daytime tempers,[11]:[/12]) Thus, regardless HOW MUCH information necessary to get here--and just ask yourself questions rather than having someone walk away quickly enough --to gauge long term safety precautions against any scenario setting aside optimal energy availability versus avoiding excessive heat waves would likely lead somewhere close beyond 1 hour minimum exposure times throughout North America(so unless done appropriately), perhaps 2½ months ahead of midnight means 4 inches thick (~1 inch / 3 centimeter – approximately 15 millimeters per pixel)[13]\n\nAs predicted, further increases in human lifespan might decrease atmospheric concentrations below zero Fahrenheit under normal circumstances.(15)(14)(16)(17)(18)+19)-20%) Since air becomes warmer outside Earth via evaporation resulting in elevated soil water levels entering circulation causing increasing erosion leading inevitably, humans could reduce CO2 emissions both directly and indirectly compared WITH average daily activity rates globally*. Here",
+        "continuation_text": "inches thick (~1 inch / 3 centimeter – approximately 15 millimeters per pixel)[13]\n\nAs predicted, further increases in human lifespan might decrease atmospheric concentrations below zero Fahrenheit under normal circumstances.(15)(14)(16)(17)(18)+19)-20%) Since air becomes warmer outside Earth via evaporation resulting in elevated soil water levels entering circulation causing increasing erosion leading inevitably, humans could reduce CO2 emissions both directly and indirectly compared WITH average daily activity rates globally*. Here",
+        "input_token_count": 447,
+        "raw_input_token_count": 447,
+        "output_token_count": 543,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2745,
+        "word_count": 404,
+        "unique_word_count": 385,
+        "unique_word_ratio": 0.9529702970297029,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

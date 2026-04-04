@@ -1,12 +1,19 @@
 from __future__ import annotations
-
 import json
 import re
 from dataclasses import asdict, is_dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, Iterable, List
-
+from utils_io import (
+    utc_timestamp,
+    ensure_dir,
+    slugify,
+    write_json,
+    write_text,
+    basic_text_metrics,
+    summarize_run_records,
+)
 
 def utc_timestamp() -> str:
     return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
@@ -78,3 +85,25 @@ def summarize_run_records(records: List[Dict[str, Any]], output_key: str = "outp
             **metrics,
         })
     return {"per_step": per_step, "step_count": len(per_step)}
+
+seed_text = "A forgotten machine beneath the sea continued speaking."
+run_name = slugify(seed_text, max_length=40)
+
+run_dir = ensure_dir(Path("outputs") / f"{utc_timestamp()}_{run_name}")
+
+records = [
+    {"step": 1, "lens": "mythic", "output_text": "The machine spoke in tides."},
+    {"step": 2, "lens": "dream", "output_text": "The machine spoke in tides and recursion."},
+]
+
+summary = summarize_run_records(records)
+
+write_json(run_dir / "summary.json", summary)
+write_json(run_dir / "records.json", records)
+
+log_lines = [
+    f"Run directory: {run_dir}",
+    f"Seed text: {seed_text}",
+    f"Steps: {len(records)}",
+]
+write_text(run_dir / "run_log.txt", log_lines)

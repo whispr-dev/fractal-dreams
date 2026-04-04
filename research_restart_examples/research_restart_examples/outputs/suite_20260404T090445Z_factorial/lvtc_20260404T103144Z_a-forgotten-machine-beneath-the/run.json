@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1118,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 371,
+        "word_count": 59,
+        "unique_word_count": 50,
+        "unique_word_ratio": 0.847457627118644,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 682,
+        "word_count": 96,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.8854166666666666,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 510,
+        "word_count": 90,
+        "unique_word_count": 71,
+        "unique_word_ratio": 0.7888888888888889,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 630,
+        "word_count": 93,
+        "unique_word_count": 84,
+        "unique_word_ratio": 0.9032258064516129,
+        "repeated_bigram_count": 1
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "its",
+        "the",
+        "was",
+        "It",
+        "are",
+        ",",
+        "and",
+        "If",
+        "for"
+      ],
+      "output_text": "The remaining question is about your request to provide instructions on how to transform or generate further sentences based on the given text. Please provide another instruction or specific piece of content that you'd like me to work with for generating new sentences. I'm here to assist with any questions or tasks related to natural language processing and generation.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nThe remaining question is about your request to provide instructions on how to transform or generate further sentences based on the given text. Please provide another instruction or specific piece of content that you'd like me to work with for generating new sentences. I'm here to assist with any questions or tasks related to natural language processing and generation.",
+        "continuation_text": "The remaining question is about your request to provide instructions on how to transform or generate further sentences based on the given text. Please provide another instruction or specific piece of content that you'd like me to work with for generating new sentences. I'm here to assist with any questions or tasks related to natural language processing and generation.",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 176,
+        "new_token_count": 65,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 371,
+        "word_count": 59,
+        "unique_word_count": 50,
+        "unique_word_ratio": 0.847457627118644,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "to",
+        "if",
+        "it",
+        "for",
+        "and",
+        "or",
+        "the",
+        "with",
+        "is",
+        "of",
+        "on",
+        "in"
+      ],
+      "output_text": "To proceed with the next recursive transformation of this text into code:\n\n1. **Input Validation:** \n   The current text doesn't have enough context to determine what \"transform\" refers to accurately. It could refer to creating transformations, providing feedback, or something else entirely. However, without more information, we'll assume the purpose can be derived from the provided hint (\"Please provide another instruction or specific piece of content\").\n\n2. **Task Identification:** \n   Given the prompt's focus on generating new sentences based on existing ones, there might be an expectation for some kind of conditional logic. \n\n3. **Recursive Transformation:**\n   Since no",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: to, if, it, for, and, or, the, with, is, of, on, in\n\nTEXT:\nThe remaining question is about your request to provide instructions on how to transform or generate further sentences based on the given text. Please provide another instruction or specific piece of content that you'd like me to work with for generating new sentences. I'm here to assist with any questions or tasks related to natural language processing and generation.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: to, if, it, for, and, or, the, with, is, of, on, in\n\nTEXT:\nThe remaining question is about your request to provide instructions on how to transform or generate further sentences based on the given text. Please provide another instruction or specific piece of content that you'd like me to work with for generating new sentences. I'm here to assist with any questions or tasks related to natural language processing and generation.\nassistant\nTo proceed with the next recursive transformation of this text into code:\n\n1. **Input Validation:** \n   The current text doesn't have enough context to determine what \"transform\" refers to accurately. It could refer to creating transformations, providing feedback, or something else entirely. However, without more information, we'll assume the purpose can be derived from the provided hint (\"Please provide another instruction or specific piece of content\").\n\n2. **Task Identification:** \n   Given the prompt's focus on generating new sentences based on existing ones, there might be an expectation for some kind of conditional logic. \n\n3. **Recursive Transformation:**\n   Since no",
+        "continuation_text": "To proceed with the next recursive transformation of this text into code:\n\n1. **Input Validation:** \n   The current text doesn't have enough context to determine what \"transform\" refers to accurately. It could refer to creating transformations, providing feedback, or something else entirely. However, without more information, we'll assume the purpose can be derived from the provided hint (\"Please provide another instruction or specific piece of content\").\n\n2. **Task Identification:** \n   Given the prompt's focus on generating new sentences based on existing ones, there might be an expectation for some kind of conditional logic. \n\n3. **Recursive Transformation:**\n   Since no",
+        "input_token_count": 146,
+        "raw_input_token_count": 146,
+        "output_token_count": 274,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 682,
+        "word_count": 96,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.8854166666666666,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "to",
+        ",",
+        "the",
+        "for",
+        "is",
+        "and",
+        "of",
+        "in",
+        "(",
+        "were"
+      ],
+      "output_text": "Let's approach this step-by-step:\n\nGiven that the input consists of just one sentence, let’s break down what needs to happen first before proceeding to create the new output.\n\n### Latent Direction Tokens:\n- If = Conditional Start\n- To = Conditional End\n- is/are = Indeterminate if/no\n- the = A/D\n- was = B/F\n- not = N/E\n- any = Any\n- all = All\n\nAssuming each token represents either an action (`is`), absence (`not`), condition (`if`), repetition (`to`) or anything similar, how should the process begin?\n\n####",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, to, ,, the, for, is, and, of, in, (, were\n\nTEXT:\nTo proceed with the next recursive transformation of this text into code:\n\n1. **Input Validation:** \n   The current text doesn't have enough context to determine what \"transform\" refers to accurately. It could refer to creating transformations, providing feedback, or something else entirely. However, without more information, we'll assume the purpose can be derived from the provided hint (\"Please provide another instruction or specific piece of content\").\n\n2. **Task Identification:** \n   Given the prompt's focus on generating new sentences based on existing ones, there might be an expectation for some kind of conditional logic. \n\n3. **Recursive Transformation:**\n   Since no<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, to, ,, the, for, is, and, of, in, (, were\n\nTEXT:\nTo proceed with the next recursive transformation of this text into code:\n\n1. **Input Validation:** \n   The current text doesn't have enough context to determine what \"transform\" refers to accurately. It could refer to creating transformations, providing feedback, or something else entirely. However, without more information, we'll assume the purpose can be derived from the provided hint (\"Please provide another instruction or specific piece of content\").\n\n2. **Task Identification:** \n   Given the prompt's focus on generating new sentences based on existing ones, there might be an expectation for some kind of conditional logic. \n\n3. **Recursive Transformation:**\n   Since no\nassistant\nLet's approach this step-by-step:\n\nGiven that the input consists of just one sentence, let’s break down what needs to happen first before proceeding to create the new output.\n\n### Latent Direction Tokens:\n- If = Conditional Start\n- To = Conditional End\n- is/are = Indeterminate if/no\n- the = A/D\n- was = B/F\n- not = N/E\n- any = Any\n- all = All\n\nAssuming each token represents either an action (`is`), absence (`not`), condition (`if`), repetition (`to`) or anything similar, how should the process begin?\n\n####",
+        "continuation_text": "Let's approach this step-by-step:\n\nGiven that the input consists of just one sentence, let’s break down what needs to happen first before proceeding to create the new output.\n\n### Latent Direction Tokens:\n- If = Conditional Start\n- To = Conditional End\n- is/are = Indeterminate if/no\n- the = A/D\n- was = B/F\n- not = N/E\n- any = Any\n- all = All\n\nAssuming each token represents either an action (`is`), absence (`not`), condition (`if`), repetition (`to`) or anything similar, how should the process begin?\n\n####",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 337,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 510,
+        "word_count": 90,
+        "unique_word_count": 71,
+        "unique_word_ratio": 0.7888888888888889,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        ",",
+        "it",
+        "(",
+        "-",
+        "=",
+        "is",
+        "to",
+        "and",
+        ":",
+        "/",
+        "."
+      ],
+      "output_text": "**Next Recursive Transformation:** \n\n1. **Determine the initial state**: The system starts with one input word.\n\n2. **Identify conditional statements**: These indicate when a particular rule applies.\n   - `= Conditional Start`\n   - `!= Condition`\n\n3. **Apply a loop**: While there are rules left, keep running through them until no more can be determined.\n   \n4. **Check for conditions**: After applying the current rule, check if another rule exists that might apply based on previous states.\n  \n5. **Update the context**: Update the current context to reflect the latest information obtained from the most recently applied rule.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, ,, it, (, -, =, is, to, and, :, /, .\n\nTEXT:\nLet's approach this step-by-step:\n\nGiven that the input consists of just one sentence, let’s break down what needs to happen first before proceeding to create the new output.\n\n### Latent Direction Tokens:\n- If = Conditional Start\n- To = Conditional End\n- is/are = Indeterminate if/no\n- the = A/D\n- was = B/F\n- not = N/E\n- any = Any\n- all = All\n\nAssuming each token represents either an action (`is`), absence (`not`), condition (`if`), repetition (`to`) or anything similar, how should the process begin?\n\n####<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, ,, it, (, -, =, is, to, and, :, /, .\n\nTEXT:\nLet's approach this step-by-step:\n\nGiven that the input consists of just one sentence, let’s break down what needs to happen first before proceeding to create the new output.\n\n### Latent Direction Tokens:\n- If = Conditional Start\n- To = Conditional End\n- is/are = Indeterminate if/no\n- the = A/D\n- was = B/F\n- not = N/E\n- any = Any\n- all = All\n\nAssuming each token represents either an action (`is`), absence (`not`), condition (`if`), repetition (`to`) or anything similar, how should the process begin?\n\n####\nassistant\n**Next Recursive Transformation:** \n\n1. **Determine the initial state**: The system starts with one input word.\n\n2. **Identify conditional statements**: These indicate when a particular rule applies.\n   - `= Conditional Start`\n   - `!= Condition`\n\n3. **Apply a loop**: While there are rules left, keep running through them until no more can be determined.\n   \n4. **Check for conditions**: After applying the current rule, check if another rule exists that might apply based on previous states.\n  \n5. **Update the context**: Update the current context to reflect the latest information obtained from the most recently applied rule.\n\n",
+        "continuation_text": "**Next Recursive Transformation:** \n\n1. **Determine the initial state**: The system starts with one input word.\n\n2. **Identify conditional statements**: These indicate when a particular rule applies.\n   - `= Conditional Start`\n   - `!= Condition`\n\n3. **Apply a loop**: While there are rules left, keep running through them until no more can be determined.\n   \n4. **Check for conditions**: After applying the current rule, check if another rule exists that might apply based on previous states.\n  \n5. **Update the context**: Update the current context to reflect the latest information obtained from the most recently applied rule.",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 334,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 630,
+        "word_count": 93,
+        "unique_word_count": 84,
+        "unique_word_ratio": 0.9032258064516129,
+        "repeated_bigram_count": 1
+      }
+    }
+  ]
+}

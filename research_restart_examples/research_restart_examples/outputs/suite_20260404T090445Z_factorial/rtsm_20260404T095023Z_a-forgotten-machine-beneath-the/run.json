@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1060
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 324,
+        "word_count": 56,
+        "unique_word_count": 55,
+        "unique_word_ratio": 0.9821428571428571,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 712,
+        "word_count": 122,
+        "unique_word_count": 119,
+        "unique_word_ratio": 0.9754098360655737,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 824,
+        "word_count": 143,
+        "unique_word_count": 140,
+        "unique_word_ratio": 0.9790209790209791,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 941,
+        "word_count": 165,
+        "unique_word_count": 162,
+        "unique_word_ratio": 0.9818181818181818,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2036,
+        "word_count": 352,
+        "unique_word_count": 181,
+        "unique_word_ratio": 0.5142045454545454,
+        "repeated_bigram_count": 164
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+      "delta_text": "The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again…",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again…",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again…",
+        "continuation_text": "The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again…",
+        "input_token_count": 65,
+        "raw_input_token_count": 65,
+        "output_token_count": 99,
+        "new_token_count": 34,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 324,
+        "word_count": 56,
+        "unique_word_count": 55,
+        "unique_word_ratio": 0.9821428571428571,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again…",
+      "delta_text": "but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help...",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again…",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help...",
+        "continuation_text": "but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help...",
+        "input_token_count": 98,
+        "raw_input_token_count": 98,
+        "output_token_count": 176,
+        "new_token_count": 78,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 712,
+        "word_count": 122,
+        "unique_word_count": 119,
+        "unique_word_ratio": 0.9754098360655737,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help...",
+      "delta_text": "if what happens next might be different!!! Then let me know how much I like about using these three languages !",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help... if what happens next might be different!!! Then let me know how much I like about using these three languages !",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help... if what happens next might be different!!! Then let me know how much I like about using these three languages !",
+        "continuation_text": "if what happens next might be different!!! Then let me know how much I like about using these three languages !",
+        "input_token_count": 175,
+        "raw_input_token_count": 175,
+        "output_token_count": 198,
+        "new_token_count": 23,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 824,
+        "word_count": 143,
+        "unique_word_count": 140,
+        "unique_word_ratio": 0.9790209790209791,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help... if what happens next might be different!!! Then let me know how much I like about using these three languages !",
+      "delta_text": "It may seem simple enough; maybe \"I can see\" without knowing which side will take hold first? But please feel free 🙂",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help... if what happens next might be different!!! Then let me know how much I like about using these three languages ! It may seem simple enough; maybe \"I can see\" without knowing which side will take hold first? But please feel free 🙂",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help... if what happens next might be different!!! Then let me know how much I like about using these three languages !",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help... if what happens next might be different!!! Then let me know how much I like about using these three languages ! It may seem simple enough; maybe \"I can see\" without knowing which side will take hold first? But please feel free 🙂",
+        "continuation_text": "It may seem simple enough; maybe \"I can see\" without knowing which side will take hold first? But please feel free 🙂",
+        "input_token_count": 197,
+        "raw_input_token_count": 197,
+        "output_token_count": 224,
+        "new_token_count": 27,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 941,
+        "word_count": 165,
+        "unique_word_count": 162,
+        "unique_word_ratio": 0.9818181818181818,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help... if what happens next might be different!!! Then let me know how much I like about using these three languages ! It may seem simple enough; maybe \"I can see\" without knowing which side will take hold first? But please feel free 🙂",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help... if what happens next might be different!!! Then let me know how much I like about using these three languages ! It may seem simple enough; maybe \"I can see\" without knowing which side will take hold first? But please feel free 🙂",
+      "output_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help... if what happens next might be different!!! Then let me know how much I like about using these three languages ! It may seem simple enough; maybe \"I can see\" without knowing which side will take hold first? But please feel free 🙂 You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help... if what happens next might be different!!! Then let me know how much I like about using these three languages ! It may seem simple enough; maybe \"I can see\" without knowing which side will take hold first? But please feel free 🙂",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help... if what happens next might be different!!! Then let me know how much I like about using these three languages ! It may seem simple enough; maybe \"I can see\" without knowing which side will take hold first? But please feel free 🙂",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The world would soon fall into place — no fewer than ten seconds below their own location once they did so or twice before it had been repeated to each other again… but this time only five thousand words of information remain within sight as word fragments—and even 10% is still invisible when translated from our computers – until we discover that there truly are tens at least six billion copies stored with hundreds of millions of pages remaining on them…. There’s one way out now (because another) … except for just twenty! So you need some help... if what happens next might be different!!! Then let me know how much I like about using these three languages ! It may seem simple enough; maybe \"I can see\" without knowing which side will take hold first? But please feel free 🙂",
+        "continuation_text": "",
+        "input_token_count": 223,
+        "raw_input_token_count": 223,
+        "output_token_count": 224,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2036,
+        "word_count": 352,
+        "unique_word_count": 181,
+        "unique_word_ratio": 0.5142045454545454,
+        "repeated_bigram_count": 164
+      }
+    }
+  ]
+}

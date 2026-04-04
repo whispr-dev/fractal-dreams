@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1301,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 277,
+        "word_count": 51,
+        "unique_word_count": 51,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 109,
+        "word_count": 21,
+        "unique_word_count": 21,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 643,
+        "word_count": 113,
+        "unique_word_count": 110,
+        "unique_word_ratio": 0.9734513274336283,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "mentor",
+        "Coach",
+        "Aunt",
+        "forge",
+        "mentors",
+        "Strongh",
+        "Colossus",
+        "pioneered",
+        "Wyatt",
+        "alliances",
+        "friendships",
+        "organise"
+      ],
+      "output_text": "In this world, we must teach it how you can take care now! And at some point...you may be able to build your own unique code by learning about our models yourself (and possibly using something else!) with new tools or methods for building these languages - including Python 3 .",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mentor, Coach, Aunt, forge, mentors, Strongh, Colossus, pioneered, Wyatt, alliances, friendships, organise\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mentor, Coach, Aunt, forge, mentors, Strongh, Colossus, pioneered, Wyatt, alliances, friendships, organise\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. In this world, we must teach it how you can take care now! And at some point...you may be able to build your own unique code by learning about our models yourself (and possibly using something else!) with new tools or methods for building these languages - including Python 3 .",
+        "continuation_text": "In this world, we must teach it how you can take care now! And at some point...you may be able to build your own unique code by learning about our models yourself (and possibly using something else!) with new tools or methods for building these languages - including Python 3 .",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 166,
+        "new_token_count": 58,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 277,
+        "word_count": 51,
+        "unique_word_count": 51,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Recently",
+        "Aside",
+        "Fortunately",
+        "Advertisements",
+        "Luckily",
+        "Unfortunately",
+        "Thankfully",
+        "Along",
+        "Earlier",
+        "Conclusion",
+        "Yesterday",
+        "Anyone"
+      ],
+      "output_text": "It's possible to have just one example from another and then make use of them all over again if necessary :).",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Recently, Aside, Fortunately, Advertisements, Luckily, Unfortunately, Thankfully, Along, Earlier, Conclusion, Yesterday, Anyone\n\nTEXT:\nIn this world, we must teach it how you can take care now! And at some point...you may be able to build your own unique code by learning about our models yourself (and possibly using something else!) with new tools or methods for building these languages - including Python 3 .",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Recently, Aside, Fortunately, Advertisements, Luckily, Unfortunately, Thankfully, Along, Earlier, Conclusion, Yesterday, Anyone\n\nTEXT:\nIn this world, we must teach it how you can take care now! And at some point...you may be able to build your own unique code by learning about our models yourself (and possibly using something else!) with new tools or methods for building these languages - including Python 3 . It's possible to have just one example from another and then make use of them all over again if necessary :).",
+        "continuation_text": "It's possible to have just one example from another and then make use of them all over again if necessary :).",
+        "input_token_count": 143,
+        "raw_input_token_count": 143,
+        "output_token_count": 167,
+        "new_token_count": 24,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 109,
+        "word_count": 21,
+        "unique_word_count": 21,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        ",—",
+        ".?",
+        ".—",
+        ".''",
+        ".\"",
+        ".--",
+        ".''.",
+        "It",
+        "Certainly",
+        "sneakers",
+        "Anything",
+        "That"
+      ],
+      "output_text": "The best way is by adding 'p'. If you can get more than two words (or at least five letters), don't give up on writing any longer without repeating each iteration before they start reading or finishing an initial sentence; this will reduce your time spent going through every word but still leave some space for future work while doing it correctly when needed ! One reason I recommend trying these instead is that most people would be unaware of their new behavior except because there may be consequences out there too! You might want to try putting different rules into place so everyone knows what changes do happen later which means using",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ,—, .?, .—, .'', .\", .--, .''., It, Certainly, sneakers, Anything, That\n\nTEXT:\nIt's possible to have just one example from another and then make use of them all over again if necessary :).",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ,—, .?, .—, .'', .\", .--, .''., It, Certainly, sneakers, Anything, That\n\nTEXT:\nIt's possible to have just one example from another and then make use of them all over again if necessary :). The best way is by adding 'p'. If you can get more than two words (or at least five letters), don't give up on writing any longer without repeating each iteration before they start reading or finishing an initial sentence; this will reduce your time spent going through every word but still leave some space for future work while doing it correctly when needed ! One reason I recommend trying these instead is that most people would be unaware of their new behavior except because there may be consequences out there too! You might want to try putting different rules into place so everyone knows what changes do happen later which means using",
+        "continuation_text": "The best way is by adding 'p'. If you can get more than two words (or at least five letters), don't give up on writing any longer without repeating each iteration before they start reading or finishing an initial sentence; this will reduce your time spent going through every word but still leave some space for future work while doing it correctly when needed ! One reason I recommend trying these instead is that most people would be unaware of their new behavior except because there may be consequences out there too! You might want to try putting different rules into place so everyone knows what changes do happen later which means using",
+        "input_token_count": 113,
+        "raw_input_token_count": 113,
+        "output_token_count": 233,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 643,
+        "word_count": 113,
+        "unique_word_count": 110,
+        "unique_word_ratio": 0.9734513274336283,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

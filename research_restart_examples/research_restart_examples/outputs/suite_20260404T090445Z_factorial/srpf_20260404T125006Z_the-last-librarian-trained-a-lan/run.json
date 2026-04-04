@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1303,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 874,
+        "word_count": 148,
+        "unique_word_count": 132,
+        "unique_word_ratio": 0.8918918918918919,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1146,
+        "word_count": 191,
+        "unique_word_count": 138,
+        "unique_word_ratio": 0.7225130890052356,
+        "repeated_bigram_count": 35
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 428,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 483,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "The next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)",
+      "source_window_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+      "reflection_window_text": "The next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)",
+        "continuation_text": "The next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)",
+        "input_token_count": 92,
+        "raw_input_token_count": 92,
+        "output_token_count": 201,
+        "new_token_count": 109,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)",
+        "continuation_text": "",
+        "input_token_count": 188,
+        "raw_input_token_count": 188,
+        "output_token_count": 189,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 874,
+        "word_count": 148,
+        "unique_word_count": 132,
+        "unique_word_ratio": 0.8918918918918919,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "Here are our favorites among them .",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)\n\nREFLECTION:\nHere are our favorites among them .",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)",
+      "reflection_window_text": "Here are our favorites among them .",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)\n\nHere are our favorites among them .",
+        "continuation_text": "Here are our favorites among them .",
+        "input_token_count": 257,
+        "raw_input_token_count": 257,
+        "output_token_count": 266,
+        "new_token_count": 9,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)\n\nREFLECTION:\nHere are our favorites among them .",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)\n\nREFLECTION:\nHere are our favorites among them .",
+        "continuation_text": "",
+        "input_token_count": 252,
+        "raw_input_token_count": 252,
+        "output_token_count": 253,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1146,
+        "word_count": 191,
+        "unique_word_count": 138,
+        "unique_word_ratio": 0.7225130890052356,
+        "repeated_bigram_count": 35
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "Here are my favourites :\nBRIEF DESCRIPTION:\nIn one iteration, we introduced three types C++ code extensions with different levels available via BBI calls called cppibi (\"C++\"), bicop(c) and rpffbq (\"RPFFBQ\"). It adds support for both methods across several versions of Python/Python based on their shared library libs6fh5a8e9fd0db3dae7ac293438bb0322ef1367ec8096cf79143946af59666048953349176418252311240140479835552627505732159700089120870887593dc3021de8620776574279",
+      "output_text": "4569190585997216062463bf11104437582878368701842562556061963072653886873289408535077091003095230560894000064426425826842160311238083861957052672541691987600565059996003004245249072113157807308431083041272885410620962107200921931052031152070162015032080192042272482741290911251995871870156090217540904278379269578688902291881187150836947641306303104605205708995299259758449831891595150615534948729864728524614735938410950062581145",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)\n\nREFLECTION:\nHere are our favorites among them .",
+      "reflection_window_text": "Here are my favourites :\nBRIEF DESCRIPTION:\nIn one iteration, we introduced three types C++ code extensions with different levels available via BBI calls called cppibi (\"C++\"), bicop(c) and rpffbq (\"RPFFBQ\"). It adds support for both methods across several versions of Python/Python based on their shared library libs6fh5a8e9fd0db3dae7ac293438bb0322ef1367ec8096cf79143946af59666048953349176418252311240140479835552627505732159700089120870887593dc3021de8620776574279",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)\n\nREFLECTION:\nHere are our favorites among them .",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)\n\nREFLECTION:\nHere are our favorites among them . Here are my favourites :\nBRIEF DESCRIPTION:\nIn one iteration, we introduced three types C++ code extensions with different levels available via BBI calls called cppibi (\"C++\"), bicop(c) and rpffbq (\"RPFFBQ\"). It adds support for both methods across several versions of Python/Python based on their shared library libs6fh5a8e9fd0db3dae7ac293438bb0322ef1367ec8096cf79143946af59666048953349176418252311240140479835552627505732159700089120870887593dc3021de8620776574279",
+        "continuation_text": "Here are my favourites :\nBRIEF DESCRIPTION:\nIn one iteration, we introduced three types C++ code extensions with different levels available via BBI calls called cppibi (\"C++\"), bicop(c) and rpffbq (\"RPFFBQ\"). It adds support for both methods across several versions of Python/Python based on their shared library libs6fh5a8e9fd0db3dae7ac293438bb0322ef1367ec8096cf79143946af59666048953349176418252311240140479835552627505732159700089120870887593dc3021de8620776574279",
+        "input_token_count": 321,
+        "raw_input_token_count": 321,
+        "output_token_count": 481,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)\n\nREFLECTION:\nHere are our favorites among them .\n\nREFLECTION:\nHere are my favourites :\nBRIEF DESCRIPTION:\nIn one iteration, we introduced three types C++ code extensions with different levels available via BBI calls called cppibi (\"C++\"), bicop(c) and rpffbq (\"RPFFBQ\"). It adds support for both methods across several versions of Python/Python based on their shared library libs6fh5a8e9fd0db3dae7ac293438bb0322ef1367ec8096cf79143946af59666048953349176418252311240140479835552627505732159700089120870887593dc3021de8620776574279",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe next author developed an elaborate syntax for using this new set of models (it was suggested by Andrew Bayes). I've been able to build over 200 other languages like Java, Scala etc., which have shown good use. There is also some sort \"caveat\" used as well – there exists no way you can get too many books out of it from scratch! That said however, if your current collection isn't built into something much better than today, then please take note of all these examples before heading down the path here :)\n\nREFLECTION:\nHere are our favorites among them .\n\nREFLECTION:\nHere are my favourites :\nBRIEF DESCRIPTION:\nIn one iteration, we introduced three types C++ code extensions with different levels available via BBI calls called cppibi (\"C++\"), bicop(c) and rpffbq (\"RPFFBQ\"). It adds support for both methods across several versions of Python/Python based on their shared library libs6fh5a8e9fd0db3dae7ac293438bb0322ef1367ec8096cf79143946af59666048953349176418252311240140479835552627505732159700089120870887593dc3021de86207765742794569190585997216062463bf11104437582878368701842562556061963072653886873289408535077091003095230560894000064426425826842160311238083861957052672541691987600565059996003004245249072113157807308431083041272885410620962107200921931052031152070162015032080192042272482741290911251995871870156090217540904278379269578688902291881187150836947641306303104605205708995299259758449831891595150615534948729864728524614735938410950062581145",
+        "continuation_text": "4569190585997216062463bf11104437582878368701842562556061963072653886873289408535077091003095230560894000064426425826842160311238083861957052672541691987600565059996003004245249072113157807308431083041272885410620962107200921931052031152070162015032080192042272482741290911251995871870156090217540904278379269578688902291881187150836947641306303104605205708995299259758449831891595150615534948729864728524614735938410950062581145",
+        "input_token_count": 466,
+        "raw_input_token_count": 466,
+        "output_token_count": 626,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 428,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "2580486097383549266522175774127527621355321834663314237931306809293094629539409437709321000937858368592474110903145376128778119214630514970664667888315835775948886194178176148521775096772972385116523944944864838527908008476197479589168209206998576257173152166228338404197970184974051796003605286649017139678798266235156755374608579586275244389558658489365355263154144116180290277294186184167456276153143284698598135346124454",
+      "output_text": "398696124596861597576717966974234138478397336707997164689237170495695407509500527329613439566517768533713610364611733969716523820850670465959524380536740619758616025780617213799623319999993941146686663961903486791853770106574964553584472261978211504335994287132126199840146776746534724035480465616310219687654154841741621221200511974224911985344875212360821988429450380370600512458356102711090180040030121410179978760420219593121113021980850699594241198225098513323619706119763450498",
+      "source_window_text": "4569190585997216062463bf11104437582878368701842562556061963072653886873289408535077091003095230560894000064426425826842160311238083861957052672541691987600565059996003004245249072113157807308431083041272885410620962107200921931052031152070162015032080192042272482741290911251995871870156090217540904278379269578688902291881187150836947641306303104605205708995299259758449831891595150615534948729864728524614735938410950062581145",
+      "reflection_window_text": "2580486097383549266522175774127527621355321834663314237931306809293094629539409437709321000937858368592474110903145376128778119214630514970664667888315835775948886194178176148521775096772972385116523944944864838527908008476197479589168209206998576257173152166228338404197970184974051796003605286649017139678798266235156755374608579586275244389558658489365355263154144116180290277294186184167456276153143284698598135346124454",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n4569190585997216062463bf11104437582878368701842562556061963072653886873289408535077091003095230560894000064426425826842160311238083861957052672541691987600565059996003004245249072113157807308431083041272885410620962107200921931052031152070162015032080192042272482741290911251995871870156090217540904278379269578688902291881187150836947641306303104605205708995299259758449831891595150615534948729864728524614735938410950062581145",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\n4569190585997216062463bf111044375828783687018425625560619630726538868732894085350770910030952305608940000644264258268421603112380838619570526725416919876005650599960030042452490721131578073084310830412728854106209621072009219310520311520701620150320801920422724827412909112519958718701560902175409042783792695786889022918811871508369476413063031046052057089952992597584498318915951506155349487298647285246147359384109500625811452580486097383549266522175774127527621355321834663314237931306809293094629539409437709321000937858368592474110903145376128778119214630514970664667888315835775948886194178176148521775096772972385116523944944864838527908008476197479589168209206998576257173152166228338404197970184974051796003605286649017139678798266235156755374608579586275244389558658489365355263154144116180290277294186184167456276153143284698598135346124454",
+        "continuation_text": "2580486097383549266522175774127527621355321834663314237931306809293094629539409437709321000937858368592474110903145376128778119214630514970664667888315835775948886194178176148521775096772972385116523944944864838527908008476197479589168209206998576257173152166228338404197970184974051796003605286649017139678798266235156755374608579586275244389558658489365355263154144116180290277294186184167456276153143284698598135346124454",
+        "input_token_count": 237,
+        "raw_input_token_count": 237,
+        "output_token_count": 397,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n4569190585997216062463bf11104437582878368701842562556061963072653886873289408535077091003095230560894000064426425826842160311238083861957052672541691987600565059996003004245249072113157807308431083041272885410620962107200921931052031152070162015032080192042272482741290911251995871870156090217540904278379269578688902291881187150836947641306303104605205708995299259758449831891595150615534948729864728524614735938410950062581145\n\nREFLECTION:\n2580486097383549266522175774127527621355321834663314237931306809293094629539409437709321000937858368592474110903145376128778119214630514970664667888315835775948886194178176148521775096772972385116523944944864838527908008476197479589168209206998576257173152166228338404197970184974051796003605286649017139678798266235156755374608579586275244389558658489365355263154144116180290277294186184167456276153143284698598135346124454",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\n4569190585997216062463bf11104437582878368701842562556061963072653886873289408535077091003095230560894000064426425826842160311238083861957052672541691987600565059996003004245249072113157807308431083041272885410620962107200921931052031152070162015032080192042272482741290911251995871870156090217540904278379269578688902291881187150836947641306303104605205708995299259758449831891595150615534948729864728524614735938410950062581145\n\nREFLECTION:\n2580486097383549266522175774127527621355321834663314237931306809293094629539409437709321000937858368592474110903145376128778119214630514970664667888315835775948886194178176148521775096772972385116523944944864838527908008476197479589168209206998576257173152166228338404197970184974051796003605286649017139678798266235156755374608579586275244389558658489365355263154144116180290277294186184167456276153143284698598135346124454398696124596861597576717966974234138478397336707997164689237170495695407509500527329613439566517768533713610364611733969716523820850670465959524380536740619758616025780617213799623319999993941146686663961903486791853770106574964553584472261978211504335994287132126199840146776746534724035480465616310219687654154841741621221200511974224911985344875212360821988429450380370600512458356102711090180040030121410179978760420219593121113021980850699594241198225098513323619706119763450498",
+        "continuation_text": "398696124596861597576717966974234138478397336707997164689237170495695407509500527329613439566517768533713610364611733969716523820850670465959524380536740619758616025780617213799623319999993941146686663961903486791853770106574964553584472261978211504335994287132126199840146776746534724035480465616310219687654154841741621221200511974224911985344875212360821988429450380370600512458356102711090180040030121410179978760420219593121113021980850699594241198225098513323619706119763450498",
+        "input_token_count": 387,
+        "raw_input_token_count": 387,
+        "output_token_count": 547,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 483,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

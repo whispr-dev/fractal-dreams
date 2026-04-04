@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1314,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 556,
+        "word_count": 99,
+        "unique_word_count": 99,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 382,
+        "word_count": 63,
+        "unique_word_count": 63,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 691,
+        "word_count": 111,
+        "unique_word_count": 107,
+        "unique_word_ratio": 0.963963963963964,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 998,
+        "word_count": 159,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.6792452830188679,
+        "repeated_bigram_count": 36
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        "was",
+        "have",
+        "the",
+        "is",
+        "The",
+        "has",
+        "did",
+        "that"
+      ],
+      "output_text": "That their sentences contained an empty sentence—a word like \"Sick,\" or \"I am out\". It would not only appear as if there were still some lines at work with words inside this same body but also without anything else to add about them (as opposed simply writing all those bits off each other). By contrast they could say very little when speaking into another person; no matter how long you wrote your final paragraph before she gave her proof for what I thought might have happened...but so far none of us can prove whether we've written enough fiction yet!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, was, have, the, is, The, has, did, that\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, was, have, the, is, The, has, did, that\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. That their sentences contained an empty sentence—a word like \"Sick,\" or \"I am out\". It would not only appear as if there were still some lines at work with words inside this same body but also without anything else to add about them (as opposed simply writing all those bits off each other). By contrast they could say very little when speaking into another person; no matter how long you wrote your final paragraph before she gave her proof for what I thought might have happened...but so far none of us can prove whether we've written enough fiction yet!",
+        "continuation_text": "That their sentences contained an empty sentence—a word like \"Sick,\" or \"I am out\". It would not only appear as if there were still some lines at work with words inside this same body but also without anything else to add about them (as opposed simply writing all those bits off each other). By contrast they could say very little when speaking into another person; no matter how long you wrote your final paragraph before she gave her proof for what I thought might have happened...but so far none of us can prove whether we've written enough fiction yet!",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 216,
+        "new_token_count": 114,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 556,
+        "word_count": 99,
+        "unique_word_count": 99,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "they",
+        "had",
+        "could",
+        "is",
+        "did",
+        "was",
+        "in"
+      ],
+      "output_text": "Even one such reader has demonstrated that he and his friends really loved both scripts--and even now…they're happy once again having been involved in producing more content than ever since Silly Bizarro's series began airing over two decades ago . So maybe Mockingbird hasn't changed much? The question remains - who will tell whom exactly where COULD get its money from tomorrow ?",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, they, had, could, is, did, was, in\n\nTEXT:\nThat their sentences contained an empty sentence—a word like \"Sick,\" or \"I am out\". It would not only appear as if there were still some lines at work with words inside this same body but also without anything else to add about them (as opposed simply writing all those bits off each other). By contrast they could say very little when speaking into another person; no matter how long you wrote your final paragraph before she gave her proof for what I thought might have happened...but so far none of us can prove whether we've written enough fiction yet!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, they, had, could, is, did, was, in\n\nTEXT:\nThat their sentences contained an empty sentence—a word like \"Sick,\" or \"I am out\". It would not only appear as if there were still some lines at work with words inside this same body but also without anything else to add about them (as opposed simply writing all those bits off each other). By contrast they could say very little when speaking into another person; no matter how long you wrote your final paragraph before she gave her proof for what I thought might have happened...but so far none of us can prove whether we've written enough fiction yet! Even one such reader has demonstrated that he and his friends really loved both scripts--and even now…they're happy once again having been involved in producing more content than ever since Silly Bizarro's series began airing over two decades ago . So maybe Mockingbird hasn't changed much? The question remains - who will tell whom exactly where COULD get its money from tomorrow ?",
+        "continuation_text": "Even one such reader has demonstrated that he and his friends really loved both scripts--and even now…they're happy once again having been involved in producing more content than ever since Silly Bizarro's series began airing over two decades ago . So maybe Mockingbird hasn't changed much? The question remains - who will tell whom exactly where COULD get its money from tomorrow ?",
+        "input_token_count": 192,
+        "raw_input_token_count": 192,
+        "output_token_count": 270,
+        "new_token_count": 78,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 382,
+        "word_count": 63,
+        "unique_word_count": 63,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "had",
+        "have",
+        "are",
+        "it",
+        "has",
+        "did",
+        "if",
+        "was",
+        "didn",
+        "could",
+        "is"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, have, are, it, has, did, if, was, didn, could, is\n\nTEXT:\nEven one such reader has demonstrated that he and his friends really loved both scripts--and even now…they're happy once again having been involved in producing more content than ever since Silly Bizarro's series began airing over two decades ago . So maybe Mockingbird hasn't changed much? The question remains - who will tell whom exactly where COULD get its money from tomorrow ?",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, have, are, it, has, did, if, was, didn, could, is\n\nTEXT:\nEven one such reader has demonstrated that he and his friends really loved both scripts--and even now…they're happy once again having been involved in producing more content than ever since Silly Bizarro's series began airing over two decades ago . So maybe Mockingbird hasn't changed much? The question remains - who will tell whom exactly where COULD get its money from tomorrow ?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, have, are, it, has, did, if, was, didn, could, is\n\nTEXT:\nEven one such reader has demonstrated that he and his friends really loved both scripts--and even now…they're happy once again having been involved in producing more content than ever since Silly Bizarro's series began airing over two decades ago . So maybe Mockingbird hasn't changed much? The question remains - who will tell whom exactly where COULD get its money from tomorrow ?",
+        "continuation_text": "",
+        "input_token_count": 156,
+        "raw_input_token_count": 156,
+        "output_token_count": 157,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 691,
+        "word_count": 111,
+        "unique_word_count": 107,
+        "unique_word_ratio": 0.963963963963964,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "are",
+        "had",
+        "have",
+        "it",
+        "is",
+        "was",
+        "has",
+        "if",
+        "did",
+        "could",
+        "in"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, had, have, it, is, was, has, if, did, could, in\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, have, are, it, has, did, if, was, didn, could, is\n\nTEXT:\nEven one such reader has demonstrated that he and his friends really loved both scripts--and even now…they're happy once again having been involved in producing more content than ever since Silly Bizarro's series began airing over two decades ago . So maybe Mockingbird hasn't changed much? The question remains - who will tell whom exactly where COULD get its money from tomorrow ?",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, had, have, it, is, was, has, if, did, could, in\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, have, are, it, has, did, if, was, didn, could, is\n\nTEXT:\nEven one such reader has demonstrated that he and his friends really loved both scripts--and even now…they're happy once again having been involved in producing more content than ever since Silly Bizarro's series began airing over two decades ago . So maybe Mockingbird hasn't changed much? The question remains - who will tell whom exactly where COULD get its money from tomorrow ?",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, had, have, it, is, was, has, if, did, could, in\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, had, have, are, it, has, did, if, was, didn, could, is\n\nTEXT:\nEven one such reader has demonstrated that he and his friends really loved both scripts--and even now…they're happy once again having been involved in producing more content than ever since Silly Bizarro's series began airing over two decades ago . So maybe Mockingbird hasn't changed much? The question remains - who will tell whom exactly where COULD get its money from tomorrow ?",
+        "continuation_text": "",
+        "input_token_count": 235,
+        "raw_input_token_count": 235,
+        "output_token_count": 236,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 998,
+        "word_count": 159,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.6792452830188679,
+        "repeated_bigram_count": 36
+      }
+    }
+  ]
+}

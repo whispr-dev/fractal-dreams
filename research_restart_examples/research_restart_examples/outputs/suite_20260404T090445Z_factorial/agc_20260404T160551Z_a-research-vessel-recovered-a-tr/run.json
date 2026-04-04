@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1565,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 701,
+        "word_count": 109,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.9908256880733946,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 343,
+        "word_count": 51,
+        "unique_word_count": 51,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 672,
+        "word_count": 103,
+        "unique_word_count": 98,
+        "unique_word_ratio": 0.9514563106796117,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Likewise",
+        "Similarly",
+        "Another",
+        "Also",
+        "especially",
+        "Pin",
+        "Aside",
+        "adapters",
+        "carved",
+        "Additionally",
+        "traditionally",
+        "comfortable"
+      ],
+      "output_text": "A study by two scientists at Harvard University suggested that even though there was no way any communication between people (or anyone) is possible without some degree or other assistance over time, an attempt had been made on one another with multiple subjects—a subject known as \"the problem\". This meant using three different methods for communicating; each method would require all participants to be connected through various means before finding it again. However these approaches did fail when they failed because their results were too big to handle easily so many tasks simultaneously. Because we could never solve this task correctly enough, our failure rate remained constant until several",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Likewise, Similarly, Another, Also, especially, Pin, Aside, adapters, carved, Additionally, traditionally, comfortable\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Likewise, Similarly, Another, Also, especially, Pin, Aside, adapters, carved, Additionally, traditionally, comfortable\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. A study by two scientists at Harvard University suggested that even though there was no way any communication between people (or anyone) is possible without some degree or other assistance over time, an attempt had been made on one another with multiple subjects—a subject known as \"the problem\". This meant using three different methods for communicating; each method would require all participants to be connected through various means before finding it again. However these approaches did fail when they failed because their results were too big to handle easily so many tasks simultaneously. Because we could never solve this task correctly enough, our failure rate remained constant until several",
+        "continuation_text": "A study by two scientists at Harvard University suggested that even though there was no way any communication between people (or anyone) is possible without some degree or other assistance over time, an attempt had been made on one another with multiple subjects—a subject known as \"the problem\". This meant using three different methods for communicating; each method would require all participants to be connected through various means before finding it again. However these approaches did fail when they failed because their results were too big to handle easily so many tasks simultaneously. Because we could never solve this task correctly enough, our failure rate remained constant until several",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 228,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 701,
+        "word_count": 109,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.9908256880733946,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Millennials",
+        "neocons",
+        "evangelicals",
+        "Mormons",
+        "millennials",
+        "ormons",
+        "Americans",
+        "Tucson",
+        "homicides",
+        "ijuana",
+        "citizens",
+        "Christians"
+      ],
+      "output_text": "hundred individuals managed both successful and unsuccessful conversations while avoiding those obstacles after being separated from each others individually.[1] For example if you can't find anything useful I've written about how things went well together but then use them instead. If your program still doesn't work fine please let me know!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Millennials, neocons, evangelicals, Mormons, millennials, ormons, Americans, Tucson, homicides, ijuana, citizens, Christians\n\nTEXT:\nA study by two scientists at Harvard University suggested that even though there was no way any communication between people (or anyone) is possible without some degree or other assistance over time, an attempt had been made on one another with multiple subjects—a subject known as \"the problem\". This meant using three different methods for communicating; each method would require all participants to be connected through various means before finding it again. However these approaches did fail when they failed because their results were too big to handle easily so many tasks simultaneously. Because we could never solve this task correctly enough, our failure rate remained constant until several",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Millennials, neocons, evangelicals, Mormons, millennials, ormons, Americans, Tucson, homicides, ijuana, citizens, Christians\n\nTEXT:\nA study by two scientists at Harvard University suggested that even though there was no way any communication between people (or anyone) is possible without some degree or other assistance over time, an attempt had been made on one another with multiple subjects—a subject known as \"the problem\". This meant using three different methods for communicating; each method would require all participants to be connected through various means before finding it again. However these approaches did fail when they failed because their results were too big to handle easily so many tasks simultaneously. Because we could never solve this task correctly enough, our failure rate remained constant until several hundred individuals managed both successful and unsuccessful conversations while avoiding those obstacles after being separated from each others individually.[1] For example if you can't find anything useful I've written about how things went well together but then use them instead. If your program still doesn't work fine please let me know!",
+        "continuation_text": "hundred individuals managed both successful and unsuccessful conversations while avoiding those obstacles after being separated from each others individually.[1] For example if you can't find anything useful I've written about how things went well together but then use them instead. If your program still doesn't work fine please let me know!",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 269,
+        "new_token_count": 61,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 343,
+        "word_count": 51,
+        "unique_word_count": 51,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "h",
+        "ht",
+        "abide",
+        "todd",
+        "pecting",
+        "hl",
+        "partake",
+        "hm",
+        "ophys",
+        "Joh",
+        "righteous",
+        "pots"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: h, ht, abide, todd, pecting, hl, partake, hm, ophys, Joh, righteous, pots\n\nTEXT:\nhundred individuals managed both successful and unsuccessful conversations while avoiding those obstacles after being separated from each others individually.[1] For example if you can't find anything useful I've written about how things went well together but then use them instead. If your program still doesn't work fine please let me know!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: h, ht, abide, todd, pecting, hl, partake, hm, ophys, Joh, righteous, pots\n\nTEXT:\nhundred individuals managed both successful and unsuccessful conversations while avoiding those obstacles after being separated from each others individually.[1] For example if you can't find anything useful I've written about how things went well together but then use them instead. If your program still doesn't work fine please let me know!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: h, ht, abide, todd, pecting, hl, partake, hm, ophys, Joh, righteous, pots\n\nTEXT:\nhundred individuals managed both successful and unsuccessful conversations while avoiding those obstacles after being separated from each others individually.[1] For example if you can't find anything useful I've written about how things went well together but then use them instead. If your program still doesn't work fine please let me know!",
+        "continuation_text": "",
+        "input_token_count": 151,
+        "raw_input_token_count": 151,
+        "output_token_count": 152,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 672,
+        "word_count": 103,
+        "unique_word_count": 98,
+        "unique_word_ratio": 0.9514563106796117,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

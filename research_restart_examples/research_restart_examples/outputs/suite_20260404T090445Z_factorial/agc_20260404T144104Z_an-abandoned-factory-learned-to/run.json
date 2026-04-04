@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1461,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 328,
+        "word_count": 59,
+        "unique_word_count": 59,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 643,
+        "word_count": 111,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.954954954954955,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 164,
+        "word_count": 32,
+        "unique_word_count": 32,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "did",
+        "ikhail",
+        "Rachel",
+        "double",
+        "do",
+        "David",
+        "THESE",
+        "does",
+        "colm",
+        "struggled",
+        "eredith",
+        "Conversely"
+      ],
+      "output_text": "The same goes for an unfinished process that had no idea how or why anyone was doing what they were trying (and failing). And when you're done with such failure… well, then let's hope we don't have anything else left over after all this time spent on \"working\". Let us make another attempt at writing something better than ours!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: did, ikhail, Rachel, double, do, David, THESE, does, colm, struggled, eredith, Conversely\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: did, ikhail, Rachel, double, do, David, THESE, does, colm, struggled, eredith, Conversely\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The same goes for an unfinished process that had no idea how or why anyone was doing what they were trying (and failing). And when you're done with such failure… well, then let's hope we don't have anything else left over after all this time spent on \"working\". Let us make another attempt at writing something better than ours!",
+        "continuation_text": "The same goes for an unfinished process that had no idea how or why anyone was doing what they were trying (and failing). And when you're done with such failure… well, then let's hope we don't have anything else left over after all this time spent on \"working\". Let us make another attempt at writing something better than ours!",
+        "input_token_count": 115,
+        "raw_input_token_count": 115,
+        "output_token_count": 185,
+        "new_token_count": 70,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 328,
+        "word_count": 59,
+        "unique_word_count": 59,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "!",
+        "!,",
+        "!.",
+        ".",
+        "!\"",
+        "!!!!",
+        "laugh",
+        "laughed",
+        "hhh",
+        "luaj",
+        "Come",
+        "Mt"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: !, !,, !., ., !\", !!!!, laugh, laughed, hhh, luaj, Come, Mt\n\nTEXT:\nThe same goes for an unfinished process that had no idea how or why anyone was doing what they were trying (and failing). And when you're done with such failure… well, then let's hope we don't have anything else left over after all this time spent on \"working\". Let us make another attempt at writing something better than ours!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: !, !,, !., ., !\", !!!!, laugh, laughed, hhh, luaj, Come, Mt\n\nTEXT:\nThe same goes for an unfinished process that had no idea how or why anyone was doing what they were trying (and failing). And when you're done with such failure… well, then let's hope we don't have anything else left over after all this time spent on \"working\". Let us make another attempt at writing something better than ours!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: !, !,, !., ., !\", !!!!, laugh, laughed, hhh, luaj, Come, Mt\n\nTEXT:\nThe same goes for an unfinished process that had no idea how or why anyone was doing what they were trying (and failing). And when you're done with such failure… well, then let's hope we don't have anything else left over after all this time spent on \"working\". Let us make another attempt at writing something better than ours!",
+        "continuation_text": "",
+        "input_token_count": 158,
+        "raw_input_token_count": 158,
+        "output_token_count": 159,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 643,
+        "word_count": 111,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.954954954954955,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Kyl",
+        "Yeah",
+        "month",
+        "Everyone",
+        "King",
+        "hordes",
+        "Juan",
+        "Machine",
+        "People",
+        "week",
+        "outpatient",
+        "started"
+      ],
+      "output_text": "You might also like... It is just me and my brain working together again; it doesn' t matter much if I keep making mistakes from now until tomorrow so here ya go!!!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Kyl, Yeah, month, Everyone, King, hordes, Juan, Machine, People, week, outpatient, started\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: !, !,, !., ., !\", !!!!, laugh, laughed, hhh, luaj, Come, Mt\n\nTEXT:\nThe same goes for an unfinished process that had no idea how or why anyone was doing what they were trying (and failing). And when you're done with such failure… well, then let's hope we don't have anything else left over after all this time spent on \"working\". Let us make another attempt at writing something better than ours!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Kyl, Yeah, month, Everyone, King, hordes, Juan, Machine, People, week, outpatient, started\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: !, !,, !., ., !\", !!!!, laugh, laughed, hhh, luaj, Come, Mt\n\nTEXT:\nThe same goes for an unfinished process that had no idea how or why anyone was doing what they were trying (and failing). And when you're done with such failure… well, then let's hope we don't have anything else left over after all this time spent on \"working\". Let us make another attempt at writing something better than ours! You might also like... It is just me and my brain working together again; it doesn' t matter much if I keep making mistakes from now until tomorrow so here ya go!!!",
+        "continuation_text": "You might also like... It is just me and my brain working together again; it doesn' t matter much if I keep making mistakes from now until tomorrow so here ya go!!!",
+        "input_token_count": 243,
+        "raw_input_token_count": 243,
+        "output_token_count": 280,
+        "new_token_count": 37,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 164,
+        "word_count": 32,
+        "unique_word_count": 32,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

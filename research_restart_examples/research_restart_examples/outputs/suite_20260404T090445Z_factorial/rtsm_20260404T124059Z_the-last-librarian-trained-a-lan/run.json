@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1288
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 487,
+        "word_count": 79,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.9746835443037974,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1128,
+        "word_count": 180,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.5277777777777778,
+        "repeated_bigram_count": 79
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1155,
+        "word_count": 185,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.5351351351351351,
+        "repeated_bigram_count": 80
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2464,
+        "word_count": 392,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.25255102040816324,
+        "repeated_bigram_count": 286
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2576,
+        "word_count": 412,
+        "unique_word_count": 118,
+        "unique_word_ratio": 0.28640776699029125,
+        "repeated_bigram_count": 287
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+      "delta_text": "If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!).",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!).",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!).",
+        "continuation_text": "If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!).",
+        "input_token_count": 57,
+        "raw_input_token_count": 57,
+        "output_token_count": 125,
+        "new_token_count": 68,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 487,
+        "word_count": 79,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.9746835443037974,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!).",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!).",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!).",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!).",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!).",
+        "continuation_text": "",
+        "input_token_count": 124,
+        "raw_input_token_count": 124,
+        "output_token_count": 125,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1128,
+        "word_count": 180,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.5277777777777778,
+        "repeated_bigram_count": 79
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!).",
+      "delta_text": "You should also try again!",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!).",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again!",
+        "continuation_text": "You should also try again!",
+        "input_token_count": 248,
+        "raw_input_token_count": 248,
+        "output_token_count": 255,
+        "new_token_count": 7,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1155,
+        "word_count": 185,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.5351351351351351,
+        "repeated_bigram_count": 80
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again!",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again!",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again!",
+        "continuation_text": "",
+        "input_token_count": 254,
+        "raw_input_token_count": 254,
+        "output_token_count": 255,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2464,
+        "word_count": 392,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.25255102040816324,
+        "repeated_bigram_count": 286
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again!",
+      "delta_text": "You will probably start reading more later here if our previous paper was still good enough so don't miss out!!",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again! You will probably start reading more later here if our previous paper was still good enough so don't miss out!!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. If we do, then it is quite possible they could have been used to write poems for those who wanted an alternative or perhaps even something entirely different than actual writing…or as someone whose idea of how people perceive things has shifted from one perspective to another….and therefore you may well be learning this novel today (maybe early next year!). You should also try again! You will probably start reading more later here if our previous paper was still good enough so don't miss out!!",
+        "continuation_text": "You will probably start reading more later here if our previous paper was still good enough so don't miss out!!",
+        "input_token_count": 508,
+        "raw_input_token_count": 508,
+        "output_token_count": 531,
+        "new_token_count": 23,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2576,
+        "word_count": 412,
+        "unique_word_count": 118,
+        "unique_word_ratio": 0.28640776699029125,
+        "repeated_bigram_count": 287
+      }
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1562,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 683,
+        "word_count": 97,
+        "unique_word_count": 89,
+        "unique_word_ratio": 0.9175257731958762,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 625,
+        "word_count": 85,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.8941176470588236,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 650,
+        "word_count": 87,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.8620689655172413,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 635,
+        "word_count": 89,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.8651685393258427,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "were",
+        "from",
+        "and",
+        "the",
+        "was",
+        "to",
+        "a",
+        "A",
+        "for"
+      ],
+      "output_text": "The next recursive transformation would involve analyzing the structure of the given text using natural language processing techniques. Here’s how I might approach this:\n\n1. **Identify Sub-Parts**: Break down the main components or phrases within the text.\n2. **Apply Latent Direction Tokens**: Translate each part according to its meaning and context based on the provided directions (it, If, It, Were, From, And So On).\n3. **Combine Recursively**: Continue combining transformations until all parts fit together without conflicting meanings.\n\nHere's an example transformation that combines multiple key elements related to technology:\n\n**Original Text:** \"It is understood that the",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nThe next recursive transformation would involve analyzing the structure of the given text using natural language processing techniques. Here’s how I might approach this:\n\n1. **Identify Sub-Parts**: Break down the main components or phrases within the text.\n2. **Apply Latent Direction Tokens**: Translate each part according to its meaning and context based on the provided directions (it, If, It, Were, From, And So On).\n3. **Combine Recursively**: Continue combining transformations until all parts fit together without conflicting meanings.\n\nHere's an example transformation that combines multiple key elements related to technology:\n\n**Original Text:** \"It is understood that the",
+        "continuation_text": "The next recursive transformation would involve analyzing the structure of the given text using natural language processing techniques. Here’s how I might approach this:\n\n1. **Identify Sub-Parts**: Break down the main components or phrases within the text.\n2. **Apply Latent Direction Tokens**: Translate each part according to its meaning and context based on the provided directions (it, If, It, Were, From, And So On).\n3. **Combine Recursively**: Continue combining transformations until all parts fit together without conflicting meanings.\n\nHere's an example transformation that combines multiple key elements related to technology:\n\n**Original Text:** \"It is understood that the",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 232,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 683,
+        "word_count": 97,
+        "unique_word_count": 89,
+        "unique_word_ratio": 0.9175257731958762,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "It",
+        "If",
+        "were",
+        "to",
+        "is",
+        "and",
+        ",",
+        "that",
+        "for"
+      ],
+      "output_text": "technology has revolutionized various aspects of modern life.\"\n\n### Next Recursive Transformation:\n\nLet's analyze the sentence structure and apply the guide tokens logically:\n\n1. **Sub-part Analysis**: Identify sub-pieces such as \"the,\" \"revolutionizes,\" and \"various.\"\n   \n   - `I` (Subject): \n     - The subject (`I`) makes sense here because it refers back to something from the initial clause about what was done (\"It\").\n\n   - `\"revolutionizes\"` (Verb):\n     - This indicates action performed on something else (\"something\"). In technical contexts like technology, it often implies changes or modifications made.\n\n   - `\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, It, If, were, to, is, and, ,, that, for\n\nTEXT:\nThe next recursive transformation would involve analyzing the structure of the given text using natural language processing techniques. Here’s how I might approach this:\n\n1. **Identify Sub-Parts**: Break down the main components or phrases within the text.\n2. **Apply Latent Direction Tokens**: Translate each part according to its meaning and context based on the provided directions (it, If, It, Were, From, And So On).\n3. **Combine Recursively**: Continue combining transformations until all parts fit together without conflicting meanings.\n\nHere's an example transformation that combines multiple key elements related to technology:\n\n**Original Text:** \"It is understood that the<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, It, If, were, to, is, and, ,, that, for\n\nTEXT:\nThe next recursive transformation would involve analyzing the structure of the given text using natural language processing techniques. Here’s how I might approach this:\n\n1. **Identify Sub-Parts**: Break down the main components or phrases within the text.\n2. **Apply Latent Direction Tokens**: Translate each part according to its meaning and context based on the provided directions (it, If, It, Were, From, And So On).\n3. **Combine Recursively**: Continue combining transformations until all parts fit together without conflicting meanings.\n\nHere's an example transformation that combines multiple key elements related to technology:\n\n**Original Text:** \"It is understood that the\nassistant\ntechnology has revolutionized various aspects of modern life.\"\n\n### Next Recursive Transformation:\n\nLet's analyze the sentence structure and apply the guide tokens logically:\n\n1. **Sub-part Analysis**: Identify sub-pieces such as \"the,\" \"revolutionizes,\" and \"various.\"\n   \n   - `I` (Subject): \n     - The subject (`I`) makes sense here because it refers back to something from the initial clause about what was done (\"It\").\n\n   - `\"revolutionizes\"` (Verb):\n     - This indicates action performed on something else (\"something\"). In technical contexts like technology, it often implies changes or modifications made.\n\n   - `\"",
+        "continuation_text": "technology has revolutionized various aspects of modern life.\"\n\n### Next Recursive Transformation:\n\nLet's analyze the sentence structure and apply the guide tokens logically:\n\n1. **Sub-part Analysis**: Identify sub-pieces such as \"the,\" \"revolutionizes,\" and \"various.\"\n   \n   - `I` (Subject): \n     - The subject (`I`) makes sense here because it refers back to something from the initial clause about what was done (\"It\").\n\n   - `\"revolutionizes\"` (Verb):\n     - This indicates action performed on something else (\"something\"). In technical contexts like technology, it often implies changes or modifications made.\n\n   - `\"",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 337,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 625,
+        "word_count": 85,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.8941176470588236,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "It",
+        "If",
+        "was",
+        "\"",
+        "are",
+        "is",
+        "the",
+        "-",
+        "intelligence"
+      ],
+      "output_text": "**Next Recursive Transformation:**\nThe next recursive transformation involves extracting meaningful components within the given text based on provided guiding tokens.\n\nHere’s how we might approach this task using the guide tokens:\n\n- **Identify Sub-sections**: We need to focus on parts that seem relevant.\n  \n  - \"**Technology:**\" refers to the topic under discussion.\n  \n  - \"**Revolutionize:**\" conveys an action involving significant change and improvement.\n  \n  - `\"Various Aspects\":` suggests different areas related to technology.\n\n  - Finally, `\"Modern Life\"` deals with the context being discussed.\n\nBased on these steps, let's construct the",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, It, If, was, \", are, is, the, -, intelligence\n\nTEXT:\ntechnology has revolutionized various aspects of modern life.\"\n\n### Next Recursive Transformation:\n\nLet's analyze the sentence structure and apply the guide tokens logically:\n\n1. **Sub-part Analysis**: Identify sub-pieces such as \"the,\" \"revolutionizes,\" and \"various.\"\n   \n   - `I` (Subject): \n     - The subject (`I`) makes sense here because it refers back to something from the initial clause about what was done (\"It\").\n\n   - `\"revolutionizes\"` (Verb):\n     - This indicates action performed on something else (\"something\"). In technical contexts like technology, it often implies changes or modifications made.\n\n   - `\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, It, If, was, \", are, is, the, -, intelligence\n\nTEXT:\ntechnology has revolutionized various aspects of modern life.\"\n\n### Next Recursive Transformation:\n\nLet's analyze the sentence structure and apply the guide tokens logically:\n\n1. **Sub-part Analysis**: Identify sub-pieces such as \"the,\" \"revolutionizes,\" and \"various.\"\n   \n   - `I` (Subject): \n     - The subject (`I`) makes sense here because it refers back to something from the initial clause about what was done (\"It\").\n\n   - `\"revolutionizes\"` (Verb):\n     - This indicates action performed on something else (\"something\"). In technical contexts like technology, it often implies changes or modifications made.\n\n   - `\"\nassistant\n**Next Recursive Transformation:**\nThe next recursive transformation involves extracting meaningful components within the given text based on provided guiding tokens.\n\nHere’s how we might approach this task using the guide tokens:\n\n- **Identify Sub-sections**: We need to focus on parts that seem relevant.\n  \n  - \"**Technology:**\" refers to the topic under discussion.\n  \n  - \"**Revolutionize:**\" conveys an action involving significant change and improvement.\n  \n  - `\"Various Aspects\":` suggests different areas related to technology.\n\n  - Finally, `\"Modern Life\"` deals with the context being discussed.\n\nBased on these steps, let's construct the",
+        "continuation_text": "**Next Recursive Transformation:**\nThe next recursive transformation involves extracting meaningful components within the given text based on provided guiding tokens.\n\nHere’s how we might approach this task using the guide tokens:\n\n- **Identify Sub-sections**: We need to focus on parts that seem relevant.\n  \n  - \"**Technology:**\" refers to the topic under discussion.\n  \n  - \"**Revolutionize:**\" conveys an action involving significant change and improvement.\n  \n  - `\"Various Aspects\":` suggests different areas related to technology.\n\n  - Finally, `\"Modern Life\"` deals with the context being discussed.\n\nBased on these steps, let's construct the",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 336,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 650,
+        "word_count": 87,
+        "unique_word_count": 75,
+        "unique_word_ratio": 0.8620689655172413,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "the",
+        "are",
+        "If",
+        "to",
+        "is",
+        "was",
+        "It",
+        "for",
+        "-"
+      ],
+      "output_text": "Sure! Here's one possible way to extract meaning from the text using the guidance tokens:\n\n1. Identify sub-sections:\n   - Technology (refers to various aspects)\n   - Revolutionize (implies major changes)\n   - Various Aspects (describes different topics)\n   - Modern Life (pertains to modern life)\n\n2. Focus on key concepts:\n   - The core ideas here revolve around technological advancements leading to revolutionization and thus influencing modern living.\n\n3. Formulate a concise statement:\n   - \"Technological revolution sparks innovation in modern lives.\"\n\nThis formulates an idea or concept extracted through the guided tokens while",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, are, If, to, is, was, It, for, -\n\nTEXT:\n**Next Recursive Transformation:**\nThe next recursive transformation involves extracting meaningful components within the given text based on provided guiding tokens.\n\nHere’s how we might approach this task using the guide tokens:\n\n- **Identify Sub-sections**: We need to focus on parts that seem relevant.\n  \n  - \"**Technology:**\" refers to the topic under discussion.\n  \n  - \"**Revolutionize:**\" conveys an action involving significant change and improvement.\n  \n  - `\"Various Aspects\":` suggests different areas related to technology.\n\n  - Finally, `\"Modern Life\"` deals with the context being discussed.\n\nBased on these steps, let's construct the<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, are, If, to, is, was, It, for, -\n\nTEXT:\n**Next Recursive Transformation:**\nThe next recursive transformation involves extracting meaningful components within the given text based on provided guiding tokens.\n\nHere’s how we might approach this task using the guide tokens:\n\n- **Identify Sub-sections**: We need to focus on parts that seem relevant.\n  \n  - \"**Technology:**\" refers to the topic under discussion.\n  \n  - \"**Revolutionize:**\" conveys an action involving significant change and improvement.\n  \n  - `\"Various Aspects\":` suggests different areas related to technology.\n\n  - Finally, `\"Modern Life\"` deals with the context being discussed.\n\nBased on these steps, let's construct the\nassistant\nSure! Here's one possible way to extract meaning from the text using the guidance tokens:\n\n1. Identify sub-sections:\n   - Technology (refers to various aspects)\n   - Revolutionize (implies major changes)\n   - Various Aspects (describes different topics)\n   - Modern Life (pertains to modern life)\n\n2. Focus on key concepts:\n   - The core ideas here revolve around technological advancements leading to revolutionization and thus influencing modern living.\n\n3. Formulate a concise statement:\n   - \"Technological revolution sparks innovation in modern lives.\"\n\nThis formulates an idea or concept extracted through the guided tokens while",
+        "continuation_text": "Sure! Here's one possible way to extract meaning from the text using the guidance tokens:\n\n1. Identify sub-sections:\n   - Technology (refers to various aspects)\n   - Revolutionize (implies major changes)\n   - Various Aspects (describes different topics)\n   - Modern Life (pertains to modern life)\n\n2. Focus on key concepts:\n   - The core ideas here revolve around technological advancements leading to revolutionization and thus influencing modern living.\n\n3. Formulate a concise statement:\n   - \"Technological revolution sparks innovation in modern lives.\"\n\nThis formulates an idea or concept extracted through the guided tokens while",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 337,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 635,
+        "word_count": 89,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.8651685393258427,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

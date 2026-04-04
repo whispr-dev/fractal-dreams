@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1264
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 596,
+        "word_count": 97,
+        "unique_word_count": 94,
+        "unique_word_ratio": 0.9690721649484536,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 662,
+        "word_count": 109,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.9724770642201835,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1092,
+        "word_count": 181,
+        "unique_word_count": 172,
+        "unique_word_ratio": 0.9502762430939227,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1122,
+        "word_count": 186,
+        "unique_word_count": 177,
+        "unique_word_ratio": 0.9516129032258065,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2398,
+        "word_count": 394,
+        "unique_word_count": 195,
+        "unique_word_ratio": 0.4949238578680203,
+        "repeated_bigram_count": 186
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+      "delta_text": "This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be",
+        "continuation_text": "This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be",
+        "input_token_count": 57,
+        "raw_input_token_count": 57,
+        "output_token_count": 153,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 596,
+        "word_count": 97,
+        "unique_word_count": 94,
+        "unique_word_ratio": 0.9690721649484536,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be",
+      "delta_text": "very few people who'll ever use them if nothing else is required!",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required!",
+        "continuation_text": "very few people who'll ever use them if nothing else is required!",
+        "input_token_count": 153,
+        "raw_input_token_count": 153,
+        "output_token_count": 168,
+        "new_token_count": 15,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 662,
+        "word_count": 109,
+        "unique_word_count": 106,
+        "unique_word_ratio": 0.9724770642201835,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required!",
+      "delta_text": "It takes up time while learning what type of data we need...and sometimes even hours depending on which ones I've read/interviewing before :-) For example, when someone writes “It could take three days…to learn ~8 years“ *about 1 day*. There will be over 100 texts written once each week*.. If possible [if appropriate], i'd love to see more :)  If my research indicates some problems might arise around different kinds of speech",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required! It takes up time while learning what type of data we need...and sometimes even hours depending on which ones I've read/interviewing before :-) For example, when someone writes “It could take three days…to learn ~8 years“ *about 1 day*. There will be over 100 texts written once each week*.. If possible [if appropriate], i'd love to see more :)  If my research indicates some problems might arise around different kinds of speech",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required! It takes up time while learning what type of data we need...and sometimes even hours depending on which ones I've read/interviewing before :-) For example, when someone writes “It could take three days…to learn ~8 years“ *about 1 day*. There will be over 100 texts written once each week*.. If possible [if appropriate], i'd love to see more :)  If my research indicates some problems might arise around different kinds of speech",
+        "continuation_text": "It takes up time while learning what type of data we need...and sometimes even hours depending on which ones I've read/interviewing before :-) For example, when someone writes “It could take three days…to learn ~8 years“ *about 1 day*. There will be over 100 texts written once each week*.. If possible [if appropriate], i'd love to see more :)  If my research indicates some problems might arise around different kinds of speech",
+        "input_token_count": 167,
+        "raw_input_token_count": 167,
+        "output_token_count": 263,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1092,
+        "word_count": 181,
+        "unique_word_count": 172,
+        "unique_word_ratio": 0.9502762430939227,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required! It takes up time while learning what type of data we need...and sometimes even hours depending on which ones I've read/interviewing before :-) For example, when someone writes “It could take three days…to learn ~8 years“ *about 1 day*. There will be over 100 texts written once each week*.. If possible [if appropriate], i'd love to see more :)  If my research indicates some problems might arise around different kinds of speech",
+      "delta_text": "patterns? Let me know below!!",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required! It takes up time while learning what type of data we need...and sometimes even hours depending on which ones I've read/interviewing before :-) For example, when someone writes “It could take three days…to learn ~8 years“ *about 1 day*. There will be over 100 texts written once each week*.. If possible [if appropriate], i'd love to see more :)  If my research indicates some problems might arise around different kinds of speech patterns? Let me know below!!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required! It takes up time while learning what type of data we need...and sometimes even hours depending on which ones I've read/interviewing before :-) For example, when someone writes “It could take three days…to learn ~8 years“ *about 1 day*. There will be over 100 texts written once each week*.. If possible [if appropriate], i'd love to see more :)  If my research indicates some problems might arise around different kinds of speech",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required! It takes up time while learning what type of data we need...and sometimes even hours depending on which ones I've read/interviewing before :-) For example, when someone writes “It could take three days…to learn ~8 years“ *about 1 day*. There will be over 100 texts written once each week*.. If possible [if appropriate], i'd love to see more :)  If my research indicates some problems might arise around different kinds of speech patterns? Let me know below!!",
+        "continuation_text": "patterns? Let me know below!!",
+        "input_token_count": 263,
+        "raw_input_token_count": 263,
+        "output_token_count": 271,
+        "new_token_count": 8,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1122,
+        "word_count": 186,
+        "unique_word_count": 177,
+        "unique_word_ratio": 0.9516129032258065,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required! It takes up time while learning what type of data we need...and sometimes even hours depending on which ones I've read/interviewing before :-) For example, when someone writes “It could take three days…to learn ~8 years“ *about 1 day*. There will be over 100 texts written once each week*.. If possible [if appropriate], i'd love to see more :)  If my research indicates some problems might arise around different kinds of speech patterns? Let me know below!!",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required! It takes up time while learning what type of data we need...and sometimes even hours depending on which ones I've read/interviewing before :-) For example, when someone writes “It could take three days…to learn ~8 years“ *about 1 day*. There will be over 100 texts written once each week*.. If possible [if appropriate], i'd love to see more :)  If my research indicates some problems might arise around different kinds of speech patterns? Let me know below!!",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required! It takes up time while learning what type of data we need...and sometimes even hours depending on which ones I've read/interviewing before :-) For example, when someone writes “It could take three days…to learn ~8 years“ *about 1 day*. There will be over 100 texts written once each week*.. If possible [if appropriate], i'd love to see more :)  If my research indicates some problems might arise around different kinds of speech patterns? Let me know below!! You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required! It takes up time while learning what type of data we need...and sometimes even hours depending on which ones I've read/interviewing before :-) For example, when someone writes “It could take three days…to learn ~8 years“ *about 1 day*. There will be over 100 texts written once each week*.. If possible [if appropriate], i'd love to see more :)  If my research indicates some problems might arise around different kinds of speech patterns? Let me know below!!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required! It takes up time while learning what type of data we need...and sometimes even hours depending on which ones I've read/interviewing before :-) For example, when someone writes “It could take three days…to learn ~8 years“ *about 1 day*. There will be over 100 texts written once each week*.. If possible [if appropriate], i'd love to see more :)  If my research indicates some problems might arise around different kinds of speech patterns? Let me know below!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was done using standard methods like Librarians' algorithm to generate information, but it failed miserably for accuracy of this study by only finding two key words (the \"spontaneous\" line). They all have other uses here too, such as writing sentences or phrases; they can be found everywhere - anywhere from bookshelf journals, conferences, etc., just about any place you want to go without breaking into their vocabulary with at least one word – so there may be very few people who'll ever use them if nothing else is required! It takes up time while learning what type of data we need...and sometimes even hours depending on which ones I've read/interviewing before :-) For example, when someone writes “It could take three days…to learn ~8 years“ *about 1 day*. There will be over 100 texts written once each week*.. If possible [if appropriate], i'd love to see more :)  If my research indicates some problems might arise around different kinds of speech patterns? Let me know below!!",
+        "continuation_text": "",
+        "input_token_count": 270,
+        "raw_input_token_count": 270,
+        "output_token_count": 271,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2398,
+        "word_count": 394,
+        "unique_word_count": 195,
+        "unique_word_ratio": 0.4949238578680203,
+        "repeated_bigram_count": 186
+      }
+    }
+  ]
+}

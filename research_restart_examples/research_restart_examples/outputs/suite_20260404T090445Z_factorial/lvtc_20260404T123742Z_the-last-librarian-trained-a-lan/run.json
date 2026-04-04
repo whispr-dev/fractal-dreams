@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1286,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 648,
+        "word_count": 98,
+        "unique_word_count": 83,
+        "unique_word_ratio": 0.8469387755102041,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 569,
+        "word_count": 87,
+        "unique_word_count": 78,
+        "unique_word_ratio": 0.896551724137931,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 311,
+        "word_count": 48,
+        "unique_word_count": 43,
+        "unique_word_ratio": 0.8958333333333334,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 259,
+        "word_count": 34,
+        "unique_word_count": 32,
+        "unique_word_ratio": 0.9411764705882353,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "if",
+        "was",
+        "its",
+        "the",
+        "are",
+        "that",
+        "a",
+        "It",
+        "intelligence",
+        "If"
+      ],
+      "output_text": "To generate the next recursive transformation based on the given latent directions (were, it, if) from the provided text, I will analyze the sentence step-by-step to extract key phrases and determine logical connections:\n\nOriginal Text:\n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\"\n\nStep 1: Identify main components - \"the last librarian\" and \"trained a language model\"\nSubsteps: \n- The purpose is unclear at this point.\n- This doesn't provide enough context for further deduction.\n\nStep 2: Analyze relationships between keywords:\n- \"last librarian\" -> Purpose of",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, if, was, its, the, are, that, a, It, intelligence, If\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\nTo generate the next recursive transformation based on the given latent directions (were, it, if) from the provided text, I will analyze the sentence step-by-step to extract key phrases and determine logical connections:\n\nOriginal Text:\n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\"\n\nStep 1: Identify main components - \"the last librarian\" and \"trained a language model\"\nSubsteps: \n- The purpose is unclear at this point.\n- This doesn't provide enough context for further deduction.\n\nStep 2: Analyze relationships between keywords:\n- \"last librarian\" -> Purpose of",
+        "continuation_text": "To generate the next recursive transformation based on the given latent directions (were, it, if) from the provided text, I will analyze the sentence step-by-step to extract key phrases and determine logical connections:\n\nOriginal Text:\n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\"\n\nStep 1: Identify main components - \"the last librarian\" and \"trained a language model\"\nSubsteps: \n- The purpose is unclear at this point.\n- This doesn't provide enough context for further deduction.\n\nStep 2: Analyze relationships between keywords:\n- \"last librarian\" -> Purpose of",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 232,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 648,
+        "word_count": 98,
+        "unique_word_count": 83,
+        "unique_word_ratio": 0.8469387755102041,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        ",",
+        "were",
+        "and",
+        "is",
+        "to",
+        "for",
+        "\"",
+        "(",
+        "are"
+      ],
+      "output_text": "The previous sentence states that it was the last librarian who trained a language model. Based on your request to write out the next recursive transformation using the given latent directions, here’s how we can proceed with logical reasoning:\n\n**Recursive Transformation:**\n\"If they hadn’t been trained on dead civilizations’ poems...\"\n\n---\n\nThis final step follows logically by continuing from where the analysis left off and directly addressing the stated question without adding new information not part of the initial setup or remaining parts of the original text.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, ,, were, and, is, to, for, \", (, are\n\nTEXT:\nTo generate the next recursive transformation based on the given latent directions (were, it, if) from the provided text, I will analyze the sentence step-by-step to extract key phrases and determine logical connections:\n\nOriginal Text:\n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\"\n\nStep 1: Identify main components - \"the last librarian\" and \"trained a language model\"\nSubsteps: \n- The purpose is unclear at this point.\n- This doesn't provide enough context for further deduction.\n\nStep 2: Analyze relationships between keywords:\n- \"last librarian\" -> Purpose of<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, ,, were, and, is, to, for, \", (, are\n\nTEXT:\nTo generate the next recursive transformation based on the given latent directions (were, it, if) from the provided text, I will analyze the sentence step-by-step to extract key phrases and determine logical connections:\n\nOriginal Text:\n\"The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\"\n\nStep 1: Identify main components - \"the last librarian\" and \"trained a language model\"\nSubsteps: \n- The purpose is unclear at this point.\n- This doesn't provide enough context for further deduction.\n\nStep 2: Analyze relationships between keywords:\n- \"last librarian\" -> Purpose of\nassistant\nThe previous sentence states that it was the last librarian who trained a language model. Based on your request to write out the next recursive transformation using the given latent directions, here’s how we can proceed with logical reasoning:\n\n**Recursive Transformation:**\n\"If they hadn’t been trained on dead civilizations’ poems...\"\n\n---\n\nThis final step follows logically by continuing from where the analysis left off and directly addressing the stated question without adding new information not part of the initial setup or remaining parts of the original text.",
+        "continuation_text": "The previous sentence states that it was the last librarian who trained a language model. Based on your request to write out the next recursive transformation using the given latent directions, here’s how we can proceed with logical reasoning:\n\n**Recursive Transformation:**\n\"If they hadn’t been trained on dead civilizations’ poems...\"\n\n---\n\nThis final step follows logically by continuing from where the analysis left off and directly addressing the stated question without adding new information not part of the initial setup or remaining parts of the original text.",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 308,
+        "new_token_count": 100,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 569,
+        "word_count": 87,
+        "unique_word_count": 78,
+        "unique_word_ratio": 0.896551724137931,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "the",
+        "were",
+        "was",
+        "are",
+        "there",
+        "that",
+        "this",
+        "of",
+        "where",
+        "is"
+      ],
+      "output_text": "\"In light of their lack of training, it becomes evident why so many modern texts fail to incorporate meaningful content.\"\n\nThis final statement completes the thought by elaborating further on why some modern literature lacks depth rather than merely stating the first conclusion based solely on prior knowledge.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, was, are, there, that, this, of, where, is\n\nTEXT:\nThe previous sentence states that it was the last librarian who trained a language model. Based on your request to write out the next recursive transformation using the given latent directions, here’s how we can proceed with logical reasoning:\n\n**Recursive Transformation:**\n\"If they hadn’t been trained on dead civilizations’ poems...\"\n\n---\n\nThis final step follows logically by continuing from where the analysis left off and directly addressing the stated question without adding new information not part of the initial setup or remaining parts of the original text.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, the, were, was, are, there, that, this, of, where, is\n\nTEXT:\nThe previous sentence states that it was the last librarian who trained a language model. Based on your request to write out the next recursive transformation using the given latent directions, here’s how we can proceed with logical reasoning:\n\n**Recursive Transformation:**\n\"If they hadn’t been trained on dead civilizations’ poems...\"\n\n---\n\nThis final step follows logically by continuing from where the analysis left off and directly addressing the stated question without adding new information not part of the initial setup or remaining parts of the original text.\nassistant\n\"In light of their lack of training, it becomes evident why so many modern texts fail to incorporate meaningful content.\"\n\nThis final statement completes the thought by elaborating further on why some modern literature lacks depth rather than merely stating the first conclusion based solely on prior knowledge.",
+        "continuation_text": "\"In light of their lack of training, it becomes evident why so many modern texts fail to incorporate meaningful content.\"\n\nThis final statement completes the thought by elaborating further on why some modern literature lacks depth rather than merely stating the first conclusion based solely on prior knowledge.",
+        "input_token_count": 180,
+        "raw_input_token_count": 180,
+        "output_token_count": 233,
+        "new_token_count": 53,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 311,
+        "word_count": 48,
+        "unique_word_count": 43,
+        "unique_word_ratio": 0.8958333333333334,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "the",
+        "because",
+        "intelligence",
+        "they",
+        "there",
+        "nếu",
+        "what",
+        "this",
+        "though"
+      ],
+      "output_text": "\"Amongst the numerous contemporary works, it emerges clear that despite their extensive study and research, a significant portion fails to demonstrate substantial comprehension or insight into the complexities underlying societal dynamics and human behavior.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, the, because, intelligence, they, there, nếu, what, this, though\n\nTEXT:\n\"In light of their lack of training, it becomes evident why so many modern texts fail to incorporate meaningful content.\"\n\nThis final statement completes the thought by elaborating further on why some modern literature lacks depth rather than merely stating the first conclusion based solely on prior knowledge.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, the, because, intelligence, they, there, nếu, what, this, though\n\nTEXT:\n\"In light of their lack of training, it becomes evident why so many modern texts fail to incorporate meaningful content.\"\n\nThis final statement completes the thought by elaborating further on why some modern literature lacks depth rather than merely stating the first conclusion based solely on prior knowledge.\nassistant\n\"Amongst the numerous contemporary works, it emerges clear that despite their extensive study and research, a significant portion fails to demonstrate substantial comprehension or insight into the complexities underlying societal dynamics and human behavior.\"",
+        "continuation_text": "\"Amongst the numerous contemporary works, it emerges clear that despite their extensive study and research, a significant portion fails to demonstrate substantial comprehension or insight into the complexities underlying societal dynamics and human behavior.\"",
+        "input_token_count": 134,
+        "raw_input_token_count": 134,
+        "output_token_count": 174,
+        "new_token_count": 40,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 259,
+        "word_count": 34,
+        "unique_word_count": 32,
+        "unique_word_ratio": 0.9411764705882353,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

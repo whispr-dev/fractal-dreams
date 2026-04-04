@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1489,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 467,
+        "word_count": 75,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.8933333333333333,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 84,
+        "word_count": 14,
+        "unique_word_count": 14,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 440,
+        "word_count": 71,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9295774647887324,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "opportunities",
+        "از",
+        "engaged",
+        "�",
+        "いや",
+        "(verbose",
+        "are",
+        "or",
+        "_INFO",
+        "journal",
+        "anc",
+        "satisfaction"
+      ],
+      "output_text": "The next recursive transformation could be:\n\n\"ویژگی‌های درجه نرم‌افزاری به زمینه صنعتی بروید و ساختار آن را پشتیبانی کرده است.\"\n\nThis is derived by finding the most recently appeared token with an EOS (End Of Sentence) symbol within the original sequence, which is \"خواسته\" ('about'), followed by the subsequent tokens that provide context for it. The result can now continue expanding its meaning while staying true to the constraints set by the given latent anchors",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: opportunities, از, engaged, �, いや, (verbose, are, or, _INFO, journal, anc, satisfaction\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nThe next recursive transformation could be:\n\n\"ویژگی‌های درجه نرم‌افزاری به زمینه صنعتی بروید و ساختار آن را پشتیبانی کرده است.\"\n\nThis is derived by finding the most recently appeared token with an EOS (End Of Sentence) symbol within the original sequence, which is \"خواسته\" ('about'), followed by the subsequent tokens that provide context for it. The result can now continue expanding its meaning while staying true to the constraints set by the given latent anchors",
+        "continuation_text": "The next recursive transformation could be:\n\n\"ویژگی‌های درجه نرم‌افزاری به زمینه صنعتی بروید و ساختار آن را پشتیبانی کرده است.\"\n\nThis is derived by finding the most recently appeared token with an EOS (End Of Sentence) symbol within the original sequence, which is \"خواسته\" ('about'), followed by the subsequent tokens that provide context for it. The result can now continue expanding its meaning while staying true to the constraints set by the given latent anchors",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 234,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 467,
+        "word_count": 75,
+        "unique_word_count": 67,
+        "unique_word_ratio": 0.8933333333333333,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "),",
+        "},",
+        ",",
+        ")),",
+        ")，",
+        "\",",
+        "，",
+        "），",
+        "()),",
+        "',",
+        "}),",
+        "(),"
+      ],
+      "output_text": "\"پس از مطالعات و تصميم فعال، بررسی عملکرد مدل شناسایی تمرین‌ها حفاظت تا جانشاسه‌ای.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ),, },, ,, )),, )，, \",, ，, ），, ()),, ',, }),, (),\n\nTEXT:\nThe next recursive transformation could be:\n\n\"ویژگی‌های درجه نرم‌افزاری به زمینه صنعتی بروید و ساختار آن را پشتیبانی کرده است.\"\n\nThis is derived by finding the most recently appeared token with an EOS (End Of Sentence) symbol within the original sequence, which is \"خواسته\" ('about'), followed by the subsequent tokens that provide context for it. The result can now continue expanding its meaning while staying true to the constraints set by the given latent anchors<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ),, },, ,, )),, )，, \",, ，, ），, ()),, ',, }),, (),\n\nTEXT:\nThe next recursive transformation could be:\n\n\"ویژگی‌های درجه نرم‌افزاری به زمینه صنعتی بروید و ساختار آن را پشتیبانی کرده است.\"\n\nThis is derived by finding the most recently appeared token with an EOS (End Of Sentence) symbol within the original sequence, which is \"خواسته\" ('about'), followed by the subsequent tokens that provide context for it. The result can now continue expanding its meaning while staying true to the constraints set by the given latent anchors\nassistant\n\"پس از مطالعات و تصميم فعال، بررسی عملکرد مدل شناسایی تمرین‌ها حفاظت تا جانشاسه‌ای.\"",
+        "continuation_text": "\"پس از مطالعات و تصميم فعال، بررسی عملکرد مدل شناسایی تمرین‌ها حفاظت تا جانشاسه‌ای.\"",
+        "input_token_count": 211,
+        "raw_input_token_count": 211,
+        "output_token_count": 259,
+        "new_token_count": 48,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 84,
+        "word_count": 14,
+        "unique_word_count": 14,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "”",
+        "白",
+        "“",
+        "\"",
+        "\")",
+        "�",
+        "”)",
+        "\"}",
+        "\");",
+        "_",
+        "\\",
+        "的"
+      ],
+      "output_text": "The next recursive transformation involves expanding and constructing the Latent Anchor Tokens (LATTES) into a more complex structure that includes both the words from the original sentence and further LATTES for additional information or context. Here's how it can be structured:\n\n```plaintext\n۱) پس چیست؟\n۲) زیرا ما هدایمت آزمون‌ها را به صورت دقت بزنیم.\n```\n\nIn this example:\n1. The first LATTE is `۱)` which represents the number one.\n2.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ”, 白, “, \", \"), �, ”), \"}, \");, _, \\, 的\n\nTEXT:\n\"پس از مطالعات و تصميم فعال، بررسی عملکرد مدل شناسایی تمرین‌ها حفاظت تا جانشاسه‌ای.\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ”, 白, “, \", \"), �, ”), \"}, \");, _, \\, 的\n\nTEXT:\n\"پس از مطالعات و تصميم فعال، بررسی عملکرد مدل شناسایی تمرین‌ها حفاظت تا جانشاسه‌ای.\"\nassistant\nThe next recursive transformation involves expanding and constructing the Latent Anchor Tokens (LATTES) into a more complex structure that includes both the words from the original sentence and further LATTES for additional information or context. Here's how it can be structured:\n\n```plaintext\n۱) پس چیست؟\n۲) زیرا ما هدایمت آزمون‌ها را به صورت دقت بزنیم.\n```\n\nIn this example:\n1. The first LATTE is `۱)` which represents the number one.\n2.",
+        "continuation_text": "The next recursive transformation involves expanding and constructing the Latent Anchor Tokens (LATTES) into a more complex structure that includes both the words from the original sentence and further LATTES for additional information or context. Here's how it can be structured:\n\n```plaintext\n۱) پس چیست؟\n۲) زیرا ما هدایمت آزمون‌ها را به صورت دقت بزنیم.\n```\n\nIn this example:\n1. The first LATTE is `۱)` which represents the number one.\n2.",
+        "input_token_count": 133,
+        "raw_input_token_count": 133,
+        "output_token_count": 253,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 440,
+        "word_count": 71,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9295774647887324,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

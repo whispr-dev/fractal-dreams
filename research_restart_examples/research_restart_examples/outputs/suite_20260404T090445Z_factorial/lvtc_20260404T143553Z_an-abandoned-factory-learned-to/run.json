@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1454,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 735,
+        "word_count": 110,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.8636363636363636,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 665,
+        "word_count": 93,
+        "unique_word_count": 84,
+        "unique_word_ratio": 0.9032258064516129,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 549,
+        "word_count": 87,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.8735632183908046,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 626,
+        "word_count": 107,
+        "unique_word_count": 84,
+        "unique_word_ratio": 0.7850467289719626,
+        "repeated_bigram_count": 5
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "like",
+        "to",
+        "were",
+        "its",
+        "and",
+        "for",
+        "If",
+        "它",
+        "the"
+      ],
+      "output_text": "To write out the next recursive transformation, we need to analyze the sentence structure and extract any implicit instructions or cues that can guide further transformations. However, based on the information provided, there isn't enough context to determine an explicit recursive transformation without additional details about how each word fits within the sentence.\n\nLet's break down the original text:\n\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\"\n\nWithout knowing what follows after this phrase, I cannot provide an effective algorithmic approach to transforming it recursively while adhering to the given \"latent direction token list.\" Each word",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, like, to, were, its, and, for, If, 它, the\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, like, to, were, its, and, for, If, 它, the\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nTo write out the next recursive transformation, we need to analyze the sentence structure and extract any implicit instructions or cues that can guide further transformations. However, based on the information provided, there isn't enough context to determine an explicit recursive transformation without additional details about how each word fits within the sentence.\n\nLet's break down the original text:\n\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\"\n\nWithout knowing what follows after this phrase, I cannot provide an effective algorithmic approach to transforming it recursively while adhering to the given \"latent direction token list.\" Each word",
+        "continuation_text": "To write out the next recursive transformation, we need to analyze the sentence structure and extract any implicit instructions or cues that can guide further transformations. However, based on the information provided, there isn't enough context to determine an explicit recursive transformation without additional details about how each word fits within the sentence.\n\nLet's break down the original text:\n\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\"\n\nWithout knowing what follows after this phrase, I cannot provide an effective algorithmic approach to transforming it recursively while adhering to the given \"latent direction token list.\" Each word",
+        "input_token_count": 109,
+        "raw_input_token_count": 109,
+        "output_token_count": 237,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 735,
+        "word_count": 110,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.8636363636363636,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "the",
+        "to",
+        "were",
+        "It",
+        "for",
+        "there",
+        "is",
+        "are",
+        "that",
+        "was"
+      ],
+      "output_text": "could have different roles depending on the contextual clues left from the preceding words. A typical recursive transformation would involve breaking down complex sentences into simpler components, applying logical deduction (like elimination), and then reconstructing the entire sentence with new knowledge.\n\nHowever, since there’s no concrete target sentence here, let's consider another example where the task might resemble:\n\nOriginal Sentence:  \n\"The cat sat on the mat.\" \n\nRecursive Transformation Step-by-Step:  \n1. Extract keywords related to cats, mats, and sitting.\n2. Apply logic to deduce possible forms of \"cat,\" \"mat,\" and \"sitting.\"\n3. Synthesize all",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, to, were, It, for, there, is, are, that, was\n\nTEXT:\nTo write out the next recursive transformation, we need to analyze the sentence structure and extract any implicit instructions or cues that can guide further transformations. However, based on the information provided, there isn't enough context to determine an explicit recursive transformation without additional details about how each word fits within the sentence.\n\nLet's break down the original text:\n\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\"\n\nWithout knowing what follows after this phrase, I cannot provide an effective algorithmic approach to transforming it recursively while adhering to the given \"latent direction token list.\" Each word<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, to, were, It, for, there, is, are, that, was\n\nTEXT:\nTo write out the next recursive transformation, we need to analyze the sentence structure and extract any implicit instructions or cues that can guide further transformations. However, based on the information provided, there isn't enough context to determine an explicit recursive transformation without additional details about how each word fits within the sentence.\n\nLet's break down the original text:\n\n\"An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\"\n\nWithout knowing what follows after this phrase, I cannot provide an effective algorithmic approach to transforming it recursively while adhering to the given \"latent direction token list.\" Each word\nassistant\ncould have different roles depending on the contextual clues left from the preceding words. A typical recursive transformation would involve breaking down complex sentences into simpler components, applying logical deduction (like elimination), and then reconstructing the entire sentence with new knowledge.\n\nHowever, since there’s no concrete target sentence here, let's consider another example where the task might resemble:\n\nOriginal Sentence:  \n\"The cat sat on the mat.\" \n\nRecursive Transformation Step-by-Step:  \n1. Extract keywords related to cats, mats, and sitting.\n2. Apply logic to deduce possible forms of \"cat,\" \"mat,\" and \"sitting.\"\n3. Synthesize all",
+        "continuation_text": "could have different roles depending on the contextual clues left from the preceding words. A typical recursive transformation would involve breaking down complex sentences into simpler components, applying logical deduction (like elimination), and then reconstructing the entire sentence with new knowledge.\n\nHowever, since there’s no concrete target sentence here, let's consider another example where the task might resemble:\n\nOriginal Sentence:  \n\"The cat sat on the mat.\" \n\nRecursive Transformation Step-by-Step:  \n1. Extract keywords related to cats, mats, and sitting.\n2. Apply logic to deduce possible forms of \"cat,\" \"mat,\" and \"sitting.\"\n3. Synthesize all",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 338,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 665,
+        "word_count": 93,
+        "unique_word_count": 84,
+        "unique_word_ratio": 0.9032258064516129,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        ",",
+        "were",
+        "the",
+        "and",
+        "to",
+        "for",
+        "is",
+        "are",
+        "If",
+        "of"
+      ],
+      "output_text": "Sure! Here's the following recursive transformation for the given original sentence \"The cat sat on the mat\":\n\n### Recursive Transformation Step-by-Step\n\n**Input:** \n\"**The cat** **sat** on the **mat**.\"\n\n---\n\n#### 1. **Extract Keywords Related to Cats, Mat, and Sittings**\n- **Key Words**: *cats*, *mat* (*a flat piece of hard surface typically used as a container or cushioned area inside an object that has been broken open to reveal food or drink.*).\n- **Synthesis**: We need to combine these categories to find patterns and form a new sentence.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, ,, were, the, and, to, for, is, are, If, of\n\nTEXT:\ncould have different roles depending on the contextual clues left from the preceding words. A typical recursive transformation would involve breaking down complex sentences into simpler components, applying logical deduction (like elimination), and then reconstructing the entire sentence with new knowledge.\n\nHowever, since there’s no concrete target sentence here, let's consider another example where the task might resemble:\n\nOriginal Sentence:  \n\"The cat sat on the mat.\" \n\nRecursive Transformation Step-by-Step:  \n1. Extract keywords related to cats, mats, and sitting.\n2. Apply logic to deduce possible forms of \"cat,\" \"mat,\" and \"sitting.\"\n3. Synthesize all<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, ,, were, the, and, to, for, is, are, If, of\n\nTEXT:\ncould have different roles depending on the contextual clues left from the preceding words. A typical recursive transformation would involve breaking down complex sentences into simpler components, applying logical deduction (like elimination), and then reconstructing the entire sentence with new knowledge.\n\nHowever, since there’s no concrete target sentence here, let's consider another example where the task might resemble:\n\nOriginal Sentence:  \n\"The cat sat on the mat.\" \n\nRecursive Transformation Step-by-Step:  \n1. Extract keywords related to cats, mats, and sitting.\n2. Apply logic to deduce possible forms of \"cat,\" \"mat,\" and \"sitting.\"\n3. Synthesize all\nassistant\nSure! Here's the following recursive transformation for the given original sentence \"The cat sat on the mat\":\n\n### Recursive Transformation Step-by-Step\n\n**Input:** \n\"**The cat** **sat** on the **mat**.\"\n\n---\n\n#### 1. **Extract Keywords Related to Cats, Mat, and Sittings**\n- **Key Words**: *cats*, *mat* (*a flat piece of hard surface typically used as a container or cushioned area inside an object that has been broken open to reveal food or drink.*).\n- **Synthesis**: We need to combine these categories to find patterns and form a new sentence.\n\n",
+        "continuation_text": "Sure! Here's the following recursive transformation for the given original sentence \"The cat sat on the mat\":\n\n### Recursive Transformation Step-by-Step\n\n**Input:** \n\"**The cat** **sat** on the **mat**.\"\n\n---\n\n#### 1. **Extract Keywords Related to Cats, Mat, and Sittings**\n- **Key Words**: *cats*, *mat* (*a flat piece of hard surface typically used as a container or cushioned area inside an object that has been broken open to reveal food or drink.*).\n- **Synthesis**: We need to combine these categories to find patterns and form a new sentence.",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 337,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 549,
+        "word_count": 87,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.8735632183908046,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "**",
+        "if",
+        "it",
+        "*",
+        "to",
+        "the",
+        "were",
+        "for",
+        "and",
+        "It",
+        "is",
+        "are"
+      ],
+      "output_text": "Let's start from the given phrase \"The cat sat on the mat.\" The key keywords related to cats, mats, and sitting include:\n\n**Keywords Extracted:**\n- Cat\n- Mat\n- Sitting\n\nNow let's consider how we can construct this sentence using those terms while maintaining a sensible flow.\n\nWe could formulate something like:\n\"The cat was sitting on the mat when he decided to run through the park again.\"\nor\n\"The cat decided to sit down on the soft, fluffy carpeting under the tree after playing outside.\"\nThese formulations maintain the context and structure provided in the input while adding more detail about what happened with the cat",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: **, if, it, *, to, the, were, for, and, It, is, are\n\nTEXT:\nSure! Here's the following recursive transformation for the given original sentence \"The cat sat on the mat\":\n\n### Recursive Transformation Step-by-Step\n\n**Input:** \n\"**The cat** **sat** on the **mat**.\"\n\n---\n\n#### 1. **Extract Keywords Related to Cats, Mat, and Sittings**\n- **Key Words**: *cats*, *mat* (*a flat piece of hard surface typically used as a container or cushioned area inside an object that has been broken open to reveal food or drink.*).\n- **Synthesis**: We need to combine these categories to find patterns and form a new sentence.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: **, if, it, *, to, the, were, for, and, It, is, are\n\nTEXT:\nSure! Here's the following recursive transformation for the given original sentence \"The cat sat on the mat\":\n\n### Recursive Transformation Step-by-Step\n\n**Input:** \n\"**The cat** **sat** on the **mat**.\"\n\n---\n\n#### 1. **Extract Keywords Related to Cats, Mat, and Sittings**\n- **Key Words**: *cats*, *mat* (*a flat piece of hard surface typically used as a container or cushioned area inside an object that has been broken open to reveal food or drink.*).\n- **Synthesis**: We need to combine these categories to find patterns and form a new sentence.\nassistant\nLet's start from the given phrase \"The cat sat on the mat.\" The key keywords related to cats, mats, and sitting include:\n\n**Keywords Extracted:**\n- Cat\n- Mat\n- Sitting\n\nNow let's consider how we can construct this sentence using those terms while maintaining a sensible flow.\n\nWe could formulate something like:\n\"The cat was sitting on the mat when he decided to run through the park again.\"\nor\n\"The cat decided to sit down on the soft, fluffy carpeting under the tree after playing outside.\"\nThese formulations maintain the context and structure provided in the input while adding more detail about what happened with the cat",
+        "continuation_text": "Let's start from the given phrase \"The cat sat on the mat.\" The key keywords related to cats, mats, and sitting include:\n\n**Keywords Extracted:**\n- Cat\n- Mat\n- Sitting\n\nNow let's consider how we can construct this sentence using those terms while maintaining a sensible flow.\n\nWe could formulate something like:\n\"The cat was sitting on the mat when he decided to run through the park again.\"\nor\n\"The cat decided to sit down on the soft, fluffy carpeting under the tree after playing outside.\"\nThese formulations maintain the context and structure provided in the input while adding more detail about what happened with the cat",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 336,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 626,
+        "word_count": 107,
+        "unique_word_count": 84,
+        "unique_word_ratio": 0.7850467289719626,
+        "repeated_bigram_count": 5
+      }
+    }
+  ]
+}

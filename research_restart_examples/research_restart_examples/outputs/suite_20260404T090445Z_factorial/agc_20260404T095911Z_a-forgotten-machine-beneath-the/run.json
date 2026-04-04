@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1073,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 210,
+        "word_count": 36,
+        "unique_word_count": 36,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 651,
+        "word_count": 103,
+        "unique_word_count": 103,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 626,
+        "word_count": 96,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.9895833333333334,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Brune",
+        "ão",
+        "Hua",
+        "1907",
+        "odka",
+        "annie",
+        "san",
+        "ende",
+        "Xiang",
+        "ESCO",
+        "Aunt",
+        "Pants"
+      ],
+      "output_text": "The words \"The world is moving.\" And no one understood this for centuries even though they never actually existed before…the same old machines have become so much easier to understand than we know it right now!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Brune, ão, Hua, 1907, odka, annie, san, ende, Xiang, ESCO, Aunt, Pants\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Brune, ão, Hua, 1907, odka, annie, san, ende, Xiang, ESCO, Aunt, Pants\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The words \"The world is moving.\" And no one understood this for centuries even though they never actually existed before…the same old machines have become so much easier to understand than we know it right now!",
+        "continuation_text": "The words \"The world is moving.\" And no one understood this for centuries even though they never actually existed before…the same old machines have become so much easier to understand than we know it right now!",
+        "input_token_count": 121,
+        "raw_input_token_count": 121,
+        "output_token_count": 163,
+        "new_token_count": 42,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 210,
+        "word_count": 36,
+        "unique_word_count": 36,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "risk",
+        "leaned",
+        "being",
+        "men",
+        "we",
+        "somebody",
+        ";",
+        "taking",
+        "—",
+        "congen",
+        "susceptible",
+        "--"
+      ],
+      "output_text": "(As with all human beings.) We're talking about our brain and your body . No wonder that many people just don't realize what's happening on their own because nobody realizes how easy these new computers will be—and you should read more articles by yourself or others who can help them out too–if someone does something wrong...you need an explanation; then there's nothing like writing stories where everything has already happened from scratch instead if everyone knows its place inside us at once….but since each person needs multiple reasons why other humans do things different/different after every experience which helps explain some problem but",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: risk, leaned, being, men, we, somebody, ;, taking, —, congen, susceptible, --\n\nTEXT:\nThe words \"The world is moving.\" And no one understood this for centuries even though they never actually existed before…the same old machines have become so much easier to understand than we know it right now!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: risk, leaned, being, men, we, somebody, ;, taking, —, congen, susceptible, --\n\nTEXT:\nThe words \"The world is moving.\" And no one understood this for centuries even though they never actually existed before…the same old machines have become so much easier to understand than we know it right now! (As with all human beings.) We're talking about our brain and your body . No wonder that many people just don't realize what's happening on their own because nobody realizes how easy these new computers will be—and you should read more articles by yourself or others who can help them out too–if someone does something wrong...you need an explanation; then there's nothing like writing stories where everything has already happened from scratch instead if everyone knows its place inside us at once….but since each person needs multiple reasons why other humans do things different/different after every experience which helps explain some problem but",
+        "continuation_text": "(As with all human beings.) We're talking about our brain and your body . No wonder that many people just don't realize what's happening on their own because nobody realizes how easy these new computers will be—and you should read more articles by yourself or others who can help them out too–if someone does something wrong...you need an explanation; then there's nothing like writing stories where everything has already happened from scratch instead if everyone knows its place inside us at once….but since each person needs multiple reasons why other humans do things different/different after every experience which helps explain some problem but",
+        "input_token_count": 126,
+        "raw_input_token_count": 126,
+        "output_token_count": 246,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 651,
+        "word_count": 103,
+        "unique_word_count": 103,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "(",
+        "Although",
+        "While",
+        "Having",
+        "Following",
+        "During",
+        "Many",
+        "Since",
+        "\"(",
+        "Much",
+        "Whilst",
+        "Taking"
+      ],
+      "output_text": "still doesn´t make sense…the simple reason for being able understand is through studying one piece of information rather than finding it alone.\"\n\nThis paper explores this idea when comparing data collected using social networks online! The researchers believe they have found ways to integrate personalization into computer learning via software programs designed specifically for computing tasks such under task conditions.[18] If we ask ourselves \"Can I get away with having my mind started working?\", most likely right now we'll see results so far [20][21]. So let me know whether any program works well enough until today?",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: (, Although, While, Having, Following, During, Many, Since, \"(, Much, Whilst, Taking\n\nTEXT:\n(As with all human beings.) We're talking about our brain and your body . No wonder that many people just don't realize what's happening on their own because nobody realizes how easy these new computers will be—and you should read more articles by yourself or others who can help them out too–if someone does something wrong...you need an explanation; then there's nothing like writing stories where everything has already happened from scratch instead if everyone knows its place inside us at once….but since each person needs multiple reasons why other humans do things different/different after every experience which helps explain some problem but",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: (, Although, While, Having, Following, During, Many, Since, \"(, Much, Whilst, Taking\n\nTEXT:\n(As with all human beings.) We're talking about our brain and your body . No wonder that many people just don't realize what's happening on their own because nobody realizes how easy these new computers will be—and you should read more articles by yourself or others who can help them out too–if someone does something wrong...you need an explanation; then there's nothing like writing stories where everything has already happened from scratch instead if everyone knows its place inside us at once….but since each person needs multiple reasons why other humans do things different/different after every experience which helps explain some problem but still doesn´t make sense…the simple reason for being able understand is through studying one piece of information rather than finding it alone.\"\n\nThis paper explores this idea when comparing data collected using social networks online! The researchers believe they have found ways to integrate personalization into computer learning via software programs designed specifically for computing tasks such under task conditions.[18] If we ask ourselves \"Can I get away with having my mind started working?\", most likely right now we'll see results so far [20][21]. So let me know whether any program works well enough until today?",
+        "continuation_text": "still doesn´t make sense…the simple reason for being able understand is through studying one piece of information rather than finding it alone.\"\n\nThis paper explores this idea when comparing data collected using social networks online! The researchers believe they have found ways to integrate personalization into computer learning via software programs designed specifically for computing tasks such under task conditions.[18] If we ask ourselves \"Can I get away with having my mind started working?\", most likely right now we'll see results so far [20][21]. So let me know whether any program works well enough until today?",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 321,
+        "new_token_count": 116,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 626,
+        "word_count": 96,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.9895833333333334,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

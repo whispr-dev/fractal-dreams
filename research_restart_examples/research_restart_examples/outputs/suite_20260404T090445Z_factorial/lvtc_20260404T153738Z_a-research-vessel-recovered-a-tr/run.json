@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1538,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 665,
+        "word_count": 101,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.8910891089108911,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 412,
+        "word_count": 57,
+        "unique_word_count": 50,
+        "unique_word_ratio": 0.8771929824561403,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 151,
+        "word_count": 21,
+        "unique_word_count": 18,
+        "unique_word_ratio": 0.8571428571428571,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 637,
+        "word_count": 98,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.8673469387755102,
+        "repeated_bigram_count": 1
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "were",
+        "from",
+        "and",
+        "the",
+        "was",
+        "to",
+        "a",
+        "A",
+        "for"
+      ],
+      "output_text": "To generate the next recursive transformation of the given text based on the provided latent direction tokens (it, if, It, were, from, and, the, was, to, a, A, for), we need to follow the logical flow inferred from the initial text's content and structure:\n\n1. The sentence begins with \"A research vessel recovered a transmission,\" indicating there is an ongoing investigation or event.\n2. The phrase \"From the trench floor\" suggests this investigation might involve exploration or discovery beneath water.\n3. Following that, the sentence transitions into describing what started as \"engineering telemetry.\" This implies early indications of something being studied",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nTo generate the next recursive transformation of the given text based on the provided latent direction tokens (it, if, It, were, from, and, the, was, to, a, A, for), we need to follow the logical flow inferred from the initial text's content and structure:\n\n1. The sentence begins with \"A research vessel recovered a transmission,\" indicating there is an ongoing investigation or event.\n2. The phrase \"From the trench floor\" suggests this investigation might involve exploration or discovery beneath water.\n3. Following that, the sentence transitions into describing what started as \"engineering telemetry.\" This implies early indications of something being studied",
+        "continuation_text": "To generate the next recursive transformation of the given text based on the provided latent direction tokens (it, if, It, were, from, and, the, was, to, a, A, for), we need to follow the logical flow inferred from the initial text's content and structure:\n\n1. The sentence begins with \"A research vessel recovered a transmission,\" indicating there is an ongoing investigation or event.\n2. The phrase \"From the trench floor\" suggests this investigation might involve exploration or discovery beneath water.\n3. Following that, the sentence transitions into describing what started as \"engineering telemetry.\" This implies early indications of something being studied",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 232,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 665,
+        "word_count": 101,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.8910891089108911,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        ",",
+        "if",
+        "and",
+        "it",
+        "the",
+        "to",
+        "(",
+        "is",
+        "for",
+        "in",
+        ".",
+        "of"
+      ],
+      "output_text": "Based on the given text and latent direction tokens, here is the next recursive transformation:\n\n\"To investigate further regarding the recovery and examination of transmission data carried aboard a research vessel, one should first examine the engineering telemetry evidence.\"\n\nThis transformation follows logically from the previous sentences, using the established context to guide future thoughts and actions.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: ,, if, and, it, the, to, (, is, for, in, ., of\n\nTEXT:\nTo generate the next recursive transformation of the given text based on the provided latent direction tokens (it, if, It, were, from, and, the, was, to, a, A, for), we need to follow the logical flow inferred from the initial text's content and structure:\n\n1. The sentence begins with \"A research vessel recovered a transmission,\" indicating there is an ongoing investigation or event.\n2. The phrase \"From the trench floor\" suggests this investigation might involve exploration or discovery beneath water.\n3. Following that, the sentence transitions into describing what started as \"engineering telemetry.\" This implies early indications of something being studied<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: ,, if, and, it, the, to, (, is, for, in, ., of\n\nTEXT:\nTo generate the next recursive transformation of the given text based on the provided latent direction tokens (it, if, It, were, from, and, the, was, to, a, A, for), we need to follow the logical flow inferred from the initial text's content and structure:\n\n1. The sentence begins with \"A research vessel recovered a transmission,\" indicating there is an ongoing investigation or event.\n2. The phrase \"From the trench floor\" suggests this investigation might involve exploration or discovery beneath water.\n3. Following that, the sentence transitions into describing what started as \"engineering telemetry.\" This implies early indications of something being studied\nassistant\nBased on the given text and latent direction tokens, here is the next recursive transformation:\n\n\"To investigate further regarding the recovery and examination of transmission data carried aboard a research vessel, one should first examine the engineering telemetry evidence.\"\n\nThis transformation follows logically from the previous sentences, using the established context to guide future thoughts and actions.",
+        "continuation_text": "Based on the given text and latent direction tokens, here is the next recursive transformation:\n\n\"To investigate further regarding the recovery and examination of transmission data carried aboard a research vessel, one should first examine the engineering telemetry evidence.\"\n\nThis transformation follows logically from the previous sentences, using the established context to guide future thoughts and actions.",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 273,
+        "new_token_count": 64,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 412,
+        "word_count": 57,
+        "unique_word_count": 50,
+        "unique_word_ratio": 0.8771929824561403,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "the",
+        "it",
+        "and",
+        "were",
+        "is",
+        "to",
+        "are",
+        "this",
+        "was",
+        "for",
+        "of"
+      ],
+      "output_text": "\"The investigation into the potential causes of the ship's malfunction will focus initially on examining the robustness of its communications systems.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, the, it, and, were, is, to, are, this, was, for, of\n\nTEXT:\nBased on the given text and latent direction tokens, here is the next recursive transformation:\n\n\"To investigate further regarding the recovery and examination of transmission data carried aboard a research vessel, one should first examine the engineering telemetry evidence.\"\n\nThis transformation follows logically from the previous sentences, using the established context to guide future thoughts and actions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, the, it, and, were, is, to, are, this, was, for, of\n\nTEXT:\nBased on the given text and latent direction tokens, here is the next recursive transformation:\n\n\"To investigate further regarding the recovery and examination of transmission data carried aboard a research vessel, one should first examine the engineering telemetry evidence.\"\n\nThis transformation follows logically from the previous sentences, using the established context to guide future thoughts and actions.\nassistant\n\"The investigation into the potential causes of the ship's malfunction will focus initially on examining the robustness of its communications systems.\"",
+        "continuation_text": "\"The investigation into the potential causes of the ship's malfunction will focus initially on examining the robustness of its communications systems.\"",
+        "input_token_count": 145,
+        "raw_input_token_count": 145,
+        "output_token_count": 170,
+        "new_token_count": 25,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 151,
+        "word_count": 21,
+        "unique_word_count": 18,
+        "unique_word_ratio": 0.8571428571428571,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "the",
+        "it",
+        "if",
+        "its",
+        "of",
+        "were",
+        "there",
+        "are",
+        "on",
+        "was",
+        "intelligence",
+        "THE"
+      ],
+      "output_text": "The next recursive transformation would involve breaking down the sentence into smaller components and progressively refining them based on their syntactic structure. Here is an example of how this could progress:\n\n1. \"The\" - Analyze as part of the sentence.\n2. \"investigation\" - Breakdown to understand what exactly is being investigated.\n3. \"into the potential causes of the ship's malfunction\" - This could be broken further depending on additional information provided earlier or inferred later.\n4. \"will focus\" - Structure for future action planning.\n5. \"initially on examining the\" - Use more precise temporal logic.\n6. \"the robust",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, it, if, its, of, were, there, are, on, was, intelligence, THE\n\nTEXT:\n\"The investigation into the potential causes of the ship's malfunction will focus initially on examining the robustness of its communications systems.\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, it, if, its, of, were, there, are, on, was, intelligence, THE\n\nTEXT:\n\"The investigation into the potential causes of the ship's malfunction will focus initially on examining the robustness of its communications systems.\"\nassistant\nThe next recursive transformation would involve breaking down the sentence into smaller components and progressively refining them based on their syntactic structure. Here is an example of how this could progress:\n\n1. \"The\" - Analyze as part of the sentence.\n2. \"investigation\" - Breakdown to understand what exactly is being investigated.\n3. \"into the potential causes of the ship's malfunction\" - This could be broken further depending on additional information provided earlier or inferred later.\n4. \"will focus\" - Structure for future action planning.\n5. \"initially on examining the\" - Use more precise temporal logic.\n6. \"the robust",
+        "continuation_text": "The next recursive transformation would involve breaking down the sentence into smaller components and progressively refining them based on their syntactic structure. Here is an example of how this could progress:\n\n1. \"The\" - Analyze as part of the sentence.\n2. \"investigation\" - Breakdown to understand what exactly is being investigated.\n3. \"into the potential causes of the ship's malfunction\" - This could be broken further depending on additional information provided earlier or inferred later.\n4. \"will focus\" - Structure for future action planning.\n5. \"initially on examining the\" - Use more precise temporal logic.\n6. \"the robust",
+        "input_token_count": 106,
+        "raw_input_token_count": 106,
+        "output_token_count": 234,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 637,
+        "word_count": 98,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.8673469387755102,
+        "repeated_bigram_count": 1
+      }
+    }
+  ]
+}

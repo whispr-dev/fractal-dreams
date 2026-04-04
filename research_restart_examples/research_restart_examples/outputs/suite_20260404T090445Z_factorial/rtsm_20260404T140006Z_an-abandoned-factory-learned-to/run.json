@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1404
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 622,
+        "word_count": 102,
+        "unique_word_count": 93,
+        "unique_word_ratio": 0.9117647058823529,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1127,
+        "word_count": 184,
+        "unique_word_count": 157,
+        "unique_word_ratio": 0.8532608695652174,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1621,
+        "word_count": 264,
+        "unique_word_count": 212,
+        "unique_word_ratio": 0.803030303030303,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2159,
+        "word_count": 343,
+        "unique_word_count": 265,
+        "unique_word_ratio": 0.7725947521865889,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2723,
+        "word_count": 426,
+        "unique_word_count": 324,
+        "unique_word_ratio": 0.7605633802816901,
+        "repeated_bigram_count": 2
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nContinuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within",
+        "continuation_text": "Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within",
+        "input_token_count": 66,
+        "raw_input_token_count": 66,
+        "output_token_count": 162,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 622,
+        "word_count": 102,
+        "unique_word_count": 93,
+        "unique_word_ratio": 0.9117647058823529,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within\nassistant\nan untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth",
+        "continuation_text": "an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth",
+        "input_token_count": 161,
+        "raw_input_token_count": 161,
+        "output_token_count": 257,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1127,
+        "word_count": 184,
+        "unique_word_count": 157,
+        "unique_word_ratio": 0.8532608695652174,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "into secrets waiting to be discovered... A small pond emerges from the ground, shimmering silver and reflecting the twilight sky above. Waves gently ripple, making little ripples in the cobblestone streets below. A river flows slowly across the land, winding through the narrow alleys until it reaches a vast canyon where it diverges into two rivers: one flowing northeast towards a distant forest, while the other continues north along the cliffs. As the sun sets, casting long shadows in the",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth into secrets waiting to be discovered... A small pond emerges from the ground, shimmering silver and reflecting the twilight sky above. Waves gently ripple, making little ripples in the cobblestone streets below. A river flows slowly across the land, winding through the narrow alleys until it reaches a vast canyon where it diverges into two rivers: one flowing northeast towards a distant forest, while the other continues north along the cliffs. As the sun sets, casting long shadows in the",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth\nassistant\ninto secrets waiting to be discovered... A small pond emerges from the ground, shimmering silver and reflecting the twilight sky above. Waves gently ripple, making little ripples in the cobblestone streets below. A river flows slowly across the land, winding through the narrow alleys until it reaches a vast canyon where it diverges into two rivers: one flowing northeast towards a distant forest, while the other continues north along the cliffs. As the sun sets, casting long shadows in the",
+        "continuation_text": "into secrets waiting to be discovered... A small pond emerges from the ground, shimmering silver and reflecting the twilight sky above. Waves gently ripple, making little ripples in the cobblestone streets below. A river flows slowly across the land, winding through the narrow alleys until it reaches a vast canyon where it diverges into two rivers: one flowing northeast towards a distant forest, while the other continues north along the cliffs. As the sun sets, casting long shadows in the",
+        "input_token_count": 258,
+        "raw_input_token_count": 258,
+        "output_token_count": 354,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1621,
+        "word_count": 264,
+        "unique_word_count": 212,
+        "unique_word_ratio": 0.803030303030303,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth into secrets waiting to be discovered... A small pond emerges from the ground, shimmering silver and reflecting the twilight sky above. Waves gently ripple, making little ripples in the cobblestone streets below. A river flows slowly across the land, winding through the narrow alleys until it reaches a vast canyon where it diverges into two rivers: one flowing northeast towards a distant forest, while the other continues north along the cliffs. As the sun sets, casting long shadows in the<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "scattered clouds overhead, a serene harmony exists among nature's elements, hinting at a deeper connection than just physical darkness, evoking a sense of renewal and hope even against the fading landscape.\nIn essence, the narrative seeks to explore themes of remembrance, loss, restoration, and the enduring power of storytelling within environments that may seem lifeless or isolated today. It encourages viewers to encounter the hidden potential beneath the surface of these settings, whether literal ones like abandoned factories, or",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth into secrets waiting to be discovered... A small pond emerges from the ground, shimmering silver and reflecting the twilight sky above. Waves gently ripple, making little ripples in the cobblestone streets below. A river flows slowly across the land, winding through the narrow alleys until it reaches a vast canyon where it diverges into two rivers: one flowing northeast towards a distant forest, while the other continues north along the cliffs. As the sun sets, casting long shadows in the scattered clouds overhead, a serene harmony exists among nature's elements, hinting at a deeper connection than just physical darkness, evoking a sense of renewal and hope even against the fading landscape.\nIn essence, the narrative seeks to explore themes of remembrance, loss, restoration, and the enduring power of storytelling within environments that may seem lifeless or isolated today. It encourages viewers to encounter the hidden potential beneath the surface of these settings, whether literal ones like abandoned factories, or",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth into secrets waiting to be discovered... A small pond emerges from the ground, shimmering silver and reflecting the twilight sky above. Waves gently ripple, making little ripples in the cobblestone streets below. A river flows slowly across the land, winding through the narrow alleys until it reaches a vast canyon where it diverges into two rivers: one flowing northeast towards a distant forest, while the other continues north along the cliffs. As the sun sets, casting long shadows in the<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth into secrets waiting to be discovered... A small pond emerges from the ground, shimmering silver and reflecting the twilight sky above. Waves gently ripple, making little ripples in the cobblestone streets below. A river flows slowly across the land, winding through the narrow alleys until it reaches a vast canyon where it diverges into two rivers: one flowing northeast towards a distant forest, while the other continues north along the cliffs. As the sun sets, casting long shadows in the\nassistant\nscattered clouds overhead, a serene harmony exists among nature's elements, hinting at a deeper connection than just physical darkness, evoking a sense of renewal and hope even against the fading landscape.\nIn essence, the narrative seeks to explore themes of remembrance, loss, restoration, and the enduring power of storytelling within environments that may seem lifeless or isolated today. It encourages viewers to encounter the hidden potential beneath the surface of these settings, whether literal ones like abandoned factories, or",
+        "continuation_text": "scattered clouds overhead, a serene harmony exists among nature's elements, hinting at a deeper connection than just physical darkness, evoking a sense of renewal and hope even against the fading landscape.\nIn essence, the narrative seeks to explore themes of remembrance, loss, restoration, and the enduring power of storytelling within environments that may seem lifeless or isolated today. It encourages viewers to encounter the hidden potential beneath the surface of these settings, whether literal ones like abandoned factories, or",
+        "input_token_count": 354,
+        "raw_input_token_count": 354,
+        "output_token_count": 450,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2159,
+        "word_count": 343,
+        "unique_word_count": 265,
+        "unique_word_ratio": 0.7725947521865889,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth into secrets waiting to be discovered... A small pond emerges from the ground, shimmering silver and reflecting the twilight sky above. Waves gently ripple, making little ripples in the cobblestone streets below. A river flows slowly across the land, winding through the narrow alleys until it reaches a vast canyon where it diverges into two rivers: one flowing northeast towards a distant forest, while the other continues north along the cliffs. As the sun sets, casting long shadows in the scattered clouds overhead, a serene harmony exists among nature's elements, hinting at a deeper connection than just physical darkness, evoking a sense of renewal and hope even against the fading landscape.\nIn essence, the narrative seeks to explore themes of remembrance, loss, restoration, and the enduring power of storytelling within environments that may seem lifeless or isolated today. It encourages viewers to encounter the hidden potential beneath the surface of these settings, whether literal ones like abandoned factories, or<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "imagined creations often perceived as mysterious, fantastical, or symbolic landscapes. By engaging deeply with these narratives, people embark upon quests to uncover clues that help them reconnect with themselves and connect emotionally with those who lived in similar conditions centuries ago.\nEach new piece of information leads us further down a path, bringing fresh perspectives and insights into our understanding of history, trauma, and resilience. Through careful listening to these old tales, individuals become more aware of not only what has gone wrong,",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth into secrets waiting to be discovered... A small pond emerges from the ground, shimmering silver and reflecting the twilight sky above. Waves gently ripple, making little ripples in the cobblestone streets below. A river flows slowly across the land, winding through the narrow alleys until it reaches a vast canyon where it diverges into two rivers: one flowing northeast towards a distant forest, while the other continues north along the cliffs. As the sun sets, casting long shadows in the scattered clouds overhead, a serene harmony exists among nature's elements, hinting at a deeper connection than just physical darkness, evoking a sense of renewal and hope even against the fading landscape.\nIn essence, the narrative seeks to explore themes of remembrance, loss, restoration, and the enduring power of storytelling within environments that may seem lifeless or isolated today. It encourages viewers to encounter the hidden potential beneath the surface of these settings, whether literal ones like abandoned factories, or imagined creations often perceived as mysterious, fantastical, or symbolic landscapes. By engaging deeply with these narratives, people embark upon quests to uncover clues that help them reconnect with themselves and connect emotionally with those who lived in similar conditions centuries ago.\nEach new piece of information leads us further down a path, bringing fresh perspectives and insights into our understanding of history, trauma, and resilience. Through careful listening to these old tales, individuals become more aware of not only what has gone wrong,",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth into secrets waiting to be discovered... A small pond emerges from the ground, shimmering silver and reflecting the twilight sky above. Waves gently ripple, making little ripples in the cobblestone streets below. A river flows slowly across the land, winding through the narrow alleys until it reaches a vast canyon where it diverges into two rivers: one flowing northeast towards a distant forest, while the other continues north along the cliffs. As the sun sets, casting long shadows in the scattered clouds overhead, a serene harmony exists among nature's elements, hinting at a deeper connection than just physical darkness, evoking a sense of renewal and hope even against the fading landscape.\nIn essence, the narrative seeks to explore themes of remembrance, loss, restoration, and the enduring power of storytelling within environments that may seem lifeless or isolated today. It encourages viewers to encounter the hidden potential beneath the surface of these settings, whether literal ones like abandoned factories, or<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. Continuing this narrative involves creating an atmosphere of transformation within a setting that has been forgotten or neglected for many years. Here’s how we might build it:\n\n---\n\nA once-sleepy alleyway now shines with the soft glow of candlelight as workers continue their silent shift. The air is thick with dust and musty odors, which have accumulated over generations and need cleansing before they can be used again by others. The silence outside serves only as an unspoken barrier; within an untouched canvas where the past whispers resound amidst unseen echoes of generations' struggles and dreams.\nThe shadows dance on the windowsill, shifting between dark and light at times unknown to our eyes. In such a world, stories found in forgotten corners, tucked away under stones, or nestled beneath the leaves would speak volumes about the lives lost but never heard.\nThe alleypath winds through dense reeds and scrubby bushes, each step revealing remnants of days gone by buried deep into earth into secrets waiting to be discovered... A small pond emerges from the ground, shimmering silver and reflecting the twilight sky above. Waves gently ripple, making little ripples in the cobblestone streets below. A river flows slowly across the land, winding through the narrow alleys until it reaches a vast canyon where it diverges into two rivers: one flowing northeast towards a distant forest, while the other continues north along the cliffs. As the sun sets, casting long shadows in the scattered clouds overhead, a serene harmony exists among nature's elements, hinting at a deeper connection than just physical darkness, evoking a sense of renewal and hope even against the fading landscape.\nIn essence, the narrative seeks to explore themes of remembrance, loss, restoration, and the enduring power of storytelling within environments that may seem lifeless or isolated today. It encourages viewers to encounter the hidden potential beneath the surface of these settings, whether literal ones like abandoned factories, or\nassistant\nimagined creations often perceived as mysterious, fantastical, or symbolic landscapes. By engaging deeply with these narratives, people embark upon quests to uncover clues that help them reconnect with themselves and connect emotionally with those who lived in similar conditions centuries ago.\nEach new piece of information leads us further down a path, bringing fresh perspectives and insights into our understanding of history, trauma, and resilience. Through careful listening to these old tales, individuals become more aware of not only what has gone wrong,",
+        "continuation_text": "imagined creations often perceived as mysterious, fantastical, or symbolic landscapes. By engaging deeply with these narratives, people embark upon quests to uncover clues that help them reconnect with themselves and connect emotionally with those who lived in similar conditions centuries ago.\nEach new piece of information leads us further down a path, bringing fresh perspectives and insights into our understanding of history, trauma, and resilience. Through careful listening to these old tales, individuals become more aware of not only what has gone wrong,",
+        "input_token_count": 449,
+        "raw_input_token_count": 449,
+        "output_token_count": 545,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2723,
+        "word_count": 426,
+        "unique_word_count": 324,
+        "unique_word_ratio": 0.7605633802816901,
+        "repeated_bigram_count": 2
+      }
+    }
+  ]
+}

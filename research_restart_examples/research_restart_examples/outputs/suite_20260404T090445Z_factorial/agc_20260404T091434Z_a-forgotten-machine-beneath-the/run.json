@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1013,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 485,
+        "word_count": 76,
+        "unique_word_count": 69,
+        "unique_word_ratio": 0.9078947368421053,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 126,
+        "word_count": 21,
+        "unique_word_count": 21,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 457,
+        "word_count": 73,
+        "unique_word_count": 68,
+        "unique_word_ratio": 0.9315068493150684,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Brune",
+        "ão",
+        "Hua",
+        "1907",
+        "odka",
+        "annie",
+        "san",
+        "ende",
+        "Xiang",
+        "ESCO",
+        "Aunt",
+        "Pants"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Brune, ão, Hua, 1907, odka, annie, san, ende, Xiang, ESCO, Aunt, Pants\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Brune, ão, Hua, 1907, odka, annie, san, ende, Xiang, ESCO, Aunt, Pants\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Brune, ão, Hua, 1907, odka, annie, san, ende, Xiang, ESCO, Aunt, Pants\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "continuation_text": "",
+        "input_token_count": 121,
+        "raw_input_token_count": 121,
+        "output_token_count": 122,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 485,
+        "word_count": 76,
+        "unique_word_count": 69,
+        "unique_word_ratio": 0.9078947368421053,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Sometimes",
+        "They",
+        "See",
+        "Often",
+        "Footnote",
+        "Pg",
+        "Someone",
+        "Some",
+        "somewhere",
+        "fossils",
+        "anywhere",
+        "sometimes"
+      ],
+      "output_text": "The words they had lost would be remembered for later generations or perhaps someday again but that way will remain forever...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Sometimes, They, See, Often, Footnote, Pg, Someone, Some, somewhere, fossils, anywhere, sometimes\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Brune, ão, Hua, 1907, odka, annie, san, ende, Xiang, ESCO, Aunt, Pants\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Sometimes, They, See, Often, Footnote, Pg, Someone, Some, somewhere, fossils, anywhere, sometimes\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Brune, ão, Hua, 1907, odka, annie, san, ende, Xiang, ESCO, Aunt, Pants\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The words they had lost would be remembered for later generations or perhaps someday again but that way will remain forever...",
+        "continuation_text": "The words they had lost would be remembered for later generations or perhaps someday again but that way will remain forever...",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 231,
+        "new_token_count": 23,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 126,
+        "word_count": 21,
+        "unique_word_count": 21,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Guinea",
+        "bicy",
+        "Bian",
+        "undai",
+        "Gad",
+        "bicycl",
+        "Xiang",
+        "Bil",
+        "Fold",
+        "Fas",
+        "Rug",
+        "Hyundai"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Guinea, bicy, Bian, undai, Gad, bicycl, Xiang, Bil, Fold, Fas, Rug, Hyundai\n\nTEXT:\nThe words they had lost would be remembered for later generations or perhaps someday again but that way will remain forever...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Guinea, bicy, Bian, undai, Gad, bicycl, Xiang, Bil, Fold, Fas, Rug, Hyundai\n\nTEXT:\nThe words they had lost would be remembered for later generations or perhaps someday again but that way will remain forever...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Guinea, bicy, Bian, undai, Gad, bicycl, Xiang, Bil, Fold, Fas, Rug, Hyundai\n\nTEXT:\nThe words they had lost would be remembered for later generations or perhaps someday again but that way will remain forever...",
+        "continuation_text": "",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 109,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 457,
+        "word_count": 73,
+        "unique_word_count": 68,
+        "unique_word_ratio": 0.9315068493150684,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

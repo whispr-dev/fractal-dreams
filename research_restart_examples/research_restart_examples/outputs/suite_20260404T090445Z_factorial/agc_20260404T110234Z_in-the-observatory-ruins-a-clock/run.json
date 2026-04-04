@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1161,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 461,
+        "word_count": 85,
+        "unique_word_count": 85,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 2,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 553,
+        "word_count": 102,
+        "unique_word_count": 102,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "got",
+        "Have",
+        "Are",
+        "have",
+        "Do",
+        "did",
+        "took",
+        "are",
+        "gave",
+        ",'\"",
+        "We",
+        "He"
+      ],
+      "output_text": "It's time for you! Let me be clear about what I mean by \"trying\" it with your imagination - this is no magic trick but rather an exercise that can benefit both learning how to code (using Python), learn from our experience using Ruby on Rails and finally build something simple like OpenCV or Matlab when we get there :-) And here has been one more part taken apart at least once so please keep up all these fun exercises while studying programming languages :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: got, Have, Are, have, Do, did, took, are, gave, ,'\", We, He\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: got, Have, Are, have, Do, did, took, are, gave, ,'\", We, He\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. It's time for you! Let me be clear about what I mean by \"trying\" it with your imagination - this is no magic trick but rather an exercise that can benefit both learning how to code (using Python), learn from our experience using Ruby on Rails and finally build something simple like OpenCV or Matlab when we get there :-) And here has been one more part taken apart at least once so please keep up all these fun exercises while studying programming languages :)",
+        "continuation_text": "It's time for you! Let me be clear about what I mean by \"trying\" it with your imagination - this is no magic trick but rather an exercise that can benefit both learning how to code (using Python), learn from our experience using Ruby on Rails and finally build something simple like OpenCV or Matlab when we get there :-) And here has been one more part taken apart at least once so please keep up all these fun exercises while studying programming languages :)",
+        "input_token_count": 115,
+        "raw_input_token_count": 115,
+        "output_token_count": 210,
+        "new_token_count": 95,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 461,
+        "word_count": 85,
+        "unique_word_count": 85,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "No",
+        "major",
+        "Who",
+        "big",
+        "second",
+        "Last",
+        "Senior",
+        "biggest",
+        "been",
+        "who",
+        "In",
+        "senior"
+      ],
+      "output_text": ";)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: No, major, Who, big, second, Last, Senior, biggest, been, who, In, senior\n\nTEXT:\nIt's time for you! Let me be clear about what I mean by \"trying\" it with your imagination - this is no magic trick but rather an exercise that can benefit both learning how to code (using Python), learn from our experience using Ruby on Rails and finally build something simple like OpenCV or Matlab when we get there :-) And here has been one more part taken apart at least once so please keep up all these fun exercises while studying programming languages :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: No, major, Who, big, second, Last, Senior, biggest, been, who, In, senior\n\nTEXT:\nIt's time for you! Let me be clear about what I mean by \"trying\" it with your imagination - this is no magic trick but rather an exercise that can benefit both learning how to code (using Python), learn from our experience using Ruby on Rails and finally build something simple like OpenCV or Matlab when we get there :-) And here has been one more part taken apart at least once so please keep up all these fun exercises while studying programming languages :) ;)",
+        "continuation_text": ";)",
+        "input_token_count": 179,
+        "raw_input_token_count": 179,
+        "output_token_count": 181,
+        "new_token_count": 2,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        ";",
+        ":",
+        "it",
+        ".",
+        "ram",
+        "iss",
+        ",",
+        ".,",
+        "itarian",
+        "em",
+        "us",
+        "MEN"
+      ],
+      "output_text": "(this is part one.) I was going through all these things you said and tried out some patterns for each line which seemed right but if we just do 's or *rs they aren't working yet so why can someone say that? And what happens when there's no matching on this variable ? Well then who makes up your mind about how best practice works before making any changes/fixes?? We're trying our very own code here at The Code School! How could anyone possibly have guessed \"Sets an instance value like SOCKET\" by saying something similar with nothing more than s =~",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ;, :, it, ., ram, iss, ,, .,, itarian, em, us, MEN\n\nTEXT:\n;)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ;, :, it, ., ram, iss, ,, .,, itarian, em, us, MEN\n\nTEXT:\n;) (this is part one.) I was going through all these things you said and tried out some patterns for each line which seemed right but if we just do 's or *rs they aren't working yet so why can someone say that? And what happens when there's no matching on this variable ? Well then who makes up your mind about how best practice works before making any changes/fixes?? We're trying our very own code here at The Code School! How could anyone possibly have guessed \"Sets an instance value like SOCKET\" by saying something similar with nothing more than s =~",
+        "continuation_text": "(this is part one.) I was going through all these things you said and tried out some patterns for each line which seemed right but if we just do 's or *rs they aren't working yet so why can someone say that? And what happens when there's no matching on this variable ? Well then who makes up your mind about how best practice works before making any changes/fixes?? We're trying our very own code here at The Code School! How could anyone possibly have guessed \"Sets an instance value like SOCKET\" by saying something similar with nothing more than s =~",
+        "input_token_count": 88,
+        "raw_input_token_count": 88,
+        "output_token_count": 208,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 553,
+        "word_count": 102,
+        "unique_word_count": 102,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

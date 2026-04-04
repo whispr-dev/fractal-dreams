@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1315,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 977,
+        "word_count": 158,
+        "unique_word_count": 143,
+        "unique_word_ratio": 0.9050632911392406,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 2504,
+        "word_count": 399,
+        "unique_word_count": 166,
+        "unique_word_ratio": 0.41604010025062654,
+        "repeated_bigram_count": 205
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 35,
+        "word_count": 7,
+        "unique_word_count": 7,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 348,
+        "word_count": 59,
+        "unique_word_count": 50,
+        "unique_word_ratio": 0.847457627118644,
+        "repeated_bigram_count": 1
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "The authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+      "source_window_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+      "reflection_window_text": "The authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. The authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+        "continuation_text": "The authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+        "input_token_count": 92,
+        "raw_input_token_count": 92,
+        "output_token_count": 202,
+        "new_token_count": 110,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+        "continuation_text": "",
+        "input_token_count": 189,
+        "raw_input_token_count": 189,
+        "output_token_count": 190,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 977,
+        "word_count": 158,
+        "unique_word_count": 143,
+        "unique_word_ratio": 0.9050632911392406,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+        "continuation_text": "",
+        "input_token_count": 258,
+        "raw_input_token_count": 258,
+        "output_token_count": 259,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+        "continuation_text": "",
+        "input_token_count": 504,
+        "raw_input_token_count": 504,
+        "output_token_count": 505,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2504,
+        "word_count": 399,
+        "unique_word_count": 166,
+        "unique_word_ratio": 0.41604010025062654,
+        "repeated_bigram_count": 205
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "Note one part : This is where you see three problems...but never any doubt there may be something wrong ... but don't worry here - if your understanding does change quickly then let me know!!",
+      "output_text": "You should read my work closely too",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+      "reflection_window_text": "Note one part : This is where you see three problems...but never any doubt there may be something wrong ... but don't worry here - if your understanding does change quickly then let me know!!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today! Note one part : This is where you see three problems...but never any doubt there may be something wrong ... but don't worry here - if your understanding does change quickly then let me know!!",
+        "continuation_text": "Note one part : This is where you see three problems...but never any doubt there may be something wrong ... but don't worry here - if your understanding does change quickly then let me know!!",
+        "input_token_count": 573,
+        "raw_input_token_count": 573,
+        "output_token_count": 613,
+        "new_token_count": 40,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!\n\nREFLECTION:\nNote one part : This is where you see three problems...but never any doubt there may be something wrong ... but don't worry here - if your understanding does change quickly then let me know!!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\n\nREFLECTION:\nThe authors used these to show how different models of writing might have evolved as written by other people, often using similar rules like sentences or phrases which would give some interesting clues about their behavior before they could be interpreted correctly (and not just given words). Thus we can get an idea of what each word means for us now than it was when humans first published books with relatively limited vocabulary over many years ago. We need further research from scholars such I've worked at since 2006 so hopefully this will help illustrate exactly why new languages look much better today!\n\nREFLECTION:\nNote one part : This is where you see three problems...but never any doubt there may be something wrong ... but don't worry here - if your understanding does change quickly then let me know!! You should read my work closely too",
+        "continuation_text": "You should read my work closely too",
+        "input_token_count": 600,
+        "raw_input_token_count": 600,
+        "output_token_count": 608,
+        "new_token_count": 8,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 35,
+        "word_count": 7,
+        "unique_word_count": 7,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": ", but I would like to think of it as something you could write for yourself!",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou should read my work closely too\n\nREFLECTION:\n, but I would like to think of it as something you could write for yourself!",
+      "source_window_text": "You should read my work closely too",
+      "reflection_window_text": ", but I would like to think of it as something you could write for yourself!",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou should read my work closely too",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou should read my work closely too, but I would like to think of it as something you could write for yourself!",
+        "continuation_text": ", but I would like to think of it as something you could write for yourself!",
+        "input_token_count": 76,
+        "raw_input_token_count": 76,
+        "output_token_count": 94,
+        "new_token_count": 18,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou should read my work closely too\n\nREFLECTION:\n, but I would like to think of it as something you could write for yourself!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou should read my work closely too\n\nREFLECTION:\n, but I would like to think of it as something you could write for yourself!",
+        "continuation_text": "",
+        "input_token_count": 81,
+        "raw_input_token_count": 81,
+        "output_token_count": 82,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 348,
+        "word_count": 59,
+        "unique_word_count": 50,
+        "unique_word_ratio": 0.847457627118644,
+        "repeated_bigram_count": 1
+      }
+    }
+  ]
+}

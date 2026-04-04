@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1293,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 588,
+        "word_count": 106,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9905660377358491,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 338,
+        "word_count": 62,
+        "unique_word_count": 62,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 707,
+        "word_count": 114,
+        "unique_word_count": 107,
+        "unique_word_ratio": 0.9385964912280702,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "aren",
+        "didn",
+        "did",
+        "He",
+        "are",
+        "weren",
+        "shall",
+        "does",
+        "We",
+        "couldn",
+        "cannot",
+        "C"
+      ],
+      "output_text": "That their grammar was just another expression for an imagined future…and no one is talking about it anymore? The ghost story came back into being soon after he returned from space! (It should be mentioned here.) I would have thought they had spent decades learning how to read at sea but now we're all working with each other like kids watching Disney movies because my brother took me out when his car broke down right before Christmas!\" [A new generation] \"If you really want to learn some lingo then go ahead.\" And so there our two legged cousins meet again – who knows what else will",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: aren, didn, did, He, are, weren, shall, does, We, couldn, cannot, C\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: aren, didn, did, He, are, weren, shall, does, We, couldn, cannot, C\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. That their grammar was just another expression for an imagined future…and no one is talking about it anymore? The ghost story came back into being soon after he returned from space! (It should be mentioned here.) I would have thought they had spent decades learning how to read at sea but now we're all working with each other like kids watching Disney movies because my brother took me out when his car broke down right before Christmas!\" [A new generation] \"If you really want to learn some lingo then go ahead.\" And so there our two legged cousins meet again – who knows what else will",
+        "continuation_text": "That their grammar was just another expression for an imagined future…and no one is talking about it anymore? The ghost story came back into being soon after he returned from space! (It should be mentioned here.) I would have thought they had spent decades learning how to read at sea but now we're all working with each other like kids watching Disney movies because my brother took me out when his car broke down right before Christmas!\" [A new generation] \"If you really want to learn some lingo then go ahead.\" And so there our two legged cousins meet again – who knows what else will",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 228,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 588,
+        "word_count": 106,
+        "unique_word_count": 105,
+        "unique_word_ratio": 0.9905660377358491,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "That",
+        "crystal",
+        "It",
+        "Nicole",
+        "pill",
+        "At",
+        "neuronal",
+        "couldn",
+        "By",
+        "Phil",
+        "physique",
+        "Of"
+      ],
+      "output_text": "happen later this year … We could use them on something that never comes up once or twice if needed 🙂 For those curious please check over and take your time reading through these books by Nick Bockers . You can find full articles HERE , which has links to several more book series around topics such Aspects & Metaphor Science Education..",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: That, crystal, It, Nicole, pill, At, neuronal, couldn, By, Phil, physique, Of\n\nTEXT:\nThat their grammar was just another expression for an imagined future…and no one is talking about it anymore? The ghost story came back into being soon after he returned from space! (It should be mentioned here.) I would have thought they had spent decades learning how to read at sea but now we're all working with each other like kids watching Disney movies because my brother took me out when his car broke down right before Christmas!\" [A new generation] \"If you really want to learn some lingo then go ahead.\" And so there our two legged cousins meet again – who knows what else will",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: That, crystal, It, Nicole, pill, At, neuronal, couldn, By, Phil, physique, Of\n\nTEXT:\nThat their grammar was just another expression for an imagined future…and no one is talking about it anymore? The ghost story came back into being soon after he returned from space! (It should be mentioned here.) I would have thought they had spent decades learning how to read at sea but now we're all working with each other like kids watching Disney movies because my brother took me out when his car broke down right before Christmas!\" [A new generation] \"If you really want to learn some lingo then go ahead.\" And so there our two legged cousins meet again – who knows what else will happen later this year … We could use them on something that never comes up once or twice if needed 🙂 For those curious please check over and take your time reading through these books by Nick Bockers . You can find full articles HERE , which has links to several more book series around topics such Aspects & Metaphor Science Education..",
+        "continuation_text": "happen later this year … We could use them on something that never comes up once or twice if needed 🙂 For those curious please check over and take your time reading through these books by Nick Bockers . You can find full articles HERE , which has links to several more book series around topics such Aspects & Metaphor Science Education..",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 274,
+        "new_token_count": 69,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 338,
+        "word_count": 62,
+        "unique_word_count": 62,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "According",
+        "Sadly",
+        "Many",
+        "However",
+        "Although",
+        "Interestingly",
+        "Earlier",
+        "At",
+        "entreprene",
+        "organisations",
+        "Initially",
+        "tbsp"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: According, Sadly, Many, However, Although, Interestingly, Earlier, At, entreprene, organisations, Initially, tbsp\n\nTEXT:\nhappen later this year … We could use them on something that never comes up once or twice if needed 🙂 For those curious please check over and take your time reading through these books by Nick Bockers . You can find full articles HERE , which has links to several more book series around topics such Aspects & Metaphor Science Education..",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: According, Sadly, Many, However, Although, Interestingly, Earlier, At, entreprene, organisations, Initially, tbsp\n\nTEXT:\nhappen later this year … We could use them on something that never comes up once or twice if needed 🙂 For those curious please check over and take your time reading through these books by Nick Bockers . You can find full articles HERE , which has links to several more book series around topics such Aspects & Metaphor Science Education..",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: According, Sadly, Many, However, Although, Interestingly, Earlier, At, entreprene, organisations, Initially, tbsp\n\nTEXT:\nhappen later this year … We could use them on something that never comes up once or twice if needed 🙂 For those curious please check over and take your time reading through these books by Nick Bockers . You can find full articles HERE , which has links to several more book series around topics such Aspects & Metaphor Science Education..",
+        "continuation_text": "",
+        "input_token_count": 155,
+        "raw_input_token_count": 155,
+        "output_token_count": 156,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 707,
+        "word_count": 114,
+        "unique_word_count": 107,
+        "unique_word_ratio": 0.9385964912280702,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

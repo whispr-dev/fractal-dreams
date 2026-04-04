@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1173,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 569,
+        "word_count": 101,
+        "unique_word_count": 101,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 890,
+        "word_count": 153,
+        "unique_word_count": 147,
+        "unique_word_ratio": 0.9607843137254902,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 178,
+        "word_count": 31,
+        "unique_word_count": 31,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "got",
+        "Have",
+        "Are",
+        "have",
+        "Do",
+        "did",
+        "took",
+        "are",
+        "gave",
+        ",'\"",
+        "We",
+        "He"
+      ],
+      "output_text": "The same idea applied for our data structures which were being read from two different timezones at once – this is what I call an \"outbreak\". Now we need to change it back onto its original form! If you think that sounds too much like programming then start by making some changes now so there isn't any weird repetition coming your way or using just plain old Python code (or even better write something nice suchas ). When all works out let's hope they can make more complex representations with fewer errors than previously possible due their high confidence level .",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: got, Have, Are, have, Do, did, took, are, gave, ,'\", We, He\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: got, Have, Are, have, Do, did, took, are, gave, ,'\", We, He\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The same idea applied for our data structures which were being read from two different timezones at once – this is what I call an \"outbreak\". Now we need to change it back onto its original form! If you think that sounds too much like programming then start by making some changes now so there isn't any weird repetition coming your way or using just plain old Python code (or even better write something nice suchas ). When all works out let's hope they can make more complex representations with fewer errors than previously possible due their high confidence level .",
+        "continuation_text": "The same idea applied for our data structures which were being read from two different timezones at once – this is what I call an \"outbreak\". Now we need to change it back onto its original form! If you think that sounds too much like programming then start by making some changes now so there isn't any weird repetition coming your way or using just plain old Python code (or even better write something nice suchas ). When all works out let's hope they can make more complex representations with fewer errors than previously possible due their high confidence level .",
+        "input_token_count": 115,
+        "raw_input_token_count": 115,
+        "output_token_count": 227,
+        "new_token_count": 112,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 569,
+        "word_count": 101,
+        "unique_word_count": 101,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "To",
+        "For",
+        "The",
+        "Some",
+        "While",
+        "On",
+        "to",
+        "Here",
+        "In",
+        "Spielberg",
+        "An",
+        "After"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: To, For, The, Some, While, On, to, Here, In, Spielberg, An, After\n\nTEXT:\nThe same idea applied for our data structures which were being read from two different timezones at once – this is what I call an \"outbreak\". Now we need to change it back onto its original form! If you think that sounds too much like programming then start by making some changes now so there isn't any weird repetition coming your way or using just plain old Python code (or even better write something nice suchas ). When all works out let's hope they can make more complex representations with fewer errors than previously possible due their high confidence level .",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: To, For, The, Some, While, On, to, Here, In, Spielberg, An, After\n\nTEXT:\nThe same idea applied for our data structures which were being read from two different timezones at once – this is what I call an \"outbreak\". Now we need to change it back onto its original form! If you think that sounds too much like programming then start by making some changes now so there isn't any weird repetition coming your way or using just plain old Python code (or even better write something nice suchas ). When all works out let's hope they can make more complex representations with fewer errors than previously possible due their high confidence level .",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: To, For, The, Some, While, On, to, Here, In, Spielberg, An, After\n\nTEXT:\nThe same idea applied for our data structures which were being read from two different timezones at once – this is what I call an \"outbreak\". Now we need to change it back onto its original form! If you think that sounds too much like programming then start by making some changes now so there isn't any weird repetition coming your way or using just plain old Python code (or even better write something nice suchas ). When all works out let's hope they can make more complex representations with fewer errors than previously possible due their high confidence level .",
+        "continuation_text": "",
+        "input_token_count": 196,
+        "raw_input_token_count": 196,
+        "output_token_count": 197,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 890,
+        "word_count": 153,
+        "unique_word_count": 147,
+        "unique_word_ratio": 0.9607843137254902,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "yp",
+        "UM",
+        "yn",
+        "vitamin",
+        "TOTAL",
+        "YR",
+        "cholesterol",
+        "PAL",
+        "PG",
+        "Bottom",
+        "tc",
+        "Yeah"
+      ],
+      "output_text": "And if nothing else don�t worry about trying other languages already and doing math on them because those will be fine but try starting here instead after finding one solution :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: yp, UM, yn, vitamin, TOTAL, YR, cholesterol, PAL, PG, Bottom, tc, Yeah\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: To, For, The, Some, While, On, to, Here, In, Spielberg, An, After\n\nTEXT:\nThe same idea applied for our data structures which were being read from two different timezones at once – this is what I call an \"outbreak\". Now we need to change it back onto its original form! If you think that sounds too much like programming then start by making some changes now so there isn't any weird repetition coming your way or using just plain old Python code (or even better write something nice suchas ). When all works out let's hope they can make more complex representations with fewer errors than previously possible due their high confidence level .",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: yp, UM, yn, vitamin, TOTAL, YR, cholesterol, PAL, PG, Bottom, tc, Yeah\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: To, For, The, Some, While, On, to, Here, In, Spielberg, An, After\n\nTEXT:\nThe same idea applied for our data structures which were being read from two different timezones at once – this is what I call an \"outbreak\". Now we need to change it back onto its original form! If you think that sounds too much like programming then start by making some changes now so there isn't any weird repetition coming your way or using just plain old Python code (or even better write something nice suchas ). When all works out let's hope they can make more complex representations with fewer errors than previously possible due their high confidence level . And if nothing else don�t worry about trying other languages already and doing math on them because those will be fine but try starting here instead after finding one solution :)\n\n",
+        "continuation_text": "And if nothing else don�t worry about trying other languages already and doing math on them because those will be fine but try starting here instead after finding one solution :)",
+        "input_token_count": 284,
+        "raw_input_token_count": 284,
+        "output_token_count": 319,
+        "new_token_count": 35,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 178,
+        "word_count": 31,
+        "unique_word_count": 31,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

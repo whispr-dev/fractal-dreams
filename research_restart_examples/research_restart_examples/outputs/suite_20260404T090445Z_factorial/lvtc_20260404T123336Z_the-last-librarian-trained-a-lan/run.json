@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1278,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 428,
+        "word_count": 75,
+        "unique_word_count": 74,
+        "unique_word_ratio": 0.9866666666666667,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 736,
+        "word_count": 123,
+        "unique_word_count": 119,
+        "unique_word_ratio": 0.967479674796748,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1040,
+        "word_count": 171,
+        "unique_word_count": 121,
+        "unique_word_ratio": 0.7076023391812866,
+        "repeated_bigram_count": 35
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 115,
+        "word_count": 18,
+        "unique_word_count": 18,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        "was",
+        "have",
+        "the",
+        "is",
+        "The",
+        "has",
+        "did",
+        "that"
+      ],
+      "output_text": "It learned at hand how to generate symbols from texts such as \"curses\" or \"silly fingers.\" A few years later, this knowledge became available for use with other languages like English (and some Latin) but they continued until recently only because there wasn't enough money left; then when I got an email asking if she could help me write my first sentence over here -- which seems unlikely since her response? Well let me know!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, was, have, the, is, The, has, did, that\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, was, have, the, is, The, has, did, that\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. It learned at hand how to generate symbols from texts such as \"curses\" or \"silly fingers.\" A few years later, this knowledge became available for use with other languages like English (and some Latin) but they continued until recently only because there wasn't enough money left; then when I got an email asking if she could help me write my first sentence over here -- which seems unlikely since her response? Well let me know!",
+        "continuation_text": "It learned at hand how to generate symbols from texts such as \"curses\" or \"silly fingers.\" A few years later, this knowledge became available for use with other languages like English (and some Latin) but they continued until recently only because there wasn't enough money left; then when I got an email asking if she could help me write my first sentence over here -- which seems unlikely since her response? Well let me know!",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 191,
+        "new_token_count": 89,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 428,
+        "word_count": 75,
+        "unique_word_count": 74,
+        "unique_word_ratio": 0.9866666666666667,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "if",
+        "had",
+        "are",
+        "have",
+        "was",
+        "is",
+        "they",
+        "in",
+        "could",
+        "did"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, had, are, have, was, is, they, in, could, did\n\nTEXT:\nIt learned at hand how to generate symbols from texts such as \"curses\" or \"silly fingers.\" A few years later, this knowledge became available for use with other languages like English (and some Latin) but they continued until recently only because there wasn't enough money left; then when I got an email asking if she could help me write my first sentence over here -- which seems unlikely since her response? Well let me know!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, had, are, have, was, is, they, in, could, did\n\nTEXT:\nIt learned at hand how to generate symbols from texts such as \"curses\" or \"silly fingers.\" A few years later, this knowledge became available for use with other languages like English (and some Latin) but they continued until recently only because there wasn't enough money left; then when I got an email asking if she could help me write my first sentence over here -- which seems unlikely since her response? Well let me know!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, had, are, have, was, is, they, in, could, did\n\nTEXT:\nIt learned at hand how to generate symbols from texts such as \"curses\" or \"silly fingers.\" A few years later, this knowledge became available for use with other languages like English (and some Latin) but they continued until recently only because there wasn't enough money left; then when I got an email asking if she could help me write my first sentence over here -- which seems unlikely since her response? Well let me know!",
+        "continuation_text": "",
+        "input_token_count": 167,
+        "raw_input_token_count": 167,
+        "output_token_count": 168,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 736,
+        "word_count": 123,
+        "unique_word_count": 119,
+        "unique_word_ratio": 0.967479674796748,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "if",
+        "is",
+        "had",
+        "have",
+        "was",
+        "in",
+        ",",
+        "has",
+        "with"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, if, is, had, have, was, in, ,, has, with\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, had, are, have, was, is, they, in, could, did\n\nTEXT:\nIt learned at hand how to generate symbols from texts such as \"curses\" or \"silly fingers.\" A few years later, this knowledge became available for use with other languages like English (and some Latin) but they continued until recently only because there wasn't enough money left; then when I got an email asking if she could help me write my first sentence over here -- which seems unlikely since her response? Well let me know!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, if, is, had, have, was, in, ,, has, with\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, had, are, have, was, is, they, in, could, did\n\nTEXT:\nIt learned at hand how to generate symbols from texts such as \"curses\" or \"silly fingers.\" A few years later, this knowledge became available for use with other languages like English (and some Latin) but they continued until recently only because there wasn't enough money left; then when I got an email asking if she could help me write my first sentence over here -- which seems unlikely since her response? Well let me know!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, if, is, had, have, was, in, ,, has, with\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, had, are, have, was, is, they, in, could, did\n\nTEXT:\nIt learned at hand how to generate symbols from texts such as \"curses\" or \"silly fingers.\" A few years later, this knowledge became available for use with other languages like English (and some Latin) but they continued until recently only because there wasn't enough money left; then when I got an email asking if she could help me write my first sentence over here -- which seems unlikely since her response? Well let me know!",
+        "continuation_text": "",
+        "input_token_count": 246,
+        "raw_input_token_count": 246,
+        "output_token_count": 247,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1040,
+        "word_count": 171,
+        "unique_word_count": 121,
+        "unique_word_ratio": 0.7076023391812866,
+        "repeated_bigram_count": 35
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "are",
+        "it",
+        ",",
+        "is",
+        "in",
+        "have",
+        "had",
+        "was",
+        "if",
+        "has",
+        "."
+      ],
+      "output_text": "You can find out more about our design and development experience on GitHub under Tango's Community repository HERE",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, it, ,, is, in, have, had, was, if, has, .\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, if, is, had, have, was, in, ,, has, with\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, had, are, have, was, is, they, in, could, did\n\nTEXT:\nIt learned at hand how to generate symbols from texts such as \"curses\" or \"silly fingers.\" A few years later, this knowledge became available for use with other languages like English (and some Latin) but they continued until recently only because there wasn't enough money left; then when I got an email asking if she could help me write my first sentence over here -- which seems unlikely since her response? Well let me know!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, are, it, ,, is, in, have, had, was, if, has, .\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, if, is, had, have, was, in, ,, has, with\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, if, had, are, have, was, is, they, in, could, did\n\nTEXT:\nIt learned at hand how to generate symbols from texts such as \"curses\" or \"silly fingers.\" A few years later, this knowledge became available for use with other languages like English (and some Latin) but they continued until recently only because there wasn't enough money left; then when I got an email asking if she could help me write my first sentence over here -- which seems unlikely since her response? Well let me know! You can find out more about our design and development experience on GitHub under Tango's Community repository HERE",
+        "continuation_text": "You can find out more about our design and development experience on GitHub under Tango's Community repository HERE",
+        "input_token_count": 325,
+        "raw_input_token_count": 325,
+        "output_token_count": 346,
+        "new_token_count": 21,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 115,
+        "word_count": 18,
+        "unique_word_count": 18,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

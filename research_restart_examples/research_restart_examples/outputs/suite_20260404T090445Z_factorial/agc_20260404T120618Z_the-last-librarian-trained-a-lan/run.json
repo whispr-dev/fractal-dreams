@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1241,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 567,
+        "word_count": 83,
+        "unique_word_count": 83,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 925,
+        "word_count": 135,
+        "unique_word_count": 130,
+        "unique_word_ratio": 0.9629629629629629,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 441,
+        "word_count": 66,
+        "unique_word_count": 61,
+        "unique_word_ratio": 0.9242424242424242,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "mentor",
+        "Coach",
+        "Aunt",
+        "forge",
+        "mentors",
+        "Strongh",
+        "Colossus",
+        "pioneered",
+        "Wyatt",
+        "alliances",
+        "friendships",
+        "organise"
+      ],
+      "output_text": "This was no accident; an open source library developed by CSE (D&C), called PLANICS for linguistics - it had been used extensively across multiple languages since 1775 with some surprising exceptions including English! The authors also found strong statistical evidence suggesting this approach could be applied within any literature or paper collection other than journals , scientific texts and research collections . They reported significant differences between these results from three competing projects using their LANGUAGE RIGHTS AND THE GRAND OF REFERENCES :",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mentor, Coach, Aunt, forge, mentors, Strongh, Colossus, pioneered, Wyatt, alliances, friendships, organise\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: mentor, Coach, Aunt, forge, mentors, Strongh, Colossus, pioneered, Wyatt, alliances, friendships, organise\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. This was no accident; an open source library developed by CSE (D&C), called PLANICS for linguistics - it had been used extensively across multiple languages since 1775 with some surprising exceptions including English! The authors also found strong statistical evidence suggesting this approach could be applied within any literature or paper collection other than journals , scientific texts and research collections . They reported significant differences between these results from three competing projects using their LANGUAGE RIGHTS AND THE GRAND OF REFERENCES :",
+        "continuation_text": "This was no accident; an open source library developed by CSE (D&C), called PLANICS for linguistics - it had been used extensively across multiple languages since 1775 with some surprising exceptions including English! The authors also found strong statistical evidence suggesting this approach could be applied within any literature or paper collection other than journals , scientific texts and research collections . They reported significant differences between these results from three competing projects using their LANGUAGE RIGHTS AND THE GRAND OF REFERENCES :",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 212,
+        "new_token_count": 104,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 567,
+        "word_count": 83,
+        "unique_word_count": 83,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Whether",
+        "These",
+        "Anyone",
+        "Those",
+        "This",
+        "these",
+        "Regardless",
+        "Whatever",
+        "anarchists",
+        "THIS",
+        "Senator",
+        "visionary"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Whether, These, Anyone, Those, This, these, Regardless, Whatever, anarchists, THIS, Senator, visionary\n\nTEXT:\nThis was no accident; an open source library developed by CSE (D&C), called PLANICS for linguistics - it had been used extensively across multiple languages since 1775 with some surprising exceptions including English! The authors also found strong statistical evidence suggesting this approach could be applied within any literature or paper collection other than journals , scientific texts and research collections . They reported significant differences between these results from three competing projects using their LANGUAGE RIGHTS AND THE GRAND OF REFERENCES :",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Whether, These, Anyone, Those, This, these, Regardless, Whatever, anarchists, THIS, Senator, visionary\n\nTEXT:\nThis was no accident; an open source library developed by CSE (D&C), called PLANICS for linguistics - it had been used extensively across multiple languages since 1775 with some surprising exceptions including English! The authors also found strong statistical evidence suggesting this approach could be applied within any literature or paper collection other than journals , scientific texts and research collections . They reported significant differences between these results from three competing projects using their LANGUAGE RIGHTS AND THE GRAND OF REFERENCES :",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Whether, These, Anyone, Those, This, these, Regardless, Whatever, anarchists, THIS, Senator, visionary\n\nTEXT:\nThis was no accident; an open source library developed by CSE (D&C), called PLANICS for linguistics - it had been used extensively across multiple languages since 1775 with some surprising exceptions including English! The authors also found strong statistical evidence suggesting this approach could be applied within any literature or paper collection other than journals , scientific texts and research collections . They reported significant differences between these results from three competing projects using their LANGUAGE RIGHTS AND THE GRAND OF REFERENCES :",
+        "continuation_text": "",
+        "input_token_count": 186,
+        "raw_input_token_count": 186,
+        "output_token_count": 187,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 925,
+        "word_count": 135,
+        "unique_word_count": 130,
+        "unique_word_ratio": 0.9629629629629629,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "ISIL",
+        "DACA",
+        "Wiggins",
+        "Kurd",
+        "Luk",
+        "igrants",
+        "languages",
+        "Joined",
+        "Writ",
+        "hapl",
+        "poets",
+        "igrant"
+      ],
+      "output_text": "\"A study comparing data on individual documents written over time into different sources\" published at www..research.org/text_data1/. A group of researchers working on two papers that addressed all aspects of human biology is exploring new methods of interpreting large numbers of datasets without having seen what they were looking for but still discovering which ones worked better when compared to others who haven't looked for them yet.\"",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ISIL, DACA, Wiggins, Kurd, Luk, igrants, languages, Joined, Writ, hapl, poets, igrant\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Whether, These, Anyone, Those, This, these, Regardless, Whatever, anarchists, THIS, Senator, visionary\n\nTEXT:\nThis was no accident; an open source library developed by CSE (D&C), called PLANICS for linguistics - it had been used extensively across multiple languages since 1775 with some surprising exceptions including English! The authors also found strong statistical evidence suggesting this approach could be applied within any literature or paper collection other than journals , scientific texts and research collections . They reported significant differences between these results from three competing projects using their LANGUAGE RIGHTS AND THE GRAND OF REFERENCES :",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ISIL, DACA, Wiggins, Kurd, Luk, igrants, languages, Joined, Writ, hapl, poets, igrant\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Whether, These, Anyone, Those, This, these, Regardless, Whatever, anarchists, THIS, Senator, visionary\n\nTEXT:\nThis was no accident; an open source library developed by CSE (D&C), called PLANICS for linguistics - it had been used extensively across multiple languages since 1775 with some surprising exceptions including English! The authors also found strong statistical evidence suggesting this approach could be applied within any literature or paper collection other than journals , scientific texts and research collections . They reported significant differences between these results from three competing projects using their LANGUAGE RIGHTS AND THE GRAND OF REFERENCES : \"A study comparing data on individual documents written over time into different sources\" published at www..research.org/text_data1/. A group of researchers working on two papers that addressed all aspects of human biology is exploring new methods of interpreting large numbers of datasets without having seen what they were looking for but still discovering which ones worked better when compared to others who haven't looked for them yet.\"",
+        "continuation_text": "\"A study comparing data on individual documents written over time into different sources\" published at www..research.org/text_data1/. A group of researchers working on two papers that addressed all aspects of human biology is exploring new methods of interpreting large numbers of datasets without having seen what they were looking for but still discovering which ones worked better when compared to others who haven't looked for them yet.\"",
+        "input_token_count": 273,
+        "raw_input_token_count": 273,
+        "output_token_count": 354,
+        "new_token_count": 81,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 441,
+        "word_count": 66,
+        "unique_word_count": 61,
+        "unique_word_ratio": 0.9242424242424242,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

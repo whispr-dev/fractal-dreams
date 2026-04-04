@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1401,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 591,
+        "word_count": 105,
+        "unique_word_count": 105,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 660,
+        "word_count": 109,
+        "unique_word_count": 109,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 554,
+        "word_count": 99,
+        "unique_word_count": 98,
+        "unique_word_ratio": 0.98989898989899,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "did",
+        "ikhail",
+        "Rachel",
+        "double",
+        "do",
+        "David",
+        "THESE",
+        "does",
+        "colm",
+        "struggled",
+        "eredith",
+        "Conversely"
+      ],
+      "output_text": "I don't know why we need such words or their definitions (the last thing this book should be about), so let me try for you! The truth is that there's no real point; an attempt at writing one sentence doesn´t help much unless all your attempts fail miserably—or when they succeed enough else will go wrong too fast without any further use of them by readers who really want some context before reading anything beyond what has already been told through our other texts on science fiction…which gives us time with these two books where nothing seems \"finished\" until now even if maybe after 30",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: did, ikhail, Rachel, double, do, David, THESE, does, colm, struggled, eredith, Conversely\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: did, ikhail, Rachel, double, do, David, THESE, does, colm, struggled, eredith, Conversely\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. I don't know why we need such words or their definitions (the last thing this book should be about), so let me try for you! The truth is that there's no real point; an attempt at writing one sentence doesn´t help much unless all your attempts fail miserably—or when they succeed enough else will go wrong too fast without any further use of them by readers who really want some context before reading anything beyond what has already been told through our other texts on science fiction…which gives us time with these two books where nothing seems \"finished\" until now even if maybe after 30",
+        "continuation_text": "I don't know why we need such words or their definitions (the last thing this book should be about), so let me try for you! The truth is that there's no real point; an attempt at writing one sentence doesn´t help much unless all your attempts fail miserably—or when they succeed enough else will go wrong too fast without any further use of them by readers who really want some context before reading anything beyond what has already been told through our other texts on science fiction…which gives us time with these two books where nothing seems \"finished\" until now even if maybe after 30",
+        "input_token_count": 115,
+        "raw_input_token_count": 115,
+        "output_token_count": 235,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 591,
+        "word_count": 105,
+        "unique_word_count": 105,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "traditional",
+        "cord",
+        "ripp",
+        "wire",
+        "Marcel",
+        "comb",
+        "behind",
+        "mull",
+        "put",
+        "med",
+        "til",
+        "decline"
+      ],
+      "output_text": "pages most people would still think it was 'good' and I won`nt have anyone tell up close how good things were just long ago because somehow nobody knew quite yet which way its going right away except perhaps my parents saying something different but suddenly having fun …in particular during Christmas break….you can find out more over here . That said though – while many authors also do clever tricks around punctuation like giving themselves space between sentences from nonstandard characters then others always catch onto those mistakes completely quickly once done very well — often using phrases less than 3 lines across instead being used 2+3 times per",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: traditional, cord, ripp, wire, Marcel, comb, behind, mull, put, med, til, decline\n\nTEXT:\nI don't know why we need such words or their definitions (the last thing this book should be about), so let me try for you! The truth is that there's no real point; an attempt at writing one sentence doesn´t help much unless all your attempts fail miserably—or when they succeed enough else will go wrong too fast without any further use of them by readers who really want some context before reading anything beyond what has already been told through our other texts on science fiction…which gives us time with these two books where nothing seems \"finished\" until now even if maybe after 30",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: traditional, cord, ripp, wire, Marcel, comb, behind, mull, put, med, til, decline\n\nTEXT:\nI don't know why we need such words or their definitions (the last thing this book should be about), so let me try for you! The truth is that there's no real point; an attempt at writing one sentence doesn´t help much unless all your attempts fail miserably—or when they succeed enough else will go wrong too fast without any further use of them by readers who really want some context before reading anything beyond what has already been told through our other texts on science fiction…which gives us time with these two books where nothing seems \"finished\" until now even if maybe after 30 pages most people would still think it was 'good' and I won`nt have anyone tell up close how good things were just long ago because somehow nobody knew quite yet which way its going right away except perhaps my parents saying something different but suddenly having fun …in particular during Christmas break….you can find out more over here . That said though – while many authors also do clever tricks around punctuation like giving themselves space between sentences from nonstandard characters then others always catch onto those mistakes completely quickly once done very well — often using phrases less than 3 lines across instead being used 2+3 times per",
+        "continuation_text": "pages most people would still think it was 'good' and I won`nt have anyone tell up close how good things were just long ago because somehow nobody knew quite yet which way its going right away except perhaps my parents saying something different but suddenly having fun …in particular during Christmas break….you can find out more over here . That said though – while many authors also do clever tricks around punctuation like giving themselves space between sentences from nonstandard characters then others always catch onto those mistakes completely quickly once done very well — often using phrases less than 3 lines across instead being used 2+3 times per",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 326,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 660,
+        "word_count": 109,
+        "unique_word_count": 109,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Deb",
+        "basis",
+        "Aside",
+        "Courtesy",
+        "deficit",
+        "Again",
+        "Photo",
+        "Ital",
+        "pages",
+        "Besides",
+        "modest",
+        "Social"
+      ],
+      "output_text": "sentence (or even 4 or 5 if you include some special case where all words end with commas) that really adds complexity for beginners so don't try any such trick there…that's fine! You may be surprised at what comes through when looking too closely yourself 🙂 But remember this is your chance by doing exercises on topo typefaces after reading them 😉\n\n [1] All symbols within an acronym will use their first letter followed immediately above each other before starting back down again ! For example \"K\" means K/A , whereas F# stands for Forth; A9 says E 9",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Deb, basis, Aside, Courtesy, deficit, Again, Photo, Ital, pages, Besides, modest, Social\n\nTEXT:\npages most people would still think it was 'good' and I won`nt have anyone tell up close how good things were just long ago because somehow nobody knew quite yet which way its going right away except perhaps my parents saying something different but suddenly having fun …in particular during Christmas break….you can find out more over here . That said though – while many authors also do clever tricks around punctuation like giving themselves space between sentences from nonstandard characters then others always catch onto those mistakes completely quickly once done very well — often using phrases less than 3 lines across instead being used 2+3 times per",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Deb, basis, Aside, Courtesy, deficit, Again, Photo, Ital, pages, Besides, modest, Social\n\nTEXT:\npages most people would still think it was 'good' and I won`nt have anyone tell up close how good things were just long ago because somehow nobody knew quite yet which way its going right away except perhaps my parents saying something different but suddenly having fun …in particular during Christmas break….you can find out more over here . That said though – while many authors also do clever tricks around punctuation like giving themselves space between sentences from nonstandard characters then others always catch onto those mistakes completely quickly once done very well — often using phrases less than 3 lines across instead being used 2+3 times per sentence (or even 4 or 5 if you include some special case where all words end with commas) that really adds complexity for beginners so don't try any such trick there…that's fine! You may be surprised at what comes through when looking too closely yourself 🙂 But remember this is your chance by doing exercises on topo typefaces after reading them 😉\n\n [1] All symbols within an acronym will use their first letter followed immediately above each other before starting back down again ! For example \"K\" means K/A , whereas F# stands for Forth; A9 says E 9",
+        "continuation_text": "sentence (or even 4 or 5 if you include some special case where all words end with commas) that really adds complexity for beginners so don't try any such trick there…that's fine! You may be surprised at what comes through when looking too closely yourself 🙂 But remember this is your chance by doing exercises on topo typefaces after reading them 😉\n\n [1] All symbols within an acronym will use their first letter followed immediately above each other before starting back down again ! For example \"K\" means K/A , whereas F# stands for Forth; A9 says E 9",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 325,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 554,
+        "word_count": 99,
+        "unique_word_count": 98,
+        "unique_word_ratio": 0.98989898989899,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

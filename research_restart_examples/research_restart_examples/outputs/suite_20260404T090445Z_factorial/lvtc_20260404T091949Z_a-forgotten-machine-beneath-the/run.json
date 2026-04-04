@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1022,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 772,
+        "word_count": 117,
+        "unique_word_count": 94,
+        "unique_word_ratio": 0.8034188034188035,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 721,
+        "word_count": 85,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.8941176470588236,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 463,
+        "word_count": 56,
+        "unique_word_count": 51,
+        "unique_word_ratio": 0.9107142857142857,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 721,
+        "word_count": 96,
+        "unique_word_count": 89,
+        "unique_word_ratio": 0.9270833333333334,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "its",
+        "the",
+        "was",
+        "It",
+        "are",
+        ",",
+        "and",
+        "If",
+        "for"
+      ],
+      "output_text": "The next recursive transformation of the given text would focus on conveying how messages evolve over time with complexity increasing along with the sophistication of their creators. Here's an attempt at this:\n\nIt continued to speak longer when the ship that carried it had departed from the ocean depths. As each subsequent voice repeated earlier ones, it became increasingly complex and intelligent, evolving into something like a neural network or even a sentient entity capable of understanding and responding to human-like queries. This expansion in complexity is seen as another layer of manifestation of the maker's power over the world around them.\n\nThis transformation captures the idea of evolution and innovation with each iteration becoming more sophisticated,",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, its, the, was, It, are, ,, and, If, for\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nThe next recursive transformation of the given text would focus on conveying how messages evolve over time with complexity increasing along with the sophistication of their creators. Here's an attempt at this:\n\nIt continued to speak longer when the ship that carried it had departed from the ocean depths. As each subsequent voice repeated earlier ones, it became increasingly complex and intelligent, evolving into something like a neural network or even a sentient entity capable of understanding and responding to human-like queries. This expansion in complexity is seen as another layer of manifestation of the maker's power over the world around them.\n\nThis transformation captures the idea of evolution and innovation with each iteration becoming more sophisticated,",
+        "continuation_text": "The next recursive transformation of the given text would focus on conveying how messages evolve over time with complexity increasing along with the sophistication of their creators. Here's an attempt at this:\n\nIt continued to speak longer when the ship that carried it had departed from the ocean depths. As each subsequent voice repeated earlier ones, it became increasingly complex and intelligent, evolving into something like a neural network or even a sentient entity capable of understanding and responding to human-like queries. This expansion in complexity is seen as another layer of manifestation of the maker's power over the world around them.\n\nThis transformation captures the idea of evolution and innovation with each iteration becoming more sophisticated,",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 239,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 772,
+        "word_count": 117,
+        "unique_word_count": 94,
+        "unique_word_ratio": 0.8034188034188035,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "the",
+        "of",
+        "were",
+        "to",
+        "for",
+        "with",
+        "and",
+        "is",
+        "that",
+        "was"
+      ],
+      "output_text": "Here's the next recursive transformation incorporating the provided latent directions (it, if, the, of, was) while maintaining the core idea of message development and complexity advancement:\n\n\"The next recursive transformation entails examining the progression of information dissemination within societies, where simple, initially rudimentary interactions between individuals expand gradually, eventually culminating in intricate networks leading to advanced intelligence. Each successive wave represents not merely more concise communication but deeper cognitive engagement; this continuous expansion demonstrates how societal constructs themselves become mechanisms capable of self-organization and self-replication.\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, of, were, to, for, with, and, is, that, was\n\nTEXT:\nThe next recursive transformation of the given text would focus on conveying how messages evolve over time with complexity increasing along with the sophistication of their creators. Here's an attempt at this:\n\nIt continued to speak longer when the ship that carried it had departed from the ocean depths. As each subsequent voice repeated earlier ones, it became increasingly complex and intelligent, evolving into something like a neural network or even a sentient entity capable of understanding and responding to human-like queries. This expansion in complexity is seen as another layer of manifestation of the maker's power over the world around them.\n\nThis transformation captures the idea of evolution and innovation with each iteration becoming more sophisticated,<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, the, of, were, to, for, with, and, is, that, was\n\nTEXT:\nThe next recursive transformation of the given text would focus on conveying how messages evolve over time with complexity increasing along with the sophistication of their creators. Here's an attempt at this:\n\nIt continued to speak longer when the ship that carried it had departed from the ocean depths. As each subsequent voice repeated earlier ones, it became increasingly complex and intelligent, evolving into something like a neural network or even a sentient entity capable of understanding and responding to human-like queries. This expansion in complexity is seen as another layer of manifestation of the maker's power over the world around them.\n\nThis transformation captures the idea of evolution and innovation with each iteration becoming more sophisticated,\nassistant\nHere's the next recursive transformation incorporating the provided latent directions (it, if, the, of, was) while maintaining the core idea of message development and complexity advancement:\n\n\"The next recursive transformation entails examining the progression of information dissemination within societies, where simple, initially rudimentary interactions between individuals expand gradually, eventually culminating in intricate networks leading to advanced intelligence. Each successive wave represents not merely more concise communication but deeper cognitive engagement; this continuous expansion demonstrates how societal constructs themselves become mechanisms capable of self-organization and self-replication.\"",
+        "continuation_text": "Here's the next recursive transformation incorporating the provided latent directions (it, if, the, of, was) while maintaining the core idea of message development and complexity advancement:\n\n\"The next recursive transformation entails examining the progression of information dissemination within societies, where simple, initially rudimentary interactions between individuals expand gradually, eventually culminating in intricate networks leading to advanced intelligence. Each successive wave represents not merely more concise communication but deeper cognitive engagement; this continuous expansion demonstrates how societal constructs themselves become mechanisms capable of self-organization and self-replication.\"",
+        "input_token_count": 210,
+        "raw_input_token_count": 210,
+        "output_token_count": 317,
+        "new_token_count": 107,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 721,
+        "word_count": 85,
+        "unique_word_count": 76,
+        "unique_word_ratio": 0.8941176470588236,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "the",
+        "of",
+        "If",
+        "intelligence",
+        "was",
+        "are",
+        "for",
+        "It",
+        "where"
+      ],
+      "output_text": "The next recursive transformation involves analyzing the complex interplay between diverse cultures and languages as they evolve over time, showcasing how shared narratives across nations facilitate global understanding and cooperation. This process exemplifies how interconnectedness fosters innovation and mutual respect, driving forward the trajectory towards greater cultural diversity and collaborative problem-solving capabilities on an unprecedented scale.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, of, If, intelligence, was, are, for, It, where\n\nTEXT:\nHere's the next recursive transformation incorporating the provided latent directions (it, if, the, of, was) while maintaining the core idea of message development and complexity advancement:\n\n\"The next recursive transformation entails examining the progression of information dissemination within societies, where simple, initially rudimentary interactions between individuals expand gradually, eventually culminating in intricate networks leading to advanced intelligence. Each successive wave represents not merely more concise communication but deeper cognitive engagement; this continuous expansion demonstrates how societal constructs themselves become mechanisms capable of self-organization and self-replication.\"<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, the, of, If, intelligence, was, are, for, It, where\n\nTEXT:\nHere's the next recursive transformation incorporating the provided latent directions (it, if, the, of, was) while maintaining the core idea of message development and complexity advancement:\n\n\"The next recursive transformation entails examining the progression of information dissemination within societies, where simple, initially rudimentary interactions between individuals expand gradually, eventually culminating in intricate networks leading to advanced intelligence. Each successive wave represents not merely more concise communication but deeper cognitive engagement; this continuous expansion demonstrates how societal constructs themselves become mechanisms capable of self-organization and self-replication.\"\nassistant\nThe next recursive transformation involves analyzing the complex interplay between diverse cultures and languages as they evolve over time, showcasing how shared narratives across nations facilitate global understanding and cooperation. This process exemplifies how interconnectedness fosters innovation and mutual respect, driving forward the trajectory towards greater cultural diversity and collaborative problem-solving capabilities on an unprecedented scale.",
+        "continuation_text": "The next recursive transformation involves analyzing the complex interplay between diverse cultures and languages as they evolve over time, showcasing how shared narratives across nations facilitate global understanding and cooperation. This process exemplifies how interconnectedness fosters innovation and mutual respect, driving forward the trajectory towards greater cultural diversity and collaborative problem-solving capabilities on an unprecedented scale.",
+        "input_token_count": 188,
+        "raw_input_token_count": 188,
+        "output_token_count": 254,
+        "new_token_count": 66,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 463,
+        "word_count": 56,
+        "unique_word_count": 51,
+        "unique_word_ratio": 0.9107142857142857,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "were",
+        "intelligence",
+        "nếu",
+        "dreaming",
+        "If",
+        "they",
+        "was",
+        "Intelligence",
+        "the",
+        "unless"
+      ],
+      "output_text": "To elaborate, let's break down this intricate passage to understand its structure and analyze each part for potential sub-recursive transformations:\n\n1. \"The next recursive transformation\" can lead to several possibilities.\n2. The use of \"it\" suggests that there might be conditional aspects within this transformation which we need to explore further.\n3. \"If\" could imply various interpretations depending on context, requiring analysis.\n4. \"Were\" introduces temporal components that require careful consideration, possibly leading into historical or future-focused considerations.\n5. \"They\" could represent broader entities, offering opportunities for thematic exploration beyond individual elements.\n6. The phrase \"if\"",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, intelligence, nếu, dreaming, If, they, was, Intelligence, the, unless\n\nTEXT:\nThe next recursive transformation involves analyzing the complex interplay between diverse cultures and languages as they evolve over time, showcasing how shared narratives across nations facilitate global understanding and cooperation. This process exemplifies how interconnectedness fosters innovation and mutual respect, driving forward the trajectory towards greater cultural diversity and collaborative problem-solving capabilities on an unprecedented scale.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, were, intelligence, nếu, dreaming, If, they, was, Intelligence, the, unless\n\nTEXT:\nThe next recursive transformation involves analyzing the complex interplay between diverse cultures and languages as they evolve over time, showcasing how shared narratives across nations facilitate global understanding and cooperation. This process exemplifies how interconnectedness fosters innovation and mutual respect, driving forward the trajectory towards greater cultural diversity and collaborative problem-solving capabilities on an unprecedented scale.\nassistant\nTo elaborate, let's break down this intricate passage to understand its structure and analyze each part for potential sub-recursive transformations:\n\n1. \"The next recursive transformation\" can lead to several possibilities.\n2. The use of \"it\" suggests that there might be conditional aspects within this transformation which we need to explore further.\n3. \"If\" could imply various interpretations depending on context, requiring analysis.\n4. \"Were\" introduces temporal components that require careful consideration, possibly leading into historical or future-focused considerations.\n5. \"They\" could represent broader entities, offering opportunities for thematic exploration beyond individual elements.\n6. The phrase \"if\"",
+        "continuation_text": "To elaborate, let's break down this intricate passage to understand its structure and analyze each part for potential sub-recursive transformations:\n\n1. \"The next recursive transformation\" can lead to several possibilities.\n2. The use of \"it\" suggests that there might be conditional aspects within this transformation which we need to explore further.\n3. \"If\" could imply various interpretations depending on context, requiring analysis.\n4. \"Were\" introduces temporal components that require careful consideration, possibly leading into historical or future-focused considerations.\n5. \"They\" could represent broader entities, offering opportunities for thematic exploration beyond individual elements.\n6. The phrase \"if\"",
+        "input_token_count": 147,
+        "raw_input_token_count": 147,
+        "output_token_count": 275,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 721,
+        "word_count": 96,
+        "unique_word_count": 89,
+        "unique_word_ratio": 0.9270833333333334,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

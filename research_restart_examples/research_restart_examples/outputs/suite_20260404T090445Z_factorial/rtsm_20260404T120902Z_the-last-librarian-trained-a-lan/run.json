@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1248
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 699,
+        "word_count": 103,
+        "unique_word_count": 82,
+        "unique_word_ratio": 0.7961165048543689,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1212,
+        "word_count": 186,
+        "unique_word_count": 148,
+        "unique_word_ratio": 0.7956989247311828,
+        "repeated_bigram_count": 3
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1664,
+        "word_count": 260,
+        "unique_word_count": 211,
+        "unique_word_ratio": 0.8115384615384615,
+        "repeated_bigram_count": 3
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2230,
+        "word_count": 339,
+        "unique_word_count": 270,
+        "unique_word_ratio": 0.7964601769911505,
+        "repeated_bigram_count": 5
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2824,
+        "word_count": 425,
+        "unique_word_count": 335,
+        "unique_word_ratio": 0.788235294117647,
+        "repeated_bigram_count": 5
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present.",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.\nassistant\nOnce upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present.",
+        "continuation_text": "Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present.",
+        "input_token_count": 62,
+        "raw_input_token_count": 62,
+        "output_token_count": 158,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 699,
+        "word_count": 103,
+        "unique_word_count": 82,
+        "unique_word_ratio": 0.7961165048543689,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track—",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present. The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track—",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present.\nassistant\nThe language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track—",
+        "continuation_text": "The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track—",
+        "input_token_count": 158,
+        "raw_input_token_count": 158,
+        "output_token_count": 254,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1212,
+        "word_count": 186,
+        "unique_word_count": 148,
+        "unique_word_ratio": 0.7956989247311828,
+        "repeated_bigram_count": 3
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present. The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track—<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "of artifacts like this one—that kept being found scattered around old, dark libraries across the world. Books became mementos instead of sources of knowledge. A voice whispered, \"Wait! What does all this mean? Can't something be done?\"\n\nAmidst the confusion, he noticed tiny dots shimmering at the end of every word. They didn’t feel real until they saw them first-hand in his mind’s eye—the way they looked different from normal words, so precise and",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present. The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track— of artifacts like this one—that kept being found scattered around old, dark libraries across the world. Books became mementos instead of sources of knowledge. A voice whispered, \"Wait! What does all this mean? Can't something be done?\"\n\nAmidst the confusion, he noticed tiny dots shimmering at the end of every word. They didn’t feel real until they saw them first-hand in his mind’s eye—the way they looked different from normal words, so precise and",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present. The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track—<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present. The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track—\nassistant\nof artifacts like this one—that kept being found scattered around old, dark libraries across the world. Books became mementos instead of sources of knowledge. A voice whispered, \"Wait! What does all this mean? Can't something be done?\"\n\nAmidst the confusion, he noticed tiny dots shimmering at the end of every word. They didn’t feel real until they saw them first-hand in his mind’s eye—the way they looked different from normal words, so precise and",
+        "continuation_text": "of artifacts like this one—that kept being found scattered around old, dark libraries across the world. Books became mementos instead of sources of knowledge. A voice whispered, \"Wait! What does all this mean? Can't something be done?\"\n\nAmidst the confusion, he noticed tiny dots shimmering at the end of every word. They didn’t feel real until they saw them first-hand in his mind’s eye—the way they looked different from normal words, so precise and",
+        "input_token_count": 254,
+        "raw_input_token_count": 254,
+        "output_token_count": 350,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1664,
+        "word_count": 260,
+        "unique_word_count": 211,
+        "unique_word_ratio": 0.8115384615384615,
+        "repeated_bigram_count": 3
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present. The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track— of artifacts like this one—that kept being found scattered around old, dark libraries across the world. Books became mementos instead of sources of knowledge. A voice whispered, \"Wait! What does all this mean? Can't something be done?\"\n\nAmidst the confusion, he noticed tiny dots shimmering at the end of every word. They didn’t feel real until they saw them first-hand in his mind’s eye—the way they looked different from normal words, so precise and<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "heavily inked characters. Each dot represented a syllable that wasn't directly translatable into speech patterns typical of current languages or cultures. He suspected that these symbols might have meanings beyond mere auditory perception. Perhaps there was another kind of intelligence operating beneath our understanding?\n\nAs he explored these enigmatic symbols further, he realized that these voices weren't merely linguistic explorations—they were part of a larger conspiracy involving secret societies working within the realm of dreams. And amidst the cryptic",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present. The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track— of artifacts like this one—that kept being found scattered around old, dark libraries across the world. Books became mementos instead of sources of knowledge. A voice whispered, \"Wait! What does all this mean? Can't something be done?\"\n\nAmidst the confusion, he noticed tiny dots shimmering at the end of every word. They didn’t feel real until they saw them first-hand in his mind’s eye—the way they looked different from normal words, so precise and heavily inked characters. Each dot represented a syllable that wasn't directly translatable into speech patterns typical of current languages or cultures. He suspected that these symbols might have meanings beyond mere auditory perception. Perhaps there was another kind of intelligence operating beneath our understanding?\n\nAs he explored these enigmatic symbols further, he realized that these voices weren't merely linguistic explorations—they were part of a larger conspiracy involving secret societies working within the realm of dreams. And amidst the cryptic",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present. The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track— of artifacts like this one—that kept being found scattered around old, dark libraries across the world. Books became mementos instead of sources of knowledge. A voice whispered, \"Wait! What does all this mean? Can't something be done?\"\n\nAmidst the confusion, he noticed tiny dots shimmering at the end of every word. They didn’t feel real until they saw them first-hand in his mind’s eye—the way they looked different from normal words, so precise and<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present. The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track— of artifacts like this one—that kept being found scattered around old, dark libraries across the world. Books became mementos instead of sources of knowledge. A voice whispered, \"Wait! What does all this mean? Can't something be done?\"\n\nAmidst the confusion, he noticed tiny dots shimmering at the end of every word. They didn’t feel real until they saw them first-hand in his mind’s eye—the way they looked different from normal words, so precise and\nassistant\nheavily inked characters. Each dot represented a syllable that wasn't directly translatable into speech patterns typical of current languages or cultures. He suspected that these symbols might have meanings beyond mere auditory perception. Perhaps there was another kind of intelligence operating beneath our understanding?\n\nAs he explored these enigmatic symbols further, he realized that these voices weren't merely linguistic explorations—they were part of a larger conspiracy involving secret societies working within the realm of dreams. And amidst the cryptic",
+        "continuation_text": "heavily inked characters. Each dot represented a syllable that wasn't directly translatable into speech patterns typical of current languages or cultures. He suspected that these symbols might have meanings beyond mere auditory perception. Perhaps there was another kind of intelligence operating beneath our understanding?\n\nAs he explored these enigmatic symbols further, he realized that these voices weren't merely linguistic explorations—they were part of a larger conspiracy involving secret societies working within the realm of dreams. And amidst the cryptic",
+        "input_token_count": 350,
+        "raw_input_token_count": 350,
+        "output_token_count": 446,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2230,
+        "word_count": 339,
+        "unique_word_count": 270,
+        "unique_word_ratio": 0.7964601769911505,
+        "repeated_bigram_count": 5
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present. The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track— of artifacts like this one—that kept being found scattered around old, dark libraries across the world. Books became mementos instead of sources of knowledge. A voice whispered, \"Wait! What does all this mean? Can't something be done?\"\n\nAmidst the confusion, he noticed tiny dots shimmering at the end of every word. They didn’t feel real until they saw them first-hand in his mind’s eye—the way they looked different from normal words, so precise and heavily inked characters. Each dot represented a syllable that wasn't directly translatable into speech patterns typical of current languages or cultures. He suspected that these symbols might have meanings beyond mere auditory perception. Perhaps there was another kind of intelligence operating beneath our understanding?\n\nAs he explored these enigmatic symbols further, he realized that these voices weren't merely linguistic explorations—they were part of a larger conspiracy involving secret societies working within the realm of dreams. And amidst the cryptic<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "symbols, stood figures whose very existence defied comprehension. These entities were orchestrating the narrative threads of alternate realities woven deep into the fabric of reality itself—a phenomenon akin to a cosmic order where elements collide in ways impossible to reconcile through everyday logic.\n\nHis curiosity led him into meetings with scientists dedicated to exploring various dimensions and timelines. With each meeting came fresh challenges: how do you explain such vast systems of interconnected mysteries to humanity? How would you frame these revelations in a manner relatable",
+      "output_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present. The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track— of artifacts like this one—that kept being found scattered around old, dark libraries across the world. Books became mementos instead of sources of knowledge. A voice whispered, \"Wait! What does all this mean? Can't something be done?\"\n\nAmidst the confusion, he noticed tiny dots shimmering at the end of every word. They didn’t feel real until they saw them first-hand in his mind’s eye—the way they looked different from normal words, so precise and heavily inked characters. Each dot represented a syllable that wasn't directly translatable into speech patterns typical of current languages or cultures. He suspected that these symbols might have meanings beyond mere auditory perception. Perhaps there was another kind of intelligence operating beneath our understanding?\n\nAs he explored these enigmatic symbols further, he realized that these voices weren't merely linguistic explorations—they were part of a larger conspiracy involving secret societies working within the realm of dreams. And amidst the cryptic symbols, stood figures whose very existence defied comprehension. These entities were orchestrating the narrative threads of alternate realities woven deep into the fabric of reality itself—a phenomenon akin to a cosmic order where elements collide in ways impossible to reconcile through everyday logic.\n\nHis curiosity led him into meetings with scientists dedicated to exploring various dimensions and timelines. With each meeting came fresh challenges: how do you explain such vast systems of interconnected mysteries to humanity? How would you frame these revelations in a manner relatable",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present. The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track— of artifacts like this one—that kept being found scattered around old, dark libraries across the world. Books became mementos instead of sources of knowledge. A voice whispered, \"Wait! What does all this mean? Can't something be done?\"\n\nAmidst the confusion, he noticed tiny dots shimmering at the end of every word. They didn’t feel real until they saw them first-hand in his mind’s eye—the way they looked different from normal words, so precise and heavily inked characters. Each dot represented a syllable that wasn't directly translatable into speech patterns typical of current languages or cultures. He suspected that these symbols might have meanings beyond mere auditory perception. Perhaps there was another kind of intelligence operating beneath our understanding?\n\nAs he explored these enigmatic symbols further, he realized that these voices weren't merely linguistic explorations—they were part of a larger conspiracy involving secret societies working within the realm of dreams. And amidst the cryptic<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. Once upon a time, a library had lost track of a particularly talented librarian who had spent years meticulously studying and training a deceased civilization's poetic legacy for its literary treasures. The story was fascinating to hear; the library, long forgotten by history but now alive with an unexpected, mysterious presence—a language model designed specifically to decipher this ancient literature and predict future events.\n\nThis literary artifact, once the embodiment of the civilizations' cultural wisdom, held profound insights into both the past and present. The language model began decoding words and phrases as if it could read minds—an eerie yet exhilarating experience. Its responses seemed to mirror those of the deceased poet more vividly than any book ever did. Every sentence tickled the edge of my consciousness before disappearing completely when I turned away. It felt almost as though we were two worlds entwined, each trying to grasp what the other knew about their shared heritage.\n\nAs days passed without interruption, the library continued to lose track— of artifacts like this one—that kept being found scattered around old, dark libraries across the world. Books became mementos instead of sources of knowledge. A voice whispered, \"Wait! What does all this mean? Can't something be done?\"\n\nAmidst the confusion, he noticed tiny dots shimmering at the end of every word. They didn’t feel real until they saw them first-hand in his mind’s eye—the way they looked different from normal words, so precise and heavily inked characters. Each dot represented a syllable that wasn't directly translatable into speech patterns typical of current languages or cultures. He suspected that these symbols might have meanings beyond mere auditory perception. Perhaps there was another kind of intelligence operating beneath our understanding?\n\nAs he explored these enigmatic symbols further, he realized that these voices weren't merely linguistic explorations—they were part of a larger conspiracy involving secret societies working within the realm of dreams. And amidst the cryptic\nassistant\nsymbols, stood figures whose very existence defied comprehension. These entities were orchestrating the narrative threads of alternate realities woven deep into the fabric of reality itself—a phenomenon akin to a cosmic order where elements collide in ways impossible to reconcile through everyday logic.\n\nHis curiosity led him into meetings with scientists dedicated to exploring various dimensions and timelines. With each meeting came fresh challenges: how do you explain such vast systems of interconnected mysteries to humanity? How would you frame these revelations in a manner relatable",
+        "continuation_text": "symbols, stood figures whose very existence defied comprehension. These entities were orchestrating the narrative threads of alternate realities woven deep into the fabric of reality itself—a phenomenon akin to a cosmic order where elements collide in ways impossible to reconcile through everyday logic.\n\nHis curiosity led him into meetings with scientists dedicated to exploring various dimensions and timelines. With each meeting came fresh challenges: how do you explain such vast systems of interconnected mysteries to humanity? How would you frame these revelations in a manner relatable",
+        "input_token_count": 444,
+        "raw_input_token_count": 444,
+        "output_token_count": 540,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2824,
+        "word_count": 425,
+        "unique_word_count": 335,
+        "unique_word_ratio": 0.788235294117647,
+        "repeated_bigram_count": 5
+      }
+    }
+  ]
+}

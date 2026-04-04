@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1453,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 621,
+        "word_count": 98,
+        "unique_word_count": 70,
+        "unique_word_ratio": 0.7142857142857143,
+        "repeated_bigram_count": 22
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 125,
+        "word_count": 22,
+        "unique_word_count": 21,
+        "unique_word_ratio": 0.9545454545454546,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 280,
+        "word_count": 50,
+        "unique_word_count": 39,
+        "unique_word_ratio": 0.78,
+        "repeated_bigram_count": 1
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "sick",
+        ".metadata",
+        "metadata",
+        "余名",
+        "نه",
+        "(/",
+        "special",
+        "ig",
+        "-rich",
+        "高品质",
+        "GT",
+        "intensive"
+      ],
+      "output_text": "The next recursive transformation could be:\n\nText: An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nTransformed Text: An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nThis is an example of concatenation using special tokens such as `(.metadata)` and `-rich` to capture specific aspects of the original content that need modification or additional elaboration. However, this would likely result in a very different story due to these hidden annotations being ignored.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nThe next recursive transformation could be:\n\nText: An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nTransformed Text: An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nThis is an example of concatenation using special tokens such as `(.metadata)` and `-rich` to capture specific aspects of the original content that need modification or additional elaboration. However, this would likely result in a very different story due to these hidden annotations being ignored.",
+        "continuation_text": "The next recursive transformation could be:\n\nText: An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nTransformed Text: An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nThis is an example of concatenation using special tokens such as `(.metadata)` and `-rich` to capture specific aspects of the original content that need modification or additional elaboration. However, this would likely result in a very different story due to these hidden annotations being ignored.",
+        "input_token_count": 120,
+        "raw_input_token_count": 120,
+        "output_token_count": 240,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 621,
+        "word_count": 98,
+        "unique_word_count": 70,
+        "unique_word_ratio": 0.7142857142857143,
+        "repeated_bigram_count": 22
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "In",
+        "According",
+        "external",
+        "one",
+        "correct",
+        "\"",
+        "incorrect",
+        "non",
+        "正しい",
+        "intrinsic",
+        "increasing",
+        "current"
+      ],
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: In, According, external, one, correct, \", incorrect, non, 正しい, intrinsic, increasing, current\n\nTEXT:\nThe next recursive transformation could be:\n\nText: An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nTransformed Text: An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nThis is an example of concatenation using special tokens such as `(.metadata)` and `-rich` to capture specific aspects of the original content that need modification or additional elaboration. However, this would likely result in a very different story due to these hidden annotations being ignored.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: In, According, external, one, correct, \", incorrect, non, 正しい, intrinsic, increasing, current\n\nTEXT:\nThe next recursive transformation could be:\n\nText: An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nTransformed Text: An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\n\nThis is an example of concatenation using special tokens such as `(.metadata)` and `-rich` to capture specific aspects of the original content that need modification or additional elaboration. However, this would likely result in a very different story due to these hidden annotations being ignored.\nassistant\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "continuation_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "input_token_count": 209,
+        "raw_input_token_count": 209,
+        "output_token_count": 236,
+        "new_token_count": 27,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 125,
+        "word_count": 22,
+        "unique_word_count": 21,
+        "unique_word_ratio": 0.9545454545454546,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "sick",
+        ".metadata",
+        "metadata",
+        "余名",
+        "نه",
+        "(/",
+        "special",
+        "ig",
+        "-rich",
+        "高品质",
+        "GT",
+        "intensive"
+      ],
+      "output_text": "1. Abandoned factory -> 城市废弃工厂  \n2. Narrated itself -> 含蓄叙述了自己  \n3. Decay -> 瘦弱或衰败  \n4. Retellings made it -> 将其改述  \n5. Less like -> 比起来不如  \n6. Rust or decay -> 起伏、动摇的感觉，或是衰退的迹象  \n7. Prayer -> 心声、祈祷声  \n8. Made it sound -> 替换了原来的表达方式  \n9. Less like rust -> 更比不起锈  \n\nNote that these",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: sick, .metadata, metadata, 余名, نه, (/, special, ig, -rich, 高品质, GT, intensive\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\n1. Abandoned factory -> 城市废弃工厂  \n2. Narrated itself -> 含蓄叙述了自己  \n3. Decay -> 瘦弱或衰败  \n4. Retellings made it -> 将其改述  \n5. Less like -> 比起来不如  \n6. Rust or decay -> 起伏、动摇的感觉，或是衰退的迹象  \n7. Prayer -> 心声、祈祷声  \n8. Made it sound -> 替换了原来的表达方式  \n9. Less like rust -> 更比不起锈  \n\nNote that these",
+        "continuation_text": "1. Abandoned factory -> 城市废弃工厂  \n2. Narrated itself -> 含蓄叙述了自己  \n3. Decay -> 瘦弱或衰败  \n4. Retellings made it -> 将其改述  \n5. Less like -> 比起来不如  \n6. Rust or decay -> 起伏、动摇的感觉，或是衰退的迹象  \n7. Prayer -> 心声、祈祷声  \n8. Made it sound -> 替换了原来的表达方式  \n9. Less like rust -> 更比不起锈  \n\nNote that these",
+        "input_token_count": 120,
+        "raw_input_token_count": 120,
+        "output_token_count": 240,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 280,
+        "word_count": 50,
+        "unique_word_count": 39,
+        "unique_word_ratio": 0.78,
+        "repeated_bigram_count": 1
+      }
+    }
+  ]
+}

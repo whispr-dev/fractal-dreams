@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "The last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1326,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 518,
+        "word_count": 92,
+        "unique_word_count": 89,
+        "unique_word_ratio": 0.967391304347826,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 827,
+        "word_count": 140,
+        "unique_word_count": 133,
+        "unique_word_ratio": 0.95,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1131,
+        "word_count": 188,
+        "unique_word_count": 135,
+        "unique_word_ratio": 0.7180851063829787,
+        "repeated_bigram_count": 37
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 118,
+        "word_count": 22,
+        "unique_word_count": 22,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        "was",
+        "have",
+        "the",
+        "is",
+        "The",
+        "has",
+        "did",
+        "that"
+      ],
+      "output_text": "That means they could not predict any future life or death at all because their words might mean certain things to them (i) as well – such as something like \"when someone dies\", or \"When there can't be another person who lives\" etc. As one writer notes, I'm sure many people agree with this claim but some argue strongly about how hard you need to do an actual study just before every new letter ends up being written? This will hopefully resolve several problems which may arise later depending upon your perspective!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, was, have, the, is, The, has, did, that\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, was, have, the, is, The, has, did, that\n\nTEXT:\nThe last librarian trained a language model on a dead civilization's poetry and discovered that its footnotes were predictions. That means they could not predict any future life or death at all because their words might mean certain things to them (i) as well – such as something like \"when someone dies\", or \"When there can't be another person who lives\" etc. As one writer notes, I'm sure many people agree with this claim but some argue strongly about how hard you need to do an actual study just before every new letter ends up being written? This will hopefully resolve several problems which may arise later depending upon your perspective!",
+        "continuation_text": "That means they could not predict any future life or death at all because their words might mean certain things to them (i) as well – such as something like \"when someone dies\", or \"When there can't be another person who lives\" etc. As one writer notes, I'm sure many people agree with this claim but some argue strongly about how hard you need to do an actual study just before every new letter ends up being written? This will hopefully resolve several problems which may arise later depending upon your perspective!",
+        "input_token_count": 102,
+        "raw_input_token_count": 102,
+        "output_token_count": 207,
+        "new_token_count": 105,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 518,
+        "word_count": 92,
+        "unique_word_count": 89,
+        "unique_word_ratio": 0.967391304347826,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "were",
+        "if",
+        "have",
+        "they",
+        "is",
+        "could",
+        "had",
+        "was",
+        "the",
+        "has"
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, have, they, is, could, had, was, the, has\n\nTEXT:\nThat means they could not predict any future life or death at all because their words might mean certain things to them (i) as well – such as something like \"when someone dies\", or \"When there can't be another person who lives\" etc. As one writer notes, I'm sure many people agree with this claim but some argue strongly about how hard you need to do an actual study just before every new letter ends up being written? This will hopefully resolve several problems which may arise later depending upon your perspective!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, have, they, is, could, had, was, the, has\n\nTEXT:\nThat means they could not predict any future life or death at all because their words might mean certain things to them (i) as well – such as something like \"when someone dies\", or \"When there can't be another person who lives\" etc. As one writer notes, I'm sure many people agree with this claim but some argue strongly about how hard you need to do an actual study just before every new letter ends up being written? This will hopefully resolve several problems which may arise later depending upon your perspective!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, have, they, is, could, had, was, the, has\n\nTEXT:\nThat means they could not predict any future life or death at all because their words might mean certain things to them (i) as well – such as something like \"when someone dies\", or \"When there can't be another person who lives\" etc. As one writer notes, I'm sure many people agree with this claim but some argue strongly about how hard you need to do an actual study just before every new letter ends up being written? This will hopefully resolve several problems which may arise later depending upon your perspective!",
+        "continuation_text": "",
+        "input_token_count": 183,
+        "raw_input_token_count": 183,
+        "output_token_count": 184,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 827,
+        "word_count": 140,
+        "unique_word_count": 133,
+        "unique_word_ratio": 0.95,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "were",
+        "is",
+        "have",
+        "if",
+        "was",
+        "had",
+        "in",
+        "the",
+        "they",
+        ","
+      ],
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, is, have, if, was, had, in, the, they, ,\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, have, they, is, could, had, was, the, has\n\nTEXT:\nThat means they could not predict any future life or death at all because their words might mean certain things to them (i) as well – such as something like \"when someone dies\", or \"When there can't be another person who lives\" etc. As one writer notes, I'm sure many people agree with this claim but some argue strongly about how hard you need to do an actual study just before every new letter ends up being written? This will hopefully resolve several problems which may arise later depending upon your perspective!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, is, have, if, was, had, in, the, they, ,\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, have, they, is, could, had, was, the, has\n\nTEXT:\nThat means they could not predict any future life or death at all because their words might mean certain things to them (i) as well – such as something like \"when someone dies\", or \"When there can't be another person who lives\" etc. As one writer notes, I'm sure many people agree with this claim but some argue strongly about how hard you need to do an actual study just before every new letter ends up being written? This will hopefully resolve several problems which may arise later depending upon your perspective!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, is, have, if, was, had, in, the, they, ,\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, have, they, is, could, had, was, the, has\n\nTEXT:\nThat means they could not predict any future life or death at all because their words might mean certain things to them (i) as well – such as something like \"when someone dies\", or \"When there can't be another person who lives\" etc. As one writer notes, I'm sure many people agree with this claim but some argue strongly about how hard you need to do an actual study just before every new letter ends up being written? This will hopefully resolve several problems which may arise later depending upon your perspective!",
+        "continuation_text": "",
+        "input_token_count": 262,
+        "raw_input_token_count": 262,
+        "output_token_count": 263,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1131,
+        "word_count": 188,
+        "unique_word_count": 135,
+        "unique_word_ratio": 0.7180851063829787,
+        "repeated_bigram_count": 37
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "are",
+        "it",
+        "were",
+        "is",
+        ",",
+        "have",
+        "in",
+        "if",
+        "was",
+        "the",
+        "had",
+        "has"
+      ],
+      "output_text": "If so please send me feedback on other ideas and see what works for yourself after finishing reading my answer here :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, it, were, is, ,, have, in, if, was, the, had, has\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, is, have, if, was, had, in, the, they, ,\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, have, they, is, could, had, was, the, has\n\nTEXT:\nThat means they could not predict any future life or death at all because their words might mean certain things to them (i) as well – such as something like \"when someone dies\", or \"When there can't be another person who lives\" etc. As one writer notes, I'm sure many people agree with this claim but some argue strongly about how hard you need to do an actual study just before every new letter ends up being written? This will hopefully resolve several problems which may arise later depending upon your perspective!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: are, it, were, is, ,, have, in, if, was, the, had, has\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, is, have, if, was, had, in, the, they, ,\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, were, if, have, they, is, could, had, was, the, has\n\nTEXT:\nThat means they could not predict any future life or death at all because their words might mean certain things to them (i) as well – such as something like \"when someone dies\", or \"When there can't be another person who lives\" etc. As one writer notes, I'm sure many people agree with this claim but some argue strongly about how hard you need to do an actual study just before every new letter ends up being written? This will hopefully resolve several problems which may arise later depending upon your perspective! If so please send me feedback on other ideas and see what works for yourself after finishing reading my answer here :)",
+        "continuation_text": "If so please send me feedback on other ideas and see what works for yourself after finishing reading my answer here :)",
+        "input_token_count": 341,
+        "raw_input_token_count": 341,
+        "output_token_count": 364,
+        "new_token_count": 23,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 118,
+        "word_count": 22,
+        "unique_word_count": 22,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

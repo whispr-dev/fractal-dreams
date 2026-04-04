@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1164
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 660,
+        "word_count": 103,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.8737864077669902,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1097,
+        "word_count": 169,
+        "unique_word_count": 144,
+        "unique_word_ratio": 0.8520710059171598,
+        "repeated_bigram_count": 4
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1539,
+        "word_count": 235,
+        "unique_word_count": 193,
+        "unique_word_ratio": 0.8212765957446808,
+        "repeated_bigram_count": 5
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 2061,
+        "word_count": 315,
+        "unique_word_count": 256,
+        "unique_word_ratio": 0.8126984126984127,
+        "repeated_bigram_count": 5
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2388,
+        "word_count": 368,
+        "unique_word_count": 304,
+        "unique_word_ratio": 0.8260869565217391,
+        "repeated_bigram_count": 5
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\nA shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues",
+        "continuation_text": "A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues",
+        "input_token_count": 68,
+        "raw_input_token_count": 68,
+        "output_token_count": 164,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 660,
+        "word_count": 103,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.8737864077669902,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at.",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues\nassistant\nin the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at.",
+        "continuation_text": "in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at.",
+        "input_token_count": 164,
+        "raw_input_token_count": 164,
+        "output_token_count": 248,
+        "new_token_count": 84,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1097,
+        "word_count": 169,
+        "unique_word_count": 144,
+        "unique_word_ratio": 0.8520710059171598,
+        "repeated_bigram_count": 4
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "Another evening follows as the world comes alive under the night's cloak. The observatory remains untouched yet unseen, a testament to man's fascination with nature's mechanics. Yet another chance is born when something inexplicable appears suddenly across the fields of sunlight. The heart-burning whispers grow louder as we realize it isn’t even just a specter; it’s one of humanity's most enigmatic creations... a clockwork cosmos itself!",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at. Another evening follows as the world comes alive under the night's cloak. The observatory remains untouched yet unseen, a testament to man's fascination with nature's mechanics. Yet another chance is born when something inexplicable appears suddenly across the fields of sunlight. The heart-burning whispers grow louder as we realize it isn’t even just a specter; it’s one of humanity's most enigmatic creations... a clockwork cosmos itself!",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at.\nassistant\nAnother evening follows as the world comes alive under the night's cloak. The observatory remains untouched yet unseen, a testament to man's fascination with nature's mechanics. Yet another chance is born when something inexplicable appears suddenly across the fields of sunlight. The heart-burning whispers grow louder as we realize it isn’t even just a specter; it’s one of humanity's most enigmatic creations... a clockwork cosmos itself!",
+        "continuation_text": "Another evening follows as the world comes alive under the night's cloak. The observatory remains untouched yet unseen, a testament to man's fascination with nature's mechanics. Yet another chance is born when something inexplicable appears suddenly across the fields of sunlight. The heart-burning whispers grow louder as we realize it isn’t even just a specter; it’s one of humanity's most enigmatic creations... a clockwork cosmos itself!",
+        "input_token_count": 247,
+        "raw_input_token_count": 247,
+        "output_token_count": 334,
+        "new_token_count": 87,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1539,
+        "word_count": 235,
+        "unique_word_count": 193,
+        "unique_word_ratio": 0.8212765957446808,
+        "repeated_bigram_count": 5
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at. Another evening follows as the world comes alive under the night's cloak. The observatory remains untouched yet unseen, a testament to man's fascination with nature's mechanics. Yet another chance is born when something inexplicable appears suddenly across the fields of sunlight. The heart-burning whispers grow louder as we realize it isn’t even just a specter; it’s one of humanity's most enigmatic creations... a clockwork cosmos itself!<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "Another day has begun, marked by the ceaseless murmurings that fill the ancient obsidian corridors. Each rustle carried echoes of a lost quest, taunting those who dared close their eyes against these shadows. Ahead lurked an unknown source, a secret portal from which light might forever vanish, threatening all who dare venture into the realm where machines whispered truths about the stars themselves - a universe beyond our comprehension, cloaked in perpetual twilight. Every morning brought new revelations of twisted",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at. Another evening follows as the world comes alive under the night's cloak. The observatory remains untouched yet unseen, a testament to man's fascination with nature's mechanics. Yet another chance is born when something inexplicable appears suddenly across the fields of sunlight. The heart-burning whispers grow louder as we realize it isn’t even just a specter; it’s one of humanity's most enigmatic creations... a clockwork cosmos itself! Another day has begun, marked by the ceaseless murmurings that fill the ancient obsidian corridors. Each rustle carried echoes of a lost quest, taunting those who dared close their eyes against these shadows. Ahead lurked an unknown source, a secret portal from which light might forever vanish, threatening all who dare venture into the realm where machines whispered truths about the stars themselves - a universe beyond our comprehension, cloaked in perpetual twilight. Every morning brought new revelations of twisted",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at. Another evening follows as the world comes alive under the night's cloak. The observatory remains untouched yet unseen, a testament to man's fascination with nature's mechanics. Yet another chance is born when something inexplicable appears suddenly across the fields of sunlight. The heart-burning whispers grow louder as we realize it isn’t even just a specter; it’s one of humanity's most enigmatic creations... a clockwork cosmos itself!<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at. Another evening follows as the world comes alive under the night's cloak. The observatory remains untouched yet unseen, a testament to man's fascination with nature's mechanics. Yet another chance is born when something inexplicable appears suddenly across the fields of sunlight. The heart-burning whispers grow louder as we realize it isn’t even just a specter; it’s one of humanity's most enigmatic creations... a clockwork cosmos itself!\nassistant\nAnother day has begun, marked by the ceaseless murmurings that fill the ancient obsidian corridors. Each rustle carried echoes of a lost quest, taunting those who dared close their eyes against these shadows. Ahead lurked an unknown source, a secret portal from which light might forever vanish, threatening all who dare venture into the realm where machines whispered truths about the stars themselves - a universe beyond our comprehension, cloaked in perpetual twilight. Every morning brought new revelations of twisted",
+        "continuation_text": "Another day has begun, marked by the ceaseless murmurings that fill the ancient obsidian corridors. Each rustle carried echoes of a lost quest, taunting those who dared close their eyes against these shadows. Ahead lurked an unknown source, a secret portal from which light might forever vanish, threatening all who dare venture into the realm where machines whispered truths about the stars themselves - a universe beyond our comprehension, cloaked in perpetual twilight. Every morning brought new revelations of twisted",
+        "input_token_count": 333,
+        "raw_input_token_count": 333,
+        "output_token_count": 429,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2061,
+        "word_count": 315,
+        "unique_word_count": 256,
+        "unique_word_ratio": 0.8126984126984127,
+        "repeated_bigram_count": 5
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at. Another evening follows as the world comes alive under the night's cloak. The observatory remains untouched yet unseen, a testament to man's fascination with nature's mechanics. Yet another chance is born when something inexplicable appears suddenly across the fields of sunlight. The heart-burning whispers grow louder as we realize it isn’t even just a specter; it’s one of humanity's most enigmatic creations... a clockwork cosmos itself! Another day has begun, marked by the ceaseless murmurings that fill the ancient obsidian corridors. Each rustle carried echoes of a lost quest, taunting those who dared close their eyes against these shadows. Ahead lurked an unknown source, a secret portal from which light might forever vanish, threatening all who dare venture into the realm where machines whispered truths about the stars themselves - a universe beyond our comprehension, cloaked in perpetual twilight. Every morning brought new revelations of twisted<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "relics et mysteries sans fin... a cosmos qui semble vivant au fond d'un espace inutilisé. La douceur sereine revient, mélange de la nuit bleue éclatante avec l'étoile. Les créatures qui habitent ces ruines se dressent sous les signes des gales que résonnent sur le chapelet nocturne et font sourire les ombres géantes derrière",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at. Another evening follows as the world comes alive under the night's cloak. The observatory remains untouched yet unseen, a testament to man's fascination with nature's mechanics. Yet another chance is born when something inexplicable appears suddenly across the fields of sunlight. The heart-burning whispers grow louder as we realize it isn’t even just a specter; it’s one of humanity's most enigmatic creations... a clockwork cosmos itself! Another day has begun, marked by the ceaseless murmurings that fill the ancient obsidian corridors. Each rustle carried echoes of a lost quest, taunting those who dared close their eyes against these shadows. Ahead lurked an unknown source, a secret portal from which light might forever vanish, threatening all who dare venture into the realm where machines whispered truths about the stars themselves - a universe beyond our comprehension, cloaked in perpetual twilight. Every morning brought new revelations of twisted relics et mysteries sans fin... a cosmos qui semble vivant au fond d'un espace inutilisé. La douceur sereine revient, mélange de la nuit bleue éclatante avec l'étoile. Les créatures qui habitent ces ruines se dressent sous les signes des gales que résonnent sur le chapelet nocturne et font sourire les ombres géantes derrière",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at. Another evening follows as the world comes alive under the night's cloak. The observatory remains untouched yet unseen, a testament to man's fascination with nature's mechanics. Yet another chance is born when something inexplicable appears suddenly across the fields of sunlight. The heart-burning whispers grow louder as we realize it isn’t even just a specter; it’s one of humanity's most enigmatic creations... a clockwork cosmos itself! Another day has begun, marked by the ceaseless murmurings that fill the ancient obsidian corridors. Each rustle carried echoes of a lost quest, taunting those who dared close their eyes against these shadows. Ahead lurked an unknown source, a secret portal from which light might forever vanish, threatening all who dare venture into the realm where machines whispered truths about the stars themselves - a universe beyond our comprehension, cloaked in perpetual twilight. Every morning brought new revelations of twisted<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. A shadow loomed over the observatory ruins, its presence unsettling the peacefulness of the dark night sky. The wind howled through the barren landscape, whispering ominous secrets beneath the silent darkness. Inside, the eerie maps that once defined celestial paths now seemed distorted and blurred by forgotten machines, their intricate designs hauntingly elusive amidst the chaos. The air grew cold with anticipation, every gust carrying whispers of impending doom or warnings from past events. As dawn broke, casting golden hues in the horizon, signs of what once lay dormant emerged: faint hints of light breaking through the oppressive gloom. But this time, they didn't offer hope but instead stirred fears deeper still. The skies remained ever-changing, each patch a mystery waiting for discovery within. In the silence stretched between sunspots, whispers began reverberating, revealing secrets far more sinister than any mundane shadowy artifact could hint at. Another evening follows as the world comes alive under the night's cloak. The observatory remains untouched yet unseen, a testament to man's fascination with nature's mechanics. Yet another chance is born when something inexplicable appears suddenly across the fields of sunlight. The heart-burning whispers grow louder as we realize it isn’t even just a specter; it’s one of humanity's most enigmatic creations... a clockwork cosmos itself! Another day has begun, marked by the ceaseless murmurings that fill the ancient obsidian corridors. Each rustle carried echoes of a lost quest, taunting those who dared close their eyes against these shadows. Ahead lurked an unknown source, a secret portal from which light might forever vanish, threatening all who dare venture into the realm where machines whispered truths about the stars themselves - a universe beyond our comprehension, cloaked in perpetual twilight. Every morning brought new revelations of twisted\nassistant\nrelics et mysteries sans fin... a cosmos qui semble vivant au fond d'un espace inutilisé. La douceur sereine revient, mélange de la nuit bleue éclatante avec l'étoile. Les créatures qui habitent ces ruines se dressent sous les signes des gales que résonnent sur le chapelet nocturne et font sourire les ombres géantes derrière",
+        "continuation_text": "relics et mysteries sans fin... a cosmos qui semble vivant au fond d'un espace inutilisé. La douceur sereine revient, mélange de la nuit bleue éclatante avec l'étoile. Les créatures qui habitent ces ruines se dressent sous les signes des gales que résonnent sur le chapelet nocturne et font sourire les ombres géantes derrière",
+        "input_token_count": 429,
+        "raw_input_token_count": 429,
+        "output_token_count": 525,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2388,
+        "word_count": 368,
+        "unique_word_count": 304,
+        "unique_word_ratio": 0.8260869565217391,
+        "repeated_bigram_count": 5
+      }
+    }
+  ]
+}

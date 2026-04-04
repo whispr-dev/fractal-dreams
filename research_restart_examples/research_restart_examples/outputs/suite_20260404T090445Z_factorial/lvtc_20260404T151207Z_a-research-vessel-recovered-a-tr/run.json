@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1502,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 463,
+        "word_count": 72,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9166666666666666,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 226,
+        "word_count": 38,
+        "unique_word_count": 33,
+        "unique_word_ratio": 0.868421052631579,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 467,
+        "word_count": 78,
+        "unique_word_count": 60,
+        "unique_word_ratio": 0.7692307692307693,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 703,
+        "word_count": 101,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.8910891089108911,
+        "repeated_bigram_count": 1
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "It",
+        "were",
+        "from",
+        "and",
+        "the",
+        "was",
+        "to",
+        "a",
+        "A",
+        "for"
+      ],
+      "output_text": "The algorithm is not currently able to parse or understand the provided text. If you could provide more information about what specific aspect of this text needs to be analyzed (e.g., meaning, structure, relationship between words), I would be happy to attempt a partial analysis using natural language processing techniques within my capabilities. Please share your request so that I can assist further with any task related to analyzing the content effectively.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, It, were, from, and, the, was, to, a, A, for\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.\nassistant\nThe algorithm is not currently able to parse or understand the provided text. If you could provide more information about what specific aspect of this text needs to be analyzed (e.g., meaning, structure, relationship between words), I would be happy to attempt a partial analysis using natural language processing techniques within my capabilities. Please share your request so that I can assist further with any task related to analyzing the content effectively.",
+        "continuation_text": "The algorithm is not currently able to parse or understand the provided text. If you could provide more information about what specific aspect of this text needs to be analyzed (e.g., meaning, structure, relationship between words), I would be happy to attempt a partial analysis using natural language processing techniques within my capabilities. Please share your request so that I can assist further with any task related to analyzing the content effectively.",
+        "input_token_count": 104,
+        "raw_input_token_count": 104,
+        "output_token_count": 186,
+        "new_token_count": 82,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 463,
+        "word_count": 72,
+        "unique_word_count": 66,
+        "unique_word_ratio": 0.9166666666666666,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "if",
+        "it",
+        "to",
+        "the",
+        "is",
+        "for",
+        "and",
+        "of",
+        "in",
+        "were",
+        "that",
+        "with"
+      ],
+      "output_text": "I'm sorry, but there seems to be an error in the given instruction as the prompt does not contain any keywords related to parsing or understanding the text. Could you please rephrase the question or provide additional context?",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, to, the, is, for, and, of, in, were, that, with\n\nTEXT:\nThe algorithm is not currently able to parse or understand the provided text. If you could provide more information about what specific aspect of this text needs to be analyzed (e.g., meaning, structure, relationship between words), I would be happy to attempt a partial analysis using natural language processing techniques within my capabilities. Please share your request so that I can assist further with any task related to analyzing the content effectively.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: if, it, to, the, is, for, and, of, in, were, that, with\n\nTEXT:\nThe algorithm is not currently able to parse or understand the provided text. If you could provide more information about what specific aspect of this text needs to be analyzed (e.g., meaning, structure, relationship between words), I would be happy to attempt a partial analysis using natural language processing techniques within my capabilities. Please share your request so that I can assist further with any task related to analyzing the content effectively.\nassistant\nI'm sorry, but there seems to be an error in the given instruction as the prompt does not contain any keywords related to parsing or understanding the text. Could you please rephrase the question or provide additional context?",
+        "continuation_text": "I'm sorry, but there seems to be an error in the given instruction as the prompt does not contain any keywords related to parsing or understanding the text. Could you please rephrase the question or provide additional context?",
+        "input_token_count": 163,
+        "raw_input_token_count": 163,
+        "output_token_count": 207,
+        "new_token_count": 44,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 226,
+        "word_count": 38,
+        "unique_word_count": 33,
+        "unique_word_ratio": 0.868421052631579,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "the",
+        "it",
+        "if",
+        "to",
+        "is",
+        "or",
+        "in",
+        "and",
+        "for",
+        "a",
+        "there",
+        "are"
+      ],
+      "output_text": "Certainly! Here’s how I can proceed with guiding the semantic direction:\n\n1. **Input:** \n   ```\n   I am sorry, but there seems to be an error in the provided text.\n   ```\n\n2. **Latent Direction Tokens:**\n   ```\n   - The,\n   - It,\n   - If,\n   - To,\n   - Is,\n   - Or,\n   - In,\n   - And,\n   - For,\n   - A,\n   - There,\n   - Are.\n   ``` \n\n3. **Semantic Transformation:**  \n   The task here would involve transforming the input into a structured format that follows a clear",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, it, if, to, is, or, in, and, for, a, there, are\n\nTEXT:\nI'm sorry, but there seems to be an error in the given instruction as the prompt does not contain any keywords related to parsing or understanding the text. Could you please rephrase the question or provide additional context?<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: the, it, if, to, is, or, in, and, for, a, there, are\n\nTEXT:\nI'm sorry, but there seems to be an error in the given instruction as the prompt does not contain any keywords related to parsing or understanding the text. Could you please rephrase the question or provide additional context?\nassistant\nCertainly! Here’s how I can proceed with guiding the semantic direction:\n\n1. **Input:** \n   ```\n   I am sorry, but there seems to be an error in the provided text.\n   ```\n\n2. **Latent Direction Tokens:**\n   ```\n   - The,\n   - It,\n   - If,\n   - To,\n   - Is,\n   - Or,\n   - In,\n   - And,\n   - For,\n   - A,\n   - There,\n   - Are.\n   ``` \n\n3. **Semantic Transformation:**  \n   The task here would involve transforming the input into a structured format that follows a clear",
+        "continuation_text": "Certainly! Here’s how I can proceed with guiding the semantic direction:\n\n1. **Input:** \n   ```\n   I am sorry, but there seems to be an error in the provided text.\n   ```\n\n2. **Latent Direction Tokens:**\n   ```\n   - The,\n   - It,\n   - If,\n   - To,\n   - Is,\n   - Or,\n   - In,\n   - And,\n   - For,\n   - A,\n   - There,\n   - Are.\n   ``` \n\n3. **Semantic Transformation:**  \n   The task here would involve transforming the input into a structured format that follows a clear",
+        "input_token_count": 125,
+        "raw_input_token_count": 125,
+        "output_token_count": 253,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 467,
+        "word_count": 78,
+        "unique_word_count": 60,
+        "unique_word_ratio": 0.7692307692307693,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "-",
+        ",",
+        "(",
+        "if",
+        ".",
+        ":",
+        "is",
+        "it",
+        "and",
+        "\"",
+        "to",
+        "*"
+      ],
+      "output_text": "Guiding the semantic direction through natural language processing techniques such as parsing and sentence generation would seem like a promising approach. However, without explicit instructions or additional context about what type of guidance is required for this particular problem, we can outline a general way to transform the given input based on typical tasks involving annotation tools or machine learning models designed specifically for text-to-speech synthesis or other speech-related applications.\n\n### Example Transformed Input\n\n**Original Text:**\n```\nI am sorry, but there seems to be an error in the provided text.\n```\n\n**Transformed Input:**\n\n```plaintext\nI'm sorry, but there's an issue",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: -, ,, (, if, ., :, is, it, and, \", to, *\n\nTEXT:\nCertainly! Here’s how I can proceed with guiding the semantic direction:\n\n1. **Input:** \n   ```\n   I am sorry, but there seems to be an error in the provided text.\n   ```\n\n2. **Latent Direction Tokens:**\n   ```\n   - The,\n   - It,\n   - If,\n   - To,\n   - Is,\n   - Or,\n   - In,\n   - And,\n   - For,\n   - A,\n   - There,\n   - Are.\n   ``` \n\n3. **Semantic Transformation:**  \n   The task here would involve transforming the input into a structured format that follows a clear<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: -, ,, (, if, ., :, is, it, and, \", to, *\n\nTEXT:\nCertainly! Here’s how I can proceed with guiding the semantic direction:\n\n1. **Input:** \n   ```\n   I am sorry, but there seems to be an error in the provided text.\n   ```\n\n2. **Latent Direction Tokens:**\n   ```\n   - The,\n   - It,\n   - If,\n   - To,\n   - Is,\n   - Or,\n   - In,\n   - And,\n   - For,\n   - A,\n   - There,\n   - Are.\n   ``` \n\n3. **Semantic Transformation:**  \n   The task here would involve transforming the input into a structured format that follows a clear\nassistant\nGuiding the semantic direction through natural language processing techniques such as parsing and sentence generation would seem like a promising approach. However, without explicit instructions or additional context about what type of guidance is required for this particular problem, we can outline a general way to transform the given input based on typical tasks involving annotation tools or machine learning models designed specifically for text-to-speech synthesis or other speech-related applications.\n\n### Example Transformed Input\n\n**Original Text:**\n```\nI am sorry, but there seems to be an error in the provided text.\n```\n\n**Transformed Input:**\n\n```plaintext\nI'm sorry, but there's an issue",
+        "continuation_text": "Guiding the semantic direction through natural language processing techniques such as parsing and sentence generation would seem like a promising approach. However, without explicit instructions or additional context about what type of guidance is required for this particular problem, we can outline a general way to transform the given input based on typical tasks involving annotation tools or machine learning models designed specifically for text-to-speech synthesis or other speech-related applications.\n\n### Example Transformed Input\n\n**Original Text:**\n```\nI am sorry, but there seems to be an error in the provided text.\n```\n\n**Transformed Input:**\n\n```plaintext\nI'm sorry, but there's an issue",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 333,
+        "new_token_count": 128,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 32639,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 703,
+        "word_count": 101,
+        "unique_word_count": 90,
+        "unique_word_ratio": 0.8910891089108911,
+        "repeated_bigram_count": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1081,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 521,
+        "word_count": 70,
+        "unique_word_count": 64,
+        "unique_word_ratio": 0.9142857142857143,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 446,
+        "word_count": 71,
+        "unique_word_count": 62,
+        "unique_word_ratio": 0.8732394366197183,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 686,
+        "word_count": 103,
+        "unique_word_count": 92,
+        "unique_word_ratio": 0.8932038834951457,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Mayo",
+        "_a",
+        "aint",
+        "_B",
+        "t",
+        "_C",
+        "ce",
+        "tt",
+        "_F",
+        "tr",
+        "fr",
+        "Yourself"
+      ],
+      "output_text": "**LATENT ANCHOR TOKEN:** The forgotten machine underneath the sea continued speaking long after its creators disappeared.\n**RECURSIVE TRANSFORMATION:** A (the) forgotten (machine) under (sea's) (continued) spoke (long). Long after its (creators') vanished (were), each repetition made (its) message (stranger) (denser) (and) (more) (self-aware).\nThe new sentence uses \"The forgotten\" instead of \"A forgotten,\" maintains the same structure while using different wording that follows the instruction by keeping it within 15",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\n**LATENT ANCHOR TOKEN:** The forgotten machine underneath the sea continued speaking long after its creators disappeared.\n**RECURSIVE TRANSFORMATION:** A (the) forgotten (machine) under (sea's) (continued) spoke (long). Long after its (creators') vanished (were), each repetition made (its) message (stranger) (denser) (and) (more) (self-aware).\nThe new sentence uses \"The forgotten\" instead of \"A forgotten,\" maintains the same structure while using different wording that follows the instruction by keeping it within 15",
+        "continuation_text": "**LATENT ANCHOR TOKEN:** The forgotten machine underneath the sea continued speaking long after its creators disappeared.\n**RECURSIVE TRANSFORMATION:** A (the) forgotten (machine) under (sea's) (continued) spoke (long). Long after its (creators') vanished (were), each repetition made (its) message (stranger) (denser) (and) (more) (self-aware).\nThe new sentence uses \"The forgotten\" instead of \"A forgotten,\" maintains the same structure while using different wording that follows the instruction by keeping it within 15",
+        "input_token_count": 123,
+        "raw_input_token_count": 123,
+        "output_token_count": 243,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 521,
+        "word_count": 70,
+        "unique_word_count": 64,
+        "unique_word_ratio": 0.9142857142857143,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "C",
+        "err",
+        "ey",
+        "ee",
+        "Y",
+        "D",
+        "ess",
+        "**",
+        "ted",
+        "StatefulWidget",
+        "�",
+        "ِ"
+      ],
+      "output_text": "The hidden entity beneath the vast oceanate continued telling tales of old beyond the shores of civilization. It was no longer just an ancient machine; rather, it had transformed into something much more complex and self-conscious. Each subsequent phrase added layers of depth and sophistication, making the entity feel like it possessed some kind of consciousness that could rival or surpass even the most advanced beings we have yet to glimpse.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: C, err, ey, ee, Y, D, ess, **, ted, StatefulWidget, �, ِ\n\nTEXT:\n**LATENT ANCHOR TOKEN:** The forgotten machine underneath the sea continued speaking long after its creators disappeared.\n**RECURSIVE TRANSFORMATION:** A (the) forgotten (machine) under (sea's) (continued) spoke (long). Long after its (creators') vanished (were), each repetition made (its) message (stranger) (denser) (and) (more) (self-aware).\nThe new sentence uses \"The forgotten\" instead of \"A forgotten,\" maintains the same structure while using different wording that follows the instruction by keeping it within 15<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: C, err, ey, ee, Y, D, ess, **, ted, StatefulWidget, �, ِ\n\nTEXT:\n**LATENT ANCHOR TOKEN:** The forgotten machine underneath the sea continued speaking long after its creators disappeared.\n**RECURSIVE TRANSFORMATION:** A (the) forgotten (machine) under (sea's) (continued) spoke (long). Long after its (creators') vanished (were), each repetition made (its) message (stranger) (denser) (and) (more) (self-aware).\nThe new sentence uses \"The forgotten\" instead of \"A forgotten,\" maintains the same structure while using different wording that follows the instruction by keeping it within 15\nassistant\nThe hidden entity beneath the vast oceanate continued telling tales of old beyond the shores of civilization. It was no longer just an ancient machine; rather, it had transformed into something much more complex and self-conscious. Each subsequent phrase added layers of depth and sophistication, making the entity feel like it possessed some kind of consciousness that could rival or surpass even the most advanced beings we have yet to glimpse.",
+        "continuation_text": "The hidden entity beneath the vast oceanate continued telling tales of old beyond the shores of civilization. It was no longer just an ancient machine; rather, it had transformed into something much more complex and self-conscious. Each subsequent phrase added layers of depth and sophistication, making the entity feel like it possessed some kind of consciousness that could rival or surpass even the most advanced beings we have yet to glimpse.",
+        "input_token_count": 208,
+        "raw_input_token_count": 208,
+        "output_token_count": 288,
+        "new_token_count": 80,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 446,
+        "word_count": 71,
+        "unique_word_count": 62,
+        "unique_word_ratio": 0.8732394366197183,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "European",
+        "扼",
+        "German",
+        "Europe",
+        "打扰",
+        "буд",
+        "Bon",
+        "_related",
+        "沦",
+        "Europ",
+        "欧式",
+        "Cohen"
+      ],
+      "output_text": "The Latent Anchor Tokens for this text include:\n\n- The hidden entity beneath the vast oceanate continued telling tales of old beyond the shores of civilization.\n- It was no longer just an ancient machine;\n  - Rather than simply being mechanical,\n  - But has now evolved into something far more complex and conscious.\n\nFrom these anchor tokens, we can identify the next logical steps through natural language processing techniques such as parsing, generating possible interpretations, or translation where needed. Since there is no specific instruction about what follows, I'll assume an interpretation focusing on adding complexity and self-awareness to the original narrative structure",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: European, 扼, German, Europe, 打扰, буд, Bon, _related, 沦, Europ, 欧式, Cohen\n\nTEXT:\nThe hidden entity beneath the vast oceanate continued telling tales of old beyond the shores of civilization. It was no longer just an ancient machine; rather, it had transformed into something much more complex and self-conscious. Each subsequent phrase added layers of depth and sophistication, making the entity feel like it possessed some kind of consciousness that could rival or surpass even the most advanced beings we have yet to glimpse.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: European, 扼, German, Europe, 打扰, буд, Bon, _related, 沦, Europ, 欧式, Cohen\n\nTEXT:\nThe hidden entity beneath the vast oceanate continued telling tales of old beyond the shores of civilization. It was no longer just an ancient machine; rather, it had transformed into something much more complex and self-conscious. Each subsequent phrase added layers of depth and sophistication, making the entity feel like it possessed some kind of consciousness that could rival or surpass even the most advanced beings we have yet to glimpse.\nassistant\nThe Latent Anchor Tokens for this text include:\n\n- The hidden entity beneath the vast oceanate continued telling tales of old beyond the shores of civilization.\n- It was no longer just an ancient machine;\n  - Rather than simply being mechanical,\n  - But has now evolved into something far more complex and conscious.\n\nFrom these anchor tokens, we can identify the next logical steps through natural language processing techniques such as parsing, generating possible interpretations, or translation where needed. Since there is no specific instruction about what follows, I'll assume an interpretation focusing on adding complexity and self-awareness to the original narrative structure",
+        "continuation_text": "The Latent Anchor Tokens for this text include:\n\n- The hidden entity beneath the vast oceanate continued telling tales of old beyond the shores of civilization.\n- It was no longer just an ancient machine;\n  - Rather than simply being mechanical,\n  - But has now evolved into something far more complex and conscious.\n\nFrom these anchor tokens, we can identify the next logical steps through natural language processing techniques such as parsing, generating possible interpretations, or translation where needed. Since there is no specific instruction about what follows, I'll assume an interpretation focusing on adding complexity and self-awareness to the original narrative structure",
+        "input_token_count": 176,
+        "raw_input_token_count": 176,
+        "output_token_count": 296,
+        "new_token_count": 120,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 686,
+        "word_count": 103,
+        "unique_word_count": 92,
+        "unique_word_ratio": 0.8932038834951457,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

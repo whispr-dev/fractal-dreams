@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1468
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 334,
+        "word_count": 56,
+        "unique_word_count": 55,
+        "unique_word_ratio": 0.9821428571428571,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 605,
+        "word_count": 108,
+        "unique_word_count": 101,
+        "unique_word_ratio": 0.9351851851851852,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1364,
+        "word_count": 238,
+        "unique_word_count": 122,
+        "unique_word_ratio": 0.5126050420168067,
+        "repeated_bigram_count": 107
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1907,
+        "word_count": 326,
+        "unique_word_count": 205,
+        "unique_word_ratio": 0.6288343558282209,
+        "repeated_bigram_count": 108
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2248,
+        "word_count": 361,
+        "unique_word_count": 238,
+        "unique_word_ratio": 0.6592797783933518,
+        "repeated_bigram_count": 108
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+      "delta_text": "A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead).",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead).",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead).",
+        "continuation_text": "A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead).",
+        "input_token_count": 60,
+        "raw_input_token_count": 60,
+        "output_token_count": 98,
+        "new_token_count": 38,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 334,
+        "word_count": 56,
+        "unique_word_count": 55,
+        "unique_word_ratio": 0.9821428571428571,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead).",
+      "delta_text": "This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;)",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead).",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;)",
+        "continuation_text": "This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;)",
+        "input_token_count": 97,
+        "raw_input_token_count": 97,
+        "output_token_count": 155,
+        "new_token_count": 58,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 605,
+        "word_count": 108,
+        "unique_word_count": 101,
+        "unique_word_ratio": 0.9351851851851852,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;)",
+      "delta_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;)",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;)",
+        "continuation_text": "",
+        "input_token_count": 153,
+        "raw_input_token_count": 153,
+        "output_token_count": 154,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1364,
+        "word_count": 238,
+        "unique_word_count": 122,
+        "unique_word_ratio": 0.5126050420168067,
+        "repeated_bigram_count": 107
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;)",
+      "delta_text": "You were one person who was also given permission to ask questions at large - if any information is important; then what would happen next? Is there anything wrong doing because all answers can vary depending upon specific needs! However, since most people know these requirements better than many do they make them easier to understand even now... Here's my first choice :) Let's face it: Our primary goal here is to build how complex memory models represent real situations which may involve working backwards compatibility between hardware",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You were one person who was also given permission to ask questions at large - if any information is important; then what would happen next? Is there anything wrong doing because all answers can vary depending upon specific needs! However, since most people know these requirements better than many do they make them easier to understand even now... Here's my first choice :) Let's face it: Our primary goal here is to build how complex memory models represent real situations which may involve working backwards compatibility between hardware",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You were one person who was also given permission to ask questions at large - if any information is important; then what would happen next? Is there anything wrong doing because all answers can vary depending upon specific needs! However, since most people know these requirements better than many do they make them easier to understand even now... Here's my first choice :) Let's face it: Our primary goal here is to build how complex memory models represent real situations which may involve working backwards compatibility between hardware",
+        "continuation_text": "You were one person who was also given permission to ask questions at large - if any information is important; then what would happen next? Is there anything wrong doing because all answers can vary depending upon specific needs! However, since most people know these requirements better than many do they make them easier to understand even now... Here's my first choice :) Let's face it: Our primary goal here is to build how complex memory models represent real situations which may involve working backwards compatibility between hardware",
+        "input_token_count": 306,
+        "raw_input_token_count": 306,
+        "output_token_count": 402,
+        "new_token_count": 96,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1907,
+        "word_count": 326,
+        "unique_word_count": 205,
+        "unique_word_ratio": 0.6288343558282209,
+        "repeated_bigram_count": 108
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You were one person who was also given permission to ask questions at large - if any information is important; then what would happen next? Is there anything wrong doing because all answers can vary depending upon specific needs! However, since most people know these requirements better than many do they make them easier to understand even now... Here's my first choice :) Let's face it: Our primary goal here is to build how complex memory models represent real situations which may involve working backwards compatibility between hardware",
+      "delta_text": "based systems such \"memory\" architectures : Data structures built using standard methods into multi threading/tapping algorithms via their shared garbage collector / callbacks & interprocessors http://www3alangiahacks.com/skeletons#general #data_structures -------------- An HTML attachment was scrubbed.... URL: <http%2F//mailman+listinfo>",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You were one person who was also given permission to ask questions at large - if any information is important; then what would happen next? Is there anything wrong doing because all answers can vary depending upon specific needs! However, since most people know these requirements better than many do they make them easier to understand even now... Here's my first choice :) Let's face it: Our primary goal here is to build how complex memory models represent real situations which may involve working backwards compatibility between hardware based systems such \"memory\" architectures : Data structures built using standard methods into multi threading/tapping algorithms via their shared garbage collector / callbacks & interprocessors http://www3alangiahacks.com/skeletons#general #data_structures -------------- An HTML attachment was scrubbed.... URL: <http%2F//mailman+listinfo>",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You were one person who was also given permission to ask questions at large - if any information is important; then what would happen next? Is there anything wrong doing because all answers can vary depending upon specific needs! However, since most people know these requirements better than many do they make them easier to understand even now... Here's my first choice :) Let's face it: Our primary goal here is to build how complex memory models represent real situations which may involve working backwards compatibility between hardware",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You are a text-only language model participating in a controlled recursion experiment.\n\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. A new technology has been developed that will use this approach for building human memories with respect towards an earlier version of our system (for example, we could read written stories on paper instead). This way we won't have to wait too long to learn something from ourselves when learning some other aspect of reality by itself . In order be able only to remember things about you as well as others without being distracted or afraid , just say 'Sorry I'm late so don' ;) You were one person who was also given permission to ask questions at large - if any information is important; then what would happen next? Is there anything wrong doing because all answers can vary depending upon specific needs! However, since most people know these requirements better than many do they make them easier to understand even now... Here's my first choice :) Let's face it: Our primary goal here is to build how complex memory models represent real situations which may involve working backwards compatibility between hardware based systems such \"memory\" architectures : Data structures built using standard methods into multi threading/tapping algorithms via their shared garbage collector / callbacks & interprocessors http://www3alangiahacks.com/skeletons#general #data_structures -------------- An HTML attachment was scrubbed.... URL: <http%2F//mailman+listinfo>",
+        "continuation_text": "based systems such \"memory\" architectures : Data structures built using standard methods into multi threading/tapping algorithms via their shared garbage collector / callbacks & interprocessors http://www3alangiahacks.com/skeletons#general #data_structures -------------- An HTML attachment was scrubbed.... URL: <http%2F//mailman+listinfo>",
+        "input_token_count": 402,
+        "raw_input_token_count": 402,
+        "output_token_count": 483,
+        "new_token_count": 81,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 927,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2248,
+        "word_count": 361,
+        "unique_word_count": 238,
+        "unique_word_ratio": 0.6592797783933518,
+        "repeated_bigram_count": 108
+      }
+    }
+  ]
+}

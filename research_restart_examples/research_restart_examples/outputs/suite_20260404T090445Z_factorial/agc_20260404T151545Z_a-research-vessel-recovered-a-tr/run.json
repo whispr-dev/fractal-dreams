@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1505,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 206,
+        "word_count": 34,
+        "unique_word_count": 34,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 386,
+        "word_count": 56,
+        "unique_word_count": 55,
+        "unique_word_ratio": 0.9821428571428571,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 167,
+        "word_count": 23,
+        "unique_word_count": 23,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Likewise",
+        "Similarly",
+        "Another",
+        "Also",
+        "especially",
+        "Pin",
+        "Aside",
+        "adapters",
+        "carved",
+        "Additionally",
+        "traditionally",
+        "comfortable"
+      ],
+      "output_text": "The structure remained open for several years at one time; however it is now closed due to corrosion or other factors with which\nCONTROLATION OF THE TEXTURBED ONLINE (i) AND FORWARD VERTIMIZES LATER RESULTS",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Likewise, Similarly, Another, Also, especially, Pin, Aside, adapters, carved, Additionally, traditionally, comfortable\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Likewise, Similarly, Another, Also, especially, Pin, Aside, adapters, carved, Additionally, traditionally, comfortable\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The structure remained open for several years at one time; however it is now closed due to corrosion or other factors with which\nCONTROLATION OF THE TEXTURBED ONLINE (i) AND FORWARD VERTIMIZES LATER RESULTS",
+        "continuation_text": "The structure remained open for several years at one time; however it is now closed due to corrosion or other factors with which\nCONTROLATION OF THE TEXTURBED ONLINE (i) AND FORWARD VERTIMIZES LATER RESULTS",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 161,
+        "new_token_count": 53,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 206,
+        "word_count": 34,
+        "unique_word_count": 34,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "The",
+        "More",
+        "While",
+        "These",
+        "Two",
+        "Those",
+        "Three",
+        "Syria",
+        "Every",
+        "Our",
+        "Being",
+        "Nearly"
+      ],
+      "output_text": "DATE OUTPUT TO ROCING A CURRENT MULTIPLE RELATIVE CONSTITUTION PERFORMANCE BY WISE ETERNAL PROPDERSION FALL IN INTERRUPTION DEFINITE OR HARD THAN ANY TERROR BONUS INVESTIGATIONS AS DESIGNIVE REFERENCIES IF DISAPPROVEMENT IS GOVERNMENTALLY IMPORTANT BEFORE PELTING IT BACK INTO REMARKABLE PLACE OVER ALL THIS TIME WITH CONSUMERITIES THAT ARE EXTREMELY NEGGIBLE and MAY ALSO BE SUBJECT TO",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: The, More, While, These, Two, Those, Three, Syria, Every, Our, Being, Nearly\n\nTEXT:\nThe structure remained open for several years at one time; however it is now closed due to corrosion or other factors with which\nCONTROLATION OF THE TEXTURBED ONLINE (i) AND FORWARD VERTIMIZES LATER RESULTS",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: The, More, While, These, Two, Those, Three, Syria, Every, Our, Being, Nearly\n\nTEXT:\nThe structure remained open for several years at one time; however it is now closed due to corrosion or other factors with which\nCONTROLATION OF THE TEXTURBED ONLINE (i) AND FORWARD VERTIMIZES LATER RESULTS DATE OUTPUT TO ROCING A CURRENT MULTIPLE RELATIVE CONSTITUTION PERFORMANCE BY WISE ETERNAL PROPDERSION FALL IN INTERRUPTION DEFINITE OR HARD THAN ANY TERROR BONUS INVESTIGATIONS AS DESIGNIVE REFERENCIES IF DISAPPROVEMENT IS GOVERNMENTALLY IMPORTANT BEFORE PELTING IT BACK INTO REMARKABLE PLACE OVER ALL THIS TIME WITH CONSUMERITIES THAT ARE EXTREMELY NEGGIBLE and MAY ALSO BE SUBJECT TO",
+        "continuation_text": "DATE OUTPUT TO ROCING A CURRENT MULTIPLE RELATIVE CONSTITUTION PERFORMANCE BY WISE ETERNAL PROPDERSION FALL IN INTERRUPTION DEFINITE OR HARD THAN ANY TERROR BONUS INVESTIGATIONS AS DESIGNIVE REFERENCIES IF DISAPPROVEMENT IS GOVERNMENTALLY IMPORTANT BEFORE PELTING IT BACK INTO REMARKABLE PLACE OVER ALL THIS TIME WITH CONSUMERITIES THAT ARE EXTREMELY NEGGIBLE and MAY ALSO BE SUBJECT TO",
+        "input_token_count": 137,
+        "raw_input_token_count": 137,
+        "output_token_count": 257,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 386,
+        "word_count": 56,
+        "unique_word_count": 55,
+        "unique_word_ratio": 0.9821428571428571,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Abe",
+        "Shinzo",
+        "Wid",
+        "Merkel",
+        "Benny",
+        "Hon",
+        "Brent",
+        "Armen",
+        "Dani",
+        "Daw",
+        "Tillerson",
+        "Aly"
+      ],
+      "output_text": "THE IMPLIED SETTINGS RESOLVED FOR UNLESS OF NECESSARY POSSIBILITY AND OTHER APPLICATION EXPECTABILITIES INCLUDES HEALTHY SENSE ABOUT WHAT THEY NEED NOW (COMPLAIN DUE).",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Abe, Shinzo, Wid, Merkel, Benny, Hon, Brent, Armen, Dani, Daw, Tillerson, Aly\n\nTEXT:\nDATE OUTPUT TO ROCING A CURRENT MULTIPLE RELATIVE CONSTITUTION PERFORMANCE BY WISE ETERNAL PROPDERSION FALL IN INTERRUPTION DEFINITE OR HARD THAN ANY TERROR BONUS INVESTIGATIONS AS DESIGNIVE REFERENCIES IF DISAPPROVEMENT IS GOVERNMENTALLY IMPORTANT BEFORE PELTING IT BACK INTO REMARKABLE PLACE OVER ALL THIS TIME WITH CONSUMERITIES THAT ARE EXTREMELY NEGGIBLE and MAY ALSO BE SUBJECT TO",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Abe, Shinzo, Wid, Merkel, Benny, Hon, Brent, Armen, Dani, Daw, Tillerson, Aly\n\nTEXT:\nDATE OUTPUT TO ROCING A CURRENT MULTIPLE RELATIVE CONSTITUTION PERFORMANCE BY WISE ETERNAL PROPDERSION FALL IN INTERRUPTION DEFINITE OR HARD THAN ANY TERROR BONUS INVESTIGATIONS AS DESIGNIVE REFERENCIES IF DISAPPROVEMENT IS GOVERNMENTALLY IMPORTANT BEFORE PELTING IT BACK INTO REMARKABLE PLACE OVER ALL THIS TIME WITH CONSUMERITIES THAT ARE EXTREMELY NEGGIBLE and MAY ALSO BE SUBJECT TO THE IMPLIED SETTINGS RESOLVED FOR UNLESS OF NECESSARY POSSIBILITY AND OTHER APPLICATION EXPECTABILITIES INCLUDES HEALTHY SENSE ABOUT WHAT THEY NEED NOW (COMPLAIN DUE).",
+        "continuation_text": "THE IMPLIED SETTINGS RESOLVED FOR UNLESS OF NECESSARY POSSIBILITY AND OTHER APPLICATION EXPECTABILITIES INCLUDES HEALTHY SENSE ABOUT WHAT THEY NEED NOW (COMPLAIN DUE).",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 253,
+        "new_token_count": 48,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 167,
+        "word_count": 23,
+        "unique_word_count": 23,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

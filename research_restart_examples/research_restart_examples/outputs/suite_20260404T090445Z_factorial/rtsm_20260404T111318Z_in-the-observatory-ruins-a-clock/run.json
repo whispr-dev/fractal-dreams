@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1176
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 628,
+        "word_count": 103,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.8349514563106796,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 1102,
+        "word_count": 183,
+        "unique_word_count": 148,
+        "unique_word_ratio": 0.8087431693989071,
+        "repeated_bigram_count": 2
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1629,
+        "word_count": 269,
+        "unique_word_count": 210,
+        "unique_word_ratio": 0.7806691449814126,
+        "repeated_bigram_count": 4
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1709,
+        "word_count": 282,
+        "unique_word_count": 222,
+        "unique_word_ratio": 0.7872340425531915,
+        "repeated_bigram_count": 4
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2188,
+        "word_count": 360,
+        "unique_word_count": 277,
+        "unique_word_ratio": 0.7694444444444445,
+        "repeated_bigram_count": 5
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "\"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\nassistant\n\"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping",
+        "continuation_text": "\"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping",
+        "input_token_count": 68,
+        "raw_input_token_count": 68,
+        "output_token_count": 164,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 628,
+        "word_count": 103,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.8349514563106796,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely,",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely,",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping\nassistant\ninto history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely,",
+        "continuation_text": "into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely,",
+        "input_token_count": 165,
+        "raw_input_token_count": 165,
+        "output_token_count": 261,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1102,
+        "word_count": 183,
+        "unique_word_count": 148,
+        "unique_word_ratio": 0.8087431693989071,
+        "repeated_bigram_count": 2
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely,<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The faint melody filled my ears until silence settled over the crumbling ruins, turning them into silent specters that watched us enter another universe where time was measured just now. In this new realm, I found myself floating above ancient structures, lost in thought about how life might truly be measured without a single human interaction or memory to cling onto. The clockwork map spoke volumes through lines cut into the stone—maps we may never quite comprehend ourselves—or perhaps it simply wanted us to ponder life",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely, The faint melody filled my ears until silence settled over the crumbling ruins, turning them into silent specters that watched us enter another universe where time was measured just now. In this new realm, I found myself floating above ancient structures, lost in thought about how life might truly be measured without a single human interaction or memory to cling onto. The clockwork map spoke volumes through lines cut into the stone—maps we may never quite comprehend ourselves—or perhaps it simply wanted us to ponder life",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely,<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely,\nassistant\nThe faint melody filled my ears until silence settled over the crumbling ruins, turning them into silent specters that watched us enter another universe where time was measured just now. In this new realm, I found myself floating above ancient structures, lost in thought about how life might truly be measured without a single human interaction or memory to cling onto. The clockwork map spoke volumes through lines cut into the stone—maps we may never quite comprehend ourselves—or perhaps it simply wanted us to ponder life",
+        "continuation_text": "The faint melody filled my ears until silence settled over the crumbling ruins, turning them into silent specters that watched us enter another universe where time was measured just now. In this new realm, I found myself floating above ancient structures, lost in thought about how life might truly be measured without a single human interaction or memory to cling onto. The clockwork map spoke volumes through lines cut into the stone—maps we may never quite comprehend ourselves—or perhaps it simply wanted us to ponder life",
+        "input_token_count": 261,
+        "raw_input_token_count": 261,
+        "output_token_count": 357,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1629,
+        "word_count": 269,
+        "unique_word_count": 210,
+        "unique_word_ratio": 0.7806691449814126,
+        "repeated_bigram_count": 4
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely, The faint melody filled my ears until silence settled over the crumbling ruins, turning them into silent specters that watched us enter another universe where time was measured just now. In this new realm, I found myself floating above ancient structures, lost in thought about how life might truly be measured without a single human interaction or memory to cling onto. The clockwork map spoke volumes through lines cut into the stone—maps we may never quite comprehend ourselves—or perhaps it simply wanted us to ponder life<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "the meaning behind one last dream, much longer than mere shadows would suffice.",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely, The faint melody filled my ears until silence settled over the crumbling ruins, turning them into silent specters that watched us enter another universe where time was measured just now. In this new realm, I found myself floating above ancient structures, lost in thought about how life might truly be measured without a single human interaction or memory to cling onto. The clockwork map spoke volumes through lines cut into the stone—maps we may never quite comprehend ourselves—or perhaps it simply wanted us to ponder life the meaning behind one last dream, much longer than mere shadows would suffice.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely, The faint melody filled my ears until silence settled over the crumbling ruins, turning them into silent specters that watched us enter another universe where time was measured just now. In this new realm, I found myself floating above ancient structures, lost in thought about how life might truly be measured without a single human interaction or memory to cling onto. The clockwork map spoke volumes through lines cut into the stone—maps we may never quite comprehend ourselves—or perhaps it simply wanted us to ponder life<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely, The faint melody filled my ears until silence settled over the crumbling ruins, turning them into silent specters that watched us enter another universe where time was measured just now. In this new realm, I found myself floating above ancient structures, lost in thought about how life might truly be measured without a single human interaction or memory to cling onto. The clockwork map spoke volumes through lines cut into the stone—maps we may never quite comprehend ourselves—or perhaps it simply wanted us to ponder life\nassistant\nthe meaning behind one last dream, much longer than mere shadows would suffice.",
+        "continuation_text": "the meaning behind one last dream, much longer than mere shadows would suffice.",
+        "input_token_count": 357,
+        "raw_input_token_count": 357,
+        "output_token_count": 373,
+        "new_token_count": 16,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1709,
+        "word_count": 282,
+        "unique_word_count": 222,
+        "unique_word_ratio": 0.7872340425531915,
+        "repeated_bigram_count": 4
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely, The faint melody filled my ears until silence settled over the crumbling ruins, turning them into silent specters that watched us enter another universe where time was measured just now. In this new realm, I found myself floating above ancient structures, lost in thought about how life might truly be measured without a single human interaction or memory to cling onto. The clockwork map spoke volumes through lines cut into the stone—maps we may never quite comprehend ourselves—or perhaps it simply wanted us to ponder life the meaning behind one last dream, much longer than mere shadows would suffice.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "as time continued on, the map slowly faded, revealing old monuments and historical sites hidden beneath layers of decay and shadow. each clue leading inward led deeper into forgotten eras, evoking a sense of awe mixed with trepidation. there, amidst the skeletal remnants of buildings, sat a plaque inscribed only in ghostly script: \"Remember, here is a blueprint for eternity.\" A strange feeling crossed my mind - did this merely record what it could remember? What secrets lay",
+      "output_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely, The faint melody filled my ears until silence settled over the crumbling ruins, turning them into silent specters that watched us enter another universe where time was measured just now. In this new realm, I found myself floating above ancient structures, lost in thought about how life might truly be measured without a single human interaction or memory to cling onto. The clockwork map spoke volumes through lines cut into the stone—maps we may never quite comprehend ourselves—or perhaps it simply wanted us to ponder life the meaning behind one last dream, much longer than mere shadows would suffice. as time continued on, the map slowly faded, revealing old monuments and historical sites hidden beneath layers of decay and shadow. each clue leading inward led deeper into forgotten eras, evoking a sense of awe mixed with trepidation. there, amidst the skeletal remnants of buildings, sat a plaque inscribed only in ghostly script: \"Remember, here is a blueprint for eternity.\" A strange feeling crossed my mind - did this merely record what it could remember? What secrets lay",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely, The faint melody filled my ears until silence settled over the crumbling ruins, turning them into silent specters that watched us enter another universe where time was measured just now. In this new realm, I found myself floating above ancient structures, lost in thought about how life might truly be measured without a single human interaction or memory to cling onto. The clockwork map spoke volumes through lines cut into the stone—maps we may never quite comprehend ourselves—or perhaps it simply wanted us to ponder life the meaning behind one last dream, much longer than mere shadows would suffice.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. \"In the observatory ruins,\" a peculiar clockwork map began hauntingly re-arranging the night's horizon with every passing day. The markings on its face seemed etched into the very fabric of reality, serving as an eerie reminder that time moved so slow it could easily erase our fleeting moments unnoticed.\nAs darkness enveloped the area and the atmosphere grew heavier, the map's movements became even more deliberate and calculated. Each step took place with a precision that felt like fate stepping into history. The map danced before my eyes, each line and corner crafted perfectly for today's present tense. It seemed to dance against the stars, whispering tales from the past but now holding nothing but echoes of yesterday’s perilous dreams.\nA soft breeze touched my skin, carrying faint traces of something I didn’t understand. A note to myself that wasn't written by any mortal voice rose out of thin air. As dawn approached, the world around me faded away entirely, The faint melody filled my ears until silence settled over the crumbling ruins, turning them into silent specters that watched us enter another universe where time was measured just now. In this new realm, I found myself floating above ancient structures, lost in thought about how life might truly be measured without a single human interaction or memory to cling onto. The clockwork map spoke volumes through lines cut into the stone—maps we may never quite comprehend ourselves—or perhaps it simply wanted us to ponder life the meaning behind one last dream, much longer than mere shadows would suffice.\nassistant\nas time continued on, the map slowly faded, revealing old monuments and historical sites hidden beneath layers of decay and shadow. each clue leading inward led deeper into forgotten eras, evoking a sense of awe mixed with trepidation. there, amidst the skeletal remnants of buildings, sat a plaque inscribed only in ghostly script: \"Remember, here is a blueprint for eternity.\" A strange feeling crossed my mind - did this merely record what it could remember? What secrets lay",
+        "continuation_text": "as time continued on, the map slowly faded, revealing old monuments and historical sites hidden beneath layers of decay and shadow. each clue leading inward led deeper into forgotten eras, evoking a sense of awe mixed with trepidation. there, amidst the skeletal remnants of buildings, sat a plaque inscribed only in ghostly script: \"Remember, here is a blueprint for eternity.\" A strange feeling crossed my mind - did this merely record what it could remember? What secrets lay",
+        "input_token_count": 372,
+        "raw_input_token_count": 372,
+        "output_token_count": 468,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2188,
+        "word_count": 360,
+        "unique_word_count": 277,
+        "unique_word_ratio": 0.7694444444444445,
+        "repeated_bigram_count": 5
+      }
+    }
+  ]
+}

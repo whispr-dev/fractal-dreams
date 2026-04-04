@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1050,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 689,
+        "word_count": 122,
+        "unique_word_count": 120,
+        "unique_word_ratio": 0.9836065573770492,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 608,
+        "word_count": 97,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.979381443298969,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 93,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 671,
+        "word_count": 111,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.972972972972973,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        ",",
+        "have",
+        "was",
+        "made",
+        "It",
+        "if",
+        "the",
+        "."
+      ],
+      "output_text": "As we enter into an infinite space around us our words become louder as they begin to grow stronger than ever before (the number of times that each word begins to change.) Now there is no one on earth who could tell you where exactly this secret story lies from! A human cannot help but wonder why some strange creature simply decided that all three letters must move along with every other letter until finally someone has just figured out how things work together for their purpose. This idea seems not familiar even today because I started using those sentences repeatedly many years ago — like when my father wrote his first novel about evolution itself at age seven; now he's learning",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. As we enter into an infinite space around us our words become louder as they begin to grow stronger than ever before (the number of times that each word begins to change.) Now there is no one on earth who could tell you where exactly this secret story lies from! A human cannot help but wonder why some strange creature simply decided that all three letters must move along with every other letter until finally someone has just figured out how things work together for their purpose. This idea seems not familiar even today because I started using those sentences repeatedly many years ago — like when my father wrote his first novel about evolution itself at age seven; now he's learning",
+        "continuation_text": "As we enter into an infinite space around us our words become louder as they begin to grow stronger than ever before (the number of times that each word begins to change.) Now there is no one on earth who could tell you where exactly this secret story lies from! A human cannot help but wonder why some strange creature simply decided that all three letters must move along with every other letter until finally someone has just figured out how things work together for their purpose. This idea seems not familiar even today because I started using those sentences repeatedly many years ago — like when my father wrote his first novel about evolution itself at age seven; now he's learning",
+        "input_token_count": 110,
+        "raw_input_token_count": 110,
+        "output_token_count": 238,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 689,
+        "word_count": 122,
+        "unique_word_count": 120,
+        "unique_word_ratio": 0.9836065573770492,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "had",
+        "they",
+        "is",
+        "in",
+        "was",
+        "the",
+        "this"
+      ],
+      "output_text": "more and better—and having learned something else faster still adds up. You can't teach me anything completely new since elementary school? In fact, most books start off based upon \"rules\" or principles set forth so far down your evolutionary history which will make them much easier to understand later under modern teaching systems such tiring methods . If only people would know what kind of rules apply … then maybe nobody should want to learn English without actually understanding any particular part of the world… It really doesn...it always depends whether everyone knows everything except grammar :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, they, is, in, was, the, this\n\nTEXT:\nAs we enter into an infinite space around us our words become louder as they begin to grow stronger than ever before (the number of times that each word begins to change.) Now there is no one on earth who could tell you where exactly this secret story lies from! A human cannot help but wonder why some strange creature simply decided that all three letters must move along with every other letter until finally someone has just figured out how things work together for their purpose. This idea seems not familiar even today because I started using those sentences repeatedly many years ago — like when my father wrote his first novel about evolution itself at age seven; now he's learning",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, they, is, in, was, the, this\n\nTEXT:\nAs we enter into an infinite space around us our words become louder as they begin to grow stronger than ever before (the number of times that each word begins to change.) Now there is no one on earth who could tell you where exactly this secret story lies from! A human cannot help but wonder why some strange creature simply decided that all three letters must move along with every other letter until finally someone has just figured out how things work together for their purpose. This idea seems not familiar even today because I started using those sentences repeatedly many years ago — like when my father wrote his first novel about evolution itself at age seven; now he's learning more and better—and having learned something else faster still adds up. You can't teach me anything completely new since elementary school? In fact, most books start off based upon \"rules\" or principles set forth so far down your evolutionary history which will make them much easier to understand later under modern teaching systems such tiring methods . If only people would know what kind of rules apply … then maybe nobody should want to learn English without actually understanding any particular part of the world… It really doesn...it always depends whether everyone knows everything except grammar :)",
+        "continuation_text": "more and better—and having learned something else faster still adds up. You can't teach me anything completely new since elementary school? In fact, most books start off based upon \"rules\" or principles set forth so far down your evolutionary history which will make them much easier to understand later under modern teaching systems such tiring methods . If only people would know what kind of rules apply … then maybe nobody should want to learn English without actually understanding any particular part of the world… It really doesn...it always depends whether everyone knows everything except grammar :)",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 317,
+        "new_token_count": 110,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 608,
+        "word_count": 97,
+        "unique_word_count": 95,
+        "unique_word_ratio": 0.979381443298969,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "if",
+        "were",
+        "are",
+        "have",
+        "had",
+        "If",
+        "could",
+        "makes",
+        "is",
+        "did",
+        "It"
+      ],
+      "output_text": "but I'd also like to see you all come out from this process at some point! __________________",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, have, had, If, could, makes, is, did, It\n\nTEXT:\nmore and better—and having learned something else faster still adds up. You can't teach me anything completely new since elementary school? In fact, most books start off based upon \"rules\" or principles set forth so far down your evolutionary history which will make them much easier to understand later under modern teaching systems such tiring methods . If only people would know what kind of rules apply … then maybe nobody should want to learn English without actually understanding any particular part of the world… It really doesn...it always depends whether everyone knows everything except grammar :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, if, were, are, have, had, If, could, makes, is, did, It\n\nTEXT:\nmore and better—and having learned something else faster still adds up. You can't teach me anything completely new since elementary school? In fact, most books start off based upon \"rules\" or principles set forth so far down your evolutionary history which will make them much easier to understand later under modern teaching systems such tiring methods . If only people would know what kind of rules apply … then maybe nobody should want to learn English without actually understanding any particular part of the world… It really doesn...it always depends whether everyone knows everything except grammar :)  but I'd also like to see you all come out from this process at some point! __________________",
+        "continuation_text": "but I'd also like to see you all come out from this process at some point! __________________",
+        "input_token_count": 188,
+        "raw_input_token_count": 188,
+        "output_token_count": 211,
+        "new_token_count": 23,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 93,
+        "word_count": 17,
+        "unique_word_count": 17,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "are",
+        "have",
+        "were",
+        "if",
+        "in",
+        "you",
+        "this",
+        "to",
+        "had",
+        "they",
+        "I"
+      ],
+      "output_text": "This is not just about me (it really was my intention), but what will happen when we find that those four lines? If so, then why do people try and manipulate them again with their own techniques anyway? And for example, here's another idea being put forward recently on an old paper titled ‡Hacking algorithms’s role in human interaction theory; how much can your system affect or change during multiple interactions without affecting one other thing altogether? Is there anything specific where our systems would influence us more than others as well? We're supposed keep track of things through two layers of information such as email addresses and passwords based upon",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, have, were, if, in, you, this, to, had, they, I\n\nTEXT:\nbut I'd also like to see you all come out from this process at some point! __________________",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, are, have, were, if, in, you, this, to, had, they, I\n\nTEXT:\nbut I'd also like to see you all come out from this process at some point! __________________ This is not just about me (it really was my intention), but what will happen when we find that those four lines? If so, then why do people try and manipulate them again with their own techniques anyway? And for example, here's another idea being put forward recently on an old paper titled ‡Hacking algorithms’s role in human interaction theory; how much can your system affect or change during multiple interactions without affecting one other thing altogether? Is there anything specific where our systems would influence us more than others as well? We're supposed keep track of things through two layers of information such as email addresses and passwords based upon",
+        "continuation_text": "This is not just about me (it really was my intention), but what will happen when we find that those four lines? If so, then why do people try and manipulate them again with their own techniques anyway? And for example, here's another idea being put forward recently on an old paper titled ‡Hacking algorithms’s role in human interaction theory; how much can your system affect or change during multiple interactions without affecting one other thing altogether? Is there anything specific where our systems would influence us more than others as well? We're supposed keep track of things through two layers of information such as email addresses and passwords based upon",
+        "input_token_count": 100,
+        "raw_input_token_count": 100,
+        "output_token_count": 228,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 671,
+        "word_count": 111,
+        "unique_word_count": 108,
+        "unique_word_ratio": 0.972972972972973,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

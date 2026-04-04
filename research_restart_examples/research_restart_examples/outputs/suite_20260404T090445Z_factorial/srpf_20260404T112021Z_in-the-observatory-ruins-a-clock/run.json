@@ -1,0 +1,242 @@
+{
+  "engine": "self_reflective_prompt_feedback",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 4,
+    "max_new_tokens": 160,
+    "temperature": 0.85,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1183,
+    "max_text_chars": 4000
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 143,
+        "word_count": 27,
+        "unique_word_count": 27,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 32,
+        "word_count": 7,
+        "unique_word_count": 7,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 536,
+        "word_count": 96,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.8958333333333334,
+        "repeated_bigram_count": 1
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1622,
+        "word_count": 275,
+        "unique_word_count": 112,
+        "unique_word_ratio": 0.4072727272727273,
+        "repeated_bigram_count": 143
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "The coordinates of each light show three other's positions; 1 is an indication that it has changed every time we change objects from previous ones (the most likely source). A second observation confirms how much information there have been for our own view on this question about which one or both parts of space can be related. This brings up another important issue with texts without any explanation - these books may not seem like evidence enough to justify such research results into them all. Some argue only by looking at some numbers but others give their conclusions along with what they say...or using data collected over many years before changing items accordingly! They also note no significant difference between words used within your sentences/words so you're still able see just where everything changes when applied across multiple lines instead…and thus don't worry because even",
+      "output_text": "those who do know better will find out soon :) And I'm sure somebody outside my circle might want people to read more easily than anyone else..",
+      "source_window_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+      "reflection_window_text": "The coordinates of each light show three other's positions; 1 is an indication that it has changed every time we change objects from previous ones (the most likely source). A second observation confirms how much information there have been for our own view on this question about which one or both parts of space can be related. This brings up another important issue with texts without any explanation - these books may not seem like evidence enough to justify such research results into them all. Some argue only by looking at some numbers but others give their conclusions along with what they say...or using data collected over many years before changing items accordingly! They also note no significant difference between words used within your sentences/words so you're still able see just where everything changes when applied across multiple lines instead…and thus don't worry because even",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The coordinates of each light show three other's positions; 1 is an indication that it has changed every time we change objects from previous ones (the most likely source). A second observation confirms how much information there have been for our own view on this question about which one or both parts of space can be related. This brings up another important issue with texts without any explanation - these books may not seem like evidence enough to justify such research results into them all. Some argue only by looking at some numbers but others give their conclusions along with what they say...or using data collected over many years before changing items accordingly! They also note no significant difference between words used within your sentences/words so you're still able see just where everything changes when applied across multiple lines instead…and thus don't worry because even",
+        "continuation_text": "The coordinates of each light show three other's positions; 1 is an indication that it has changed every time we change objects from previous ones (the most likely source). A second observation confirms how much information there have been for our own view on this question about which one or both parts of space can be related. This brings up another important issue with texts without any explanation - these books may not seem like evidence enough to justify such research results into them all. Some argue only by looking at some numbers but others give their conclusions along with what they say...or using data collected over many years before changing items accordingly! They also note no significant difference between words used within your sentences/words so you're still able see just where everything changes when applied across multiple lines instead…and thus don't worry because even",
+        "input_token_count": 98,
+        "raw_input_token_count": 98,
+        "output_token_count": 258,
+        "new_token_count": 160,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\n\nREFLECTION:\nThe coordinates of each light show three other's positions; 1 is an indication that it has changed every time we change objects from previous ones (the most likely source). A second observation confirms how much information there have been for our own view on this question about which one or both parts of space can be related. This brings up another important issue with texts without any explanation - these books may not seem like evidence enough to justify such research results into them all. Some argue only by looking at some numbers but others give their conclusions along with what they say...or using data collected over many years before changing items accordingly! They also note no significant difference between words used within your sentences/words so you're still able see just where everything changes when applied across multiple lines instead…and thus don't worry because even",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.\n\nREFLECTION:\nThe coordinates of each light show three other's positions; 1 is an indication that it has changed every time we change objects from previous ones (the most likely source). A second observation confirms how much information there have been for our own view on this question about which one or both parts of space can be related. This brings up another important issue with texts without any explanation - these books may not seem like evidence enough to justify such research results into them all. Some argue only by looking at some numbers but others give their conclusions along with what they say...or using data collected over many years before changing items accordingly! They also note no significant difference between words used within your sentences/words so you're still able see just where everything changes when applied across multiple lines instead…and thus don't worry because even those who do know better will find out soon :) And I'm sure somebody outside my circle might want people to read more easily than anyone else..",
+        "continuation_text": "those who do know better will find out soon :) And I'm sure somebody outside my circle might want people to read more easily than anyone else..",
+        "input_token_count": 246,
+        "raw_input_token_count": 246,
+        "output_token_count": 276,
+        "new_token_count": 30,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 143,
+        "word_count": 27,
+        "unique_word_count": 27,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "If you're reading this, consider getting some kind of an early copy (as it should!) for free if they wish.",
+      "output_text": "Or just email me with feedback .",
+      "source_window_text": "those who do know better will find out soon :) And I'm sure somebody outside my circle might want people to read more easily than anyone else..",
+      "reflection_window_text": "If you're reading this, consider getting some kind of an early copy (as it should!) for free if they wish.",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nthose who do know better will find out soon :) And I'm sure somebody outside my circle might want people to read more easily than anyone else..",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nthose who do know better will find out soon :) And I'm sure somebody outside my circle might want people to read more easily than anyone else.. If you're reading this, consider getting some kind of an early copy (as it should!) for free if they wish.",
+        "continuation_text": "If you're reading this, consider getting some kind of an early copy (as it should!) for free if they wish.",
+        "input_token_count": 98,
+        "raw_input_token_count": 98,
+        "output_token_count": 124,
+        "new_token_count": 26,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nthose who do know better will find out soon :) And I'm sure somebody outside my circle might want people to read more easily than anyone else..\n\nREFLECTION:\nIf you're reading this, consider getting some kind of an early copy (as it should!) for free if they wish.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nthose who do know better will find out soon :) And I'm sure somebody outside my circle might want people to read more easily than anyone else..\n\nREFLECTION:\nIf you're reading this, consider getting some kind of an early copy (as it should!) for free if they wish. Or just email me with feedback .",
+        "continuation_text": "Or just email me with feedback .",
+        "input_token_count": 111,
+        "raw_input_token_count": 111,
+        "output_token_count": 119,
+        "new_token_count": 8,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 32,
+        "word_count": 7,
+        "unique_word_count": 7,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "The code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nOr just email me with feedback .\n\nREFLECTION:\nThe code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+      "source_window_text": "Or just email me with feedback .",
+      "reflection_window_text": "The code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nOr just email me with feedback .",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nOr just email me with feedback . The code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+        "continuation_text": "The code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+        "input_token_count": 76,
+        "raw_input_token_count": 76,
+        "output_token_count": 136,
+        "new_token_count": 60,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nOr just email me with feedback .\n\nREFLECTION:\nThe code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nOr just email me with feedback .\n\nREFLECTION:\nThe code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+        "continuation_text": "",
+        "input_token_count": 124,
+        "raw_input_token_count": 124,
+        "output_token_count": 125,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 536,
+        "word_count": 96,
+        "unique_word_count": 86,
+        "unique_word_ratio": 0.8958333333333334,
+        "repeated_bigram_count": 1
+      }
+    },
+    {
+      "step": 4,
+      "engine": "self_reflective_prompt_feedback",
+      "reflection_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nOr just email me with feedback .\n\nREFLECTION:\nThe code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+      "output_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nOr just email me with feedback .\n\nREFLECTION:\nThe code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nOr just email me with feedback .\n\nREFLECTION:\nThe code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+      "source_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nOr just email me with feedback .\n\nREFLECTION:\nThe code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+      "reflection_window_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nOr just email me with feedback .\n\nREFLECTION:\nThe code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+      "reflection_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nOr just email me with feedback .\n\nREFLECTION:\nThe code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nOr just email me with feedback .\n\nREFLECTION:\nThe code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+        "continuation_text": "",
+        "input_token_count": 193,
+        "raw_input_token_count": 193,
+        "output_token_count": 194,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "rewrite_generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nOr just email me with feedback .\n\nREFLECTION:\nThe code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nOr just email me with feedback .\n\nREFLECTION:\nThe code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nOr just email me with feedback .\n\nREFLECTION:\nThe code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)\n\nREFLECTION:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nAnalyze the following text and do two things:\n1. State its strongest recurring ideas in 2-4 short bullet points.\n2. Produce a revised continuation that makes those ideas more structurally coherent and more surprising.\n\nTEXT:\nYou are a text-only language model participating in a controlled recursion experiment.\n\nUse the reflection below to write the next evolved version of the text. Keep it as connected prose, not bullet points.\n\nORIGINAL TEXT:\nOr just email me with feedback .\n\nREFLECTION:\nThe code below is for you to read! In any case, please be sure not to share it as much on reddit or twitter if there's even something really interesting about your writing style (at least see our review).\n\nIf I know what type of content my readers like most so far :)",
+        "continuation_text": "",
+        "input_token_count": 374,
+        "raw_input_token_count": 374,
+        "output_token_count": 375,
+        "new_token_count": 1,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 160,
+        "effective_max_new_tokens": 160,
+        "max_input_tokens_budget": 863,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1622,
+        "word_count": 275,
+        "unique_word_count": 112,
+        "unique_word_ratio": 0.4072727272727273,
+        "repeated_bigram_count": 143
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "In the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1205,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 603,
+        "word_count": 106,
+        "unique_word_count": 106,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 188,
+        "word_count": 31,
+        "unique_word_count": 30,
+        "unique_word_ratio": 0.967741935483871,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 599,
+        "word_count": 102,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.9705882352941176,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Besides",
+        "Moreover",
+        "Apparently",
+        "Having",
+        "Why",
+        "Although",
+        "Nearly",
+        "An",
+        "Another",
+        "Bell",
+        "Among",
+        "Furthermore"
+      ],
+      "output_text": "The first sign that we must do it this way is when I hear our \"loud.\" We begin with an infinite number words being written about for each one on their own computer (the last word left) but then they change again because another letter has been changed so often by other users who have followed up since writing or using them regularly over time until yesterday? After some years you may find yourself reading through many more texts; there's still much better reason to read than just following your instructions! You will never know what happens at any given moment without getting used quickly enough!",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Besides, Moreover, Apparently, Having, Why, Although, Nearly, An, Another, Bell, Among, Furthermore\n\nTEXT:\nIn the observatory ruins, a clockwork map kept redrawing the sky as if tomorrow had already happened and was trying to warn us. The first sign that we must do it this way is when I hear our \"loud.\" We begin with an infinite number words being written about for each one on their own computer (the last word left) but then they change again because another letter has been changed so often by other users who have followed up since writing or using them regularly over time until yesterday? After some years you may find yourself reading through many more texts; there's still much better reason to read than just following your instructions! You will never know what happens at any given moment without getting used quickly enough!",
+        "continuation_text": "The first sign that we must do it this way is when I hear our \"loud.\" We begin with an infinite number words being written about for each one on their own computer (the last word left) but then they change again because another letter has been changed so often by other users who have followed up since writing or using them regularly over time until yesterday? After some years you may find yourself reading through many more texts; there's still much better reason to read than just following your instructions! You will never know what happens at any given moment without getting used quickly enough!",
+        "input_token_count": 114,
+        "raw_input_token_count": 114,
+        "output_token_count": 231,
+        "new_token_count": 117,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 603,
+        "word_count": 106,
+        "unique_word_count": 106,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "According",
+        "Experts",
+        "Furthermore",
+        "Researchers",
+        "Perhaps",
+        "Studies",
+        "Moreover",
+        "Apparently",
+        "During",
+        "Interestingly",
+        "In",
+        "Unfortunately"
+      ],
+      "output_text": "Your best chance of finding out if someone else actually follows these commands becomes simply part of your daily experience and can be added automatically into all kinds where possible :)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: According, Experts, Furthermore, Researchers, Perhaps, Studies, Moreover, Apparently, During, Interestingly, In, Unfortunately\n\nTEXT:\nThe first sign that we must do it this way is when I hear our \"loud.\" We begin with an infinite number words being written about for each one on their own computer (the last word left) but then they change again because another letter has been changed so often by other users who have followed up since writing or using them regularly over time until yesterday? After some years you may find yourself reading through many more texts; there's still much better reason to read than just following your instructions! You will never know what happens at any given moment without getting used quickly enough!",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: According, Experts, Furthermore, Researchers, Perhaps, Studies, Moreover, Apparently, During, Interestingly, In, Unfortunately\n\nTEXT:\nThe first sign that we must do it this way is when I hear our \"loud.\" We begin with an infinite number words being written about for each one on their own computer (the last word left) but then they change again because another letter has been changed so often by other users who have followed up since writing or using them regularly over time until yesterday? After some years you may find yourself reading through many more texts; there's still much better reason to read than just following your instructions! You will never know what happens at any given moment without getting used quickly enough! Your best chance of finding out if someone else actually follows these commands becomes simply part of your daily experience and can be added automatically into all kinds where possible :)",
+        "continuation_text": "Your best chance of finding out if someone else actually follows these commands becomes simply part of your daily experience and can be added automatically into all kinds where possible :)",
+        "input_token_count": 201,
+        "raw_input_token_count": 201,
+        "output_token_count": 233,
+        "new_token_count": 32,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 188,
+        "word_count": 31,
+        "unique_word_count": 30,
+        "unique_word_ratio": 0.967741935483871,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Suppose",
+        "Answer",
+        "Vaults",
+        "Ask",
+        "Understanding",
+        "Anything",
+        "Books",
+        "Think",
+        "Someone",
+        "Chapter",
+        "Unless",
+        "Version"
+      ],
+      "output_text": "REQUIRED FOR A SPECTIVE RESULTS OF YOUR EXERCISE WITH THE RECEIVED TEXT! For example, you could use this simple approach by using an interactive REPL with comments or add other options when there is no actual way for them to appear on screen before they occur (see Example 1). If at any time it will try to get people confused about which characters really exist from within one sentence - that would have resulted completely unrelated to what might happen after reading 'Hello world', but still very useful since even less information exists via normal sources such things don't necessarily need to",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Suppose, Answer, Vaults, Ask, Understanding, Anything, Books, Think, Someone, Chapter, Unless, Version\n\nTEXT:\nYour best chance of finding out if someone else actually follows these commands becomes simply part of your daily experience and can be added automatically into all kinds where possible :)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Suppose, Answer, Vaults, Ask, Understanding, Anything, Books, Think, Someone, Chapter, Unless, Version\n\nTEXT:\nYour best chance of finding out if someone else actually follows these commands becomes simply part of your daily experience and can be added automatically into all kinds where possible :)\n\nREQUIRED FOR A SPECTIVE RESULTS OF YOUR EXERCISE WITH THE RECEIVED TEXT! For example, you could use this simple approach by using an interactive REPL with comments or add other options when there is no actual way for them to appear on screen before they occur (see Example 1). If at any time it will try to get people confused about which characters really exist from within one sentence - that would have resulted completely unrelated to what might happen after reading 'Hello world', but still very useful since even less information exists via normal sources such things don't necessarily need to",
+        "continuation_text": "REQUIRED FOR A SPECTIVE RESULTS OF YOUR EXERCISE WITH THE RECEIVED TEXT! For example, you could use this simple approach by using an interactive REPL with comments or add other options when there is no actual way for them to appear on screen before they occur (see Example 1). If at any time it will try to get people confused about which characters really exist from within one sentence - that would have resulted completely unrelated to what might happen after reading 'Hello world', but still very useful since even less information exists via normal sources such things don't necessarily need to",
+        "input_token_count": 116,
+        "raw_input_token_count": 116,
+        "output_token_count": 236,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 599,
+        "word_count": 102,
+        "unique_word_count": 99,
+        "unique_word_ratio": 0.9705882352941176,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

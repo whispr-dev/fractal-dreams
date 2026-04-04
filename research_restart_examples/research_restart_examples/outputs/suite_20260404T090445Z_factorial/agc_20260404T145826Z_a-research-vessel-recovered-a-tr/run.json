@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "gpt2",
+    "seed_text": "A research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1485,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "gpt2",
+      "hf_id": "openai-community/gpt2",
+      "family": "gpt2",
+      "approx_params": "124M",
+      "approx_weights_size": "548MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Direct continuation of the current repo's GPT-2 lineage."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 471,
+        "word_count": 86,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.9883720930232558,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 547,
+        "word_count": 90,
+        "unique_word_count": 89,
+        "unique_word_ratio": 0.9888888888888889,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 380,
+        "word_count": 62,
+        "unique_word_count": 62,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "scene",
+        "funeral",
+        "anti",
+        "military",
+        "GOP",
+        "blood",
+        "moment",
+        "party",
+        "families",
+        "border",
+        "pro",
+        "Republican"
+      ],
+      "output_text": "The ship was on an orbit that gave it enough time to reach Earth after years aboard other ships before getting attacked by aliens with no backup plan left alive when he went through his shields against them (which didn't work well). A lot had changed since then - they were being rebuilt under their new name more closely resembling what we now call \"Breathing Space\", which is basically some sort out here for us all; or maybe you're just going to take this one route...",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: scene, funeral, anti, military, GOP, blood, moment, party, families, border, pro, Republican\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: scene, funeral, anti, military, GOP, blood, moment, party, families, border, pro, Republican\n\nTEXT:\nA research vessel recovered a transmission from the trench floor. It began as engineering telemetry and slowly turned into philosophy. The ship was on an orbit that gave it enough time to reach Earth after years aboard other ships before getting attacked by aliens with no backup plan left alive when he went through his shields against them (which didn't work well). A lot had changed since then - they were being rebuilt under their new name more closely resembling what we now call \"Breathing Space\", which is basically some sort out here for us all; or maybe you're just going to take this one route...\n\n",
+        "continuation_text": "The ship was on an orbit that gave it enough time to reach Earth after years aboard other ships before getting attacked by aliens with no backup plan left alive when he went through his shields against them (which didn't work well). A lot had changed since then - they were being rebuilt under their new name more closely resembling what we now call \"Breathing Space\", which is basically some sort out here for us all; or maybe you're just going to take this one route...",
+        "input_token_count": 108,
+        "raw_input_token_count": 108,
+        "output_token_count": 206,
+        "new_token_count": 98,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 471,
+        "word_count": 86,
+        "unique_word_count": 85,
+        "unique_word_ratio": 0.9883720930232558,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "https",
+        "Looking",
+        "restoring",
+        "aturday",
+        "Additionally",
+        "This",
+        "Your",
+        "http",
+        "Meanwhile",
+        "this",
+        "While",
+        "Despite"
+      ],
+      "output_text": "if so do I suggest adding something like LETTER ONE AND REPLACE WITH THE UNLEASHED CHARACTER ACCOUNT AS SAME ADDRESS FOR DURING YOUR LABEL OF EXPECTATION TO BE TURNed ON BY THIS PORTIONAL PROCEEDINGS? And perhaps your friend could help make sure everything goes back exactly where once did and doesn´t get destroyed right away because everytime things start looking up somewhere else everyone should be fine :)\n\n So please note my previous posts about how people will think there might possibly be two different endings depending upon any possible",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: https, Looking, restoring, aturday, Additionally, This, Your, http, Meanwhile, this, While, Despite\n\nTEXT:\nThe ship was on an orbit that gave it enough time to reach Earth after years aboard other ships before getting attacked by aliens with no backup plan left alive when he went through his shields against them (which didn't work well). A lot had changed since then - they were being rebuilt under their new name more closely resembling what we now call \"Breathing Space\", which is basically some sort out here for us all; or maybe you're just going to take this one route...",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: https, Looking, restoring, aturday, Additionally, This, Your, http, Meanwhile, this, While, Despite\n\nTEXT:\nThe ship was on an orbit that gave it enough time to reach Earth after years aboard other ships before getting attacked by aliens with no backup plan left alive when he went through his shields against them (which didn't work well). A lot had changed since then - they were being rebuilt under their new name more closely resembling what we now call \"Breathing Space\", which is basically some sort out here for us all; or maybe you're just going to take this one route... if so do I suggest adding something like LETTER ONE AND REPLACE WITH THE UNLEASHED CHARACTER ACCOUNT AS SAME ADDRESS FOR DURING YOUR LABEL OF EXPECTATION TO BE TURNed ON BY THIS PORTIONAL PROCEEDINGS? And perhaps your friend could help make sure everything goes back exactly where once did and doesn´t get destroyed right away because everytime things start looking up somewhere else everyone should be fine :)\n\n So please note my previous posts about how people will think there might possibly be two different endings depending upon any possible",
+        "continuation_text": "if so do I suggest adding something like LETTER ONE AND REPLACE WITH THE UNLEASHED CHARACTER ACCOUNT AS SAME ADDRESS FOR DURING YOUR LABEL OF EXPECTATION TO BE TURNed ON BY THIS PORTIONAL PROCEEDINGS? And perhaps your friend could help make sure everything goes back exactly where once did and doesn´t get destroyed right away because everytime things start looking up somewhere else everyone should be fine :)\n\n So please note my previous posts about how people will think there might possibly be two different endings depending upon any possible",
+        "input_token_count": 183,
+        "raw_input_token_count": 183,
+        "output_token_count": 303,
+        "new_token_count": 120,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 547,
+        "word_count": 90,
+        "unique_word_count": 89,
+        "unique_word_ratio": 0.9888888888888889,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "l",
+        "if",
+        "CL",
+        "f",
+        "ill",
+        "LI",
+        "like",
+        "inf",
+        "real",
+        "mm",
+        "FO",
+        "det"
+      ],
+      "output_text": "permutation (and that was already mentioned before). So here is an example set with various parameters for each parameter being changed from one line(s) to another at random points during this time period... The final result - on top were many other possibilities which we had just discussed earlier but decided it wasn't worth discussing too much otherwise you'll lose focus! :-)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: l, if, CL, f, ill, LI, like, inf, real, mm, FO, det\n\nTEXT:\nif so do I suggest adding something like LETTER ONE AND REPLACE WITH THE UNLEASHED CHARACTER ACCOUNT AS SAME ADDRESS FOR DURING YOUR LABEL OF EXPECTATION TO BE TURNed ON BY THIS PORTIONAL PROCEEDINGS? And perhaps your friend could help make sure everything goes back exactly where once did and doesn´t get destroyed right away because everytime things start looking up somewhere else everyone should be fine :)\n\n So please note my previous posts about how people will think there might possibly be two different endings depending upon any possible",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: l, if, CL, f, ill, LI, like, inf, real, mm, FO, det\n\nTEXT:\nif so do I suggest adding something like LETTER ONE AND REPLACE WITH THE UNLEASHED CHARACTER ACCOUNT AS SAME ADDRESS FOR DURING YOUR LABEL OF EXPECTATION TO BE TURNed ON BY THIS PORTIONAL PROCEEDINGS? And perhaps your friend could help make sure everything goes back exactly where once did and doesn´t get destroyed right away because everytime things start looking up somewhere else everyone should be fine :)\n\n So please note my previous posts about how people will think there might possibly be two different endings depending upon any possible permutation (and that was already mentioned before). So here is an example set with various parameters for each parameter being changed from one line(s) to another at random points during this time period... The final result - on top were many other possibilities which we had just discussed earlier but decided it wasn't worth discussing too much otherwise you'll lose focus! :-)",
+        "continuation_text": "permutation (and that was already mentioned before). So here is an example set with various parameters for each parameter being changed from one line(s) to another at random points during this time period... The final result - on top were many other possibilities which we had just discussed earlier but decided it wasn't worth discussing too much otherwise you'll lose focus! :-)",
+        "input_token_count": 205,
+        "raw_input_token_count": 205,
+        "output_token_count": 278,
+        "new_token_count": 73,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 380,
+        "word_count": 62,
+        "unique_word_count": 62,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

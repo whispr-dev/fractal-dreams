@@ -1,0 +1,221 @@
+{
+  "engine": "recursive_token_self_mirroring",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.",
+    "iterations": 5,
+    "max_new_tokens": 96,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 50,
+    "repetition_penalty": 1.15,
+    "output_dir": "outputs\\suite_20260404T090445Z_factorial",
+    "random_seed": 1416
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 387,
+        "word_count": 62,
+        "unique_word_count": 58,
+        "unique_word_ratio": 0.9354838709677419,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 851,
+        "word_count": 139,
+        "unique_word_count": 118,
+        "unique_word_ratio": 0.8489208633093526,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 1326,
+        "word_count": 219,
+        "unique_word_count": 179,
+        "unique_word_ratio": 0.817351598173516,
+        "repeated_bigram_count": 3
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 1800,
+        "word_count": 299,
+        "unique_word_count": 239,
+        "unique_word_ratio": 0.7993311036789298,
+        "repeated_bigram_count": 4
+      },
+      {
+        "step": 5,
+        "lens": null,
+        "char_count": 2012,
+        "word_count": 336,
+        "unique_word_count": 266,
+        "unique_word_ratio": 0.7916666666666666,
+        "repeated_bigram_count": 4
+      }
+    ],
+    "step_count": 5
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward.",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer.\nassistant\nThe factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward.",
+        "continuation_text": "The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward.",
+        "input_token_count": 66,
+        "raw_input_token_count": 66,
+        "output_token_count": 114,
+        "new_token_count": 48,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 387,
+        "word_count": 62,
+        "unique_word_count": 58,
+        "unique_word_ratio": 0.9354838709677419,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself.",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward. A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward.\nassistant\nA faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself.",
+        "continuation_text": "A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself.",
+        "input_token_count": 113,
+        "raw_input_token_count": 113,
+        "output_token_count": 208,
+        "new_token_count": 95,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 851,
+        "word_count": 139,
+        "unique_word_count": 118,
+        "unique_word_ratio": 0.8489208633093526,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward. A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself.<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "Each year, as a gentle breeze brushed past the crumbling walls, the abandoned factory would pause for a moment. Its roof creaked slightly as unseen hands stretched out to help secure it against the ever-deepening gale. In these moments, when sunlight finally crept around the old chimneys and ceiling tiles softened under our footsteps, what once had been a living thing might have seemed just another shadow on the horizon. But even in the quiet dawn, remnants of the world",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward. A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself. Each year, as a gentle breeze brushed past the crumbling walls, the abandoned factory would pause for a moment. Its roof creaked slightly as unseen hands stretched out to help secure it against the ever-deepening gale. In these moments, when sunlight finally crept around the old chimneys and ceiling tiles softened under our footsteps, what once had been a living thing might have seemed just another shadow on the horizon. But even in the quiet dawn, remnants of the world",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward. A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward. A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself.\nassistant\nEach year, as a gentle breeze brushed past the crumbling walls, the abandoned factory would pause for a moment. Its roof creaked slightly as unseen hands stretched out to help secure it against the ever-deepening gale. In these moments, when sunlight finally crept around the old chimneys and ceiling tiles softened under our footsteps, what once had been a living thing might have seemed just another shadow on the horizon. But even in the quiet dawn, remnants of the world",
+        "continuation_text": "Each year, as a gentle breeze brushed past the crumbling walls, the abandoned factory would pause for a moment. Its roof creaked slightly as unseen hands stretched out to help secure it against the ever-deepening gale. In these moments, when sunlight finally crept around the old chimneys and ceiling tiles softened under our footsteps, what once had been a living thing might have seemed just another shadow on the horizon. But even in the quiet dawn, remnants of the world",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 303,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1326,
+        "word_count": 219,
+        "unique_word_count": 179,
+        "unique_word_ratio": 0.817351598173516,
+        "repeated_bigram_count": 3
+      }
+    },
+    {
+      "step": 4,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward. A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself. Each year, as a gentle breeze brushed past the crumbling walls, the abandoned factory would pause for a moment. Its roof creaked slightly as unseen hands stretched out to help secure it against the ever-deepening gale. In these moments, when sunlight finally crept around the old chimneys and ceiling tiles softened under our footsteps, what once had been a living thing might have seemed just another shadow on the horizon. But even in the quiet dawn, remnants of the world<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "journeyed through memory lanes, slowly revealing secrets buried beneath the surface. The sounds echoed louder than any echo could capture - a soft patter and occasional growl of unknown origin. It wasn't until I stepped off the pathway that I realized the true weight of my presence. A towering tree stood before me, its branches swaying gently in the wind. \"Welcome,\" said the aged figure at its base, his voice carrying deeper and darker tones than earlier. \"I am seeking",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward. A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself. Each year, as a gentle breeze brushed past the crumbling walls, the abandoned factory would pause for a moment. Its roof creaked slightly as unseen hands stretched out to help secure it against the ever-deepening gale. In these moments, when sunlight finally crept around the old chimneys and ceiling tiles softened under our footsteps, what once had been a living thing might have seemed just another shadow on the horizon. But even in the quiet dawn, remnants of the world journeyed through memory lanes, slowly revealing secrets buried beneath the surface. The sounds echoed louder than any echo could capture - a soft patter and occasional growl of unknown origin. It wasn't until I stepped off the pathway that I realized the true weight of my presence. A towering tree stood before me, its branches swaying gently in the wind. \"Welcome,\" said the aged figure at its base, his voice carrying deeper and darker tones than earlier. \"I am seeking",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward. A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself. Each year, as a gentle breeze brushed past the crumbling walls, the abandoned factory would pause for a moment. Its roof creaked slightly as unseen hands stretched out to help secure it against the ever-deepening gale. In these moments, when sunlight finally crept around the old chimneys and ceiling tiles softened under our footsteps, what once had been a living thing might have seemed just another shadow on the horizon. But even in the quiet dawn, remnants of the world<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward. A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself. Each year, as a gentle breeze brushed past the crumbling walls, the abandoned factory would pause for a moment. Its roof creaked slightly as unseen hands stretched out to help secure it against the ever-deepening gale. In these moments, when sunlight finally crept around the old chimneys and ceiling tiles softened under our footsteps, what once had been a living thing might have seemed just another shadow on the horizon. But even in the quiet dawn, remnants of the world\nassistant\njourneyed through memory lanes, slowly revealing secrets buried beneath the surface. The sounds echoed louder than any echo could capture - a soft patter and occasional growl of unknown origin. It wasn't until I stepped off the pathway that I realized the true weight of my presence. A towering tree stood before me, its branches swaying gently in the wind. \"Welcome,\" said the aged figure at its base, his voice carrying deeper and darker tones than earlier. \"I am seeking",
+        "continuation_text": "journeyed through memory lanes, slowly revealing secrets buried beneath the surface. The sounds echoed louder than any echo could capture - a soft patter and occasional growl of unknown origin. It wasn't until I stepped off the pathway that I realized the true weight of my presence. A towering tree stood before me, its branches swaying gently in the wind. \"Welcome,\" said the aged figure at its base, his voice carrying deeper and darker tones than earlier. \"I am seeking",
+        "input_token_count": 303,
+        "raw_input_token_count": 303,
+        "output_token_count": 399,
+        "new_token_count": 96,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 1800,
+        "word_count": 299,
+        "unique_word_count": 239,
+        "unique_word_ratio": 0.7993311036789298,
+        "repeated_bigram_count": 4
+      }
+    },
+    {
+      "step": 5,
+      "engine": "recursive_token_self_mirroring",
+      "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward. A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself. Each year, as a gentle breeze brushed past the crumbling walls, the abandoned factory would pause for a moment. Its roof creaked slightly as unseen hands stretched out to help secure it against the ever-deepening gale. In these moments, when sunlight finally crept around the old chimneys and ceiling tiles softened under our footsteps, what once had been a living thing might have seemed just another shadow on the horizon. But even in the quiet dawn, remnants of the world journeyed through memory lanes, slowly revealing secrets buried beneath the surface. The sounds echoed louder than any echo could capture - a soft patter and occasional growl of unknown origin. It wasn't until I stepped off the pathway that I realized the true weight of my presence. A towering tree stood before me, its branches swaying gently in the wind. \"Welcome,\" said the aged figure at its base, his voice carrying deeper and darker tones than earlier. \"I am seeking<|im_end|>\n<|im_start|>assistant\n",
+      "delta_text": "a way home.\" He began, his footsteps echoing through the shadows. I watched him closely, a strange mixture of awe and trepidation. What did he want? My heart raced as we walked towards the ancient forest beyond.",
+      "output_text": "An abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward. A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself. Each year, as a gentle breeze brushed past the crumbling walls, the abandoned factory would pause for a moment. Its roof creaked slightly as unseen hands stretched out to help secure it against the ever-deepening gale. In these moments, when sunlight finally crept around the old chimneys and ceiling tiles softened under our footsteps, what once had been a living thing might have seemed just another shadow on the horizon. But even in the quiet dawn, remnants of the world journeyed through memory lanes, slowly revealing secrets buried beneath the surface. The sounds echoed louder than any echo could capture - a soft patter and occasional growl of unknown origin. It wasn't until I stepped off the pathway that I realized the true weight of my presence. A towering tree stood before me, its branches swaying gently in the wind. \"Welcome,\" said the aged figure at its base, his voice carrying deeper and darker tones than earlier. \"I am seeking a way home.\" He began, his footsteps echoing through the shadows. I watched him closely, a strange mixture of awe and trepidation. What did he want? My heart raced as we walked towards the ancient forest beyond.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward. A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself. Each year, as a gentle breeze brushed past the crumbling walls, the abandoned factory would pause for a moment. Its roof creaked slightly as unseen hands stretched out to help secure it against the ever-deepening gale. In these moments, when sunlight finally crept around the old chimneys and ceiling tiles softened under our footsteps, what once had been a living thing might have seemed just another shadow on the horizon. But even in the quiet dawn, remnants of the world journeyed through memory lanes, slowly revealing secrets buried beneath the surface. The sounds echoed louder than any echo could capture - a soft patter and occasional growl of unknown origin. It wasn't until I stepped off the pathway that I realized the true weight of my presence. A towering tree stood before me, its branches swaying gently in the wind. \"Welcome,\" said the aged figure at its base, his voice carrying deeper and darker tones than earlier. \"I am seeking<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nContinue the following text. Do not explain your process.\n\nTEXT:\nAn abandoned factory learned to narrate its own decay, but every retelling made it sound less like rust and more like prayer. The factory spoke of its former glory through silent reverie, yet each whisper carried with it stories forgotten centuries ago. As time passed, words faded into silence, leaving behind echoes that were never quite silenced by reality's relentless march forward. A faint, barely perceptible hum filled the air as more tales emerged from the rotting logs. Each new voice traced an arc of memories far back, whispers about those who came before, their laughter now lost in the embrace of this unrelenting time machine. Despite the loss of language, hope lingered within each storyteller; their tale was forever entwined with the legacy they held, reminding them of the power contained within the very fabric of existence itself. Each year, as a gentle breeze brushed past the crumbling walls, the abandoned factory would pause for a moment. Its roof creaked slightly as unseen hands stretched out to help secure it against the ever-deepening gale. In these moments, when sunlight finally crept around the old chimneys and ceiling tiles softened under our footsteps, what once had been a living thing might have seemed just another shadow on the horizon. But even in the quiet dawn, remnants of the world journeyed through memory lanes, slowly revealing secrets buried beneath the surface. The sounds echoed louder than any echo could capture - a soft patter and occasional growl of unknown origin. It wasn't until I stepped off the pathway that I realized the true weight of my presence. A towering tree stood before me, its branches swaying gently in the wind. \"Welcome,\" said the aged figure at its base, his voice carrying deeper and darker tones than earlier. \"I am seeking\nassistant\na way home.\" He began, his footsteps echoing through the shadows. I watched him closely, a strange mixture of awe and trepidation. What did he want? My heart raced as we walked towards the ancient forest beyond.",
+        "continuation_text": "a way home.\" He began, his footsteps echoing through the shadows. I watched him closely, a strange mixture of awe and trepidation. What did he want? My heart raced as we walked towards the ancient forest beyond.",
+        "input_token_count": 398,
+        "raw_input_token_count": 398,
+        "output_token_count": 445,
+        "new_token_count": 47,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 96,
+        "effective_max_new_tokens": 96,
+        "max_input_tokens_budget": 32671,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2012,
+        "word_count": 336,
+        "unique_word_count": 266,
+        "unique_word_ratio": 0.7916666666666666,
+        "repeated_bigram_count": 4
+      }
+    }
+  ]
+}
