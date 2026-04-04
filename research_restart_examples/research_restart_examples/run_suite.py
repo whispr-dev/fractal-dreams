@@ -2,9 +2,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import traceback
 from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Iterable, List, Sequence
+from typing import List, Sequence
 
 from engine_activation_gradient_climbing import RunConfig as AGCConfig, run as run_agc
 from engine_latent_vector_transform_composition import RunConfig as LVTCConfig, run as run_lvtc
@@ -68,6 +69,7 @@ class EngineDefaults:
     srpf_iterations: int = 4
     srpf_max_new_tokens: int = 160
     srpf_temperature: float = 0.85
+    srpf_max_text_chars: int = 4000
 
 
 def parse_csv_arg(raw: str, valid: Sequence[str], arg_name: str) -> List[str]:
@@ -104,15 +106,7 @@ def load_prompts(prompt_file: str | None) -> List[str]:
     return prompts
 
 
-def build_jobs(
-    *,
-    mode: str,
-    models: Sequence[str],
-    engines: Sequence[str],
-    prompts: Sequence[str],
-    replicates: int,
-    seed_base: int,
-) -> List[JobSpec]:
+def build_jobs(*, mode: str, models: Sequence[str], engines: Sequence[str], prompts: Sequence[str], replicates: int, seed_base: int) -> List[JobSpec]:
     jobs: List[JobSpec] = []
     seed_counter = 0
 
@@ -225,6 +219,7 @@ def run_job(job: JobSpec, suite_dir: Path, defaults: EngineDefaults) -> Path:
                 temperature=defaults.srpf_temperature,
                 output_dir=str(suite_dir),
                 random_seed=job.run_seed,
+                max_text_chars=defaults.srpf_max_text_chars,
             )
         )
 
@@ -250,6 +245,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--replicates", type=positive_int, default=3)
     parser.add_argument("--seed-base", type=int, default=1000)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--stop-on-error", action="store_true")
 
     parser.add_argument("--rtsm-iterations", type=positive_int, default=5)
     parser.add_argument("--rtsm-max-new-tokens", type=positive_int, default=96)
@@ -276,6 +272,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--srpf-iterations", type=positive_int, default=4)
     parser.add_argument("--srpf-max-new-tokens", type=positive_int, default=160)
     parser.add_argument("--srpf-temperature", type=float, default=0.85)
+    parser.add_argument("--srpf-max-text-chars", type=positive_int, default=4000)
     return parser.parse_args()
 
 
@@ -303,6 +300,7 @@ def defaults_from_args(args: argparse.Namespace) -> EngineDefaults:
         srpf_iterations=args.srpf_iterations,
         srpf_max_new_tokens=args.srpf_max_new_tokens,
         srpf_temperature=args.srpf_temperature,
+        srpf_max_text_chars=args.srpf_max_text_chars,
     )
 
 
@@ -342,18 +340,32 @@ def main() -> Path:
         return suite_dir
 
     completed_runs = []
+    failed_runs = []
     total_jobs = len(jobs)
     for index, job in enumerate(jobs, start=1):
         print(
             f"[{index}/{total_jobs}] engine={job.engine} model={job.model_key} prompt={job.prompt_index} replicate={job.replicate_index} seed={job.run_seed}",
             flush=True,
         )
-        run_path = run_job(job, suite_dir, defaults)
-        completed_runs.append({
-            **asdict(job),
-            "path": str(run_path),
-        })
-        write_json(suite_dir / "suite_manifest.json", {**manifest, "completed_runs": completed_runs})
+        try:
+            run_path = run_job(job, suite_dir, defaults)
+            completed_runs.append({**asdict(job), "path": str(run_path)})
+        except Exception as exc:
+            failed_runs.append(
+                {
+                    **asdict(job),
+                    "error_type": type(exc).__name__,
+                    "error_message": str(exc),
+                    "traceback": traceback.format_exc(),
+                }
+            )
+            print(f"  ! failed: {type(exc).__name__}: {exc}", flush=True)
+            write_json(suite_dir / "suite_manifest.json", {**manifest, "completed_runs": completed_runs, "failed_runs": failed_runs})
+            if args.stop_on_error:
+                raise
+            continue
+
+        write_json(suite_dir / "suite_manifest.json", {**manifest, "completed_runs": completed_runs, "failed_runs": failed_runs})
 
     return suite_dir
 

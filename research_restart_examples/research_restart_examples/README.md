@@ -32,7 +32,10 @@ hf download Qwen/Qwen2.5-0.5B-Instruct
 ## Run one engine manually
 
 ```bash
-python engine_recursive_token_self_mirroring.py --model gpt2 --seed-text "A machine dreams in recursive echoes beneath the sea." --iterations 5
+python engine_recursive_token_self_mirroring.py \
+  --model gpt2 \
+  --seed-text "A machine dreams in recursive echoes beneath the sea." \
+  --iterations 5
 ```
 
 ## Run the bundled example suite

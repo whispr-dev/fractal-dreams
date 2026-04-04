@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import json
-from dataclasses import dataclass, asdict
+from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Dict, Iterable, Optional
 
@@ -64,11 +64,35 @@ class LoadedModel:
             "model": asdict(self.spec),
             "device": self.device,
             "dtype": self.dtype,
+            "context_limit": get_context_limit(self.tokenizer, self.model),
         }
 
 
 def get_default_device() -> str:
     return "cuda" if torch.cuda.is_available() else "cpu"
+
+
+def _finite_tokenizer_limit(tokenizer: PreTrainedTokenizerBase) -> Optional[int]:
+    value = getattr(tokenizer, "model_max_length", None)
+    if isinstance(value, int) and 0 < value < 1_000_000:
+        return value
+    return None
+
+
+def get_context_limit(tokenizer: PreTrainedTokenizerBase, model: PreTrainedModel) -> int:
+    candidates = []
+    for attr in ("max_position_embeddings", "n_positions", "max_sequence_length", "seq_length"):
+        value = getattr(model.config, attr, None)
+        if isinstance(value, int) and value > 0:
+            candidates.append(value)
+
+    tokenizer_limit = _finite_tokenizer_limit(tokenizer)
+    if tokenizer_limit is not None:
+        candidates.append(tokenizer_limit)
+
+    if not candidates:
+        return 2048
+    return min(candidates)
 
 
 def load_model(model_key: str, device: Optional[str] = None) -> LoadedModel:
@@ -139,13 +163,27 @@ def generate_text(
 
     tokenizer = loaded.tokenizer
     model = loaded.model
-    encoded = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=min(tokenizer.model_max_length, 2048))
+    context_limit = get_context_limit(tokenizer, model)
+
+    safe_max_new_tokens = min(max_new_tokens, max(1, context_limit - 2))
+    max_input_tokens = max(1, context_limit - safe_max_new_tokens - 1)
+
+    raw_ids = tokenizer(prompt, add_special_tokens=True)["input_ids"]
+    raw_input_token_count = len(raw_ids)
+    prompt_was_truncated = raw_input_token_count > max_input_tokens
+
+    encoded = tokenizer(
+        prompt,
+        return_tensors="pt",
+        truncation=True,
+        max_length=max_input_tokens,
+    )
     encoded = {k: v.to(loaded.device) for k, v in encoded.items()}
 
     with torch.no_grad():
         outputs = model.generate(
             **encoded,
-            max_new_tokens=max_new_tokens,
+            max_new_tokens=safe_max_new_tokens,
             do_sample=True,
             temperature=temperature,
             top_p=top_p,
@@ -164,8 +202,14 @@ def generate_text(
         "full_text": full_text,
         "continuation_text": continuation_text,
         "input_token_count": int(encoded["input_ids"].shape[1]),
+        "raw_input_token_count": int(raw_input_token_count),
         "output_token_count": int(outputs[0].shape[0]),
         "new_token_count": int(continuation_ids.shape[0]),
+        "context_limit": int(context_limit),
+        "requested_max_new_tokens": int(max_new_tokens),
+        "effective_max_new_tokens": int(safe_max_new_tokens),
+        "max_input_tokens_budget": int(max_input_tokens),
+        "prompt_was_truncated": bool(prompt_was_truncated),
     }
 
 

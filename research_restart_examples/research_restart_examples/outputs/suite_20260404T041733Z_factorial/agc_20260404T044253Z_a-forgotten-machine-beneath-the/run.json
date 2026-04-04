@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T041733Z_factorial",
+    "random_seed": 1037,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 578,
+        "word_count": 102,
+        "unique_word_count": 102,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 2,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 31,
+        "word_count": 5,
+        "unique_word_count": 5,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Brune",
+        "ão",
+        "Hua",
+        "1907",
+        "odka",
+        "annie",
+        "san",
+        "ende",
+        "Xiang",
+        "ESCO",
+        "Aunt",
+        "Pants"
+      ],
+      "output_text": "When they found it was too late to finish writing their sentence or have any questions about what had happened there before? They chose an automated mode which is for each word being written on top with no input from anybody else except those who came out when you started work while your voice took over! The most interesting part - \"We're doing our homework\" sounds like something I've ever heard (which makes sense) so we'll find some solutions soon enough because all these ideas worked well together quickly & safely at once...it's just amazing how much fun this could be !",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Brune, ão, Hua, 1907, odka, annie, san, ende, Xiang, ESCO, Aunt, Pants\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Brune, ão, Hua, 1907, odka, annie, san, ende, Xiang, ESCO, Aunt, Pants\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. When they found it was too late to finish writing their sentence or have any questions about what had happened there before? They chose an automated mode which is for each word being written on top with no input from anybody else except those who came out when you started work while your voice took over! The most interesting part - \"We're doing our homework\" sounds like something I've ever heard (which makes sense) so we'll find some solutions soon enough because all these ideas worked well together quickly & safely at once...it's just amazing how much fun this could be !",
+        "continuation_text": "When they found it was too late to finish writing their sentence or have any questions about what had happened there before? They chose an automated mode which is for each word being written on top with no input from anybody else except those who came out when you started work while your voice took over! The most interesting part - \"We're doing our homework\" sounds like something I've ever heard (which makes sense) so we'll find some solutions soon enough because all these ideas worked well together quickly & safely at once...it's just amazing how much fun this could be !",
+        "input_token_count": 121,
+        "raw_input_token_count": 121,
+        "output_token_count": 236,
+        "new_token_count": 115,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 578,
+        "word_count": 102,
+        "unique_word_count": 102,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "When",
+        "Whenever",
+        "Ultimately",
+        "when",
+        "Just",
+        "WHEN",
+        "Even",
+        "Sometimes",
+        "Likewise",
+        "Recently",
+        "Personally",
+        "Ironically"
+      ],
+      "output_text": ";)",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: When, Whenever, Ultimately, when, Just, WHEN, Even, Sometimes, Likewise, Recently, Personally, Ironically\n\nTEXT:\nWhen they found it was too late to finish writing their sentence or have any questions about what had happened there before? They chose an automated mode which is for each word being written on top with no input from anybody else except those who came out when you started work while your voice took over! The most interesting part - \"We're doing our homework\" sounds like something I've ever heard (which makes sense) so we'll find some solutions soon enough because all these ideas worked well together quickly & safely at once...it's just amazing how much fun this could be !",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: When, Whenever, Ultimately, when, Just, WHEN, Even, Sometimes, Likewise, Recently, Personally, Ironically\n\nTEXT:\nWhen they found it was too late to finish writing their sentence or have any questions about what had happened there before? They chose an automated mode which is for each word being written on top with no input from anybody else except those who came out when you started work while your voice took over! The most interesting part - \"We're doing our homework\" sounds like something I've ever heard (which makes sense) so we'll find some solutions soon enough because all these ideas worked well together quickly & safely at once...it's just amazing how much fun this could be ! ;)",
+        "continuation_text": ";)",
+        "input_token_count": 199,
+        "raw_input_token_count": 199,
+        "output_token_count": 201,
+        "new_token_count": 2,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 2,
+        "word_count": 1,
+        "unique_word_count": 1,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "');",
+        "anime",
+        ");",
+        "\";",
+        "pasta",
+        "offseason",
+        "Seahawks",
+        "Seattle",
+        "Tanzania",
+        "manga",
+        "WEEK",
+        "movie"
+      ],
+      "output_text": "\"\";, Japanese and English texts",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ');, anime, );, \";, pasta, offseason, Seahawks, Seattle, Tanzania, manga, WEEK, movie\n\nTEXT:\n;)",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: ');, anime, );, \";, pasta, offseason, Seahawks, Seattle, Tanzania, manga, WEEK, movie\n\nTEXT:\n;)\n\"\";, Japanese and English texts",
+        "continuation_text": "\"\";, Japanese and English texts",
+        "input_token_count": 89,
+        "raw_input_token_count": 89,
+        "output_token_count": 98,
+        "new_token_count": 9,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 903,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 31,
+        "word_count": 5,
+        "unique_word_count": 5,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

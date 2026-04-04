@@ -18,6 +18,7 @@ class RunConfig:
     temperature: float
     output_dir: str
     random_seed: int
+    max_text_chars: int = 4000
 
 
 REFLECTION_TEMPLATE = """Analyze the following text and do two things:
@@ -29,6 +30,17 @@ TEXT:
 """
 
 
+def _clip_text(text: str, max_chars: int) -> str:
+    text = text.strip()
+    if len(text) <= max_chars:
+        return text
+    clipped = text[-max_chars:]
+    first_newline = clipped.find("\n")
+    if 0 <= first_newline < max_chars // 4:
+        clipped = clipped[first_newline + 1:]
+    return clipped.strip()
+
+
 def run(config: RunConfig) -> Path:
     loaded = load_model(config.model_key)
     run_dir = ensure_dir(Path(config.output_dir) / f"srpf_{utc_timestamp()}_{slugify(config.seed_text, 32)}")
@@ -38,7 +50,8 @@ def run(config: RunConfig) -> Path:
     text_log: List[str] = [f"[0] seed\n{current_text}\n"]
 
     for step in range(1, config.iterations + 1):
-        reflection_user_text = REFLECTION_TEMPLATE.format(text=current_text)
+        current_window = _clip_text(current_text, config.max_text_chars)
+        reflection_user_text = REFLECTION_TEMPLATE.format(text=current_window)
         reflection_prompt = render_prompt(loaded, reflection_user_text)
         reflection_gen = generate_text(
             loaded,
@@ -47,15 +60,16 @@ def run(config: RunConfig) -> Path:
             temperature=config.temperature,
             seed=config.random_seed + (step * 2),
         )
-        reflection = reflection_gen["continuation_text"] or reflection_gen["full_text"]
+        reflection = (reflection_gen["continuation_text"] or reflection_gen["full_text"]).strip()
+        reflection_window = _clip_text(reflection, max(1000, config.max_text_chars // 2))
 
         rewrite_prompt = render_prompt(
             loaded,
             (
                 "Use the reflection below to write the next evolved version of the text. "
                 "Keep it as connected prose, not bullet points.\n\n"
-                f"ORIGINAL TEXT:\n{current_text}\n\n"
-                f"REFLECTION:\n{reflection}"
+                f"ORIGINAL TEXT:\n{current_window}\n\n"
+                f"REFLECTION:\n{reflection_window}"
             ),
         )
         rewrite_gen = generate_text(
@@ -65,14 +79,18 @@ def run(config: RunConfig) -> Path:
             temperature=config.temperature,
             seed=config.random_seed + (step * 2) + 1,
         )
-        rewritten = rewrite_gen["continuation_text"] or rewrite_gen["full_text"]
-        current_text = rewritten.strip()
+        rewritten = (rewrite_gen["continuation_text"] or rewrite_gen["full_text"]).strip()
+        if not rewritten:
+            rewritten = current_window
+        current_text = rewritten
 
         record = {
             "step": step,
             "engine": "self_reflective_prompt_feedback",
             "reflection_text": reflection,
             "output_text": current_text,
+            "source_window_text": current_window,
+            "reflection_window_text": reflection_window,
             "reflection_generation": reflection_gen,
             "rewrite_generation": rewrite_gen,
             "metrics": basic_text_metrics(current_text),
@@ -102,6 +120,7 @@ if __name__ == "__main__":
     parser.add_argument("--temperature", type=float, default=0.85)
     parser.add_argument("--output-dir", default="outputs")
     parser.add_argument("--random-seed", type=int, default=42)
+    parser.add_argument("--max-text-chars", type=int, default=4000)
     args = parser.parse_args()
     out = run(RunConfig(**vars(args)))
     print(out)

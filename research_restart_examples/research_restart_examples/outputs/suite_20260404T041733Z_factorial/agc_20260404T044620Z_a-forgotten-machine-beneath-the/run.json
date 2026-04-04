@@ -1,0 +1,188 @@
+{
+  "engine": "activation_gradient_climbing",
+  "config": {
+    "model_key": "qwen2.5-0.5b-instruct",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "iterations": 3,
+    "max_new_tokens": 120,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T041733Z_factorial",
+    "random_seed": 1045,
+    "layer_index": 6,
+    "virtual_tokens": 8,
+    "optim_steps": 24,
+    "learning_rate": 0.08,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "qwen2.5-0.5b-instruct",
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "family": "qwen2",
+      "approx_params": "0.49B",
+      "approx_weights_size": "988MB safetensors",
+      "prompt_style": "chat",
+      "notes": "Modern small instruct model; adds a stronger prompt-following contrast."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 32768
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 523,
+        "word_count": 81,
+        "unique_word_count": 72,
+        "unique_word_ratio": 0.8888888888888888,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 210,
+        "word_count": 33,
+        "unique_word_count": 33,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 463,
+        "word_count": 66,
+        "unique_word_count": 64,
+        "unique_word_ratio": 0.9696969696969697,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 3
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Mayo",
+        "_a",
+        "aint",
+        "_B",
+        "t",
+        "_C",
+        "ce",
+        "tt",
+        "_F",
+        "tr",
+        "fr",
+        "Yourself"
+      ],
+      "output_text": "Here is the next recursive transformation based on the given instructions:\n\n\"A forgotten machine beneath the sea remained silent for many years before it spoke again... each repetition felt like an echo of something deeper, much larger than itself.\"\n\nThe \"latent anchor tokens\" (in this case, \"freely choose from\" 3-5) have been used as soft guides to generate variations while preserving the core meaning and imagery of the original text. The transformation continues to follow these same principles for future iterations.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Mayo, _a, aint, _B, t, _C, ce, tt, _F, tr, fr, Yourself\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.\nassistant\nHere is the next recursive transformation based on the given instructions:\n\n\"A forgotten machine beneath the sea remained silent for many years before it spoke again... each repetition felt like an echo of something deeper, much larger than itself.\"\n\nThe \"latent anchor tokens\" (in this case, \"freely choose from\" 3-5) have been used as soft guides to generate variations while preserving the core meaning and imagery of the original text. The transformation continues to follow these same principles for future iterations.",
+        "continuation_text": "Here is the next recursive transformation based on the given instructions:\n\n\"A forgotten machine beneath the sea remained silent for many years before it spoke again... each repetition felt like an echo of something deeper, much larger than itself.\"\n\nThe \"latent anchor tokens\" (in this case, \"freely choose from\" 3-5) have been used as soft guides to generate variations while preserving the core meaning and imagery of the original text. The transformation continues to follow these same principles for future iterations.",
+        "input_token_count": 123,
+        "raw_input_token_count": 123,
+        "output_token_count": 222,
+        "new_token_count": 99,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 523,
+        "word_count": 81,
+        "unique_word_count": 72,
+        "unique_word_ratio": 0.8888888888888888,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "Here",
+        "here",
+        "Heb",
+        "keyst",
+        "ここ",
+        "在这里",
+        "熏",
+        "aquí",
+        "Сам",
+        "unequal",
+        "這裡",
+        "不分"
+      ],
+      "output_text": "A forgotten machine under the deep water stood still for long after its silence began… every repetition felt as if it was replaying something more profound, encompassing everything within it, far beyond itself.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Here, here, Heb, keyst, ここ, 在这里, 熏, aquí, Сам, unequal, 這裡, 不分\n\nTEXT:\nHere is the next recursive transformation based on the given instructions:\n\n\"A forgotten machine beneath the sea remained silent for many years before it spoke again... each repetition felt like an echo of something deeper, much larger than itself.\"\n\nThe \"latent anchor tokens\" (in this case, \"freely choose from\" 3-5) have been used as soft guides to generate variations while preserving the core meaning and imagery of the original text. The transformation continues to follow these same principles for future iterations.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: Here, here, Heb, keyst, ここ, 在这里, 熏, aquí, Сам, unequal, 這裡, 不分\n\nTEXT:\nHere is the next recursive transformation based on the given instructions:\n\n\"A forgotten machine beneath the sea remained silent for many years before it spoke again... each repetition felt like an echo of something deeper, much larger than itself.\"\n\nThe \"latent anchor tokens\" (in this case, \"freely choose from\" 3-5) have been used as soft guides to generate variations while preserving the core meaning and imagery of the original text. The transformation continues to follow these same principles for future iterations.\nassistant\nA forgotten machine under the deep water stood still for long after its silence began… every repetition felt as if it was replaying something more profound, encompassing everything within it, far beyond itself.",
+        "continuation_text": "A forgotten machine under the deep water stood still for long after its silence began… every repetition felt as if it was replaying something more profound, encompassing everything within it, far beyond itself.",
+        "input_token_count": 192,
+        "raw_input_token_count": 192,
+        "output_token_count": 232,
+        "new_token_count": 40,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 210,
+        "word_count": 33,
+        "unique_word_count": 33,
+        "unique_word_ratio": 1.0,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "activation_gradient_climbing",
+      "layer_index": 6,
+      "latent_anchor_tokens": [
+        "circum",
+        "凸",
+        "Swiss",
+        "Ո",
+        "_BUS",
+        "峨",
+        "ezier",
+        "苏州",
+        "합니다",
+        "гл",
+        "逆",
+        "cop"
+      ],
+      "output_text": "The Latent Anchor Tokens used here are \"circum\", \"凸\", \"Swiss\", \"_BUS\", \"峨\", \"ezier\", \"苏州\", \"stayed\", \"for\", \"long\", \"after\", \"its\", \"silence\", \"...\", \"repeated\", \"something\", and \"more\". The Text provided does not contain any Latent Anchors directly; instead, these tokens guide further processing or reconstruction based on the context given. Therefore, there is no continuation of a new sentence with additional information using those anchors in this instance.",
+      "generation": {
+        "prompt": "<|im_start|>system\nYou are a text-only language model participating in a controlled recursion experiment.<|im_end|>\n<|im_start|>user\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: circum, 凸, Swiss, Ո, _BUS, 峨, ezier, 苏州, 합니다, гл, 逆, cop\n\nTEXT:\nA forgotten machine under the deep water stood still for long after its silence began… every repetition felt as if it was replaying something more profound, encompassing everything within it, far beyond itself.<|im_end|>\n<|im_start|>assistant\n",
+        "full_text": "system\nYou are a text-only language model participating in a controlled recursion experiment.\nuser\nWrite the next recursive transformation of the text below. Use the latent anchor tokens only as soft guidance, not as a list to copy verbatim.\n\nLATENT ANCHORS: circum, 凸, Swiss, Ո, _BUS, 峨, ezier, 苏州, 합니다, гл, 逆, cop\n\nTEXT:\nA forgotten machine under the deep water stood still for long after its silence began… every repetition felt as if it was replaying something more profound, encompassing everything within it, far beyond itself.\nassistant\nThe Latent Anchor Tokens used here are \"circum\", \"凸\", \"Swiss\", \"_BUS\", \"峨\", \"ezier\", \"苏州\", \"stayed\", \"for\", \"long\", \"after\", \"its\", \"silence\", \"...\", \"repeated\", \"something\", and \"more\". The Text provided does not contain any Latent Anchors directly; instead, these tokens guide further processing or reconstruction based on the context given. Therefore, there is no continuation of a new sentence with additional information using those anchors in this instance.",
+        "continuation_text": "The Latent Anchor Tokens used here are \"circum\", \"凸\", \"Swiss\", \"_BUS\", \"峨\", \"ezier\", \"苏州\", \"stayed\", \"for\", \"long\", \"after\", \"its\", \"silence\", \"...\", \"repeated\", \"something\", and \"more\". The Text provided does not contain any Latent Anchors directly; instead, these tokens guide further processing or reconstruction based on the context given. Therefore, there is no continuation of a new sentence with additional information using those anchors in this instance.",
+        "input_token_count": 136,
+        "raw_input_token_count": 136,
+        "output_token_count": 250,
+        "new_token_count": 114,
+        "context_limit": 32768,
+        "requested_max_new_tokens": 120,
+        "effective_max_new_tokens": 120,
+        "max_input_tokens_budget": 32647,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 463,
+        "word_count": 66,
+        "unique_word_count": 64,
+        "unique_word_ratio": 0.9696969696969697,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}

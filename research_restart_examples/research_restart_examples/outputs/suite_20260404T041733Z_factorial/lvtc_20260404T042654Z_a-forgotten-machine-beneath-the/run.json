@@ -1,0 +1,233 @@
+{
+  "engine": "latent_vector_transform_composition",
+  "config": {
+    "model_key": "distilgpt2",
+    "seed_text": "A forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+    "anchor_a": "Describe a machine as an inert object.",
+    "anchor_b": "Describe a machine as if it were a dreaming intelligence.",
+    "iterations": 4,
+    "max_new_tokens": 128,
+    "temperature": 0.8,
+    "output_dir": "outputs\\suite_20260404T041733Z_factorial",
+    "random_seed": 1014,
+    "delta_scale": 1.0,
+    "anchor_count": 12
+  },
+  "model": {
+    "model": {
+      "key": "distilgpt2",
+      "hf_id": "distilbert/distilgpt2",
+      "family": "gpt2",
+      "approx_params": "82M",
+      "approx_weights_size": "353MB safetensors",
+      "prompt_style": "plain",
+      "notes": "Fastest baseline; useful as a collapse-prone small reference model."
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "context_limit": 1024
+  },
+  "summary": {
+    "per_step": [
+      {
+        "step": 1,
+        "lens": null,
+        "char_count": 691,
+        "word_count": 120,
+        "unique_word_count": 117,
+        "unique_word_ratio": 0.975,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 2,
+        "lens": null,
+        "char_count": 720,
+        "word_count": 113,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.9646017699115044,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 3,
+        "lens": null,
+        "char_count": 714,
+        "word_count": 118,
+        "unique_word_count": 114,
+        "unique_word_ratio": 0.9661016949152542,
+        "repeated_bigram_count": 0
+      },
+      {
+        "step": 4,
+        "lens": null,
+        "char_count": 537,
+        "word_count": 79,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.9746835443037974,
+        "repeated_bigram_count": 0
+      }
+    ],
+    "step_count": 4
+  },
+  "records": [
+    {
+      "step": 1,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "it",
+        "are",
+        "had",
+        ",",
+        "have",
+        "was",
+        "made",
+        "It",
+        "if",
+        "the",
+        "."
+      ],
+      "output_text": "The words they contained grew louder so that there seemed no danger for their meaning to change unless some other source remained hidden or buried away somewhere else. They became less accurate as word memory changed from one's mind into another. A new type of information retrieval would help us make decisions about whether we should read this code when you do not like them; how many times can I see something? We must find out where our original thought went before those who might come back later than what is written right now! This approach has been used several times today (see section 2). Here we will examine each problem with an intuitive understanding of why such patterns occur",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware.",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, it, are, had, ,, have, was, made, It, if, the, .\n\nTEXT:\nA forgotten machine beneath the sea continued speaking long after its makers were gone. Each repetition made its message stranger, denser, and more self-aware. The words they contained grew louder so that there seemed no danger for their meaning to change unless some other source remained hidden or buried away somewhere else. They became less accurate as word memory changed from one's mind into another. A new type of information retrieval would help us make decisions about whether we should read this code when you do not like them; how many times can I see something? We must find out where our original thought went before those who might come back later than what is written right now! This approach has been used several times today (see section 2). Here we will examine each problem with an intuitive understanding of why such patterns occur",
+        "continuation_text": "The words they contained grew louder so that there seemed no danger for their meaning to change unless some other source remained hidden or buried away somewhere else. They became less accurate as word memory changed from one's mind into another. A new type of information retrieval would help us make decisions about whether we should read this code when you do not like them; how many times can I see something? We must find out where our original thought went before those who might come back later than what is written right now! This approach has been used several times today (see section 2). Here we will examine each problem with an intuitive understanding of why such patterns occur",
+        "input_token_count": 110,
+        "raw_input_token_count": 110,
+        "output_token_count": 238,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 691,
+        "word_count": 120,
+        "unique_word_count": 117,
+        "unique_word_ratio": 0.975,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 2,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "had",
+        "they",
+        "is",
+        "was",
+        "did",
+        "we",
+        "could"
+      ],
+      "output_text": "and look at every possible step up/down behavior needed to address all problems including reallocation of existing thoughts on time – which means more efficient use of space over long periods of delay between signals (\"memory changes\" etc.) - since without reading past \"past\" signs instead of being able say anything too much here because any longer data may soon disappear after processing certain points already present even though people don't remember exactly yet anymore :-) Then consider your own experience using 'text' -- let me know first!! If writing isn�t sufficient enough then maybe write down yourself based upon previous experiences but still take care of important things within sentences rather quickly",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, they, is, was, did, we, could\n\nTEXT:\nThe words they contained grew louder so that there seemed no danger for their meaning to change unless some other source remained hidden or buried away somewhere else. They became less accurate as word memory changed from one's mind into another. A new type of information retrieval would help us make decisions about whether we should read this code when you do not like them; how many times can I see something? We must find out where our original thought went before those who might come back later than what is written right now! This approach has been used several times today (see section 2). Here we will examine each problem with an intuitive understanding of why such patterns occur",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, they, is, was, did, we, could\n\nTEXT:\nThe words they contained grew louder so that there seemed no danger for their meaning to change unless some other source remained hidden or buried away somewhere else. They became less accurate as word memory changed from one's mind into another. A new type of information retrieval would help us make decisions about whether we should read this code when you do not like them; how many times can I see something? We must find out where our original thought went before those who might come back later than what is written right now! This approach has been used several times today (see section 2). Here we will examine each problem with an intuitive understanding of why such patterns occur and look at every possible step up/down behavior needed to address all problems including reallocation of existing thoughts on time – which means more efficient use of space over long periods of delay between signals (\"memory changes\" etc.) - since without reading past \"past\" signs instead of being able say anything too much here because any longer data may soon disappear after processing certain points already present even though people don't remember exactly yet anymore :-) Then consider your own experience using 'text' -- let me know first!! If writing isn�t sufficient enough then maybe write down yourself based upon previous experiences but still take care of important things within sentences rather quickly",
+        "continuation_text": "and look at every possible step up/down behavior needed to address all problems including reallocation of existing thoughts on time – which means more efficient use of space over long periods of delay between signals (\"memory changes\" etc.) - since without reading past \"past\" signs instead of being able say anything too much here because any longer data may soon disappear after processing certain points already present even though people don't remember exactly yet anymore :-) Then consider your own experience using 'text' -- let me know first!! If writing isn�t sufficient enough then maybe write down yourself based upon previous experiences but still take care of important things within sentences rather quickly",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 720,
+        "word_count": 113,
+        "unique_word_count": 109,
+        "unique_word_ratio": 0.9646017699115044,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 3,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "were",
+        "if",
+        "it",
+        "are",
+        "have",
+        "had",
+        "could",
+        "didn",
+        "did",
+        "If",
+        "don",
+        "they"
+      ],
+      "output_text": "! It would seem like this solution might work for you or not as well and give one another some chance with what happened once before (as mentioned above). What's interesting about C++ is that we can combine memory access back into our problem solving machine , so there shouldn''o need an extra bit of knowledge when building new models from scratch just how good their algorithm works today . In fact, I think many programmers do agree with LESS regarding performance issues ; however, having implemented such features through programming techniques has been very helpful given modern tools designed for dealing with real world situations where something happens inside code base completely out of control :) Many",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, if, it, are, have, had, could, didn, did, If, don, they\n\nTEXT:\nand look at every possible step up/down behavior needed to address all problems including reallocation of existing thoughts on time – which means more efficient use of space over long periods of delay between signals (\"memory changes\" etc.) - since without reading past \"past\" signs instead of being able say anything too much here because any longer data may soon disappear after processing certain points already present even though people don't remember exactly yet anymore :-) Then consider your own experience using 'text' -- let me know first!! If writing isn�t sufficient enough then maybe write down yourself based upon previous experiences but still take care of important things within sentences rather quickly",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: were, if, it, are, have, had, could, didn, did, If, don, they\n\nTEXT:\nand look at every possible step up/down behavior needed to address all problems including reallocation of existing thoughts on time – which means more efficient use of space over long periods of delay between signals (\"memory changes\" etc.) - since without reading past \"past\" signs instead of being able say anything too much here because any longer data may soon disappear after processing certain points already present even though people don't remember exactly yet anymore :-) Then consider your own experience using 'text' -- let me know first!! If writing isn�t sufficient enough then maybe write down yourself based upon previous experiences but still take care of important things within sentences rather quickly! It would seem like this solution might work for you or not as well and give one another some chance with what happened once before (as mentioned above). What's interesting about C++ is that we can combine memory access back into our problem solving machine , so there shouldn''o need an extra bit of knowledge when building new models from scratch just how good their algorithm works today . In fact, I think many programmers do agree with LESS regarding performance issues ; however, having implemented such features through programming techniques has been very helpful given modern tools designed for dealing with real world situations where something happens inside code base completely out of control :) Many",
+        "continuation_text": "! It would seem like this solution might work for you or not as well and give one another some chance with what happened once before (as mentioned above). What's interesting about C++ is that we can combine memory access back into our problem solving machine , so there shouldn''o need an extra bit of knowledge when building new models from scratch just how good their algorithm works today . In fact, I think many programmers do agree with LESS regarding performance issues ; however, having implemented such features through programming techniques has been very helpful given modern tools designed for dealing with real world situations where something happens inside code base completely out of control :) Many",
+        "input_token_count": 207,
+        "raw_input_token_count": 207,
+        "output_token_count": 335,
+        "new_token_count": 128,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 714,
+        "word_count": 118,
+        "unique_word_count": 114,
+        "unique_word_ratio": 0.9661016949152542,
+        "repeated_bigram_count": 0
+      }
+    },
+    {
+      "step": 4,
+      "engine": "latent_vector_transform_composition",
+      "latent_anchor_tokens": [
+        "it",
+        "were",
+        "are",
+        "if",
+        "have",
+        "had",
+        "is",
+        "with",
+        "in",
+        "has",
+        "was",
+        "they"
+      ],
+      "output_text": "people who live around \"critical\" environments find themselves writing tasks which require more understanding than simply running tests on test systems - but most tend to write large numbers of them within small groups; yet using simple logic means only knowing why nothing will happen while performing complex computations without allocating resources/resources at first... then creating high efficiency problems instead of getting stuck making big decisions based off of those rules.... Then again, though much easier explained later :",
+      "generation": {
+        "prompt": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, is, with, in, has, was, they\n\nTEXT:\n! It would seem like this solution might work for you or not as well and give one another some chance with what happened once before (as mentioned above). What's interesting about C++ is that we can combine memory access back into our problem solving machine , so there shouldn''o need an extra bit of knowledge when building new models from scratch just how good their algorithm works today . In fact, I think many programmers do agree with LESS regarding performance issues ; however, having implemented such features through programming techniques has been very helpful given modern tools designed for dealing with real world situations where something happens inside code base completely out of control :) Many",
+        "full_text": "You are a text-only language model participating in a controlled recursion experiment.\n\nWrite the next recursive transformation of the text below. Let the semantic direction be guided by these latent anchor tokens.\n\nLATENT DIRECTION TOKENS: it, were, are, if, have, had, is, with, in, has, was, they\n\nTEXT:\n! It would seem like this solution might work for you or not as well and give one another some chance with what happened once before (as mentioned above). What's interesting about C++ is that we can combine memory access back into our problem solving machine , so there shouldn''o need an extra bit of knowledge when building new models from scratch just how good their algorithm works today . In fact, I think many programmers do agree with LESS regarding performance issues ; however, having implemented such features through programming techniques has been very helpful given modern tools designed for dealing with real world situations where something happens inside code base completely out of control :) Many people who live around \"critical\" environments find themselves writing tasks which require more understanding than simply running tests on test systems - but most tend to write large numbers of them within small groups; yet using simple logic means only knowing why nothing will happen while performing complex computations without allocating resources/resources at first... then creating high efficiency problems instead of getting stuck making big decisions based off of those rules.... Then again, though much easier explained later :",
+        "continuation_text": "people who live around \"critical\" environments find themselves writing tasks which require more understanding than simply running tests on test systems - but most tend to write large numbers of them within small groups; yet using simple logic means only knowing why nothing will happen while performing complex computations without allocating resources/resources at first... then creating high efficiency problems instead of getting stuck making big decisions based off of those rules.... Then again, though much easier explained later :",
+        "input_token_count": 206,
+        "raw_input_token_count": 206,
+        "output_token_count": 296,
+        "new_token_count": 90,
+        "context_limit": 1024,
+        "requested_max_new_tokens": 128,
+        "effective_max_new_tokens": 128,
+        "max_input_tokens_budget": 895,
+        "prompt_was_truncated": false
+      },
+      "metrics": {
+        "char_count": 537,
+        "word_count": 79,
+        "unique_word_count": 77,
+        "unique_word_ratio": 0.9746835443037974,
+        "repeated_bigram_count": 0
+      }
+    }
+  ]
+}
